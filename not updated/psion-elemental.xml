@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="1.5.2">
+            <file name="psion-elemental.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/psion-elemental.xml" />
+        </update>
+    </info>
+
+    <element name="Elemental Mind" type="Archetype" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_ELEMENTAL">
+        <supports>Psionic Archetype</supports>
+        <description>
+            <p>An Elemental Mind Psion carries a psionic link to a primal power, some have a link to a particular element while others find all elements within their mind, raging an eternal war. Often viewed as dangerous, they can erupt with power if not careful, but in time can gain great mastery over the elements.</p>
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_NATURAL_FORCE" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_PRIMORDIAL_ASPECT" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_LIVING_POWER" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_EMPOWERED_PSIONICS" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_FULL_MANIFESTATION" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_FORM" />
+        </description>
+        <sheet display="false">
+            <description>An Elemental Mind Psion carries a psionic link to a primal power, some have a link to a particular element while others find all elements within their mind, raging an eternal war.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_NATURAL_FORCE" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_PRIMORDIAL_ASPECT" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_LIVING_POWER" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_EMPOWERED_PSIONICS" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_FULL_MANIFESTATION" level="10" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_FORM" level="14" />
+        </rules>
+    </element>
+    <element name="Natural Force" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_NATURAL_FORCE">
+        <description>
+            <p>At 1st level when you select this archtype, you gain a deep intrinsic tie to elemental power, granting you the ability to manipulate it. You gain the psionic discipline of Psychokinetics.</p>
+        </description>
+        <sheet display="false">
+            <description>You gain the psionic discipline of Psychokinetics.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS" />
+        </rules>
+    </element>
+    <element name="Primordial Aspect" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_PRIMORDIAL_ASPECT">
+        <description>
+            <p>Additional at 1st level, as an action or when you deal fire, cold, lightning or force damage (no action required), you take on an aspect of that element until the end of your next turn or you take a new primordial aspect.</p>
+            <ul>
+                <li><strong>Cold.</strong> You gain an icy shell, reducing any nonmagical bludgeoning, piercing or slashing damage taken by your proficiency bonus.</li>
+                <li><strong>Fire.</strong> You gain a firey aura, once per turn, a creature within 5 feet that hits you with a melee attack takes fire damage equal to your proficiency bonus.</li>
+                <li><strong>Lightning.</strong> You flicker with lightning. Your walking speed is increased by 5 feet for the duration.</li>
+            </ul>
+            <p class="indent">You can additionally spend 1 psi point to gain resistance to the element to the start of your next turn. If you are a specialized in an element, you you can do this without spending a psi point for the element you are specialized in.</p>
+        </description>
+        <sheet>
+            <description usage="Psi" action="Action">As an action or when you deal fire, cold, lightning or force damage (no action required), you take on an aspect of that element until the end of your next turn or you take a new primordial aspect. <strong>Cold.</strong> You gain an icy shell, reducing any nonmagical bludgeoning, piercing or slashing damage taken by {{proficiency}}. <strong>Fire.</strong> You gain a firey aura, once per turn, a creature within 5 feet that hits you with a melee attack takes {{proficiency}} fire damage. <strong>Lightning.</strong> You flicker with lightning. Your walking speed is increased by 5 feet for the duration.
+            You can additionally spend 1 psi point to gain resistance to the element to the start of your next turn. If you are a specialized in an element, you you can do this without spending a psi point for the element you are specialized in.</description>
+        </sheet>
+    </element>
+    <element name="Living Power" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_LIVING_POWER">
+        <description>
+            <p>Starting at 3rd level, your mastery of the elements is an art form, causing them to act as if they were alive in your command, sculpting to your will. When you use a power or alternate effect of psychokinetics, you can infuse the power with your will and apply one of the following infusion modifiers to it:</p>
+            <ul>
+                <li><strong>Forming:</strong> The power forms into a melee weapon (like a blade). When you would make a ranged spell attack, making a melee spell attack instead.</li>
+                <li><strong>Controlling:</strong> When you would target an arena, you can select a number of creatures equal to the psi points spent on the power or spell in that area for the elemental power to ignore, passing harmless around them. These creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</li>
+                <li><strong>Reaching:</strong> The power stretches out reaching for its target. When you make a melee spell attack, you can give a reach of 15 feet. When you make a ranged spell attack, you double its range.</li>
+            </ul>
+            <p class="indent">Alternatively you if you do not attempt to modify the power, the living powers rage more wildly and when you roll damage for the power or spell, you can reroll one damage die of the result per psi point spent. You must use the new roll.</p>
+        </description>
+        <sheet>
+            <description>When you use a power or alternate effect of psychokinetics, you can apply one of the following infusion modifiers to it:
+            <strong>Forming:</strong> The power forms into a melee weapon. When you would make a ranged spell attack, making a melee spell attack instead.
+            <strong>Controlling:</strong> When you would target an area, you can select a number of creatures equal to the psi points spent on the power or spell in that area for the elemental power to ignore. These creatures automatically succeed on their saving throws against the spell, and they take no damage.
+            <strong>Reaching:</strong> When you make a melee spell attack, you can give a reach of 15 feet. When you make a ranged spell attack, you double its range.</description>
+        </sheet>
+    </element>
+    <element name="Empowered Psionics" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_EMPOWERED_PSIONICS">
+        <description>
+            <p>Starting at 6th level, when you deal damage with a Psionic Discipline power you can add your Intelligence modifier to the damage dealt.</p>
+        </description>
+        <sheet>
+            <description>When you deal damage with a Psionic Discipline power you can add {{intelligence:modifier}} to the damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Full Manifestation" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_FULL_MANIFESTATION">
+        <description>
+            <p>Starting at 10th level, when you enter a primordial aspect, you can expend 1 psi point to fully manifest that element, replacing the primordial aspect with the following effect. If you are specialized in that element, it does not require a psi point to fully manifest the power.</p>
+            <ul>
+                <li><strong>Cold.</strong> Your movement speed becomes zero until the end of your next turn, but you have resistance to all damage types beside fire and force.</li>
+                <li><strong>Fire.</strong> Fire fills a 10 foot radius around you. When the creature enters the area for the first time on a turn or starts its turn there, it takes fire damage equal to 1d4 + your proficiency bonus.</li>
+                <li><strong>Lightning.</strong> You can use your movement speed to teleport a distance equal to your movement speed for the duration.</li>
+            </ul>
+            <p class="indent">If you are not in a primordial aspect, you can fully manifest a power as bonus action for 2 psi points (or 1 psi point if are specialized in that power).</p>
+        </description>
+        <sheet>
+            <description usage="Psi">When you enter a primordial aspect, you can expend 1 psi point to fully manifest that element, replacing the primordial aspect with the following effect. If you are specialized in that element, it does not require a psi point to fully manifest the power. <strong>Cold.</strong> Your movement speed becomes zero until the end of your next turn, but you have resistance to all damage types beside fire and force. <strong>Fire.</strong> Fire fills a 10 foot radius around you. When the creature enters the area for the first time on a turn or starts its turn there, it takes 1d4 + {{proficiency}} fire damage. <strong>Lightning.</strong> You can use your movement speed to teleport up to {{speed}} feet for the duration.
+            If you are not in a primordial aspect, you can fully manifest a power as bonus action for 2 psi points (or 1 psi point if are specialized in that power).</description>
+        </sheet>
+    </element>
+    <element name="Elemental Form" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_FORM">
+        <description>
+            <p>Starting at 14th level, you can expend 5 psi points to cast shapechange to assume elemental forms. When you cast shapechange in this way it has nor verbal or material components, but you can only assume the form of a Water Elemental, Fire Elemental, or Air Elemental. If you are specialized in an element, the cost is reduced to 3 psi points, but you can only assume the form associated with your specialization (Water Elemental for cold, Fire Elemental for fire, or Air Elemental for lightning). A Water Elemental assumed with this form does not have the Freeze property.</p>
+            <p class="indent">Once you cast shapeshift this way, you cannot do so until you complete a short or long rest.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_SHAPECHANGE" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest">You can expend 5 psi points to cast shapechange to assume elemental forms. When you cast shapechange in this way it has nor verbal or material components, but you can only assume the form of a Water Elemental, Fire Elemental, or Air Elemental. If you are specialized in an element, the cost is reduced to 3 psi points, but you can only assume the form associated with your specialization (Water Elemental for cold, Fire Elemental for fire, or Air Elemental for lightning). A Water Elemental assumed with this form does not have the Freeze property.</description>
+        </sheet>
+        
+    </element>
+
+</elements>

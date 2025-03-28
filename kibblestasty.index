@@ -6,7 +6,9 @@
 		</update>
 	</info>
 	<files>
-    <file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-cursesmith.xml" />
+    <file name="source.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/source.xml" />
+    
+    <!--<file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-cursesmith.xml" />
     <file name="artificer-expandedoptions.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-expandedoptions.xml" />
     <file name="artificer-fleshsmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-fleshsmith.xml" />
     <file name="artificer-infusionsmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-infusionsmith.xml" />
@@ -43,10 +45,10 @@
     <file name="rogue-divineagent.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/rogue-divineagent.xml" />
     <file name="rogue-gadgeteer.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/rogue-gadgeteer.xml" />
     <file name="sorcerer-aetherheart.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/sorcerer-aetherheart.xml" />
-    <file name="source.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/source.xml" />
+    
     <file name="warlock-darkwaters.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/warlock-darkwaters.xml" />
     <file name="warlock-tempest.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/warlock-tempest.xml" />
     <file name="warlord-expandedoptions.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/warlord-expandedoptions.xml" />
-    <file name="wizard-pathology.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/wizard-pathology.xml" />
+    <file name="wizard-pathology.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/wizard-pathology.xml" /> -->
 	</files>
 </index>
