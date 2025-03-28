@@ -3,7 +3,7 @@
     <info>
         <name></name>
         <update version="1.5.0">
-            <file name="psion-consuming.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-consuming.xml" />
+            <file name="psion-consuming.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/psion-consuming.xml" />
         </update>
     </info>
 

@@ -3,7 +3,7 @@
     <info>
         <name></name>
         <update version="1.0.0">
-            <file name="wizard-pathology.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/wizard-pathology.xml" />
+            <file name="wizard-pathology.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/wizard-pathology.xml" />
         </update>
     </info>
 

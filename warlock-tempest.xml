@@ -3,7 +3,7 @@
     <info>
         <name></name>
         <update version="1.0.0">
-            <file name="warlock-tempest.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/warlock-tempest.xml" />
+            <file name="warlock-tempest.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/warlock-tempest.xml" />
         </update>
     </info>
 

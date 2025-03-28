@@ -3,7 +3,7 @@
     <info>
         <name></name>
         <update version="1.4.0">
-            <file name="psion-unleashed.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-unleashed.xml" />
+            <file name="psion-unleashed.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/psion-unleashed.xml" />
         </update>
     </info>
 
