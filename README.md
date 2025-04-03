@@ -3,7 +3,7 @@
 Thanks to Zenoverlordian who I forked from.
 
 ## Plans
-Currently planning on adding content Kibbles' Compendium of Legends and Legacies then branching out from there.
+Currently planning on adding content Kibbles' Compendium of Legends and Legacies then branching out from there. Old code from Zenoverlordian will stay in the not updated folder for now.
 
 ### Classes (4)
 - Occultist
