@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Occultist</name>
+        <update version="0.0.1">
+            <file name="class-occultist.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/class-occultist.xml" />
+        </update>
+    </info>
+    <element name="Occultist" type="Class" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_OCCULTIST">
+        <description>
+            <p>Occultists are those that follow the old ways: a path of ritual and wisdom long known yet oft forgotten. Rather than force magic to obey, they bind, twist, manipulate, and compromise with it. They follow ancient agreements and techniques to produce results that few fully understand, even those that use them, but that they know it will work, for it always has.</p>
+            <h4>ANCIENT TRADITIONS</h4>
+            <p>Occultists are spellcasters following legacies that go far back. While they may or may not be directly tutored or influenced by another member of their tradition, their path to magic involves unearthing ancient secrets, old ways, and knowledge gleaned from spirits, ghosts, and elementals.</p>
+            <p class="indent">They often personify aspects of their magic in ways that other casters find odd, coaxing and manipulating magic forces by ancient laws and bargains. Occultists tread between the arcane and the divine, not necessarily worshiping any god, but treating gods and spirits alike with cautious respect for their domains, asking for what they take, and carefully giving thought to their actions.</p>
+            <p class="indent">Each tradition that appears in the Occultist is an ancient legacy of magic, found deep within folklore and story. Every villager could tell you stories of Occultists and their traditions, and they are often seen in this context. Though villagers and the superstitious might fear them and their magic, they may be more likely to turn to them than a Wizard; at least an Occultist makes sense to them, even if they are scared by their powers.</p>
+            <h4>SPIRITUAL MAGIC</h4>
+            <p>A common thread of the magic wielded by the Occultist is the spiritual connection of it; the demidivine nature of magic that taps into the weave of magic, oft through intermediaries such as gods, spirits, elementals, and more.</p>
+            <p class="indent">Frequently an Occultist may call upon their magic through the mediums of spirits quite directly, even having names for the spirits it calls about to bring about certain magical effects. The verbal component of an Occultist’s spell might be calling upon a spirit to work their wish, an invocation of their ancient bargain, or words in a language designed to bind and persuade.</p>
+            <h4>CREATING AN OCCULTIST</h4>
+            <p>When creating an Occultist, the most important decision will be what Tradition you follow. Each Tradition of an Occultist is distinct, with divergent flavor and calling upon a different aspect of folklore.</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>First, Wisdom should be your highest ability score, followed by Constitution or Dexterity. Second, choose a background that lives on the fringes of society. Third, choose the chill touch, guidance, and poison spray cantrips, along with the following 1st-level spells: burning hands, cure wounds, and hideous laughter.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an Occultist, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d6 per occultist level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per Occultist level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor</li>
+                <li><strong>Weapons:</strong> Daggers, quarterstaffs, light crossbows</li>
+                <li><strong>Tools:</strong> Herbalism Kit</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+                <li><strong>Skills:</strong> Choose two from Animal Handling, Arcana, Deception, History, Investigation, Medicine, Nature, Religion, Sleight of Hand, Stealth, and Survival</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a quarterstaff, (b) a dagger, or (c) one simple weapon (if proficient)</li>
+                <li>(a) a component pouch or (b) an occult fetish</li>
+                <li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+                <li>(a) leather armor, or (b) scale mail, (if proficient)</li>
+                <li>An herbalism kit</li>
+            </ul>
+            <p class="indent">Alternatively, you may start with 4d4 × 10 gp to buy your own equipment.</p>
+            <!-- class table here -->
+            <h5 class="caption">THE OCCULTIST</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-5">Occult Rites</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+                </thead>
+                <tr><td> 1st</td><td class="left">Spellcasting, Occult Tradition</td><td>-</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 2nd</td><td class="left">Occult Rites</td><td>2</td><td>3</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 3rd</td><td class="left">Occult Tradition Feature</td><td>2</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 5th</td><td class="left">-</td><td>3</td><td>4</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 6th</td><td class="left">Occult Tradition Feature</td><td>3</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 7th</td><td class="left">-</td><td>4</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 9th</td><td class="left">-</td><td>5</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>10th</td><td class="left">Traditional Expertise</td><td>5</td><td>5</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>11th</td><td class="left">-</td><td>5</td><td>5</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>12th</td><td class="left">Ability Score Improvement</td><td>6</td><td>5</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>13th</td><td class="left">-</td><td>6</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+                <tr><td>14th</td><td class="left">Occult Tradition Feature</td><td>6</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+                <tr><td>15th</td><td class="left">-</td><td>7</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+                <tr><td>16th</td><td class="left">Ability Score Improvement</td><td>7</td><td>5</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+                <tr><td>17th</td><td class="left">-</td><td>7</td><td>5</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>18th</td><td class="left">-</td><td>8</td><td>5</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>19th</td><td class="left">Ability Score Improvement</td><td>8</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>20th</td><td class="left">The Old Ways</td><td>8</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+            </table>
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_SPELLCASTING" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_TRADITION" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_ASI" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_TRADITIONAL_EXPERTISE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_THE_OLD_WAYS" />
+        </description>
+        <setters>
+            <set name="hd">d6</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" requirements="!ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <select type="Proficiency" name="Skill Proficiency, Occultist" number="2" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_SPELLCASTING" level="1" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_TRADITION" level="1" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_ASI" level="4" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_TRADITIONAL_EXPERTISE" level="10" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_THE_OLD_WAYS" level="20" />
+        </rules>
+        <multiclass id="ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST">
+            <prerequisite>Wisdom 13</prerequisite>
+            <requirements>[wis:13]</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Light Armor</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            </rules>
+        </multiclass>
+    </element>
+    <element name="Spellcasting" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_SPELLCASTING">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Occult Tradition" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_TRADITION">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Occult Rites" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_ASI">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Traditional Expertise" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_TRADITIONAL_EXPERTISE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="The Old Ways" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_THE_OLD_WAYS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
