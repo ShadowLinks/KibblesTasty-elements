@@ -6,7 +6,25 @@
             <file name="source.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/source.xml" />
         </update>
     </info>
-
+    <element name="Kibbles' Compendium of Legends and Legacies" type="Source" source="KT-COLAL" id="ID_KTH_COLAL_SOURCE">
+        <description>
+            <![CDATA[<p>A massive book of martial might and magical mayhem for D&D 5e - 4 epic new classes, 30+ new subclasses, 30+ feats, and over 240 spells!.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">COLAL</set>
+            <set name="url">https://kibbles-compendium-of-legends-and-legacies.backerkit.com/hosted_preorders</set>
+            <set name="image">https://d1wgd08o7gfznj.cloudfront.net/uploads/gallery_images/97ce533a-75d3-4bb0-8f89-8ef09a431435/Hardcover_Icon_legacy_square_thumb.png</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">2025</set>
+        </setters>
+    </element>
+    <!-->
     <element name="KibblesTasty's Subclasses" type="Source" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_SOURCE_KIBBLESTASTYS_SUBCLASSES">
         <description>
             <![CDATA[<p>KibblesTasty's homebrewed subclasses kept updated.</p>]]>
@@ -134,5 +152,5 @@
             <set name="league">false</set>
             <set name="release">20200118</set>
         </setters>
-    </element>
+    </element>-->
 </elements>
