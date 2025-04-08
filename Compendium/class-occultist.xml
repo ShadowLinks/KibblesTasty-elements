@@ -3,7 +3,7 @@
     <info>
         <name>Occultist</name>
         <update version="0.0.1">
-            <file name="class-occultist.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/class-occultist.xml" />
+            <file name="class-occultist.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/Compendium/main/class-occultist.xml" />
         </update>
     </info>
     <element name="Occultist" type="Class" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_OCCULTIST">
