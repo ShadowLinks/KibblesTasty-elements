@@ -6,7 +6,7 @@
             <file name="class-occultist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-occultist.xml" />
         </update>
     </info>
-    <element name="Occultist" type="Class" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_OCCULTIST">
+    <element name="Occultist" type="Class" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_OCCULTIST">
         <description>
             <p>Occultists are those that follow the old ways: a path of ritual and wisdom long known yet oft forgotten. Rather than force magic to obey, they bind, twist, manipulate, and compromise with it. They follow ancient agreements and techniques to produce results that few fully understand, even those that use them, but that they know it will work, for it always has.</p>
             <h4>ANCIENT TRADITIONS</h4>
@@ -102,6 +102,9 @@
             <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_TRADITIONAL_EXPERTISE" level="10" />
             <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_THE_OLD_WAYS" level="20" />
         </rules>
+        <spellcasting name="Occultist" ability="Wisdom" prepare="true">
+                <list>Occultist</list>
+        </spellcasting>
         <multiclass id="ID_KTH_COLAL_OCCULTIST_MULTICLASS_OCCULTIST">
             <prerequisite>Wisdom 13</prerequisite>
             <requirements>[wis:13]</requirements>
@@ -114,52 +117,140 @@
             </rules>
         </multiclass>
     </element>
-    <element name="Spellcasting" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_SPELLCASTING">
+    <element name="Spellcasting" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_SPELLCASTING">
         <description>
+            <p>>As a practitioner of occult magic, you have inherited and developed techniques to manipulate reality through mediums of rituals, spirits, elements, and more. See Spells Rules for the general rules of spellcasting and the Spells Listing for the Occultist spell list.</p>
+            <h4>Cantrips</h4>
+            <p>At 1st level, you know three cantrips of your choice from the Occultist spell list. You learn additional Occultist cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Occultist table.</p>
+            <h4>Spell Slots</h4>
             <p></p>
+            <p class="indent"></p>
+            <h4>Spells Known of 1st Level and Higher</h4>
+            <p>The Occultist table shows how many spell slots you have to cast your Occultist spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <p class="indent">For example, if you know the 1st-level spell lightning tendril and have a 1st-level and a 2nd-level spell slot available, you can cast lightning tendril using either slot.</p>
+            <h4>Spellcasting Ability</h4>
+            <p>Wisdom is your spellcasting ability for your Occultist spells. Your magic comes from a practitioner’s knowledge of tradition, ritual, and the way things work learned through experience, care, and cunning. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for an Occultist spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+            </center>
+            <h4>Ritual Casting</h4>
+            <p>You can cast any Occultist spell you know as a ritual if that spell has the ritual tag.</p>
+            <p class="indent"></p>
+            <h4>Spellcasting Focus</h4>
+            <p>You can use an occult fetish as a spellcasting focus for your Occultist spells.</p>
+        </description>
+        <sheet>
+            <description>You can cast rituals of Occultist Spells that have the ritual tag. You can use an Occult Fetish as a spellcasting focus.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING"/>
+            <stat name="occultist:spellcasting:slots:1" value="2" level="1"/>
+            <stat name="occultist:spellcasting:slots:1" value="1" level="2"/>
+            <stat name="occultist:spellcasting:slots:1" value="1" level="3"/>
+            <stat name="occultist:spellcasting:slots:2" value="2" level="3"/>
+            <stat name="occultist:spellcasting:slots:2" value="1" level="4"/>
+            <stat name="occultist:spellcasting:slots:3" value="2" level="5"/>
+            <stat name="occultist:spellcasting:slots:3" value="1" level="6"/>
+            <stat name="occultist:spellcasting:slots:4" value="1" level="7"/>
+            <stat name="occultist:spellcasting:slots:4" value="1" level="8"/>
+            <stat name="occultist:spellcasting:slots:4" value="1" level="9"/>
+            <stat name="occultist:spellcasting:slots:5" value="1" level="9"/>
+            <stat name="occultist:spellcasting:slots:5" value="1" level="10"/>
+            <stat name="occultist:spellcasting:slots:5" value="1" level="18"/>
+            <stat name="occultist:spellcasting:slots:6" value="1" level="11"/>
+            <stat name="occultist:spellcasting:slots:6" value="1" level="19"/>
+            <stat name="occultist:spellcasting:slots:7" value="1" level="13"/>
+            <stat name="occultist:spellcasting:slots:7" value="1" level="20"/>
+            <stat name="occultist:spellcasting:slots:8" value="1" level="15"/>
+            <stat name="occultist:spellcasting:slots:9" value="1" level="17"/>
+            <stat name="occultist:spellcasting:prepare" value="3" level="1" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="2" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="3" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="4" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="5" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="6" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="7" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="8" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="9" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="10" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="11" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="12" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="13" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="14" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="15" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="16" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="17" />
+            <stat name="occultist:spellcasting:prepare" value="1" level="18" />
+            <select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Occultist" />
+            <select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Occultist" />
+            <select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Occultist" />
+        </rules>
+    </element>
+    <element name="Occult Tradition" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_TRADITION">
+        <description>
+            <p>Choose an occult tradition, shaping your the techniques, features, and rites available to you from the following: Witch, Hedge Mage, Oracle, Shaman, Spiritualist, or Voidwatcher.</p>
+            <p class="indent">Your choice grants you features at 1st level, 3rd level, 6th level, and 14th level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" name="Occult Tradition" supports="Occult-Tradition" />
+        </rules>
+    </element>
+    <element name="Occult Rites" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES">
+        <description>
+            <p>As you delve into your Tradition of occult magic, you find deviations and branches to explore that help you specialize and perfect your craft in the way that best suits you.</p>
+            <p class="indent">At 2nd Level, you gain two occult rites of your choice. Your occult rites options are detailed at the end of the occult tradition description for tradition specific Rites, and at the end of the class description for general rites. You can select from either your tradition or class list. When you gain certain Occultist levels, you gain additional occult rites of your choice.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Class Feature" name="Occult Rites" supports="Occult-Rite" number="2" level="2" />
+            <select type="Class Feature" name="Occult Rites" supports="Occult-Rite" number="1" level="5" />
+            <select type="Class Feature" name="Occult Rites" supports="Occult-Rite" number="1" level="7" />
+            <select type="Class Feature" name="Occult Rites" supports="Occult-Rite" number="1" level="9" />
+            <select type="Class Feature" name="Occult Rites" supports="Occult-Rite" number="1" level="12" />
+            <select type="Class Feature" name="Occult Rites" supports="Occult-Rite" number="1" level="15" />
+            <select type="Class Feature" name="Occult Rites" supports="Occult-Rite" number="1" level="18" />
+        </rules>
     </element>
-    <element name="Occult Tradition" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_TRADITION">
+    <element name="Ability Score Improvement" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_ASI">
         <description>
-            <p></p>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Occultist 4)" supports="Improvement Option,Occultist,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Occultist 8)" supports="Improvement Option,Occultist,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Occultist 12)" supports="Improvement Option,Occultist,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Occultist 16)" supports="Improvement Option,Occultist,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Occultist 19)" supports="Improvement Option,Occultist,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Traditional Expertise" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_TRADITIONAL_EXPERTISE">
+        <description>
+            <p>Starting at 10th level, your passed down knowledge of tradition gives you expertise in a skill of your tradition; choose one of your skill proficiencies from among Animal Handling, Arcana, Medicine, Nature, Religion, or Survival. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency. If you do not have proficiency in any of the selected skills, you instead gain proficiency in one of your choice.</p>
+            <p class="indent">Additionally, when you make a Wisdom ability check, you can draw upon your tradition and expend a spell slot to gain advantage on the check.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you make a Wisdom ability check, you can draw upon your tradition and expend a spell slot to gain advantage on the check.</description>
         </sheet>
+        <rules>
+            <select type="Class Feature" name="Traditional Expertise" supports="ID_EXPERTISE_SKILL_ANIMALHANDLING|ID_EXPERTISE_SKILL_ARCANA|ID_EXPERTISE_SKILL_MEDICINE|ID_EXPERTISE_SKILL_NATURE|ID_EXPERTISE_SKILL_SURVIVAL" />
+        </rules>
     </element>
-    <element name="Occult Rites" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES">
+    <element name="The Old Ways" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_THE_OLD_WAYS">
         <description>
-            <p></p>
+            <p>At 20th level, your mastery of ritual and tradition is extensive and unparalleled; you’ve unlocked ancient secrets and perfected techniques to master rituals completely. Any Occultist spell you know of 3rd level or lower becomes a ritual spell for you. When you cast a spell without the ritual tag as a ritual, it requires additional consumed material components worth 10 gold per level of the spell.</p>
+            <p class="indent">Additionally, your mastery of rituals allows you to work them more quickly. A spell cast as a ritual only takes additional turns equal to the spell’s level to cast (for example, casting a 3rd level spell as a ritual would take four turns to cast, casting as your action or bonus action on the fourth turn). Spells with a casting time of a reaction cannot be cast as a ritual.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Ability Score Improvement" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_ASI">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Traditional Expertise" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_TRADITIONAL_EXPERTISE">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="The Old Ways" type="Class Feature" source="KT-COLAL" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_THE_OLD_WAYS">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>Any Occultist spell you know of 3rd level or lower becomes a ritual spell for you. When you cast a spell without the ritual tag as a ritual, it requires additional consumed material components worth 10 gold per level of the spell.
+             A spell cast as a ritual only takes additional turns equal to the spell’s level to cast (for example, casting a 3rd level spell as a ritual would take four turns to cast, casting as your action or bonus action on the fourth turn). Spells with a casting time of a reaction cannot be cast as a ritual.</description>
         </sheet>
     </element>
 </elements>
+

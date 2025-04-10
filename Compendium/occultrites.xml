@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Occult Rites</name>
+        <update version="0.0.1">
+            <file name="occultrites.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultrites.xml" />
+        </update>
+    </info>
+    <element name="Alchemical Rite" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ALCHEMICAL_RITE">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You gain proficiency with alchemist’s supplies. During a long rest, you can use them to concoct an improvised Potion of Healing by spending 1 hour of the long rest to tend to its simmering. Due to its improvised nature, it expires in 24 hours, and has no value in gold pieces.</p>
+            <p class="indent">During this process, you can expend a 5th level spell to brew a Potion of Greater Healing instead. The expended spell slot is regained when the long rest is completed as normal.</p>
+        </description>
+        <sheet>
+            <description>During a long rest, you can use them to concoct an improvised Potion of Healing by spending 1 hour of the long rest to tend to its simmering. It expires in 24 hours, and has no value in gold pieces.
+            During this process, you can expend a 5th level spell to brew a Potion of Greater Healing instead. The expended spell slot is regained when the long rest is completed as normal.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Blood Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_BLOOD_MAGIC">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You gain the Hemomancer feat.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Feat" id="ID_KTH_COLAL_FEAT_HEMOMANCER" /> 
+        </rules>
+    </element>
+    <element name="Emblazoned Focus" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_EMBLAZONED_FOCUS">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You emblazon a mystical mark on yourself via a tattoo, scar, or similar permanent mark. You can use this mark as your spellcasting focus for your Occultist spells. You no longer need a free hand to cast spells with somatic or material components, as you can channel your magic through the mark, though it glows visibly when you do so. The mark must remain uncovered to function as a spellcasting focus (casting in this way does not remove the signs of casting a spell, it merely means you do not need a free hand).</p>
+        </description>
+        <sheet>
+            <description>You emblazon a mystical mark on yourself via a tattoo, scar, or similar permanent mark. You can use this mark as your spellcasting focus for your Occultist spells. You no longer need a free hand to cast spells with somatic or material components, as you can channel your magic through the mark, though it glows visibly when you do so. The mark must remain uncovered to function as a spellcasting focus (casting in this way does not remove the signs of casting a spell, it merely means you do not need a free hand).</description>
+        </sheet>
+    </element>
+    <element name="Expert of Tradition" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_EXPERT_OF_TRADITION">
+        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:10]</requirements>
+        <description>
+            <p>Choose a skill you are proficient in from among Animal Handling, Arcana, Medicine, Nature, and Survival. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency. If you do not have proficiency in any of the selected skills, you instead gain proficiency in one of your choice.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Expert of Tradition" supports="ID_EXPERTISE_SKILL_ANIMALHANDLING|ID_EXPERTISE_SKILL_ARCANA|ID_EXPERTISE_SKILL_MEDICINE|ID_EXPERTISE_SKILL_NATURE|ID_EXPERTISE_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+    <element name="Forbidden Rites" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_FORBIDDEN_RITES">
+        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+            <p>You learn the spell animate dead. It is an Occultist spell for you and does not count against the number of Occultist spells you know. This spell cannot gain the ritual tag with Lost Ritual.</p>
+        </description>
+        <sheet>
+            <description>You learn the spell animate dead. It is an Occultist spell for you and does not count against the number of Occultist spells you know. This spell cannot gain the ritual tag with Lost Ritual.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Occultist" prepared="true" />
+        </rules>
+    </element>
+    <element name="Markings of Protection" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_MARKINGS_OF_PROTECTION">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You mark yourself with magical symbols and patterns, protecting you from harm. While you are not wearing any armor, your AC becomes 11 + your Wisdom modifier. You can use a shield and still gain this benefit.</p>
+        </description>
+        <sheet>
+            <description>You mark yourself with magical symbols and patterns, protecting you from harm. While you are not wearing any armor, your AC becomes 11 + your Wisdom modifier. You can use a shield and still gain this benefit.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:markings of protection" value="11"/>
+            <stat name="ac:markings of protection" value="wisdom:modifier" />
+            <stat name="ac:calculation" value="ac:markings of protection" bonus="calculation" equipped="[armor:none]" alt="Markings of Protection"/>
+        </rules>
+    </element>
+    <element name="Occult Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>Your Occultist spells known increases by one. You can select this rite multiple times.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="occultist:spellcasting:prepare" value="1" />
+        </rules>
+    </element>
+    <element name="Occult Magic 2" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_2">
+        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <stat name="occultist:spellcasting:prepare" value="1" />
+        </rules>
+    </element>
+    <element name="Occult Magic 3" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_3">
+        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_2</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <stat name="occultist:spellcasting:prepare" value="1" />
+        </rules>
+    </element>
+    <element name="Occult Magic 4" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_4">
+        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_3</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <stat name="occultist:spellcasting:prepare" value="1" />
+        </rules>
+    </element>
+    <element name="Occult Magic 5" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_5">
+        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_4</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <stat name="occultist:spellcasting:prepare" value="1" />
+        </rules>
+    </element>
+    <element name="Occult Magic 6" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_6">
+        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_5</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <stat name="occultist:spellcasting:prepare" value="1" />
+        </rules>
+    </element>
+    <element name="Occult Magic 7" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_7">
+        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_6</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <stat name="occultist:spellcasting:prepare" value="1" />
+        </rules>
+    </element>
+    <element name="Occult Magic 8" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_8">
+        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_7</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <stat name="occultist:spellcasting:prepare" value="1" />
+        </rules>
+    </element>
+<element name="Occult Shield" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_SHIELD">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You gain proficiency with shields. Your shield can serve as an Occult Fetish for your Occultist spells.</p>
+        </description>
+        <sheet>
+            <description>Your shield can serve as an Occult Fetish for your Occultist spells.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        </rules>
+    </element>
+</elements>
+
+<!-- 
+<element name="Rite Name" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITE NAME">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    
+    -->
