@@ -11,7 +11,7 @@
             <![CDATA[<p>A massive book of martial might and magical mayhem for D&D 5e - 4 epic new classes, 30+ new subclasses, 30+ feats, and over 240 spells!.</p>]]>
         </description>
         <setters>
-            <set name="abbreviation">COLAL</set>
+            <set name="abbreviation">KT-COLAL</set>
             <set name="url">https://kibbles-compendium-of-legends-and-legacies.backerkit.com/hosted_preorders</set>
             <set name="image">https://d1wgd08o7gfznj.cloudfront.net/uploads/gallery_images/97ce533a-75d3-4bb0-8f89-8ef09a431435/Hardcover_Icon_legacy_square_thumb.png</set>
             <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
