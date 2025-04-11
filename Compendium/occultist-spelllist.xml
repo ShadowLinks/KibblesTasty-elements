@@ -11,18 +11,181 @@
     <append id="ID_PHB_SPELL_ACID_SPLASH">
         <supports>Occultist</supports>
     </append>
-    <append id="ID_KTH_COLAL_SPELL_">
+    <append id="ID_PHB_SPELL_CHILL_TOUCH">
         <supports>Occultist</supports>
     </append>
-    <append id="ID_PHB_SPELL_">
+    <append id="ID_PHB_SPELL_DANCING_LIGHTS">
         <supports>Occultist</supports>
-    </append><append id="ID_KTH_COLAL_SPELL_">
+    </append>
+    <append id="ID_PHB_SPELL_DRUIDCRAFT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GUIDANCE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LIGHT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MENDING">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MESSAGE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MINOR_ILLUSION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POISON_SPRAY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PRODUCE_FLAME">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_RESISTANCE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHOCKING_GRASP">
         <supports>Occultist</supports>
     </append>
 
 
 <!-- 1st Level Spells -->
-<!-- 1st Level Spells -->
+    <append id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BANE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BURNING_HANDS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COMPREHEND_LANGUAGES">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CURE_WOUNDS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_MAGIC">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISGUSE_SELF">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEATHER_FALL">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FOG_CLOUD">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_IDENTIFY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ILLUSORY_SCRIPT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_INFLICT_WOUNDS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_UNSEEN_SERVANT">
+        <supports>Occultist</supports>
+    </append>
+<!-- 2nd Level Spells -->
+    <append id="ID_PHB_SPELL_MELFS_ACID_ARROW">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ALTER_SELF">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ANIMAL_MESSENGER">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_AUGURY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BARKSKIN">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLINDNESS_DEAFNESS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CALM_EMOTIONS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DARKNESS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DARKVISION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_THOUGHTS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENHANCE_ABILITY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GENTLE_REPOSE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HEAT_METAL">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HOLD_PERSON">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_INVISIBILITY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LESSER_RESTORATION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LOCATE_OBJECT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MIRROR_IMAGE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MISTY_STEP">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SCORCHING_RAY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SEE_INVISIBILITY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SILENCE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPIDER_CLIMB">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPIKE_GROWTH">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SUGGESTION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WEB">
+        <supports>Occultist</supports>
+    </append>
 <!-- 3rd Level Spells -->
 <!-- 4th Level Spells -->
 <!-- 5th Level Spells -->
@@ -33,9 +196,6 @@
 
 <!--
 <append id="ID_PHB_SPELL_">
-        <supports>Occultist</supports>
-    </append>
-<append id="ID_KTH_COLAL_SPELL_">
         <supports>Occultist</supports>
     </append>
     -->
