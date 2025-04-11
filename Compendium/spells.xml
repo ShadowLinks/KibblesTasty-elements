@@ -1,0 +1,74 @@
+<elements>
+    <info>
+        <name>KibblesTasty SPells</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spells.xml" />
+        </update>
+    </info>
+    <element name="Acid Bubble" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ACID_BUBBLE">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a bubble of acid that floats to the target point before bursting in a shower of acid. Each creature and object within 5 feet must make a Dexterity saving throw. On a failure, it takes 3d4 acid damage, or half as much on a success.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 2d4 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">acid</set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">Instantaneous</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 action</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Acid Rain" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ACID_RAIN">
+        <supports>Druid, Occultist, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>Acid rain begins falling within a 40-foot-radius, 60-foot-high cylinder centered on a point you choose within range. When a creature moves into the spell’s area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failure, it takes 6d4 acid damage and is covered in acid. On a success, a creature takes half the initial damage and is not covered in acid.</p>
+            <p class="indent">A creature takes 3d4 acid damage if it ends its turn while covered in acid. The target or a creature within 5 feet of it can end this damage by using its action to clear away the acid.</p>
+        </description>
+        <setters>
+            <set name="keywords">acid</set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">300 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+<element name="Spell Name" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPELL NAME">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    -->

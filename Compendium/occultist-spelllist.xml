@@ -1,0 +1,41 @@
+<elements>
+    <info>
+        <name>Occultist Spell List</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="occultist-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-spelllist.xml" />
+        </update>
+    </info>
+
+<!-- Cantrips -->
+    <append id="ID_PHB_SPELL_ACID_SPLASH">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_">
+        <supports>Occultist</supports>
+    </append><append id="ID_KTH_COLAL_SPELL_">
+        <supports>Occultist</supports>
+    </append>
+
+
+<!-- 1st Level Spells -->
+<!-- 1st Level Spells -->
+<!-- 3rd Level Spells -->
+<!-- 4th Level Spells -->
+<!-- 5th Level Spells -->
+<!-- 6th Level Spells -->
+<!-- 7th Level Spells -->
+<!-- 8th Level Spells -->
+<!-- 9th Level Spells -->
+
+<!--
+<append id="ID_PHB_SPELL_">
+        <supports>Occultist</supports>
+    </append>
+<append id="ID_KTH_COLAL_SPELL_">
+        <supports>Occultist</supports>
+    </append>
+    -->
