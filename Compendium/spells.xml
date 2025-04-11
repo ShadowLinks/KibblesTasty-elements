@@ -285,6 +285,144 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Arcane Weapon" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ARCANE_WEAPON">
+        <supports>Inventor, Spellblade</supports>
+        <description>
+            <p>You touch a weapon and imbue it with magic. For the duration, the weapon counts as a magical weapon and all damage dealt by it becomes force damage. When you cast this on a weapon with the ammunition property, the weapon doesn't consume ammunition when fired, and does not need to be reloaded.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using spell slot of 3rd or 4th level, the duration becomes hours. When you use a spell slot of 5th level or higherthe duration becomes 24 hours.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Arcanist's Sword" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ARCANISTS_SWORD">
+        <supports>Bard, Wizard</supports>
+        <description>
+            <p>You create a glowing sword-shaped plane of force that hovers within range for the duration. When the sword appears and as a bonus action on subsequent turns, you can give the sword one of the following commands.</p>
+            <ul>
+                <li><strong><em>Attack:</em></strong> The sword moves up to 20 feet toward a creature and makes a melee spell attack against it. On a hit, the target takes force damage equal to 3d10 + your spellcasting ability modifier</li>
+                <li><strong><em>Guard:</em></strong> The sword moves up 20 feet into a creature’s space and grants the creature half cover as it attempts to deflect incoming attacks. The first time a hostile creature comes within 5 feet of the sword, the sword makes a melee spell attack against that creature. On a hit, the target takes force damage equal to 3d10 + your spellcasting ability modifier. The sword cannot attack again until you command it again</li>
+                <li><strong><em>Whirl:</em></strong> The sword moves up to 20 feet toward a point and then begins to spin in a deadly whirl. A creature that starts in the sword’s space or passes within 5 feet of the sword on its turn must succeed on a Dexterity saving throw or take 3d10 force damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">7</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Arctic Aura" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ARCTIC_AURA">
+        <supports>Druid, Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>For the duration you unleash a freezing aura. Any creature starting its turn within 20 feet of you must make a Constitution saving throw. On a failure, it takes 2d8 cold damage and its speed is reduced to 0 until the start of its next turn. On a success, a creature takes half as much damage and its speed halved.</p>
+            <p class="indent">As a bonus action on each of your turns for the duration, you can actively control the aura, excluding a number of creatures in the area up to your spellcasting modifier from the effects until the end of your next turn.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (20-foot radius)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Arctic Breath" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ARCTIC_BREATH">
+        <supports>Druid, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>A line of freezing arctic wind 30 feet long and 5 feet wide blasts out from you in a direction of your choice. Each creature in the line must make a Dexterity saving throw. On a failure, a creature takes 2d8 cold damage and its speed is reduced by 10 feet until the end of its next turn. On a success, a creature takes half as much damage and isn't slowed.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold, slow</set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Avalanche" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_AVALANCHE">
+        <supports>Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You cause the earth to ripple, triggering an avalanche of rock and stone to surge forward in a line 60 feet long and 15 feet wide. The length of the line is doubled if cast on a steeply sloped surface. Each creature caught in the surging tumble of rocks must make a Dexterity saving throw. On a failure, a creature takes 6d10 bludgeoning damage and is knocked prone. On a failure by 5 or more, it is stunned until the end of its next turn, and on a failure by 10 or more it is moved to the closest free space at the end of the line created by the spell. On a successful save, a creature takes half as much damage and suffers none of the spell’s other effects.</p>
+            <p class="indent">The spell creates a 15 by 15 foot area of difficult terrain at the end of the line created by the spell.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d10 for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">6</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (60-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Awaken Rope" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_AWAKEN_ROPE">
+        <supports>Bard, Inventor, Occultist, Ranger, Wizard</supports>
+        <description>
+            <p>As an action, you can touch a rope of 10 to 60 feet in length and issue it a single command, selecting from the following options.</p>
+            <ul>
+                <li><strong><em>Bind.</em></strong> The rope attempts to bind a creature of your choice within 20 feet of you. The creature must make a Dexterity saving throw or become restrained until it is freed. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the rope (AC 10) also frees the creature without harming it, ending the effect and destroying the rope.</li>
+                <li><strong><em>Fasten.</em></strong> The rope flies up 60 feet and ties one end of itself to an object or surface that a rope could be tied to, before becoming inanimate again, hanging from the object.</li>
+                <li><strong><em>Grab.</em></strong> The rope lashes out at an object within its length and grabs one Small or smaller object that is not being worn by a creature, pulling it back to your hand. If the object is being carried by a creature, the creature can make a Strength saving throw. On a success, the object is not pulled.</li>
+            </ul>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, you can target a chain instead of a rope. It has the same available actions, but it has a DC 15, an AC of 15, and resistance to slashing damage when taking the Bind action.</p>
+            <p class="indent">When cast with a spell slot of 3rd level or higher targeting a rope, that rope is magically imbued for 1 minute, gaining an DC of 15, an AC 20, and 20 hit points.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">10 to 60 feet of cord or rope, worth at least 1 cp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
