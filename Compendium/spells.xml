@@ -48,6 +48,243 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Acidic Pit" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ACIDIC_PIT">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You open a pit filled with acid at a point within range. Each creature within 10 feet of the point must make a Dexterity saving throw. On a failure, it falls 5 feet into a pit of acid below, taking 6d4 + 6 acid damage. On a success, a creature takes half as much damage from the flooding acid and can use its reaction to move up to its movement speed to the closest point outside of the area. If it cannot take a reaction or reach a safe space, it automatically fails its saving throw.</p>
+            <p class="indent">When a creature ends its turn in the pit, it takes 2d4 acid damage. The acid in the pit remains potent for 1 minute, after which it turns to vile sludge that deals no further damage. The pit remains filled with sludge until filled or cleared.</p>
+        </description>
+        <setters>
+            <set name="keywords">acid</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Aero Barrage" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_AERO_BARRAGE">
+        <supports>Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You create four lances of rapidly spinning condensed wind and hurl them at targets within range. You can direct the lances at one target or different ones.</p>
+            <p class="indent">Make a ranged spell attack for each lance. On a hit, the target takes 2d8 slashing damage and is knocked 10 feet backwards.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you cast this spell using a spell slot of 5th level or higher, you create one additional lance for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">slashing</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Aether Lance" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_AETHER_LANCE">
+        <supports>Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You gather raw aether in your hand and expel it in a lance of power, forming a line 30 feet long and 5 feet wide. Each creature in the line takes 8d4 force damage.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Aether Storm" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_AETHER_STORM">
+        <supports>Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You conjure a storm of aether, erupting from a point of your choice within range. The aether storm fills a 10-foot radius, 40-foot-high cylinder. When the storm appears, each creature within its area takes 8d4 force damage. When a creature enters the storm or moves within it, it takes 2d4 force damage for every 5 feet it travels, and whenever a creature ends its turn in the storm it takes an additional 8d4 force damage.</p>
+            <p class="indent">As a bonus action on your subsequent turns, you can move the storm up to 15 feet in any direction and cause it to fling forth a hail of force bolts that seek out up to 3 targets of your choice within 15 feet of the storm. Each target takes 3d4 + 3 force damage from the bolts.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you cast this spell using a spell slot of 6th level or higher, the damage dealt when the storm is cast, when a creature ends its turn in the storm, or when a creature is struck by a force bolt increases by 1d4 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Alacrity" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ALACRITY">
+        <supports>Bard, Occultist, Ranger, Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>Until the start of your next turn, your speed is doubled, you gain a +2 bonus to AC, you have advantage on Dexterity saving throws, and you gain an additional action. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
+            <p class="indent">If you are under the effect of haste, you gain no benefit from this spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Aldricor's Elemental Rebuke" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ALDRICORS_ELEMENTAL_REBUKE">
+        <supports>Druid, Ranger, Occultist, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You manipulate some of the incoming elemental energy, harnessing its power in your hand. The damage you take from the triggering attack or effect is cut in half. You can then hurl the energy back at the creature that damaged you if it is within 60 feet of you. The creature must make a Dexterity saving throw, taking 1d8 damage of the triggering type on a failed save, or half as much damage on a successful one.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">reaction</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 reaction, which you take when you take acid, cold, fire, lightning, or thunder damage</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Angelic Slash" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ANGELIC_SLASH">
+        <supports>Cleric, Paladin, Spell Saving Throw</supports>
+        <description>
+            <p>You summon a giant spectral angel that appears around you before crashing its greatsword down in a line. All creatures in a line 30 feet long and 5 feet wide in a direction of your choice must make a Dexterity saving throw. A target takes 5d8 radiant damage on a failed save, or half as much damage on a successful one. A creature takes an additional 1d8 damage if it is undead or a fiend.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Animate Shadow" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ANIMATE_SHADOW">
+        <supports>Occultist</supports>
+        <description>
+            <p>Targeting a creature you can see within range, you bring its shadow to life under your control. If the creature has a challenge rating above 3 or has no shadow (either due to its nature or from the lack of a light source to cast one) the spell fails. Creatures without a challenge rating are immune to this spell.</p>
+            <p class="indent">Otherwise, a copy of the creature is created using its game statistics in a space adjacent to the creature (on the opposite side as the nearest bright light). The shadow has no legendary actions, legendary resistance, and cannot cast spells. The shadow has hit points equal to half the target’s hit points, and it looks like a mirrored version of the creature it was summoned from, formed from inky black smoke. The shadow is resistant to bludgeoning, piercing, and slashing damage from non-magical sources while in darkness. The shadow is vulnerable to all damage while in bright light, and always vulnerable to fire, lightning, and radiant damage. If the shadow is killed, the target creature it was summoned from casts no shadows for the next 8 hours.</p>
+            <p class="indent">The shadow acts immediately after the target's turn, and without further direction it attempts to follow and takes the Attack action against the target. As a reaction to the shadow starting its turn, you can exert control over it and cause it to move and take its action as you direct.</p>
+            <p class="indent"><strong><i>At Higher Levels. </i></strong>When you cast this spell using a 5th- or 6th-level spell slot, the maximum challenge rating of the target increases to 4. When you cast it using a 7th- or 8th-level spell slot, the maximum challenge rating increases to 5. When you cast it using a 9th-level spell slot, the maximum challenge rating increases to CR 6.</p>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">3</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a smoked stained mirror</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Anvil Drop" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ANVIL_DROP">
+        <supports>Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure an anvil 500 feet above a point you can see. At initiative count 0 (losing ties) on the next round, the anvil hits the ground. Each creature within 5 feet of the target point must make a Dexterity saving throw. On a success, it moves to the closest unoccupied space outside of the radius. If no space is available or a creature cannot move, it automatically fails. On a failure, a creature takes 10d10 + 10 bludgeoning damage. Creatures within 20 feet of the target point take 4d4 thunder damage.</p>
+            <p class="indent">If the path of the anvil (directly above the target point) is interrupted, the creature or object above it is hit first. If the creature or object is killed or destroyed, the anvil continues, though the damage dealt is subtracted from the final impact damage of the anvil.</p>
+            <p class="indent">If the anvil deals less than 80 damage, the anvil survives the impact, and is an anvil of moderate quality.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When cast with a 9th-level spell slot, the range of the spell becomes 120 miles, though you must still be able to see the target (such as via scrying).</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Arcane Ablation" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ARCANE_ABLATION">
+        <supports>Inventor, Spellblade</supports>
+        <description>
+            <p>You touch a piece of worn armor or clothing and imbue it with magic. For the duration, the wearer gains 4 temporary hit points. If these temporary hit points are exhausted, the creature gains 1 fewer temporary hit points at the start of its next turn. When the temporary hit points would reach 0, the spell ends. Temporary hit points gained from this spell are lost when the spell ends.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> The initial temporary hit points increase by 1 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">temporary hit points</set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Arcane Conduit" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ARCANE_CONDUIT">
+        <supports>Sorcerer</supports>
+        <description>
+            <p>You tap directly into the arcane weave. For the duration, you have resistance to all damage from magical sources besides force damage.</p>
+            <p class="indent">At the start of each of your turns while tapped into this power, you and all creatures with 5 feet of you take 1d6 Force damage. The damage increases by 1d6 each turn to a maximum of 4d6 damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
