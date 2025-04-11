@@ -196,17 +196,126 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
         </rules>
     </element>
-</elements>
-
-<!-- 
-<element name="Rite Name" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITE NAME">
+    <element name="Occult Sight" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_SIGHT">
         <supports>Occult-Rite</supports>
         <description>
-            <p></p>
+            <p>You gain the ability to see invisible creatures within 30 feet if those creatures are undead or fey. You gain advantage on Wisdom (Perception) checks to detect creatures made of or animated by magic (such as constructs, elementals, or undead).</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to see invisible creatures within 30 feet if those creatures are undead or fey. You gain advantage on Wisdom (Perception) checks to detect creatures made of or animated by magic (such as constructs, elementals, or undead).</description>
+        </sheet>
+    </element>
+    <element name="Protective Ward" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_PROTECTIVE_WARD">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You make a ward against supernatural harm. While you wear this charm, you can use it to cast protection from evil and good without expending a spell slot, material components, or requiring concentration, but the spell lasts a number of rounds equal to your Wisdom modifier. You can cast this as a reaction to being attacked or making a save it would affect, but when you do so it only lasts until the start of your next turn.</p>
+            <p class="indent">Once you use this charm, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You make a ward against supernatural harm. While you wear this charm, you can use it to cast protection from evil and good without expending a spell slot, material components, or requiring concentration, but the spell lasts a {{wisdom:modifier}} rounds. You can cast this as a reaction to being attacked or making a save it would affect, but when you do so it only lasts until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Rite of Immortality" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITE_OF_IMMORTALITY">
+        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:15]</requirements>
+        <description>
+            <p>You continue to age, but you will no longer die of old age, and suffer none of the frailty of old age.</p>
+        </description>
+        <sheet>
+            <description>You continue to age, but you will no longer die of old age, and suffer none of the frailty of old age.</description>
+        </sheet>
+    </element>
+    <element name="Rite of Youth" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITE_OF_YOUTH">
+        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:15]</requirements>
+        <description>
+            <p>You cease to visually age, and can even choose to become more youthful in appearance, though your lifespan remains the natural lifespan of your race.</p>
+        </description>
+        <sheet>
+            <description>You cease to visually age, and can even choose to become more youthful in appearance, though your lifespan remains the natural lifespan of your race.</description>
+        </sheet>
+    </element>
+    <element name="Root of Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ROOT_OF_MAGIC">
+        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:15]</requirements>
+        <description>
+            <p>You learn 10 cantrips from any class lists of your choice. They are Occultist spells for you.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Spell" supports="0" number="10" spellcasting="Occultist" />
+        </rules>
     </element>
-    
-    -->
+    <element name="Spacial Storage" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SPACIAL_STORAGE">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You can convert a pocket, ring, hat, or bag into a spatial storage device, capable of carrying up to 5 x your Occultist level pounds, with 0.5 x your Occultist level cubic feet of storage space. For example, a level 5 Occultist can store up to 25 pounds, not exceeding a volume of 2.5 cubic feet, within the storage space. As an action, you can send an item you are holding into the storage space or retrieve an item from the storage space to your hand.</p>
+            <p class="indent">If lost, you can recreate the spatial storage device during a short rest.</p>
+        </description>
+        <sheet>
+            <description>You can convert a pocket, ring, hat, or bag into a spatial storage device, capable of carrying up to {{5xoccultist}} pounds, with {{level:occultist:half}} cubic feet of storage space. As an action, you can send an item you are holding into the storage space or retrieve an item from the storage space to your hand.
+            If lost, you can recreate the spatial storage device during a short rest.</description>
+        </sheet>
+        <rules>
+            <stat name="5xoccultist" value="level:occultist" bonus="base"/>
+            <stat name="5xoccultist" value="level:occultist" />
+            <stat name="5xoccultist" value="level:occultist" />
+            <stat name="5xoccultist" value="level:occultist" />
+            <stat name="5xoccultist" value="level:occultist" />
+        </rules>
+    </element>
+    <element name="Specialized Poisons" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SPECIALIZED_POISONS">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>When you deal poison damage with an Occultist spell or created poison, you can (but don’t have to) specify a creature type (such as beast or monstrosity) it is created to affect. Damage from that spell or poison ignores resistance and immunity to poison damage by creatures of that type. Creatures without the selected creature type have resistance to poison damage from the spell effect or poison.</p>
+        </description>
+        <sheet>
+            <description>When you deal poison damage with an Occultist spell or created poison, you can (but don’t have to) specify a creature type (such as beast or monstrosity) it is created to affect. Damage from that spell or poison ignores resistance and immunity to poison damage by creatures of that type. Creatures without the selected creature type have resistance to poison damage from the spell effect or poison.</description>
+        </sheet>
+    </element>
+    <element name="Spirit Sense" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SPIRIT_SENSE">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You gain the ability to gaze into the spiritual world around you. As an action, you can gain a special form of sight that lasts 1 minute. While under the effect of this special sight, you are blind beyond 30 feet, but within 30 feet you can see into the ethereal plane. Within this sight range you have advantage on ability checks and saving throws to detect and see through illusions, see invisible creatures, and perceive the original form of a shapechanger or transformed creature.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can gain a special form of sight that lasts 1 minute. While under the effect of this special sight, you are blind beyond 30 feet, but within 30 feet you can see into the ethereal plane. Within this sight range you have advantage on ability checks and saving throws to detect and see through illusions, see invisible creatures, and perceive the original form of a shapechanger or transformed creature.</description>
+        </sheet>
+    </element>
+    <element name="Soulburn" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SOULBURN">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You can make your powers sear the very soul of the creature they strike. When you deal cold, fire or lightning damage, you can choose to deal necrotic damage instead.</p>
+        </description>
+        <sheet>
+            <description>When you deal cold, fire or lightning damage, you can choose to deal necrotic damage instead.</description>
+        </sheet>
+    </element>
+    <element name="Sympathetic Bond" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SYMPATHETIC_BOND">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You learn the warding bond spell. It is an Occultist spell for you, but does not count against your spells known.</p>
+            <p class="indent">When you cast warding bond, you can choose to increase the power of the bond. When you do so, if either bonded creature makes an Intelligence, Wisdom, or Charisma saving throw, both creatures make the save. If either succeeds on the saving throw, both succeed, but if both fail, both are affected by the condition being saved against, even if only one was targeted. If both creatures are saving against the same effect, they do not roll twice, but both succeed if either succeeds on the saving throws and only fail if both fail the saving throw.</p>
+        </description>
+        <sheet>
+            <description>When you cast warding bond, you can choose to increase the power of the bond. When you do so, if either bonded creature makes an Intelligence, Wisdom, or Charisma saving throw, both creatures make the save. If either succeeds on the saving throw, both succeed, but if both fail, both are affected by the condition being saved against, even if only one was targeted. If both creatures are saving against the same effect, they do not roll twice, but both succeed if either succeeds on the saving throws and only fail if both fail the saving throw.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" spellcasting="Occultist" prepared="true" />
+        </rules>
+    </element>
+    <element name="Vestiments of War" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_VESTIMENTS_OF_WAR">
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You gain proficiency with medium armor.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+        </rules>
+    </element>
+</elements>
