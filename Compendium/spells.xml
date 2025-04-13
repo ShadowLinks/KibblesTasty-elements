@@ -410,7 +410,7 @@
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="level">level</set>
+            <set name="level">1</set>
             <set name="school">Transmutation</set>
             <set name="time">1 action</set>
             <set name="range">Touch</set>
@@ -951,6 +951,315 @@
             <set name="hasMaterialComponent">true</set>
             <set name="materialComponent">a piece of ammunition or a weapon worth at least 1 cp</set>
             <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Carnivorous Garden" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CARNIVOROUS_GARDEN">
+        <supports>Druid</supports>
+        <description>
+            <p>You summon clinging plant growth in four 15-foot squares you can see within range, and a snarling carnivorous plant in the central space of each area. Each 15-foot square is difficult terrain. When you cast the spell, each plant makes one attack against a creature of your choice within 5 feet of it. The plants make melee spell attacks with your spell attack modifier, dealing 2d8 piercing damage on hit.</p>
+            <p class="indent">If a creature ends its turn within 5 feet of one or more of the carnivorous plants, the plants automatically attack that creature unless you use your reaction to prevent them from doing so.</p>
+            <p class="indent">The plants have AC 14 and 30 hit points, and have vulnerability to fire and slashing damage. Each plant regains all its hit points at the start of your turn if it has at least 1 hit point, and dies if it is reduced to zero hit points. When the spell ends, the difficult terrain disappears, except where the plants themselves were. This difficult terrain also disappears if the plant was killed with fire damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, you can summon 1 additional carnivorous plant for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a dried carnivorous plant</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Chromatic Breath" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CHROMATIC_BREATH">
+        <supports>Occultist, Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You touch a willing creature that has a mouth and can breathe, imbuing it with the power to expel elemental energy. When you cast the spell, select one of the following damage types: acid, cold, fire, lightning, or poison. Until the spell ends, the target can use its action to exhale a powerful elemental gust in a 15-foot cone. Each creature in that cone must make a Dexterity saving throw. On a failure, a creature takes 3d6 damage of the selected type. On a success, it takes half as much damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a fragment of a dragon’s scale</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Chrono Conjunction" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CHRONO_CONJUNCTION">
+        <supports>Occultist, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>As a reaction to a creature rolling a save, ability check, or attack roll, you search all possible timelines and merge the outcome you desire with reality. Select a value from 1 to 20 as the outcome of the roll. An unwilling creature can attempt to resist by making a Charisma saving throw; on a success, the spell has no effect.</p>
+            <p class="indent">Once you cast this spell, you cannot cast it again until 24 hours have passed.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 reaction, which you take when a creature you can see within 60 feet rolls a save, ability check, or attack roll.</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the past or future</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Clay Touch" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CLAY_TOUCH">
+        <supports>Druid, Inventor, Occultist, Ranger, Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You reach to a creature within range and attempt to turn its armor to soft clay. The target must make a Dexterity saving throw. On a failure, the target’s armor (including natural or magical defenses) becomes soft and malleable, though retaining its form, and provides no protection against attacks, reducing the target’s AC to 10 + its Dexterity modifier for the duration.</p>
+            <p class="indent">Alternatively, you can touch a nonmagical object that isn’t being worn or carried and is no larger than 2 feet in any dimension, reducing its AC and the DCs of any Strength checks to damage it to 5 for the duration of the spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">compona small clump of clayent</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cold Snap" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_COLD_SNAP">
+        <supports>Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>With a snap of your fingers, a swirling burst of freezing wind erupts at a point you choose within range. Each creature in a 5-foot-radius sphere centered must make a Constitution saving throw. On a failure, a creature takes 3d8 cold damage and becomes coated in ice, reducing its speed by 10 feet until the start of your next turn. On a success, it takes half as much damage and is not slowed.</p>
+            <p class="indent">The ground in the area is covered with slick ice and snow, making it difficult terrain until the start of your next turn.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">90 ft (5-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Commandment" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_COMMANDMENT">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p>You issue a divine order to another creature you can see within range that can hear and understand you, invoking divine authority to compel them. If the target intentionally violates the issued order, it takes 4d6 radiant damage. Once a creature takes damage this way, they cannot take damage again from it until the start of your next turn.</p>
+            <p class="indent">Some examples of orders you can issue would include ordering the target not to attack, not to move, or not to breathe. If you issue an impossible order, the spell ends immediately.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">4</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Crackle" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CRACKLE">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You create three arcs of lightning striking targets in range. You can direct them at one target or several. Make a ranged spell attack for each arc. On a hit, a target takes 1d12 lightning damage. If three or more arcs hit a single target, it must make a Constitution saving throw or become shocked, stunning it until the start of its next turn.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, you create one additional arc for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Crashing Wave" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CRASHING_WAVE">
+        <supports>Druid, Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>A wave of water sweeps out from you. Each creature in a 15-foot cone must make a Strength saving throw. On a failed save, a creature takes 2d6 bludgeoning damage and is knocked 10 feet away from you. If a creature is knocked into a wall, another creature, or fails by 5 or more, it is additionally knocked prone. On a successful save, the creature takes half as much damage and is not knocked back. If there is a source of water of at least 5 cubic feet within 5 feet of you when you cast the spell, you can displace that water, increasing the range of the spell to a 30 foot cone.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell lot of 2nd level or higher, the damage increases by 1d6 for each level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (15-foot cone)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Create Pit" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CREATE_PIT">
+        <supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You choose a 10-foot square area on the ground in an area of dirt or natural stone you can see. The ground buckles and opens into a 10-foot deep pit. If the surface is not large enough to contain the pit, the spell fails. Each creature in the area must make a Dexterity saving throw. On a success, a creature jumps to a space 5 feet outside the spell's radius. On a failure, a creature falls to the bottom of the pit (taking normal falling damage). The sides of the pit are rough, and can be climbed. A creature that saves but cannot locate an empty space to move to falls prone, hanging from the edge of the pit, and cannot stand until it moves out of the pit area or drops into it. The pit remains until filled.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the pit is 5 feet deeper for each slot level above 1st, to a maximum of 20 feet deep.</p>
+            <p class="indent">The spell may fail if the pit would breach another opening (such as a room or cavern below), as that would be failing to contain the pit. The GM has wide discretion on what surfaces are valid targets for this spell.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet (10-foot square)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Crescent Wind Slash" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CRESCENT_WIND_SLASH">
+        <supports>Bard, Ranger, Spellblade, Sorcerer, Wizard</supports>
+        <description>
+            <p>You make a series of three slashes, each one magically releasing a razor-sharp blast of wind at a target within range. You can launch them at one target or several.</p>
+            <p class="indent">Make a weapon attack with the weapon used in the casting of this spell for each slash. On hit, the target takes slashing damage equal to 1d6 + the ability modifier used for the attack.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, you can create one additional slash for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">slashing</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a melee weapon worth at least 1 sp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Crippling Agony" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CRIPPLING_AGONY">
+        <supports>Occultist, Spellblade, Spell Saving Throw</supports>
+        <description>
+            <p>You can inflict crippling agony on one creature you can see within range. The target must succeed on a Constitution saving throw or become crippled with horrific pain. Whenever the target moves more than half of its speed or takes any action, it takes 1d6 necrotic damage.</p>
+            <p class="indent">The target can repeat the saving throw, ending the spell on a success.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a joint bone</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cruel Puppetry" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CRUEL_PUPPETRY">
+        <supports>Occultist, Spell Saving Throw</supports>
+        <description>
+            <p>You attempt to bind a creature's soul to a doll, forging a sympathetic link between the two. The target must make a Charisma saving throw. On a failure, the creature becomes bound to the doll. On a success, the creature is not bound and the spell ends.</p>
+            <p class="indent">When a target first fails its save and as an action on subsequent turns for the duration, you can perform one of the following actions:</p>
+            <ul>
+                <li><strong><em>Restrain.</em></strong> Hold the doll still, causing the creature to be restrained until start of your next turn.</li>
+                <li><strong><em>Move.</em></strong> Force the doll to move, causing the creature to move 15 feet in a direction of your choice it is able to move.</li>
+                <li><strong><em>Attack.</em></strong> Force the doll to swing its arm, causing the creature to make a melee weapon attack against a creature of your choice within its reach.</li>
+                <li><strong><em>Stab!</em></strong> Stab the doll, dealing 4d6 piercing damage to the target.</li>
+                <li><strong><em>Rip!</em></strong> Rip the doll in half, dealing 4d12 necrotic damage to the target, destroying the doll, and ending the spell.</li>
+            </ul>
+            <p class="indent">Each time you use your action to manipulate the doll, the target can repeat its saving throw afterward at disadvantage. On a success, the spell ends. Once a creature has been targeted by this spell, it cannot be targeted again for 24 hours.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When cast with a spell slot of 5th level or higher, the range of the spell becomes unlimited, as long as the target is on the same plane as the caster.</p>
+        </description>
+        <setters>
+            <set name="keywords">piercing, necrotic, restrained</set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small humanoid doll worth at least 5 gp and something from the target creature—such as blood, hair, or scales—both of which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Crushing Singularity" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CRUSHING_SINGULARITY">
+        <supports> Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create an overwhelming gravitational singularity at a point within range, lasting until the start of your next turn. When you cast this spell, each creature within 15 feet of the point must make a Strength saving throw. On a failure, a creature is pulled to the closest available space adjacent to the singularity and takes 6d6 bludgeoning damage. On a success, it takes half damage and is not pulled.</p>
+            <p class="indent">While within 15 feet of the singularity, any attempt to move away costs twice as much movement. If a creature ends its turn within 15 feet of the singularity, it must make a Strength saving throw. On a failure, it takes 2d6 bludgeoning damage and is dragged back to the closest available spot adjacent to the singularity.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell lot of 4th level or higher, the damage increases by 1d6 for each level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Curse of Impotence" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_CURSE_OF_IMPOTENCE">
+        <supports>Occultist, Spell Saving Throw</supports>
+        <description>
+            <p>You curse a target creature, causing an overwhelming sense of powerlessness to wash over it. Any time it attempts any action which would deal damage, it must make a Wisdom saving throw. On a success, it takes action as normal. On a failure, it completes the action, but the action deals no damage to any targets.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
