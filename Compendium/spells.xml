@@ -1877,6 +1877,70 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Fall" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_FALL">
+        <supports>Inventor, Sorcerer, Wizard</supports>
+        <description>
+            <p>You alter gravity for yourself, reorienting which way is down for you until the end of your turn. You can pick any direction to fall (as if under the effect of gravity), falling up to 500 feet before the spell ends.</p>
+            <p class="indent">If you collide with something during this time, you take falling damage as normal. You can control your fall as you would normally by holding onto objects, or move along a surface according to your new orientation until your turn ends and gravity returns to normal.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Field of Stars" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_FIELD_OF_STARS">
+        <supports>Druid, Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You cause 5 star-like motes of light to spring forth at points you can see within range. Each mote of light sheds bright light in a 10-foot radius and dim light for an additional 10 feet. If a creature moves within 5 feet of a mote on a turn or ends its turn within 5 feet of one, the mote explodes in a brilliant flash, dealing 4d12 radiant damage to all creatures within 5 feet of it before fading away. If multiple motes explode at once, a creature hit by more than one only takes damage once.</p>
+            <p class="indent">For the duration of the spell, while you have any motes of light remaining, you can use your action to rearrange the remaining motes, placing them anywhere within range. This movement cannot cause them to detonate.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the range increases by 10 feet and you create one additional mote of light for each slot level about 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (60-foot radius)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Final Flame" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_FINAL_FLAME">
+        <supports>Cleric, Spell Saving Throw</supports>
+        <description>
+            <p>You place an ember of divine flame within a creature, which lies dormant until it is triggered. It activates if its carrier is reduced to 0 hit points or uses its bonus action to activate it.</p>
+            <p class="indent">When the ember is activated, it explodes, causing all creatures within 20 feet except the carrier to make a Dexterity saving throw. On a failure, a creature takes 8d6 radiant damage. On a success, it takes half as much damage. The ember's carrier regains 8d6 hit points.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant, heal</set>
+            <set name="level">6</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a phoenix's feather</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
