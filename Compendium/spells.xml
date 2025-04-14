@@ -1597,7 +1597,286 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    
+    <element name="Earth Ripple" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_EARTH_RIPPLE">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You cause the earth to deform at a point you can see within range. Every creature within 10 feet must make a Dexterity saving throw. Choose one of the effects below, affecting each creature which fails its save.</p>
+            <ul>
+                <li><strong><em>Sink.</em></strong> A creature is pulled into the earth, taking 1d8 bludgeoning damage and reducing its movement speed to zero until it or another creature within 5 feet spends an action to dig it free.</li>
+                <li><strong><em>Slam.</em></strong> A creature is pushed 5 feet in a direction of your choice by a wave of earth, taking 2d8 bludgeoning damage and falling prone.</li>
+                <li><strong><em>Impale.</em></strong> A creature takes 4d8 piercing damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning, piercing</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Echoing Lance" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ECHOING_LANCE">
+        <supports>Bard, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You emit a targeted burst of intense sonic energy at a creature within range. The target must make a Constitution saving throw. On a failure, it takes 3d8 thunder damage and is stunned for the duration. On a success, it takes half as much damage and isn’t stunned.</p>
+            <p class="indent">At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends. On a failure, it takes an additional 1d8 thunder from the ongoing echoes of the sound.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the initial damage increases by 1d8 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Electric Arc" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ELECTRIC_ARC">
+        <supports>Occultist, Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You shoot a jolt of lightning at a creature you can see within range. Make a ranged spell attack against the target. On hit, the target takes 1d8 primary lightning damage and an arc of lightning jumps from the target to another creature within 15 feet, using the same attack roll, dealing 1d4 secondary lightning damage on hit.</p>
+            <p class="indent">This spell’s damage increases by 1d8 primary and 1d4 secondary damage when you reach 5th level (2d8 and 2d4), 11th level (3d8 and 3d4), and 17th level (4d8 and 4d4).</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Electrify" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ELECTRIFY">
+        <supports>Occultist, Ranger, Sorcerer, Spellblade, Wizard, Melee</supports>
+        <description>
+            <p>You channel lightning into your hands. The next time you hit a creature with a melee attack (including a melee spell attack) before the start of your next turn, the target takes 1d12 lightning damage and must make a Constitution saving throw. On a failed save, the target becomes stunned until the start of their next turn.</p>
+            <p class="indent">The spell ends after dealing damage, or at the start of your next turn, whichever occurs first.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Electrocute" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ELECTROCUTE">
+        <supports>Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>A massive arc of lightning leaps from your hand to a target you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 4d12 lightning damage and is stunned until the start of your next turn. On a successful save, the target takes half as much damage and isn’t stunned.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d12 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Elemental Barrage" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ELEMENTAL_BARRAGE">
+        <supports>Ranger, Spellblade</supports>
+        <description>
+            <p>You touch of piece of ammunition and infuse it with chaotic elemental power. If that piece of ammunition is fired before the start of your next turn, it transforms into three elemental bolts, one each dealing fire, cold, and lightning damage.</p>
+            <p class="indent">Make a weapon attack roll for each elemental bolt. You can fire all three at the same target or at different targets within the weapon's range. On a hit, each bolt deals elemental damage equal to the attack's normal damage, but of its elemental damage type.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire, cold, lightning</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of ammunition</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Elemental Exhalation" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ELEMENTAL_EXHALATION">
+        <supports>Occultist, Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You gather elemental power in your lungs, selecting one damage type out of acid, cold, fire, lightning, or poison, and then exhale it in a mighty gust of energy. Each creature in a 20-foot cone must make a Dexterity saving throw. On a failed save, a creature takes 3d8 damage of the chosen type, or half as much damage on a successful save.</p>
+            <p class="indent">If you cannot breathe, have no mouth, or your mouth is currently covered, the spell fails.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">acid, cold, fire, lighting, poison</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">20 foot cone</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a fragment of a dragon’s scale</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Elemental Orb" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ELEMENTAL_ORB">
+        <supports>Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You form an orb of power, molding it into an element of your choice. Select one damage type from acid, cold, fire, lightning, or poison. Make a ranged spell attack against a target you can see within range. On hit, the target takes 3d8 damage of the selected damage type.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">acid, cold, fire, lightning, poison</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Entomb" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ENTOMB">
+        <supports>Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You attempt to encase a Medium or smaller creature you can see within ice. The target must succeed on a Strength saving throw or become restrained in ice for the duration. At the end of each of its turns, it takes 1d8 cold damage and can make another Strength saving throw. On success, the spell ends.</p>
+            <p class="indent">If the creature suffers an instance of at least 5 fire or bludgeoning damage while restrained, the ice breaks and the target is freed, ending the spell.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold</set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Ethereal Immolation" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ETHEREAL_IMMOLATION">
+        <supports>Occultist, Sorcerer, Spellblade</supports>
+        <description>
+            <p>You shroud a target in a luminous ethereal shroud which reacts violently to the presence of magic. For the duration, if the target casts a spell, it takes 2d4 force damage. This damage increases by 1d4 for each spell level of the spell cast (no additional damage for cantrips).</p>
+            <p class="indent">Additionally, if the target ends its turn while concentrating on a spell, it takes 1d4 force damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Erode" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ERODE">
+        <supports>Occultist, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You blast a creature or object within range with a glob of acid. The target must make a Dexterity saving throw. On a failure, it takes 8d4 acid damage immediately and is covered in acid. On a success, the target takes half as much damage and is not covered in acid. While covered in acid, the target takes 2d4 acid damage at the end of each of its turns. The target or a creature within 5 feet of it can end this damage by using its action to clear away the acid.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">acid</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">20 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Eyes of Immolation" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_EYES_OF_IMMOLATION">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>Your eyes glow with fiery light before focusing on a creature you can see within range, causing a beam of fire to shoot from your eyes. The target creature must make a Dexterity saving throw. On a failed save, it takes 3d6 fire damage and is set ablaze, taking 1d6 damage at the end of each of its turns until it or another creature within 5 feet of it spends an action to douse the flames. On a successful save, the creature takes half as much damage and is not set ablaze.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d6 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Explosive Deflection" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_EXPLOSIVE_DEFLECTION">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>You release an explosive blast of energy to deflect an attack. Roll 2d6 and reduce the attack's damage by the result. If the attack's damage was reduced to 0, and it was a melee attack, the attacker takes the remainder of your dice roll as thunder damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the dice rolled increase by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 reaction, which you take when you are hit by an attack</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of black powder</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
