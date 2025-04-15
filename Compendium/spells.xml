@@ -2517,6 +2517,116 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Heavenly Ray" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_HEAVENLY_RAY">
+        <supports>Cleric</supports>
+        <description>
+            <p>A golden pillar of celestial radiance shines down in a 10-foot radius, 60-foot-high cylinder centered on a point you can see within range. Until the spell ends, the cylinder is filled with bright light and sheds dim light for 10 feet in all directions from it.</p>
+            <p class="indent">When a creature enters the spell’s area for the first time on a turn or starts its turn there, the celestial radiance infuses its body with positive energy. If the creature is not an undead or construct, it regains 2d8 hit points and gains 2d8 temporary hit points. If it is a construct, the light has no effect. If it is undead, it instead takes 2d8 radiant damage.</p>
+            <p class="indent">The first time a creature is healed by this spell, it is healed without restriction; every subsequent time a creature is healed by this spell, it can't be healed above half its maximum hit points.</p>
+            <p class="indent">As a bonus action, you can move the pillar up to 60 feet in any direction.</p>
+        </description>
+        <setters>
+            <set name="keywords">heal, radiant</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Heavy Blow" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_HEAVY_BLOW">
+        <supports>Druid, Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You impart great heft to an unarmed strike or weapon you are holding. The first time you hit with a melee weapon attack using that weapon before the start of your next turn, your blow strikes with great force, and the attack deals an extra 1d10 bludgeoning damage to the target and must succeed a Constitution saving throw, or becomes dazed until the start of its next turn. While dazed this way, it cannot take reactions, and attacks against it have advantage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a weapon or unarmed strike that does bludgeoning damage</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Hellfire Pit" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_HELLFIRE_PIT">
+        <supports>Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You open a pit to hell beneath the feet of your foes. A supernatural void opens in a 10-foot radius, 10-foot deep pit opens around a point you can see within range.</p>
+            <p class="indent">Creatures in the area must make a Dexterity saving throw. On success, they can move 5 feet outside the radius of the spell. If they cannot move 5 feet out of the radius of the spell (such as having no path or insufficient movement speed), they automatically fail the saving throw. Creatures that fall their saving throw fall to the bottom of the bit (taking 1d6 bludgeoning damage and falling prone). The floor of the pit is a blazing inferno of hell. Creatures that start their turn in the pit take 4d6 fire damage and 4d6 necrotic damage.</p>
+            <p class="indent">The pit is difficult to escape, voraciously drawing creatures caught in to the depths of hell with strong winds, roaring fires, and infernal chains. A creature can spend 20 feet of movement (or 10 if they a flying or climbing speed) to attempt to escape the pit, making a Strength saving throw against your spell save DC. On success, they escape. On failure, fall back to the floor of the pit and their movement speed becomes 0 until the start of their next turn.</p>
+            <p class="indent">When the spell ends, the supernatural void to hell closes, and all creatures in the pit are deposited on the ground where the pit opened prone.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire, bludgeoning</set>
+            <set name="level">7</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Hungering Void" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_HUNGERING_VOID">
+        <supports>Occultist, Warlock, Spellblade Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You gesture at a point you can see within range and summon a 20-foot radius sphere of blackness, a void of magical darkness which attempts to devour whatever enters. Darkvision cannot penetrate it, and no light can illuminate the darkness unless caused by a spell of a higher level.</p>
+            <p class="indent">A creature that starts its turn within the void must make a Constitution saving throw. On a failure, it takes 2d6 cold damage and 2d6 necrotic damage, and its speed is reduced by 5 feet to a minimum of 5 feet. This speed reduction stacks with successive failures, and ends once the creature starts its turn outside the void. On a success, the creature takes half as much damage and its speed is not reduced.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the necrotic and cold damage both increase by 1d6, and the speed reduction increases to 10 feet for each failed save.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold, necrotic</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Hurricane Slash" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_HURRICANE_SLASH">
+        <supports>Druid, Ranger, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You condense wind into a razor sharp blast that shreds a 30-foot-long 5-foot-wide line. Creatures in the area must make a Dexterity saving throw. A creature takes 3d8 slashing damage on a failed save or half as much on a success.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, you can create an additional line of effect. A creature in the area of more than one slash is affected only once.</p>
+        </description>
+        <setters>
+            <set name="keywords">slashing</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
@@ -2540,4 +2650,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+
+<p class="indent"><strong><em></em></strong></p>
+    
     -->
