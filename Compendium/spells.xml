@@ -3067,6 +3067,72 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Lightning Charged" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_LIGHTNING_CHARGED">
+        <supports>Inventor</supports>
+        <description>
+            <p>You charge a creature you touch with sparking electricity, causing it no damage but making its touch dangerous for others. Every time the target hits another creature with a melee attack or a spell with a range of touch, is hit with a melee attack by another creature, or ends its turn while grappling or being grappled by another creature, the other creature takes 1d6 lightning damage.</p>
+            <p class="indent">Once this spell has discharged 6 times (dealing up to 6d6 damage), the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the spell can discharge 2 additional times (dealing 2d6 more total damage) before the spell ends for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of metal once used in a lightning rod</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Shot" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_LIGHTNING_SHOT">
+        <supports>Ranger</supports>
+        <description>
+            <p>You touch a piece of ammunition or a weapon with the thrown property, imbuing it with crackling lightning for the duration.</p>
+            <p class="indent">The first time you attack with the empowered item, it transforms into a bolt of lightning, blasting out from you in a line 100 feet long and 5 feet wide. Make one weapon attack, applying the result against every creature in the line. This attack deals 4d8 lightning damage on a hit, and half as much damage on a miss. This damage roll doesn't add any modifiers or bonuses associated with weapon attacks. The lightning ignites flammable objects in the area that aren’t being worn or carried.</p>
+            <p class="indent">Once an attack has been made with the piece of ammunition or weapon, the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each level above 3rd, up to a maximum of 6d8 at 5th level.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of ammunition or a weapon worth at least 1 cp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Tendril" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_LIGHTNING_TENDRIL">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>Crackling beams of blue energy leap from your hands. For the duration of the spell, as an action, you can direct them toward a creature within range, dealing 1d12 lightning damage to that creature.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a 2nd- or 3rd-level spell slot, the damage increases to 2d12 and the range increases to 30 feet. When you cast it using a 4th- or 5th-level spell slot, the damage increases to 3d12 and the range increases to 60 feet. When you cast it using a spell slot of 6th level or higher, the damage increases to 4d12 and the range increases to 120 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self (20 feet)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
