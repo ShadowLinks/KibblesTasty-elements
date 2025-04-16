@@ -3024,6 +3024,49 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Karmic Reflection" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_KARMIC_REFLECTION">
+        <supports>Cleric, Occultist</supports>
+        <description>
+            <p>You place a magical binding on a creature you can see within range. Until the start of your next turn, anytime that creature deals damage with its action, bonus action, or reaction, it takes radiant damage equal to the damage dealt, up to a maximum of 10 damage. The target is aware of spell's effects. After reflecting 10 damage, spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the maximum damage increases by 10 for each spell slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a broken shard of a mirror</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Killing Curse" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_KILLING_CURSE">
+        <supports>Occultist</supports>
+        <description>
+            <p>You curse a target to die. Its current and maximum hit points are reduced by 3d10 + 10. If this causes the creature to have 0 hit points, it dies.</p>
+            <p class="indent">For the duration, the target cannot regain hit points except from a spell of a higher level than this one, and any death saving throw it rolls is automatically considered a 1.</p>
+            <p class="indent">At the start of each of the target's turns, it makes a Charisma saving throw. On a failure, its current and maximum hit points are reduced by 1d10 + 10. On a success, the spell ends. A creature’s maximum hit points are restored when it finishes a long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
