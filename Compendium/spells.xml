@@ -3133,6 +3133,370 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Manipulate Earth" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MANIPULATE_EARTH">
+        <supports>Druid, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You mold earth you can see within range, causing it to twist and buckle to your command. Select one of the following effects:</p>
+            <ul>
+                <li>You can excavate a 5-foot cube of loose dirt or soil and move it along the ground to another unoccupied space within 5 feet.</li>
+                <li>You can make minor alterations to dirt or stone, such as changing its color or carving small, simple shapes.</li>
+                <li>You can turn a 5-foot square of earth or stone into difficult terrain for 1 hour. You can create up to three patches of difficult terrain this way; if you create additional patches, the first one you created returns to normal terrain.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Varies</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Manipulate Fate" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MANIPULATE_FATE">
+        <supports>Occultist, Wizard</supports>
+        <description>
+            <p>You reach out and grasp the imperceptible threads of fate, enabling yourself to subtly manipulate them. For the duration when a creature within 60 feet of you makes an attack roll, saving throw, or ability check, you can use your reaction to tweak its fate, altering the die result. You can choose to manipulate fate after the die is rolled, but before the outcome is determined.</p>
+            <p class="indent">You can nudge the roll to your choice of adjacent faces on the die (potential outcomes listed below).</p>
+            <table>
+                <thead>
+                    <tr><td>d20</td><td>Tweaked Fates</td></tr>
+                </thead>
+                <tr><td>1</td><td>7, 13, or 19</td></tr>
+                <tr><td>2</td><td>12, 18, or 20</td></tr>
+                <tr><td>3</td><td>17, 16, or 19</td></tr>
+                <tr><td>4</td><td>11, 14, or 18</td></tr>
+                <tr><td>5</td><td>13, 15, or 18</td></tr>
+                <tr><td>6</td><td>9, 14, or 16</td></tr>
+                <tr><td>7</td><td>1, 15, or 17</td></tr>
+                <tr><td>8</td><td>10, 16, or 20</td></tr>
+                <tr><td>9</td><td>6, 11, or 19</td></tr>
+                <tr><td>10</td><td>8, 12, or 17</td></tr>
+                <tr><td>11</td><td>4, 9, or 13</td></tr>
+                <tr><td>12</td><td>2, 10, or 15</td></tr>
+                <tr><td>13</td><td>1, 5, or 11</td></tr>
+                <tr><td>14</td><td>4, 6, or 20</td></tr>
+                <tr><td>15</td><td>5, 7, or 12</td></tr>
+                <tr><td>16</td><td>3, 6, or 8</td></tr>
+                <tr><td>17</td><td>3, 7, or 10</td></tr>
+                <tr><td>18</td><td>2, 4, or 5</td></tr>
+                <tr><td>19</td><td>1, 3, or 9</td></tr>
+                <tr><td>20</td><td>2, 8, or 14</td></tr>
+            </table>
+            <p class="indent">Instead of nudging, you can instead choose to cast aside subtlety and yank the thread of fate, selecting any value on the d20 as the result. If you do so, you suffer a backlash. Roll a number of d6 equal to the difference between your selection and the original result; you take that much necrotic damage, and the spell immediately ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a spool of silk thread</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Manipulate Fire" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MANIPULATE_FIRE">
+        <supports>Druid, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You control a fire you can see within range, causing it to bend to your command. Select one of the following effects:</p>
+            <ul>
+                <li>You can grant a creature of your choice within range resistance to fire damage until the start of your next turn.</li>
+                <li>You can spark or spread fire in a 5-foot cube, as long as there is fuel that can be ignited within the area.</li>
+                <li>You can douse fire within a 5-foot cube.</li>
+                <li>You can adjust a flame's brightness (halving or doubling it), color (turning the flames to any color of your choice), or shape (forming simple shapes) within a 5-foot cube for 10 minutes.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Varies</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Manipulate Water" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MANIPULATE_WATER">
+        <supports>Druid, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You shape water you can see within range, causing it to move at to your command. Select one of the following effects:</p>
+            <ul>
+                <li>You can move or direct the flow of a 5-foot cube of water in a direction of your choice, but the water will revert back to its natural flow at the start of your next turn unless you concentrate on keeping it in place.</li>
+                <li>You can mold the water into small shapes or simple animations. This change lasts for 1 minute.</li>
+                <li>You can change the color or opacity of a 5-foot cube of water. This change lasts for 1 hour.</li>
+                <li>You can freeze up to a 5-foot cube of unoccupied water or thaw up to a 5-foot cube of ice. The water unfreezes or refreezes naturally based on the environmental conditions (usually taking an hour or more to completely melt or freeze unless in extreme conditions).</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Varies</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Manipulate Wind" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MANIPULATE_WIND">
+        <supports>Druid, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You create a small gust within range, causing the air to surge and swirl to your command. Select one of the following effects:</p>
+            <ul>
+                <li>The next ranged weapon attack against a creature of your choice within range has disadvantage.</li>
+                <li>One Large or smaller creature of your choice within range must succeed on a Strength saving throw or be pushed 5 feet or knocked prone (your choice).</li>
+                <li>You can increase the next jump made by a creature of your choice within range by 5 feet.</li>
+                <li>You manipulate the wind in a minor way, such as pushing a light object up to 10 feet, rustling plants, slamming a door, or similar effects. These aren’t powerful enough to move creatures or deal damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Martial Transformation" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MARTIAL_TRANSFORMATION">
+        <supports>Wizard</supports>
+        <description>
+            <p>You empower yourself with the physical prowess and battle knowledge of famous warriors. Until the spell ends, you can't cast spells or concentrate on them, and you gain the following benefits:</p>
+            <ul>
+                <li>You gain 50 temporary hit points for the duration.</li>
+                <li>You have advantage on all weapon attacks, and when you hit a target with a weapon attack, it takes an extra 2d12 force damage.</li>
+                <li>You have proficiency with all armor, shields, simple weapons, martial weapons, and Strength and Constitution saving throws.</li>
+                <li>You can attack twice, instead of once, when you take the Attack action on your turn, unless you already have a feature (such as Extra Attack) which gives you extra attacks.</li>
+                <li>You can conjure and equip (as part of the action used to cast the spell) any armor and any simple or martial weapon of your choice. These items have no strength requirements and are magical in nature, but otherwise have the same properties as their nonmagical counterparts. The equipment vanishes when the spell ends.</li>
+            </ul>
+            <p class="indent">Immediately after the spell ends, you must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion. You can end the spell as a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small statuette of a warrior</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Melt" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MELT">
+        <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You point at a creature or Large or smaller object that is not being worn or carried within range, and attempt to make it melt into a puddle of slag. If the target is a creature, it makes a Constitution saving throw. On a failure, it takes 10d10 fire damage. On a success, it takes half as much damage.</p>
+            <p class="indent">If the target is an object, it takes 20d10 fire damage. If this reduces it to 0 hit points, it is melted into a puddle of slag.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d10 for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">6</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Melting Glob" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MELTING_GLOB">
+        <supports>Inventor, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You hurl a glob of acid at a creature within range, making a ranged spell attack. On a hit, the target takes 4d4 acid damage, and is covered in acid. For 1 minute, it takes 1d4 acid damage at the end of each of its turns. The target or another creature within 5 feet can end the effect early by using an action to clear off the acid.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 2d4 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">acid</set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Meteor Jump" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_METEOR_JUMP">
+        <supports>Spellblade, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You drastically reduce your weight and immediately jump up to triple your maximum jump distance without spending any movement. When you reach the jump's maximum height, your weight and density are instantly increased, causing you to crash down with great force.</p>
+            <p class="indent">Every creature within 10 feet of where you land must make a Strength saving throw. On a failure, a creature takes 2d10 bludgeoning damage and is knocked prone. On a success, it takes half as much damage and is not knocked prone. You take no falling damage if the fall was less than 100 feet.</p>
+            <p class="indent">If you land directly on top of another creature that is no more than two sizes larger than you, it has disadvantage on its saving throw against the spell and is pushed to an adjacent empty space of your choice (regardless of its save result).</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mind Ray" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MIND_RAY">
+        <supports>Bard, Warlock, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You launch a ray of mental energy from your mind at the mind of another creature within range. This ray ignores cover and passes through physical barriers. The target must make a Wisdom saving throw. On a failure, it takes 2d8 psychic damage and has disadvantage on its next attack roll or ability check before the start of your next turn. On a success, it takes half as much damage and suffers no additional effects.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">psychic</set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mirror Army" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MIRROR_ARMY">
+        <supports>Bard, Occultist, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You create an illusory duplicate of every allied creature of your choice within 30 feet. Until the spell ends, the duplicates move alongside their real counterparts and mimic their actions, making it impossible to track which is real.</p>
+            <p class="indent">Each time an affected creature is attacked, roll a d20 to determine whether the attack instead targets the duplicate. On a roll of 11 or higher, the attack targets the duplicate. A duplicate's AC equals 10 + the real creature’s Dexterity modifier. If a duplicate is hit by an attack, it is destroyed. Duplicates ignore all other damage and effects, and the spell ends once all duplicates have been destroyed.</p>
+            <p class="indent">A creature is unaffected by this spell if it can’t see, if it relies on senses other than sight (such as blindsight), or if it has truesight or another means of automatically disbelieving illusions.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30 feet)</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mounting Paranoia" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MOUNTING_PARANOIA">
+        <supports>Occultist, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You shroud the mind of a creature you can see within range in shadow, twisting its view of the world. The target perceives everything beyond 15 feet as wreathed in shadow, indistinct in shape and sound. When the target attempts to target a creature wreathed in shadow with an attack or spell, it must pass a Wisdom saving throw, or it instead targets a random different target within range. When the target becomes able to see a creature that was previously wreathed in shadow, it must pass a Wisdom saving throw, or become frightened of that creature until the start of its next turn.</p>
+            <p class="indent">At the end of each of the target's turns, it makes a Wisdom saving throw. On a failure, the shadows draw 5 feet closer, closing off the distance the target can see clearly. If the target’s entire vision becomes shrouded in shadow (after its third failure), it becomes paralyzed with fear until it succeeds on this save. If the target succeeds on this saving throw, the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Multishot" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MULTISHOT">
+        <supports>Ranger</supports>
+        <description>
+            <p>You touch a piece of ammunition or a weapon with the thrown property, conjuring a shadowy duplicate superimposed over it until the end of your next turn. The first time you attack with the empowered item before the end of your next turn, select a second target within the attack's range and make a separate ranged weapon attack. On a hit, the target is struck by the duplicate item and takes 2d8 force damage. This damage roll does not add any modifiers or bonus associated to weapon attacks.</p>
+            <p class="indent">Once an attack has been made with the piece of ammunition or weapon, the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd Level or higher, you can select one additional target for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of ammunition or a weapon with the thrown property worth at least 1 cp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mutate" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_MUTATE">
+        <supports>Druid, Occultist, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You significantly shift your form, magically modifying your body to give it up to three of the following properties:</p>
+            <ul>
+                <li>You become malleable and amorphous. You gain advantage on saves and checks against becoming grappled or restrained, you do not suffer disadvantage from squeezing into smaller spaces, and you can squeeze through openings two sizes smaller than you.</li>
+                <li>You grow one additional appendage. This appendage functions as an arm and a hand, though it can take the shape of an arm, tentacle, or similar appendage.</li>
+                <li>You extend the length of your limbs, increasing the reach of your melee attacks, touch spells, and object interactions by 5 feet.</li>
+                <li>Your flesh hardens. You can calculate your AC as 14 + your Dexterity modifier</li>
+                <li>You grow more resilient, adapting against one external threat. You gain advantage on saving throws with one ability of your choice.</li>
+                <li>You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.</li>
+                <li>Your body gains a regenerating carapace. You gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns.</li>
+                <li>You can change your size by one category.</li>
+                <li>You sprout wings, gaining a flying speed of 30 feet.</li>
+                <li>You grow a natural weapon, which can have the statistics of any martial melee weapon without the thrown property, and takes on an appropriate form.</li>
+            </ul>
+            <p>You are proficient with this weapon and are considered to be wielding it. You can use your spellcasting modifier in place of your Strength modifier for attack and damage rolls with it. This natural weapon is magical and gains a +1 bonus to its attack and damage rolls.</p>
+            <p class="indent">For the duration of the spell, you can use an action to change one or all of your selections, losing the benefits of your previously selected properties and gaining the benefits of the new ones.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th or higher, you can select 1 additional property from the list of options for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">transformation</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a butterfly's chrysalis</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
