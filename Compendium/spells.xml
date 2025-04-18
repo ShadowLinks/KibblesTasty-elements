@@ -3497,6 +3497,48 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Nauseating Poison" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_NAUSEATING_POISON">
+        <supports> Druid, Occultist, Warlock, Spell Saving Throw</supports>
+        <description>
+            <p>You shroud your hand, a weapon you are holding, or a natural weapon in dark and ichorous miasma. The next time you hit a creature with a melee attack (including a melee spell attack) before the start of your next turn, the attack deals an extra 1d12 poison damage and the target must succeed on a Constitution saving throw or be poisoned until the end of your next turn.</p>
+            <p class="indent">The spell ends after dealing damage, or at the start of your next turn, whichever occurs first.</p>
+        </description>
+        <setters>
+            <set name="keywords">poison</set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Orbital Stones" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ORBITAL_STONES">
+        <supports>Druid, Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You lift three inanimate Small or Medium sized rocks or similar objects from within 10 feet of you, causing them to defy gravity and slowly circle you. With all three stones orbiting, you have three-quarters cover. With at least one stone remaining, you have half cover.</p>
+            <p class="indent">As a bonus action while at least one stone remains in orbit, you can magically fling it at a creature you can see within 60 feet. Make a ranged spell attack roll. On a hit, the target takes 3d10 bludgeoning damage and is knocked backward 5 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
