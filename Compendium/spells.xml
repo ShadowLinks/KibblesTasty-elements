@@ -3753,6 +3753,47 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Quicksand" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_QUICKSAND">
+        <supports>Druid, Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You cause the ground in a 20-foot radius centered on a point you can see to turn to quicksand for the duration of the spell. A creature moving within or out of the area must spend 4 feet of movement for every foot it moves. A creature ending its turn in the area must succeed on a Strength saving throw or fall prone.</p>
+        </description>
+        <setters>
+            <set name="keywords">prone, slow</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of sand</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Quicksilver Steps" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_QUICKSILVER_STEPS">
+        <supports>Bard, Ranger, Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You lighten your own steps with a spell of effortless quickness. For the duration of the spell, your movement does not provoke attacks of opportunity. When another creature you can see or hear ends its turn, you can move up to 10 feet (no action required). You can move in this way up to 4 times, regaining all uses at the start of your next turn. The first attack against you after each movement is made at disadvantage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the number of times you can move at the end of another creature’s turn increases by 1 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
