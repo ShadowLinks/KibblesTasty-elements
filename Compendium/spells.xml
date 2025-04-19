@@ -3529,13 +3529,227 @@
             <set name="level">4</set>
             <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
+            <set name="range">Self</set>
             <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pillar of Fire" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_PILLAR_OF_FIRE">
+        <supports>Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You summon a towering column of flame in a 5-footradius, 30-foot-high cylinder centered on a point you can see within range. Each creature in the cylinder in the must make a Dexterity saving throw. A creature takes 10d6 fire damage on a failed save, or half as much on a successful save.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Platinum Lances" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_PLATINUM_LANCES">
+        <supports>Cleric, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure four giant lances of radiant energy that plummet down at four different points you can see. Each creature in a 10-foot-radius, 100-foot-high cylinder centered on each point must make a Dexterity saving throw.</p>
+            <p class="indent">On a failed save, a creature takes 8d8 radiant damage and is knocked prone. On a successful save, it takes half as much damage and is not knocked prone. A creature in the area of more than one lance is affected only once.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d8 for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">6</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">150 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Poison Blast" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_POISON_BLAST">
+        <supports>Druid, Occultist, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You exhale a cloud of poison that magically expands to fill a 30 foot cone. Each creature in the area must make a Constitution saving throw. On a failure, it takes 4d12 poison damage and becomes poisoned until the start of its next turn. On a success, it takes half as much damage and is not poisoned.</p>
+            <p class="indent">The area is lightly obscured until the start of your turn, and any creature that ends its turn within the area takes 2d4 poison damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">poison</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Poison Dart" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_POISON_DART">
+        <supports>Occultist, Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure a dart of pure poison and hurl it at a creature you can see within range. Make a ranged spell attack. On a hit, the target takes 3d12 poison damage and must succeed a Constitution saving throw or become poisoned until the start of your next turn.</p>
+            <p class="indent"><strong><em>At Higher Levels. </em></strong>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">poison</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Power Torrent" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_POWER_TORRENT">
+        <supports>Sorcerer</supports>
+        <description>
+            <p>You unleash a massive torrent of raw arcane energy, blasting a line 60 feet long and 15 feet wide with overwhelming power. This spell passes through all obstacles, walls, and all other non-magical barriers. All creatures in the area take 4d12 + 4 force damage.</p>
+            <p class="indent">The torrent dispels all spells of 1st level or lower cast on creatures in its path, and any Constitution saving throws to maintain concentration triggered by this damage are made with disadvantage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d12 + 1 for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">6</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (60-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Preservation" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_PRESERVATION">
+        <supports>Occultist, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You touch a Small or smaller object or container, slowing the passage of time by half for that object and its contents. For example, food would take twice as long to spoil, or a lamp would burn twice as long on the same amount of oil.</p>
+            <p class="indent">This effect lasts until you cast the spell again, the object is destroyed, or 24 hours pass. This does not affect the item's interactions with the world (for example, a preserved weapon would not swing any slower).</p>
+            <p class="indent">When you reach 5th level, the spell slows time to 1/3 its usual pace. When you reach 11th level, to 1/4 its usual pace. When you reach 11th level, to 1/5 its usual pace.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+            <set name="duration">24 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pressure Cutter" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_PRESSURE_CUTTER">
+        <supports>Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You unleash a blast of highly pressurized water in a 60-foot-long 15-foot-wide line, slashing through everything in its path. Each creature in the line must make a Dexterity saving throw, taking 10d6 slashing damage on a failure. On a successful save, a creature takes half as much damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell lot of 6th level or higher, the damage increases by 1d6 for each level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords">slashing</set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (60-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Prismatic Flash" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_PRISMATIC_FLASH">
+        <supports>Occultist, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>A vivid rainbow of prismatic lights springs out from your hand. Each creature in a 15-foot cone must make a Constitution saving throw. On a failure, a creature is blinded until the start of your next turn. On a success, a creature is not blinded but is disoriented by the brilliant flash and cannot make attacks of opportunity until the start of your next turn.</p>
+            <p class="indent">Creatures that are already blinded or cannot see you aren’t Effected as they do not see the burst.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the size of the cone expands by 5 additional feet.</p>
+        </description>
+        <setters>
+            <set name="keywords">blind</set>
+            <set name="level">1</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (15-foot cone)</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a prism</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pseudopod Slam" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_PSEUDOPOD_SLAM">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock, Wizard, Melee</supports>
+        <description>
+            <p>You conjure a pseudopod of acidic ooze that slams a creature or object within range. Make a melee spell attack. On hit, the target takes 8d4 acid damage and is moved 5 feet in a direction of your choice.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">acid</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">10 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pyroclastic Lance" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_PYROCLASTIC_LANCE">
+        <supports>Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You conjure a lance of blazing lava and hurl it at a creature you can see within range. Make a ranged spell attack. On a hit, the target takes 8d6 fire damage. Hit or miss, the lance then explodes in a 10-foot radius sphere of pyroclastic ash centered on the target. The ash lasts until the start of your next turn, and its area is heavily obscured. Any creature starting its turn within the ash cloud must succeed on a Constitution saving throw or take 4d6 fire damage and be blinded until the start of its next turn.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the initial damage increases by 1d6 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
