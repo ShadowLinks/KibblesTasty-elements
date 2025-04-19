@@ -3794,6 +3794,177 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Rain of Spiders" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_RAIN_OF_SPIDERS">
+        <supports>Druid, Occultist, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>A vertical column of spiders begins to rain down in 20 foot radius, 40 foot high cylinder, centered on a location you specify. A Swarm of Spiders (Basic Rules, pg. 391) descends onto each creature within the cylinder when the spell is cast.</p>
+            <p class="indent">This swarm is considered to be climbing on the target creature and moves with it, even if they leave the affected area, and takes its turn immediately after that creature’s turn. A creature can make use its action to attempt to remove the spiders, making a Strength (Athletics) or Dexterity (Acrobatics) check against the spell save DC of the caster.</p>
+            <p class="indent">The swarm uses the caster’s spell attack modifier when attacking (if it is higher than their attack modifier). A swarm will attack the creature it fell on if it can, or move to chase the creature if it has been knocked off of them. Any spiders that remain when the spell ends disappear</p>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a spider leg</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rain of Swords" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_RAIN_OF_SWORDS">
+        <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>A rain of swords begins to fall in a 20-foot-radius, 40-foot high cylinder centered on a point within range. Any creatures starting its turn in the area or entering it for the first time on its turn must make a Dexterity saving throw. On a failure, it takes 6d10 slashing damage. On a success, it takes half as much damage.</p>
+            <p class="indent">The swords are stuck upright in the ground and can be removed and used by anyone within 5 feet of the spell's area, functioning as nonmagical longswords. They vanish when the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords">slashing</set>
+            <set name="level">7</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Repair" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_REPAIR">
+        <supports>Inventor</supports>
+        <description>
+            <p>You touch a construct or inanimate object, causing it to regain 10d6 hit points. Any parts or material that has broken off is reattached, restoring it to the condition it was in before losing those hit points.</p>
+            <p class="indent">If the target's damage is the result of aging, you can instead restore it to its condition as of 10d6 years ago. Its condition can only improve — if it was in worse condition previously, the spell has no effect.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the hit points restored or years of decay undone increase by 2d6 for each slot above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">heal</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Returning Weapon" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_RETURNING_WEAPON">
+        <supports>Inventor</supports>
+        <description>
+            <p>You touch a weapon and grant it the thrown (20/60) property. If it already has the thrown property, its range increases by 20/60. For the duration, it reappears in the thrower's hand after it's thrown as part of an attack.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">24 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Reverberating Dash" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_REVERBERATING_DASH">
+        <supports>Bard</supports>
+        <description>
+            <p>You imbue a resonating note of magic into a melee weapon you are holding. When you do so, you can immediately make one attack against a creature within 5 feet with the weapon used in the spell's casting. If the attack hits, the note reverberates and deals an additional 1d8 thunder damage, and you can immediately move up to 15 feet in a straight line in any direction without provoking opportunity attacks.</p>
+            <p class="indent">If this movement leaves you within 5 feet of a creature you have not hit as part of this spell, you can immediately make another attack against this creature with the weapon used in the spell's casting. If the attack hits, the note reverberates even louder and deals an additional 2d8 thunder damage, and you can move repeat the movement and attack again. Each time you dash, the note grows louder, increasing its thunder damage by 1d8. You can move a maximum of 2 times after the initial attack (making up to 3 attacks in total). You can move again and potentially attack until you miss or there is no longer an eligible target you can reach. Each time you dash this way, the volume and tempo of the note increases, increasing the thunder damage dealt by 1d8.</p>
+            <p class="indent"><strong><em></em></strong>At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the initial thunder damage increases by 1d8, and you can move-andattack 1 additional time for each slot level above 2nd, up to a maximum of 5 dashes (6 attacks) with a 5th-level spell slot.</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (5-feet)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a melee weapon worth at least 1 sp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Ribcage" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_RIBCAGE">
+        <supports>Occultist, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You cause a series of giant bones to burst from the earth around a point you can see on the ground within range. The bones form a dome in a 10-foot radius around the target point. Small or larger creatures cannot pass through the cage, and attacks that deal bludgeoning or slashing damage cannot be made through it. The cage functions as half cover against other attacks or spells that pass through it.</p>
+            <p class="indent">The cage has 40 hit points, AC 13, and is vulnerable to bludgeoning damage. If it is reduced to 0 hit points, it crumbles to dust and the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When cast with a 5th level or higher spell slot, the cage has an additional 10 hit points for each level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a rib bone</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rock Slam" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ROCK_SLAM">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You fling a rock at a creature you can see within range. Make a ranged spell attack. On a hit, the target takes 1d10 bludgeoning damage. On a critical hit, the target is knocked prone or 10 feet backwards (your choice).</p>
+            <p class="indent">The spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rotting Curse" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_ROTTING_CURSE">
+        <supports>Occultist</supports>
+        <description>
+            <p>You inflict a curse of decay on a creature within range, causing it to begin to rot. For the duration, every time the target takes damage, it takes an additional 1d4 necrotic damage, and the effect of any healing it receives is halved.</p>
+            <p class="indent">The target also has disadvantage on any Charisma checks for social interaction for the duration.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
