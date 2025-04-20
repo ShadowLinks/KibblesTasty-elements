@@ -3965,6 +3965,883 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Sanctified Charged" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SANCTIFIED_CHARGED">
+        <supports>Cleric, Paladin, Spell Saving Throw</supports>
+        <description>
+            <p>Fueled by a burst of divine strength, you move up to 20 feet in a straight line in a swift burst of movement. If you collide with a creature, the charge ends early, and the creature must make a Strength saving throw. On a failure, it takes 2d6 radiant damage and is knocked prone. On a success, it takes half as much damage and is not knocked prone.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self (20-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Seeking Orb" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SEEKING_ORB">
+        <supports>supports</supports>
+        <description>
+            <p>You create a tiny orb of arcane energy hovering within range, which slowly moves towards a target creature within 120 feet. At the end of each of your turns for the duration, the orb moves 30 feet directly toward its target. If it reaches the target, it detonates, dealing 6d4 force damage and ending the spell. If it doesn't reach the target, it intensifies, increasing its damage by 2d4 (up to a maximum of 10d4 force damage). If the spell ends before the orb can reach its target, it fades harmlessly away.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Seeking Projectile" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SEEKING_PROJECTILE">
+        <supports>Inventor, Ranger</supports>
+        <description>
+            <p>You touch a piece of ammunition or a weapon with the thrown property and imbue it with a seeking spell. The next time the item is used for a ranged attack, the attacker can add your spellcasting modifier to the d20 result. If that makes the value on the die a 20 or higher, the attack scores a critical hit. The spell ends after one attack.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of ammunition or a weapon with the thrown property worth at least 1 cp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Seismic Wave" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SEISMIC_WAVE">
+        <supports>Druid, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You slam the ground in front of you and cause the earth to explode violently in a 30-foot cone. Each creature on the ground in the area must make a Strength saving throw. On a failure, it takes 4d10 bludgeoning damage and falls prone. On a success, it takes half as much damage and does not fall prone. Large or larger objects and structures in the area automatically fail the save and take double damage. The ground becomes difficult terrain until cleared. Each 5-foot-square requires at least 1 minute to clear by hand.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shadow Bind" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SHADOW_BIND">
+        <supports>Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You point at a Medium or smaller creature you can see within range and cause its shadow to leap up, forming solid tendrils to bind it. The target must succeed on a Strength saving throw or become restrained for the spell's duration. A restrained target can repeat its saving throw at the end of each of its turns, ending the effect on a success.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, you can either target one additional creature or increase the size category of creature the spell can affect one time for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">restrained</set>
+            <set name="level">1</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shadow Lash" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SHADOW_LASH">
+        <supports>Warlock, Wizard</supports>
+        <description>
+            <p>You form a whip of shadows that lashes out toward a creature within range. Make a melee spell attack, on hit, the target takes 2d4 psychic damage. In addition, if the target is in dim light or darkness, you make the attack roll with advantage.</p>
+            <p class="indent">The spell’s damage increases by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4).</p>
+        </description>
+        <setters>
+            <set name="keywords">psychic</set>
+            <set name="level">0</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">10 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shattering Shield" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SHATTERING_SHIELD">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock</supports>
+        <description>
+            <p>You cause a shield of ice to erupt and block the triggering attack. The attack's damage is reduced by 1d8 + your spellcasting modifier. If the attack damage is not completely blocked, the shield shatters, dealing the amount of blocked damage as cold damage to the attacker. If the shield is not broken, it melts away after blocking the damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the amount of damage blocked increases by 1d8 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Sky Burst" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SKY_BURST">
+        <supports>Druid, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>Five bolts of lightning strike five points of your choice that you can see within range. Each creature within 5 feet of a bolt must make a Dexterity saving throw, taking 4d12 + 4 lightning damage on a failure or half as much damage on a success. A creature in the area of more than one lightning burst is affected only once.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, you can call down an additional bolt for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Sonic Shriek" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SONIC_SHRIEK">
+        <supports>Bard, Occultist, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You emit a sonic blast across a huge area. Each creature in a 120-foot cone must make a Constitution saving throw. It takes 6d8 thunder damage on a failure or half as much damage on a success. A creature automatically succeeds on its saving throw if it is more than 60 feet from you.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (120-foot cone)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spacial Swap" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPACIAL_SWAP">
+        <supports>Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You switch locations with a creature you can see. If there is insufficient space for either creature at the other's location, the spell fails. If the target is unwilling, it can make a Charisma saving throw. On a success, the spell fails.</p>
+        </description>
+        <setters>
+            <set name="keywords">displacement</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spelltrap" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPELLTRAP">
+        <supports>Bard, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You mark a spelltrap on yourself, creating a small glowing mark on your skin. The next time you make a saving throw against a spell of 1st level or lower, the spell is harmlessly absorbed and none of its effects take place.</p>
+            <p class="indent">On your next turn afterward, you can cast the spell absorbed by the spelltrap without expending a spell slot. If you do not cast it within that turn, the spell trap fades and the trapped spell is lost.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the highest level of spell it can absorb increases by 1 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 minute</set>
+            <set name="range">Self</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spider Bite" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPIDER_BITE">
+        <supports>Druid, Occultist, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You stab at a target with a venomous fang. Make a melee spell attack against a creature within reach. On a hit, the target takes 4d12 poison damage and must succeed on a Constitution saving throw or be poisoned for 1 minute. At the end of each of its turns, the target can repeat the save, ending the condition on a success.</p>
+            <p class="indent">If you miss on the initial attack, you can concentrate (as if concentrating on a spell) to maintain the spell for another attempt on a subsequent turn. You may continue to do so until you either hit with the spell or lose concentration.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d12 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">poison, poisoned</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spirit Echo" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPIRIT_ECHO">
+        <supports>Occultist, Ranger, Wizard</supports>
+        <description>
+            <p>You summon a ghostly echo of yourself. It shares your space and acts automatically, mirroring your actions. The first time on your turn you make a weapon attack, it attacks the same target. It makes a separate attack roll using your attack modifier. On a hit, roll your attack's normal damage; the target takes force damage equal to half the result.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spiritual Consultation" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPIRITUAL_CONSULTATION">
+        <supports>Occultist</supports>
+        <description>
+            <p>You call forth a spirit to aid you with your ability checks. Choose one skill out of Arcana, Animal Handling, History, Investigation, Medicine, Nature, Perception, Religion, or Survival. The spirit is proficient in the chosen skill. It is ethereal and ephemeral and cannot interact with physical objects, but can provide guidance on matters relating to chosen skill.</p>
+            <p class="indent">For the duration, you can treat any check you make in the skill as if you have proficiency with it so long as the spirit can communicate with you. Alternatively, the spirit can make Intelligence or Wisdom checks itself, with a +5 modifier. The spirit will follow you, staying within of you at all times. You can choose to release it early, dismissing it back from whence it came.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the spirit’s bonus on making ability checks directly increases by 1 for each slot level above 1st, up to a maximum of +9.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 minute</set>
+            <set name="range">Self</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">1 gp worth of incense, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Split Timeline" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPLIT_TIMELINE">
+        <supports>Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You choose a willing creature in range and split its timeline in two. At the start of that creature’s next turn, a temporal duplicate of them appears in a space adjacent to it. The duplicate lasts until the end of the target's turn or it drops to 0 hit points (whichever comes first). Their temporal duplicate shares the target's statistics, abilities, and resources, and is under the target's control. Any abilities, items, or spells with limited uses deplete the equivalent resources for the target.</p>
+            <p class="indent">At the end of the target's turn, the temporal duplicate disappears.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the temporal duplicate lasts for 1 additional round for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Sprout Tree" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPROUT_TREE">
+        <supports>Druid</supports>
+        <description>
+            <p>You point at an empty 5-foot space on the ground you can see within range, and a tree sprouts there, rapidly growing to a height of 20 feet with a 2-foot radius trunk. The tree must grow on dirt, sand, or another appropriate surface. At the DM's discretion, it can burst through up to 6 inches of hard material. The tree stops growing if it would hit a ceiling or other object.</p>
+            <p class="indent">Any creature in this space must make a Dexterity saving throw. On a failure, it is lifted 20 feet into the air in the branches of the tree. On a success, it moves 5 feet to an unoccupied space of its choice (if there is no empty space to which it can move, it automatically fails). A Large or smaller creature can choose to fail this save, while a Huge or larger creature automatically succeeds.</p>
+            <p class="indent">The tree provides as half cover to any creature within its branches, and three-quarters cover from effects originating on the other side of its trunk. The tree has 50 hit points and AC 13.</p>
+            <p class="indent">The tree remains after the spell ends, but may die rapidly if sprouted in an unsuitable location or environment. Its wood is flammable only when dried, and serves no useful purpose except as firewood.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Starfall" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STARFALL">
+        <supports>Druid, Occultist, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a false sky above you, filled with gleaming stars, which immediately begin to rain down. When you cast the spell, 3 stars immediately fall, with 1 additional star falling at the start of each of your turns for the duration. For each falling star, choose a creature within 60 feet of you. That creature must make a Dexterity saving throw, taking 4d8 radiant damage on a failure or half as much on a success. A creature cannot be targeted by more than one falling star in a turn.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the number of stars that fall in the initial cast and on subsequent turns increases by 1 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (60-foot radius)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Star Dust" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STAR_DUST">
+        <supports>Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You evoke a burst of brilliant power sweeping out in a 30-cone originating from you. Each in the radius takes 3d4 force damage, and the next attack roll made against it before the start of your next turn has advantage.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Star Scry" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STAR_SCRY">
+        <supports>Druid, Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You describe a location, person, or object during the casting of the spell. Afterward, an illusion of a starry night sky forms above your head, showing the night sky at midnight above the target. You can then make an Intelligence (Navigator’s Tools) check to determine the general region of the described target. The DC is 10 if you’ve been to the area before, 15 if you’ve been within 100 miles, and 20 if you’ve never been within 100 miles of the location.</p>
+            <p class="indent">The spell fails if you give an inaccurate description or false name for the target, or if you cast it on the same target more than once within 24 hours.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Divination</set>
+            <set name="time">1 minute</set>
+            <set name="range">Self (60-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Static Field" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STATIC_FIELD">
+        <supports>Inventor, Occultist, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>A visible field of static energy crackles to life in a 20-foot radius around a point you can see within range. If a creature takes an action, reaction, or moves at least 5 feet within the field, it takes 1d12 lightning damage. A creature can take damage from each trigger once per turn (taking an action, a reaction, or moving).</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Stinging Swarm" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STINGING_SWARM">
+        <supports>Druid, Occultist, Warlock, Wizard</supports>
+        <description>
+            <p>You conjure a magical swarm of flying insects that fill a 5-foot cube within range. The swarm cannot be damaged or destroyed. For the duration, you can use a bonus action to command it to move up to 30 feet. If the swarm enters another creature’s space, it stops and stings the creature repeatedly, and cannot be moved until the start of your next turn. The creature takes 2d4 piercing damage and must succeed on a Constitution saving throw or take 6d4 poison damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">piercing, poison</set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet (5-foot cube)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Stone Coffin" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STONE_COFFIN">
+        <supports>Druid, Occultist, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You cause a surge of stone to attempt to encase a Large or smaller creature. The target must make a Dexterity saving throw. On a failure, it becomes trapped in the coffin, causing it to be blinded and restrained. A creature can choose to fail their save. While trapped within the coffin, a creature has total cover against all sources. The coffin has an AC of 15 and 50 hit points, and resistance to all damage beside bludgeoning and thunder damage. When the spell ends or the coffin is reduced to 0 hit points, it crumbles to fragments and the creature within is no longer restrained and blinded.</p>
+            <p class="indent">For the duration of the spell you can use your bonus action to crush a creature encased in the coffin, dealing 1d10 bludgeoning damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the stone coffin gains 10 additional hit points for each level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Stone Fist" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STONE_FIST">
+        <supports>Druid, Occultist, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You turn your hand and forearm (or similar appendage) to stone until the start of your next turn. As part of casting the spell, you can make a melee spell attack against one creature you can reach. On a hit, the target takes 2d10 bludgeoning damage.</p>
+            <p class="indent">Until the start of your next turn, you can use your reaction when you take slashing or piercing damage from an attack to gain resistance to damage from that attack.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Stone Forming" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STONE_FORMING">
+        <supports>Druid, Occultist, Sorcerer, Warlock</supports>
+        <description>
+            <p>You lay your hand on dirt or rock and call on the stone to shape itself to your command. You can make any roughly shaped Small or Tiny item from the stone, including functional simple or martial melee weapons. Created items possess magical durability to resist shattering or breaking. This spell can't be used to carve significant amounts of material away from stone walls, doors, or other large objects.</p>
+            <p class="indent">Alternatively you can encase your limbs in stone, causing your unarmed strikes to deal 1d8 bludgeoning damage for the duration of the spell.</p>
+            <p class="indent">Items made this way lose any magical durability after one hour, and become easily broken if they would not normally be functional in that shape. You can have three items or effects created by this cantrip at a time, and upon creating a fourth the oldest one loses its magical durability and becomes easily broken.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Stone Pillar" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STONE_PILLAR">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You cause a pillar of stone to rise from the ground in a space you can see within range. The pillar occupies a 5-foot space and rises up to 30 feet into the air. The ground where it appears must have space to accommodate it, and you can't target a space under a Large or larger creature.</p>
+            <p class="indent">If a pillar is created under a Medium or smaller creature, that creature must succeed on a Dexterity saving throw or be lifted by the pillar. A creature can choose to fail its save. If a pillar is prevented from reaching its full height because of a ceiling or other obstacle, a creature on the pillar takes 3d8 bludgeoning damage and is restrained, crushed between the pillar and the obstacle. The restrained creature can use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check (the creature’s choice) against the spell save DC. On a success, the creature is no longer restrained and must either move off the pillar or fall.</p>
+            <p class="indent">The pillar has AC 5 and 30 hit points. When reduced to 0 hit points, it crumbles into rubble, creating an area of difficult terrain in a 15-foot square centered on the pillar, which lasts until the rubble is cleared. Each 5-foot-square in the area requires at least 1 minute to clear by hand.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Storm Shot" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_STORM_SHOT">
+        <supports>Ranger, Spell Saving Throw</supports>
+        <description>
+            <p>You touch a piece of ammunition or weapon with the thrown property, imbuing it with a crackling storm of power for the duration. The first time you attack with the weapon, it explodes into a raging storm on reaching its destination. On a hit, the target takes an additional 4d8 lightning damage. On a miss, the target takes half as much damage.</p>
+            <p class="indent">Hit or miss, the target and all creatures within 20 feet of it must make a Strength saving throw against the raging storm unleashed by the attack. On a failed, a creature is thrown 20 feet straight up (falling immediately if not otherwise held aloft) and takes 2d8 lightning damage. On a successful save, it is not thrown into the air and takes half as much lightning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of ammunition or a weapon with the thrown property worth at least 1 cp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Suffocate" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SUFFOCATE">
+        <supports>Occultist, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a whirling sphere of air around a creature that causes them to struggle to breathe. The target must make a Constitution saving throw. On a failure, it loses 5d8 hit points due to lack of air, has disadvantage on all ability checks, and cannot speak. On a success, the target takes half as much damage and suffers no other effects. For the duration, as an action, you can force the creature to repeat this saving throw.</p>
+            <p class="indent">If a target fails its saving throw against this spell 3 times in a row, it becomes incapacitated until it succeeds on a save or the spell ends. If you don’t use your action to force the target to make a save, it automatically attempts the save and succeeds at the end of its next turn.</p>
+            <p class="indent">A creature that does not need to breathe is unaffected by this spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Sudden Hazards" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SUDDEN_HAZARDS">
+        <supports>Bard, Occultist, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You cause illusions of deadly traps or other hazards to spring up, filling a 60 foot cube originating from you. Swinging blades, lava flows, or other phantom hazards fill the minds of each creature of your choice within the area. An affected creature can move at half speed to evade the dangers, or move at its normal speed and take 1d8 psychic damage for each 5 feet it moves within the area. Any affected creature ending its turn in the area must make a Dexterity saving throw. It takes 5d8 psychic damage on a failure or half as much on a success.</p>
+            <p class="indent">Each time a creature ends its turn in the area, it can make a Wisdom saving throw. On a success, it realizes the traps are fake, and the spell ends for that creature.</p>
+        </description>
+        <setters>
+            <set name="keywords">psychic</set>
+            <set name="level">5</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (60-foot cube)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Summon Archon" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SUMMON_ARCHON">
+        <supports>Cleric, Paladin, Warlock</supports>
+        <description>
+            <p>You call forth a minor celestial archon, which manifests in an unoccupied space that you can see within range. It uses the Archon spirit stat block, and you select either the Hound, Lantern, or Trumpet option when you cast the spell. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+            <p class="indent">The creature is an ally to you and your companions. In combat, it shares your initiative count, and its turn immediately after yours. It obeys your verbal commands (no action required by you). if you don’t issue any command, it takes the Dodge action and uses its moves only to avoid hazards.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, certain values increase in its stat block.</p>
+            <p><strong>Archon Spirit</strong></p>
+            <ul>
+                <li><em>Medium (Small for Lantern) celestial, unaligned</em></li>
+                <li>AC: 11 + spell level</li>
+                <li>HP: 20 or 30(hound) + 5 for each spell level above 2nd</li>
+                <li>Speed: 30 ft. fly 30 ft. (trumpet and lantern only)</li>
+                <li>STR 14 DEX 10 CON 14 INT 10 WIS 13 CHA 14</li>
+                <li>Resistance: radiant</li>
+                <li>Senses: Darkvision 60 ft. Passive perception 11</li>
+                <li>Languages: celestial, understands the languages you speak</li>
+                <li><strong><em>Keen Hearing and Smell (Hound)</em></strong> The archon has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+                <strong><em>Lantern's Light (Lantern)</em></strong> The archon sheds bright light in a 30-foot radius and dim light for an additional 30 feet.
+                <strong><em>Rallying Call (Trumpet)</em></strong> Once per turn when the archon deals damage, it grants one creature of its choice within 60 feet temporary hit points equal to half the damage dealt.</li>
+                <li><strong><em>Multiattack</em></strong> The archon makes a number of attacks (or Trumpet uses) equal to half this spell’s level (rounded down).</li>
+                <li><strong><em>Greatsword (Hound)</em></strong> Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 2d6 + 2 + the spell’s level slashing damage.
+                <strong><em>Radiant Bolt (Lantern)</em></strong> Ranged Spell Attack: your spell attack modifier to hit, range 60 ft., one target. Hit: 1d8 + 2 + the spell’s level radiant damage.
+                <strong><em>Trumpet (Trumpet)</em></strong> One creature of the archon’s choice within 60 feet must succeed on a Constitution saving throw with a DC equal to your spell save or take 1d6 + 2 + the spell’s level thunder damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">an ornate relic worth at least 200 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Summon Dragon" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SUMMON_DRAGON">
+        <supports>Wizard, Sorcerer</supports>
+        <description>
+            <p>You call forth a magical dragon spirit, which manifests in an unoccupied space that you can see within range. It uses the dragon spirit stat block, and you select one dragon color from the table below when you cast the spell. The creature resembles a dragon of that color, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+            <p class="indent">The creature is an ally to you and your companions. In combat, it shares your initiative count, and takes its turn immediately after yours. It obeys your verbal commands. If you don’t issue any command, it takes the Dodge action and moves only to avoid hazards.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, certain values increase in its stat block.</p>
+            <table>
+                <thead>
+                    <tr><td>Color</td><td>Element</td><td>Breath</td></tr>
+                </thead>
+                <tr><td>Black</td><td>Acid</td><td>5 by 60 ft. line (Dex. save)</td></tr>
+                <tr><td>Blue</td><td>Lightning</td><td>5 by 60 ft. line (Dex. save)</td></tr>
+                <tr><td>Brass</td><td>Fire</td><td>5 by 60 ft. line (Dex. save)</td></tr>
+                <tr><td>Bronze</td><td>Lightning</td><td>5 by 60 ft. line (Dex. save)</td></tr>
+                <tr><td>Copper</td><td>Acid</td><td>5 by 60 ft. line (Dex. save)</td></tr>
+                <tr><td>Gold</td><td>Fire</td><td>30 ft. cone (Dex. save)</td></tr>
+                <tr><td>Green</td><td>Poison</td><td>30 ft. cone (Dex. save)</td></tr>
+                <tr><td>Red</td><td>Fire</td><td>30 ft. cone (Dex. save)</td></tr>
+                <tr><td>Silver</td><td>Cold</td><td>30 ft. cone (Dex. save)</td></tr>
+                <tr><td>White</td><td>Cold</td><td>30 ft. cone (Dex. save)</td></tr>
+            </table>
+            <p><strong>Dragon Spirit</strong></p>
+            <ul>
+                <li>Large Dragon unaligned</li>
+                <li>AC: 12 + level of the spell</li>
+                <li>HP: 50 + 10 for each spell level above 5th</li>
+                <li>Speed: 30 ft. fly 40 ft.</li>
+                <li>STR 18 DEX 10 CON 18 INT 14 WIS 16 CHA 18</li>
+                <li>Damage Immunities the dragon's elemental damage type</li>
+                <li>Senses blindsight 30 ft., darkvision 120 ft., passive Perception 13</li>
+                <li>Languages Draconic, understands the languages you speak</li>
+                <li>Multiattack. The dragon makes a number of attacks equal to half this spell’s level (rounded down). It can only attack with its bite or tail once each per turn.</li>
+                <li>Bite. Melee Weapon Attack: your spell attack modifier to hit, reach 10 ft., one target. Hit: 1d6 + 4 + the spell’s level piercing damage + 1d6 of the dragon’s elemental damage.</li>
+                <li>Claw. Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 + 4 + the spell’s level slashing damage.</li>
+                <li>Tail. Melee Weapon Attack: your spell attack modifier to hit, reach 15 ft., one target. Hit: 1d8 + 4 + the spell’s level bludgeoning damage.</li>
+                <li>Breath Weapon (1/Day). The dragon exhales elemental power in its breath weapon area from the dragon table. Each creature in that area must make a Dexterity saving throw with a DC equal to your spell save DC, taking 5d8 + the spell's level elemental damage on a failed save, or half as much damage on a successful one.</li>
+            </ul>            
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a dragon statuette worth at least 500 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Summon Monstrosity" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SUMMON_MONSTROSITY">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>You call forth a magical monstrosity spirit, which manifests in an occupied space that you can see within range. It uses the Monstrosity Spirit stat block, and you select either the Blinker, Burrower, or Displacer option when you cast the spell. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+            <p class="indent">The creature is an ally to you and your companions. In combat, it shares your initiative count, and takes its turn immediately after yours. It obeys your verbal commands. If you don’t issue any command, it takes the Dodge action and moves only to avoid hazards.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, certain values increase in its stat block.</p>
+            <p><strong>Monstrosity Spirit</strong></p>
+            <ul>
+                <li>AC: 11 + level of the spell</li>
+                <li>HP: 35 + 15 for each spell level above 3rd</li>
+                <li>Speed 40 ft., burrow 40 ft. (burrower only)</li>
+                <li>STR 16 DEX 12 CON 16 INT 4 WIS 16 CHA 5</li>
+                <li>Senses darkvision 60 ft., tremorsense 30 ft. (burrower only), passive Perception 13</li>
+                <li>Languages understands the languages you speak</li>
+                <li>Blink (Blinker Only). As a bonus action, the monstrosity can magically teleport up to 30 feet to an unoccupied space it can see.</li>
+                <li>Displace (Displacer Only). Attack rolls against the monstrosity have disadvantage. If the monster is hit by an attack, this trait ceases to work until the start of the monster’s next turn.</li>
+                <li>Evasion (Displacer and Blinker Only). If the monstrosity is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</li>
+                <li>Multiattack. The monstrosity makes a number of attacks equal to half this spell’s level (rounded down).</li>
+                <li>Chomp. Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d10 + 3 + the spell’s level piercing damage.</li>
+                <li>Lash (Displacer only). Melee Weapon Attack: your spell attack modifier to hit, reach 10 ft., one target. Hit: 1d4 + 3 + the spell’s level slashing damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a statuette carved from a monster bone or fang worth at least 300 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Summon Ooze" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SUMMON_OOZE">
+        <supports>Wizard</supports>
+        <description>
+            <p>You call forth a magical ooze, which manifests in an unoccupied space that you can see within range. It uses the Ooze Spirit stat block, and you select either the Green, Red, or Yellow option when you cast the spell. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+            <p class="indent">The creature is an ally to you and your companions. In combat, it shares your initiative count, and takes its turn immediately after yours. It obeys your verbal commands. If you don’t issue any command, it takes the Dodge action and moves only to avoid hazards.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, certain values increase in its stat block.</p>
+            <p><strong>Ooze Spirit</strong></p>
+            <ul>
+                <li>Small ooze, unaligned</li>
+                <li>AC: 6 + the level of the spell (natural armor)</li>
+                <li>HP: 5 + 10 for each spell level above 1st</li>
+                <li>Speed 10 ft</li>
+                <li>STR 12 DEX 6 CON 12 INT 1 WIS 1 CHA 1</li>
+                <li>Damage Immunities acid, fire (Red only), lightning (Yellow only), Poison (Green only)</li>
+                <li>Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks</li>
+                <li>Senses blindsight 10 ft. (blind beyond this radius), passive Perception 5</li>
+                <li>Languages understands the languages you speak</li>
+                <li>Multiattack. The ooze makes a number of attacks equal to half this spell’s level (rounded down).</li>
+                <li>Pseudopod. Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 + 3 + the spell’s level acid damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a gold vial worth at least 100 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Summon Plant" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SUMMON_PLANT">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You call forth a magical plant, which manifests in an unoccupied space that you can see within range. It uses the Plant Spirit stat block, and you select either the Dryad, Shambling Mound, or Treant option when you cast the spell. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+            <p class="indent">The creature is an ally to you and your companions. In combat, it shares your initiative count, and takes its turn immediately after yours. It obeys your verbal commands. If you don’t issue any command, it takes the Dodge action and moves only to avoid hazards.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, certain values increase in its stat block.</p>
+            <p><strong>Plant Spirit</strong></p>
+            <ul>
+                <li>Large (Medium for Dryad) plant, unaligned</li>
+                <li>AC: 12 + the level of the spell (natural armor)</li>
+                <li>HP: 35 + 10 for each spell level above 3rd</li>
+                <li>Speed 20 ft.</li>
+                <li>STR 16 DEX 8 CON 14 INT 10 WIS 16 CHA 10</li>
+                <li>Damage Vulnerabilities fire</li>
+                <li>Damage Resistances bludgeoning</li>
+                <li>Senses darkvision 60 ft., blindsight 60 ft. (Shambling Mound only), passive Perception 10</li>
+                <li>Languages Sylvan, understand the languages you speak</li>
+                <li>Engulf (Shambling Mound Only). If the plant hits a target that it is grappling, that target becomes restrained until the grapple ends.</li>
+                <li>Tree Stride (Dryad Only). Once on its turn, the plant can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or larger.</li>
+                <li>Multiattack. The plant makes a number of attacks equal to half this spell’s level (rounded down).</li>
+                <li>Entangling Slam (Treant or Shambling Mound Only). Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d10 + 3 + the spell’s level bludgeoning damage and the target is grappled (escape DC equals your spell save DC). Until this grapple ends, plant spirit can’t use this attack on another target</li>
+                <li>Vine Lash (Treant or Dryad Only). Melee Weapon Attack: your spell attack modifier to hit, reach 15 ft., one target. Hit: 1d8 + 3 + the spell’s level slashing damage and the target is grappled (escape DC equals your spell save DC). Until this grapple ends, plant can’t use this attack on another target</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a carved wooden figurine worth at least 300 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Summon Swarm" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SUMMON_SWARM">
+        <supports>Druid, Occultist, Wizard</supports>
+        <description>
+            <p>You call forth a magical swarm, which manifests in an unoccupied space that you can see within range. It uses the Swarm Spirit stat block, and you select either the Quippers, Spiders, or Wasps option when you cast the spell. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+            <p class="indent">The creature is an ally to you and your companions. In combat, it shares your initiative count, and takes its turn immediately after yours. It obeys your verbal commands. If you don’t issue any command, it takes the Dodge action and moves only to avoid hazards.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, certain values increase in its stat block.</p>
+            <p><strong>Swarm Spirit</strong></p>
+            <ul>
+                <li>Medium swarm of Tiny beasts, unaligned</li>
+                <li>AC: 10 + the level of the spell (natural armor)</li>
+                <li>HP: 10 + 5 for each spell level above 2nd</li>
+                <li>Speed (Spiders only) 30 ft., climb 30 ft. (Quippers only) 5 ft., swim 30 ft. (Wasps only) 5 ft., fly 30 ft.</li>
+                <li>STR 3 DEX 13 CON 10 INT 1 WIS 7 CHA 1</li>
+                <li>Damage Resistances bludgeoning, piercing, slashing</li>
+                <li>Senses blindsight 10 ft., passive Perception 8</li>
+                <li>Languages understands the languages you speak</li>
+                <li>Spider Climb (Spider Only). The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</li>
+                <li>Swarm. The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can’t regain hit points or gain temporary hit points.</li>
+                <li>Web Walker (Spider Only). The swarm ignores movement restrictions caused by webbing</li>
+                <li>Multiattack. The swarm makes a number of attacks equal to half this spell’s level (rounded down).</li>
+                <li>Bite (Quipper Only). Melee Weapon Attack: your spell attack modifier to hit, reach 0 ft., one target in the swarm's space. Hit: 3d4 + the spell’s level piercing damage.</li>
+                <li>Sting (Spider and Wasp Only). Melee Weapon Attack: your spell attack modifier to hit, reach 0 ft., one target in the swarm's space. Hit: 2d4 + the spell’s level piercing damage + 1d4 poison damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a golden insect worth at least 200 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Supernova" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SUPERNOVA">
+        <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You form a fist-sized star at a point you can see within range, which then explodes into a cataclysmic supernova. All creatures within 60 feet of the point must make a Constitution saving throw. On a failure, a creature takes 30d8 radiant damage and is blinded for 1 minute. On a success, it takes half as much damage and is not blinded. A blinded creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant, blind</set>
+            <set name="level">9</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Sight</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a lump of starforged iron</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Swapping Curse" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SWAPPING_CURSE">
+        <supports>Occultist, Spell Saving Throw</supports>
+        <description>
+            <p>You cast a curse targeting two individuals. Both targets must make a Charisma saving throw (which they can choose to fail). If both targets fail their saving throws, their souls are swapped for the duration. A soul controls the body it inhabits. It uses the ability scores and actions of its new body (except legendary actions or legendary resistance), but retains its own spellcasting (if any), and has disadvantage on attack rolls and Strength, Dexterity, and Constitution saving throws for 1d4 turns after swapping bodies.</p>
+            <p class="indent">At the end of a swapped creature's turn, it can choose to repeat the saving throw, ending the effect on a success. If its challenge rating (or character level if it has no challenge rating) is higher than that of its current body, it has advantage on the save.</p>
+            <p class="indent">If a creature dies while its soul is swapped, both souls return to their original bodies. After a soul returns from a dying creature to a living body, it takes 5d10 necrotic damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from each creature—such blood, hair, or scales—the spell is targeting, which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
