@@ -5438,6 +5438,217 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Wasp Barrage" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WASP_BARRAGE">
+        <supports>Druid, Occultist, Ranger Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You conjure a swarm of magical wasps, which zip out to sting creatures of your choice within a 40-foot cone. Make a ranged spell attack against each individual target. On a hit, a creature takes 1 piercing damage + 4d12 poison damage. After they attack, the magic wasps fade away.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the poison damage increases by 1d12 for each second slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">piercing, poison</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (40-foot cone)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Water Blast" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WATER_BLAST">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You conjure a ball of water and hurl it at a target. Make a ranged spell attack. On a hit, the target takes 3d6 bludgeoning damage, and if it is Large or smaller, must succeed on a Strength saving throw or be knocked prone.</p>
+            <p class="indent"><strong><em></em></strong>At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning, prone</set>
+            <set name="level">1</set>
+            <set name="school">Conjunction</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Water Bullet" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WATER_BULLET">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You create a compressed bead of water and fire it at a creature you can see within range. Make a ranged spell attack. On a hit, the target takes 1d6 + your spellcasting ability modifier piercing damage.</p>
+            <p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+        </description>
+        <setters>
+            <set name="keywords">piercing</set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Water Cannon" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WATER_CANNON">
+        <supports>Druid, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You unleash a spout of water that blasts out in a 60-foot long, 5-foot wide line. Each creature in the line must make a Strength saving throw. On a failed save, a creature takes 6d6 bludgeoning damage and is pushed to an unoccupied space at the far end of the line. If there is no available space at the end of the line, it is pushed to the closest open space, takes an additional 2d6 bludgeoning damage, and is knocked prone. On a successful save, a target takes half as much damage and is not pushed.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each level about 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning, displacement</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (60-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Waterspout" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WATERSPOUT">
+        <supports>Druid, Occultist, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure a large mass of water and form it into a whirling funnel around a point on the ground you can see. The funnel fills a 10-foot radius, 30-foot high cylinder. If a creature enters the waterspout on its turn or the waterspout moves into the creature's space, the creature must make a Strength saving throw. On a failure, it takes 2d8 bludgeoning damage and is blinded, deafened, and cannot speak. At the start of its next turn, it is expelled from the waterspout to the nearest empty space. On a success, it takes half as much damage and suffers none of the spell’s other effects.</p>
+            <p class="indent">On your turn, you can use a bonus action to move the waterspout up to 20 feet in any direction along the ground, engulfing any creatures in its path. A creature that fails its save after being engulfed by the waterspout in this way is carried along with its movement until they it is ejected at the start of its turn.</p>
+            <p class="indent">If the center point of this spell is over a Huge or larger body of water, the size of the waterspout is doubled.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning, blind, deaf, silenced</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Wind Cutter" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WIND_CUTTER">
+        <supports>Druid, Inventor Occultist, Ranger, Spellblade, Wizard</supports>
+        <description>
+            <p>You infuse the weapon used in the spell’s casting with tempestuous power. For the duration, when you make an attack on your turn with the weapon, it gains a reach of 30 feet, releasing slashes of razor sharp wind against your foes. When hitting targets beyond its normal reach, it deals slashing damage.</p>
+            <p class="indent">Additionally, the weapon's attacks deal an additional 1d4 damage, and if there is another creature within 5 feet of the target, it is struck by the slashing wind. Apply the same attack roll to the second creature, dealing half as much damage as the initial attack on a hit.</p>
+        </description>
+        <setters>
+            <set name="keywords">slashing</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self (30 feet)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a melee weapon with which you are proficient worth at least 1 sp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Whirling Conflagration" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WHIRLING_CONFLAGRATION">
+        <supports>Ranger</supports>
+        <description>
+            <p>You flourish the weapon used in the casting and whirl it around, setting it ablaze. Make one weapon attack, applying the roll to each creature within 15 feet. Each target takes 6d6 fire damage on hit, or half as much on a miss.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th Level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (15-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a melee weapon with which you are proficient worth at least 1 sp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <!-- fixed spell damage increase typo -->
+    <element name="Windborne Weapon" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WINDBORNE_WEAPON">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You wrap a weapon or piece of ammunition in swirling wind. Make a ranged spell attack against a target within range, using the spell’s material component. This attack ignores cover. On a hit, it deals 1d10 damage of the weapon’s damage type.</p>
+            <p class="indent">This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">150 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of ammunition or a weapon with the thrown property worth at least 1 cp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Windsense" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WINDSENSE">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You cast your senses out into the wind. Until the start of your next turn, you gain blindsight within 60 feet and have advantage on Wisdom (Perception) checks. Additionally, when you make ranged weapon attacks, you do not require line of sight as long as the target is within your blindsight, and the target does not benefit from cover.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Wither" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_WITHER">
+        <supports>Occultist, Spellblade, Warlock, Spell Saving Throw</supports>
+        <description>
+            <p>Dark energy pulls the moisture out of a body, sapping it of life and vitality. The target must make a Constitution saving throw. On a failure, it takes 4d10 + 4 necrotic damage and becomes withered until the start of your next turn. A withered creature that has resistance to fire loses it, or gains vulnerability to fire damage if it did not have resistance. On a successful save, a creature takes half as much damage and is not withered.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of powdered bone and sand</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
