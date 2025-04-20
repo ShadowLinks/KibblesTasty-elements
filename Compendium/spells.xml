@@ -5184,6 +5184,260 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Vacuum Pull" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VACUUM_PULL">
+        <supports>Druid, Ranger, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a howling blast of wind, attempting to pull a Huge or smaller creature that you can see within range toward you. The target must succeed a Strength saving throw or be yanked off its feet and pulled to you, landing within 5 feet of you and falling prone. Flying creatures make this save at disadvantage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell lot of 3rd level or higher, the range of the spell increases by 10 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords">displacement</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Vessel of Transportation" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VESSEL_OF_TRANSPORTATION">
+        <supports>supports</supports>
+        <description>
+            <p>You weave together creation magic and conjure a vehicle of your choice within range, which uses the Magical Vessel stat block. The vehicle can take any shape you wish, but is no more than 10 feet on any side.</p>
+            <p class="indent">When you cast the spell, you can designate any number of creatures you can see as pilots. A pilot inside the vehicle can attempt to mentally control it as an action, unless another pilot is already controlling it. The pilot can end this control at will (no action required), or its control ends automatically if it exits the vehicle.</p>
+            <p class="indent">While in control of the vehicle, the pilot is deaf and blind to its surroundings. Instead, it sees and hears through an invisible sensor that follows the vehicle and hovers 5 feet outside of it at all times. The pilot move the sensor as a bonus action to another location within 5 feet of the vehicle.</p>
+            <p class="indent">If a pilot is mentally controlling the vehicle, you can terminate its control as an action. As part of the same action, you can choose to become the new pilot of the vehicle.</p>
+            <p><strong>Magical Vessel</strong></p>
+            <ul>
+                <li>Large vehicle (10 ft. by 10ft.)</li>
+                <li>Creature Capacity: 1 crew, 8 passengers</li>
+                <li>Cargo Capacity: 1 ton</li>
+                <li>AC: 15</li>
+                <li>HP: Special</li>
+                <li>Speed: 150 ft.</li>
+                <li>STR 15 DEX 21 CON 12 INT 0 WIS 0 CHA 0</li>
+                <li>Damage Immunities: poison, psychic</li>
+                <li>Condition Immunities: blinded, charmed, deafened, exhaustion, frightened, incapacitated, paralyzed, petrified, prone, poisoned, stunned, unconscious</li>
+                <li>Magical Swiftness. The vessel is extraordinarily quick. It can move at up to 15 miles an hour at a regular pace or 20 miles at a fast pace.</li>
+                <li>Levitating Movement. The vessel gently hovers up to 3 feet off the ground at all times. It move across uneven terrain, over water, or up or down stairs and slopes, but it can't traverse hazardous liquids such as lava or move over elevation changes greater than 10 feet.</li>
+                <li>Comfortable Interior. So long as the interior is not exposed directly to the elements, the atmosphere within the vessel is considered comfortable and dry regardless of the weather outside.</li>
+                <li>Psychic Link. When the vehicle would take any damage, the caster instead loses the same amount of hit points. The caster can choose to end the spell instead of losing these hit points.</li>
+                <li>Limited Capacity. The vessel's speed becomes 0 if any of the following conditions are met:</li>
+                    <li>There are greater than 9 creatures within the vessel.</li>
+                    <li>There is a Large or larger creature within the vessel</li>
+                    <li>The vessel is carrying or towing a combined 2,000 lbs. or more.</li>
+                <li>Pilot. Drive and steer the Magical Vessel.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 hour</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Vicious Hound" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VICIOUS_HOUND">
+        <supports>Bard, Occultist, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You summon an illusion of a particularly vicious hound that chases a target within range. Only the target can see the hound. On each of its turns for the duration of the spell, if it moves less than 40 feet from where it started their turn, it takes 3d8 psychic damage as it gets mauled by the illusionary hound. At the end of each of its turns, regardless if took damage or not, it makes a Wisdom saving throw. On a success, it discerns the hound is an illusion and the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords">psychic</set>
+            <set name="level">2</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a spiked collar</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Vicious Vapors" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VICIOUS_VAPORS">
+        <supports>Druid, Occultist, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure a swirling poisonous miasma around yourself. For the duration of the spell, you are lightly obscured. When you cast the spell, and as a bonus action on each subsequent turn, you can cause the vapors to surge out and swirl around up to three creatures of your choice within range. Each creature must make a Constitution saving throw. On a failed save, it takes 1d12 poison damage and becomes poisoned until the start of your next turn. On a successful save, it takes half as much poison damage and is not poisoned.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">poison</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Violent Crush" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VIOLENT_CRUSH">
+        <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You attempt to magically crush a Large or smaller creature or object within range. The target must make a Strength saving throw. On a failure, it takes 6d12 bludgeoning damage and falls prone. On a success, it takes half as much damage and does not fall prone.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d12 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Violent Updraft" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VIOLENT_UPDRAFT">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a violent burst of wind, attempting to toss a Large or smaller creature into the air. The target must make a Strength saving throw, which it can choose to fail. On a failure, it is knocked 20 feet straight up into the air. If the target cannot hold onto anything or fly, it immediately falls, taking normal falling damage (2d6 bludgeoning damage) and falling prone.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the target is knocked 10 additional feet higher for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Vital Surge" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VITAL_SURGE">
+        <supports>Cleric, Druid, Occultist</supports>
+        <description>
+            <p>You infuse a vital surge of life into up to 4 creatures of your choice within range. Once during the spell's duration, a target can trigger this vital surge as a bonus action, regaining 4d8 hit points. When it does so, it can choose to expend up to 4 hit dice, rolling them and healing for the result (adding its Constitution modifier to each die as normal).</p>
+            <p class="indent">Once a creature triggers its healing surge, the spell ends for that creature.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the maximum number of targets and the maximum number of hit dice a target can expend both increase by 1 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">heal</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 minute</set>
+            <set name="range">30 feet</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Volcanic Burst" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VOLCANIC_BURST">
+        <supports>Druid, Warlock, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You call fiery forces from below the earth to violently erupt, designating a point you can see within range to explode with magma. The ground in a 10-foot radius around the point explodes in a shower of fire and rock, raining down in a 20-foot radius. Every creature in the 20-foot radius must make a Dexterity saving throw. On a failure, it takes 4d10 bludgeoning damage and 4d6 fire damage. If a creature in the inner 10-foot radius fails its save, it is additionally flung 10 feet up into the air, taking normal falling damage (1d6 bludgeoning damage) and falling prone when it lands. On a successful save, a creature takes half damage and suffers no additional effects.</p>
+            <p class="indent">The inner 10-foot radius becomes difficult terrain until cleared by hand. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire, bludgeoning</set>
+            <set name="level">6</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of obsidian</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Vorpal Shot" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VORPAL_SHOT">
+        <supports>Inventor, Ranger</supports>
+        <description>
+            <p>You touch a piece of ammunition or a weapon with the thrown property, granting it a razor-sharp edge. The first time a creature attacks with the empowered item, it adds +3 to its attack and damage rolls, and ignores all resistances and immunities to the weapon's damage type. On a hit, the creature takes 6d8 additional damage. If this damage reduces the target to 0 hit points, it receives a mortal wound and immediately dies.</p>
+            <p class="indent">Once an attack has been made with the piece of ammunition or weapon, the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of ammunition or a weapon with the thrown property worth at least 1 cp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Vorpal Weapon" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VORPAL_WEAPON">
+        <supports>Inventor</supports>
+        <description>
+            <p>You touch a weapon and grant it a merciless edge. For the duration the weapon becomes unbelievably sharp. Its attacks ignore resistance to slashing damage and t gains the Siege property, dealing double damage to inanimate objects and structures. If the weapon is nonmagical or is magical and has a bonus of +2 or less, its bonus becomes a +3 to attack and damage rolls.</p>
+            <p class="indent">Additionally, if the wielder scores a critical hit with this weapon which would leave a target with less than 50 hit points, it is decapitated and instantly killed.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a melee weapon worth at least 1 sp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Vortex Blast" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_VORTEX_BLAST">
+        <supports>Druid, Occultist, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a sudden vortex that expands outward in a 30-foot cone, tossing characters and objects within the area. Each creature in the area takes 3d6 bludgeoning damage and must succeed on a Strength saving throw or be knocked 30 feet backward and 30 feet upward, taking normal falling damage (3d6 bludgeoning damage) as it falls back down unless it has a means to stay aloft.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
