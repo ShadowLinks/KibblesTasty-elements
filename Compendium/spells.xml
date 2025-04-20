@@ -5122,6 +5122,68 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Unburden" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_UNBURDEN">
+        <supports>Inventor</supports>
+        <description>
+            <p>You touch a creature and relieve the weight it carries. The target can ignore penalties to movement speed or to Dexterity (Stealth) checks due to wearing medium or heavy armor, and can carry twice as much weight as normal before suffering encumbrance penalties.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Unholy Wave" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_UNHOLY_WAVE">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p>A wave of necrotic energy pours out from your outstretched hand in a 30-foot cone. Each creature in the area must make a Constitution saving throw as it is burned by unholy fire. On a failure, it takes 4d6 necrotic damage and becomes wreathed in black fire for the duration. Once per turn when it is hit by an attack, its wounds flare and it takes an additional 1d6 necrotic damage. On a successful save, the target takes half as much damage and is not enveloped in black fire.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">2</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Unstable Explosion" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_UNSTABLE_EXPLOSION">
+        <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You cause an unstable explosion to erupt at a point of your choice within range. Roll 3d6. For each die that rolls a 6, the spell's radius expands by 5 feet, and you can roll an additional d6. Each creature within the final area of the spell must make a Dexterity saving throw. On a failure, a creature takes fire damage equal to the total value of the rolled dice. On a success, it takes half as much damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, roll another d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet (10-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
