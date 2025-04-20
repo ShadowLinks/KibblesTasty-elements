@@ -187,15 +187,337 @@
         <supports>Occultist</supports>
     </append>
 <!-- 3rd Level Spells -->
+    <append id="ID_PHB_SPELL_BESTOW_CURSE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLINK">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CLAIRVOYANCE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COUNTERSPELL">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISPEL_MAGIC">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEAR">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FLY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GASEOUS_FORM">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HASTE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HYPNOTIC_PATTERN">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_NONDETECTION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PLANT_GROWTH">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_REMOVE_CURSE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SENDING">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLEET_STORM">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLOW">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPEAK_WITH_DEAD">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPIRIT_GUARDIANS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WATER_BREATHING">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WATER_WALK">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WIND_WALL">
+        <supports>Occultist</supports>
+    </append>
 <!-- 4th Level Spells -->
+    <append id="ID_PHB_SPELL_ARCANE_EYE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BANISHMENT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLIGHT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COMPULSION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONFUSION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTROL_WATER">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DIVINATION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GIANT_INSECT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ICE_STORM">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LOCATE_CREATURE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POLYMORPH">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WALL_OF_FIRE">
+        <supports>Occultist</supports>
+    </append>
 <!-- 5th Level Spells -->
+    <append id="ID_PHB_SPELL_ANIMATE_OBJECTS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_AWAKEN">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CLOUDKILL">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COMMUNE_WITH_NATURE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONJURE_ELEMENTAL">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTACT_OTHER_PLANE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTAGION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DOMINATE_PERSON">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DREAM">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GEAS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GREATER_RESTORATION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HOLD_MONSTER">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_INSECT_PLAGUE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MASS_CURE_WOUNDS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MISLEAD">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MODIFY_MEMORY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_REINCARNATE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SCRYING">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SEEMING">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WALL_OF_STONE">
+        <supports>Occultist</supports>
+    </append>
 <!-- 6th Level Spells -->
+    <append id="ID_PHB_SPELL_CONJURE_FEY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTINGENCY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EYEBITE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIND_THE_PATH">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FLESH_TO_STONE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FORBIDDANCE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_OTILUKES_FREEZING_SPHERE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HARM">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HEAL">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_JAR">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MASS_SUGGESTION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SUNBEAM">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TRUE_SEEING">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WALL_OF_ICE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WALL_OF_THORNS">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WIND_WALK">
+        <supports>Occultist</supports>
+    </append>
 <!-- 7th Level Spells -->
+    <append id="ID_PHB_SPELL_FINGER_OF_DEATH">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIRE_STORM">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MIRAGE_ARCANE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PLANE_SHIFT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PRISMATIC_SPRAY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROJECT_IMAGE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_REGENERATE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_RESURRECTION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SEQUESTER">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TELEPORT">
+        <supports>Occultist</supports>
+    </append>
 <!-- 8th Level Spells -->
+    <append id="ID_PHB_SPELL_ANIMAL_SHAPES">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ANTIPATHY_SYMPATHY">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CLONE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTROL_WEATHER">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DEMIPLANE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DOMINATE_MONSTER">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EARTHQUAKE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEEBLEMIND">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_INCENDIARY_CLOUD">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAZE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MIND_BLANK">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POWER_WORD_STUN">
+        <supports>Occultist</supports>
+    </append>
 <!-- 9th Level Spells -->
+    <append id="ID_PHB_SPELL_ASTRAL_PROJECTION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FORESIGHT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_IMPRISONMENT">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POWER_WORD_KILL">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHAPECHANGE">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TRUE_POLYMORPH">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TRUE_RESURRECTION">
+        <supports>Occultist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WEIRD">
+        <supports>Occultist</supports>
+    </append>
 
+</elements>
 <!--
-<append id="ID_PHB_SPELL_">
+    <append id="ID_PHB_SPELL_">
         <supports>Occultist</supports>
     </append>
     -->
