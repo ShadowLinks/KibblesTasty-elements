@@ -4842,6 +4842,286 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Thunderburst Mine" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_THUNDERBURST_MINE">
+        <supports>Inventor, Spell Saving Throw</supports>
+        <description>
+            <p>You set a magical trap, infusing thunderous magic into an object. You can set the item to detonate when someone comes within 5 feet of it, or at a verbal command by you. You can issue this command as an action or as a reaction when you see a creature move within 20 feet of a mine, detonating every mine keyed to the verbal command simultaneously.</p>
+            <p class="indent">When the magic trap detonates, each creature in a 10-foot-radius sphere centered on the item must make a Constitution saving throw. A creature takes 3d8 thunder damage on a fail, or half as much damage on a success. If a creature is in the area of effect of more than one thunderburst mine during a turn, it takes half damage from any mines beyond the first.</p>
+            <p class="indent">A magical mine must be set at least 5 feet away from every other mine, and cannot be moved once placed; any attempt to move it results in it detonating. The caster can permanently disarm a mine as an action.</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">2</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 minute</set>
+            <set name="range">Touch</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a tiny nonmagical item, which is destroyed when the spell ends</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Thunder Pulse" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_THUNDER_PULSE">
+        <supports>Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You gather sonic energy and expel it as a shock wave in a 15-foot cone. Each creature in the area must make a Constitution saving throw. On a failure, a creature takes 3d8 thunder damage and is knocked 10 feet back. On a success, it takes half as much damage and it not knocked back.</p>
+            <p class="indent">On your subsequent turns for the duration, you can use your action to create a new shock wave.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (15-foot cone)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Thunder Punch" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_THUNDER_PUNCH">
+        <supports>Bard, Sorcerer, Spellblade, Wizard, Melee</supports>
+        <description>
+            <p>You charge your hand (or similar appendage) with thunderous power. Make a melee spell attack against a creature within 5 feet. On a hit, the target takes 3d8 thunder damage and is knocked 10 feet back. A mighty boom rings out, which is audible from up to 300 feet away.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder, displacement</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Thunder Note" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_THUNDER_NOTE">
+        <supports>Bard, Spell Saving Throw</supports>
+        <description>
+            <p>You emit a crashing bang at the location of a creature you can see within range. The target must succeed on a Constitution saving throw or take 1d8 thunder damage and become deafened until the start of its next turn. If this damage forces it to make a Constitution saving throw to maintain concentration on a spell, it makes that save at disadvantage.</p>
+            <p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Time Anchor" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_TIME_ANCHOR">
+        <supports>Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You place a temporal marker on an object. For the duration, you can activate that marker, bringing the object to your hand and calling it forward in time from the moment you cast the spell. When you do so, the current timeline is unaltered, except that the object disappears from its present location.</p>
+            <p class="indent">The object appears in the its exact state from the time the spell was cast, including its condition, charges, and other properties. The object appears even if it has been consumed or destroyed in the intervening time.</p>
+            <p class="indent">You can only have one object anchored to you at a time. Once this spell has been cast on an object, it can never be cast on the same object again.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 year</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a shattered hourglass</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Time Bubble" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_TIME_BUBBLE">
+        <supports>Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You create a bubble of accelerated time in a 20-foot radius around a point you can see within range. When you cast the spell, initiative (including your current turn) is interrupted, and all creatures within the bubble can take an additional turn immediately (following the initiative order). Nothing inside the bubble can reach outside it or affect creatures outside. Any attacks passing through the bubble miss and any spells passing through it fail. If a creature exits the bubble, its additional turn immediately ends.</p>
+            <p class="indent">If any creature is only partly within the bubble when you cast the spell, the spell fails.</p>
+            <p class="indent">After every creature inside the bubble has acted, the spell ends and you resume your turn, with initiative proceeding as normal.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell with a 9th-level spell slot, the creatures inside the bubble take two rounds of turns before the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Special</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the past or future</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Time Loop" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_TIME_LOOP">
+        <supports>Occultist, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You force a creature within range to repeat its last turn. The target must succeed on a Wisdom saving throw or have its personal timeline adjusted so that it repeats its last action in a preordained loop on its next turn. As the rest of the world may have changed, it attempts to repeat its last action to the best of its ability, including moving the same distance in the same direction, attacking the same target, or taking the same action.</p>
+            <p class="indent">If the target's attempts to repeat its turn conflict, the caster decides which part of the turn takes precedence. While a creature is compelled to repeat its turn, it cannot be compelled to move into obviously dangerous ground, such as a fire or a pit.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a detailed list of the actions and movement that the target creature took on its last turn, which the spell consumes (and required for the player too)</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Time Skip" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_TIME_SKIP">
+        <supports>Occultist, Sorcerer, Spellblade, Warlock, Wizard</supports>
+        <description>
+            <p>You touch a willing creature, sending it six seconds into the future. The target vanishes, reappearing at the same location (or the nearest unoccupied space) at the start of its next turn.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell with a spell slot of 3rd level or higher, the duration increases by 1 additional round for each slot level above 2nd. If you cast this spell with a 9th-level spell slot, the duration increases to 24 hours.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small symbol made up of two connected triangles</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Time Slip" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_TIME_SLIP">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>You surround yourself with a film of distorted time, setting yourself slightly off from time's normal flow. While you are in this bubble of distorted time, you have a +2 bonus to AC. If you would take damage from an attack or fail a saving throw against a spell of 2nd level or lower, you can use your reaction to revert your personal timeline and negate the effect — causing the attack to miss or the save to succeed. Afterward, this spell ends.</p>
+            <p class="indent"><strong><em></em></strong>At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the maximum level of a spell you can negate increases to be equal to the level of the spell slot used.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">an small ornate hourglass worth at least 25 gold pieces</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Time Trap" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_TIME_TRAP">
+        <supports>Occultist, Sorcerer, Spellblade, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You disrupt time in an empty 5-foot cube you can see within range. The first time a creature enters the area, it must make a Wisdom saving throw. On a failure, a creature that is completely inside the cube is stunned, while a creature that is only partly within the cube (e.g. a Large or larger creature) is restrained, as part of its body becomes frozen in time. On a success, the creature’s speed is halved instead. Any affected creature recovers at the start of its next turn. The trap can only be sprung once, and the spell ends at the start of the trapped creature’s next turn.</p>
+            <p class="indent">The trapped area is subtly distorted, and any creature that can’t see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to detect the trap.</p>
+        </description>
+        <setters>
+            <set name="keywords">slow</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">handful of sand from an hourglass</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Tornado" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_TORNADO">
+        <supports>Druid, Sorcerer, Spellblade, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>A whirling tornado erupts, filling a 20-foot-radius, 40-foot-high cylinder centered on a point you can see within range.</p>
+            <p class="indent">Any creature starting its turn within the tornado must make a Strength saving throw. On a failure, it takes 4d8 bludgeoning damage and is thrown 10 feet in a random horizontal direction and 40 feet up (taking normal falling damage when it comes back down). On a success, the creature takes half as much damage and isn’t thrown.</p>
+            <p class="indent">As a bonus action, you can move the tornado up to 30 feet in any direction. All ranged attacks passing through the tornado automatically miss, and ranged weapon attacks against targets within 20 feet of the tornado are made at disadvantage.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning, displacement</set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Tranquil Moment" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_TRANQUIL_MOMENT">
+        <supports>Occultist, Sorcerer, Spellblade, Wizard</supports>
+        <description>
+            <p>You slow your personal perception of time, giving you a moment to think. As part of the bonus action used to cast the spell, you can make a Wisdom or Intelligence ability check that would normally require an action (such as the Search action). If that action would be at disadvantage due to time or pressure, you do not have disadvantage on the check.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Twisting Eruption" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_TWISTING_ERUPTION">
+        <supports>Occultist, Spell Saving Throw</supports>
+        <description>
+            <p>You gesture at a point you can see within range and call forth gnarled roots of dark energy, which erupt from the ground in a 60-foot radius. Each creature of your choice in the area must succeed on a Dexterity saving throw or be restrained as the shadowy plant tendrils grasp and drain the life from it.</p>
+            <p class="indent">At the start of a restrained creature’s turn, it takes 2d10 bludgeoning damage and 2d10 necrotic damage. Each time a creature takes necrotic damage from this spell, you regain 1d4 hit points.</p>
+            <p class="indent">A restrained creature can use its action to make a Strength (Athletics) or Dexterity (Acrobatics) check (its choice) against your spell save DC. On a success, it frees itself. A creature can also be freed by destroying the tendril that grips it. The tendrils have AC 10 and 20 hit points, and are immune to all damage except radiant and fire. Spells that deal radiant or fire damage to creatures in the area of effect also affect any tendrils gripping them.</p>
+            <p class="indent">Any creature ending its turn within the radius while not restrained must make a Dexterity saving throw or become restrained by the tendrils.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning, necrotic, heal</set>
+            <set name="level">7</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a handful of dead plants</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
