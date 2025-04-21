@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
         <name>Occult Rites</name>
@@ -7,7 +6,7 @@
         </update>
     </info>
     <element name="Alchemical Rite" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ALCHEMICAL_RITE">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You gain proficiency with alchemist’s supplies. During a long rest, you can use them to concoct an improvised Potion of Healing by spending 1 hour of the long rest to tend to its simmering. Due to its improvised nature, it expires in 24 hours, and has no value in gold pieces.</p>
             <p class="indent">During this process, you can expend a 5th level spell to brew a Potion of Greater Healing instead. The expended spell slot is regained when the long rest is completed as normal.</p>
@@ -21,7 +20,7 @@
         </rules>
     </element>
     <element name="Blood Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_BLOOD_MAGIC">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You gain the Hemomancer feat.</p>
         </description>
@@ -33,7 +32,7 @@
         </rules>
     </element>
     <element name="Emblazoned Focus" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_EMBLAZONED_FOCUS">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You emblazon a mystical mark on yourself via a tattoo, scar, or similar permanent mark. You can use this mark as your spellcasting focus for your Occultist spells. You no longer need a free hand to cast spells with somatic or material components, as you can channel your magic through the mark, though it glows visibly when you do so. The mark must remain uncovered to function as a spellcasting focus (casting in this way does not remove the signs of casting a spell, it merely means you do not need a free hand).</p>
         </description>
@@ -42,7 +41,7 @@
         </sheet>
     </element>
     <element name="Expert of Tradition" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_EXPERT_OF_TRADITION">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite, occult-prereq</supports>
         <requirements>[level:occultist:10]</requirements>
         <description>
             <p>Choose a skill you are proficient in from among Animal Handling, Arcana, Medicine, Nature, and Survival. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency. If you do not have proficiency in any of the selected skills, you instead gain proficiency in one of your choice.</p>
@@ -55,7 +54,7 @@
         </rules>
     </element>
     <element name="Forbidden Rites" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_FORBIDDEN_RITES">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite, occult-prereq</supports>
         <requirements>[level:occultist:5]</requirements>
         <description>
             <p>You learn the spell animate dead. It is an Occultist spell for you and does not count against the number of Occultist spells you know. This spell cannot gain the ritual tag with Lost Ritual.</p>
@@ -68,7 +67,7 @@
         </rules>
     </element>
     <element name="Markings of Protection" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_MARKINGS_OF_PROTECTION">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You mark yourself with magical symbols and patterns, protecting you from harm. While you are not wearing any armor, your AC becomes 11 + your Wisdom modifier. You can use a shield and still gain this benefit.</p>
         </description>
@@ -82,7 +81,7 @@
         </rules>
     </element>
     <element name="Occult Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>Your Occultist spells known increases by one. You can select this rite multiple times.</p>
         </description>
@@ -94,7 +93,7 @@
         </rules>
     </element>
     <element name="Occult Magic 2" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_2">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC</requirements>
         <description>
             <p></p>
@@ -107,7 +106,7 @@
         </rules>
     </element>
     <element name="Occult Magic 3" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_3">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_2</requirements>
         <description>
             <p></p>
@@ -120,7 +119,7 @@
         </rules>
     </element>
     <element name="Occult Magic 4" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_4">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_3</requirements>
         <description>
             <p></p>
@@ -133,7 +132,7 @@
         </rules>
     </element>
     <element name="Occult Magic 5" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_5">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_4</requirements>
         <description>
             <p></p>
@@ -146,7 +145,7 @@
         </rules>
     </element>
     <element name="Occult Magic 6" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_6">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_5</requirements>
         <description>
             <p></p>
@@ -159,7 +158,7 @@
         </rules>
     </element>
     <element name="Occult Magic 7" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_7">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_6</requirements>
         <description>
             <p></p>
@@ -172,7 +171,7 @@
         </rules>
     </element>
     <element name="Occult Magic 8" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_8">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_MAGIC_7</requirements>
         <description>
             <p></p>
@@ -185,7 +184,7 @@
         </rules>
     </element>
 <element name="Occult Shield" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_SHIELD">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You gain proficiency with shields. Your shield can serve as an Occult Fetish for your Occultist spells.</p>
         </description>
@@ -197,7 +196,7 @@
         </rules>
     </element>
     <element name="Occult Sight" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_OCCULT_SIGHT">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You gain the ability to see invisible creatures within 30 feet if those creatures are undead or fey. You gain advantage on Wisdom (Perception) checks to detect creatures made of or animated by magic (such as constructs, elementals, or undead).</p>
         </description>
@@ -206,7 +205,7 @@
         </sheet>
     </element>
     <element name="Protective Ward" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_PROTECTIVE_WARD">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You make a ward against supernatural harm. While you wear this charm, you can use it to cast protection from evil and good without expending a spell slot, material components, or requiring concentration, but the spell lasts a number of rounds equal to your Wisdom modifier. You can cast this as a reaction to being attacked or making a save it would affect, but when you do so it only lasts until the start of your next turn.</p>
             <p class="indent">Once you use this charm, you cannot use it again until you complete a short or long rest.</p>
@@ -216,7 +215,7 @@
         </sheet>
     </element>
     <element name="Rite of Immortality" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITE_OF_IMMORTALITY">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite, occult-prereq</supports>
         <requirements>[level:occultist:15]</requirements>
         <description>
             <p>You continue to age, but you will no longer die of old age, and suffer none of the frailty of old age.</p>
@@ -226,7 +225,7 @@
         </sheet>
     </element>
     <element name="Rite of Youth" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITE_OF_YOUTH">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite, occult-prereq</supports>
         <requirements>[level:occultist:15]</requirements>
         <description>
             <p>You cease to visually age, and can even choose to become more youthful in appearance, though your lifespan remains the natural lifespan of your race.</p>
@@ -236,7 +235,7 @@
         </sheet>
     </element>
     <element name="Root of Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ROOT_OF_MAGIC">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite, occult-prereq</supports>
         <requirements>[level:occultist:15]</requirements>
         <description>
             <p>You learn 10 cantrips from any class lists of your choice. They are Occultist spells for you.</p>
@@ -249,7 +248,7 @@
         </rules>
     </element>
     <element name="Spacial Storage" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SPACIAL_STORAGE">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You can convert a pocket, ring, hat, or bag into a spatial storage device, capable of carrying up to 5 x your Occultist level pounds, with 0.5 x your Occultist level cubic feet of storage space. For example, a level 5 Occultist can store up to 25 pounds, not exceeding a volume of 2.5 cubic feet, within the storage space. As an action, you can send an item you are holding into the storage space or retrieve an item from the storage space to your hand.</p>
             <p class="indent">If lost, you can recreate the spatial storage device during a short rest.</p>
@@ -267,7 +266,7 @@
         </rules>
     </element>
     <element name="Specialized Poisons" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SPECIALIZED_POISONS">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>When you deal poison damage with an Occultist spell or created poison, you can (but don’t have to) specify a creature type (such as beast or monstrosity) it is created to affect. Damage from that spell or poison ignores resistance and immunity to poison damage by creatures of that type. Creatures without the selected creature type have resistance to poison damage from the spell effect or poison.</p>
         </description>
@@ -276,7 +275,7 @@
         </sheet>
     </element>
     <element name="Spirit Sense" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SPIRIT_SENSE">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You gain the ability to gaze into the spiritual world around you. As an action, you can gain a special form of sight that lasts 1 minute. While under the effect of this special sight, you are blind beyond 30 feet, but within 30 feet you can see into the ethereal plane. Within this sight range you have advantage on ability checks and saving throws to detect and see through illusions, see invisible creatures, and perceive the original form of a shapechanger or transformed creature.</p>
         </description>
@@ -285,7 +284,7 @@
         </sheet>
     </element>
     <element name="Soulburn" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SOULBURN">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You can make your powers sear the very soul of the creature they strike. When you deal cold, fire or lightning damage, you can choose to deal necrotic damage instead.</p>
         </description>
@@ -294,7 +293,7 @@
         </sheet>
     </element>
     <element name="Sympathetic Bond" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SYMPATHETIC_BOND">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You learn the warding bond spell. It is an Occultist spell for you, but does not count against your spells known.</p>
             <p class="indent">When you cast warding bond, you can choose to increase the power of the bond. When you do so, if either bonded creature makes an Intelligence, Wisdom, or Charisma saving throw, both creatures make the save. If either succeeds on the saving throw, both succeed, but if both fail, both are affected by the condition being saved against, even if only one was targeted. If both creatures are saving against the same effect, they do not roll twice, but both succeed if either succeeds on the saving throws and only fail if both fail the saving throw.</p>
@@ -307,7 +306,7 @@
         </rules>
     </element>
     <element name="Vestiments of War" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_VESTIMENTS_OF_WAR">
-        <supports>Occult-Rite</supports>
+        <supports>Occult-Rite, Generic-Occult-Rite</supports>
         <description>
             <p>You gain proficiency with medium armor.</p>
         </description>
@@ -323,8 +322,8 @@
 
     <element name="Animate Broom" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ANIMATE_BROOM">
         <prerequisite>12th level Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,[level:occultist:12]</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:12]</requirements>
+        <supports>Occult-Rite, Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>You infuse an object (traditionally a broom) but any vaguely broom-shaped object (like a staff, spear, or similar) can be used with flying magic, turning it into a Broom of Flying. If your broom is lost or destroyed, you can create a new one during 8 hours of work. If a previous broom still exists when you make a new one, it loses its magic upon the completion of the new one.</p>
         </description>
@@ -334,8 +333,8 @@
     </element>
     <element name="Animate Hair" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ANIMATE_HAIR">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>As an action, you can expend a 1st-level spell slot to cause your hair to lengthen, strengthen, and spring to life for 1 minute. When you use this feature and as an action on your subsequent turns while it is animated you can make melee spell attack with a range of 10 feet, dealing 1d8 bludgeoning damage on hit. This damage increases by 1d8 when you reach 5th Level (2d8), 11th level (3d8), and 17th level (4d8). If you hit a Large or smaller creature with this attack, as a bonus action you can attempt to grapple the creature with your hair using your Wisdom modifier in place of your Strength modifier to initiate and maintain grapple. Your reach with touch spells is also increased to 10 feet while it is animated.</p>
             <p class="indent">A grappled creature can contest the grapple as normal, or deal 5 slashing, fire, or acid damage to the hair to free themselves. The hair has an AC of 12, and you take no damage when it is attacked.</p>
@@ -349,8 +348,8 @@
     </element>
     <element name="Companion Coven" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_COMPANION_COVEN">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>As a ritual that takes 1 hour, you can form a coven bond with one willing creature. While both of you are conscious and within 120 feet of each other, you gain the ability to share spell slots up to a maximum spell slot of your Witch level divided by four (rounded down).</p>
             <p class="indent">While this bond is active, you can use your Spellcasting feature to cast using their spell slots (consuming them as normal), and they can use their Spellcasting feature (if they have one) to cast using your spell slots (consuming them as normal).</p>
@@ -362,8 +361,8 @@
     </element>
     <element name="Curse Specialist" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CURSE_SPECIALIST">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>All the curses and hexes from other covens are added to your Occultist spell list as options you can pick when learn new spells. In addition, when you select this rite, you can select one curse or hex spell of a level you can cast to learn, and it does not count against your spells known.</p>
         </description>
@@ -390,8 +389,8 @@
     </element>
     <element name="Divine Presence" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DIVINE_PRESENCE">
         <prerequisite>Witch, White Coven</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH, ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_WHITE</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_WHITE</requirements>
+        <supports>Occult-Rite, Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>Your familiar is always under the effect of the sanctuary spell (using your spell save DC). If it deals damage (such as channeling one of your spells), the effect is suppressed until the start of its next turn</p>
         </description>
@@ -401,8 +400,8 @@
     </element>
     <element name="Evil Eye" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_EVIL_EYE">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>You gain the ability to lay the most unsettling gaze upon a creature. As a reaction to a creature within 15 feet attacking you, you can unleash a terrifying glare at them (occurring after the attack completes). The target creature must make a Wisdom saving throw against your spell save DC or become frightened of you until the end of your next turn. Once a creature has succeeded on a save against this ability, they are immune to it for 24 hours.</p>
             <p class="indent">Additionally, you gain proficiency in the Intimidation skill.</p>
@@ -416,8 +415,8 @@
     </element>
     <element name="Familiar Swap" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_FAMILIAR_SWAP">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>If your familiar is within 60 feet of you, as an action, you can swap places with your familiar. If you cannot fit into the space where your familiar is, the ability fails and you take 1d6 force damage. Once you use this Rite, you must finish a short or long rest before you can use it again.</p>
         </description>
@@ -427,8 +426,8 @@
     </element>
     <element name="Form of the Familiar" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_FORM_OF_THE_FAMILIAR">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>You learn the form of familiarK spell and gain the ability to cast it once without expending a spell slot as an action. You regain the ability to cast it in this way again after completing a short or long rest. You can also cast the spell using any spell slots you have.</p>
         </description>
@@ -441,8 +440,8 @@
     </element>
     <element name="Light of the Moon" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_LIGHT_OF_THE_MOON">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>You can channel to power of the moon, drawing its light following ancient traditions. You learn the spells faerie fire and moonbeam. When you cast either of this spells, allied creatures of your choice within the area of effect are not affected, and instead gain temporary hit points equal to your Wisdom modifier.</p>
         </description>
@@ -456,8 +455,8 @@
     </element>
     <element name="Ray of Enfeeblement" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RAY_OF_ENFEEBLEMENT">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>You learn the ray of enfeeblement spell and you can cast it once without expending a spell slot. You regain the ability to cast it in this way again after completing a short or long rest.</p>
         </description>
@@ -470,8 +469,8 @@
     </element>
     <element name="Riding Familiar" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RIDING_FAMILIAR">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>If you have a familiar without a flying speed, as an action you can make them become a creature one size larger than you (up to Large sized) for 8 hours. As an action, you can revert your familiar to its normal size. At 12th level, you can use this ability on a familiar with a flying speed. Once you use this rite, you must finish a short or long rest before you can use it again. Your familiar’s strength becomes 10 while enlarged, if it was not already higher.</p>
         </description>
@@ -481,8 +480,8 @@
     </element>
     <element name="Skulking Familiar" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SKULKING_FAMILIAR">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>Any familiar summoned by you gains proficiency in the Stealth skill and its movement doesn’t provoke opportunity attacks.</p>
         </description>
@@ -492,8 +491,8 @@
     </element>
     <element name="Witch's Brew" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_WITCHS_BREW">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>During a short or long rest, you can infuse a spell with a casting time of one action or bonus action into a concoction, expending the spell slot or consumed material components on completion of the rest.</p>
             <p class="indent">This spell can subsequently be cast by anyone carrying the potion by drinking the potion as an action (not requiring any spell slots or components), with the drinker as the target, acting as the caster of the spell, but using your spellcasting ability modifier.</p>
@@ -507,8 +506,8 @@
     </element>
     <element name="Witch's Claws" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_WITCHS_CLAWS">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>As an action, you can form your fingernails (or similar physiological feature if you do not have fingernails) form into wicked claws and you make a melee spell attack against a creature within 5 feet of you.</p>
             <p class="indent">On hit, the target takes 1d10 + your Wisdom modifier slashing damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). At 6th level, you can apply your Witch’s Touch feature when you hit with this attack (including potentially dealing your Wisdom modifier damage twice).</p>
@@ -531,8 +530,8 @@
     </element>
     <element name="Witch's Hat" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_WITCHS_HAT">
         <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Witch-Occult-Rite</supports>
         <description>
             <p>You invest a hat (traditionally a floppy wide brimmed black witch’s hat) with some of your magic, turning it into a Hat of Disguise. If your hat is lost or destroyed, you can create a new one with 2 hours of work. If a previous hat still exists when you make a new one, it loses its magic upon the completion of the new one.</p>
         </description>
@@ -541,9 +540,9 @@
         </sheet>
     </element>
     <element name="Wicked Curse" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_WICKED_CURSE">
-        <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,[level:5]</requirements>
-        <supports>Occult-Rite</supports>
+        <prerequisite>5th level, Witch</prerequisite>
+        <requirements>[level:occultist:5]</requirements>
+        <supports>Occult-Rite, Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>You learn the bestow curse spell. When you cast bestow curse, you can select two of the witch curses.</p>
         </description>
@@ -556,8 +555,8 @@
     </element>
     <element name="Malicious Transfusion" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_MALICIOUS_TRANSFUSION">
         <prerequisite>Witch Red Coven</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite, Red-Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>When your familiar redirects damage, you can target an unwilling creature. When you do so, the target creature must make a Charisma saving throw. On a failure, it takes the redirected damage as normal, and the amount transferred can exceed its current hit points. On a success, it takes half the redirected damage, and you take the other half of the redirected damage.</p>
         </description>
@@ -567,8 +566,8 @@
     </element>
     <element name="Bathed in Blood" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_BATHED_IN_BLOOD">
         <prerequisite>Witch Red Coven</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite, Red-Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>When you take damage as part casting blood magic (from contributing the material component or through the Hemomancer feat) it does not force a saving throw to maintain concentration if you are concentrating on a spell.</p>
             <p class="indent">Additionally, when you expend hit points casting a spell with blood magic, you gain temporary hit points equal to the hit points expended on its material components.</p>
@@ -580,8 +579,8 @@
     </element>
     <element name="Sanguine Sacrifice" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SANGUINE_SACRIFICE">
         <prerequisite>Witch Red Coven</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite, Red-Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>When you restore hit points with an Occultist spell, you can increase the hit points restored by up to your Occultist level by spending an equal number of your own hit points (equal to the total number of additional hit points restored across all targets if the spell targets multiple targets).</p>
         </description>
@@ -591,8 +590,8 @@
     </element>
     <element name="Sanguine Secrets" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SANGUINE_SECRETS">
         <prerequisite>Witch Red Coven, Hemomancer feat</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED,ID_KTH_COLAL_FEAT_HEMOMANCER</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED,ID_KTH_COLAL_FEAT_HEMOMANCER</requirements>
+        <supports>Occult-Rite, Red-Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>You can cast spells without the Blood Magic tag using the Hemomancer feat.</p>
         </description>
@@ -602,8 +601,8 @@
     </element>
     <element name="Sanguine Vitality" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SANGUINE_VITALITY">
         <prerequisite>Witch Red Coven</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite, Red-Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>Your rich diet of the blood of your enemies empowers you. Your maximum hit points are increased by 1 for each Occultist level you have.</p>
         </description>
@@ -616,8 +615,8 @@
     </element>
     <element name="Stolen Life" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_STOLEN_LIFE">
         <prerequisite>Witch Red Coven, 5th level</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED,[level:5]</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED,[level:5]</requirements>
+        <supports>Occult-Rite, Red-Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>As an action, you can touch a recently deceased corpse, drawing the last fragments of life out of it. When you do so, you recover hit points equal to the creatures CR or levels, and can optionally assume it’s appearance as if by the disguise self spell, but with an indefinite duration. You can store a number of stolen appearances this way equal to your Wisdom modifier, assuming any of them as an action. You can end the illusion or assume a different stored appearance as an action</p>
         </description>
@@ -627,8 +626,8 @@
     </element>
     <element name="Witch's Fangs" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_WITCHS_FANGS">
         <prerequisite>Witch Red Coven</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite, Red-Witch-Occult-Rite, occult-prereq</supports>
         <description>
             <p>As an action, you grow long canine fangs and attempt to bite a creature within 5 feet of you, making a melee spell attack. On hit, the target takes 1d4 piercing damage and 1d4 necrotic damage, and you gain temporary hit points equal to the necrotic damage dealt.</p>
             <p class="indent">The piercing and necrotic damage each increase by 1d4 at 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
@@ -647,8 +646,8 @@
     </element>
     <element name="Abandoned Humanity" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ABANDONED_HUMANITY">
         <prerequisite>Blood Cultist, Creature type of Humanoid</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Blood-Occult-Rite, occult-prereq</supports>
         <description>
             <p>You cast aside your humanity. Your creature type ceases to be humanoid. Select a new creature type from aberration, fiend, or monstrosity.</p>
         </description>
@@ -658,8 +657,8 @@
     </element>
     <element name="Blood Leaching" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_BLOOD_LEACHING">
         <prerequisite>Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Blood-Occult-Rite</supports>
         <description>
             <p>When you cast a blood magic spell of 1st level or higher with Sanguine Power, if the spell does not consume all of the stored hit points, you gain temporary hit points equal to the remainder.</p>
         </description>
@@ -669,8 +668,8 @@
     </element>
     <element name="Boon Seeker" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_BOON_SEEKER">
         <prerequisite>Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Blood-Occult-Rite</supports>
         <description>
             <p>You can make one additional sacrifice to receive a boon using your Dark Powers feature.</p>
         </description>
@@ -680,8 +679,8 @@
     </element>
     <element name="Cultist's Touch" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CULTISTS_TOUCH">
         <prerequisite>7th level Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST, [level:occultist:7]</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:7]</requirements>
+        <supports>Occult-Rite, Blood-Occult-Rite, occult-prereq</supports>
         <description>
             <p>When you use your action to cast a cantrip with a range of touch, you can make one weapon attack as a bonus action.</p>
         </description>
@@ -691,8 +690,8 @@
     </element>
     <element name="Demon Within" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DEMON_WITHIN">
         <prerequisite>15th level Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST, [level:occultist:15]</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:15]</requirements>
+        <supports>Occult-Rite, Blood-Occult-Rite, occult-prereq</supports>
         <description>
             <p>The first time you drop to 0 hit points, you assume your Demonic Ascension form (not counting as a use of the feature) and regain half your maximum hit points. Once this effect is triggered, you cannot trigger it again until you complete a long rest.</p>
         </description>
@@ -702,8 +701,8 @@
     </element>
     <element name="Empowered Blood Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_EMPOWERED_BLOOD_MAGIC">
         <prerequisite>5th level Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST, [level:occultist:5]</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <supports>Occult-Rite, Blood-Occult-Rite, occult-prereq</supports>
         <description>
             <p>When you cast a spell that deals damage on cast and has a blood magic tag, you can add your Spellcasting modifier to the damage dealt.</p>
         </description>
@@ -713,8 +712,8 @@
     </element>
     <element name="Sacrificial Absolution" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SACRIFICIAL_ABSOLUTION">
         <prerequisite>Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Blood-Occult-Rite</supports>
         <description>
             <p>You can cast lesser restoration on a willing creature without expending a spell slot, however when you cast it in this way you suffer any condition or effect that spell cleared.</p>
             <p class="indent">When you reach 9th level, you can instead cast greater restoration this way. It does not consume any material components when you cast it this way. If you remove a cursed item’s effect (ending its attunement to creature), it instead becomes attuned to you.</p>
@@ -726,8 +725,8 @@
     </element>
     <element name="Unholy Gift" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_UNHOLY_GIFT">
         <prerequisite>Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Blood-Occult-Rite</supports>
         <description>
             <p>Once per turn, when you expend your own hit points to cast a spell using Blood Magic, you can cause one allied creature other than yourself within 30 feet to gain temporary hit points equal to the sacrificed hit points.</p>
         </description>
@@ -737,8 +736,8 @@
     </element>
     <element name="Wretched Resilience" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_WRETCHED_RESILIENCE">
         <prerequisite>Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Blood-Occult-Rite</supports>
         <description>
             <p>You gain immunity to diseases, and advantage on saving throws against the poisoned condition.</p>
         </description>
@@ -748,8 +747,8 @@
     </element>
     <element name="Zealous Conviction" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ZEALOUS_CONVICTION">
         <prerequisite>Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
-        <supports>Occult-Rite</supports>
+        
+        <supports>Occult-Rite, Blood-Occult-Rite</supports>
         <description>
             <p>You gain advantage on saving throws against being charmed or frightened.</p>
         </description>
@@ -759,8 +758,8 @@
     </element>
     <element name="Zealous Dedication" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ZEALOUS_DEDICATION">
         <prerequisite>12th level Blood Cultist, Zealous Conviction</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST, [level:occultist:5], ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ZEALOUS_CONVICTION</requirements>
-        <supports>Occult-Rite</supports>
+        <requirements>[level:occultist:5], ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ZEALOUS_CONVICTION</requirements>
+        <supports>Occult-Rite, Blood-Occult-Rite, occult-prereq</supports>
         <description>
             <p>When you are reduced to 0 hit points, you can make a Spellcasting ability check with a DC of 5 + the damage taken. On success, you are reduced to 1 hit point instead.</p>
             <p class="indent">On failure, you can expend a spell slot to increase the value rolled by an amount equal to the level of the spell slot, potentially during a failure into a success. Once you spend a spell slot to do so, you cannot do so against until you complete a short or long rest.</p>
@@ -775,7 +774,7 @@
 <!-- 
 <element name="RiteName" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITENAME">
         <prerequisite>Blood Cultist</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        
         <supports>Occult-Rite</supports>
         <description>
             <p></p>
