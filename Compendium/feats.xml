@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Feats</name>
+        <update version="0.0.1">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/feats.xml" />
+        </update>
+    </info>
+    <!-- Blood magic feats-->
+    <element name="Hemomancer" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_HEMOMANCER">
+        <prerequisite>Spellcasting or Pact Magic Feature</prerequisite>
+        <requirements>[type:spell]</requirements>
+        <description>
+            <p>You can sacrifice your essence to cast spells with the "(blood magic)" tag in place of expending a spell slot. To do so, sacrifice 5 hit points per level of the spell. These hit points sacrificed can count towards the hit point cost of the blood Material component of the spell.</p>
+            <p class="indent">You can cast a total number of spell levels in this manner equal to your character level, but casting a spell of 6th level or higher this way drains your vitality in a more profound way, causing you to gain levels of exhaustion equal to the number of levels over 5th the spell is (1 level for a 6th-level spell, 2 for a 7th-level spell, etc.).</p>
+            <p class="indent">You cannot cast spells over 5th level this way while you have any levels of exhaustion. The total number of spell levels you can cast in this manner resets when you take a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can sacrifice your essence to cast spells with the "(blood magic)" tag in place of expending a spell slot. To do so, sacrifice 5 hit points per level of the spell. These hit points sacrificed can count towards the hit point cost of the blood Material component of the spell.
+            You can cast a total number of spell levels in this manner equal to your character level ({{level}}), but casting a spell of 6th level or higher this way drains your vitality in a more profound way, causing you to gain levels of exhaustion equal to the number of levels over 5th the spell is.
+            You cannot cast spells over 5th level this way while you have any levels of exhaustion. The total number of spell levels you can cast in this manner resets when you take a long rest.</description>
+        </sheet>
+    </element>
+    
+    <element name="Vital Blood" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_VITAL_BLOOD">
+        <prerequisite>Spellcasting or Pact Magic Feature</prerequisite>
+        <requirements>[type:spell]</requirements>
+        <description>
+            <p>Your mastery of blood magic has given it magical properties, brimming with unnatural vitality. You gain the following benefits:</p>
+            <ul>
+                <li> Increase your Constitution, Wisdom, Intelligence, or Charisma by 1, to a maximum of 20.</li>
+                <li>Bloody Vitality. When you complete a short rest while you are bloodied (have less than half your maximum hit points) before rolling any hit dice, you regain hit points equal to your spellcasting modifier.</li>
+                <li>Crimson Potion. As an action, you can take 1d4 slashing damage to splatter some of your blood on a willing creature within 5 feet, granting them the effects of a Potion of Healing. Once you use this ability you cannot use it again until you complete a short or long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Bloody Vitality. When you complete a short rest while you are bloodied (have less than half your maximum hit points) before rolling any hit dice, you regain hit points equal to your spellcasting modifier.
+            Crimson Potion. As an action, you can take 1d4 slashing damage to splatter some of your blood on a willing creature within 5 feet, granting them the effects of a Potion of Healing. Once you use this ability you cannot use it again until you complete a short or long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement +1 (Vital Blood)" supports="ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+</elements>
