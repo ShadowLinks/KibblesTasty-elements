@@ -5867,7 +5867,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Hemorrhaging Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_HEMORRHAGING_CURSE">
+    <element name="Hemorrhaging Curse (curse) (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_HEMORRHAGING_CURSE">
         <supports>witch-curse</supports>
         <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
         <description>
@@ -5890,7 +5890,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Rupturing Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_RUPTURING_CURSE">
+    <element name="Rupturing Curse (curse) (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_RUPTURING_CURSE">
         <supports>witch-curse</supports>
         <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
         <description>
@@ -5913,7 +5913,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Bloodline Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_BLOODLINE_CURSE">
+    <element name="Bloodline Curse (curse) (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_BLOODLINE_CURSE">
         <supports>witch-curse</supports>
         <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
         <description>
