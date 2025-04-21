@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Tradition of the Witch</name>
+        <update version="0.0.1">
+            <file name="occultist-witch.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-witch.xml" />
+        </update>
+    </info>
+    <element name="Tradition of the Witch" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH">
+        <supports>Occult-Tradition</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_WITCHS_MAGIC" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_WITCHS_TOUCH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_MASTER_OF_CURSES" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_WITCHS_MAGIC" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_WITCHS_TOUCH" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_MASTER_OF_CURSES" level="14" />
+        </rules>
+    </element>
+    <element name="Witch's Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_WITCHS_MAGIC">
+        <description>
+            <p>When you select this tradition at first level you learn the spell find familiar, and when you summon a familiar with this spell, it acts on your initiative. Additionally, you can select two additional cantrips of your choice from the Occultist spell list.</p>
+        </description>
+        <sheet>
+            <description>When you summon a familiar with this spell, it acts on your initiative.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+            <select type="Spell" name="Cantrip (Witch)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Occultist" />
+        </rules>
+    </element>
+    <element name="Coven" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN">
+        <description>
+            <p>Starting at 1st level, you select the Coven you belong to from among the Black Coven, the White Coven, or the Green Coven. Based on which Coven you select, you gain access to additional spells and manifest different special powers. Spells gained from this feature are added to your spells known and count as Occultist spells for you, but do not count against the total number of spells you can know.</p>
+            <p class="indent">While the Covens are often associated with Evil, Good, and Neutral respectively, you do not have to have a particular alignment to join a particular coven — it is merely your area of expertise and what traditions you know.</p>
+            <p class="indent">Each Coven explores a different expression of magic. A Witch of the Black Coven specializes in inflicting pain, curses, and eventual agonizing death on those that cross them. By contrast, a Witch of the White Coven focuses on binding and healing. The focus of a Witch of the Green Coven is the closest to the Witch’s roots in hag-like fey magic, drawing power from nature to baffle her foes and control her surroundings.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Coven" supports="witch-coven" />
+        </rules>
+    </element>
+     <element name="Black Coven" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_BLACK">
+        <supports>witch-coven</supports>
+        <description>
+            <p><strong>Black Coven</strong></p>
+            <table>
+                <thead>
+                    <tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>rotting curse, hideous laughter</td></tr>
+                <tr><td>3rd</td><td>blindness/deafness, darkness</td></tr>
+                <tr><td>5th</td><td>bestow curse, curse of doom</td></tr>
+                <tr><td>7th</td><td>black tentacles, devour shadow</td></tr>
+                <tr><td>9th</td><td>killing curse, contagion</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting name="Occultist" extend="true">
+            <extend>ID_KTH_COLAL_CURSE_ROTTING_CURSE</extend>
+            <extend>ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER</extend>
+            <extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+            <extend>ID_PHB_SPELL_BESTOW_CURSE</extend>
+            <extend>ID_PHB_SPELL_DARKNESS</extend>
+            <extend>ID_KTH_COLAL_CURSE_CURSE_OF_DOOM</extend>
+            <extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+            <extend>ID_KTH_COLAL_SPELL_DEVOUR_SHADOW</extend>
+            <extend>ID_KTH_COLAL_CURSE_KILLING_CURSE</extend>
+            <extend>ID_PHB_SPELL_CONTAGION</extend>
+        </spellcasting>
+    </element>
+    <element name="White Coven" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_WHITE">
+        <supports>witch-coven</supports>
+        <description>
+            <p><strong>White Coven</strong></p>
+            <table>
+                <thead>
+                    <tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>binding curse, healing word</td></tr>
+                <tr><td>3rd</td><td>calm emotions, hold person</td></tr>
+                <tr><td>5th</td><td>karmic curse, mass healing word</td></tr>
+                <tr><td>7th</td><td>banishment, resilient sphere</td></tr>
+                <tr><td>9th</td><td>enfeebling curse, dispel evil and good</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting name="Occultist" extend="true">
+            <extend>ID_KTH_COLAL_CURSE_BINDING_CURSE</extend>
+            <extend>ID_PHB_SPELL_HEALING_WORD</extend>
+            <extend>ID_PHB_SPELL_CALM_EMOTIONS</extend>
+            <extend>ID_PHB_SPELL_HOLD_PERSON</extend>
+            <extend>ID_KTH_COLAL_CURSE_KARMIC_CURSE</extend>
+            <extend>ID_PHB_SPELL_MASS_HEALING_WORD</extend>
+            <extend>ID_PHB_SPELL_BANISHMENT</extend>
+            <extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+            <extend>ID_KTH_COLAL_CURSE_ENFEEBLING_CURSE</extend>
+            <extend>ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD</extend>
+        </spellcasting>
+    </element>
+    <element name="Green Coven" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_GREEN">
+        <supports>witch-coven</supports>
+        <description>
+            <p><strong>Green Coven</strong></p>
+            <table>
+                <thead>
+                    <tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>befuddling curse, entangle</td></tr>
+                <tr><td>3rd</td><td>alter self, enlarge/reduce</td></tr>
+                <tr><td>5th</td><td>curse of misfortune, major image</td></tr>
+                <tr><td>7th</td><td>greater invisibility, polymorph</td></tr>
+                <tr><td>9th</td><td>swapping curse, seeming</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting name="Occultist" extend="true">
+            <extend>ID_KTH_COLAL_CURSE_BEFUDDLING_CURSE</extend>
+            <extend>ID_PHB_SPELL_ENTANGLE</extend>
+            <extend>ID_PHB_SPELL_ALTER_SELF</extend>
+            <extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend>
+            <extend>ID_KTH_COLAL_CURSE_CURSE_OF_MISFORTUNE</extend>
+            <extend>ID_PHB_SPELL_MAJOR_IMAGE</extend>
+            <extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+            <extend>ID_PHB_SPELL_POLYMORPH</extend>
+            <extend>ID_KTH_COLAL_CURSE_SWAPPING_CURSE</extend>
+            <extend>ID_PHB_SPELL_SEEMING</extend>
+        </spellcasting>
+    </element>
+    <element name="Red Coven" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED">
+        <supports>witch-coven</supports>
+        <description>
+            <p><strong>Red Coven</strong></p>
+            <table>
+                <thead>
+                    <tr><td>Witch Level</td><td>Bonus Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>sense blood, hemorrhaging curse</td></tr>
+                <tr><td>3rd</td><td>hold person, morbid puppet</td></tr>
+                <tr><td>5th</td><td>corpse explosion, rupturing curse</td></tr>
+                <tr><td>7th</td><td>exsanguinate, macabre marionette</td></tr>
+                <tr><td>9th</td><td>bloodline curse, hold monster</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting name="Occultist" extend="true">
+            <extend>ID_KTH_COLAL_SPELL_SENSE_BLOOD</extend>
+            <extend>ID_KTH_COLAL_CURSE_HEMORRHAGING_CURSE</extend>
+            <extend>ID_PHB_SPELL_HOLD_PERSON</extend>
+            <extend>ID_KTH_COLAL_SPELL_MORBID_PUPPET</extend>
+            <extend>ID_KTH_COLAL_CURSE_RUPTURING_CURSE</extend>
+            <extend>ID_KTH_COLAL_SPELL_CORPSE_EXPLOSION</extend>
+            <extend>ID_KTH_COLAL_SPELL_EXSANGUINATE</extend>
+            <extend>ID_KTH_COLAL_SPELL_MACABRE_MARIONETTE</extend>
+            <extend>ID_KTH_COLAL_CURSE_BLOODLINE_CURSE</extend>
+            <extend>ID_PHB_SPELL_HOLD_MONSTER</extend>
+        </spellcasting>
+    </element>
+    <element name="Familiar Bond" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND">
+        <description>
+            <p>At 3rd level, when you cast find familiar, your familiar gains an Intelligence, Wisdom and Charisma of 10 (unless that respective score is already greater) and the ability to speak any languages you speak. When your familiar takes damage, you can choose to take that damage yourself instead, transferring all damage to you.</p>
+            <p class="indent">Additionally, you can cast spells with a material component if your familiar can access the material component without holding it yourself (including curse spells that can acquire the material component by touching the target creature).</p>
+            <p class="indent"><strong><em>Black Coven</em></strong> As a reaction to a creature within 30 feet of your familiar hitting with an attack, you can have your familiar subtract 1d4 + half your Occultist level (rounded down) from the attack roll (no action required from the familiar). It can do this a number of times equal to your Wisdom modifier, regaining all uses after you complete a long rest.</p>
+            <p class="indent"><strong><em>White Coven</em></strong> When you complete a long rest, your familiar gains temporary hit points equal to your Wisdom modifier + twice your Occultist level. While it has temporary hit points, as an action your familiar can teleport to a creature within 30 feet of it and grant that creature one or more of its temporary hit points. You can direct it to do this immediately using your reaction when a creature within 30 feet of it takes damage (no action required by the familiar).</p>
+            <p class="indent"><strong><em>Green Coven</em></strong> When you complete a long rest, your familiar gains a number of illusory duplicates equal to your Wisdom modifier (a minimum of one). These persist until destroyed by taking damage or you complete a long rest. The illusory duplicates cannot take any actions, but move and act like your familiar during your turn, staying within 30 feet of you or it.</p>
+            <p class="indent">At the end of your familiar’s turn or when it takes damage, it can swap places with an illusory familiar (no action required by the familiar). If it does this as a result of taking damage, the illusory familiar is destroyed but the familiar takes no damage. Illusory duplicates are immune to damage while within 5 feet of you.</p>
+            <p class="indent">Unless otherwise specified, illusory familiars occupy the Witch’s space and move with them.</p>
+            <p class="indent"><strong><em>Red Coven</em></strong> As a reaction to an allied creature taking damage while within 5 feet of your familiar, you can transfer up to four times your Occultist level of that damage (up to 12 at level 3 when you get this feature) to another willing creature within 60 feet of it. The damage transferred cannot exceed the current hit points of the target of the transfer. You can do this a number of times equal to your Spellcasting modifier, regaining all uses when you complete a long rest.</p>
+
+        </description>
+        <sheet>
+            <description>When you cast find familiar, your familiar gains an Intelligence, Wisdom and Charisma of 10 (unless that respective score is already greater) and the ability to speak any languages you speak. When your familiar takes damage, you can choose to take that damage yourself instead, transferring all damage to you.
+            Additionally, you can cast spells with a material component if your familiar can access the material component without holding it yourself (including curse spells that can acquire the material component by touching the target creature).
+           </description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_BLACK" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND_BLACK"/>
+            <grant type="Archetype Feature" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_WHITE" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND_WHITE"/>
+            <grant type="Archetype Feature" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_GREEN" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND_GREEN"/>
+            <grant type="Archetype Feature" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND_RED"/>
+        </rules>
+    </element>
+    <element name="Familiar Bond - Black" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND_BLACK">
+
+        <description />
+        <sheet>
+            <description> As a reaction to a creature within 30 feet of your familiar hitting with an attack, you can have your familiar subtract 1d4 + {{level:occultist:half}} from the attack roll (no action required from the familiar). It can do this {{wisdom:modifier}} times, regaining all uses after you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Familiar Bond - White" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND_WHITE">
+
+        <description />
+        <sheet>
+            <description> When you complete a long rest, your familiar gains {{whitefamiliar:temp}} temporary hit points. While it has temporary hit points, as an action your familiar can teleport to a creature within 30 feet of it and grant that creature one or more of its temporary hit points. You can direct it to do this immediately using your reaction when a creature within 30 feet of it takes damage (no action required by the familiar).</description>
+        </sheet>        
+        <rules>
+            <stat name="whitefamiliar:temp" value="level:occultist" />
+            <stat name="whitefamiliar:temp" value="level:occultist" />
+            <stat name="whitefamiliar:temp" value="wisdom:modifier" />
+        </rules>
+    </element>
+    <element name="Familiar Bond - Green" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND_GREEN">
+        <description />
+        <sheet>
+            <description>When you complete a long rest, your familiar gains a number of illusory duplicates {{wisdom:modifier}}. These persist until destroyed by taking damage or you complete a long rest. The illusory duplicates cannot take any actions, but move and act like your familiar during your turn, staying within 30 feet of you or it.
+            At the end of your familiar’s turn or when it takes damage, it can swap places with an illusory familiar (no action required by the familiar). If it does this as a result of taking damage, the illusory familiar is destroyed but the familiar takes no damage. Illusory duplicates are immune to damage while within 5 feet of you.
+            Unless otherwise specified, illusory familiars occupy the Witch’s space and move with them.</description>
+        </sheet>
+    </element>
+    <element name="Familiar Bond - Red" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND_RED">
+        <description />
+        <sheet>
+            <description>As a reaction to an allied creature taking damage while within 5 feet of your familiar, you can transfer up to four times your Occultist level of that damage (up to 12 at level 3 when you get this feature) to another willing creature within 60 feet of it. The damage transferred cannot exceed the current hit points of the target of the transfer. You can do this a number of times equal to your Spellcasting modifier, regaining all uses when you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Witch's Touch" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_WITCHS_TOUCH">
+        <description>
+            <p>Starting at 6th level, whenever you cast a spell with a range of touch (including through your familiar), you can add one of the following modifiers to the spell:</p>
+            <ul>
+                <li><strong>Temporary Hit Points.</strong> It grants one affected target temporary hit points equal to your Wisdom modifier. Only one creature can have these temporary hit points at a time.</li>
+                <li><strong>Bonus Damage.</strong> It deals additional damage equal to your Wisdom modifier to one affected creature.</li>
+                <li><strong>Misfortune.</strong> It adds or subtracts 1d4 from the target’s next attack roll or saving throw before the start of your next turn.</li>
+            </ul>
+            <p class="indent">You can also confer these effects to another spell with a range longer than touch by making its range touch. If you make the range of a curse spell touch, you no longer need the material component for the spell.</p>
+            <p class="indent">Alternatively confer these effects as an action without casting a spell by touching a target (making a melee spell attack against the target if it is an unwilling creature).</p>
+        </description>
+        <sheet>
+            <description>When you cast a Touch range spell, including through your familiar, you can grant a modifier to the spell.
+            - {{wisdom:modifier}} Temp HP for 1 target.
+            - {{wisdom:modifier}} bonus damage for 1 target.</description>
+            - It adds or subtracts 1d4 from the target’s next attack roll or saving throw before the start of your next turn.
+            You can add these effects to a ranged spell by changing it to Touch range. Curse Spells dont need the material component.
+            Alternatively confer these effects as an action without casting a spell by touching a target (making a melee spell attack against the target if it is an unwilling creature).
+        </sheet>
+    </element>
+    <element name="Master of Curses" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_MASTER_OF_CURSES">
+        <description>
+            <p>Starting at 14th level, you no longer need the material component for curse spells (even when casting them at range).</p>
+            <p class="indent">Additionally, casting 1st level Hex or Curse spell no longer interrupts or is interrupted by concentration of other spells, though this cannot let you concentrate on more than two spells at a time, with at least one being a 1st level Hex or Curse. If you lose concentration while you are doing this, concentration is lost on both spells.</p>
+        </description>
+        <sheet>
+            <description>You no longer need the material component for curse spells (even when casting them at range). Additionally, casting 1st level Hex or Curse spell no longer interrupts or is interrupted by concentration of other spells, though this cannot let you concentrate on more than two spells at a time, with at least one being a 1st level Hex or Curse. If you lose concentration while you are doing this, concentration is lost on both spells.</description>
+        </sheet>
+    </element>
+</elements>
