@@ -645,12 +645,23 @@
             You can apply your Witch’s Touch feature to attacks made with this feature.</description>
         </sheet>
     </element>
+    <element name="Abandoned Humanity" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ABANDONED_HUMANITY">
+        <prerequisite>Blood Cultist, Creature type of Humanoid</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You cast aside your humanity. Your creature type ceases to be humanoid. Select a new creature type from aberration, fiend, or monstrosity.</p>
+        </description>
+        <sheet>
+            <description>You cast aside your humanity. Your creature type ceases to be humanoid. Select a new creature type from aberration, fiend, or monstrosity.</description>
+        </sheet>
+    </element>
 </elements>
 
 <!-- 
 <element name="RiteName" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITENAME">
-        <prerequisite>Witch Red Coven</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <prerequisite>Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
         <supports>Occult-Rite</supports>
         <description>
             <p></p>
