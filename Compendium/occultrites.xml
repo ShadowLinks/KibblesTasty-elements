@@ -769,6 +769,9 @@
             On failure, you can expend a spell slot to increase the value rolled by an amount equal to the level of the spell slot, potentially during a failure into a success. Once you spend a spell slot to do so, you cannot do so against until you complete a short or long rest.</description>
         </sheet>
     </element>
+
+    <!-- Hedge Mage Rites-->
+
     <element name="Hedge Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HEDGE_MAGIC">
         <prerequisite>Hedge Mage</prerequisite>        
         <supports>Occult-Rite, Hedge-Occult-Rite</supports>
@@ -859,6 +862,127 @@
         </description>
         <sheet>
             <description>When you pass a saving throw against a spell of 5th level or lower, you gain the ability to cast that spell for the next minute (expending any spell slots or components it would normally require to cast it).</description>
+        </sheet>
+    </element>
+    <element name="Manipulate Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_MANIPULATE_MAGIC">
+        <prerequisite>5th level Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+            <p>You learn one Metamagic option of your choice from the Sorcerer class. You can use this Metamagic option once, regaining the ability to use it again after completing a long rest. When using it this way, you use it as if you expended 3 or less sorcery points.</p>
+            <p class="indent">You can use it again before completing a long rest by expending a spell slot of a level equal to the number of sorcery points the Metamagic would cost to use.</p>
+        </description>
+        <sheet>
+            <description>You learn one Metamagic option of your choice from the Sorcerer class. You can use this Metamagic option once, regaining the ability to use it again after completing a long rest. When using it this way, you use it as if you expended 3 or less sorcery points.
+            You can use it again before completing a long rest by expending a spell slot of a level equal to the number of sorcery points the Metamagic would cost to use.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Metamagic" supports="Metamagic" level="5" number="1"/>
+        </rules>
+    </element>
+    <element name="Mass Cantrip" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_MASS_CANTRIP">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <description>
+            <p>When you cast an Occultist cantrip that targets one or more creatures, you can make the cantrip target a number additional creatures within range equal to your proficiency bonus. Once you use this rite in this way, you must finish a long rest before you can use it again. You can instead expend a spell slot to gain a similar effect, causing the cantrip to target a number of additional creatures equal to the level of spell slot spent.</p>
+        </description>
+        <sheet>
+            <description>When you cast an Occultist cantrip that targets one or more creatures, you can make the cantrip target a number additional creatures within range ({{proficiency}}). Once you use this rite in this way, you must finish a long rest before you can use it again. You can instead expend a spell slot to gain a similar effect, causing the cantrip to target a number of additional creatures equal to the level of spell slot spent.</description>
+        </sheet>
+    </element>
+    <element name="Mastered Basics" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_MASTERED_BASICS">
+        <prerequisite>15th level Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite,[level:occultis:15], occult-prereq</supports>
+        <description>
+            <p>When you cast an Occultist spell you know using a 1st-level spell slot, it is cast as if you spent a 2nd-level spell slot instead.</p>
+        </description>
+        <sheet>
+            <description>When you cast an Occultist spell you know using a 1st-level spell slot, it is cast as if you spent a 2nd-level spell slot instead.</description>
+        </sheet>
+    </element>
+    <element name="Practice Makes Perfect" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_PRACTICE_MAKES_PERFECT">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <description>
+            <p>You’ve cast a spell so many times it has become second nature. Select a 1st level Occultist spell you know. You can cast this spell without expending a spell slot a number of times equal to half your proficiency bonus (rounded up), regaining all uses when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>You’ve cast a spell so many times it has become second nature. Select a 1st level Occultist spell you know. You can cast this spell without expending a spell slot {{proficiency:half:up}} times, regaining all uses when you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Practiced Reach" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_PRACTICED_REACH">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <description>
+            <p>When you use the Way I Learned It feature to add range, you can make the range of the spell up to 30 feet.</p>
+        </description>
+        <sheet>
+            <description>When you use the Way I Learned It feature to add range, you can make the range of the spell up to 30 feet.</description>
+        </sheet>
+    </element>
+    <element name="Potent Cantrip" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_POTENT_CANTRIP">
+        <prerequisite>7th level Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:7], occult-prereq</supports>
+        <description>
+            <p>Your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip.</p>
+        </description>
+        <sheet>
+            <description>Your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip.</description>
+        </sheet>
+    </element>
+    <element name="Read-Made Spell" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_READ_MADE_SPELL">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <description>
+            <p>Over the course of 1 minute, you can perform a special ritual to cast a spell into an item, expending a spell slot as normal. The spell being stored has no immediate effect when cast this way. Thereafter, a creature holding the item that is aware there is magic infused it can trigger the stored magic, with the effect of casting the spell.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description>Over the course of 1 minute, you can perform a special ritual to cast a spell into an item, expending a spell slot as normal. The spell being stored has no immediate effect when cast this way. Thereafter, a creature holding the item that is aware there is magic infused it can trigger the stored magic, with the effect of casting the spell.
+            The spell uses your spell save DC, spell attack bonus, and spell casting ability, but is all other ways treated as if the creature holding it cast the spell. You can infuse a number of spell levels equal to your proficiency bonus this, regaining the ability to infuse more when you complete a long rest. Any items infused this way lose their power if you regain the spell slot used to infuse the item.</description>
+        </sheet>
+    </element>
+    <element name="Savant Focus" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SAVANT_FOCUS">
+        <prerequisite>7th level Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:7], occult-prereq</supports>
+        <description>
+            <p>You can focus all of your experience into using your most basic magic potently. As a bonus action you can enter a state of focused concentration, as if concentrating on a spell. When you do so, you gain advantage on attack rolls made for cantrips for 1 minute, or until you end your concentration on this state of focus.</p>
+        </description>
+        <sheet>
+            <description>You can focus all of your experience into using your most basic magic potently. As a bonus action you can enter a state of focused concentration, as if concentrating on a spell. When you do so, you gain advantage on attack rolls made for cantrips for 1 minute, or until you end your concentration on this state of focus.</description>
+        </sheet>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_STUDIOUS_MAGE">
+        <prerequisite>3rd level Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:3], occult-prereq</supports>
+        <description>
+            <p>You can select spell a from the Wizard or Druid spell list, but only of a spell level lower than the highest level spell level you can cast. You learn the spell and it becomes an Occultist spell for you.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Spell (Hedge Magic)"  supports="(Druid||Wizard),$(spellcasting:slots)" spellcasting="Occultist" prepared="true"  number="1" />
+        </rules>
+    </element>
+    <element name="Simple Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SIMPLE_MAGIC">
+        <prerequisite>5th level Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:5], occult-prereq</supports>
+        <description>
+            <p>Even as you gain power, you are adept with using small bursts for simple magic. You can sacrifice a spell slot of 3rd level or higher to gain two 1st-level spell slots. If the spell slot is 5th level or higher, you can gain two 2nd-level spell slots. You cannot store more than twice your usual maximum number of any spell slot level this way.</p>
+        </description>
+        <sheet>
+            <description>You can sacrifice a spell slot of 3rd level or higher to gain two 1st-level spell slots. If the spell slot is 5th level or higher, you can gain two 2nd-level spell slots. You cannot store more than twice your usual maximum number of any spell slot level this way.</description>
+        </sheet>
+    </element>
+    <element name="The Way I Learned To Improvise" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_THE_WAY_I_LEARNED_TO_IMPROVISE">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <description>
+            <p>When you cast a spell as a higher level than its default level, you can modify it on the fly with The Way I Learned It, changing one property for each level above its normal spell slot level (in addition to any normal effects of upcasting the spell).</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell as a higher level than its default level, you can modify it on the fly with The Way I Learned It, changing one property for each level above its normal spell slot level (in addition to any normal effects of upcasting the spell).</description>
         </sheet>
     </element>
 </elements>
