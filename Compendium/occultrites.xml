@@ -656,6 +656,120 @@
             <description>You cast aside your humanity. Your creature type ceases to be humanoid. Select a new creature type from aberration, fiend, or monstrosity.</description>
         </sheet>
     </element>
+    <element name="Blood Leaching" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_BLOOD_LEACHING">
+        <prerequisite>Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>When you cast a blood magic spell of 1st level or higher with Sanguine Power, if the spell does not consume all of the stored hit points, you gain temporary hit points equal to the remainder.</p>
+        </description>
+        <sheet>
+            <description>When you cast a blood magic spell of 1st level or higher with Sanguine Power, if the spell does not consume all of the stored hit points, you gain temporary hit points equal to the remainder.</description>
+        </sheet>
+    </element>
+    <element name="Boon Seeker" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_BOON_SEEKER">
+        <prerequisite>Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You can make one additional sacrifice to receive a boon using your Dark Powers feature.</p>
+        </description>
+        <sheet>
+            <description>You can make one additional sacrifice to receive a boon using your Dark Powers feature.</description>
+        </sheet>
+    </element>
+    <element name="Cultist's Touch" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CULTISTS_TOUCH">
+        <prerequisite>7th level Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST, [level:occultist:7]</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>When you use your action to cast a cantrip with a range of touch, you can make one weapon attack as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>When you use your action to cast a cantrip with a range of touch, you can make one weapon attack as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Demon Within" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DEMON_WITHIN">
+        <prerequisite>15th level Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST, [level:occultist:15]</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>The first time you drop to 0 hit points, you assume your Demonic Ascension form (not counting as a use of the feature) and regain half your maximum hit points. Once this effect is triggered, you cannot trigger it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>The first time you drop to 0 hit points, you assume your Demonic Ascension form (not counting as a use of the feature) and regain half your maximum hit points.</description>
+        </sheet>
+    </element>
+    <element name="Empowered Blood Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_EMPOWERED_BLOOD_MAGIC">
+        <prerequisite>5th level Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST, [level:occultist:5]</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>When you cast a spell that deals damage on cast and has a blood magic tag, you can add your Spellcasting modifier to the damage dealt.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that deals damage on cast and has a blood magic tag, you can add your Spellcasting modifier to the damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Sacrificial Absolution" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SACRIFICIAL_ABSOLUTION">
+        <prerequisite>Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You can cast lesser restoration on a willing creature without expending a spell slot, however when you cast it in this way you suffer any condition or effect that spell cleared.</p>
+            <p class="indent">When you reach 9th level, you can instead cast greater restoration this way. It does not consume any material components when you cast it this way. If you remove a cursed item’s effect (ending its attunement to creature), it instead becomes attuned to you.</p>
+        </description>
+        <sheet>
+            <description>You can cast lesser restoration on a willing creature without expending a spell slot, however when you cast it in this way you suffer any condition or effect that spell cleared.</description>
+            <description level="9">You can cast greater restoration on a willing creature without expending a spell slot, however when you cast it in this way you suffer any condition or effect that spell cleared. It does not consume any material components when you cast it this way. If you remove a cursed item’s effect (ending its attunement to creature), it instead becomes attuned to you.</description>
+        </sheet>
+    </element>
+    <element name="Unholy Gift" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_UNHOLY_GIFT">
+        <prerequisite>Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>Once per turn, when you expend your own hit points to cast a spell using Blood Magic, you can cause one allied creature other than yourself within 30 feet to gain temporary hit points equal to the sacrificed hit points.</p>
+        </description>
+        <sheet>
+            <description>Once per turn, when you expend your own hit points to cast a spell using Blood Magic, you can cause one allied creature other than yourself within 30 feet to gain temporary hit points equal to the sacrificed hit points.</description>
+        </sheet>
+    </element>
+    <element name="Wretched Resilience" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_WRETCHED_RESILIENCE">
+        <prerequisite>Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You gain immunity to diseases, and advantage on saving throws against the poisoned condition.</p>
+        </description>
+        <sheet>
+            <description>You gain immunity to diseases, and advantage on saving throws against the poisoned condition.</description>
+        </sheet>
+    </element>
+    <element name="Zealous Conviction" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ZEALOUS_CONVICTION">
+        <prerequisite>Blood Cultist</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You gain advantage on saving throws against being charmed or frightened.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on saving throws against being charmed or frightened.</description>
+        </sheet>
+    </element>
+    <element name="Zealous Dedication" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ZEALOUS_DEDICATION">
+        <prerequisite>12th level Blood Cultist, Zealous Conviction</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST, [level:occultist:5], ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ZEALOUS_CONVICTION</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>When you are reduced to 0 hit points, you can make a Spellcasting ability check with a DC of 5 + the damage taken. On success, you are reduced to 1 hit point instead.</p>
+            <p class="indent">On failure, you can expend a spell slot to increase the value rolled by an amount equal to the level of the spell slot, potentially during a failure into a success. Once you spend a spell slot to do so, you cannot do so against until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>When you are reduced to 0 hit points, you can make a Spellcasting ability check with a DC of 5 + the damage taken. On success, you are reduced to 1 hit point instead.
+            On failure, you can expend a spell slot to increase the value rolled by an amount equal to the level of the spell slot, potentially during a failure into a success. Once you spend a spell slot to do so, you cannot do so against until you complete a short or long rest.</description>
+        </sheet>
+    </element>
 </elements>
 
 <!-- 
