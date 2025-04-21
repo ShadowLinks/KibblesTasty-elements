@@ -9,62 +9,181 @@
     <element name="Tradition of the Hedge Mage" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_OCCULTIST_HEDGEMAGE">
         <supports>Occult-Tradition</supports>
         <description>
-            <p></p>
+            <p>This tradition is a loose collection of magic users that benefit from a wide array of traditions and practical knowledge to build up a collection of eccentric magical knowledge. Their methods are often frowned upon by those of more studied routes, but their practical skills cannot be denied, and their unique understanding of magic that they have developed with their own hands and minds should not be underestimated.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_PRACTICAL_SKILLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_THE_WAY_I_LEARNED_IT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CASTING_STYLE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_PERSONALIZED_PATH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_IMPROVISED_RITUAL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_STOLEN_TECHNIQUES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_EMPOWERED_CANTRIPS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CANTRIP_MASTERY" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_HEDGE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_PRACTICAL_SKILLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_THE_WAY_I_LEARNED_IT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CASTING_STYLE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_PERSONALIZED_PATH" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_IMPROVISED_RITUAL" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_STOLEN_TECHNIQUES" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_EMPOWERED_CANTRIPS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CANTRIP_MASTERY" level="14" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Occult Rites" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_HEDGE">
         <description>
-            <p></p>
+            <p>As you delve into your Tradition of occult magic, you find deviations and branches to explore that help you specialize and perfect your craft in the way that best suits you.</p>
+            <p class="indent">At 2nd Level, you gain two occult rites of your choice. Your occult rites options are detailed at the end of the occult tradition description for tradition specific Rites, and at the end of the class description for general rites. You can select from either your tradition or class list. When you gain certain Occultist levels, you gain additional occult rites of your choice.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</p>
+        </description>
+        <sheet display="false">
+            <description>When you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Hedge-Occult-Rite" number="2" level="2" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Hedge-Occult-Rite" number="1" level="5" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Hedge-Occult-Rite" number="1" level="7" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Hedge-Occult-Rite" number="1" level="9" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Hedge-Occult-Rite" number="1" level="12" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Hedge-Occult-Rite" number="1" level="15" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Hedge-Occult-Rite" number="1" level="18" />
+        </rules>
+    </element>
+
+    
+        
+    <!-- some odd wording here, but i think its just 1 cantrip learned -->
+    <element name="Practical Skills" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_PRACTICAL_SKILLS">
+        <description>
+            <p>You gain proficiency in your choice of one of the following skills: Animal Handling, Arcana, Medicine, Nature, or Survival. All cantrips from the Wizard and Druid are added to the Occultist spell list for you, as well as thaumaturgy.</p>
+            <p class="indent">Additionally, you learn 1 additional cantrip of your choice and you learn a new cantrip, you can select from the above expanded list in addition to the Occultist list, and treat them as Occultist spells.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, (Hedge Mage)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Spell" name="Cantrip (Hedge Mage)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Occultist" />
+        </rules>
+        <spellcasting name="Occultist" extend="true">
+            <extend>Wizard,0</extend>
+            <extend>Druid,0</extend>
+        </spellcasting>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="The Way I Learned It" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_THE_WAY_I_LEARNED_IT">
         <description>
-            <p></p>
+            <p>You learn your magic through self-discovery, often encompassing trial and error. Not knowing what is supposed to be impossible or impractical, your magic develops unique aspects. You can modify spells you learn with the following feature.</p>
+            <p class="indent">When you learn a new Occultist spell, you can modify some of its properties representing your unique way of casting that spell. These changes permanently affect the spell for you, but when you swap out a spell when gaining a level in the class, you can instead modify these properties from a spell you know. You can learn the same spell multiple times with different selections (i.e. “ranged cure wounds”) You may apply any number of these properties when learning or modifying a spell.</p>
+            <ul>
+                <li><strong>Damage Type.</strong> You can change any of the following damage types into another of the following damage types: acid, cold, fire, lightning, or poison.</li>
+                <li><strong>Range.</strong> You can make a spell with a range of 10 feet or more instead have a range of Touch, or give a spell with a range of Touch a range of up 10 feet (if it was a melee spell attack, it becomes a ranged spell attack if the range is greater than Touch).</li>
+                <li><strong>Components.</strong> You can exchange a verbal, somatic, or material component of a spell for another type of component the spell does not normally have, such as changing a spell from requiring verbal and somatic components, to requiring somatic and material components. Material components with a cost cannot be replaced, but can be exchanged for a different material component of equal cost.</li>
+            </ul>
+            <p class="indent"><strong><em>If using this feature, you should create your own custom spells.</em></strong></p>
+        </description>
+        <sheet>
+            <description>When you learn a new Occultist spell, you can modify some of its properties representing your unique way of casting that spell. These changes permanently affect the spell for you, but when you swap out a spell when gaining a level in the class, you can instead modify these properties from a spell you know. You can learn the same spell multiple times with different selections (i.e. “ranged cure wounds”) You may apply any number of these properties when learning or modifying a spell.
+            Damage Type. You can change any of the following damage types into another of the following damage types: acid, cold, fire, lightning, or poison.
+            Range. You can make a spell with a range of 10 feet or more instead have a range of Touch, or give a spell with a range of Touch a range of up 10 feet (if it was a melee spell attack, it becomes a ranged spell attack if the range is greater than Touch).
+            Components. You can exchange a verbal, somatic, or material component of a spell for another type of component the spell does not normally have, such as changing a spell from requiring verbal and somatic components, to requiring somatic and material components. Material components with a cost cannot be replaced, but can be exchanged for a different material component of equal cost.</description>
+        </sheet>
+    </element>
+    <element name="Casting Style" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CASTING_STYLE">
+        <description>
+            <p>Additionally, your self-taught casting style has resulted in some practical advantages. Select one of the following casting styles:</p>
+            <p><strong></strong>Reliable Casting. When you roll a 1 or 2 on a damage die for an Occultist cantrip, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</p>
+            <p><strong></strong>Habitual Casting. When you cast an Occultist cantrip that requires concentration, you can instead cause the effect to persist without concentration a number of rounds equal to your Occultist level (for example, as 1st level Occultist, it would end at the start of your next turn). You can end a spell persisting in this way early as an action.</p>
+            <p><strong></strong>Tactical Casting. When you take the Ready action with an Occultist cantrip, it does not require concentration to keep the spell readied.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="casting-style" />
+        </rules>
+    </element>
+    <element name="Reliable Casting Style" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CASTING_STYLE_RELIABLE">
+        <supports>casting-style</supports>
+        <description>
+            <p>When you roll a 1 or 2 on a damage die for an Occultist cantrip, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</p>
+        </description>
+        <sheet>
+            <description>When you roll a 1 or 2 on a damage die for an Occultist cantrip, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</description>
+        </sheet>
+    </element>
+    <element name="Habitual Casting Style" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CASTING_STYLE_HABITUAL">
+        <supports>casting-style</supports>
+        <description>
+            <p>When you cast an Occultist cantrip that requires concentration, you can instead cause the effect to persist without concentration a number of rounds equal to your Occultist level (for example, as 1st level Occultist, it would end at the start of your next turn). You can end a spell persisting in this way early as an action.</p>
+        </description>
+        <sheet>
+            <description>When you cast an Occultist cantrip that requires concentration, you can instead cause the effect to persist without concentration for {{level:occultist}} rounds. You can end a spell persisting in this way early as an action.</description>
+        </sheet>
+    </element>
+    <element name="Tactical Casting Style" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CASTING_STYLE_TACTICAL">
+        <supports>casting-style</supports>
+        <description>
+            <p>When you take the Ready action with an Occultist cantrip, it does not require concentration to keep the spell readied.</p>
+        </description>
+        <sheet>
+            <description>When you take the Ready action with an Occultist cantrip, it does not require concentration to keep the spell readied.</description>
+        </sheet>
+    </element>
+    <element name="Personalized Path" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_PERSONALIZED_PATH">
+        <description>
+            <p>At 3rd level, you gain one additional spell known and one additional Occult Rite known. This rite can come from the Hedge Mage rites or from the general Occultist rites. These do not count against your spells or rites known.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Spell" name="Spell (Hedge Mage)"  supports="$(spellcasting:list), $(spellcasting:slots)" spellcasting="Occultist" prepared="true"  number="1" level="3" />
+            <select type="Class Feature" name="Occult Rites (Hedge Mage)" supports="Generic-Occult-Rite,Hedge-Occult-Rite" number="1"/>
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Improvised Ritual" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_IMPROVISED_RITUAL">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, you can cast a spell with the ritual tag without knowing that spell. When you do so, it takes the additional time as if casting it as a ritual, but still consumes a spell slot. You can improvise spells of a level equal to one-third of your Occultist level (for example, a 3rd level Occultist can improvise 1st level rituals).</p>
+            <p class="indent">Spells improvised this way can be from any spell list, but if it is not on the Occultist list, you must have the spell in a written form (such as a wizard’s spellbook or a scroll).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can cast a spell with the ritual tag without knowing that spell. When you do so, it takes the additional time as if casting it as a ritual, but still consumes a spell slot. You can improvise spells of a level equal to one-third of your Occultist level.
+            Spells improvised this way can be from any spell list, but if it is not on the Occultist list, you must have the spell in a written form (such as a wizard’s spellbook or a scroll).</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <!-- trying to figure out how to list out the occult rites fo other traditions-->
+    <element name="Stolen Techniques" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_STOLEN_TECHNIQUES">
         <description>
-            <p></p>
+            <p>At 6th level, you can learn one new 1st or 2nd level spell from the bard, cleric, druid, or wizard spell list. The spell becomes an Occultist spell for you, but does not count against your spells known.</p>
+            <p class="indent">Additionally, you can delve into the rites of another tradition. You learn one additional occult rite that does not count against your rites known. This rite can be selected from any Occultist subclass or from the general Occultist rites, but cannot be a rite with a prerequisite.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You learn one additional occult rite that does not count against your rites known. This rite can be selected from any Occultist subclass or from the general Occultist rites, but cannot be a rite with a prerequisite.</description>
         </sheet>
+        <rules>
+            <select type="Spell" name="Spell (Stolen Techniques)"  supports="(Cleric||Bard||Druid||Wizard),(1||2)" spellcasting="Occultist" prepared="true"  number="1" level="6" />
+            <select type="Class Feature" name="Occult Rites (Stolen Techniques)" supports="Occult-Rite,!occult-prereq" number="1"/>
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Empowered Cantrips" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_EMPOWERED_CANTRIPS">
         <description>
-            <p></p>
+            <p>Starting at 6th level, once per turn when you roll damage for an Occultist cantrip, you can add your Wisdom modifier to the damage dealt.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once per turn when you roll damage for an Occultist cantrip, you can add your Wisdom modifier ({{wisdom:modifier}}) to the damage dealt.</description>
         </sheet>
     </element>
+    <element name="Cantrip Mastery" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CANTRIP_MASTERY">
+        <description>
+            <p>Starting at 14th level, you can cast an Occultist cantrip with a casting time of one action as a bonus action. When you cast a cantrip in this way, it is cast as if you are 1st level.</p>
+        </description>
+        <sheet>
+            <description>You can cast an Occultist cantrip with a casting time of one action as a bonus action. When you cast a cantrip in this way, it is cast as if you are 1st level.</description>
+        </sheet>
+    </element>
+</elements>
