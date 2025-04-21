@@ -985,6 +985,16 @@
             <description>When you cast a spell as a higher level than its default level, you can modify it on the fly with The Way I Learned It, changing one property for each level above its normal spell slot level (in addition to any normal effects of upcasting the spell).</description>
         </sheet>
     </element>
+    <element name="Utility Master" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_UTILITY_MASTER">
+        <prerequisite>5th level Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:5], occult-prereq</supports>
+        <description>
+            <p>When you cast cantrips that can lift weight, affect external elements, target an area on the ground, or cause minor instantaneous effects, you lift twice as much, target twice the area, or maintain an additional instantaneous effect.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
 </elements>
 
 <!-- 
