@@ -5649,25 +5649,457 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+
+    <!-- Witch Curses -->
+
+    <element name="Befuddling Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_BEFUDDLING_CURSE">
+        <supports>witch-curse, Spell Saving Throw,</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You befuddle a creature’s mind, causing it to believe two similarly-sized objects or creatures it can see have been swapped. The target creature must make a Wisdom saving throw. On a failure, it believes the two things have been swapped.</p>
+            <p class="indent">Each time the creature interacts with, attacks, or is attacked by a swapped target, it can repeat the saving throw, ending the spell on a success.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent">The <em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes (or touch)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Binding Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_BINDING_CURSE">
+        <supports>witch-curse, Spell Saving Throw</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You bind a creature to a point within 5 feet of it, causing glowing chains of light to connect it to that point. For the duration of the spell, if the creature attempts to move away from the point, it must succeed on a Wisdom saving throw or be unable to move more than 5 feet away from the point until the start of its next turn.</p>
+            <p class="indent">If the target starts its turn more than 10 feet from the binding point, it must succeed on a Strength saving throw or be dragged 5 feet toward the binding point.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes (or touch)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Curse of Misfortune (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_CURSE_OF_MISFORTUNE">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You curse a creature within range, bringing it bad luck. When you place this curse, pick a number from 2 to 19. Whenever the target rolls the chosen number on an attack roll, saving throw, or ability check, that number is treated as 1</p>
+            <p class="indent">Additionally, once during the effect you can use your reaction when the target rolls an attack roll, saving throw, or ability check to force to reroll the d20 and use the lower roll. You regain the ability to do this each time the target rolls your chosen number.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes (or touch)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Curse of Doom (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_CURSE_OF_DOOM">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You curse a creature within range, dooming it. The next attack roll that hits the target creature becomes a critical hit, after which the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes (or touch)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Enfeebling Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_ENFEEBLING_CURSE">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You curse a target creature, causing an overwhelming sense of powerlessness to wash over it. Any time it attempts any action which would deal damage, it must make a Wisdom saving throw. On a success, it takes action as normal. On a failure, it completes the action, but the action deals no damage to any targets.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes (or touch)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Karmic Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_KARMIC_CURSE">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You hex a target creature, placing a karmic binding on it. For the duration of the spell, the first time the target it damages another creature on a turn, it takes 4d6 psychic damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes (or touch)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Killing Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_KILLING_CURSE">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You curse a creature within range to die. The target's current and maximum hit points is reduced by 3d10 + 10. If this causes a creatures to have zero hit points, the creature dies.</p>
+            <p class="indent">For the duration of the spell, the target cannot regain hit points unless from a magical effect cast by a spell slot of higher level than this spell slot this curse was cast with, and any death saving throw they roll is automatically considered a 1.</p>
+            <p class="indent">At the start of a creatures turn while they are under the effect of this spell, they make a Charisma saving throw. On failed save, their current and maximum hit points is reduced by an additional 1d10 + 10. On a successful save, the spell ends. A creature’s maximum hit points lost to this spell are restored when it takes a long rest, or through the effects of a spell such as greater restoration.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes (or touch)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rotting Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_ROTTING_CURSE">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You inflicting a rotting decay on a creature, causing it to begin to rot. For the duration of the spell, every time the target takes damage, it takes an additional 1d4 necrotic damage.</p>
+            <p class="indent">Additionally, the effect of all healing on the target creature is reduced by half and the target creature has disadvantage on any Charisma checks for social interaction during the effect of the spell.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes (or touch)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Swapping Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_SWAPPING_CURSE">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You cast a curse targeting two creatures. Both targets must make a Charisma saving throw (which they can choose to fail). If both targets fail their saving throws, for the duration of the spell their souls are swapped. A soul controls the body it inhabits. It gains any ability score, actions, or abilities the body had (besides legendary actions or legendary resistance), but retains its own spell casting (if it has the spellcasting, innate or similar feature), and has disadvantage on all attack rolls and strength, dexterity, and constitution saving throws for 1d4 turns after swapping bodies.</p>
+            <p class="indent">At the end of a swapped creature’s turn, it can choose to repeat the saving throw, ending the effect on a successful save. If its CR (or character level if it has no CR) is higher than the body of the creature it was swapped into, it has advantage on the save.</p>
+            <p class="indent">If a creature dies while its soul is swapped, the souls return to their original bodies. If a soul was in a dying creature that returns to a living body, that creature takes 5d10 necrotic damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes (or touch)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Hemorrhaging Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_HEMORRHAGING_CURSE">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You curse a target with unclosing wounds. If the target has taken piercing or slashing since the end of their last turn or takes piercing or slashing damage for the duration of the spell, its hit points are reduced by 1d8 at the end of each of its turns for the duration. This damage cannot be stopped by first aid, staunching the wound, or any non-magical means, but is ended if the creature is restored to full hit points by magical healing or the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes  (or touch) and a drop of your blood worth at least 1 hit point, which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rupturing Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_RUPTURING_CURSE">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You invoke a curse on a creature you can see within range, rupturing their tendons. For the duration, the creatures hit points are reduced by 2d4 for each 5 feet they move. Creatures without blood are immune to this curse.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes  (or touch) and a drop of your blood worth at least 2 hit point, which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Bloodline Curse (curse)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CURSE_BLOODLINE_CURSE">
+        <supports>witch-curse</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <description>
+            <p>You invoke a curse on a creature’s bloodline. Up to 5 creatures of your choice (other than the target) of the same creature type within range are bound to that creature by a magical curse. If a creature is directly related (ancestor, descendant, or sibling) to the target creature, the range at which they can be cursed with this bond increases to 1 mile.</p>
+            <p class="indent">When that creature becomes bloodied (reduced to less than half its maximum hit points) and again if that creature dies, all creatures effected by the curse must make a Charisma saving throw, taking 5d6 + twice the cursed creature’s CR (or level) necrotic damage on failed save, or half as much on success. This curse has no effect on creatures without blood.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell with a 6th level slot or higher, the number of creatures you can target increases by 1 for each level above 5th. When using a 9th-level spell slot, the range at which you can target a related creature can be unlimited, though you must be aware of the target’s existence.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature—such as blood, hair, or scales—which the spell consumes  (or touch) and a drop of your blood worth at least 5 hit point, which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <!-- Blood Magic Spells-->
+    
+    <element name="Blood Bolt (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_BLOOD_BOLT">
+        <requirements>Occultist, Sorcerer, Warlock, Wizard, Spell Saving Throw</requirements>
+        <description>
+            <p>You transmute a drop of blood into a crimson dart and launch it at creatures within range, making a ranged spell attack. On hit, the target takes 1d6 piercing damage and 1d6 necrotic damage.</p>
+            <p class="indent">The piercing and necrotic damage both increase by 1d6 at 5th level (2d6), 11th level (3d6), and 17th level (4d6). The blood consumed also increases when the damage increases at 5th (2), 11th (3), and 17th (4).</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of your blood worth at least 1 hit point, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Bloody Burst (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_BLOODY_BURST">
+        <requirements>Occultist, Sorcerer, Wizard, Spell Saving Throw</requirements>
+        <description>
+            <p>You cause a creature’s blood to erupt outward in a violent spray. The target must make a Constitution saving throw. On a failure, it takes 4d6 necrotic damage, and every other creature within 10 feet of the target must succeed on a Dexterity saving throw or take 2d6 necrotic damage from the blood spray. On a successful save, the target takes half as much damage and the blood spray does not occur. A creature without blood is immune to this spell.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, both the damage against the main target increase by 2d6 as well as the spray increasing by 1d6 for each spell level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">2</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of your blood worth at least 2 hit point, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blood Diagnosis (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_BLOOD_DIAGNOSIS">
+        <requirements>Occultist, Wizard</requirements>
+        <description>
+            <p>You spill a drop of your blood and mix it with a sample of any creature's blood. You learn the following information about the sample:</p>
+            <ul>
+                <li>The type of creature it came from</li>
+                <li>If that creature was poisoned or diseased when the blood sample was given</li>
+                <li>Any medical information related to the creature's blood (blood type, general health, malnutrition, etc.)</li>
+                <li>If the creature is a blood relative of any other creature whose blood you've previously cast this spell on</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Divination</set>
+            <set name="time">1 minute</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of your blood worth 1 hit point and a drop of any creature's blood, both of which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+    <element name="Blood Divination (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_BLOOD_DIVINATION">
+        <requirements>Occultist, Sorcerer, Warlock, Wizard</requirements>
+        <description>
+            <p>You mix a drop of your blood into a bloodstain or blood sample from another creature and create a magical resonance. You learn the creature’s current condition (alive, wounded, or dead), its creature type, its general distance from you (nearby, distant, or very far), and its general direction.</p>
+            <p class="indent">If the blood is more than 24 hours old, the spell becomes more difficult, and you must succeed on a DC 10 spellcasting check to gain any information. The DC increases to 15 if the blood is more than a week old, and 20 if the blood is more than a month old.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of your blood worth at least 2 hit points which the spell consumes, and another creature’s blood</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blood Frenzy (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_BLOOD_FRENZY">
+        <requirements>Druid, Occultist, Wizard</requirements>
+        <description>
+            <p>You touch a willing creature, launching it into an empowered frenzy. For the duration, all attacks against the target creature have advantage, but the target gains the following benefits:</p>
+            <ul>
+                <li>The target is immune to the charmed and frightened conditions.</li>
+                <li> The target has advantage on its melee weapon attacks.</li>
+                <li>When taking damage would reduce the creature to 0 hit points, it must make a Constitution saving throw with the DC equal to half the damage taken. On a success, it is reduced to 1 hit point instead.</li>
+            </ul>
+            <p class="indent">If you target yourself, you cannot lose concentration on this spell as a result of taking damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a splash of your blood worth at least 4 hit points, which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blood Slash (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_BLOOD_SLASH">
+        <requirements>Sorcerer, Warlock, Wizard</requirements>
+        <description>
+            <p>You create a blade of blood and fling it at a creature you can see within range. Make a ranged spell attack. On a hit, the creature takes 2d6 slashing damage and 2d6 necrotic damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the slashing damage increases by 1d6 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">slashing, necrotic</set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a splash of your blood worth up to 2 hit points, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
 </elements>
 
 <!-- 
-<element name="Spell Name" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPELL NAME">
-        <supports>supports</supports>
+
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> If you use a 9th-level spell slot, the spell lasts until it is dispelled and grants a duration that doesn’t require concentration.</p>
+            <p class="indent"><em>Remove Curse</em> spell cast at the samne level ends the effect.</p>
+
+<element name="Spell Name (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPELL NAME">
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
         <description>
             <p></p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">level</set>
-            <set name="school">Evocation</set>
+            <set name="school">Necromancy</set>
             <set name="time">1 action</set>
             <set name="range">range</set>
             <set name="duration">Instantaneous</set>
-            <set name="hasVerbalComponent">true</set>
+            <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">false</set>
-            <set name="materialComponent">component</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of your blood worth at least 1 hit point, which the spell consumes</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
