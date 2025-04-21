@@ -552,15 +552,105 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" spellcasting="Occultist" prepared="true" />
+        </rules>        
+    </element>
+    <element name="Malicious Transfusion" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_MALICIOUS_TRANSFUSION">
+        <prerequisite>Witch Red Coven</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>When your familiar redirects damage, you can target an unwilling creature. When you do so, the target creature must make a Charisma saving throw. On a failure, it takes the redirected damage as normal, and the amount transferred can exceed its current hit points. On a success, it takes half the redirected damage, and you take the other half of the redirected damage.</p>
+        </description>
+        <sheet>
+            <description>When your familiar redirects damage, you can target an unwilling creature. When you do so, the target creature must make a Charisma saving throw. On a failure, it takes the redirected damage as normal, and the amount transferred can exceed its current hit points. On a success, it takes half the redirected damage, and you take the other half of the redirected damage.</description>
+        </sheet>
+    </element>
+    <element name="Bathed in Blood" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_BATHED_IN_BLOOD">
+        <prerequisite>Witch Red Coven</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>When you take damage as part casting blood magic (from contributing the material component or through the Hemomancer feat) it does not force a saving throw to maintain concentration if you are concentrating on a spell.</p>
+            <p class="indent">Additionally, when you expend hit points casting a spell with blood magic, you gain temporary hit points equal to the hit points expended on its material components.</p>
+        </description>
+        <sheet>
+            <description>When you take damage as part casting blood magic (from contributing the material component or through the Hemomancer feat) it does not force a saving throw to maintain concentration if you are concentrating on a spell.
+            Additionally, when you expend hit points casting a spell with blood magic, you gain temporary hit points equal to the hit points expended on its material components.</description>
+        </sheet>
+    </element>
+    <element name="Sanguine Sacrifice" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SANGUINE_SACRIFICE">
+        <prerequisite>Witch Red Coven</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>When you restore hit points with an Occultist spell, you can increase the hit points restored by up to your Occultist level by spending an equal number of your own hit points (equal to the total number of additional hit points restored across all targets if the spell targets multiple targets).</p>
+        </description>
+        <sheet>
+            <description>When you restore hit points with an Occultist spell, you can increase the hit points restored by up to your Occultist level by spending an equal number of your own hit points (equal to the total number of additional hit points restored across all targets if the spell targets multiple targets).</description>
+        </sheet>
+    </element>
+    <element name="Sanguine Secrets" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SANGUINE_SECRETS">
+        <prerequisite>Witch Red Coven, Hemomancer feat</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED,ID_KTH_COLAL_FEAT_HEMOMANCER</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>You can cast spells without the Blood Magic tag using the Hemomancer feat.</p>
+        </description>
+        <sheet>
+            <description>You can cast spells without the Blood Magic tag using the Hemomancer feat.</description>
+        </sheet>
+    </element>
+    <element name="Sanguine Vitality" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SANGUINE_VITALITY">
+        <prerequisite>Witch Red Coven</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>Your rich diet of the blood of your enemies empowers you. Your maximum hit points are increased by 1 for each Occultist level you have.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="hp" value="level:occultist" />
         </rules>
-        
+    </element>
+    <element name="Stolen Life" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_STOLEN_LIFE">
+        <prerequisite>Witch Red Coven, 5th level</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED,[level:5]</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>As an action, you can touch a recently deceased corpse, drawing the last fragments of life out of it. When you do so, you recover hit points equal to the creatures CR or levels, and can optionally assume it’s appearance as if by the disguise self spell, but with an indefinite duration. You can store a number of stolen appearances this way equal to your Wisdom modifier, assuming any of them as an action. You can end the illusion or assume a different stored appearance as an action</p>
+        </description>
+        <sheet>
+            <description>As an action, you can touch a recently deceased corpse, drawing the last fragments of life out of it. When you do so, you recover hit points equal to the creatures CR or levels, and can optionally assume it’s appearance as if by the disguise self spell, but with an indefinite duration. You can store {{wisdom:modifier}} stolen appearances this way, assuming any of them as an action. You can end the illusion or assume a different stored appearance as an action</description>
+        </sheet>
+    </element>
+    <element name="Witch's Fangs" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_WITCHS_FANGS">
+        <prerequisite>Witch Red Coven</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
+        <supports>Occult-Rite</supports>
+        <description>
+            <p>As an action, you grow long canine fangs and attempt to bite a creature within 5 feet of you, making a melee spell attack. On hit, the target takes 1d4 piercing damage and 1d4 necrotic damage, and you gain temporary hit points equal to the necrotic damage dealt.</p>
+            <p class="indent">The piercing and necrotic damage each increase by 1d4 at 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+            <p class="indent">Starting at 6th level, you can apply your Witch’s Touch feature to attacks made with this feature.</p>
+        </description>
+        <sheet>
+            <description>As an action, you grow long canine fangs and attempt to bite a creature within 5 feet of you, making a melee spell attack. On hit, the target takes 1d4 piercing damage and 1d4 necrotic damage, and you gain temporary hit points equal to the necrotic damage dealt.</description>
+            <description level="5">As an action, you grow long canine fangs and attempt to bite a creature within 5 feet of you, making a melee spell attack. On hit, the target takes 2d4 piercing damage and 2d4 necrotic damage, and you gain temporary hit points equal to the necrotic damage dealt.</description>
+            <description level="6">As an action, you grow long canine fangs and attempt to bite a creature within 5 feet of you, making a melee spell attack. On hit, the target takes 2d4 piercing damage and 2d4 necrotic damage, and you gain temporary hit points equal to the necrotic damage dealt.
+            You can apply your Witch’s Touch feature to attacks made with this feature.</description>
+            <description level="11">As an action, you grow long canine fangs and attempt to bite a creature within 5 feet of you, making a melee spell attack. On hit, the target takes 3d4 piercing damage and 3d4 necrotic damage, and you gain temporary hit points equal to the necrotic damage dealt.
+            You can apply your Witch’s Touch feature to attacks made with this feature.</description>
+            <description level="17">As an action, you grow long canine fangs and attempt to bite a creature within 5 feet of you, making a melee spell attack. On hit, the target takes 4d4 piercing damage and 4d4 necrotic damage, and you gain temporary hit points equal to the necrotic damage dealt.
+            You can apply your Witch’s Touch feature to attacks made with this feature.</description>
+        </sheet>
     </element>
 </elements>
 
 <!-- 
 <element name="RiteName" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITENAME">
-        <prerequisite>Witch</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH</requirements>
+        <prerequisite>Witch Red Coven</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH,ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED</requirements>
         <supports>Occult-Rite</supports>
         <description>
             <p></p>
