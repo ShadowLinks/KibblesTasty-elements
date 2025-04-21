@@ -769,13 +769,104 @@
             On failure, you can expend a spell slot to increase the value rolled by an amount equal to the level of the spell slot, potentially during a failure into a success. Once you spend a spell slot to do so, you cannot do so against until you complete a short or long rest.</description>
         </sheet>
     </element>
+    <element name="Hedge Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HEDGE_MAGIC">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <description>
+            <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+            <p class="indent"><em>You can take this rite multiple times</em></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Hedge Magic)"  supports="(Occultist||Druid||Wizard),(0)" spellcasting="Occultist" prepared="true"  number="1" level="1" />
+        </rules>
+    </element>
+    <element name="Hedge Magic 2" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HEDGE_MAGIC_2">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HEDGE_MAGIC</requirements>
+        <description>
+            <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+            <p class="indent"><em>You can take this rite multiple times</em></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Hedge Magic)"  supports="(Occultist||Druid||Wizard),(0)" spellcasting="Occultist" prepared="true"  number="1" level="1" />
+        </rules>
+    </element>
+    <element name="Hedge Magic 3" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HEDGE_MAGIC_3">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HEDGE_MAGIC_2</requirements>
+        <description>
+            <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+            <p class="indent"><em>You can take this rite multiple times</em></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Hedge Magic)"  supports="(Occultist||Druid||Wizard),(0)" spellcasting="Occultist" prepared="true"  number="1" level="1" />
+        </rules>
+    </element>
+    <element name="Hedge Magic 4" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HEDGE_MAGIC_4">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HEDGE_MAGIC_3</requirements>
+        <description>
+            <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+            <p class="indent"><em>You can take this rite multiple times</em></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Hedge Magic)"  supports="(Occultist||Druid||Wizard),(0)" spellcasting="Occultist" prepared="true"  number="1" level="1" />
+        </rules>
+    </element>
+    <element name="Hedge Knight" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HEDGE_KNIGHT">
+        <prerequisite>Hedge Mage, Vestiments of War rite, occult-prereq</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite, ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_VESTIMENTS_OF_WAR</supports>
+        <description>
+            <p>You gain proficiency in heavy armor.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+        </rules>
+    </element>
+    <element name="I Know That One!" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_I_KNOW_THAT_ONE">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <description>
+            <p>When you make a saving throw against a spell you know, or make a spellcasting ability check to use counterspell or dispel magic against a spell you know, you have advantage on the saving throw or spellcasting ability check.</p>
+        </description>
+        <sheet>
+            <description>When you make a saving throw against a spell you know, or make a spellcasting ability check to use counterspell or dispel magic against a spell you know, you have advantage on the saving throw or spellcasting ability check.</description>
+        </sheet>
+    </element>
+    <element name="Learning on the Fly" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_LEARNING_ON_THE_FLY">
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <description>
+            <p>When you pass a saving throw against a spell of 5th level or lower, you gain the ability to cast that spell for the next minute (expending any spell slots or components it would normally require to cast it).</p>
+        </description>
+        <sheet>
+            <description>When you pass a saving throw against a spell of 5th level or lower, you gain the ability to cast that spell for the next minute (expending any spell slots or components it would normally require to cast it).</description>
+        </sheet>
+    </element>
 </elements>
 
 <!-- 
 <element name="RiteName" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITENAME">
-        <prerequisite>Blood Cultist</prerequisite>
-        
-        <supports>Occult-Rite</supports>
+        <prerequisite>Hedge Mage</prerequisite>        
+        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
         <description>
             <p></p>
         </description>

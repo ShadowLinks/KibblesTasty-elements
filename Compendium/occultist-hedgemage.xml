@@ -73,6 +73,7 @@
         <spellcasting name="Occultist" extend="true">
             <extend>Wizard,0</extend>
             <extend>Druid,0</extend>
+            <extend>ID_PHB_SPELL_THAUMATURGY</extend>
         </spellcasting>
     </element>
     <element name="The Way I Learned It" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_THE_WAY_I_LEARNED_IT">
