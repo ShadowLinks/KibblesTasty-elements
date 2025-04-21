@@ -9,8 +9,8 @@
     <element name="Tradition of the Witch" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_OCCULTIST_WITCH">
         <supports>Occult-Tradition</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>A Witch can be many things, and most often refers to someone that villagers find scary and weird, but at the heart of every crazed story there’s a sliver of truth. That truth is that Witches do indeed exist.</p>
+            <p class="indent">Some may openly live as they are, while others may be the last person the superstitious villagers would expect. Varied in their powers, designs, and traditions based on their Coven, generalizing about a Witch is challenging. They are most often defined by the varied and utilitarian magic they use, hexes that make crossing them unwise, and powerful intelligent familiars.</p>
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_WITCHS_MAGIC" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND" />

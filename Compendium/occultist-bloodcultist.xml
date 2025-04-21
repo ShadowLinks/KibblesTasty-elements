@@ -9,62 +9,523 @@
     <element name="Tradition of the Blood Cultist" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST">
         <supports>Occult-Tradition</supports>
         <description>
-            <p></p>
+            <p>The dark tradition of a Blood Cultist is one that seeks power at any cost. They are those prepared to give up everything for power, dedicated themselves to mysterious rituals, forbidden techniques, and whispered taboos in order to grasp hold of ancient and terrible powers. Masters of sacrifice, blood magic, and willing to cast aside their humanity (or relevant equivalent!), they are driven beyond what most would consider rational, natural, or even possible on their eternal quest to go beyond the limiting walls of mortality to find new dark powers.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_BLOOD_CASTING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_DARK_POWERS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_SACRIFICIAL_CASTING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_SANGUINE_POWER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_DEMONIC_ASCENSION" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_BLOOD_CASTING" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_DARK_POWERS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_SACRIFICIAL_CASTING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_SANGUINE_POWER" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_DEMONIC_ASCENSION" level="14" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Blood Casting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_BLOOD_CASTING">
         <description>
-            <p></p>
+            <p>Starting at 1st level, you learn the blood boltK cantrip and gain the following blood magic spells as you level.</p>
+            <table>
+                <thead>
+                    <tr><td>d4</td><td>column2</td></tr>
+                </thead>
+                <tr><td>1st</td><td>crimson poison, sense blood</td></tr>
+                <tr><td>3rd</td><td>compelled convulsion, morbid puppet</td></tr>
+                <tr><td>5th</td><td>corpse explosion, vampiric blade</td></tr>
+                <tr><td>7th</td><td>exsanguinate, macabre marionette</td></tr>
+                <tr><td>9th</td><td>explode heart, life link</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BLOOD_BOLT" spellcasting="Occultist" />
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_SPELL_CRIMSON_POISON" spellcasting="Occultist" prepared="true" />
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_SPELL_SENSE_BLOOD" spellcasting="Occultist" prepared="true" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_SPELL_COMPELLED_CONVULSION" spellcasting="Occultist" prepared="true" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_SPELL_MORBID_PUPPET" spellcasting="Occultist" prepared="true" />
+            <grant type="Spell" level="5" id="ID_KTH_COLAL_SPELL_CORPSE_EXPLOSION" spellcasting="Occultist" prepared="true" />
+            <grant type="Spell" level="5" id="ID_KTH_COLAL_SPELL_VAMPIRIC_BLADE" spellcasting="Occultist" prepared="true" />
+            <grant type="Spell" level="7" id="ID_KTH_COLAL_SPELL_EXSANGUINATE" spellcasting="Occultist" prepared="true" />
+            <grant type="Spell" level="7" id="ID_KTH_COLAL_SPELL_MACABRE_MARIONETTE" spellcasting="Occultist" prepared="true" />
+            <grant type="Spell" level="9" id="ID_KTH_COLAL_SPELL_EXPLODE_HEART" spellcasting="Occultist" prepared="true" />
+            <grant type="Spell" level="9" id="ID_KTH_COLAL_SPELL_LIFE_LINK" spellcasting="Occultist" prepared="true" />
+        </rules>
+    </element>
+    <element name="Dark Powers" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_DARK_POWERS">
+        <description>
+            <p>Starting at 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class and you gain the ability to sacrifice spell slots for dark boons.</p>
+            <p class="indent">At the end of a long rest, select up to 2 sacrifices to make from the following list. When you sacrifice a spell slot, that spell slot is expended and cannot be regained while the boon is active. The boon ends and you regain the expended spell slot when you complete your next long rest, unless you select the same boon again at the end of that long rest continuing its effect.</p>
+            <p class="indent">The number of sacrifices you can make to receive boons increases at 3rd level (to 3), 6th level (to 4), 9th level (to 5), 12th level (to 6), 15th level (to 7), and 18th level (to 8).</p>
+        </description>
+        <sheet>
+            <description>At the end of a long rest, select up to 2 sacrifices to make from the following list. When you sacrifice a spell slot, that spell slot is expended and cannot be regained while the boon is active. The boon ends and you regain the expended spell slot when you complete your next long rest, unless you select the same boon again at the end of that long rest continuing its effect.</description>
+            <description level="3">At the end of a long rest, select up to 3 sacrifices to make from the following list. When you sacrifice a spell slot, that spell slot is expended and cannot be regained while the boon is active. The boon ends and you regain the expended spell slot when you complete your next long rest, unless you select the same boon again at the end of that long rest continuing its effect.</description>
+            <description level="6">At the end of a long rest, select up to 4 sacrifices to make from the following list. When you sacrifice a spell slot, that spell slot is expended and cannot be regained while the boon is active. The boon ends and you regain the expended spell slot when you complete your next long rest, unless you select the same boon again at the end of that long rest continuing its effect.</description>
+            <description level="9">At the end of a long rest, select up to 5 sacrifices to make from the following list. When you sacrifice a spell slot, that spell slot is expended and cannot be regained while the boon is active. The boon ends and you regain the expended spell slot when you complete your next long rest, unless you select the same boon again at the end of that long rest continuing its effect.</description>
+            <description level="12">At the end of a long rest, select up to 6 sacrifices to make from the following list. When you sacrifice a spell slot, that spell slot is expended and cannot be regained while the boon is active. The boon ends and you regain the expended spell slot when you complete your next long rest, unless you select the same boon again at the end of that long rest continuing its effect.</description>
+            <description level="15">At the end of a long rest, select up to 7 sacrifices to make from the following list. When you sacrifice a spell slot, that spell slot is expended and cannot be regained while the boon is active. The boon ends and you regain the expended spell slot when you complete your next long rest, unless you select the same boon again at the end of that long rest continuing its effect.</description>
+            <description level="18">At the end of a long rest, select up to 8 sacrifices to make from the following list. When you sacrifice a spell slot, that spell slot is expended and cannot be regained while the boon is active. The boon ends and you regain the expended spell slot when you complete your next long rest, unless you select the same boon again at the end of that long rest continuing its effect.</description>
+        </sheet>
+        <rules>
+            <stat name="hp" value="level:occultist" />
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_DB_BOON_OF_FALSE_LIFE" />
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_CLAWS" />
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_DB_BOON_OF_SWIFTNESS" />
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_LEAPS" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_SIGHT" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_DB_BOON_OF_FIENDISH_TALENT" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_DB_BOON_OF_FRENZY" />
+            <grant type="Spell" level="5" id="ID_KTH_COLAL_DB_BOON_OF_BURNING_EYES" />
+            <grant type="Spell" level="5" id="ID_KTH_COLAL_DB_BOON_OF_FIENDISH_VIGOR" />
+            <grant type="Spell" level="5" id="ID_KTH_COLAL_DB_BOON_OF_FURY" />
+            <grant type="Spell" level="7" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_RESISTANCE" />
+            <grant type="Spell" level="7" id="ID_KTH_COLAL_DB_BOON_OF_TELEPATHY" />
+            <grant type="Spell" level="7" id="ID_KTH_COLAL_DB_BOON_OF_UNHOLY_STRENGTH" />
+            <grant type="Spell" level="9" id="ID_KTH_COLAL_DB_BOON_OF_RESILIENCE" />
+            <grant type="Spell" level="11" id="ID_KTH_COLAL_DB_BOON_OF_UNHOLY_WEAPON" />
+            <grant type="Spell" level="11" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_WINGS" />
+            <grant type="Spell" level="17" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_ASCENSION" />
+        </rules>
+    </element>
+    <element name="Sacrificial Casting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_SACRIFICIAL_CASTING">
+        <description>
+            <p>Starting at 3rd level, you gain the Hemomancer feat, granting you the included ability to cast Blood Magic spells with your hit points (detailed in the feat).</p>
+            <p><strong>Feat: Hemomancer</strong></p>
+            <p class="indent">You can sacrifice your essence to cast spells with the "(blood magic)" tag in place of expending a spell slot. To do so, sacrifice 5 hit points per level of the spell. These hit points sacrificed can count towards the hit point cost of the blood Material component of the spell. You can cast a total number of spell levels in this manner equal to your character level, but casting a spell of 6th level or higher this way drains your vitality in a more profound way, causing you to gain levels of exhaustion equal to the number of levels over 5th the spell is (1 level for a 6th-level spell, 2 for a 7th-level spell, etc.). You cannot cast spells over 5th level this way while you have any levels of exhaustion. The total number of spell levels you can cast in this manner resets when you take a long rest.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Feat" id="ID_KTH_COLAL_FEAT_HEMOMANCER" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Sanguine Power" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_SANGUINE_POWER">
+        <description>
+            <p>Beginning at 6th level, when you deal piercing or slashing damage to a creature that has blood, the next time you cast a spell with the Blood Magic tag before the end of your next turn, you can reduce the amount of your own hit points you need to expend by the piercing or slashing damage you dealt to that creature with that attack (you can pick the highest damage piercing or slashing damage attack you made during that time).</p>
+        </description>
+        <sheet>
+            <description>When you deal piercing or slashing damage to a creature that has blood, the next time you cast a spell with the Blood Magic tag before the end of your next turn, you can reduce the amount of your own hit points you need to expend by the piercing or slashing damage you dealt to that creature with that attack (you can pick the highest damage piercing or slashing damage attack you made during that time).</description>
+        </sheet>
+    </element>
+    <element name="Demonic Ascension" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_DEMONIC_ASCENSION">
+        <description>
+            <p>Starting at 14th level, as a culmination of your sacrificial boons, you are granted a form of terrifying power. As a bonus action, you transform into this fiendish form for 1 minute, gaining the following benefits:</p>
+            <ul>
+                <li>Demonic Resistance. While in this form you have resistance to non-magical bludgeoning, piercing, and slashing damage and advantage on saving throws against magic.</li>
+                <li>Movement Speed. Your movement speed increases by 10 feet.</li>
+                <li>Enlarged. You optionally can become large sized for duration, increasing your weapon attack damage by 1d4.</li>
+            </ul>
+            <p class="indent">Each time you kill a creature, the duration of the demonic form increases by 1 minute. Once you assume this form, you cannot assume it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action, you transform into this fiendish form for 1 minute, gaining the following benefits:
+            Demonic Resistance. While in this form you have resistance to non-magical bludgeoning, piercing, and slashing damage and advantage on saving throws against magic.
+            Movement Speed. Your movement speed increases by 10 feet.
+            Enlarged. You optionally can become large sized for duration, increasing your weapon attack damage by 1d4.
+            Each time you kill a creature, the duration of the demonic form increases by 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Boon of False Life" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_FALSE_LIFE">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a spell slot of 1st level or higher, gaining temporary hit points equal to 6 + twice the level of the sacrificed spell slot. When you complete a short rest under the effect of this boon, you regain 1d4 + half the initial temporary hit points granted by the boon.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Demonic Claws" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_CLAWS">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a spell slot of 1st level or higher, reforming one or more (based on the table below) of your arms into natural weapons in the form of demonic claws. The power of the demonic claw depends on the level of the spell slot sacrificed, gaining a larger damage dice and a growing bonus to attack and damage rolls.</p>
+            <p class="indent">When making attacks with your demonic claw, you can use your Spellcasting modifier in place of your Strength modifier for attack and damage rolls. If you have more than one claw, you can make a single weapon attack with the second claw as a bonus action after making an attack with the first claw.</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Slot Sacrificed</td><td>Claw Damage</td><td>Attack/Damage Bonus</td><td># of Claws</td></tr>
+                </thead>
+                <tr><td>1</td><td>1d6 slashing</td><td>+1</td><td>1</td></tr>
+                <tr><td>2</td><td>1d6 slashing</td><td>+1</td><td>2</td></tr>
+                <tr><td>3</td><td>1d8 slashing</td><td>+1</td><td>2</td></tr>
+                <tr><td>4</td><td>1d8 slashing</td><td>+2</td><td>2</td></tr>
+                <tr><td>5</td><td>1d10 slashing</td><td>+2</td><td>2</td></tr>
+                <tr><td>6</td><td>1d12 slashing</td><td>+2</td><td>2</td></tr>
+                <tr><td>7</td><td>1d12 slashing</td><td>+3</td><td>2</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Swiftness" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_SWIFTNESS">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 1st-level spell slot, increasing your movement speed by 10 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Demonic Leaps" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_LEAPS">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 1st-level spell slot, tripling your jumping distance. You can use your Spell Casting ability score to determine your jumping distance instead of your Strength ability score.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Demonic Sight" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_SIGHT">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 2nd-level spell slot, gaining 60 feet of darkvision. If you already have darkvision, the range of your darkvision increases by 60 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Fiendish Talent" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_FIENDISH_TALENT">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 2nd-level spell slot, you gain proficiency in one skill or tool of your choice. If you were already proficient in that skill or tool, you gain expertise (meaning you can add twice your proficiency modifier to ability checks made with that skill or tool).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Frenzy" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_FRENZY">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 2nd-level spell slot, gaining the Two Weapon Fighting or Dueling Fighting Style of the Fighter class.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Burning Eyes" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_BURNING_EYES">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 3rd-level spell slot, gaining the ability to cast eyes of immolationK at-will without expending a spell slot.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Fiendish Vigor" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_FIENDISH_VIGOR">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 3rd-level spell slot, gaining 5 current and maximum hit points. If you regain hit points by spending Hit Dice at the end of a short rest, you regain an extra 1d6 hit points.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Fury" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_FURY">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 3rd-level spell slot, allowing you to attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Demonic Resistance" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_RESISTANCE">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 4th-level spell slot, gaining resistance to one of acid, cold, fire, or poison damage. You can select this boon multiple times.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Telepathy" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_TELEPATHY">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 4th-level spell slot, gaining the power to communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language. Creatures you communicate with can reply in kind.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Unholy Strength" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_UNHOLY_STRENGTH">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 4th-level spell slot, making your Strength ability score equal to your Spell Casting ability score.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Resilience" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_RESILIENCE">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 5th-level spell slot, gaining proficiency in a saving throw of your choice.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Unholy Weapon" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_UNHOLY_WEAPON">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a spell slot of 6th level or higher, increasing the damage of your melee weapon attacks by 1d8 necrotic damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Demonic Wings" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_WINGS">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 6th-level spell slot, causing demonic wings to erupt from your back. You gain a flying speed of 30 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Demonic Ascension" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_DEMONIC_ASCENSION">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
+        <description>
+            <p>You sacrifice a 9th-level spell slot, you can remain in the form granted by your Demonic Ascension as long as you like, entering or exiting it as a bonus action at any time.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+<element name="Boon of Spell Name" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_DB_BOON_OF_SPELL NAME">
+        <supports>dark-boons</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_OCCULTIST_BLOODCULTIST</requirements>
         <description>
             <p></p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Dark Boon</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
+    -->
