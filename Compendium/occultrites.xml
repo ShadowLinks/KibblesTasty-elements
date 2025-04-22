@@ -892,7 +892,8 @@
     </element>
     <element name="Mastered Basics" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_MASTERED_BASICS">
         <prerequisite>15th level Hedge Mage</prerequisite>        
-        <supports>Occult-Rite, Hedge-Occult-Rite,[level:occultis:15], occult-prereq</supports>
+        <supports>Occult-Rite, Hedge-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultis:15]</requirements>
         <description>
             <p>When you cast an Occultist spell you know using a 1st-level spell slot, it is cast as if you spent a 2nd-level spell slot instead.</p>
         </description>
@@ -922,7 +923,8 @@
     </element>
     <element name="Potent Cantrip" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_POTENT_CANTRIP">
         <prerequisite>7th level Hedge Mage</prerequisite>        
-        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:7], occult-prereq</supports>
+        <supports>Occult-Rite, Hedge-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:7]</requirements>
         <description>
             <p>Your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip.</p>
         </description>
@@ -944,7 +946,8 @@
     </element>
     <element name="Savant Focus" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SAVANT_FOCUS">
         <prerequisite>7th level Hedge Mage</prerequisite>        
-        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:7], occult-prereq</supports>
+        <supports>Occult-Rite, Hedge-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:7]</requirements>
         <description>
             <p>You can focus all of your experience into using your most basic magic potently. As a bonus action you can enter a state of focused concentration, as if concentrating on a spell. When you do so, you gain advantage on attack rolls made for cantrips for 1 minute, or until you end your concentration on this state of focus.</p>
         </description>
@@ -954,7 +957,8 @@
     </element>
     <element name="Studious Mage" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_STUDIOUS_MAGE">
         <prerequisite>3rd level Hedge Mage</prerequisite>        
-        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:3], occult-prereq</supports>
+        <supports>Occult-Rite, Hedge-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:3]</requirements>
         <description>
             <p>You can select spell a from the Wizard or Druid spell list, but only of a spell level lower than the highest level spell level you can cast. You learn the spell and it becomes an Occultist spell for you.</p>
         </description>
@@ -967,7 +971,8 @@
     </element>
     <element name="Simple Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SIMPLE_MAGIC">
         <prerequisite>5th level Hedge Mage</prerequisite>        
-        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:5], occult-prereq</supports>
+        <supports>Occult-Rite, Hedge-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
         <description>
             <p>Even as you gain power, you are adept with using small bursts for simple magic. You can sacrifice a spell slot of 3rd level or higher to gain two 1st-level spell slots. If the spell slot is 5th level or higher, you can gain two 2nd-level spell slots. You cannot store more than twice your usual maximum number of any spell slot level this way.</p>
         </description>
@@ -987,7 +992,8 @@
     </element>
     <element name="Utility Master" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_UTILITY_MASTER">
         <prerequisite>5th level Hedge Mage</prerequisite>        
-        <supports>Occult-Rite, Hedge-Occult-Rite, [level:occultist:5], occult-prereq</supports>
+        <supports>Occult-Rite, Hedge-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
         <description>
             <p>When you cast cantrips that can lift weight, affect external elements, target an area on the ground, or cause minor instantaneous effects, you lift twice as much, target twice the area, or maintain an additional instantaneous effect.</p>
         </description>
@@ -995,12 +1001,331 @@
             <description></description>
         </sheet>
     </element>
+    <element name="Death Watcher" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DEATH_WATCHER">
+        <prerequisite>12th level Oracle</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:12]</requirements>
+        <description>
+            <p>You can see the lines of fate, and detect when one of them is about to snap. When an ally that can see or taking damage, as a reaction you can manipulate their fate with a cryptic warning, causing them to narrowly avoid their demise, instead dropping to 1 hit point.</p>
+            <p class="indent">Once you use this Rite, you must finish a long rest before you can use it again.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When an ally that can see or hear you would drop to 0 hit points as a result of taking damage, as a reaction you can manipulate their fate with a cryptic warning, causing them to narrowly avoid their demise, instead dropping to 1 hit point.</description>
+        </sheet>
+    </element>
+
+<!-- Unable to get this spell selction to base off your available spell slots. Cleric,$(spellcasting:slots) on lists 1st level spells-->
+    <element name="Divine Miracle" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DIVINE_MIRACLE">
+        <prerequisite>Oracle</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite</supports>
+        <description>
+            <p>You learn one cleric spell of your choice. The spell must be of a level you can cast, as shown on the Occultist table, or a cantrip. The chosen spell becomes an Occultist spell for you and does not count against your spells known.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" supports="Cleric||Cleric,0"  spellcasting="Occultist" prepared="true"/>
+        </rules>
+    </element>
+    <element name="Divine Sight" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DIVINE_SIGHT">
+        <prerequisite>15th level Oracle, Blindsight</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:15]</requirements>
+        <description>
+            <p>If you have blindsight, you gain truesight with a range equal to your blindsight.</p>
+        </description>
+        <sheet>
+            <description>If you have blindsight, you gain truesight with a range equal to your blindsight.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_TRUESIGHT" />
+            <stat name="truesight:range" value="blindsight:range" bonus="base" />
+        </rules>
+    </element>
+    <element name="Oracle's Sight" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ORACLES_SIGHT">
+        <prerequisite>Oracle</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite</supports>
+        <description>
+            <p>You gain blindsight with a range of 15 feet. When affected by the Blinded condition for more than a minute the range of this sight is doubled while under that effect.</p>
+        </description>
+        <sheet>
+            <description>You gain blindsight with a range of 15 feet. When affected by the Blinded condition for more than a minute the range of this sight is doubled while under that effect.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+            <stat name="blindsight:range" value="15" bonus="base" />
+        </rules>
+    </element>
+    <element name="Revelation of Darkness" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REVELATION_OF_DARKNESS">
+        <prerequisite>Oracle, Mystery of Darkness</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_DARKNESS</requirements>
+        <description>
+            <p>You understand that darkness is all encompassing, interrupted only by tenuous motes of light. When you cast a spell of 1st level or higher creates that dim light, darkness, or that obscures you from the vision of one or more creatures, you can teleport to another point you can see that is in dim light or darkness within 30 feet as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher creates that dim light, darkness, or that obscures you from the vision of one or more creatures, you can teleport to another point you can see that is in dim light or darkness within 30 feet as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Revelation of Death" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REVELATION_OF_DEATH">
+        <prerequisite>Oracle, Mystery of Death</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_DEATH</requirements>
+        <description>
+            <p>You can manipulate negative energy. When you cast a spell of 1st level or higher that deals cold or necrotic damage, you can add your Wisdom modifier to one damage roll of that spell. Channeling the power of death in this way temporarily withers and weakens you, reducing your movement speed by 5 feet until the end of your next turn.</p>
+            <p class="indent">If you use this while already weakened in this way, the duration is extended and the effect is cumulative. A spell can only trigger one Revelation. If multiple Revelations apply, choose one.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher that deals cold or necrotic damage, you can add {{wisdom:modifier}} to one damage roll of that spell. Channeling the power of death in this way temporarily withers and weakens you, reducing your movement speed by 5 feet until the end of your next turn.
+            If you use this while already weakened in this way, the duration is extended and the effect is cumulative. A spell can only trigger one Revelation. If multiple Revelations apply, choose one.</description>
+        </sheet>
+    </element>
+    <element name="Revelation of Fire" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REVELATION_OF_FIRE">
+        <prerequisite>Oracle, Mystery of Fire</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_FIRE</requirements>
+        <description>
+            <p>Your powers draw flames all around you. When you cast a spell of 1st level or higher that deals fire damage, you can shroud yourself in flames until the start of your next turn. You gain half cover and any creature that strikes you with a melee attack or ends their turn within 5 feet of you takes 1d6 fire damage. At the start of your next turn, you take 1 fire damage. A spell can only trigger one Revelation. If multiple Revelations apply, choose one.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher that deals fire damage, you can shroud yourself in flames until the start of your next turn. You gain half cover and any creature that strikes you with a melee attack or ends their turn within 5 feet of you takes 1d6 fire damage. At the start of your next turn, you take 1 fire damage. A spell can only trigger one Revelation. If multiple Revelations apply, choose one.</description>
+        </sheet>
+    </element>
+    <element name="Revelation of Life" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REVELATION_OF_LIFE">
+        <prerequisite>Oracle, Mystery of Life</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_LIFE</requirements>
+        <description>
+            <p>Your powers are tied to the nature of life and its ever shifting balance. When you cast a spell of 1st level or higher that restores hit points or grants temporary hit points, you can heal a creature other than yourself within 30 feet for a number of hit points equal to your Occultist level. Your current hit points are reduced by half as many hit points as you restore with this feature.</p>
+            <p class="indent">You can only use this ability on creatures that have vibrant life pulsing within them.</p>
+            <p class="indent">This revelation does not work on undead, constructs, or creatures at zero hit points. A spell can only trigger one Revelation. If multiple Revelations apply, choose one.</p>
+            
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher that restores hit points or grants temporary hit points, you can heal a creature other than yourself within 30 feet for {{level:occultist}} hp. Your current hit points are reduced by half as many hit points as you restore with this feature.
+            You can only use this ability on creatures that have vibrant life pulsing within them.
+            This revelation does not work on undead, constructs, or creatures at zero hit points. A spell can only trigger one Revelation. If multiple Revelations apply, choose one.</description>
+        </sheet>
+    </element>
+    <element name="Revelation of Light" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REVELATION_OF_LIGHT">
+        <prerequisite>Oracle, Mystery of Light</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_LIGHT</requirements>
+        <description>
+            <p>You grasp that looking into the light blinds as surely as looking away from it. When you cast prismatic flash or a 1st level spell or higher spell that sheds 5 feet or more of bright light, as a bonus action you can force one creature within 30 feet of the light to make a Dexterity saving throw, or become blinded until the start of your next turn.</p>
+            <p class="indent">A creature is unaffected by this effect if it can’t see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.</p>
+        </description>
+        <sheet>
+            <description>When you cast prismatic flash or a 1st level spell or higher spell that sheds 5 feet or more of bright light, as a bonus action you can force one creature within 30 feet of the light to make a Dexterity saving throw, or become blinded until the start of your next turn.
+            A creature is unaffected by this effect if it can’t see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.</description>
+        </sheet>
+    </element>
+    <element name="Revelation of Nature" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REVELATION_OF_NATURE">
+        <prerequisite>Oracle, Mystery of Nature</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_NATURE</requirements>
+        <description>
+            <p>When you cast a 1st level spell or higher that creates difficult terrain, you can force one creature to make a Dexterity saving throw. On failure, if the creature is within the area of the spell creates difficult terrain, its movement speed is reduced to zero. If it is outside the area of difficult terrain, its movement speed is reduced by half.</p>
+        </description>
+        <sheet>
+            <description>When you cast a 1st level spell or higher that creates difficult terrain, you can force one creature to make a Dexterity saving throw. On failure, if the creature is within the area of the spell creates difficult terrain, its movement speed is reduced to zero. If it is outside the area of difficult terrain, its movement speed is reduced by half.</description>
+        </sheet>
+    </element>
+    <element name="Revelation of Souls" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REVELATION_OF_SOULS">
+        <prerequisite>Oracle, Mystery of Souls</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_SOULS</requirements>
+        <description>
+            <p>The souls of the departed are all around. When you cast a spell of 1st level or higher, you can conjure a medium sized benevolent or tormented spirit to an empty space you can see within 30 feet.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher, you can conjure a medium sized benevolent or tormented spirit to an empty space you can see within 30 feet.
+            The first creature to enter the spirit’s space or end their turn within the spirit’s space gains a number of hit points equal to 1d4 + the level of the spell if you summoned a benevolent spirit, or takes necrotic damage equal to 1d4 + the level of the spell if the spirit was a tormented one. A spell can only trigger one Revelation. If multiple Revelations apply, choose one.</description>
+        </sheet>
+    </element>
+    <element name="Revelation of War" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REVELATION_OF_WAR">
+        <prerequisite>Oracle, Mystery of War</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_WAR</requirements>
+        <description>
+            <p>Within war, you see the essence of perfect conflict. When you cast a spell of 1st level or higher on your turn, you can make a single melee weapon attack as bonus action. When you reach 6th level, you can trigger the Revelation of War when you cast an Occultist cantrip</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher on your turn, you can make a single melee weapon attack as bonus action.</description>
+            <description level="6">When you cast a spell or cantrip, you can make a single melee weapon attack as bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Touch of Fire" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TOUCH_OF_FIRE">
+        <prerequisite>Oracle, Mystery of Fire</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_FIRE</requirements>
+        <description>
+            <p>You learn the burnK cantrip. Additionally, as a bonus action you can take 1 fire damage and can cause a weapon you are carrying to burst into flames for 1 minute or until you let go of it. For the duration, it sheds bright light for 10 feet and dim light for an additional 10 feet. Attacks made with the weapon while it burns deal an additional 1d6 fire damage.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action you can take 1 fire damage and can cause a weapon you are carrying to burst into flames for 1 minute or until you let go of it. For the duration, it sheds bright light for 10 feet and dim light for an additional 10 feet. Attacks made with the weapon while it burns deal an additional 1d6 fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BURN" spellcasting="Occultist" />
+        </rules>
+    </element>
+    <element name="Truth of Darkness" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUTH_OF_DARKNESS">
+        <prerequisite>Oracle, Mystery of Darkness</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_DARKNESS</requirements>
+        <description>
+            <p>Darkness is home to those that live in it. Any darkvision or blindsight you have is doubled in range, up to a maximum of 120 feet. If you have neither, you gain a darkvision of 30 feet, which is doubled by this feature to 60 feet. You can see normally in dim light and darkness.</p>
+        </description>
+        <sheet>
+            <description>Any darkvision or blindsight you have is doubled in range, up to a maximum of 120 feet. If you have neither, you gain a darkvision of 30 feet, which is doubled by this feature to 60 feet. You can see normally in dim light and darkness.</description>
+        </sheet>
+    </element>
+    <element name="Truth of Death" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUTH_OF_DEATH">
+        <prerequisite>Oracle, Mystery of Death</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_DEATH</requirements>
+        <description>
+            <p>The march of death is inexorable. Necrotic damage you deal ignores resistance to Necrotic damage, and treats immunity as resistance, and leaves the touch of death on the target until the start of your next turn. While under the Touch of Death, any hit points the target regains is halved (rounded down).</p>
+        </description>
+        <sheet>
+            <description>The march of death is inexorable. Necrotic damage you deal ignores resistance to Necrotic damage, and treats immunity as resistance, and leaves the touch of death on the target until the start of your next turn. t regains is halved (rounded down).</description>
+        </sheet>
+    </element>
+    <element name="Truth of Fire" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUTH_OF_FIRE">
+        <prerequisite>Oracle, Mystery of Fire</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_FIRE</requirements>
+        <description>
+            <p>Everything burns. When you roll fire damage, you can reroll any number of fire damage dice. You must use the new rolls. If you reroll all the dice of the damage roll, the damage bypasses any fire resistance a target has. For each die rerolled, you take 1 fire damage which can’t be reduced in any way.</p>
+        </description>
+        <sheet>
+            <description>Everything burns. When you roll fire damage, you can reroll any number of fire damage dice. You must use the new rolls. If you reroll all the dice of the damage roll, the damage bypasses any fire resistance a target has. For each die rerolled, you take 1 fire damage which can’t be reduced in any way.</description>
+        </sheet>
+    </element>
+    <element name="Truth of Life" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUTH_OF_LIFE">
+        <prerequisite>Oracle, Mystery of Life</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_LIFE</requirements>
+        <description>
+            <p>The breath of life is shared by all creatures. When a creature of CR 1/4 or higher dies within 60 feet of you, you can use your reaction to transfer some of that dispersing life force to another creature within 60 feet of you (including yourself). The target creature gains hit points equal to your Wisdom modifier, or the maximum hit points of the creature (whichever was lower).</p>
+        </description>
+        <sheet>
+            <description>When a creature of CR 1/4 or higher dies within 60 feet of you, you can use your reaction to transfer some of that dispersing life force to another creature within 60 feet of you (including yourself). The target creature gains {{wisdom:modifier}} hit points, or the maximum hit points of the creature (whichever was lower).</description>
+        </sheet>
+    </element>
+    <element name="Truth of Light" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUTH_OF_LIGHT">
+        <prerequisite>Oracle, Mystery of Light</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_LIGHT</requirements>
+        <description>
+            <p>The light reveals all. Magical bright light you create reveals invisible creatures, any attempt to hide within it is made with disadvantage, and grants advantage on saving throws and ability against illusions. You can end these effects for the duration of that bright light on a source of bright light as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>Magical bright light you create reveals invisible creatures, any attempt to hide within it is made with disadvantage, and grants advantage on saving throws and ability against illusions. You can end these effects for the duration of that bright light on a source of bright light as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Truth of Nature" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUTH_OF_NATURE">
+        <prerequisite>Oracle, Mystery of Nature</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_NATURE</requirements>
+        <description>
+            <p>You can cast speak with plants or speak with animals without expending a spell slot. Once you do so, you cannot do so again until you complete a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can cast speak with plants or speak with animals without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+        </rules>
+    </element>
+    <element name="Truth of Souls" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUTH_OF_SOULS">
+        <prerequisite>Oracle, Mystery of Souls</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_SOULS</requirements>
+        <description>
+            <p>You are one with the souls. You have advantage on Constitution saving throws to maintain concentration on spells granted by the Mystery of Souls.</p>
+        </description>
+        <sheet>
+            <description>You are one with the souls. You have advantage on Constitution saving throws to maintain concentration on spells granted by the Mystery of Souls.</description>
+        </sheet>
+    </element>
+    <element name="Truth of War" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUTH_OF_WAR">
+        <prerequisite>5th level Oracle, Revelation of War</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REVELATION_OF_WAR,[level:occultist:5]</requirements>
+        <description>
+            <p>There are many paths to victory. When you cast a spell of 1st level or higher on your turn, the next time you hit a creature with a melee weapon attack before the end of your turn, you can force them to make a Saving Throw against your Spell Save DC, or suffer from a condition based on the level of spell slot cast (you can select the condition of a lower level effect instead of you choose) until the start of your next turn. The type of saves and conditions are listed on the table below.</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Condition</td><td>Save</td></tr>
+                </thead>
+                <tr><td>1st</td><td>Prone</td><td>Strength</td></tr>
+                <tr><td>2nd</td><td>Poisoned</td><td>Constitution</td></tr>
+                <tr><td>3rd</td><td>Frightended</td><td>Wisdom</td></tr>
+                <tr><td>4th</td><td>Blinded</td><td>Constitution</td></tr>
+                <tr><td>5th</td><td>Restrained</td><td>Strength</td></tr>
+                <tr><td>6th</td><td>Stunned</td><td>Constitution</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher on your turn, the next time you hit a creature with a melee weapon attack before the end of your turn, you can force them to make a Saving Throw against your Spell Save DC, or suffer from a condition based on the level of spell slot cast (you can select the condition of a lower level effect instead of you choose) until the start of your next turn.
+            1/Prone/STR
+            2/Poison/CON
+            3/Frightened/WIS
+            4/Blinded/CON
+            5/Restrained/STR
+            6/Stunned/CON</description>
+        </sheet>
+    </element>
+    <element name="Twin Revelation" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TWIN_REVELATION">
+        <prerequisite>9th level Oracle</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:9]</requirements>
+        <description>
+            <p>When you cast a spell that invokes a Revelation, you can invoke two different Revelations at the same time.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that invokes a Revelation, you can invoke two different Revelations at the same time.</description>
+        </sheet>
+    </element>
+    <element name="Halo of Mystery" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_HALO_OF_MYSTERY">
+        <prerequisite>15th level Oracle</prerequisite>        
+        <supports>Occult-Rite, Oracle-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:15]</requirements>
+        <description>
+            <p>When you roll initiative or as a bonus action at any time, you can invoke the power of a mystery you know, causing its power to swirl around you forming a halo. This halo lasts until you invoke another Mystery this way, or dismiss it as a bonus action. It’s effect depends on the Mystery Invoked.</p>
+            <ul>
+                <li><strong>Darkness.</strong> You shrouded in darkness and difficult to make out. You have half cover against attacks and are considered to be in dim light regardless of the surrounding light.</li>
+                <li><strong>Death.</strong> You gain resistance to necrotic damage. If you are reduced to 0 hit points, you can make a Wisdom saving throw with a DC of 10 + the damage taken to be reduced to 1 hit point instead on success.</li>
+                <li><strong>Fire.</strong> You shed bright light in a 5 foot radius and dim light for an additional 5 feet. You gain resistance to fire damage, and immunity to the fire damage of your own spells.</li>
+                <li><strong>Life.</strong> When you restore hit points to another creature, they gain temporary hit points equal to half the hit points restored.</li>
+                <li><strong>Light.</strong> You shed bright light in a 20 foot radius and dim light for an additional 20 feet (this light interacts with Truth of Light if you have that Rite). You gain resistance to radiant damage.</li>
+                <li><strong>Nature.</strong> You become surrounded by thorny vines. Any creature that strikes you with a melee weapon attack takes 1d8 piercing damage.</li>
+                <li><strong>Souls.</strong> You become ghostly and translucent, gaining a flying speed of 20 feet and can pass through objects less than a foot thick, as well as through creatures, and ignore all difficult terrain.</li>
+                <li><strong>War.</strong> When you take damage, you can subtract your Wisdom modifier from the damage taken (reducing it to a minimum of 1).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you roll initiative or as a bonus action at any time, you can invoke the power of a mystery you know, causing its power to swirl around you forming a halo. This halo lasts until you invoke another Mystery this way, or dismiss it as a bonus action.
+            Darkness. You shrouded in darkness and difficult to make out. You have half cover against attacks and are considered to be in dim light regardless of the surrounding light.
+            Death. You gain resistance to necrotic damage. If you are reduced to 0 hit points, you can make a Wisdom saving throw with a DC of 10 + the damage taken to be reduced to 1 hit point instead on success.
+            Fire. You shed bright light in a 5 foot radius and dim light for an additional 5 feet. You gain resistance to fire damage, and immunity to the fire damage of your own spells.
+            Life. When you restore hit points to another creature, they gain temporary hit points equal to half the hit points restored.
+            Light. You shed bright light in a 20 foot radius and dim light for an additional 20 feet (this light interacts with Truth of Light if you have that Rite). You gain resistance to radiant damage.
+            Nature. You become surrounded by thorny vines. Any creature that strikes you with a melee weapon attack takes 1d8 piercing damage.
+            Souls. You become ghostly and translucent, gaining a flying speed of 20 feet and can pass through objects less than a foot thick, as well as through creatures, and ignore all difficult terrain.
+            War. When you take damage, you can subtract your Wisdom modifier from the damage taken (reducing it to a minimum of 1).</description>
+        </sheet>
+    </element>
 </elements>
 
 <!-- 
 <element name="RiteName" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITENAME">
-        <prerequisite>Hedge Mage</prerequisite>        
-        <supports>Occult-Rite, Hedge-Occult-Rite</supports>
+        <prerequisite>Oracle</prerequisite>        
+        <supports>Occult-Rite, Shaman-Occult-Rite</supports>
+        <requirements></requirements>
         <description>
             <p></p>
         </description>
