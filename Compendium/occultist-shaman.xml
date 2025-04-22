@@ -9,26 +9,76 @@
     <element name="Tradition of the Shaman" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_OCCULTIST_SHAMAN">
         <supports>Occult-Tradition</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <p>A shaman is an Occultist that walks the paths of the spirits, binding them to their cause to empower themselves or bring havoc to their foes. Tough and powerful, they are most often found in the thick of the fight, wreathed in their primal power.</p>
+            <p class="indent">A shaman may view themselves as in service to their spirits or as served by the spirits; the what and the how of their contract can vary wildly, as can the source of their spirits, be it pulling from ancestral or primal powers.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_WARRIOR" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_CALL_SPIRIT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_EMPOWERED_SPIRITS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_EXTRA_ATTACK" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_EMPOWERMENT" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_WARRIOR" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_CALL_SPIRIT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_EMPOWERED_SPIRITS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_EXTRA_ATTACK" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_EMPOWERMENT" level="14" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Spiritual Warrior" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_WARRIOR">
+        <description>
+            <p>When you select this subclass, you gain proficiency in simple weapons, medium armor and shields. You can add your Wisdom modifier in place of your Dexterity modifier for calculating the AC of light or medium armor. Additionally, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.</p>
+        </description>
+        <sheet>
+            <description>You can add your Wisdom modifier in place of your Dexterity modifier for calculating the AC of light or medium armor.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <stat name="hp" value="level:occultist" />
+            <stat name="ac:spiritualwarrior" value="ac:armored:armor" bonus="base" />
+            <stat name="ac:spiritualwarrior" value="ac:armored:enhancement" />
+            <stat name="ac:spiritualwarrior" value="wisdom:modifier" />
+            <stat name="ac:calculation" value="ac:spiritualwarrior" bonus="calculation" equipped="[armor:medium]|[armor:light]" alt="Spiritual Warrior" />
+        </rules>
+    </element>
+    <element name="Call Spirit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_CALL_SPIRIT">
+        <description>
+            <p>Starting at 1st level, as a bonus action you can call a spirit to your side. This can be a primal spirit of fire, cold, or lightning, or an ancestral spirit with radiant or necrotic power. This bond lasts for 10 minutes once formed. You can release a spirit early as an action, and it is immediately released if you call another spirit.</p>
+            <p class="indent">While a spirit is bonded to you, your melee weapon attacks deal an additional 1d4 damage of the spirit’s type.</p>
+            <p class="indent">When you call it or as a bonus action while it is bonded, you can manifest the spirit in a space you can see within 30 feet of you. The spirit is medium sized but spectral in nature while manifested. While the spirit is manifested, whenever you take the attack action you may replace any number of attacks you could normally take with melee spell attacks from your bonded spirit. On a hit, this melee spell attack deals 1d4 + your Wisdom modifier damage of the spirit’s type. As a bonus action you can move it up to 30 feet in any direction or recall it to yourself, ending its manifestation.</p>
+            <p class="indent">A manifested spirit cannot move more than 60 feet from you, and is recalled to you if you are ever more than 60 feet from it.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action you can call a spirit to your side. This can be a primal spirit of fire, cold, or lightning, or an ancestral spirit with radiant or necrotic power. This bond lasts for 10 minutes once formed. You can release a spirit early as an action, and it is immediately released if you call another spirit.
+            While a spirit is bonded to you, your melee weapon attacks deal an additional 1d4 damage of the spirit’s type.
+            When you call it or as a bonus action while it is bonded, you can manifest the spirit in a space you can see within 30 feet of you. The spirit is medium sized but spectral in nature while manifested. While the spirit is manifested, whenever you take the attack action you may replace any number of attacks you could normally take with melee spell attacks from your bonded spirit. On a hit, this melee spell attack deals 1d4 + {{wisdom:modifier}} damage of the spirit’s type. As a bonus action you can move it up to 30 feet in any direction or recall it to yourself, ending its manifestation.
+            A manifested spirit cannot move more than 60 feet from you, and is recalled to you if you are ever more than 60 feet from it.</description>
+        </sheet>
+    </element>
+    <element name="Empowered Spirits" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_EMPOWERED_SPIRITS">
+        <description>
+            <p>Starting at 3rd level, when you call a spirit, you can expend a spell slot to empower that spirit. An empowered spirit adds additional damage to your weapon and deals additional manifested damage based on the level of the spell slot expended, its damage becomes the amount shown in the Empowered Spirits table. While the spirit is called and not manifested, at the start of each of your turns, you gain temporary hit points equal to the level of the spell slot spent to empower it.</p>
+            <table>
+                <thead>
+                    <tr><td>Slot</td><td>Bonus Weapon Damage</td><td>Manifested Damage</td><td>Temp HP</td></tr>
+                </thead>
+                <tr><td>1st</td><td>1d6</td><td>2d4</td><td>1</td></tr>
+                <tr><td>2nd</td><td>1d8</td><td>2d6</td><td>2</td></tr>
+                <tr><td>3rd</td><td>1d10</td><td>2d6</td><td>3</td></tr>
+                <tr><td>4th</td><td>1d12</td><td>2d8</td><td>4</td></tr>
+                <tr><td>5th</td><td>1d12</td><td>2d8</td><td>5</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you call a spirit, you can expend a spell slot to empower that spirit. An empowered spirit adds additional damage to your weapon and deals additional manifested damage based on the level of the spell slot expended, its damage becomes the amount shown in the Empowered Spirits table. While the spirit is called and not manifested, at the start of each of your turns, you gain temporary hit points equal to the level of the spell slot spent to empower it.</description>
+        </sheet>
+    </element>
+    <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_EXTRA_ATTACK">
         <description>
             <p></p>
         </description>
@@ -36,7 +86,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Spiritual Empowerment" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_EMPOWERMENT">
         <description>
             <p></p>
         </description>
@@ -44,27 +94,4 @@
             <description></description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
+</elements>
