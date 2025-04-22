@@ -23,9 +23,29 @@
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_WARRIOR" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_CALL_SPIRIT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_SHAMAN" level="2" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_EMPOWERED_SPIRITS" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_EXTRA_ATTACK" level="6" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_EMPOWERMENT" level="14" />
+        </rules>
+    </element>
+    <element name="Occult Rites" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_SHAMAN">
+        <description>
+            <p>As you delve into your Tradition of occult magic, you find deviations and branches to explore that help you specialize and perfect your craft in the way that best suits you.</p>
+            <p class="indent">At 2nd Level, you gain two occult rites of your choice. Your occult rites options are detailed at the end of the occult tradition description for tradition specific Rites, and at the end of the class description for general rites. You can select from either your tradition or class list. When you gain certain Occultist levels, you gain additional occult rites of your choice.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</p>
+        </description>
+        <sheet display="false">
+            <description>When you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Shaman-Occult-Rite" number="2" level="2" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Shaman-Occult-Rite" number="1" level="5" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Shaman-Occult-Rite" number="1" level="7" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Shaman-Occult-Rite" number="1" level="9" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Shaman-Occult-Rite" number="1" level="12" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Shaman-Occult-Rite" number="1" level="15" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Shaman-Occult-Rite" number="1" level="18" />
         </rules>
     </element>
     <element name="Spiritual Warrior" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_WARRIOR">
@@ -75,23 +95,30 @@
             </table>
         </description>
         <sheet>
-            <description>When you call a spirit, you can expend a spell slot to empower that spirit. An empowered spirit adds additional damage to your weapon and deals additional manifested damage based on the level of the spell slot expended, its damage becomes the amount shown in the Empowered Spirits table. While the spirit is called and not manifested, at the start of each of your turns, you gain temporary hit points equal to the level of the spell slot spent to empower it.</description>
+            <description>When you call a spirit, you can expend a spell slot to empower that spirit. An empowered spirit adds additional damage to your weapon and deals additional manifested damage based on the level of the spell slot expended, its damage becomes the amount shown in the Empowered Spirits table. While the spirit is called and not manifested, at the start of each of your turns, you gain temporary hit points equal to the level of the spell slot spent to empower it.
+            Slot-Bonus WPN DMG-Manifested DMG-Temp HP
+            1st--1d6--2d4--1
+            2nd--1d8--2d6--2
+            3rd--1d10--2d6--3
+            4th--1d12--2d8--4
+            5th--1d12--2d8--5</description>
         </sheet>
     </element>
     <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_EXTRA_ATTACK">
         <description>
-            <p></p>
+            <p>Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class="indent">If you have a manifested spirit, you can replace one or both attacks with the spirit’s melee spell attack.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn. If you have a manifested spirit, you can replace one or both attacks with the spirit’s melee spell attack.</description>
         </sheet>
     </element>
     <element name="Spiritual Empowerment" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SHAMAN_SPIRITUAL_EMPOWERMENT">
         <description>
-            <p></p>
+            <p>Starting at 14th level, when you cast a spell of 1st level or higher, you can make a single weapon attack as a bonus action. If you have a manifested spirit, you can attack with it in place of making a weapon attack.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you cast a spell of 1st level or higher, you can make a single weapon attack as a bonus action. If you have a manifested spirit, you can attack with it in place of making a weapon attack.</description>
         </sheet>
     </element>
 </elements>
