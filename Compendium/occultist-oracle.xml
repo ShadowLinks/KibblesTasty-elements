@@ -9,62 +9,394 @@
     <element name="Tradition of the Oracle" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_OCCULTIST_ORACLE">
         <supports>Occult-Tradition</supports>
         <description>
-            <p></p>
+            <p>An Oracle is an Occultist whose power comes to them from their connection to fate; bound and empowered Oracles carry some piece of divine mystery within them, tied to an aspect of destiny and fate. As their power grows they begin to understand this mystery with revelations, unlocking its secrets and the power they contain. An Oracle typically does not directly serve a god, rather they often are people whose fate has entangled them in the affairs of the gods. Oracles have great power, but their powers are not ones that mortals were meant to have, and consequently they are frequently burdened by their powers.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_TOUCH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_UNVEILED" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_OPTIONAL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_FATE_READING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_ENLIGHTEND_UNDERSTANDING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MASTER_OF_PROPHECY" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_ORACLE" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_TOUCH" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_OPTIONAL" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_UNVEILED" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_FATE_READING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_ENLIGHTEND_UNDERSTANDING" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MASTER_OF_PROPHECY" level="14" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Occult Rites" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_ORACLE">
         <description>
-            <p></p>
+            <p>As you delve into your Tradition of occult magic, you find deviations and branches to explore that help you specialize and perfect your craft in the way that best suits you.</p>
+            <p class="indent">At 2nd Level, you gain two occult rites of your choice. Your occult rites options are detailed at the end of the occult tradition description for tradition specific Rites, and at the end of the class description for general rites. You can select from either your tradition or class list. When you gain certain Occultist levels, you gain additional occult rites of your choice.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</p>
+        </description>
+        <sheet display="false">
+            <description>When you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Oracle-Occult-Rite" number="2" level="2" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Oracle-Occult-Rite" number="1" level="5" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Oracle-Occult-Rite" number="1" level="7" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Oracle-Occult-Rite" number="1" level="9" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Oracle-Occult-Rite" number="1" level="12" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Oracle-Occult-Rite" number="1" level="15" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Oracle-Occult-Rite" number="1" level="18" />
+        </rules>
+    </element>
+    <element name="Oracle's Curse - Optional" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_OPTIONAL">
+        <description>
+            <p>These are optional additions for an Oracle to select at 1st level.</p>
+            <p class="indent"><strong><em>Blind. </em></strong>You are permanently blinded. You gain the Oracle’s Sight rite. It doesn’t count against your rites known.</p>
+            <p class="indent"><strong><em>Frail. </em></strong>Your hit dice become d4s. Your hit points at level 1 become 4 + your Constitution modifier, and hit points at higher levels become 1d4 (3) + your Constitution modifier. Once per day when you complete a short rest, you can regain expended spell slots with a combined level equal to half your Oracle level (rounded up).</p>
+            <p class="indent"><strong><em>Burned. </em></strong>(Requires Mystery of Fire) Your hands are scarred by terrible burns. You have disadvantage on weapon attack rolls and Sleight of Hand checks. You gain the Truth of Fire rite. It doesn’t count against your rites known.</p>
+            <p class="indent"><strong><em></em>Forsworn. </strong>Visions of the future come easily to you, but sharing them becomes impossible. You are unable to reveal the results of your divination spells to others through any means. The casting time of divination spells that take 1 minute is reduced to 1 action for you.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Oracle's Curse" supports="oracle-optional-feature" />
+        </rules>
+    </element>
+    <element name="Optional Features - Blind" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_OPTIONAL_BLIND">
+        <supports>oracle-optional-feature</supports>
+        <description>
+            <p>You are permanently blinded. You gain the Oracle’s Sight rite. It doesn’t count against your rites known.</p>
+        </description>
+        <sheet>
+            <description>You are permanently blinded. You gain the Oracle’s Sight rite. It doesn’t count against your rites known.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ORACLES_SIGHT" />
+        </rules>
+    </element>
+    <element name="Optional Features - Frail" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_OPTIONAL_FRAIL">
+        <supports>oracle-optional-feature</supports>
+        <description>
+            <p>Your hit dice become d4s. Your hit points at level 1 become 4 + your Constitution modifier, and hit points at higher levels become 1d4 (3) + your Constitution modifier. Once per day when you complete a short rest, you can regain expended spell slots with a combined level equal to half your Oracle level (rounded up).</p>
+        </description>
+        <sheet>
+            <description>Your hit dice become d4s. Your hit points at level 1 become 4 + your Constitution modifier, and hit points at higher levels become 1d4 (3) + your Constitution modifier. Once per day when you complete a short rest, you can regain expended spell slots with a combined level equal to {{level:occultist:half:up}}.</description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Optional Features - Burned" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_OPTIONAL_BURNED">
+        <supports>oracle-optional-feature</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_FIRE</requirements>
+        <description>
+            <p>(Requires Mystery of Fire) Your hands are scarred by terrible burns. You have disadvantage on weapon attack rolls and Sleight of Hand checks. You gain the Truth of Fire rite. It doesn’t count against your rites known.</p>
+        </description>
+        <sheet>
+            <description>Your hands are scarred by terrible burns. You have disadvantage on weapon attack rolls and Sleight of Hand checks. You gain the Truth of Fire rite. It doesn’t count against your rites known.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUTH_OF_FIRE" />
+        </rules>
+    </element>
+    <element name="Optional Features - Forsworn" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_OPTIONAL_FORSWORN">
+        <supports>oracle-optional-feature</supports>
+        <description>
+            <p>Visions of the future come easily to you, but sharing them becomes impossible. You are unable to reveal the results of your divination spells to others through any means. The casting time of divination spells that take 1 minute is reduced to 1 action for you.</p>
+        </description>
+        <sheet>
+            <description>Visions of the future come easily to you, but sharing them becomes impossible. You are unable to reveal the results of your divination spells to others through any means. The casting time of divination spells that take 1 minute is reduced to 1 action for you.</description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Divine Touch" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_DIVINE_TOUCH">
+        <description>
+            <p>At 1st level when you select this tradition, you have been touched by a divine revelation that has given you a gift of insight and a dramatic flair to deliver it. You learn the cantrips guidance and thaumaturgy. You learn the following spells at the following levels. These are Occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>identify</td></tr>
+                <tr><td>3rd</td><td>locate object</td></tr>
+                <tr><td>5th</td><td>clairvoyance</td></tr>
+                <tr><td>7th</td><td>locate creature</td></tr>
+                <tr><td>9th</td><td>legend lore</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_GUIDANCE" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_THAUMATURGY" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="1" id="ID_PHB_SPELL_IDENTIFY" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="3" id="ID_PHB_SPELL_LOCATE_OBJECT" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="5" id="ID_PHB_SPELL_CLAIRVOYANCE" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="7" id="ID_PHB_SPELL_LOCATE_CREATURE" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="9" id="ID_PHB_SPELL_LEGEND_LORE" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Mystery Unveiled" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_UNVEILED">
         <description>
-            <p></p>
+            <p>Additionally at 1st level, the touch of the divine inside of you has opened up new pathways of magic and understanding that most cannot comprehend—a connection to magic. Select one of the following mysteries: Darkness, Death, Fire, Life, Light, Nature, Souls, or War. Spells learned from your Mystery are Occultist spells for you, but do not count against your spells known</p>
+            <p class="indent">Some oracles are burdened with too much power for their mortal body. Optionally you can select to be one of these by selecting the “Oracle’s Curse” feature, gaining an additional divine boon and curse. You can select an additional Mystery at 5th (two Mysteries) and again at 11th level (three Mysteries).</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="Oracle-Mystery" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Mystery of Darkness" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_DARKNESS">
+        <supports>Oracle-Mystery</supports>
         <description>
-            <p></p>
+            <p>Your understanding of darkness unlocks the secrets shrouded from others. You learn the following spells at the following levels.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>Illusory Pit</td></tr>
+                <tr><td>3rd</td><td>Darkness</td></tr>
+                <tr><td>5th</td><td>Hungering Void</td></tr>
+                <tr><td>7th</td><td>Devour Shadow</td></tr>
+                <tr><td>9th</td><td>Devouring Darkness</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="1" id="ID_KTH_COLAL_SPELL_ILLUSIONARY_PIT" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="3" id="ID_PHB_SPELL_DARKNESS" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="5" id="ID_KTH_COLAL_SPELL_HUNGERING_VOID" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="7" id="ID_KTH_COLAL_SPELL_DEVOUR_SHADOW" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="9" id="ID_KTH_COLAL_SPELL_DEVOURING_DARKNESS" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Mystery of Death" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_DEATH">
+        <supports>Oracle-Mystery</supports>
         <description>
-            <p></p>
+            <p>Your understanding of the nature of death unlocks its secrets for you. You learn the following spells at the following levels.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>false life</td></tr>
+                <tr><td>3rd</td><td>gentle repose</td></tr>
+                <tr><td>5th</td><td>wither</td></tr>
+                <tr><td>7th</td><td>blight</td></tr>
+                <tr><td>9th</td><td>killing curse</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="1" id="ID_PHB_SPELL_FALSE_LIFE" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="3" id="ID_PHB_SPELL_GENTLE_REPOSE" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="5" id="ID_KTH_COLAL_SPELL_WITHER" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="7" id="ID_PHB_SPELL_BLIGHT" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="9" id="ID_KTH_COLAL_SPELL_KILLING_CURSE" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Mystery of Fire" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_FIRE">
+        <supports>Oracle-Mystery</supports>
         <description>
-            <p></p>
+            <p>Your understanding of the nature of fire unlocks its secrets for you. You learn the following spells at the following levels.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>burning hands</td></tr>
+                <tr><td>3rd</td><td>continual flame</td></tr>
+                <tr><td>5th</td><td>fireball</td></tr>
+                <tr><td>7th</td><td>fire shield</td></tr>
+                <tr><td>9th</td><td>pyroclastic lance</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="1" id="ID_PHB_SPELL_BURNING_HANDS" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="3" id="ID_PHB_SPELL_CONTINUAL_FLAME" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="5" id="ID_PHB_SPELL_FIREBALL" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="7" id="ID_PHB_SPELL_FIRE_SHIELD" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="9" id="ID_KTH_COLAL_SPELL_PYROCLASTIC_LANCE" />
+        </rules>
     </element>
+    <element name="Mystery of Life" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_LIFE">
+        <supports>Oracle-Mystery</supports>
+        <description>
+            <p>Your understanding of the nature of life unlocks its secrets for you. You learn the following spells at the following levels.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>healing word</td></tr>
+                <tr><td>3rd</td><td>aid</td></tr>
+                <tr><td>5th</td><td>mass healing word</td></tr>
+                <tr><td>7th</td><td>vital surge</td></tr>
+                <tr><td>9th</td><td>mass cure wounds</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="1" id="ID_PHB_SPELL_HEALING_WORD" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="3" id="ID_PHB_SPELL_AID" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="5" id="ID_PHB_SPELL_MASS_HEALING_WORD" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="7" id="ID_KTH_COLAL_SPELL_VITAL_SURGE" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="9" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" />
+        </rules>
+    </element>
+    <element name="Mystery of Light" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_LIGHT">
+        <supports>Oracle-Mystery</supports>
+        <description>
+            <p>Your understanding of light illuminates the world in new ways. You learn the following spells at the following levels.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>prismatic flash</td></tr>
+                <tr><td>3rd</td><td>moonbeam</td></tr>
+                <tr><td>5th</td><td>daylight</td></tr>
+                <tr><td>7th</td><td>greater invisibility</td></tr>
+                <tr><td>9th</td><td>field of stars</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="1" id="ID_KTH_COLAL_SPELL_PRISMATIC_FLASH" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="3" id="ID_PHB_SPELL_MOONBEAM" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="5" id="ID_PHB_SPELL_DAYLIGHT" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="7" id="ID_PHB_SPELL_GREATER_INVISIBILITY" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="9" id="ID_KTH_COLAL_SPELL_FIELD_OF_STARS" />
+        </rules>
+    </element>
+    <element name="Mystery of Nature" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_NATURE">
+        <supports>Oracle-Mystery</supports>
+        <description>
+            <p>You know the secrets of nature. You learn the following spells at the following levels.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>entangle</td></tr>
+                <tr><td>3rd</td><td>spike growth</td></tr>
+                <tr><td>5th</td><td>plant growth</td></tr>
+                <tr><td>7th</td><td>carnivorous garden</td></tr>
+                <tr><td>9th</td><td>insect plauge</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="1" id="ID_PHB_SPELL_ENTANGLE" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="3" id="ID_PHB_SPELL_SPIKE_GROWTH" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="5" id="ID_PHB_SPELL_PLANT_GROWTH" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="7" id="ID_KTH_COLAL_SPELL_CARNIVOROUS_GARDEN" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="9" id="ID_PHB_SPELL_INSECT_PLAGUE" />
+        </rules>
+    </element>
+    <element name="Mystery of Souls" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_SOULS">
+        <supports>Oracle-Mystery</supports>
+        <description>
+            <p>Your understanding of the nature of souls unlocks their secrets for you. You learn the following spells at the following levels.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>unseen servant</td></tr>
+                <tr><td>3rd</td><td>spiritual weapon</td></tr>
+                <tr><td>5th</td><td>spirit guardians</td></tr>
+                <tr><td>7th</td><td>guardian of faith</td></tr>
+                <tr><td>9th</td><td>raise dead</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="1" id="ID_PHB_SPELL_UNSEEN_SERVANT" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="3" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="5" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="7" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="9" id="ID_PHB_SPELL_RAISE_DEAD" />
+        </rules>
+    </element>
+    <element name="Mystery of War" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MYSTERY_OF_WAR">
+        <supports>Oracle-Mystery</supports>
+        <description>
+            <p>Your understanding of the nature of war unlocks its secrets for you. You gain proficiency with simple weapons, medium armor, and shields, and when you make a weapon attack, you can use your Wisdom modifier, instead of Strength or Dexterity, for the attack and damage rolls.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>bless</td></tr>
+                <tr><td>3rd</td><td>iron wind strike</td></tr>
+                <tr><td>5th</td><td>whirling conflagration</td></tr>
+                <tr><td>7th</td><td>dimension cutter</td></tr>
+                <tr><td>9th</td><td>flickering strikes</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you make a weapon attack, you can use your Wisdom modifier, instead of Strength or Dexterity, for the attack and damage rolls.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="1" id="ID_PHB_SPELL_BLESS" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="3" id="ID_KTH_COLAL_SPELL_IRON_WIND_STRIKE" />
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="5" id="ID_KTH_COLAL_SPELL_WHIRLING_CONFLAGRATION" /> 
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="7" id="ID_KTH_COLAL_SPELL_DIMENSION_CUTTER" /> 
+            <grant type="Spell" spellcasting="Occultist" prepared="true" level="9" id="ID_KTH_COLAL_SPELL_FLICKERING_STRIKES" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        </rules>
+    </element>
+    <element name="Fate Reading" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_FATE_READING">
+        <description>
+            <p>Starting at 3rd level, your connection to the flow of fate gives you the ability to read from it, tracing outcomes and glimpsing the unknowable future. When you are hit by an attack, you can use your reaction to add your Wisdom modifier to your AC until the start of your next turn (including against the triggering attack). You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
+            <p class="indent">Additionally, you learn the augury spell and can cast it at will without expending spell slot.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you are hit by an attack, you can use your reaction to add your Wisdom modifier to your AC until the start of your next turn (including against the triggering attack).
+            You learn the augury spell and can cast it at will without expending spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" spellcasting="Occultist" prepared="true" />
+        </rules>
+    </element>
+    <element name="Enlightened Understanding" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_ENLIGHTEND_UNDERSTANDING">
+        <description>
+            <p>Starting at 6th level, whenever you activate a Revelation, you gain temporary hit points equal to your Wisdom modifier. Additionally, you can trigger a Revelation when you cast a 1st level or higher spell that otherwise doesn’t fit its requirements (for example, triggering Revelation of Fire on a spell that doesn’t deal fire damage)</p>
+        </description>
+        <sheet>
+            <description>Whenever you activate a Revelation, you gain {{wisdom:modifier}} temporary hit points. Additionally, you can trigger a Revelation when you cast a 1st level or higher spell that otherwise doesn’t fit its requirements (for example, triggering Revelation of Fire on a spell that doesn’t deal fire damage)</description>
+        </sheet>
+    </element>
+    <element name="Master of Prophecy" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_ORACLE_MASTER_OF_PROPHECY">
+        <description>
+            <p>Starting at 14th level, you can cast augury a number of times equal to your Wisdom modifier per day before it starts having a chance to return random answers.</p>
+            <p class="indent">Additionally, when you divine the future with augury, you can issue a cryptic prophecy, with three specific points for rolls that may occur within the next 30 minutes. For each specific point you prophesize, if you specify only the type of roll (for example, an attack, a Strength (Athletics) check, or an initiative roll, etc.), a d4 is reserved (example “someone will be particularly quick when rolling initiative”).</p>
+            <p class="indent">If you specify a specific action and a specific person, a d6 is reserved (for example, “when the wizard Caius rolls for initiative, he will be unusually quick”). If you give it a specific unlikely condition, a d8 can be reserved at the discretion of the GM.</p>
+            <p class="indent">A specific action or person can only have one prophesied event. If a prophesied event takes place (at the discretion of the GM it has occurred), the oracle can spend the reserved die and add it to the roll; if multiple events trigger the prophecy, the oracle can select which of them is affected by the reserved die.</p>
+        </description>
+        <sheet>
+            <description>you can cast augury {{wisdom:modifier}} times per day before it starts having a chance to return random answers.
+            Additionally, when you divine the future with augury, you can issue a cryptic prophecy, with three specific points for rolls that may occur within the next 30 minutes. For each specific point you prophesize, if you specify only the type of roll, a d4 is reserved.
+            If you specify a specific action and a specific person, a d6 is reserved. If you give it a specific unlikely condition, a d8 can be reserved at the discretion of the GM.
+            A specific action or person can only have one prophesied event. If a prophesied event takes place (at the discretion of the GM it has occurred), the oracle can spend the reserved die and add it to the roll; if multiple events trigger the prophecy, the oracle can select which of them is affected by the reserved die.</description>
+        </sheet>
+    </element>
+</elements>
