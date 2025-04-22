@@ -24,7 +24,7 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_HEDGE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_HEDGE" level="2" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_PRACTICAL_SKILLS" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_THE_WAY_I_LEARNED_IT" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_CASTING_STYLE" level="1" />

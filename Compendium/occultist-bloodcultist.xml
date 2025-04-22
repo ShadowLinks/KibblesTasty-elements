@@ -21,7 +21,7 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_BLOOD" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_BLOOD" level="2" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_BLOOD_CASTING" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_DARK_POWERS" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_BLOODCULTIST_SACRIFICIAL_CASTING" level="3" />
