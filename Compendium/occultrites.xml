@@ -1802,12 +1802,292 @@
             <description>Once per turn, when a creature within 60 feet attacks and hits you, it must make a Wisdom saving throw against your spell save DC to avoid the spirits retaliation. On failure, it takes 2d6 necrotic damage, or half as much on a success.</description>
         </sheet>
     </element>
+
+    <!-- Voidwatcher Rites-->
+    
+    <element name="Chaotic Thesis" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CHAOTIC_THESIS">
+        <prerequisite>Voidwatcher</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite</supports>
+        <requirements></requirements>
+        <description>
+            <p>When you use your Void Gaze or They Watch feature, you can choose which effect you want, selecting any of the Eschatological Conclusion effects. You can select different effects for each eye for the They Watch feature</p>
+        </description>
+        <sheet>
+            <description>When you use your Void Gaze or They Watch feature, you can choose which effect you want, selecting any of the Eschatological Conclusion effects. You can select different effects for each eye for the They Watch feature</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE_ANN"  />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE_MAD"  />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE_TRA"  />
+        </rules>
+    </element>
+    <element name="Conviction of Annihilation" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CONVICTION_OF_ANNIHILATION">
+        <prerequisite>Voidwatcher, Conclusion of Annihilation</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_ANNIHILATION</requirements>
+        <description>
+            <p>Your conviction toward your thesis grows, allowing you to draw on additional aspects of it and learn following spells when you reach certain levels in this class, as shown on the table below. These are Occultist spells for you, but do not count against your spells known.</p>
+            <table> 
+                <thead>
+                    <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>melting glob</td></tr>
+                <tr><td>3rd</td><td>unstable explosion</td></tr>
+                <tr><td>5th</td><td>hungering void</td></tr>
+                <tr><td>7th</td><td>dimension cutter</td></tr>
+                <tr><td>9th</td><td>acid rain</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_MELTING_GLOB" /> 
+            <grant type="Spell" level="3" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_UNSTABLE_EXPLOSION" />
+            <grant type="Spell" level="5" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_HUNGERING_VOID" /> 
+            <grant type="Spell" level="7" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_DIMENSION_CUTTER" /> 
+            <grant type="Spell" level="9" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_ACID_RAIN" /> 
+        </rules>
+    </element>
+    <element name="Conviction of Madness" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CONVICTION_OF_MADNESS">
+        <prerequisite>Voidwatcher, Conclusion of Madness</prerequisite>
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_MADNESS</requirements>
+        <description>
+            <p>Your conviction toward your thesis grows, allowing you to draw on additional aspects of it and learn the following spells when you reach certain levels in this class, as shown on the table below. These are Occultist spells for you, but do not count against your spells known.</p>
+            <table> 
+                <thead>
+                    <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>induce headache</td></tr>
+                <tr><td>3rd</td><td>see invisibility</td></tr>
+                <tr><td>5th</td><td>hypnotic pattern</td></tr>
+                <tr><td>7th</td><td>confusion</td></tr>
+                <tr><td>9th</td><td>sudden hazards</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_INDUCE_HEADACHE" />
+            <grant type="Spell" level="3" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_SEE_INVISIBLITY" />
+            <grant type="Spell" level="5" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" />
+            <grant type="Spell" level="7" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_CONFUSION" />
+            <grant type="Spell" level="9" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_SUDDEN_HAZARDS" />
+        </rules>
+    </element>
+    <element name="Conviction of Tranquility" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CONVICTION_OF_TRANQUILITY">
+        <prerequisite>Voidwatcher, Conclusion of Tranquility</prerequisite>
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_TRANQUILITY</requirements>
+        <description>
+            <p>Your conviction toward your thesis grows, allowing you to draw on additional aspects of it and learn the following spells when you reach certain levels in this class, as shown on the table below. These are Occultist spells for you, but do not count against your spells known.</p>
+            <table> 
+                <thead>
+                    <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>tranquil moment</td></tr>
+                <tr><td>3rd</td><td>silence</td></tr>
+                <tr><td>5th</td><td>counterspell</td></tr>
+                <tr><td>7th</td><td>banishment</td></tr>
+                <tr><td>9th</td><td>antilife shell</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_TRANQUIL_MOMENT" /> 
+            <grant type="Spell" level="3" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_SILENCE" />
+            <grant type="Spell" level="5" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_COUNTERSPELL" /> 
+            <grant type="Spell" level="7" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_BANISHMENT" /> 
+            <grant type="Spell" level="9" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_ANTILIFE_SHELL" /> 
+        </rules>
+    </element>
+    <element name="Cycle of Annihilation" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CYCLE_OF_ANNIHILATION">
+        <prerequisite>Voidwatcher, Conclusion of Annihilation</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_ANNIHILATION</requirements>
+        <description>
+            <p>When you reduce a creature to 0 hit points with Void Gaze, you can immediately use the ability again targeting another creature within range as part of the same action. You can do this a maximum number of times in a turn equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>When you reduce a creature to 0 hit points with Void Gaze, you can immediately use the ability again targeting another creature within range as part of the same action. You can do this a maximum number of {{proficiency}} times in a turn.</description>
+        </sheet>
+    </element>
+    <element name="Dance of the Mad Puppet" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DANCE_OF_THE_MAD_PUPPET">
+        <prerequisite>Voidwatcher, Conclusion of Madness</prerequisite>
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_MADNESS</requirements>
+        <description>
+            <p>When a target is compelled to move by an Occultist spell you cast, you can pick the direction the target moves, even if you would normally not be able to (for example, a spell that causes the target to run away from you can be used to make the target run in any direction). This does not change a target’s willingness to enter hazardous spaces.</p>
+        </description>
+        <sheet>
+            <description>When a target is compelled to move by an Occultist spell you cast, you can pick the direction the target moves, even if you would normally not be able to (for example, a spell that causes the target to run away from you can be used to make the target run in any direction). This does not change a target’s willingness to enter hazardous spaces.</description>
+        </sheet>
+    </element>
+    <element name="Disciple of Discord" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DISCIPLE_OF_DISCORD">
+        <prerequisite>Voidwatcher, Conclusion of Madness</prerequisite>
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_MADNESS</requirements>
+        <description>
+            <p>You thrive on chaos and discord. Any time you cast a spell of 1st level or higher that causes a target creature to become act against their will, become frightened, or take psychic damage, you gain temporary hit points equal to your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description>Any time you cast a spell of 1st level or higher that causes a target creature to become act against their will, become frightened, or take psychic damage, you gain {{wisdom:modifier}} temporary hit points.</description>
+        </sheet>
+    </element>
+    <element name="Doombringer" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DOOMBRINGER">
+        <prerequisite>5th level Voidwatcher</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+            <p>When you roll a Fate Die for a creature using the Eye of the End, you can subtract your Wisdom modifier from the roll determining the result of their next save.</p>
+        </description>
+        <sheet>
+            <description>When you roll a Fate Die for a creature using the Eye of the End, you can subtract {{wisdom:modifier}} from the roll determining the result of their next save.</description>
+        </sheet>
+    </element>
+    <element name="Ending Spoilers" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ENDING_SPOILERS">
+        <prerequisite>9th level Voidwatcher</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:9]</requirements>
+        <description>
+            <p>You can use your Eye of the End feature as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>You can use your Eye of the End feature as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Piercing Gaze" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_PIERCING_GAZE">
+        <prerequisite>15th level Voidwatcher</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:15]</requirements>
+        <description>
+            <p>If a creature ends its turn within the cone of sight of one the eyes created by They Watch, it has disadvantage on saving throws against your spells until the start of its next turn.</p>
+        </description>
+        <sheet>
+            <description>If a creature ends its turn within the cone of sight of one the eyes created by They Watch, it has disadvantage on saving throws against your spells until the start of its next turn.</description>
+        </sheet>
+    </element>
+    <element name="Inexorable Annihilation" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_INEXORABLE_ANNIHILATION">
+        <prerequisite>Voidwatcher, Conclusion of Annihilation</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_ANNIHILATION</requirements>
+        <description>
+            <p>Creatures that fail a saving throw against your 1st level or higher Occultist spells that deal damage gain lingering cracks in their form which slowly erode them. They take 1d6 force damage at the end of each their turns. This ends after dealing damage if the creature is more than 120 feet from you, you cannot see the creature, or you are incapacitated.</p>
+        </description>
+        <sheet>
+            <description>Creatures that fail a saving throw against your 1st level or higher Occultist spells that deal damage gain lingering cracks in their form which slowly erode them. They take 1d6 force damage at the end of each their turns. This ends after dealing damage if the creature is more than 120 feet from you, you cannot see the creature, or you are incapacitated.</description>
+        </sheet>
+    </element>
+    <element name="Reflexive Annihilation" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_REFLEXIVE_ANNIHILATION">
+        <prerequisite>Voidwatcher, Conclusion of Annihilation</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_ANNIHILATION</requirements>
+        <description>
+            <p>When you take damage from another creature within 60 feet of you, you can temporarily let loose the annihilation within you as revenge. The target must make a Dexterity saving throw against your spell save DC, taking a number of d6 dice equal to your proficiency bonus as force damage on failure, and half the damage on a success. Once you use this ability, you cannot use it again until you complete a short rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take damage from another creature within 60 feet of you, you can temporarily let loose the annihilation within you as revenge. The target must make a Dexterity saving throw against your spell save DC, taking {{proficiency}}d6 force damage on failure, and half the damage on a success.</description>
+        </sheet>
+    </element>
+    <element name="Self Reflection" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SELF_REFLECTION">
+        <prerequisite>Voidwatcher, Conclusion of Tranquility</prerequisite>
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_TRANQUILITY</requirements>
+        <description>
+            <p>When grant temporary hit points with Conclusion of Tranquility to another creature, you gain an equal number of temporary hit points.</p>
+        </description>
+        <sheet>
+            <description>When grant temporary hit points with Conclusion of Tranquility to another creature, you gain an equal number of temporary hit points.</description>
+        </sheet>
+    </element>
+    <element name="Serene Acceptance" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SERENE_ACCEPTANCE">
+        <prerequisite>Voidwatcher, Conclusion of Tranquility</prerequisite>
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_TRANQUILITY</requirements>
+        <description>
+            <p>You remain calm and unperturbed by the chaos around you, as you wait calmly for the end of reality. You gain advantage on Constitution saving throws to maintain concentration on spells, and advantage on any ability check to maintain a calm state of mind, expression, or demeanor.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on Constitution saving throws to maintain concentration on spells, and advantage on any ability check to maintain a calm state of mind, expression, or demeanor.</description>
+        </sheet>
+    </element>
+    <element name="This is Fine" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_THIS_IS_FINE">
+        <prerequisite>Voidwatcher</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite</supports>
+        <requirements></requirements>
+        <description>
+            <p>You remain unperturbed in even the most dire circumstances. You become immune to the frightened condition.</p>
+        </description>
+        <sheet>
+            <description>You become immune to the frightened condition.</description>
+        </sheet>
+    </element>
+    <element name="True Voidsight" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRUE_VOIDSIGHT">
+        <prerequisite>15th level Voidwatcher</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:15]</requirements>
+        <description>
+            <p>You gain truesight for the duration of your Void Gaze.</p>
+        </description>
+        <sheet>
+            <description>You gain truesight for the duration of your Void Gaze.</description>
+        </sheet>
+    </element>
+    <element name="Tranquility Touch" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TRANQUILITY_TOUCH">
+        <prerequisite>Voidwatcher, Conclusion of Tranquility</prerequisite>
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_TRANQUILITY</requirements>
+        <description>
+            <p>When you cast a spell of 1st level or higher on a creature, you can choose to end the charmed or frightened condition on that creature.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher on a creature, you can choose to end the charmed or frightened condition on that creature.</description>
+        </sheet>
+    </element>
+    <!-- i think this should have a prereq-->
+    <element name="Unflinching Gaze" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_UNFLINCHING_GAZE">
+        <prerequisite>Voidwatcher</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite</supports>
+        <requirements></requirements>
+        <description>
+            <p>You gain an additional use of your Void Gaze feature, and no longer have to make a saving throw against blindness when the feature ends when using it again before completing a short rest.</p>
+        </description>
+        <sheet>
+            <description>You gain an additional use of your Void Gaze feature, and no longer have to make a saving throw against blindness when the feature ends when using it again before completing a short rest.</description>
+        </sheet>
+    </element>
+    <element name="Unmaking Eye" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_UNMAKING_EYE">
+        <prerequisite>5th level Voidwatcher</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+            <p>When you use your Eye of the End feature, your next melee weapon attack against the target creature becomes a critical hit.</p>
+        </description>
+        <sheet>
+            <description>When you use your Eye of the End feature, your next melee weapon attack against the target creature becomes a critical hit.</description>
+        </sheet>
+    </element>
+    <element name="Wildcard" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_WILDCARD">
+        <prerequisite>12th level Voidwatcher, Conclusion of Madness, Chaotic Thesis</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:15],ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_MADNESS,ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CHAOTIC_THESIS</requirements>
+        <description>
+            <p>You can no longer choose which option to use with your Void Gaze, but roll randomly to determine the effect. In exchange, the effect gains additional die of temporary hit points or damage (for example, Conclusion of Annihilation would deal 2d8 force damage). You can pick the target after rolling for the effect.</p>
+        </description>
+        <sheet>
+            <description>You can no longer choose which option to use with your Void Gaze, but roll randomly to determine the effect. In exchange, the effect gains additional die of temporary hit points or damage (for example, Conclusion of Annihilation would deal 2d8 force damage). You can pick the target after rolling for the effect.</description>
+        </sheet>
+    </element>
 </elements>
 
 <!-- 
 <element name="RiteName" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITENAME">
-        <prerequisite>Spiritualist</prerequisite>        
-        <supports>Occult-Rite, Spiritualist-Occult-Rite</supports>
+        <prerequisite>Voidwatcher</prerequisite>        
+        <supports>Occult-Rite, Voidwatcher-Occult-Rite</supports>
         <requirements></requirements>
         <description>
             <p></p>
