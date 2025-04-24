@@ -7,7 +7,21 @@
     </info>
     <files>
         <file name="source.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/source.xml" />
+        <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/feats.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spells.xml" />
+        
         <file name="class-occultist.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/class-occultist.xml" />
+        <file name="occultist-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-spelllist.xml" />
+        <file name="occultrites.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultrites.xml" />
+        <file name="occultist-bloodcultist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-bloodcultist.xml" />
+        <file name="occultist-hedgemage.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-hedgemage.xml" />
+        <file name="occultist-oracle.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-oracle.xml" />
+        <file name="occultist-shaman.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-shaman.xml" />
+        <file name="occultist-spiritualist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-spiritualist.xml" />
+        <file name="occultist-voidwatcher.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-voidwatcher.xml" />
+        <file name="occultist-witch.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-witch.xml" />
+        
+        
         <!--
         <file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-cursesmith.xml" />
         <file name="artificer-expandedoptions.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-expandedoptions.xml" />
