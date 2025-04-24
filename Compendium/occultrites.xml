@@ -1602,12 +1602,212 @@
             <grant type="Spell" id="ID_PHB_SPELL_SHIELD" spellcasting="Occultist" prepared="true" />
         </rules>
     </element>
+
+    <!-- Spiritualist Rites-->
+
+    <element name="Chilling Possession" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CHILLING_POSSESSION">
+        <prerequisite>Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite</supports>
+        <requirements></requirements>
+        <description>
+            <p>Your Malignant Possession chills the target, reducing the movement speed of the target by 10 feet while under the effect.</p>
+        </description>
+        <sheet>
+            <description>Your Malignant Possession chills the target, reducing the movement speed of the target by 10 feet while under the effect.</description>
+        </sheet>
+    </element>
+    <element name="Contagious Possession" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CONTAGIOUS_POSSESSION">
+        <prerequisite>9th level Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:9]</requirements>
+        <description>
+            <p>If a creature dies while under the effect of Malignant Possession, you can force another creature within 30 feet of it to make a Charisma saving throw. On failure, it becomes under the effect of Malignant Possession. You cannot use this feature if the creature died from the effects of Destructive Possession.</p>
+        </description>
+        <sheet>
+            <description>If a creature dies while under the effect of Malignant Possession, you can force another creature within 30 feet of it to make a Charisma saving throw. On failure, it becomes under the effect of Malignant Possession. You cannot use this feature if the creature died from the effects of Destructive Possession.</description>
+        </sheet>
+    </element>
+    <element name="Controlled Convulsion" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_CONTROLLED_CONVULSION">
+        <prerequisite>5th level Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+            <p>When your Malignant Possession causes the attacker to miss the target with a melee attack, you can redirect the attack to another creature within range of the attack. The new attack makes a new attack roll.</p>
+        </description>
+        <sheet>
+            <description>When your Malignant Possession causes the attacker to miss the target with a melee attack, you can redirect the attack to another creature within range of the attack. The new attack makes a new attack roll.</description>
+        </sheet>
+    </element>
+    <element name="Destructive Possession" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_DESTRUCTIVE_POSSESSION">
+        <prerequisite>Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite</supports>
+        <requirements></requirements>
+        <description>
+            <p>As an action you can end the Malignant Possession of a creature by denoting the spirit within them, forcing them to make a Charisma saving throw. On failure, they take 2d8 necrotic damage, or half as much on a successful save. The damage increases by 2d8 for each point of proficiency bonus above 2.</p>
+        </description>
+        <sheet>
+            <description>As an action you can end the Malignant Possession of a creature by denoting the spirit within them, forcing them to make a Charisma saving throw. On failure, they take 2d8 necrotic damage, or half as much on a successful save.</description>
+            <description level="5">As an action you can end the Malignant Possession of a creature by denoting the spirit within them, forcing them to make a Charisma saving throw. On failure, they take 4d8 necrotic damage, or half as much on a successful save.</description>
+            <description level="9">As an action you can end the Malignant Possession of a creature by denoting the spirit within them, forcing them to make a Charisma saving throw. On failure, they take 6d8 necrotic damage, or half as much on a successful save.</description>
+            <description level="13">As an action you can end the Malignant Possession of a creature by denoting the spirit within them, forcing them to make a Charisma saving throw. On failure, they take 8d8 necrotic damage, or half as much on a successful save.</description>
+            <description level="17">As an action you can end the Malignant Possession of a creature by denoting the spirit within them, forcing them to make a Charisma saving throw. On failure, they take 10d8 necrotic damage, or half as much on a successful save.</description>
+        </sheet>
+    </element>
+    <element name="Expansive Totems" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_EXPANSIVE_TOTEMS">
+        <prerequisite>5th level Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite, occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+            <p>The area of effect on your totems that affect a 10 foot radius expands to 15 feet.</p>
+        </description>
+        <sheet>
+            <description>The area of effect on your totems that affect a 10 foot radius expands to 15 feet.</description>
+        </sheet>
+    </element>
+    <element name="Ghost Step" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_GHOST_STEP">
+        <prerequisite>5th level Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+            <p>You learn the ghost step spell, and can cast it once without expending a spell slot. You regain the ability to cast it again without a spell slot when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>You learn the ghost step spell, and can cast it once without expending a spell slot. You regain the ability to cast it again without a spell slot when you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_GHOST_STEP" spellcasting="Occultist" prepared="true" />
+        </rules>
+    </element>
+    <element name="Lethargic Possession" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_LETHARGIC_POSSESSION">
+        <prerequisite>Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite</supports>
+        <requirements></requirements>
+        <description>
+            <p>When you use Malignant Possession, the spirit saps the target’s energy. They gain 1 level of exhaustion while the spirit haunts them. This level of exhaustion ends if the spirit stops haunting them.</p>
+        </description>
+        <sheet>
+            <description>When you use Malignant Possession, the spirit saps the target’s energy. They gain 1 level of exhaustion while the spirit haunts them. This level of exhaustion ends if the spirit stops haunting them.</description>
+        </sheet>
+    </element>
+    <element name="Restrained Totem" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RESTRAINED_TOTEM">
+        <prerequisite>Spiritualist, Grasping Totem</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite, occult-prereq</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING_GRASPING_TOTEM</requirements>
+        <description>
+            <p>Your Grasping Totem restrains creatures while they are grappled by it.</p>
+        </description>
+        <sheet>
+            <description>Your Grasping Totem restrains creatures while they are grappled by it.</description>
+        </sheet>
+    </element>
+    <element name="Spirit Eye" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SPIRIT_EYE">
+        <prerequisite>9th level Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:9]</requirements>
+        <description>
+            <p>You can cast arcane eye without expending a spell slot, with the eye taking the form of an invisible spirit. Once you cast it this way, you cannot cast it this way again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can cast arcane eye without expending a spell slot, with the eye taking the form of an invisible spirit. Once you cast it this way, you cannot cast it this way again until you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" />
+        </rules>
+    </element>
+    <element name="Spirit Wards" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SPIRIT_WARDS">
+        <prerequisite>Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite</supports>
+        <requirements></requirements>
+        <description>
+            <p>You gain the effect of protection from evil and good against all incorporeal spirits and undead.</p>
+        </description>
+        <sheet>
+            <description>You gain the effect of protection from evil and good against all incorporeal spirits and undead.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+        </rules>
+    </element>
+    <element name="Spiritual Conversationalist" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_SPIRITUAL_CONVERSATIONALIST">
+        <prerequisite>5th level Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+            <p>You learn the spell speak with dead and can cast the spell without a spell slot once, regaining the ability to do so again on a long rest.</p>
+            <p class="indent">Additionally, speak with dead is a ritual spell for you.</p>
+        </description>
+        <sheet>
+            <description>You learn the spell speak with dead and can cast the spell without a spell slot once, regaining the ability to do so again on a long rest.
+            Additionally, speak with dead is a ritual spell for you.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+        </rules>
+    </element>
+    <element name="Totem Master" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TOTEM_MASTER">
+        <prerequisite>Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite</supports>
+        <requirements></requirements>
+        <description>
+            <p>You regain one use of your Totem Binding feature when you complete a short rest.</p>
+        </description>
+        <sheet>
+            <description>You regain one use of your Totem Binding feature when you complete a short rest.</description>
+        </sheet>
+    </element>
+    <element name="Totem Savant" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TOTEM_SAVANT">
+        <prerequisite>Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite</supports>
+        <requirements></requirements>
+        <description>
+            <p>You learn an additional totem from your Totem Binding feature.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="spirit-totem" number="1" />
+        </rules>
+    </element>
+    <element name="Totem Teleport" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TOTEM_TELEPORT">
+        <prerequisite>5th level Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+            <p>As a bonus action, you can switch places with any of your totems within 60 feet (teleport to an empty space within 5 feet of it, and the totem teleporting it to a point adjacent to the space you teleported from).</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can switch places with any of your totems within 60 feet (teleport to an empty space within 5 feet of it, and the totem teleporting it to a point adjacent to the space you teleported from).</description>
+        </sheet>
+    </element>
+    <element name="Twin Totems" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_TWIN_TOTEMS">
+        <prerequisite>18th level Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:18]</requirements>
+        <description>
+            <p>When you use your Totem Binding feature you call forth two different totems at the same time with a single use of the feature.</p>
+        </description>
+        <sheet>
+            <description>When you use your Totem Binding feature you call forth two different totems at the same time with a single use of the feature.</description>
+        </sheet>
+    </element>
+    <element name="Zealous Spirits" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_ZEALOUS_SPIRITS">
+        <prerequisite>9th level Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite,occult-prereq</supports>
+        <requirements>[level:occultist:9]</requirements>
+        <description>
+            <p>You are followed by friendly spirits that protect you. Once per turn, when a creature within 60 feet attacks and hits you, it must make a Wisdom saving throw against your spell save DC to avoid the spirits retaliation. On failure, it takes 2d6 necrotic damage, or half as much on a success.</p>
+        </description>
+        <sheet>
+            <description>Once per turn, when a creature within 60 feet attacks and hits you, it must make a Wisdom saving throw against your spell save DC to avoid the spirits retaliation. On failure, it takes 2d6 necrotic damage, or half as much on a success.</description>
+        </sheet>
+    </element>
 </elements>
 
 <!-- 
 <element name="RiteName" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_RITE_RITENAME">
-        <prerequisite>Shaman</prerequisite>        
-        <supports>Occult-Rite, Shaman-Occult-Rite</supports>
+        <prerequisite>Spiritualist</prerequisite>        
+        <supports>Occult-Rite, Spiritualist-Occult-Rite</supports>
         <requirements></requirements>
         <description>
             <p></p>

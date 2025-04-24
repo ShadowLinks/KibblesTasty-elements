@@ -24,6 +24,7 @@
             <description></description>
         </sheet>
         <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_SPIRITUALIST" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MYSTICAL_MEDICINE" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MALIGNANT_POSSESSION" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_SPELLS" level="1" />
@@ -32,6 +33,25 @@
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_EMPOWERED_TOTEM" level="6" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_ROTTING_AFFLICTION" level="6" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_GRAND_SPIRIT_TOTEM" level="14" />
+        </rules>
+    </element>
+    <element name="Occult Rites" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_SPIRITUALIST">
+        <description>
+            <p>As you delve into your Tradition of occult magic, you find deviations and branches to explore that help you specialize and perfect your craft in the way that best suits you.</p>
+            <p class="indent">At 2nd Level, you gain two occult rites of your choice. Your occult rites options are detailed at the end of the occult tradition description for tradition specific Rites, and at the end of the class description for general rites. You can select from either your tradition or class list. When you gain certain Occultist levels, you gain additional occult rites of your choice.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</p>
+        </description>
+        <sheet display="false">
+            <description>When you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Spiritualist-Occult-Rite" number="2" level="2" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Spiritualist-Occult-Rite" number="1" level="5" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Spiritualist-Occult-Rite" number="1" level="7" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Spiritualist-Occult-Rite" number="1" level="9" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Spiritualist-Occult-Rite" number="1" level="12" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Spiritualist-Occult-Rite" number="1" level="15" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Spiritualist-Occult-Rite" number="1" level="18" />
         </rules>
     </element>
     <element name="Mystical Medicine" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MYSTICAL_MEDICINE">
