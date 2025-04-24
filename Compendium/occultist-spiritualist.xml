@@ -9,62 +9,267 @@
     <element name="Tradition of the Spiritualist" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_OCCULTIST_SPIRITUALIST">
         <supports>Occult-Tradition</supports>
         <description>
-            <p></p>
+            <p>Occultists who delve into the mystical arts of spiritual health and ailments, Spiritualists are masters of indirect methods and mystic secrets, gleaned only from ancient methods and whispers from the beyond. Mysterious and often reclusive, they wield subtle powers to strengthen or debilitate.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MYSTICAL_MEDICINE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MALIGNANT_POSSESSION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEMIC_TECHNIQUE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_EMPOWERED_TOTEM" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_ROTTING_AFFLICTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_GRAND_SPIRIT_TOTEM" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MYSTICAL_MEDICINE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MALIGNANT_POSSESSION" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEMIC_TECHNIQUE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_EMPOWERED_TOTEM" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_ROTTING_AFFLICTION" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_GRAND_SPIRIT_TOTEM" level="14" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Mystical Medicine" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MYSTICAL_MEDICINE">
         <description>
-            <p></p>
+            <p>At 1st level when you select this tradition, you gain proficiency in the Medicine skill (Or another skill if you are already proficient), and gain advantage on ability checks to determine the nature of magical ailments, curses, hexes, bewitchments, or enchantments that affect a creature.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain advantage on ability checks to determine the nature of magical ailments, curses, hexes, bewitchments, or enchantments that affect a creature.</description>
         </sheet>
+        <rules>
+            <select type="Proficiency" supports="Skill" requirements="ID_PROFICIENCY_SKILL_MEDICINE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" requirements="!ID_PROFICIENCY_SKILL_MEDICINE" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Malignant Possession" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MALIGNANT_POSSESSION">
         <description>
-            <p></p>
+            <p>Starting at 1st level, when you hit a creature with an attack or it fails a saving throw against one of your Occultist spells, you can afflict them with a malignant spirit. This spirit haunts them for 1 minute, and while it persists any time the creature makes an attack roll, saving throw, or ability check, you can use your reaction to cause the spirit hindering them to bring them misfortune. Roll a d6 spirit die and subtract it from the result of their roll. You can do this after they roll, but before the outcome is determined.</p>
+            <p class="indent">The spirit can be removed by effects that remove or prevent possession (such as protection from evil and good), or the target can attempt to rid itself of the spirit as an action, making a Wisdom saving throw against your spell save DC, removing the spirit and ending the effect on success).</p>
+            <p class="indent">The size of the spirit die increases at 5th level (to a d8), 11th level (to a d10), and 17th level (to a d12). Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
         </description>
         <sheet>
-            <description></description>
+            <description usage="1/Short Rest">When you hit a creature with an attack or it fails a saving throw against one of your Occultist spells, you can afflict them with a malignant spirit. This spirit haunts them for 1 minute, and while it persists any time the creature makes an attack roll, saving throw, or ability check, you can use your reaction to cause the spirit hindering them to bring them misfortune. Roll a d6 spirit die and subtract it from the result of their roll. You can do this after they roll, but before the outcome is determined.
+            The spirit can be removed by effects that remove or prevent possession or the target can attempt to rid itself of the spirit as an action, making a Wisdom saving throw against your spell save DC, removing the spirit and ending the effect on success.</description>
+            <description level="5" usage="1/Short Rest">When you hit a creature with an attack or it fails a saving throw against one of your Occultist spells, you can afflict them with a malignant spirit. This spirit haunts them for 1 minute, and while it persists any time the creature makes an attack roll, saving throw, or ability check, you can use your reaction to cause the spirit hindering them to bring them misfortune. Roll a d8 spirit die and subtract it from the result of their roll. You can do this after they roll, but before the outcome is determined.
+            The spirit can be removed by effects that remove or prevent possession or the target can attempt to rid itself of the spirit as an action, making a Wisdom saving throw against your spell save DC, removing the spirit and ending the effect on success.</description>
+            <description level="11" usage="1/Short Rest">When you hit a creature with an attack or it fails a saving throw against one of your Occultist spells, you can afflict them with a malignant spirit. This spirit haunts them for 1 minute, and while it persists any time the creature makes an attack roll, saving throw, or ability check, you can use your reaction to cause the spirit hindering them to bring them misfortune. Roll a d10 spirit die and subtract it from the result of their roll. You can do this after they roll, but before the outcome is determined.
+            The spirit can be removed by effects that remove or prevent possession or the target can attempt to rid itself of the spirit as an action, making a Wisdom saving throw against your spell save DC, removing the spirit and ending the effect on success.</description>
+            <description level="17" usage="1/Short Rest">When you hit a creature with an attack or it fails a saving throw against one of your Occultist spells, you can afflict them with a malignant spirit. This spirit haunts them for 1 minute, and while it persists any time the creature makes an attack roll, saving throw, or ability check, you can use your reaction to cause the spirit hindering them to bring them misfortune. Roll a d12 spirit die and subtract it from the result of their roll. You can do this after they roll, but before the outcome is determined.
+            The spirit can be removed by effects that remove or prevent possession or the target can attempt to rid itself of the spirit as an action, making a Wisdom saving throw against your spell save DC, removing the spirit and ending the effect on success.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Spiritualist Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_SPELLS">
         <description>
-            <p></p>
+            <p>Additionally, as a Spiritualist, you learn the following spells at the following levels. These are Occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>spiritual consultation, unseen servant</td></tr>
+                <tr><td>3rd</td><td>boil blood, lesser restoration</td></tr>
+                <tr><td>5th</td><td>cruel puppetry, spirit guardians</td></tr>
+                <tr><td>7th</td><td>compulsion, suffocate</td></tr>
+                <tr><td>9th</td><td>geas, commune</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_SPIRITUAL_CONSULTATION" />
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_UNSEEN_SERVANT" />
+            <grant type="Spell" level="3" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_BOIL_BLOOD" />
+            <grant type="Spell" level="3" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_LESSER_RESTORATION" />
+            <grant type="Spell" level="5" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_CRUEL_PUPPETRY" />
+            <grant type="Spell" level="5" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" />
+            <grant type="Spell" level="7" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_COMPULSION" />
+            <grant type="Spell" level="7" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_SUFFOCATE" />
+            <grant type="Spell" level="9" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_GEAS" />
+            <grant type="Spell" level="9" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_COMMUNE" />
+        </rules>
+    </element>
+    <element name="Totem Binding" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING">
+        <description>
+            <p>Starting at 3rd level, as an action, you can create a totem of power at a point within 15 feet of you. You learn two totems when you gain this feature, and another totem at 5th level (3), 11th level (4), and 17th level (5). The following are the list of totems you can select:</p>
+            <ul>
+                <li><strong>Agonizing Totem.</strong> Any creature of your choice that starts its turn within 10 feet of the totem or enters within 10 feet of it for the first time on their turn takes 1d6 necrotic damage. Any creature that damages the totem from within 10 feet of it takes 1d6 necrotic damage.</li>
+                <li><strong>Binding Totem.</strong> Terrain within 10 feet of the totem is difficult terrain for creatures of your choice, and any creature attempting to teleport into or out of the radius must make a Charisma saving throw against your spell save DC, or the attempt fails.</li>
+                <li><strong>Grasping Totem.</strong> When you create the totem, it attempts to bind a Large or smaller creature of your choice within 10 feet, forcing them to make a Dexterity saving throw against your spell save DC. On failure, they are pulled to within 5 feet of the totem and grappled by it (escape DC equals your spell save DC). This totem cannot be made mobile by other effects or features.</li>
+                <li><strong>Life Totem.</strong> When a creature starts its turn within 10 feet of the totem you can heal them with the totem for 1d6 hit points. The totem does this a number of times equal to your Wisdom modifier, after which its power fades and it crumbles.</li>
+                <li><strong>Sanctuary Totem.</strong> All creatures of your choice within 10 feet of the totem are under the effect of sanctuary. This effect is broken under the normal conditions of sanctuary and cannot be regained from a totem for 1 minute once lost.</li>
+                <li><strong>Shrouding Totem.</strong> All creatures and objects (including the totem) within 10 feet of the totem are lightly obscured from creatures beyond 10 feet of the totem, and gain the benefits of half cover against ranged attack rolls originating from outside the totem’s radius.</li>
+                <li><strong>Soothing Totem.</strong> All creatures of your choice within 10 feet of the totem have advantage on saving throws against being Charmed or Frightened.</li>
+                <li><strong>Warding Totem.</strong> All creatures of your choice within 10 feet of the totem gain resistance to all damage, but the totem takes damage equal to the damage taken by creatures that benefit from the resistance (which can destroy the totem, ending the effect).</li>
+            </ul>
+            <p class="indent">A totem is a Small sized object with an AC of 12 and hit points equal to your Occultist level. If it is reduced to 0 hit points, it is destroyed and its effect ends. A creature cannot be affected by more than one of the same type of totem at the same time. A totem cannot be moved once placed. Totems can last a maximum of 1 minute, after which they lose power and crumble away. You can place a number of totems equal to your Wisdom modifier, regaining all uses when you complete a long rest.</p>
         </description>
         <sheet>
-            <description></description>
+            <description usage="{{wisdom:modifier}}/Long Rest">Starting at 3rd level, as an action, you can create a totem of power at a point within 15 feet of you.
+            A totem is a Small sized object with an AC of 12 and {{level:occultist}} HP. If it is reduced to 0 hit points, it is destroyed and its effect ends. A creature cannot be affected by more than one of the same type of totem at the same time. A totem cannot be moved once placed. Totems can last a maximum of 1 minute, after which they lose power and crumble away.</description>
         </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="spirit-totem" level="3" number="2" />
+            <select type="Archetype Feature" supports="spirit-totem" level="5" number="1" />
+            <select type="Archetype Feature" supports="spirit-totem" level="11" number="1" />
+            <select type="Archetype Feature" supports="spirit-totem" level="17" number="1" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Totemic Technique" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEMIC_TECHNIQUE">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, you can select a technique to specialize in for using your totems, granting you a bonus to them. Select one of the following when you gain this feature:</p>
+            <ul>
+                <li><strong></strong>Dancing Totems. Instead of placing your totems at a point, you can summon your totems as Tiny sized mobile objects that orbit you in your space and emit their effects from your space. The totems can still be targeted and destroyed individually.</li>
+                <li><strong></strong>Sturdy Totems. Your totems add your proficiency bonus to their AC and have hit points equal to twice your Occultist level.</li>
+                <li><strong></strong>Swift Totems. You can place a totem as a bonus action instead of an action.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" supports="totem-technique" />
+        </rules>
+    </element>
+    <element name="Totemic Technique: Dancing Totems" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEMIC_TECHNIQUE_DANCING">
+        <supports>totem-technique</supports>
+        <description>
+            <p>Instead of placing your totems at a point, you can summon your totems as Tiny sized mobile objects that orbit you in your space and emit their effects from your space. The totems can still be targeted and destroyed individually.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Instead of placing your totems at a point, you can summon your totems as Tiny sized mobile objects that orbit you in your space and emit their effects from your space. The totems can still be targeted and destroyed individually.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Totemic Technique: Sturdy Totems" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEMIC_TECHNIQUE_STURDY">
+        <supports>totem-technique</supports>
         <description>
-            <p></p>
+            <p>Your totems add your proficiency bonus to their AC and have hit points equal to twice your Occultist level.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your totems add your proficiency bonus to their AC ({{proficiency}}) and have {{doublelevel}} hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="doublelevel" value="level:occultist" bonus="base" />
+            <stat name="doublelevel" value="level:occultist" />
+        </rules>
+    </element>
+    <element name="Totemic Technique: Swift Totems" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEMIC_TECHNIQUE_SWIFT">
+        <supports>totem-technique</supports>
+        <description>
+            <p>You can place a totem as a bonus action instead of an action.</p>
+        </description>
+        <sheet>
+            <description>You can place a totem as a bonus action instead of an action.</description>
         </sheet>
     </element>
+    <element name="Empowered Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_EMPOWERED_TOTEM">
+        <description>
+            <p>Starting at 6th level, your totems that roll a die roll an additional die (for example 1d6 becomes 2d6). The number of dice increases against (to 3d6) to at 14th level.</p>
+        </description>
+        <sheet>
+            <description>Your totems that roll a die roll an additional die (for example 1d6 becomes 2d6).</description>
+            <description level="14">Your totems that roll a die roll 2 additional die (for example 1d6 becomes 5d6).</description>
+        </sheet>
+    </element>
+    <element name="Rotting Affliction" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_ROTTING_AFFLICTION">
+        <description>
+            <p>Additionally at 6th level, when you roll a spirit die for Malignant Possession to hinder the target, the target takes necrotic damage equal to the value rolled on the die.</p>
+        </description>
+        <sheet>
+            <description>When you roll a spirit die for Malignant Possession to hinder the target, the target takes necrotic damage equal to the value rolled on the die.</description>
+        </sheet>
+    </element>
+    <element name="Grand Spirit Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_GRAND_SPIRIT_TOTEM">
+        <description>
+            <p>Starting at 14th level, as an action you can place a Medium sized grand totem on an empty space within 30 feet of you that attracts and binds a swarm of powerful malevolent spirits. It has the normal AC and hit points of your totems, but gains a number of temporary hit points equal to 5 times your Wisdom modifier. If you have the Dancing Totems specialization, you can choose to make it a tiny sized object that orbits you as other totems do instead.</p>
+            <p class="indent">Any creature other than you that starts its turn or enters within 20 feet of the totem for the first time on their turn must make a Charisma saving throw. On failure, it is plagued by the spirits and subtracts your Malignant Possession die from all attack rolls, saving throws, or ability checks it makes for the full duration of the totem while within 20 feet of the totem. It is treated as if under the effect of Malignant Possession for rites and features that modify your Malignant Possession, but can take damage from Rotting Affliction only once per turn.</p>
+            <p class="indent">If a creature exits the range of the totem, it is no longer under the effect, but becomes automatically under the effect once more if it enters range of the totem (without getting to make another save). This effect only ends once the totem’s effect ends, or the totem is destroyed. The totem lasts for 1 minute, and can be dismissed early as a bonus action, after which it crumbles to dust.</p>
+            <p class="indent">This totem does not consume a use of your Totem Binding feature, but once you invoke this totem, you cannot invoke it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action you can place a Medium sized grand totem on an empty space within 30 feet of you that attracts and binds a swarm of powerful malevolent spirits. It has the normal AC and hit points of your totems, but gains {{5xwis}} temp HP. If you have the Dancing Totems specialization, you can choose to make it a tiny sized object that orbits you as other totems do instead.
+            Any creature other than you that starts its turn or enters within 20 feet of the totem for the first time on their turn must make a Charisma saving throw. On failure, it is plagued by the spirits and subtracts your Malignant Possession die from all attack rolls, saving throws, or ability checks it makes for the full duration of the totem while within 20 feet of the totem. It is treated as if under the effect of Malignant Possession for rites and features that modify your Malignant Possession, but can take damage from Rotting Affliction only once per turn.
+            If a creature exits the range of the totem, it is no longer under the effect, but becomes automatically under the effect once more if it enters range of the totem (without getting to make another save). This effect only ends once the totem’s effect ends, or the totem is destroyed. The totem lasts for 1 minute, and can be dismissed early as a bonus action, after which it crumbles to dust.
+            This totem does not consume a use of your Totem Binding feature, but once you invoke this totem, you cannot invoke it again until you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="5xwis" value="wisdom:modifier" bonus="base"/>
+            <stat name="5xwis" value="wisdom:modifier" />
+            <stat name="5xwis" value="wisdom:modifier" />
+            <stat name="5xwis" value="wisdom:modifier" />
+            <stat name="5xwis" value="wisdom:modifier" />
+        </rules>
+    </element>
+    <element name="Agonizing Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING_AGONIZING_TOTEM">
+        <supports>spirit-totem</supports>
+        <description>
+            <p>Any creature of your choice that starts its turn within 10 feet of the totem or enters within 10 feet of it for the first time on their turn takes 1d6 necrotic damage. Any creature that damages the totem from within 10 feet of it takes 1d6 necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>Any creature of your choice that starts its turn within 10 feet of the totem or enters within 10 feet of it for the first time on their turn takes 1d6 necrotic damage. Any creature that damages the totem from within 10 feet of it takes 1d6 necrotic damage.</description>
+        </sheet>
+    </element>
+    <element name="Binding Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING_BINDING_TOTEM">
+        <supports>spirit-totem</supports>
+        <description>
+            <p>Terrain within 10 feet of the totem is difficult terrain for creatures of your choice, and any creature attempting to teleport into or out of the radius must make a Charisma saving throw against your spell save DC, or the attempt fails.</p>
+        </description>
+        <sheet>
+            <description>Terrain within 10 feet of the totem is difficult terrain for creatures of your choice, and any creature attempting to teleport into or out of the radius must make a Charisma saving throw against your spell save DC, or the attempt fails.</description>
+        </sheet>
+    </element>
+    <element name="Grasping Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING_GRASPING_TOTEM">
+        <supports>spirit-totem</supports>
+        <description>
+            <p>When you create the totem, it attempts to bind a Large or smaller creature of your choice within 10 feet, forcing them to make a Dexterity saving throw against your spell save DC. On failure, they are pulled to within 5 feet of the totem and grappled by it (escape DC equals your spell save DC). This totem cannot be made mobile by other effects or features.</p>
+        </description>
+        <sheet>
+            <description>When you create the totem, it attempts to bind a Large or smaller creature of your choice within 10 feet, forcing them to make a Dexterity saving throw against your spell save DC. On failure, they are pulled to within 5 feet of the totem and grappled by it (escape DC equals your spell save DC). This totem cannot be made mobile by other effects or features.</description>
+        </sheet>
+    </element>
+    <element name="Life Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING_LIFE_TOTEM">
+        <supports>spirit-totem</supports>
+        <description>
+            <p>When a creature starts its turn within 10 feet of the totem you can heal them with the totem for 1d6 hit points. The totem does this a number of times equal to your Wisdom modifier, after which its power fades and it crumbles.</p>
+        </description>
+        <sheet>
+            <description>When a creature starts its turn within 10 feet of the totem you can heal them with the totem for 1d6 hit points. The totem does this a number of times equal to your Wisdom modifier, after which its power fades and it crumbles.</description>
+        </sheet>
+    </element>
+    <element name="Sanctuary Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING_SANCTUARY_TOTEM">
+        <supports>spirit-totem</supports>
+        <description>
+            <p>All creatures of your choice within 10 feet of the totem are under the effect of sanctuary. This effect is broken under the normal conditions of sanctuary and cannot be regained from a totem for 1 minute once lost.</p>
+        </description>
+        <sheet>
+            <description>All creatures of your choice within 10 feet of the totem are under the effect of sanctuary. This effect is broken under the normal conditions of sanctuary and cannot be regained from a totem for 1 minute once lost.</description>
+        </sheet>
+    </element>
+    <element name="Shrouding Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING_SHROUDING_TOTEM">
+        <supports>spirit-totem</supports>
+        <description>
+            <p>All creatures and objects (including the totem) within 10 feet of the totem  of the totem, and gain the benefits of half cover against ranged attack rolls originating from outside the totem’s radius.</p>
+        </description>
+        <sheet>
+            <description>All creatures and objects (including the totem) within 10 feet of the totem are lightly obscured from creatures beyond 10 feet of the totem, and gain the benefits of half cover against ranged attack rolls originating from outside the totem’s radius.</description>
+        </sheet>
+    </element>
+    <element name="Soothing Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING_SOOTHING_TOTEM">
+        <supports>spirit-totem</supports>
+        <description>
+            <p>All creatures of your choice within 10 feet of the totem have advantage on saving throws against being Charmed or Frightened.</p>
+        </description>
+        <sheet>
+            <description>All creatures of your choice within 10 feet of the totem have advantage on saving throws against being Charmed or Frightened.</description>
+        </sheet>
+    </element>
+    <element name="Warding Totem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_TOTEM_BINDING_WARDING_TOTEM">
+        <supports>spirit-totem</supports>
+        <description>
+            <p>All creatures of your choice within 10 feet of the totem gain resistance to all damage, but the totem takes damage equal to the damage taken by creatures that benefit from the resistance (which can destroy the totem, ending the effect).</p>
+        </description>
+        <sheet>
+            <description>All creatures of your choice within 10 feet of the totem gain resistance to all damage, but the totem takes damage equal to the damage taken by creatures that benefit from the resistance (which can destroy the totem, ending the effect).</description>
+        </sheet>
+    </element>
+</elements>
