@@ -9,62 +9,253 @@
     <element name="Tradition of the Voidwatcher" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_OCCULTIST_VOIDWATCHER">
         <supports>Occult-Tradition</supports>
         <description>
-            <p></p>
+            <p>Voidwatchers are those that have gazed into an infinite void and glimpsed a creature of unlimited power, a plane beyond comprehension, or truth beyond the veil. They forever have a fragment of what they have seen embedded into their eyes, branded onto their mind. While some creatures are driven entirely insane (or, perhaps more troubling, entirely sane), those that remain functional are those that can grasp and contextualize what they have seen, compartmentalizing and containing their fragment of madness within them. How a Voidwatcher processes the insignificance of reality influences their powers, though they all tend to develop a certain fatalistic streak having seen something on a scale beyond mortal comprehension.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_EYE_OF_THE_END" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_EMPOWERED_GAZE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_THEY_WATCH" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_VOIDWATCHER" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_EYE_OF_THE_END" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_EMPOWERED_GAZE" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_THEY_WATCH" level="14" />
+        </rules>
+    </element>    
+    <element name="Occult Rites" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_VOIDWATCHER">
+        <description>
+            <p>As you delve into your Tradition of occult magic, you find deviations and branches to explore that help you specialize and perfect your craft in the way that best suits you.</p>
+            <p class="indent">At 2nd Level, you gain two occult rites of your choice. Your occult rites options are detailed at the end of the occult tradition description for tradition specific Rites, and at the end of the class description for general rites. You can select from either your tradition or class list. When you gain certain Occultist levels, you gain additional occult rites of your choice.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</p>
+        </description>
+        <sheet display="false">
+            <description>When you gain a level in this class, you can choose one of the occult rites you know and replace it with another occult rite that you could learn at that level. A level prerequisite in an occult rite refers to Occultist level, not character level.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Voidwatcher-Occult-Rite" number="2" level="2" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Voidwatcher-Occult-Rite" number="1" level="5" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Voidwatcher-Occult-Rite" number="1" level="7" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Voidwatcher-Occult-Rite" number="1" level="9" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Voidwatcher-Occult-Rite" number="1" level="12" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Voidwatcher-Occult-Rite" number="1" level="15" />
+            <select type="Class Feature" name="Occult Rites" supports="Generic-Occult-Rite||Voidwatcher-Occult-Rite" number="1" level="18" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Eye of the End" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_EYE_OF_THE_END">
         <description>
-            <p></p>
+            <p>Starting at 1st level when you follow this tradition, you gain the ability to look into a creature’s fate and see their doom. As an action, you can look upon a creature within 30 feet that you can see through the perspective of the void, seeing glimpses of the many horrible ways they could suffer or die and gaining insight into their fears.</p>
+            <p class="indent">You gain advantage on the first Charisma (Intimidation) check against that creature you make in the next minute, and you roll a d20 fate die. The next time the target creature makes a saving throw against one of your Occultist spells within the next minute, they use the result of the fate die instead of rolling a saving throw, forewarning you of the potential outcome of your spell. This negates any potential advantage or disadvantage they might have on the roll.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, you can look upon a creature within 30 feet that you can see through the perspective of the void, seeing glimpses of the many horrible ways they could suffer or die and gaining insight into their fears.
+            You gain advantage on the first Charisma (Intimidation) check against that creature you make in the next minute, and you roll a d20 fate die. The next time the target creature makes a saving throw against one of your Occultist spells within the next minute, they use the result of the fate die instead of rolling a saving throw, forewarning you of the potential outcome of your spell. This negates any potential advantage or disadvantage they might have on the roll.</description>
+        </sheet>
+    </element>
+    <element name="Eschatological Conclusion" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION">
+        <description>
+            <p>Starting at 1st level, when you select this tradition and gain your powers through exposure to the void, you select how to embrace the end of existence, granting you a measure of resolve to continue, and granting you one of the following powers.</p>
+            <p><strong>Conclusion of Annihilation</strong></p>
+            <table> 
+                <thead>
+                    <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>acid splash, decaying touch, eyes of immolation</td></tr>
+                <tr><td>3rd</td><td>shatter</td></tr>
+                <tr><td>5th</td><td>erode</td></tr>
+                <tr><td>7th</td><td>pillar of fire</td></tr>
+                <tr><td>9th</td><td>devouring darkness</td></tr>
+            </table>
+            <p><strong>Conclusion of Madness</strong></p>
+            <table> 
+                <thead>
+                    <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>message, minor illusion, terrifying visions</td></tr>
+                <tr><td>3rd</td><td>disorient</td></tr>
+                <tr><td>5th</td><td>fear</td></tr>
+                <tr><td>7th</td><td>compulsion</td></tr>
+                <tr><td>9th</td><td>dominate person</td></tr>
+            </table>
+            <p><strong>Conclusion of Tranquility</strong></p>
+            <table> 
+                <thead>
+                    <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>guidance, resistance, sanctuary</td></tr>
+                <tr><td>3rd</td><td>calm emotions</td></tr>
+                <tr><td>5th</td><td>dispel magic</td></tr>
+                <tr><td>7th</td><td>death ward</td></tr>
+                <tr><td>9th</td><td>hold monster</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="void-conclusion" />
+        </rules>
+    </element>
+    <element name="Conclusion of Annihilation" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_ANNIHILATION">
+        <supports>void-conclusion</supports>
+        <description>
+            <p>Starting at 1st level, when you select this tradition and gain your powers through exposure to the void, you select how to embrace the end of existence, granting you a measure of resolve to continue, and granting you one of the following powers.</p>
+            <table> 
+                <thead>
+                    <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>acid splash, decaying touch, eyes of immolation</td></tr>
+                <tr><td>3rd</td><td>shatter</td></tr>
+                <tr><td>5th</td><td>erode</td></tr>
+                <tr><td>7th</td><td>pillar of fire</td></tr>
+                <tr><td>9th</td><td>devouring darkness</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_EYES_OF_IMMOLATION" />
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_ACID_SPLASH" />
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_DECAYING_TOUCH" />
+            <grant type="Spell" level="3" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_SHATTER" />
+            <grant type="Spell" level="5" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_ERODE" />
+            <grant type="Spell" level="7" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_PILLAR_OF_FIRE" />
+            <grant type="Spell" level="9" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_DEVOURING_DARKNESS" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Conclusion of Madness" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_MADNESS">
+        <supports>void-conclusion</supports>
         <description>
-            <p></p>
+            <p>Starting at 1st level, when you select this tradition and gain your powers through exposure to the void, you select how to embrace the end of existence, granting you a measure of resolve to continue, and granting you one of the following powers.</p>
+            <table> 
+                <thead>
+                    <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>message, minor illusion, terrifying visions</td></tr>
+                <tr><td>3rd</td><td>disorient</td></tr>
+                <tr><td>5th</td><td>fear</td></tr>
+                <tr><td>7th</td><td>compulsion</td></tr>
+                <tr><td>9th</td><td>dominate person</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+<!--        Error in original print references a channel divinity effect from dream domain
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_TERRIFYING_VISIONS" /> -->            
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_MESSAGE" />
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+            <grant type="Spell" level="3" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_DISORIENT" />
+            <grant type="Spell" level="5" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_FEAR" />
+            <grant type="Spell" level="7" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_COMPULSION" />
+            <grant type="Spell" level="9" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_DOMINATE_PERSON" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Conclusion of Tranquility" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_TRANQUILITY">
+        <supports>void-conclusion</supports>
         <description>
-            <p></p>
+            <p>Starting at 1st level, when you select this tradition and gain your powers through exposure to the void, you select how to embrace the end of existence, granting you a measure of resolve to continue, and granting you one of the following powers.</p>
+            <table> 
+                <thead>
+                    <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>guidance, resistance, sanctuary</td></tr>
+                <tr><td>3rd</td><td>calm emotions</td></tr>
+                <tr><td>5th</td><td>dispel magic</td></tr>
+                <tr><td>7th</td><td>death ward</td></tr>
+                <tr><td>9th</td><td>hold monster</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_GUIDANCE" />
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_RESISTANCE" />
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_SANCTUARY" />
+            <grant type="Spell" level="3" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+            <grant type="Spell" level="5" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_DISPEL_MAGIC" />
+            <grant type="Spell" level="7" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_DEATH_WARD" />
+            <grant type="Spell" level="9" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_HOLD_MONSTER" />
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Void Gaze" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE">
+        <description>
+            <p>Starting at 3rd level, as a bonus action you can unveil the void’s reflection within your eyes for 10 minutes. When you unleash this power and as a bonus action on each of your turns for the duration, you can direct this power at a creature within 60 feet, with an effect depending on your Eschatological Conclusion selection.</p>
+            <ul>
+                <li><strong>Conclusion of Annihilation.</strong> Make a ranged spell attack. On hit, the target takes 1d8 force damage.</li>
+                <li><strong>Conclusion of Madness.</strong> The target must make a Wisdom saving throw against your spell save DC. On failure, the target takes 1d4 psychic damage and the first attack against them before the start of your next turn has advantage.</li>
+                <li><strong>Conclusion of Tranquility.</strong> The target gains 1d8 temporary hit points.</li>
+            </ul>
+            <p class="indent">While this effect is active, you gain the ability to see through both natural and magical darkness as if it were bright light for a range of 60 feet, and are immune to the blinded condition.</p>
+            <p class="indent">You can use this power a number of times equal to your Wisdom modifier, but each time you use it again before completing a short rest you must make a DC 10 Wisdom saving throw. On failure, you become blinded until you complete a short or long rest. While blinded in this way, you have a blindsight of 10 feet. You regain all uses of the feature on a long rest.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE_ANN" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_ANNIHILATION" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE_MAD" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_MADNESS" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE_TRA" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION_TRANQUILITY" />
+
+        </rules>
+    </element>
+    <element name="Void Gaze" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE_ANN">
         <description>
             <p></p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>As a bonus action you can unveil the void’s reflection within your eyes for 10 minutes. When you unleash this power and as a bonus action on each of your turns for the duration, you can direct this power at a creature within 60 feet, with an effect depending on your Eschatological Conclusion selection.
+            Conclusion of Annihilation. Make a ranged spell attack. On hit, the target takes 1d8 force damage.
+            While this effect is active, you gain the ability to see through both natural and magical darkness as if it were bright light for a range of 60 feet, and are immune to the blinded condition.
+            You can use this power {{wisdom:modifier}} time, but each time you use it again before completing a short rest you must make a DC 10 Wisdom saving throw. On failure, you become blinded until you complete a short or long rest. While blinded in this way, you have a blindsight of 10 feet. You regain all uses of the feature on a long rest.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Void Gaze" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE_MAD">
         <description>
             <p></p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>As a bonus action you can unveil the void’s reflection within your eyes for 10 minutes. When you unleash this power and as a bonus action on each of your turns for the duration, you can direct this power at a creature within 60 feet, with an effect depending on your Eschatological Conclusion selection.
+            Conclusion of Madness. The target must make a Wisdom saving throw against your spell save DC. On failure, the target takes 1d4 psychic damage and the first attack against them before the start of your next turn has advantage.
+            While this effect is active, you gain the ability to see through both natural and magical darkness as if it were bright light for a range of 60 feet, and are immune to the blinded condition.
+            You can use this power {{wisdom:modifier}} time, but each time you use it again before completing a short rest you must make a DC 10 Wisdom saving throw. On failure, you become blinded until you complete a short or long rest. While blinded in this way, you have a blindsight of 10 feet. You regain all uses of the feature on a long rest.</description>
         </sheet>
     </element>
+    <element name="Void Gaze" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE_TRA">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>As a bonus action you can unveil the void’s reflection within your eyes for 10 minutes. When you unleash this power and as a bonus action on each of your turns for the duration, you can direct this power at a creature within 60 feet, with an effect depending on your Eschatological Conclusion selection.
+            Conclusion of Tranquility. The target gains 1d8 temporary hit points.
+            While this effect is active, you gain the ability to see through both natural and magical darkness as if it were bright light for a range of 60 feet, and are immune to the blinded condition.
+            You can use this power {{wisdom:modifier}} time, but each time you use it again before completing a short rest you must make a DC 10 Wisdom saving throw. On failure, you become blinded until you complete a short or long rest. While blinded in this way, you have a blindsight of 10 feet. You regain all uses of the feature on a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Empowered Gaze" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_EMPOWERED_GAZE">
+        <description>
+            <p>Starting at 6th level, the effects of your Void Gaze are empowered, and you add your Wisdom modifier to the damage or temporary hit points of the effect.</p>
+        </description>
+        <sheet>
+            <description>Add {{wisdom:modifier}} to the damage or temp HP of your Void Gaze effects</description>
+        </sheet>
+    </element>
+    <element name="They Watch" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_THEY_WATCH">
+        <description>
+            <p>Starting at 14th level, when you use your Void Gaze ability, you can create up to three spectral eyes at points within 60 feet of you, each of which last for 1 minute or until you dismiss them as a bonus action. Each eye projects a 30 foot cone in a direction of your choice. You can see through these eyes into their cones of vision as if you were seeing from your own eyes. When a creature starts its turn in or moves into the gaze of a spectral eye during its turn, you can subject them to the effect of your Void Gaze from that eye (each eye can effect a creature once per turn).</p>
+            <p class="indent">Once you use this feature, you cannot create spectral eyes in this way again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you use your Void Gaze ability, you can create up to three spectral eyes at points within 60 feet of you, each of which last for 1 minute or until you dismiss them as a bonus action. Each eye projects a 30 foot cone in a direction of your choice. You can see through these eyes into their cones of vision as if you were seeing from your own eyes. When a creature starts its turn in or moves into the gaze of a spectral eye during its turn, you can subject them to the effect of your Void Gaze from that eye (each eye can effect a creature once per turn).
+            </description>
+        </sheet>
+    </element>
+</elements>
