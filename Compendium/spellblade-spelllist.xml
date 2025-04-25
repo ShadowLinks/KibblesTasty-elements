@@ -1,0 +1,14 @@
+<elements>
+    <info>
+        <name>Spellblade Spell List</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spellblade-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-spelllist.xml" />
+        </update>
+    </info>
+
+<!-- Cantrips -->
+    <append id="ID_PHB_SPELL_ACID_SPLASH">
+        <supports>Spellblade</supports>
+
+</elements>

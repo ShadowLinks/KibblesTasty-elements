@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Spellblade</name>
+        <update version="0.0.1">
+            <file name="class-spellblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-spellblade.xml" />
+        </update>
+    </info>
+    <element name="Spellblade" type="Class" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_SPELLBLADE">
+        <description>
+            <p>A human runs her hand across their blade tracing esoteric patterns that alight at a touch, flames flickering alive in their wake casting a sudden blazing light over the gloomy cavern, creatures of the dark shrinking back from the fire’s light. A gnome’s eyes begin to glow as a massive greatsword of energy condenses into their waiting hand, forming a blade of pure energy, twice their height but weightless in their hands. The edgy elf vanishes from sight, teleporting behind their foe before muttering something cryptically and cutting them down.</p>
+            <p class="indent">A Spellblade combines magic and martial talent in a perfect blend, able to blend their use of them into a single art. Rather than being a Wizard that happens to be good with a sword or a Fighter that knows some magic, a Spellblade is defined by their ability to merge the spells and martial talents into a single strike: a Spellstrike.</p>
+            <h4>Pursuit of Mastery</h4>
+            <p>Becoming a Spellblade isn’t an accident—it’s a difficult path to master and requires intense concentration and conditioning to master fluidly casting spells in the storm of battle in perfect sync with your attacks. Spellblades are, consequently, almost always driven by some form of motivation that have made them strive for this unique style of perfection. Some view it as an art or tradition important to them, some view it as the ultimate weapon to overcome a great obstacle, and some pursue it because of the challenge itself, seeking to prove themselves.</p>
+            <p class="indent"></p>
+            <h4>Rare Talent</h4>
+            <p>Spellblades are uncommon, requiring an unusual degree of talent to master their arts compared to those that choose to focus and specialize in only one of their two challenging fields. Adventurers are already a rare breed, but Spellblades are rarer still, which often causes them to defy expectations. A bookish and mild Spellblade may be surprisingly nimble or strong, while one that may look a musclebound oaf may be surprisingly erudite.</p>
+            <p class="indent"></p>
+            <h4>CREATING A SPELLBLADE</h4>
+            <p>The most important place to start when making a Spellblade is knowing what drew your character to this difficult and rare path. The path of a Spellblade is one that has few mundane uses—they are not scholars and their skills serve little purpose outside the adventuring arts, so what drove your character to master these? There’s an intentionality to a Spellblade similar to that which might be found in a Paladin.</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can make a Spellblade quickly by following these suggestions.</p>
+            <p class="indent">If you wish to follow the technique of the Aether Blade, Battlemage, or Flying Sword, put your highest ability score in Intelligence, followed by Dexterity, and then Constitution.</p>
+            <p class="indent">If you wish to follow the technique of the Guardian or Spellfist, put your highest ability score in Strength, followed by Constitution, and then Intelligence.</p>
+            <p class="indent">If you wish to follow the technique of the Mage Hunter, Rimeblade, Spellshot, or Swiftblade, put your highest ability score in Dexterity, followed by Intelligence, and then Constitution.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As a spellblade, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per spellblade level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per spellblade level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor, medium armor</li>
+                <li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Constitution, Intelligence</li>
+                <li><strong>Skills:</strong> Choose two from Acrobatics, Arcana, Athletics, History, Investigation, Medicine, Nature, Perception, Religion, Sleight of Hand, and Stealth</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>a martial weapon</li>
+                <li>(a) a light crossbow and quiver of 20 bolts or (b) any two simple weapons</li>
+                <li>(a) scale mail or (b) leather armor</li>
+                <li>(a) a dungeoneer’s pack or (b) an explorer’s pack</li>
+                <li>An arcane focus</li>
+            </ul>
+            <p class="indent">Alternatively, you may start with 5d4 × 10 gp to buy your own equipment.</p>
+            <!-- class table here -->
+            <h5 class="caption">THE SPELLBLADE</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+                </thead>
+                <tr><td> 1st</td><td class="left">Arcane Surge (2 uses), Magic Trick</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 2nd</td><td class="left">Spellcasting, Spellstrike, Aegis, Arcane Deflection</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 3rd</td><td class="left">Spellblade Technique</td><td>3</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 5th</td><td class="left">Empowered Strike, Arcane Surge (3 uses)</td><td>5</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 6th</td><td class="left">Arcane Recuperation, Magical Warding</td><td>5</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 7th</td><td class="left">Specialization Feature</td><td>5</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>5</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 9th</td><td class="left">Arcane Surge (4 uses)</td><td>6</td><td>7</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+                <tr><td>10th</td><td class="left">Archetypal Magic, Innate Aegis (1st Level)</td><td>6</td><td>7</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+                <tr><td>11th</td><td class="left">Splash Damage, Blast Zone Immunity</td><td>6</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+                <tr><td>12th</td><td class="left">Ability Score Improvement</td><td>6</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+                <tr><td>13th</td><td class="left">Arcane Surge (5 uses)</td><td>7</td><td>9</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+                <tr><td>14th</td><td class="left">Surging Focus, Magical Sensitivity, Innate Aegis (2nd Level)</td><td>7</td><td>9</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+                <tr><td>15th</td><td class="left">Specialization Feature</td><td>7</td><td>10</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+                <tr><td>16th</td><td class="left">Ability Score Improvement</td><td>7</td><td>10</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+                <tr><td>17th</td><td class="left">Arcane Surge (6 uses)</td><td>8</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+                <tr><td>18th</td><td class="left">Splash Damage, Innate Aegis (3rd Level)</td><td>8</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+                <tr><td>19th</td><td class="left">Ability Score Improvement</td><td>8</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+                <tr><td>20th</td><td class="left">Specialization Feature</td><td>8</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+            </table>
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCANE_SURGE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_MAGIC_TRICK" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPELLCASTING" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPELLSTRIKE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCANE_DEFLECTION" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_AEGIS" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPELLBLADE_TECHNIQUE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ASI" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_EMPOWERED_STRIKE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCANE_RECUPERATION" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_MAGICAL_WARDING" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCHETYPAL_MAGIC" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_EXPANDED_AEGIS" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPLASH_DAMAGE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_BLAST_ZONE_IMMUNITY" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SURGING_FOCUS" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_MAGICAL_SENSITIVITY" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_BLAST_ZONE_CONTROL" />
+        </description>
+        <setters>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <select type="Proficiency" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH"  />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCANE_SURGE" level="1" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_MAGIC_TRICK" level="1" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPELLCASTING" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPELLSTRIKE" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCANE_DEFLECTION" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_AEGIS" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPELLBLADE_TECHNIQUE" level="3" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ASI" level="4" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_EMPOWERED_STRIKE" level="5" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCANE_RECUPERATION" level="6" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_MAGICAL_WARDING" level="6" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCHETYPAL_MAGIC" level="10" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_EXPANDED_AEGIS" level="10" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPLASH_DAMAGE" level="11" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_BLAST_ZONE_IMMUNITY" level="11" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SURGING_FOCUS" level="14" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_MAGICAL_SENSITIVITY" level="14" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_BLAST_ZONE_CONTROL" level="18" />
+        </rules>
+        <spellcasting name="Spellblade" ability="Intelligence" prepare="false">
+            <list>Spellblade</list>
+        </spellcasting>
+    </element>
+    <element name="Arcane Surge" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCANE_SURGE">
+        <description>
+            <p>Your affinity for magic gives you a pool of Arcane Surges. Once during your turn, you can expend a use of Arcane Surge to do any of the following:</p>
+            <ul>
+                <li><strong></strong>Detect Magic. Cast detect magic without expending a spell slot.</li>
+                <li><strong></strong>Advantage. Gain advantage on an attack roll (no action required)</li>
+                <li><strong></strong>Enhance Ability. Add your Intelligence modifier to a Strength or Dexterity ability check (no action required).</li>
+                <li><strong></strong>Teleport. Teleport up to 5 feet to an unoccupied space you can see (no action required). This distance increases by 5 feet at 5th (10 feet), 9th (15 feet), 13th (20 feet), and 17th (25 feet) levels.</li>
+            </ul>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You can regain expended uses when you complete a short or long rest. As you level, you may gain additional uses for your Arcane Surges, but can only expend one use per turn.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>Once during your turn, you can expend a use of Arcane Surge to do any of the following:
+            Detect Magic. Cast detect magic without expending a spell slot.
+            Advantage. Gain advantage on an attack roll (no action required)
+            Enhance Ability. Add {{intelligence:modifier}} to a Strength or Dexterity ability check (no action required).
+            Teleport. Teleport up to 5 feet to an unoccupied space you can see (no action required).</description>
+            <description level="5">Once during your turn, you can expend a use of Arcane Surge to do any of the following:
+            Detect Magic. Cast detect magic without expending a spell slot.
+            Advantage. Gain advantage on an attack roll (no action required)
+            Enhance Ability. Add {{intelligence:modifier}} to a Strength or Dexterity ability check (no action required).
+            Teleport. Teleport up to 10 feet to an unoccupied space you can see (no action required).</description>
+            <description level="9">Once during your turn, you can expend a use of Arcane Surge to do any of the following:
+            Detect Magic. Cast detect magic without expending a spell slot.
+            Advantage. Gain advantage on an attack roll (no action required)
+            Enhance Ability. Add {{intelligence:modifier}} to a Strength or Dexterity ability check (no action required).
+            Teleport. Teleport up to 15 feet to an unoccupied space you can see (no action required).</description>
+            <description level="13">Once during your turn, you can expend a use of Arcane Surge to do any of the following:
+            Detect Magic. Cast detect magic without expending a spell slot.
+            Advantage. Gain advantage on an attack roll (no action required)
+            Enhance Ability. Add {{intelligence:modifier}} to a Strength or Dexterity ability check (no action required).
+            Teleport. Teleport up to 20 feet to an unoccupied space you can see (no action required).</description>
+            <description level="17">Once during your turn, you can expend a use of Arcane Surge to do any of the following:
+            Detect Magic. Cast detect magic without expending a spell slot.
+            Advantage. Gain advantage on an attack roll (no action required)
+            Enhance Ability. Add {{intelligence:modifier}} to a Strength or Dexterity ability check (no action required).
+            Teleport. Teleport up to 25 feet to an unoccupied space you can see (no action required).</description>
+        </sheet>
+    </element>
+    <element name="Magic Trick" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_MAGIC_TRICK">
+        <description>
+            <p>Additionally at 1st level, you learn one cantrip of your choice from the Spellblade class list. Intelligence is your spellcasting ability for this cantrip.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip, Magic Trick" level="1" spellcasting="Spellblade" supports="$(spellcasting:list),0" />
+        </rules>
+    </element>
+    <element name="Spellcasting" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPELLCASTING">
+        <description>
+            <p>As part of your study of magic, you gain the ability to cast spells at 2nd level. The spells you learn are limited in scope, primarily concerned with enhancing your abilities and devastating your foes.</p>
+            <h4>Cantrips</h4>
+            <p>At 2nd level, you learn two additional cantrips of your choice from the Spellblade spell list. You learn additional Spellblade cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Spellblade table. The table includes the bonus cantrips gained from Spellblade class features (such as Empowered Strike).</p>
+            <h4>Spell Slots</h4>
+            <p>The Spellblade table shows how many spell slots you have to cast your Spellblade spells of 1st level and higher. To cast one of your Spellblade spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <h4>Spells Known of 1st Level and Higher</h4>
+            <p>You know three 1st-level spells of your choice from the Spellblade spell list. The Spells Known column of the Spellblade table shows when you learn more Spellblade spells of your choice.</p>
+            <p class="indent">Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the Spellblade spells you know and replace it with another spell from the Spellblade spell list, which also must be of a level for which you have spell slots.</p>
+            <h4>Spellcasting Ability</h4>
+            <p>Intelligence is your spellcasting ability for your Spellblade spells. Your magic comes from a practitioner’s knowledge of the arcane and training. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for an Spellblade spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+            <h4>Spellcasting Focus</h4>
+            <p>You can use an arcane focus as a spellcasting focus for your Spellblade spells.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF_UP" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+            <stat name="spellblade:spellcasting:slots:1" value="2" level="2" />
+            <stat name="spellblade:spellcasting:slots:1" value="1" level="3" />
+            <stat name="spellblade:spellcasting:slots:1" value="1" level="5" />
+            <stat name="spellblade:spellcasting:slots:2" value="2" level="5" />
+            <stat name="spellblade:spellcasting:slots:2" value="1" level="7" />
+            <stat name="spellblade:spellcasting:slots:3" value="2" level="9" />
+            <stat name="spellblade:spellcasting:slots:3" value="1" level="11" />
+            <stat name="spellblade:spellcasting:slots:4" value="1" level="13" />
+            <stat name="spellblade:spellcasting:slots:4" value="1" level="15" />
+            <stat name="spellblade:spellcasting:slots:4" value="1" level="17" />
+            <stat name="spellblade:spellcasting:slots:5" value="1" level="17" />
+            <stat name="spellblade:spellcasting:slots:5" value="1" level="19" />
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="3" spellcasting="Spellblade" level="2"/>
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="1" spellcasting="Spellblade" level="3"/>
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="1" spellcasting="Spellblade" level="5"/>
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="1" spellcasting="Spellblade" level="7"/>
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="1" spellcasting="Spellblade" level="9"/>
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="1" spellcasting="Spellblade" level="11"/>
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="1" spellcasting="Spellblade" level="13"/>
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="1" spellcasting="Spellblade" level="15"/>
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="1" spellcasting="Spellblade" level="17"/>
+            <select type="Spell" name="Spell, Spellblade" supports="$(spellcasting:list), $(spellcasting:slots)" number="1" spellcasting="Spellblade" level="19"/>
+            <select type="Spell" name="Cantrip, Spellblade" supports="$(spellcasting:list), 0" number="2" spellcasting="Spellblade" level="2"/>
+            <select type="Spell" name="Cantrip, Spellblade" supports="$(spellcasting:list), 0" number="2" spellcasting="Spellblade" level="5"/>
+            <select type="Spell" name="Cantrip, Spellblade" supports="$(spellcasting:list), 0" number="1" spellcasting="Spellblade" level="9" />
+            <select type="Spell" name="Cantrip, Spellblade" supports="$(spellcasting:list), 0" number="1" spellcasting="Spellblade" level="13" />
+            <select type="Spell" name="Cantrip, Spellblade" supports="$(spellcasting:list), 0" number="1" spellcasting="Spellblade" level="17" />
+        </rules>
+    </element>
+    <element name="Spellstrike" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPELLSTRIKE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Arcane Deflection" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCANE_DEFLECTION">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Aegis" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_AEGIS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Spellblade Technique" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPELLBLADE_TECHNIQUE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ASI">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Empowered Strike" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_EMPOWERED_STRIKE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Arcane Recuperation" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCANE_RECUPERATION">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Magical Warding" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_MAGICAL_WARDING">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Archetypal Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_ARCHETYPAL_MAGIC">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Expanded Aegis" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_EXPANDED_AEGIS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Splash Damage" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SPLASH_DAMAGE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Blast Zone Immunity" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_BLAST_ZONE_IMMUNITY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Surging Focus" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_SURGING_FOCUS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Magical Sensitivity" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_MAGICAL_SENSITIVITY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Blast Zone Control" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_SPELLBLADE_BLAST_ZONE_CONTROL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
