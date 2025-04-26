@@ -10,5 +10,251 @@
 <!-- Cantrips -->
     <append id="ID_PHB_SPELL_ACID_SPLASH">
         <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CHILL_TOUCH">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DANCING_LIGHTS">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIRE_BOLT">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LIGHT">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGE_HAND">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MESSAGE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MINOR_ILLUSION">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POISON_SPRAY">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PRESTIGIDIGITATION">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PRODUCE_FLAME">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_RAY_OF_FROST">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_RESISTANCE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHOCKING_GRASP">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TRUE_STRIKE">
+        <supports>Spellblade</supports>
+    </append>
 
+<!-- 1st level spells -->
+
+    <append id="ID_PHB_SPELL_ALARM">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BANE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BURNING_HANDS">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FAERIE_FIRE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEATHER_FALL">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FOG_CLOUD">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GREASE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_INFLICT_WOUNDS">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LONGSTRIDER">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGE_ARMOR">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_MISSILE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHIELD">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_THUNDERWAVE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_UNSEEN_SERVANT">
+        <supports>Spellblade</supports>
+    </append>
+
+        <!-- 2nd level spells-->
+        
+    <append id="ID_PHB_SPELL_BLINDNESS_DEAFNESS">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLUR">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DARKNESS">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DARKVISION">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENHANCE_ABILITY">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HOLD_PERSON">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_INVISIBILITY">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MIRROR_IMAGE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MISTY_STEP">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SEE_INVISIBILITY">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHATTER">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPIDER_CLIMB">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WEB">
+        <supports>Spellblade</supports>
+    </append>
+
+    <!-- 3rd level spells-->
+    
+    <append id="ID_PHB_SPELL_BLINK">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COUNTERSPELL">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISPEL_MAGIC">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIREBALL">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FLY">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HASTE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LIGHTNING_BOLT">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLEET_STORM">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STINKING_CLOUD">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TONGUES">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WATER_BREATHING">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WATER_WALK">
+        <supports>Spellblade</supports>
+    </append>
+
+        <!-- 4th level spells-->
+        
+    <append id="ID_PHB_SPELL_ARCANE_EYE">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BANISHMENT">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLIGHT">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONFUSION">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DIMENSION_DOOR">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIRE_SHIELD">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ICE_STORM">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PHANTASMAL_KILLER">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STONESKIN">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WALL_OF_FIRE">
+        <supports>Spellblade</supports>
+    </append>
+    
+    <!-- 5th level spells-->
+    
+    <append id="ID_PHB_SPELL_CLOUDKILL">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONE_OF_COLD">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HOLD_MONSTER">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MISLEAD">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PASSWALL">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SCRYING">
+        <supports>Spellblade</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TELEKINESIS">
+        <supports>Spellblade</supports>
+    </append>
 </elements>
