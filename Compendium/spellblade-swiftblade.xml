@@ -1,0 +1,116 @@
+<elements>
+    <info>
+        <name>Swiftblade Technique for Spellblade</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spellblade-swiftblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-swiftblade.xml" />
+        </update>
+    </info>
+    <element name="Swiftblade" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SPELLBLADE_SWIFTBLADE">
+        <supports>spellblade-tech</supports>
+        <description>
+            <p>The quickest and most deadly of the Spellblades, Swiftblades specialize in mobility, striking from the shadows and withdrawing as quickly as they appeared, favoring lighter weapons and flurries of blows that leave their target dead before it can retaliate.</p>
+            <p class="indent"></p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_FIGHTING_STYLE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_SWIFT_CASTING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_RAPID_SURGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_RELENTLESS_SPELLSTRIKES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_VANISHING_SURGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_INFINITE_STRIKES" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_FIGHTING_STYLE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_SWIFT_CASTING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_RAPID_SURGE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_RELENTLESS_SPELLSTRIKES" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_VANISHING_SURGE" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_INFINITE_STRIKES" level="20" />
+        </rules>
+    </element>
+    <element name="Swiftblade Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_SPELLS">
+        <description>
+            <p>You learn the following spells at the following levels. The following are Spellblade spells for you, but do not count against your spells known.</p>
+            <table>
+                <thead>
+                    <tr><td>Spellblade Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>inflict wounds</td></tr>
+                <tr><td>5th</td><td>poison dart</td></tr>
+                <tr><td>9th</td><td>spider bite</td></tr>
+                <tr><td>13th</td><td>blight</td></tr>
+                <tr><td>17th</td><td>mislead</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="3" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_POISON_DART" level="5" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_SPIDER_BITE" level="9" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="13" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="17" spellcasting="Spellblade" prepared="true" />
+        </rules>
+    </element>
+    <element name="Fighting Style" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_FIGHTING_STYLE">
+        <description>
+            <p>Starting at 3rd level when you gain this archetype, you gain the Two Weapon Fighting Fighting Style.</p>
+            <p><strong>Two-Weapon Fighting</strong></p>
+            <p class="indent">When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack</p>
+        </description>
+        <sheet>
+            <description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack</description>
+        </sheet>
+    </element>
+    <element name="Swift Casting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_SWIFT_CASTING">
+        <description>
+            <p>Starting at 3rd level you can use Spellstrike as part of the Attack action before making a melee weapon attack. You cannot Spellstrike more than once per turn.</p>
+            <p class="indent">Additionally, you can use a melee weapon as your arcane focus, and when you do so you can perform somatic components with the hand holding your arcane focus (even for spells without a material component).</p>
+        </description>
+        <sheet>
+            <description>You can use Spellstrike as part of the Attack action before making a melee weapon attack. You cannot Spellstrike more than once per turn.
+            Additionally, you can use a melee weapon as your arcane focus, and when you do so you can perform somatic components with the hand holding your arcane focus (even for spells without a material component).</description>
+        </sheet>
+    </element>
+    <element name="Rapid Surge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_RAPID_SURGE">
+        <description>
+            <p>Starting at 3rd level, you gain a new option for your Arcane Surge feature.</p>
+            <ul>
+                <li>You can expend a use of Arcane Surge to make a single weapon attack (no action required).</li>
+            </ul>
+        </description>
+        <sheet alt="Arcane Surge (Rapid Surge)">
+            <description>You can expend a use of Arcane Surge to make a single weapon attack (no action required).</description>
+        </sheet>
+    </element>
+    <element name="Relentless Spellstrike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_RELENTLESS_SPELLSTRIKES">
+        <description>
+            <p>At 7th level, if you miss an attack empowered by a Spellstrike, you can choose to not trigger the effect. When you do so, your next attack before the end of your turn will trigger it instead.</p>
+        </description>
+        <sheet>
+            <description>If you miss an attack empowered by a Spellstrike, you can choose to not trigger the effect. When you do so, your next attack before the end of your turn will trigger it instead.</description>
+        </sheet>
+            
+    </element>
+    <element name="Vanishing Surge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_VANISHING_SURGE">
+        <description>
+            <p>Starting at 15th level, when you expend an Arcane Surge, you become invisible until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When you expend an Arcane Surge, you become invisible until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Infinite Strikes" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SWIFTBLADE_INFINITE_STRIKES">
+        <description>
+            <p>At 20th level, you draw on your magic to hasten yourself to blinding speeds (no action required). For one minute, any time you make a weapon attack with an action or bonus action, you can immediately make another attack with the same weapon. Once you use this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>you draw on your magic to hasten yourself to blinding speeds (no action required). For one minute, any time you make a weapon attack with an action or bonus action, you can immediately make another attack with the same weapon.</description>
+        </sheet>
+    </element>
+</elements>
