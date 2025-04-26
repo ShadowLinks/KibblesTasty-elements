@@ -1,0 +1,127 @@
+<elements>
+    <info>
+        <name>Rimeblade Technique for Spellblade</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spellblade-rimeblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-rimeblade.xml" />
+        </update>
+    </info>
+    <element name="Rimeblade" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SPELLBLADE_RIMEBLADE">
+        <supports>spellblade-tech</supports>
+        <description>
+            <p>As a Rimeblade, you blur the boundary between the arcane and the arctic, wielding your sword with the cold precision of an icicle’s edge. Your enemies find no warmth nor respite, only the biting frost of your magic and blade.</p>
+            <p class="indent">Whether born amidst the relentless snows of the far north or touched by the raw, freezing power of the elemental plane of ice, you have carved a path of icy resolve. Your frost-infused strikes echo the merciless advance of winter, freezing foes in their tracks and turning the battlefield into a glacial field of victory</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_ICE_BLADE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_ARCTIC_ARMORY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_FROSTBITE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_FROZEN_HEART" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_WINTERS_GRIP" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_ICE_AGE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_ICE_BLADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_ARCTIC_ARMORY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_FROSTBITE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_FROZEN_HEART" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_WINTERS_GRIP" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_ICE_AGE" level="20" />
+        </rules>
+    </element>
+    <element name="Rimeblade Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_SPELLS">
+        <description>
+            <p>You learn the following spells at the following levels. The following are Spellblade spells for you, but do not count against your spells known.</p>
+            <table>
+                <thead>
+                    <tr><td>Spellblade Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>arctic breath</td></tr>
+                <tr><td>5th</td><td>cold snap</td></tr>
+                <tr><td>9th</td><td>slow</td></tr>
+                <tr><td>13th</td><td>ice spikes</td></tr>
+                <tr><td>17th</td><td>cone of cold</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ARCTIC_BREATH" level="3" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_COLD_SNAP" level="5" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLOW" level="9" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ICE_SPIKE" level="13" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="17" spellcasting="Spellblade" prepared="true" />
+        </rules>
+    </element>
+    <element name="Ice Blade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_ICE_BLADE">
+        <description>
+            <p>Starting at 3rd level when you select this archetype, whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. That weapon is imbued with frost energy. You can change its damage to cold damage, and when you attack with that weapon, you can use your Intelligence modifier, instead of Strength or Dexterity, for the attack and damage rolls.</p>
+        </description>
+        <sheet>
+            <description>Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. That weapon is imbued with frost energy. You can change its damage to cold damage, and when you attack with that weapon, you can use your Intelligence modifier, instead of Strength or Dexterity, for the attack and damage rolls.</description>
+        </sheet>
+    </element>
+    <element name="Arctic Armory" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_ARCTIC_ARMORY">
+        <description>
+            <p>Additionally, you learn the ice weapon cantrip and can cast it once per turn without requiring a bonus action. Any weapon created by that spell is considered under the effect of your Ice Blade feature (even if it has the two-handed property).</p>
+        </description>
+        <sheet>
+            <description>You learn the ice weapon cantrip and can cast it once per turn without requiring a bonus action. Any weapon created by that spell is considered under the effect of your Ice Blade feature (even if it has the two-handed property).</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ICE_WEAPON" spellcasting="Spellblade" />
+        </rules>
+    </element>
+    <element name="Frostbite" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_FROSTBITE">
+        <description>
+            <p>Starting at 3rd level, you gain a new option for your Arcane Surge</p>
+            <ul>
+                <li>When you hit a creature with a melee weapon attack, you can expend an Arcane Surge to remove any immunity or resistance to cold damage they have and give them disadvantage on saving throws against spells that deal cold  Spellstrike on a spell that triggers a saving throw for additional effects). These effects last until the end of your next turn.</li>
+            </ul>
+        </description>
+        <sheet alt="Arcane Surge (Frostbite)">
+            <description>When you hit a creature with a melee weapon attack, you can expend an Arcane Surge to remove any immunity or resistance to cold  saving throws against spells that deal cold damage (including the triggering spell if used with Spellstrike on a spell that triggers a saving throw for additional effects). These effects last until the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Frozen Heart" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_FROZEN_HEART">
+        <description>
+            <p>Starting at 7th level, you gain resistance to cold damage, and gain advantage on saving throws against being charmed or frightened.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on saving throws against being charmed or frightened</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Winter's Grip" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_WINTERS_GRIP">
+        <description>
+            <p>Starting at 15th level, the effect of Frostbite is prolonged each time a creature takes cold damage by an additional round (ending at the end of your next turn). Additionally, when a creature under the effect of Frostbite fails a saving throw against one of your spells that deal cold damage, they become restrained until start of their next turn.</p>
+        </description>
+        <sheet>
+            <description>The effect of Frostbite is prolonged each time a creature takes cold damage by an additional round (ending at the end of your next turn). Additionally, when a creature under the effect of Frostbite fails a saving throw against one of your spells that deal cold damage, they become restrained until start of their next turn</description>
+        </sheet>
+    </element>
+    <element name="Ice Age" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_RIMEBLADE_ICE_AGE">
+        <description>
+            <p>Starting at 20th level, you can release a blast of freezing energy that plunges an 30-foot radius centered on you into a state of everfrost for 1 minute (no action required). It has the following effects:</p>
+            <ul>
+                <li><strong></strong>Difficult Terrain. The area becomes difficult terrain for creatures other than you</li>
+                <li><strong></strong>Cold Resistance. Allied creatures in the area gain resistance to cold damage, while hostile creatures lose any resistance than may have to cold damage.</li>
+                <li><strong></strong>Slowed. Creatures in the area when you use the ability become under the effect of the slow spell as they start to freeze. Creatures slowed in this way must make a Constitution saving throw at the end of each of their turns. On success the effect ends. On failure, they become restrained while under the effect. Creatures automatically pass the save if they are outside of the area of effect. You can exclude a number of creatures from becoming slowed equal to your Intelligence modifier</li>
+            </ul>
+            <p class="indent">You can end the effect letting the area thaw earlier at any time on your turn. Once you use this ability, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can release a blast of freezing energy that plunges an 30-foot radius centered on you into a state of everfrost for 1 minute (no action required). It has the following effects:
+            Difficult Terrain. The area becomes difficult terrain for creatures other than you
+            Cold Resistance. Allied creatures in the area gain resistance to cold damage, while hostile creatures lose any resistance than may have to cold damage.
+            Slowed. Creatures in the area when you use the ability become under the effect of the slow spell as they start to freeze. Creatures slowed in this way must make a Constitution saving throw at the end of each of their turns. On success the effect ends. On failure, they become restrained while under the effect. Creatures automatically pass the save if they are outside of the area of effect. You can exclude {{intelligence:modifier}} creatures from becoming slowed.
+            You can end the effect letting the area thaw earlier at any time on your turn.</description>
+        </sheet>
+    </element>
+</elements>
