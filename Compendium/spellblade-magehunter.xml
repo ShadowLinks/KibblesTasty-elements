@@ -1,0 +1,107 @@
+<elements>
+    <info>
+        <name>Mage Hunter Technique for Spellblade</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spellblade-magehunter.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-magehunter.xml" />
+        </update>
+    </info>
+    <element name="Mage Hunter" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SPELLBLADE_MAGEHUNTER">
+        <supports>spellblade-tech</supports>
+        <description>
+            <p>Some Spellblades hone their magical powers for the sake of countering others. They become the anathema of all spellcasters, they fight fire with fire, honing their own magical skills for the purposes of binding and denying the magical powers of others.</p>
+            <p class="indent"></p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_DISRUPTING_BLOWS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_PURGING_SURGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_NULLIFYING_SURGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_EXPERT_ABJURATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_MANA_VOID" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_DISRUPTING_BLOWS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_PURGING_SURGE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_NULLIFYING_SURGE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_EXPERT_ABJURATION" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_MANA_VOID" level="20" />
+        </rules>
+    </element>
+    <element name="Mage Hunter Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_SPELLS">
+        <description>
+            <p>You learn the following spells at the following levels. The following are Spellblade spells for you, but do not count against your spells known.</p>
+            <table>
+                <thead>
+                    <tr><td>Spellblade Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>Aldricor’s elemental rebuke</td></tr>
+                <tr><td>5th</td><td>silence</td></tr>
+                <tr><td>9th</td><td>counterspell</td></tr>
+                <tr><td>13th</td><td>suffocate</td></tr>
+                <tr><td>17th</td><td>dispel evil and good</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ALDRICORS_ELEMENTAL_REBUKE" level="3" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SILENCE" level="5" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="9" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_SUFFOCATE" level="13" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="17" spellcasting="Spellblade" prepared="true" />
+        </rules>
+    </element>
+    <element name="Disrupting Blows" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_DISRUPTING_BLOWS">
+        <description>
+            <p>Starting at 3rd level, once per turn when you hit a target with a melee weapon, you deal bonus Force damage equal to your proficiency bonus. This bonus is doubled until end of your turn when you cast an Abjuration or Mage Hunter spell.</p>
+            <p class="indent">Additionally, your weapon attack rolls bypass the effects of 1st level spells (such as mage armor, shield, or sanctuary).</p>
+        </description>
+        <sheet>
+            <description>Once per turn when you hit a target with a melee weapon, you deal {{proficiency}} bonus Force. This bonus is doubled until end of your turn when you cast an Abjuration or Mage Hunter spell.
+            Additionally, your weapon attack rolls bypass the effects of 1st level spells (such as mage armor, shield, or sanctuary).</description>
+        </sheet>
+    </element>
+    <element name="Purging Surge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_PURGING_SURGE">
+        <description>
+            <p>Starting at 3rd level, you gain a new option for your Arcane Surge feature.</p>
+            <ul>
+                <li>On your turn, you can expend a use of Arcane Surge to end a magical effect or supernatural condition (such as being Charmed or Frightened) on yourself (no action required). If the spell is of a level greater than half your Spellblade level (rounded up) you must make an Intelligence saving throw with a DC of 10 + the spell’s level to end it. You cannot use this ability if you are incapacitated.</li>
+            </ul>
+        </description>
+        <sheet alt="Arcane Surge (Purging Surge)">
+            <description>On your turn, you can expend a use of Arcane Surge to end a magical effect or supernatural condition (such as being Charmed or Frightened) on yourself (no action required). If the spell is of a level greater than half your Spellblade level (rounded up) you must make an Intelligence saving throw with a DC of 10 + the spell’s level to end it. You cannot use this ability if you are incapacitated.</description>
+        </sheet>
+    </element>
+    <element name="Nullifying Surge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_NULLIFYING_SURGE">
+        <description>
+            <p>Starting at 7th level, you can use Purging Surge even when incapacitated. Additionally, you can project the purging power outwards, expending two uses of Arcane Surge to cast counterspell or dispel magic without expending a spell slot.</p>
+        </description>
+        <sheet>
+            <description>You can use Purging Surge even when incapacitated. Additionally, you can project the purging power outwards, expending two uses of Arcane Surge to cast counterspell or dispel magic without expending a spell slot.</description>
+        </sheet>
+    </element>
+    <element name="Expert Abjuration" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_EXPERT_ABJURATION">
+        <description>
+            <p>Starting at 15th level, when you have to make a check with your spellcasting ability to dispel or counter a magical effect with Purging Surge or Nullifying Surge, you can add your proficiency bonus to the roll.</p>
+        </description>
+        <sheet>
+            <description>hen you have to make a check with your spellcasting ability to dispel or counter a magical effect with Purging Surge or Nullifying Surge, you can add +{{proficiency}} to the roll.</description>
+        </sheet>
+    </element>
+    <element name="Mana Void" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_MAGEHUNTER_MANA_VOID">
+        <description>
+            <p>At 20th level, you can turn yourself into a magical void, devouring and nullifying magic around you. For one minute, you project the effect of antimagic field 5-feet around yourself (no action required). You can still cast spells while within this field, but are limited to Abjuration spells and Cantrips. The field does not affect or remove your Aegis effects.</p>
+            <p class="indent">Once per turn for the duration, when you counter or end the effect of a spell, you regain 1 use of Arcane Surge.</p>
+            <p class="indent">This effect ends early if you become unconscious, or you can end it at any time (no action required). Once you use this ability, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>For one minute, you project the effect of antimagic field 5-feet around yourself (no action required). You can still cast spells while within this field, but are limited to Abjuration spells and Cantrips. The field does not affect or remove your Aegis effects.
+            Once per turn for the duration, when you counter or end the effect of a spell, you regain 1 use of Arcane Surge.
+            This effect ends early if you become unconscious, or you can end it at any time (no action required).</description>
+        </sheet>
+    </element>
+</elements>
