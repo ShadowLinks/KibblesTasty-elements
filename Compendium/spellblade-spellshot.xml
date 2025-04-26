@@ -1,0 +1,114 @@
+<elements>
+    <info>
+        <name>Spellshot Technique for Spellblade</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spellblade-spellshot.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-spellshot.xml" />
+        </update>
+    </info>
+    <element name="Spellshot" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SPELLBLADE_SPELLSHOT">
+        <supports>spellblade-tech</supports>
+        <description>
+            <p>Spellshots are those that prefer to keep their spellstriking to a safe range, raining death from afar. From arcane archers to magical gunslingers, they are united in their desire to sling spells at a ranged, infusing them into ammunition.</p>
+            <p class="indent">They offer a lot of freedom of mobility, always staying out of reach of their foes or finding the perfect line up to unleash a devastating line of elemental energy.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_RANGED_SPELLSTRIKE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_DISTANT_SURGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_TRANSMUTED_AMMUNITION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_SEEKING_SURGES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_ARCANE_BOLTS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_COMPLETE_CONTROL" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_RANGED_SPELLSTRIKE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_DISTANT_SURGE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_TRANSMUTED_AMMUNITION" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_SEEKING_SURGES" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_ARCANE_BOLTS" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_COMPLETE_CONTROL" level="20" />
+        </rules>
+    </element>
+    <element name="Spellshot Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_SPELLS">
+        <description>
+            <p>You learn the following spells at the following levels. The following are Spellblade spells for you, but do not count against your spells known.</p>
+            <table>
+                <thead>
+                    <tr><td>Spellblade Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>multishot</td></tr>
+                <tr><td>5th</td><td>elemental barrage</td></tr>
+                <tr><td>9th</td><td>lighting bolt</td></tr>
+                <tr><td>13th</td><td>greater invisibility</td></tr>
+                <tr><td>17th</td><td>pressure cutter</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MULTISHOT" level="3" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ELEMENTAL_BARRAGE" level="5" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_PRESSURE_CUTTER" level="17" spellcasting="Spellblade" prepared="true" />
+        </rules>
+    </element>
+    <element name="Ranged Spellstrike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_RANGED_SPELLSTRIKE">
+        <description>
+            <p>Starting at 3rd level when you select this archetype, you gain the ability to apply your Spellstrike to pieces of ammunition as well as melee weapons, and can trigger the spell strike on a ranged weapon attack made with the infused piece of ammunition.</p>
+            <p class="indent">Spells infused into a ranged weapon affect the target of the ranged weapon when fired, but only have a range equal to the range of the spell or the normal range of the weapon (whichever is shorter range). If you attack a target beyond that range, the spell fails and is lost. For spells that create a cone or line area, the effect originates from you as normal.</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to apply your Spellstrike to pieces of ammunition as well as melee weapons, and can trigger the spell strike on a ranged weapon attack made with the infused piece of ammunition.
+            Spells infused into a ranged weapon affect the target of the ranged weapon when fired, but only have a range equal to the range of the spell or the normal range of the weapon (whichever is shorter range). If you attack a target beyond that range, the spell fails and is lost. For spells that create a cone or line area, the effect originates from you as normal.</description>
+        </sheet>
+    </element>
+    <element name="Distant Surge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_DISTANT_SURGE">
+        <description>
+            <p>Starting at 3rd level, you gain a new option for your Arcane Surge feature.</p>
+            <ul>
+                <li>When you infuse a spell that targets a creature or line into a piece of ammunition with Spellstrike, you can expend an Arcane Surge to increase that spell’s range to the range of weapon used to fire that piece of ammunition, and remove disadvantage from firing at max range with a ranged weapon.</li>
+            </ul>
+        </description>
+        <sheet alt="Arcane Surge (Distant Strike)">
+            <description>When you infuse a spell that targets a creature or line into a piece of ammunition with Spellstrike, you can expend an Arcane Surge to increase that spell’s range to the range of weapon used to fire that piece of ammunition, and remove disadvantage from firing at max range with a ranged weapon.</description>
+        </sheet>
+    </element>
+    <element name="Transmuted Ammunition" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_TRANSMUTED_AMMUNITION">
+        <description>
+            <p>Additionally at 7th level, when you infuse a spell that targets a line, you can transmute your ammunition into the spell effect, releasing the spell in a line from you as if you had cast it, but using your Strength or Dexterity modifier (your choice) in place of your Intelligence modifier for the spell save DC. When you do this, you add your weapon damage (including modifier) to the spell’s damage roll.</p>
+        </description>
+        <sheet>
+            <description>When you infuse a spell that targets a line, you can transmute your ammunition into the spell effect, releasing the spell in a line from you as if you had cast it, but using your Strength or Dexterity modifier (your choice) in place of your Intelligence modifier for the spell save DC. When you do this, you add your weapon damage (including modifier) to the spell’s damage roll.</description>
+        </sheet>
+    </element>
+    <element name="Seeking Surges" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_SEEKING_SURGES">
+        <description>
+            <p>Starting at 15th level, when you expend an Arcane Surge, you can add your Intelligence modifier to your next attack roll.</p>
+        </description>
+        <sheet>
+            <description>When you expend an Arcane Surge, you can add +{{intelligence:modifier}} to your next attack roll.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Bolts" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_ARCANE_BOLTS">
+        <description>
+            <p>Additionally at 15th level, you can always generate ammunition out of arcane force energy when you fire a ranged weapon. When you do so, you consume no ammunition when firing an ranged weapon with the ammunition property, and your weapon damage becomes force damage.</p>
+        </description>
+        <sheet>
+            <description>ou can always generate ammunition out of arcane force energy when you fire a ranged weapon. When you do so, you consume no ammunition when firing an ranged weapon with the ammunition property, and your weapon damage becomes force damage.</description>
+        </sheet>
+    </element>
+    <element name="Complete Control" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLSHOT_COMPLETE_CONTROL">
+        <description>
+            <p>Starting at 20th level, you can enter a state of perfect focus granting you the ability to bend and guide your shots. For 1 minute, your ranged weapon attacks ignore cover (including total cover) as long as there is a path to the target the projectile can travel. While you are in this state, you can use Distant Surge without expending a use of Arcane Surge and once per attack if you miss a creature with a ranged weapon attack, you can redirect that attack at another creature within range (making a new attack roll against the new target). When you redirect the attack with a Spellstrike effect that requires a save, you can choose if you want to discharge the spell against the target (if it has any effect on miss), or redirect it to the new target.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>For 1 minute, your ranged weapon attacks ignore cover (including total cover) as long as there is a path to the target the projectile can travel. While you are in this state, you can use Distant Surge without expending a use of Arcane Surge and once per attack if you miss a creature with a ranged weapon attack, you can redirect that attack at another creature within range (making a new attack roll against the new target). When you redirect the attack with a Spellstrike effect that requires a save, you can choose if you want to discharge the spell against the target (if it has any effect on miss), or redirect it to the new target.</description>
+        </sheet>
+    </element>
+</elements>
