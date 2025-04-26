@@ -1,0 +1,106 @@
+<elements>
+    <info>
+        <name>Guardian Technique for Spellblade</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spellblade-guardian.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-guardian.xml" />
+        </update>
+    </info>
+    <element name="Guardian" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SPELLBLADE_GUARDIAN">
+        <supports>spellblade-tech</supports>
+        <description>
+            <p>Specializing in defending their allies, spell blades following this technique make broad use of abjuration and self-enhancing magics, often specializing more toward their physical skills. They place themselves at the front of combat, but are a highly mobile line of defense.</p>
+            <p class="indent"></p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_GUARDIAN_PROFICIENCY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_PROJECTING_BARRIER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_FORTIFYING_SURGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_SWAPPING_SURGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_RESILIENT_AEGIS" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_GUARDIAN_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_PROJECTING_BARRIER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_FORTIFYING_SURGE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_SWAPPING_SURGE" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_RESILIENT_AEGIS" level="20" />
+        </rules>
+    </element>
+    <element name="Guardian Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_SPELLS">
+        <description>
+            <p>You learn the following spells at the following levels. The following are Spellblade spells for you, but do not count against your spells known.</p>
+            <table>
+                <thead>
+                    <tr><td>Spellblade Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>arcane ablation</td></tr>
+                <tr><td>5th</td><td>warding bond</td></tr>
+                <tr><td>9th</td><td>haste</td></tr>
+                <tr><td>13th</td><td>resilient sphere</td></tr>
+                <tr><td>17th</td><td>wall of stone</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ARCANE_ABLATION" level="3" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="5" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="13" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="17" spellcasting="Spellblade" prepared="true" />
+        </rules>
+    </element>
+    <element name="Guardian Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_GUARDIAN_PROFICIENCY">
+        <description>
+            <p>Starting at 3rd level when you select this archetype, you gain proficiency in heavy armor and shields.</p>
+            <p class="indent">Additionally, you can use a melee weapon as your arcane focus, and when you do so you can perform somatic components with the hand holding your arcane focus (even for spells without a material component).</p>
+        </description>
+        <sheet>
+            <description>You can use a melee weapon as your arcane focus, and when you do so you can perform somatic components with the hand holding your arcane focus (even for spells without a material component).</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        </rules>
+    </element>
+    <element name="Projected Barrier" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_PROJECTING_BARRIER">
+        <description>
+            <p>Starting at 3rd level, you gain a new option for your Arcane Surge feature:</p>
+            <ul>
+                <li>As a reaction to an allied creature within 30 feet being hit by an attack or targeted by the magic missile spell, you expend a use of Arcane Surge to cast shield without expending a spell slot, granting that creature the AC bonus instead of yourself.</li>
+            </ul>
+        </description>
+        <sheet alt="Arcane Surge (Projected Barrier)">
+            <description>As a reaction to an allied creature within 30 feet being hit by an attack or targeted by the magic missile spell, you expend a use of Arcane Surge to cast shield without expending a spell slot, granting that creature the AC bonus instead of yourself.</description>
+        </sheet>
+    </element>
+    <element name="Fortifying Surge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_FORTIFYING_SURGE">
+        <description>
+            <p>At 7th level, when you expend a use of Arcane Surge, you gain temporary hit points equal to 1d8 + your Intelligence modifier.</p>
+        </description>
+        <sheet>
+            <description>When you expend a use of Arcane Surge, you gain temporary hit points equal to 1d8 + {{intelligence:modifier}}.</description>
+        </sheet>
+    </element>
+    <element name="Swapping Surge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_SWAPPING_SURGE">
+        <description>
+            <p>Starting at 15th level, when you use your Arcane Surge to teleport, you can instead swap positions with a willing creature within range, teleporting to their space and teleporting them to your space. When you do so, both you and them gain the temporary hit points from Fortifying Surge.</p>
+        </description>
+        <sheet>
+            <description>When you use your Arcane Surge to teleport, you can instead swap positions with a willing creature within range, teleporting to their space and teleporting them to your space. When you do so, both you and them gain the temporary hit points from Fortifying Surge.</description>
+        </sheet>
+    </element>
+    <element name="Resilient Aegis" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_GUARDIAN_RESILIENT_AEGIS">
+        <description>
+            <p>At 20th level, you can fortify yourself with magic for 1 minute (no action required). For the duration, you have resistance to all damage. Once you use this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can fortify yourself with magic for 1 minute (no action required). For the duration, you have resistance to all damage.</description>
+        </sheet>
+    </element>
+</elements>
