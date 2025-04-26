@@ -1,0 +1,116 @@
+<elements>
+    <info>
+        <name>Aether Blade Technique for Spellblade</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spellblade-aetherblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-aetherblade.xml" />
+        </update>
+    </info>
+    <element name="Aether Blade" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SPELLBLADE_AETHERBLADE">
+        <supports>spellblade-tech</supports>
+        <description>
+            <p>Aether Blade Spellblades make use of their magical techniques to create a weapon of pure arcane power, with most of their abilities revolving around mastering the use of this weapon.</p>
+            <p class="indent"></p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_AETHER_BLADE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_AETHER_ENHANCEMENT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_EMPOWERING_SURGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_AETHER_GREAT_WEAPON" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_CHANNELED_POWER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_MASSIVE_BLADE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_AETHER_BLADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_AETHER_ENHANCEMENT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_EMPOWERING_SURGE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_AETHER_GREAT_WEAPON" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_CHANNELED_POWER" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_MASSIVE_BLADE" level="20" />
+        </rules>
+    </element>
+    <element name="Aether Blade Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_SPELLS">
+        <description>
+            <p>You learn the following spells at the following levels. The following are Spellblade spells for you, but do not count against your spells known.</p>
+            <table>
+                <thead>
+                    <tr><td>Spellblade Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>magic missile</td></tr>
+                <tr><td>5th</td><td>star dust</td></tr>
+                <tr><td>9th</td><td>aether lance</td></tr>
+                <tr><td>13th</td><td>dimension cutter</td></tr>
+                <tr><td>17th</td><td>aether storm</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" level="3" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_STAR_DUST" level="5" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_AETHER_LANCE" level="9" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_DIMENSION_CUTTER" level="13" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_AETHER_STORM" level="17" spellcasting="Spellblade" prepared="true" />
+        </rules>
+    </element>
+    <element name="Aether Blade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_AETHER_BLADE">
+        <description>
+            <p>Starting at 3rd level when you select this archetype, when you roll initiative or as a bonus action at any time, you can manifest an oversized melee weapon of pure force energy. This can take the shape of any bladed melee weapon, but it is a one-handed weapon that deals 1d10 force damage with a range of 5 feet regardless of its form.</p>
+            <p class="indent">When you attack with this weapon, you can use your Intelligence modifier (in place of your Strength) for attack and damage rolls. This weapon lasts until you let go of it, become incapacitated, or dismiss it as a bonus action.</p>
+            <p class="indent">While this weapon is temporary and magical, it counts as having a value of 1 sp for purposes of being treated as a material component in spells.</p>
+        </description>
+        <sheet>
+            <description>When you roll initiative or as a bonus action at any time, you can manifest an oversized melee weapon of pure force energy. This can take the shape of any bladed melee weapon, but it is a one-handed weapon that deals 1d10 force damage with a range of 5 feet regardless of its form.
+            When you attack with this weapon, you can use your Intelligence modifier (in place of your Strength) for attack and damage rolls. This weapon lasts until you let go of it, become incapacitated, or dismiss it as a bonus action.
+            While this weapon is temporary and magical, it counts as having a value of 1 sp for purposes of being treated as a material component in spells</description>
+        </sheet>
+    </element>
+    <element name="Aether Enhancement" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_AETHER_ENHANCEMENT">
+        <description>
+            <p>As a ritual taking 1 hour, you can absorb the power from a magical weapon with a bonus to attack and damage rolls. This cannot target artifacts, sentient weapons, or cursed items. At your DM’s discretion, this might not work with other weapons depending on their origin and type. This drains the power from the weapon, leaving it as a mundane weapon, but your Aethersword gains the bonus to attack and damage rolls previously possessed by the magical weapon.</p>
+        </description>
+        <sheet>
+            <description>As a ritual taking 1 hour, you can absorb the power from a magical weapon with a bonus to attack and damage rolls. This cannot target artifacts, sentient weapons, or cursed items. At your DM’s discretion, this might not work with other weapons depending on their origin and type. This drains the power from the weapon, leaving it as a mundane weapon, but your Aethersword gains the bonus to attack and damage rolls previously possessed by the magical weapon.</description>
+        </sheet>
+    </element>
+    <element name="Empowering Surge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_EMPOWERING_SURGE">
+        <description>
+            <p>Starting at 3rd level, you gain a new option for your Arcane Surge feature:</p>
+            <ul>
+                <li>You empower your Aether Blade (no action required) causing it to deal an additional die of damage until the end of your next turn. During the effect, you can reroll any weapon damage dice from your Aether Blade once (you must use the new roll after doing so).</li>
+            </ul>
+        </description>
+        <sheet alt="Arcane Surge (Empowering Surge)">
+            <description>You empower your Aether Blade (no action required) causing it to deal an additional die of damage until the end of your next turn. During the effect, you can reroll any weapon damage dice from your Aether Blade once (you must use the new roll after doing so).</description>
+        </sheet>
+    </element>
+    <element name="Aether Great Weapon" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_AETHER_GREAT_WEAPON">
+        <description>
+            <p>Starting at 7th level, the aether weapon manifested by Aethersword grows larger and more powerful. Its damage increases to 1d12, and it gains the reach property.</p>
+        </description>
+        <sheet>
+            <description>the aether weapon manifested by Aethersword grows larger and more powerful. Its damage increases to 1d12, and it gains the reach property.</description>
+        </sheet>
+    </element>
+    <element name="Channeled Power" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_CHANNELED_POWER">
+        <description>
+            <p>Starting at 15th level, you gain the effects of Empowering Surge when you use any of your Arcane Surge effects.</p>
+        </description>
+        <sheet>
+            <description>You gain the effects of Empowering Surge when you use any of your Arcane Surge effects.</description>
+        </sheet>
+    </element>
+    <element name="Massive Blade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_AETHERBLADE_MASSIVE_BLADE">
+        <description>
+            <p>Starting at 20th level, you can overcharge your Aether Blade for 1 minute (no action required). For the duration, when you attack with your Aether Blade, you ignore all non-magical armor and defenses to treat the target’s AC as 10 + their Dexterity modifier for that attack (magical defenses like the mage armor or shield are not bypassed). While attacking in this way with your Aether Blade, your attacks can target up to 2 creatures as long as they are within 10 feet of each other, though if an attack triggers a spell through Spellstrike, it does not affect the second target unless the spell can target multiple creatures.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can overcharge your Aether Blade for 1 minute (no action required). For the duration, when you attack with your Aether Blade, you ignore all non-magical armor and defenses to treat the target’s AC as 10 + their Dexterity modifier for that attack (magical defenses like the mage armor or shield are not bypassed). While attacking in this way with your Aether Blade, your attacks can target up to 2 creatures as long as they are within 10 feet of each other, though if an attack triggers a spell through Spellstrike, it does not affect the second target unless the spell can target multiple creatures.</description>
+        </sheet>
+    </element>
+</elements>
