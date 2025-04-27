@@ -1,0 +1,135 @@
+<elements>
+    <info>
+        <name>Spellfist Technique for Spellblade</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spellblade-spellfist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-spellfist.xml" />
+        </update>
+    </info>
+    <element name="Spellfist" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SPELLBLADE_SPELLFIST">
+        <supports>spellblade-tech</supports>
+        <description>
+            <p>As a Spellfist, you are the embodiment of raw power and arcane energy, a brawler who channels magic into every punch. Where other Spellblades may wield elegant weapons or conjure dazzling spells from a distance, you understand that sometimes, magic is most effective when it’s delivered up close and personal. Your hands are not just weapons, but conduits for your magical force, and your style of combat reflects this, as brutal and direct as it is unpredictably magical.</p>
+            <p class="indent">Whether you’re a former street fighter who discovered an innate talent for magic or a spellcaster who decided the best way to channel your power was through physical force, you’ve chosen a path that combines the cerebral challenge of magic with the visceral thrill of melee combat. As a Spellfist, you’re a force to be reckoned with, breaking through enemy defenses with a flurry of magically enhanced punches and turning the tide of any battle with your explosive arcane power.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_KINETIC_MAGIC" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_IMPACTFUL_MAGIC" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_POINT_BLANK" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_BRAWLERS_RESILIENCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_UNLIMITED_POWER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_KINETIC_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_IMPACTFUL_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_POINT_BLANK" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_BRAWLERS_RESILIENCE" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_UNLIMITED_POWER" level="20" />
+        </rules>
+    </element>
+    <element name="Spellfist Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_SPELLS">
+        <description>
+            <p>You learn the following spells at the following levels. The following are Spellblade spells for you, but do not count against your spells known.</p>
+            <table>
+                <thead>
+                    <tr><td>Spellblade Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>thunder punch</td></tr>
+                <tr><td>5th</td><td>shatter</td></tr>
+                <tr><td>9th</td><td>vortex blast</td></tr>
+                <tr><td>13th</td><td>aero barrage</td></tr>
+                <tr><td>17th</td><td>shockwave</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <!-- shockwave is a psionic which is a bit odd instead of a true spell-->
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_THUNDER_PUNCH" level="3" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_VORTEX_BLAST" level="9" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_AERO_BARRAGE" level="13" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_SHOCKWAVE" level="17" spellcasting="Spellblade" prepared="true" />
+        </rules>
+    </element>
+    <element name="Kinetic Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_KINETIC_MAGIC">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Impactful Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_IMPACTFUL_MAGIC">
+        <description>
+            <p>Starting at 3rd level, you gain two new options for your Arcane Surge:</p>
+            <ul>
+                <li><strong>Arcane Impact. </strong>When you knock a target away from you, you can expend a use of Arcane Surge to knock the target 10 feet further away.</li>
+                <li><strong>Arcane Grab. </strong>When you hit an melee weapon attack, you can spend a use of Arcane Surge to attempt to grapple or shove the target (no action required). You have advantage on the ability check.</li>
+            </ul>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_ARCANE_IMPACT" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_ARCANE_GRAB" />
+        </rules>
+    </element>
+    <element name="Arcane Impact" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_ARCANE_IMPACT">
+        <description>
+            <p></p>
+        </description>
+        <sheet alt="Arcane Surge (Arcane Impact)">
+            <description>When you knock a target away from you, you can expend a use of Arcane Surge to knock the target 10 feet further away.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Grab" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_ARCANE_GRAB">
+        <description>
+            <p></p>
+        </description>
+        <sheet alt="Arcane Surge (Arcane Grab)">
+            <description>When you hit an melee weapon attack, you can spend a use of Arcane Surge to attempt to grapple or shove the target (no action required). You have advantage on the ability check.</description>
+        </sheet>
+    </element>
+    <element name="Point Blank" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_POINT_BLANK">
+        <description>
+            <p>Starting at 7th level, when you use Spellstrike while grappling a target, you can instead infuse the target with the spell, treating the spell as if you’d automatically hit an infused attack. The target can still save against effects beyond damage, but any saving throw is made with disadvantage.</p>
+        </description>
+        <sheet>
+            <description>When you use Spellstrike while grappling a target, you can instead infuse the target with the spell, treating the spell as if you’d automatically hit an infused attack. The target can still save against effects beyond damage, but any saving throw is made with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Brawler's Resilience" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_BRAWLERS_RESILIENCE">
+        <description>
+            <p>Starting at 15th level, when you spend an Arcane Surge, you gain resistance to all damage until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When you spend an Arcane Surge, you gain resistance to all damage until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Unlimited Power" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SPELLFIST_UNLIMITED_POWER">
+        <description>
+            <p>Starting at 20th level, you can channel magic directly into your muscles, causing your strength to surpass all common reason and granting you the following benefits for 1 minute:</p>
+            <ul>
+                <li><strong></strong>Supernatural Strength. Your Strength score and maximum strength score increase by 2.</li>
+                <li><strong></strong>Splash Zone. The damage from your Splash Damage feature becomes a 30 foot cone.</li>
+                <li><strong></strong>Bounding Leaps. The distance you can jump becomes equal to your movement speed.</li>
+                <li><strong></strong>Strength Advantage. You have advantage on all Strength ability checks and saving throws.</li>
+            </ul>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can channel magic directly into your muscles, causing your strength to surpass all common reason and granting you the following benefits for 1 minute:
+            Supernatural Strength. Your Strength score and maximum strength score increase by 2.
+            Splash Zone. The damage from your Splash Damage feature becomes a 30 foot cone.
+            Bounding Leaps. The distance you can jump becomes equal to your movement speed.
+            Strength Advantage. You have advantage on all Strength ability checks and saving throws.</description>
+        </sheet>
+    </element>
+</elements>
