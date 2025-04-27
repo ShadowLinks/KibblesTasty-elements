@@ -1,0 +1,29 @@
+<elements>
+    <info>
+        <name>KibblesTasty Psionic</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="psionic.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionic.xml" />
+        </update>
+    </info>
+    <element name="Shockwave" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_SHOCKWAVE">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You unleash a burst of telekinetic force in all directions. Each creature of your choice within 30 feet is knocked back 5 feet and must make a Strength saving throw. On a failure, it takes 8d6 damage bludgeoning damage and is knocked prone. On a success, it takes half as much damage and isn’t knocked prone.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">5</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
