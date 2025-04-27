@@ -1,0 +1,113 @@
+<elements>
+    <info>
+        <name>Sanguine Sword Technique for Spellblade</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spellblade-sanguinesword.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-sanguinesword.xml" />
+        </update>
+    </info>
+    <element name="Sanguine Sword" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SPELLBLADE_SANGUINESWORD">
+        <supports>spellblade-tech</supports>
+        <description>
+            <p>Spellblades of the Sanguine Sword are a rare and feared lot, blood seekers that fuel their bloody rampages with the blood they spill. They slash their way through hordes in a never ending flurry of blood, magic, and blade, their fallen foes feeding further violence.</p>
+            <p class="indent">Those that follow the Sanguine Sword are not inherently evil—or at least not all view themselves as such—but the slaughter fueled nature of their powers provide a dark path of temptation, the next kill always offering a temptation to drive the slaughter further. Even their staunchest ally may give them a wide berth on the battlefield, while many will dismiss them as more savage beast than hero, regardless of their goals and intentions.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SANGUINESWORD_SPELLS" />
+            <div element="ID__" />
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SANGUINESWORD_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID__" level="3" />
+            <grant type="Archetype Feature" id="ID___" level="3" />
+            <grant type="Archetype Feature" id="ID____" level="7" />
+            <grant type="Archetype Feature" id="ID_____" level="15" />
+            <grant type="Archetype Feature" id="ID______" level="20" />
+        </rules>
+    </element>
+    <element name="Sanguine Sword Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SPELLBLADE_SANGUINESWORD_SPELLS">
+        <description>
+            <p>You learn the following spells at the following levels. The following are Spellblade spells for you, but do not count against your spells known. Additionally, all spells with the “Blood Magic” tag are added to the Spellblade spell list for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Spellblade Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>blood slash</td></tr>
+                <tr><td>5th</td><td>bloody burst</td></tr>
+                <tr><td>9th</td><td>vampiric blade</td></tr>
+                <tr><td>13th</td><td>exsanguinate</td></tr>
+                <tr><td>17th</td><td>explode heart</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BLOOD_SLASH" level="3" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BLOODY_BURST" level="5" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_VAMPIRIC_BLADE" level="9" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_EXSANGUINATE" level="13" spellcasting="Spellblade" prepared="true" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_EXPLODE_HEART" level="17" spellcasting="Spellblade" prepared="true" />
+        </rules>
+        <spellcasting name="Spellblade" extend="true">
+            <extend>Blood Magic</extend>
+        </spellcasting>
+    </element>
+    <element name="Blood-Stained Blade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+        <description>
+            <p>Starting at 3rd level, when you select this archetype, you gain special affinity when wielding a blood-coated weapon. For 1 minute after that melee weapon deals 1 or more points of damage to a living creature that has blood, you can use your Intelligence modifier, instead of your Strength or Dexterity modifier for attack and damage rolls with that weapon. A weapon bloodied in this way is consider magical for the purposes of overcoming resistance to non-magical damage.</p>
+            <p class="indent">You can sacrifice 1 of your own hit point at any time (no action required) to bloody a blade activating this effect</p>
+        </description>
+        <sheet>
+            <description>You gain special affinity when wielding a blood-coated weapon. For 1 minute after that melee weapon deals 1 or more points of damage to a living creature that has blood, you can use your Intelligence modifier, instead of your Strength or Dexterity modifier for attack and damage rolls with that weapon. A weapon bloodied in this way is consider magical for the purposes of overcoming resistance to non-magical damage.
+            You can sacrifice 1 of your own hit point at any time (no action required) to bloody a blade activating this effect</description>
+        </sheet>
+    </element>
+    <element name="Sanguine Surge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+        <description>
+            <p>Starting at 3rd level, you gain a new option for your Arcane Surge feature:</p>
+            <ul>
+                <li>When you cast a spell with the Blood Magic tag, you can expend an Arcane Surge to gain temporary hit points equal to your spellcasting modifier + half your Spellblade level (rounded down).</li>
+            </ul>
+        </description>
+        <sheet alt="Arcane Surge (Sanguine Surge)">
+            <description>When you cast a spell with the Blood Magic tag, you can expend an Arcane Surge to gain temporary hit points equal to your spellcasting modifier + half your Spellblade level (rounded down).</description>
+        </sheet>
+    </element>
+    <element name="Catharsis of Carnage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+        <description>
+            <p>Starting at 7th level, when you make an attack that is a critical strike or that kills a creature that is CR 1/4 or higher, you regain one use of Arcane Surge.</p>
+            <p class="indent">If you are bloodied (meaning your current hit points are less than half of your maximum hit points) when you trigger this ability, you additionally regain hit points equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>When you make an attack that is a critical strike or that kills a creature that is CR 1/4 or higher, you regain one use of Arcane Surge.
+            If you are bloodied (meaning your current hit points are less than half of your maximum hit points) when you trigger this ability, you additionally regain {{proficiency}} hit points</description>
+        </sheet>
+    </element>
+    <element name="Gore and Giblets" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+        <description>
+            <p>Starting at 15th level, your score a critical strike on a 19 or 20 when making an attack roll.</p>
+            <p class="indent">Additionally, when your attack kills a creature, damage dealt by Splash Damage to nearby creatures is increased to 2d8.</p>
+        </description>
+        <sheet>
+            <description>Starting at 15th level, your score a critical strike on a 19 or 20 when making an attack roll.
+            Additionally, when your attack kills a creature, damage dealt by Splash Damage to nearby creatures is increased to 2d8.</description>
+        </sheet>
+    </element>
+    <!-- supsect this is meant to be 1/long rest and added it-->
+    <element name="Red Eyed Rampage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+        <description>
+            <p>Starting at 20th level you can fall into a bloody-crazed trance of slaughter (no action required) for 1 minute. For the duration, you gain a truesight of 120 feet against bloodied creatures and have advantage on attack rolls against them.</p>
+            <p class="indent">Once during each of your turns for the duration, if you trigger Catharsis of Carnage, you can immediately take an additional action.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can fall into a bloody-crazed trance of slaughter (no action required) for 1 minute. For the duration, you gain a truesight of 120 feet against bloodied creatures and have advantage on attack rolls against them.
+            Once during each of your turns for the duration, if you trigger Catharsis of Carnage, you can immediately take an additional action.</description>
+        </sheet>
+    </element>
+</elements>
