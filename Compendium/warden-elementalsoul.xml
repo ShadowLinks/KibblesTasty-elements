@@ -11,34 +11,114 @@
         <description>
             <p>Tapping into the endless power of the elemental planes, these Wardens shroud themselves in harsh primal forces, destroying their foes with their very presence.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_ARMAMENTS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_MANIPULATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_INNATE_MAGIC" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_INTERDICTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_REFLECTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_BODY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PRIMAL_STATE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_FORM" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PARAELEMENTAL_INTERDICTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_CATCLYSM_UNLEASHED" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
-            <grant type="Archetype Feature" id="ID_____" level="3" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="7" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="14" />
-            <grant type="Archetype Feature" id="ID__________" level="14" />
-            <grant type="Archetype Feature" id="ID___________" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_ARMAMENTS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_MANIPULATION" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_INNATE_MAGIC" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_INTERDICTION" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_REFLECTION" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_BODY" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PRIMAL_STATE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_FORM" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PARAELEMENTAL_INTERDICTION" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_CATCLYSM_UNLEASHED" level="17" />
+        </rules>
+        <spellcasting name="Elemental Soul" ability="Wisdom" prepare="false">
+            <list>Elemental Soul</list>
+        </spellcasting>
+    </element>
+    <element name="Elemental Armaments" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_ARMAMENTS">
+        <description>
+            <p>Starting at 1st level, when you roll initiative, or as a bonus action at any time, you can manifest elemental weapons into your hands, causing them to burst into flames, form icy claws, lashes of lightning, or frozen shields. Select one or two of the following weapons to manifest. You can manifest the same weapon in each hand, or different weapons in each hand. The weapons last until you drop them, summon new weapons, or dismiss them as a bonus action.</p>
+            <p><strong>Primal Flames</strong></p>
+            <p class="indent">You conjure flames around one of your hands. These become a natural one-handed melee weapon that deals 1d6 fire damage on hit, and has the Light, Thrown (30/90), and Special properties. It sheds 20 feet of bright light and an additional 20 feet of dim light while manifested. When you throw it, the flames reignite in your hand immediately.</p>
+            <p class="indent">Special: This weapon counts as a free hand for the purposes of grappling. When you successfully initiate a grapple with it, the target takes 1d6 fire damage.</p>
+            <p><strong>Frost Shield</strong></p>
+            <p class="indent">You conjure a slab of ice. This becomes a shield you can wield in that hand. Summoning the shield in this way equips it. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
+            <p><strong>Icy Claws</strong></p>
+            <p class="indent">You conjure icy claws that grow forth from one of your hands. This becomes a one handed natural melee weapon that deals 1d6 slashing or cold damage on hit (your choice), and has the Light and Special properties. If the damage die is increased to a d8, it instead becomes 1d4 slashing and 1d4 cold damage. You choose which damage type to add your modifier to when you deal damage.</p>
+            <p class="indent">Special: This weapon counts as a free hand for the purposes of grappling. When you successfully initiate a grapple with it, the target takes 1d6 cold damage.</p>
+            <p><strong>Lightning Lash</strong></p>
+            <p class="indent">You conjure a whip of lightning, tethered to one of your hands. This becomes a one handed natural melee weapon that deals 1d6 lightning damage on hit, and has the Light, Reach, and Special properties. It sheds 10 feet of bright light and an additional 10 feet of dim light while manifested.</p>
+            <p class="indent">Special: If you hit a creature with this weapon you can pull the creature up to 5 feet towards you.</p>
+        </description>
+        <sheet>
+            <description>When you roll initiative, or as a bonus action at any time, you can manifest elemental weapons into your hands, causing them to burst into flames, form icy claws, lashes of lightning, or frozen shields. Select one or two of the following weapons to manifest. You can manifest the same weapon in each hand, or different weapons in each hand. The weapons last until you drop them, summon new weapons, or dismiss them as a bonus action.
+            Primal Flames: You conjure flames around one of your hands. These become a natural one-handed melee weapon that deals 1d6 fire damage on hit, and has the Light, Thrown (30/90), and Special properties. It sheds 20 feet of bright light and an additional 20 feet of dim light while manifested. When you throw it, the flames reignite in your hand immediately. Special: This weapon counts as a free hand for the purposes of grappling. When you successfully initiate a grapple with it, the target takes 1d6 fire damage.
+            Frost Shield: You conjure a slab of ice. This becomes a shield you can wield in that hand. Summoning the shield in this way equips it. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.
+            Icy Claws: You conjure icy claws that grow forth from one of your hands. This becomes a one handed natural melee weapon that deals 1d6 slashing or cold damage on hit (your choice), and has the Light and Special properties. If the damage die is increased to a d8, it instead becomes 1d4 slashing and 1d4 cold damage. You choose which damage type to add your modifier to when you deal damage. Special: This weapon counts as a free hand for the purposes of grappling. When you successfully initiate a grapple with it, the target takes 1d6 cold damage.
+            Lightning Lash: You conjure a whip of lightning, tethered to one of your hands. This becomes a one handed natural melee weapon that deals 1d6 lightning damage on hit, and has the Light, Reach, and Special properties. It sheds 10 feet of bright light and an additional 10 feet of dim light while manifested. Special: If you hit a creature with this weapon you can pull the creature up to 5 feet towards you.</description>
+        </sheet>
+    </element>
+    <element name="Elemental Manipulation" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_MANIPULATION">
+        <description>
+            <p>At 1st level, you learn the cantrips manipulate fire and manipulate water.</p>
+        </description>
+        <sheet display="false">>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MANIPULATE_FIRE" spellcasting="Elemental Soul" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MANIPULATE_WATER" spellcasting="Elemental Soul" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID__">
+    <element name="Innate Magic" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_INNATE_MAGIC">
+        <description>
+            <p>Additionally when you select this bond, you gain access to several innate magical abilities by channeling the power of your primal connection.</p>
+            <p class="indent">You gain the following spells at the listed levels, and can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</p>
+            <table>
+                <thead>
+                    <tr><td>Warden Level</td><td>Innate Spells (1/Long rest each)</td></tr>
+                </thead>
+                <tr><td>1st</td><td>Aldricor’s elemental rebuke</td></tr>
+                <tr><td>3rd</td><td>entomb</td></tr>
+                <tr><td>5th</td><td>cold snap</td></tr>
+                <tr><td>9th</td><td>sleet storm</td></tr>
+                <tr><td>13th</td><td>fire cyclone</td></tr>
+                <tr><td>17th</td><td>fire shield</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ALDRICORS_ELEMENTAL_REBUKE" spellcasting="Elemental Soul" level="1" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ENTOMB" spellcasting="Elemental Soul" level="3" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_COLD_SNAP" spellcasting="Elemental Soul" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" spellcasting="Elemental Soul" level="9" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_FIRE_CYCLONE" spellcasting="Elemental Soul" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Elemental Soul" level="17" />
+        </rules>
+    </element>
+    <element name="Elemental Interdiction" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_INTERDICTION">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Elemental Reflection" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_REFLECTION">
         <description>
             <p></p>
         </description>
@@ -46,7 +126,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID___">
+    <element name="Elemental Body" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_BODY">
         <description>
             <p></p>
         </description>
@@ -54,7 +134,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID____">
+    <element name="Primal State" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PRIMAL_STATE">
         <description>
             <p></p>
         </description>
@@ -62,7 +142,16 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_____">
+    <element name="Elemental Form" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_FORM">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Paraelemental Interdiction" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PARAELEMENTAL_INTERDICTION">
         <description>
             <p></p>
         </description>
@@ -70,49 +159,11 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID______">
+    <element name="Cataclysm Unleashed" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_CATCLYSM_UNLEASHED">
         <description>
             <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID__________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID___________">
-        <description>
-            <p></p>
+            <p class="indent"></p>
+            <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
