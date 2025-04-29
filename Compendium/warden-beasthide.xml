@@ -156,7 +156,7 @@
             <p class="indent">Once you use this feature, you cannot use it again until you complete a long rest.</p>
         </description>
         <sheet usage="1/Long Rest">
-            <description>As a bonus action or when you manifest beastial claws, you transform becoming large or huge for 1 minute and gain {{hp:half}} temp hp and gain the following benefits.
+            <description>As a bonus action or when you manifest beastial claws, you transform becoming large or huge for 1 minute and gain half you hp as temp hp and gain the following benefits.
             Bonus Damage. Your natural weapons deal an additional die of damage.
             Grappling Advantage. You have advantage on all checks to grapple creatures smaller than you.
             Reach. Your reach increases by 5 feet with all weapons.
