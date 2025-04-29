@@ -15,6 +15,79 @@
             <description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
         </sheet>
     </element>
+    <element name="Create Barrier" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>When you take the attack action on your turn, you can replace one of your attacks with manifesting an elemental barrier in an unoccupied space on the ground within 30 feet of you. This elemental barrier forms out of nearby materials (such as dirt, wood, or stone), and cannot be formed in the absence of natural materials. The barrier roughly blocks a 5 foot cube of space, and has an AC of 15, and hit points equal to 10 + your Warden level. You can have a number of these created equal to your proficiency bonus. When creating a new one beyond your limit, the oldest previously created one crumbles.</p>
+            <p class="indent">Based on your subclass, you may be able to create other kinds of barriers:</p>
+            <ul>
+                <li><strong>Astral Barrier. </strong>(Prerequisite: Astral Guardian subclass) The barrier does not require any nearby materials to form from.</li>
+                <li><strong>Ice Barrier.</strong> (Prerequisite: Elemental Soul subclass) The barrier does not require any nearby natural materials to form from, and deals 1d6 cold damage to any creature that attacks it.</li>
+                <li><strong>Iron Barrier.</strong> (Prerequisite: Ironbound subclass) The barrier has resistance to bludgeoning, piercing, and slashing damage.</li>
+                <li><strong>Tree Barrier.</strong> (Prerequisite: Elderheart subclass) The barrier does not require any nearby natural materials to form from, has hit points equal to 10 + twice your Warden level, and can form up to 20 feet tall.</li>
+                <li><strong>Stone Barrier.</strong> (Prerequisite: Stoneblood subclass) The barrier has an AC equal to your AC (unless it is already higher).</li>
+            </ul>
+            <p class="indent">You can create a total number of barriers equal to your Warden level before you must complete a short or long rest to more.</p>
+        </description>
+        <sheet usage="{{level:warden}}/Short Rest">
+            <description>When you take the attack action on your turn, you can replace one of your attacks with manifesting an elemental barrier in an unoccupied space on the ground within 30 feet of you. This elemental barrier forms out of nearby materials (such as dirt, wood, or stone), and cannot be formed in the absence of natural materials. The barrier roughly blocks a 5 foot cube of space, and has an AC of 15, and {{pm-barrier:hp}} hit points. You can have {{proficiency}} of these created. When creating a new one beyond your limit, the oldest previously created one crumbles.
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_ASTRAL" requirements="ID_KTH_COLAL_ARCHETYPE_WARDEN_ASTRALGUARDIAN" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_ICE" requirements="ID_KTH_COLAL_ARCHETYPE_WARDEN_ELEMENTALSOUL" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_IRON" requirements="ID_KTH_COLAL_ARCHETYPE_WARDEN_IRONBOUND" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_TREE" requirements="ID_KTH_COLAL_ARCHETYPE_WARDEN_ELDERHEART" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_STONE" requirements="ID_KTH_COLAL_ARCHETYPE_WARDEN_STONEBLOOD" />
+            <stat name="pm-barrier:hp" value="10" bonus="base" />
+            <stat name="pm-barrier:hp" value="level:warden" />
+        </rules>
+    </element>
+    <element name="Astral Barrier" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_ASTRAL">
+        <description>
+            <p>The barrier does not require any nearby materials to form from.</p>
+        </description>
+        <sheet>
+            <description>The barrier does not require any nearby materials to form from.</description>
+        </sheet>
+    </element>
+    <element name="Ice Barrier" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_ICE">
+        <description>
+            <p>The barrier does not require any nearby natural materials to form from, and deals 1d6 cold damage to any creature that attacks it.</p>
+        </description>
+        <sheet>
+            <description>The barrier does not require any nearby natural materials to form from, and deals 1d6 cold damage to any creature that attacks it.</description>
+        </sheet>
+    </element>
+    <element name="Iron Barrier" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_IRON">
+        <description>
+            <p>The barrier has resistance to bludgeoning, piercing, and slashing damage.</p>
+        </description>
+        <sheet>
+            <description>The barrier has resistance to bludgeoning, piercing, and slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Tree Barrier" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_TREE">
+        <description>
+            <p>The barrier does not require any nearby natural materials to form from, has hit points equal to 10 + twice your Warden level, and can form up to 20 feet tall.</p>
+        </description>
+        <sheet>
+            <description>The barrier does not require any nearby natural materials to form from, has {{pm-barrier:tree:hp}} hit point, and can form up to 20 feet tall.</description>
+        </sheet>
+        <rules>
+            <stat name="pm-barrier:tree:hp" value="10" bonus="base" />
+            <stat name="pm-barrier:tree:hp" value="level:warden" />
+            <stat name="pm-barrier:tree:hp" value="level:warden" />
+        </rules>
+    </element>
+    <element name="Stone Barrier" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CREATE_BARRIER_STONE">
+        <description>
+            <p>The barrier has an AC equal to your AC (unless it is already higher).</p>
+        </description>
+        <sheet>
+            <description>The barrier has an AC equal to your AC (unless it is already higher).</description>
+        </sheet>
+    </element>
 </elements>
 
 <!-- 
