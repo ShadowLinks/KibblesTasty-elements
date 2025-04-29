@@ -1,0 +1,139 @@
+<elements>
+    <info>
+        <name>Blood Forger Bond for Warden</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="warden-bloodforger.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-bloodforger.xml" />
+        </update>
+    </info>
+    <element name="Blood Forger" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARDEN_BLOODFORGER">
+        <supports>warden-bond</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID__" />
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+            <div element="ID_______" />
+            <div element="ID________" />
+            <div element="ID_________" />
+            <div element="ID__________" />
+            <div element="ID___________" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID__" level="1" />
+            <grant type="Archetype Feature" id="ID___" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_____" level="1" />
+            <grant type="Archetype Feature" id="ID______" level="3" />
+            <grant type="Archetype Feature" id="ID_______" level="3" />
+            <grant type="Archetype Feature" id="ID________" level="7" />
+            <grant type="Archetype Feature" id="ID_________" level="14" />
+            <grant type="Archetype Feature" id="ID__________" level="14" />
+            <grant type="Archetype Feature" id="ID___________" level="17" />
+        </rules>
+        <spellcasting name="Blood Forger" ability="Wisdom" prepare="false">
+            <list>Blood Forger</list>
+        </spellcasting>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Innate Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_INNATE_MAGIC">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <table>
+                <thead>
+                    <tr><td>Warden Level</td><td>Innate Spells (1/Long Rest each)</td></tr>
+                </thead>
+                <tr><td>1st</td><td>data1</td></tr>
+                <tr><td>3rd</td><td>data2</td></tr>
+                <tr><td>5th</td><td>data3</td></tr>
+                <tr><td>9th</td><td>data4</td></tr>
+                <tr><td>13th</td><td>data4</td></tr>
+                <tr><td>17th</td><td>data4</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
