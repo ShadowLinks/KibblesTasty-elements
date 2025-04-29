@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Warden</name>
+        <update version="0.0.1">
+            <file name="class-warden.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-warden.xml" />
+        </update>
+    </info>
+    <element name="Warden" type="Class" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_WARDEN">
+        <description>
+            <p>Wardens are not born of civilization and order. Though some Wardens will seek to defend such things (or at least tolerate them), they are those that have harnessed primal chaotic powers. Lashing, roiling forces of untamed energy, that left unchecked would wash civilization from the face of the material plane as if it were but a temporary blip.</p>
+            <h4>Aspects of Power</h4>
+            <p>The powers of a Warden are expressions of deep and primal forces. They are power given sentience and will, entropy and destruction harnessed and focused to purpose and cause. They channel their power as a conduit, bringing it to heel through force of will and inner conviction. As a blacksmith forges a lump of iron to take on the keen edge of a sword, a Warden must always refine their power, tame and temper it to be a force of change rather than raw destruction.</p>
+            <p class="indent"></p>
+            <h4>Chosen Powers</h4>
+            <p>While the situations that lead a Warden to take up their mantle of powers varies widely, their powers are reflections of who they are, a synchronization that would be impossible to thrust upon those that did not choose their path. A Warden may feel they had no choice but to embrace their primal powers and wield them for a cause, but at the heart of the power is a choice: a choice to fight, a choice to stand, and a choice to be a champion.</p>
+            <p class="indent"></p>
+            <h4>CREATING A WARDEN</h4>
+            <p>When creating a Warden consider the factors that have led them down their path. A mortal connected to deep primal powers isn’t a common thing. Is this something your character sought out to right an ancient wrong, or something dropped in their lap they now have to deal with? How do you want to use this power, and what principles will you have?</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>To make a Warden quickly, first place your highest ability score in Strength, followed by Constitution and Wisdom. Second, choose a wilderness-related background.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an Warden, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d12 per Warden level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per Warden level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+                <li><strong>Weapons:</strong> Simple weapons</li>
+                <li><strong>Languages:</strong> Primordial</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Strength, Wisdom</li>
+                <li><strong>Skills:</strong> Choose two from Animal Handling, Athletics, Insight, Intimidation, Medicine, Nature, Perception, and Survival</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) scale mail or (b) leather armor</li>
+                <li>a simple melee weapon and a shield</li>
+                <li>(a) two javelins or (b) two handaxes</li>
+                <li>(a) a dungeoneer’s pack or (b) an explorer’s pack</li>
+            </ul>
+            <p class="indent"></p>Alternatively, you may start with 5d4 × 10 gp to buy your own equipment.
+            <!-- class table here -->
+            <h5 class="caption">THE WARDEN</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Endurance Dice</td><td class="col-10">Die Size</td><td class="col-10">Primal Manifestation</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>—</td><td>—</td><td>—</td><td class="left">Mystic Bulwark, Warden Bond</td></tr>
+                <tr><td> 2nd</td><td>3</td><td>1d8</td><td>—</td><td class="left">Primal Interdiction, Endurance Dice</td></tr>
+                <tr><td> 3rd</td><td>3</td><td>1d8</td><td>2</td><td class="left">Warden Bond Feature, Primal Manifestations, Warden’s Grasp</td></tr>
+                <tr><td> 4th</td><td>3</td><td>1d8</td><td>2</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>4</td><td>1d10</td><td>2</td><td class="left">Extra Attack</td></tr>
+                <tr><td> 6th</td><td>4</td><td>1d10</td><td>3</td><td class="left">Empowered Endurance, Primal Strike</td></tr>
+                <tr><td> 7th</td><td>4</td><td>1d10</td><td>3</td><td class="left">Warden Bond Feature</td></tr>
+                <tr><td> 8th</td><td>4</td><td>1d10</td><td>3</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>5</td><td>1d10</td><td>4</td><td class="left">Natural Body</td></tr>
+                <tr><td>10th</td><td>5</td><td>1d10</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>11th</td><td>5</td><td>1d12</td><td>4</td><td class="left">Evolving Power</td></tr>
+                <tr><td>12th</td><td>5</td><td>1d12</td><td>5</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>13th</td><td>6</td><td>1d12</td><td>5</td><td class="left">Mystic Barrier</td></tr>
+                <tr><td>14th</td><td>6</td><td>1d12</td><td>5</td><td class="left">Warden Bond Feature</td></tr>
+                <tr><td>15th</td><td>6</td><td>1d12</td><td>6</td><td class="left">Second Life, Movement Through Nature</td></tr>
+                <tr><td>16th</td><td>6</td><td>1d12</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>7</td><td>1d12</td><td>6</td><td class="left">Warden Bond Feature</td></tr>
+                <tr><td>18th</td><td>7</td><td>1d12</td><td>7</td><td class="left">Timeless Body, Invulnerable Endurance</td></tr>
+                <tr><td>19th</td><td>7</td><td>1d12</td><td>7</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>7</td><td>1d12</td><td>7</td><td class="left">Primal Decree</td></tr>
+            </table>
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MYSTICAL_BULWARK" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_BOND" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_ENDURANCE_DICE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_INTERDICTION" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_WARDENS_GRASP" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_MANIFESTATION" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_ASI" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_EXTRA_ATTACK" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_EMPOWERED_ENDURANCE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_STRIKE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_NATURAL_BODY" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_EVOLVING_POWER" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MYSTIC_BARRIER" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_SECOND_LIFE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MOVEMENT_THROUGH_NATURE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_TIMELESS_BODY" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_INVULNERABLE_ENDURANCE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_DECREE" />
+        </description>
+        <setters>
+            <set name="hd">d12</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MYSTICAL_BULWARK" level="1" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_BOND" level="1" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_ENDURANCE_DICE" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_INTERDICTION" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_WARDENS_GRASP" level="3" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_MANIFESTATION" level="3" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_ASI" level="4" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_EMPOWERED_ENDURANCE" level="6" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_STRIKE" level="6" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_NATURAL_BODY" level="9" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_EVOLVING_POWER" level="11" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MYSTIC_BARRIER" level="13" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_SECOND_LIFE" level="15" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MOVEMENT_THROUGH_NATURE" level="15" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_TIMELESS_BODY" level="18" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_INVULNERABLE_ENDURANCE" level="18" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_DECREE" level="20" />
+        </rules>
+    </element>
+    <element name="Mystical Bulwark" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MYSTICAL_BULWARK">
+        <description>
+            <p>When you don light or medium armor, you can enhance it with mystical defenses, integrating it with manifestations of your Warden Bond (for example, an Elemental Soul may manifest icy plating to reinforce it). When you do so, you can use your Wisdom modifier in place of your Dexterity modifier when calculating your AC with that armor.</p>
+            <p class="indent">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 2. This value increases at 5th level (to 3), 9th level (to 4), and 13th level (to 5), and 17th level (to 6).</p>
+        </description>
+        <sheet>
+            <description>While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 2.</description>
+            <description level="5">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 3.</description>
+            <description level="9">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 4.</description>
+            <description level="13">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 5.</description>
+            <description level="17">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 6.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:mysticbulwark" value="ac:armored:armor" bonus="base" />
+            <stat name="ac:mysticbulwark" value="ac:armored:enhancement" />
+            <stat name="ac:mysticbulwark" value="wisdom:modifier" />
+            <stat name="ac:calculation" value="ac:mysticbulwark" bonus="calculation" equipped="[armor:medium]|[armor:light]" alt="Mystic Bulwark" />
+        </rules>
+    </element>
+    <element name="Warden Bond" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_BOND">
+        <description>
+            <p>You select an aspect of primal powers, gaining the ability to manifest your bond with that power. The options for Warden Bonds are listed at the end of the class. Your choice grants you features at 1st level and again at 3rd, 7th, 14th, and 17th levels.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype" supports="warden-bond" />
+        </rules>
+    </element>
+    <element name="Primal Interdiction" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_INTERDICTION">
+        <description>
+            <p>Starting at 2nd level, nature hinders your foes with aspects of your primal power. This effect has a 5 foot radius centered on you, turning the ground within range into difficult terrain for creatures of your choice.</p>
+            <p class="indent">Additionally, at the end of your turn, you can choose to recklessly defend your allies within this area at the cost of your own safety, giving attacks against you advantage, and giving attacks against allies within the effect disadvantage if you are also in range of the attack being made (or have been at any point since the start of the attacker’s turn) and not behind total cover.</p>
+            <p class="indent">The range of this effect increases by 5 feet at 5th level (to 10 feet), and again at 11th level (to 15 feet), and 17th level (to 20 feet).</p>
+        </description>
+        <sheet>
+            <description>A 5 foot radius centered on you turns the ground into difficult terrain for creatures of your choice.
+            Additionally, at the end of your turn, you can choose to recklessly defend your allies within this area at the cost of your own safety, giving attacks against you advantage, and giving attacks against allies within the effect disadvantage if you are also in range of the attack being made (or have been at any point since the start of the attacker’s turn) and not behind total cover.</description>
+            <description level="5">A 10 foot radius centered on you turns the ground into difficult terrain for creatures of your choice.
+            Additionally, at the end of your turn, you can choose to recklessly defend your allies within this area at the cost of your own safety, giving attacks against you advantage, and giving attacks against allies within the effect disadvantage if you are also in range of the attack being made (or have been at any point since the start of the attacker’s turn) and not behind total cover.</description>
+            <description level="11">A 15 foot radius centered on you turns the ground into difficult terrain for creatures of your choice.
+            Additionally, at the end of your turn, you can choose to recklessly defend your allies within this area at the cost of your own safety, giving attacks against you advantage, and giving attacks against allies within the effect disadvantage if you are also in range of the attack being made (or have been at any point since the start of the attacker’s turn) and not behind total cover.</description>
+            <description level="17">A 20 foot radius centered on you turns the ground into difficult terrain for creatures of your choice.
+            Additionally, at the end of your turn, you can choose to recklessly defend your allies within this area at the cost of your own safety, giving attacks against you advantage, and giving attacks against allies within the effect disadvantage if you are also in range of the attack being made (or have been at any point since the start of the attacker’s turn) and not behind total cover.</description>
+        </sheet>
+    </element>
+    <element name="Endurance Dice" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_ENDURANCE_DICE">
+        <description>
+            <p>Additionally at 2nd level, you gain access to three d8 Endurance Dice. You have two ways to use these dice, though other features may grant additional ways to use them:</p>
+            <ul>
+                <li>Once per turn, when you take damage, you can roll an Endurance Die to reduce the damage taken by the amount rolled (no action required).</li>
+                <li>When you make a saving throw, you can roll an Endurance Die and add it to the saving throw (no action required). You can do this after you roll the save, but before you know the outcome of the save.</li>
+            </ul>
+            <p class="indent">You gain another die at 5th level (4 dice), 9th level (5 dice), 13th level (6 dice), and 17th level (7 dice). The size of the dice increase at 5th (to d10) and 11th level to (d12). You regain all expended Endurance Dice when you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You gain access to 3 d8 Endurance Dice and are recovered on a short rest.
+            Once per turn, when you take damage, you can roll an Endurance Die to reduce the damage taken by the amount rolled (no action required).
+            When you make a saving throw, you can roll an Endurance Die and add it to the saving throw (no action required). You can do this after you roll the save, but before you know the outcome of the save.</description>
+            <description level="5" >You gain access to 4 d810 Endurance Dice and are recovered on a short rest.
+            Once per turn, when you take damage, you can roll an Endurance Die to reduce the damage taken by the amount rolled (no action required).
+            When you make a saving throw, you can roll an Endurance Die and add it to the saving throw (no action required). You can do this after you roll the save, but before you know the outcome of the save.</description>
+            <description level="9" >You gain access to 5 d10 Endurance Dice and are recovered on a short rest.
+            Once per turn, when you take damage, you can roll an Endurance Die to reduce the damage taken by the amount rolled (no action required).
+            When you make a saving throw, you can roll an Endurance Die and add it to the saving throw (no action required). You can do this after you roll the save, but before you know the outcome of the save.</description>
+            <description level="11" >You gain access to 5 d12 Endurance Dice and are recovered on a short rest.
+            Once per turn, when you take damage, you can roll an Endurance Die to reduce the damage taken by the amount rolled (no action required).
+            When you make a saving throw, you can roll an Endurance Die and add it to the saving throw (no action required). You can do this after you roll the save, but before you know the outcome of the save.</description>
+            <description level="13" >You gain access to 6 d12 Endurance Dice and are recovered on a short rest.
+            Once per turn, when you take damage, you can roll an Endurance Die to reduce the damage taken by the amount rolled (no action required).
+            When you make a saving throw, you can roll an Endurance Die and add it to the saving throw (no action required). You can do this after you roll the save, but before you know the outcome of the save.</description>
+            <description level="17" >You gain access to 7 d12 Endurance Dice and are recovered on a short rest.
+            Once per turn, when you take damage, you can roll an Endurance Die to reduce the damage taken by the amount rolled (no action required).
+            When you make a saving throw, you can roll an Endurance Die and add it to the saving throw (no action required). You can do this after you roll the save, but before you know the outcome of the save.</description>
+        </sheet>
+    </element>
+    <element name="Primal Manifestation" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_MANIFESTATION">
+        <description>
+            <p>Starting at 3rd level, your connection to the primal forces you’ve bonded with develop in new ways, unique to you, that grant you new powers and abilities.</p>
+            <p class="indent">You gain two such Primal Manifestations selecting from the list at the end of the class description. When you gain certain Warden levels, you gain additional manifestations of your choice, as shown on the Warden Class Table.</p>
+            <p class="indent">Additionally, when you gain a level in the class, you can choose one of the manifestations you know and replace it with another manifestation that you could learn at that level. If a manifestation has a prerequisite, you must meet it to learn the manifestation. A level prerequisite refers to your level in this class.</p>
+        </description>
+        <sheet>
+            <description>When you gain a level in the class, you can choose one of the manifestations you know and replace it with another manifestation that you could learn at that level.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" supports="primal-manifestation" number="2" />
+            <select type="Class Feature" supports="primal-manifestation" level="6" />
+            <select type="Class Feature" supports="primal-manifestation" level="9" />
+            <select type="Class Feature" supports="primal-manifestation" level="12" />
+            <select type="Class Feature" supports="primal-manifestation" level="15" />
+            <select type="Class Feature" supports="primal-manifestation" level="18" />
+        </rules>
+    </element>
+    <element name="Warden's Grasp" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_WARDENS_GRASP">
+        <description>
+            <p>Starting at 3rd level, when you make an opportunity attack, you can replace the attack with a grapple check.</p>
+        </description>
+        <sheet>
+            <description>When you make an opportunity attack, you can replace the attack with a grapple check.</description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_ASI">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Warden 4)" supports="Improvement Option,Warden,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Warden 8)" supports="Improvement Option,Warden,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Warden 10)" supports="Improvement Option,Warden,10" level="10"/>
+            <select type="Class Feature" name="Improvement Option (Warden 12)" supports="Improvement Option,Warden,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Warden 16)" supports="Improvement Option,Warden,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Warden 19)" supports="Improvement Option,Warden,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Extra Attack" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+    </element>
+    <element name="Empowered Endurance" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_EMPOWERED_ENDURANCE">
+        <description>
+            <p>Starting at 6th level, when you roll an Endurance Die to reduce damage, you can add your Constitution modifier to the result rolled.</p>
+            <p class="indent">Additionally, if you roll for initiative with no Endurance Dice remaining, you regain one Endurance Die.</p>
+        </description>
+        <sheet>
+            <description>When you roll an Endurance Die to reduce damage, you can add {{constitution:modifier}} to the result rolled.
+            Additionally, if you roll for initiative with no Endurance Dice remaining, you regain one Endurance Die.</description>
+        </sheet>        
+    </element>
+    <element name="Primal Strike" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_STRIKE">
+        <description>
+            <p>Starting at 6th level, your attacks from natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+        </description>
+        <sheet>
+            <description>Your attacks from natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+    <element name="Natural Body" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_NATURAL_BODY">
+        <description>
+            <p>At 9th level, you sustain yourself from the forces of nature. You no longer need to eat or drink, though can if you choose. You also become immune to disease.</p>
+        </description>
+        <sheet>
+            <description>You no longer need to eat or drink, though can if you choose. You also become immune to disease.</description>
+        </sheet>
+    </element>
+    <element name="Evolving Power" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_EVOLVING_POWER">
+        <description>
+            <p>Starting at 11th level, the damage dice of all natural weapons granted by the class increases by 1 size (for example, a d6 becomes a d8). If a weapon has multiple damage dice, only one die increases.</p>
+        </description>
+        <sheet>
+            <description>The damage dice of all natural weapons granted by the class increases by 1 size. If a weapon has multiple damage dice, only one die increases.</description>
+        </sheet>
+    </element>
+    <element name="Mystic Barrier" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MYSTIC_BARRIER">
+        <description>
+            <p>Starting at 13th level, your Mystic Bulwark damage reduction applies to all damage types (rather than just bludgeoning, piercing, and slashing damage).</p>
+        </description>
+        <sheet>
+            <description>Your Mystic Bulwark damage reduction applies to all damage types.</description>
+        </sheet>
+    </element>
+    <element name="Second Life" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_SECOND_LIFE">
+        <description>
+            <p>At 15th level, when you would be reduced to 0 hit points, you are instead reduced to 1 hit point, and regain hit points equal to half your maximum hit points. Once this is triggered, it cannot be used again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you would be reduced to 0 hit points, you are instead reduced to 1 hit point, and regain hit points equal to half your maximum hit points.</description>
+        </sheet>
+    </element>
+    <element name="Movement Through Nature" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MOVEMENT_THROUGH_NATURE">
+        <description>
+            <p>Additionally at 15th level, you gain your choice of a climbing or swimming speed equal to your walking speed, or a burrowing speed equal to half your walking speed. When you burrow, you leave behind a tunnel equal to your size.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" supports="movement-through-nature" />
+        </rules>
+    </element>
+    <element name="Movement Through Nature (Climbing)" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MOVEMENT_THROUGH_NATURE_CLIMB">
+        <supports>movement-through-nature</supports>
+        <description>
+            <p>You gan Climbing Speed equal to your Walking Speed.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="speed:climb" value="speed" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Movement Through Nature (Swim)" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MOVEMENT_THROUGH_NATURE_SWIM">
+        <supports>movement-through-nature</supports>
+        <description>
+            <p>You gan Swimming Speed equal to your Walking Speed.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="speed" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Movement Through Nature (Burrow)" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MOVEMENT_THROUGH_NATURE_BURROW">
+        <supports>movement-through-nature</supports>
+        <description>
+            <p>You gan Burrowing Speed equal to half your Walking Speed. When you burrow, you leave behind a tunnel equal to your size.</p>
+        </description>
+        <sheet>
+            <description>You have a burrow speed of half your walking speed. When you burrow, you leave behind a tunnel equal to your size.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:burrow" value="speed:half" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Timeless Body" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_TIMELESS_BODY">
+        <description>
+            <p>Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.</p>
+        </description>
+        <sheet>
+            <description>The primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.</description>
+        </sheet>
+    </element>
+    <element name="Invulnerable Endurance" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_INVULNERABLE_ENDURANCE">
+        <description>
+            <p>Additionally at 18th level, when you roll an Endurance Die, you can roll two dice and take the higher roll. Doing so does not expend an additional die.</p>
+        </description>
+        <sheet>
+            <description>When you roll an Endurance Die, you can roll two dice and take the higher roll. Doing so does not expend an additional die.</description>
+        </sheet>
+    </element>
+    <element name="Primal Decree" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PRIMAL_DECREE">
+        <description>
+            <p>At 20th level, you can use your primal connection with the natural powers of the world to reshape the land around you on a large scale. This can take the form of effects like earthquake, control weather, or a transmutation or conjuration spell from the Druid spell list that modifies the terrain (such as wall of stone).</p>
+            <p class="indent">At the DM’s discretion, this might be used to accomplish other large scale feats not listed by a spell, such as changing the course of a river, quenching a forest fire, or causing an active volcano to have a small eruption. Its range of effect should generally be contained with a 1 mile radius area when not replicating the spells listed above. When used in this way it takes 1 minute to invoke the effect (which may take longer to fully manifest depending on its nature).</p>
+            <p class="indent">Once you do so, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can use your primal connection with the natural powers of the world to reshape the land around you on a large scale. This can be like a spell or otherwise an effect contained in a 1 mile radius and may take 1 minute when used this way.</description>
+        </sheet>
+    </element>
+</elements>
