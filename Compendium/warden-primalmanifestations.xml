@@ -1,0 +1,31 @@
+<elements>
+    <info>
+        <name>Warden Primal Manifestations</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="warden-primalmanifestations.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-primalmanifestations.xml" />
+        </update>
+    </info>
+    <element name="Balanced Assualt" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_BALANCEDASSUALT">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>You gain the Two Weapon Fighting Style. Two-Weapon Fighting: When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+        </description>
+        <sheet>
+            <description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+        </sheet>
+    </element>
+</elements>
+
+<!-- 
+
+    <element name="Featurename" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_FEATURENAME">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+-->
