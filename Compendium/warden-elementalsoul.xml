@@ -106,67 +106,81 @@
     </element>
     <element name="Elemental Interdiction" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_INTERDICTION">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, your Primal Interdiction becomes a buffeting maelstrom of elemental power when you manifest an Elemental Armament. The difficult terrain of your Primal Interdiction affects flying creatures within range, and you can select one of the following effects (selecting each time you manifest an Elemental Armament).</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong></strong>Creeping Frost: Creatures that start their turn within the area of your Primal Interdiction have their movement speed reduced by 10 feet.</li>
+                <li><strong></strong>Blazing Pyre: Fire burns fiercely around you, creatures of your choice that end their turn within the area of your Primal Interdiction take 1d6 fire damage.</li>
+                <li><strong></strong>Static Field: The first time a hostile creatures moves 5 feet or more within your Primal Interdiction, they take 1d8 lightning damage. Once this damage occurs, it cannot occur again until the start of your turn.</li>
             </ul>
-            <p class="indent"></p>
+            <p class="indent">The damage of the Blazing Pyre and Charged Field effects increases by one additional die of damage at 11th level (2d6 for Blazing Pyre, 2d8 for Charged Field).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The difficult terrain of your Primal Interdiction affects flying creatures within range, and you can select one of the following effects (selecting each time you manifest an Elemental Armament).
+            Creeping Frost: Creatures that start their turn within the area of your Primal Interdiction have their movement speed reduced by 10 feet.
+            Blazing Pyre: Fire burns fiercely around you, creatures of your choice that end their turn within the area of your Primal Interdiction take 1d6 fire damage.
+            Static Field: The first time a hostile creatures moves 5 feet or more within your Primal Interdiction, they take 1d8 lightning damage. Once this damage occurs, it cannot occur again until the start of your turn.</description>
+            <description level="11">The difficult terrain of your Primal Interdiction affects flying creatures within range, and you can select one of the following effects (selecting each time you manifest an Elemental Armament).
+            Creeping Frost: Creatures that start their turn within the area of your Primal Interdiction have their movement speed reduced by 10 feet.
+            Blazing Pyre: Fire burns fiercely around you, creatures of your choice that end their turn within the area of your Primal Interdiction take 2d6 fire damage.
+            Static Field: The first time a hostile creatures moves 5 feet or more within your Primal Interdiction, they take 2d8 lightning damage. Once this damage occurs, it cannot occur again until the start of your turn.</description>
         </sheet>
     </element>
     <element name="Elemental Reflection" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_REFLECTION">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, when you expend an Endurance Die to block the damage against a melee attack, the attacker takes cold, fire or lightning damage (your choice) equal to the amount of damage blocked.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you expend an Endurance Die to block the damage against a melee attack, the attacker takes cold, fire or lightning damage (your choice) equal to the amount of damage blocked.</description>
         </sheet>
     </element>
     <element name="Elemental Body" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_BODY">
         <description>
-            <p></p>
+            <p>Starting at 7th level, you gain resistance to your choice of cold, fire, or lightning damage. When you complete a long rest, you can change which damage type you resist.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain resistance to your choice of cold, fire, or lightning damage. When you complete a long rest, you can change which damage type you resist.</description>
         </sheet>
     </element>
     <element name="Primal State" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PRIMAL_STATE">
         <description>
-            <p></p>
+            <p>Additionally at 7th level, you can expend one Endurance Die to cast become fire, become water, or become wind.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can expend one Endurance Die to cast become fire, become water, or become wind</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_FIRE" spellcasting="Elemental Soul" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_WATER" spellcasting="Elemental Soul" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_WIND" spellcasting="Elemental Soul" />
+        </rules>
     </element>
     <element name="Elemental Form" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_FORM">
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Starting at 14th level, you can cast form of fireK, form of iceK, or form of windK without expending a spell slot. When you cast the spell this way, you can cast the spell as a bonus action, and it does not require concentration. Once per turn during the transformation, you can use the action it grants in place of an attack made as part of the Attack action.</p>
+            <p class="indent">Once you cast the spell in this way, you cannot do so again until you complete a long rest. You can use it again before completing a long rest by expending 6 Endurance Dice.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast form of fireK, form of iceK, or form of windK without expending a spell slot. When you cast the spell this way, you can cast the spell as a bonus action, and it does not require concentration. Once per turn during the transformation, you can use the action it grants in place of an attack made as part of the Attack action.
+            You can use it again before completing a long rest by expending 6 Endurance Dice.</description>
         </sheet>
     </element>
     <element name="Paraelemental Interdiction" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PARAELEMENTAL_INTERDICTION">
         <description>
-            <p></p>
+            <p>Additionally at 14th level, when you activate your Elemental Interdiction, you can select two options, activating both effects.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you activate your Elemental Interdiction, you can select two options, activating both effects.</description>
         </sheet>
     </element>
     <element name="Cataclysm Unleashed" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_CATCLYSM_UNLEASHED">
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <p class="indent"></p>
+            <p>Starting at 17th level, when you use your Elemental Form ability, you can instead cast form of the elements, and are no longer limited to using the action they grant in place of an attack once per turn, as long as you use two different actions granted by the different forms. When you cast form of the elements this way, you can choose to become a Large sized creature for the duration of the spell.</p>
+            <p class="indent">While in this form, the damage dice of your Elemental Armaments and Elemental Interdiction effects are doubled.</p>
+            <p class="indent">Once you do this, you cannot do so until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>When you use your Elemental Form ability, you can instead cast form of the elements, and are no longer limited to using the action they grant in place of an attack once per turn, as long as you use two different actions granted by the different forms. When you cast form of the elements this way, you can choose to become a Large sized creature for the duration of the spell.
+            While in this form, the damage dice of your Elemental Armaments and Elemental Interdiction effects are doubled.</description>
         </sheet>
     </element>
 </elements>
