@@ -1,0 +1,121 @@
+<elements>
+    <info>
+        <name>Elemental Soul Bond for Warden</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="warden-elementalsoul.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-elementalsoul.xml" />
+        </update>
+    </info>
+    <element name="Elemental Soul" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARDEN_ELEMENTALSOUL">
+        <supports>warden-bond</supports>
+        <description>
+            <p>Tapping into the endless power of the elemental planes, these Wardens shroud themselves in harsh primal forces, destroying their foes with their very presence.</p>
+            <p class="indent"></p>
+            <div element="ID__" />
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+            <div element="ID_______" />
+            <div element="ID________" />
+            <div element="ID_________" />
+            <div element="ID__________" />
+            <div element="ID___________" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID__" level="1" />
+            <grant type="Archetype Feature" id="ID___" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_____" level="3" />
+            <grant type="Archetype Feature" id="ID______" level="3" />
+            <grant type="Archetype Feature" id="ID_______" level="7" />
+            <grant type="Archetype Feature" id="ID________" level="7" />
+            <grant type="Archetype Feature" id="ID_________" level="14" />
+            <grant type="Archetype Feature" id="ID__________" level="14" />
+            <grant type="Archetype Feature" id="ID___________" level="17" />
+        </rules>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID__">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID___">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID____">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_____">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID______">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_______">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID________">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_________">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID__________">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID___________">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
