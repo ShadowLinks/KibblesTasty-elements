@@ -9,131 +9,180 @@
     <element name="Stoneblood" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARDEN_STONEBLOOD">
         <supports>warden-bond</supports>
         <description>
-            <p></p>
+            <p>The enduring blood of the world flows through you, empowering you with inhuman durability, and mastery over the powers of stone and earth. Empowered with unbreakable resilience and steps that cause the very ground to tremble.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_STONE_FISTS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_STONE_FIST" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_EMPOWERED_EARTH" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_INNATE_MAGIC" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_SEISMIC_BACKLASH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_GRAVITATIONAL_PULL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_RESILIENT_BULWARK" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_WORLD_BREAKER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_STONE_SENSE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_PRIMORDIAL_AVATAR" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_STONE_FISTS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_STONE_FIST" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_EMPOWERED_EARTH" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_INNATE_MAGIC" level="1" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="3" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="14" />
-            <grant type="Archetype Feature" id="ID__________" level="14" />
-            <grant type="Archetype Feature" id="ID___________" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_SEISMIC_BACKLASH" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_GRAVITATIONAL_PULL" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_RESILIENT_BULWARK" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_WORLD_BREAKER" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_STONE_SENSE" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_PRIMORDIAL_AVATAR" level="17" />
         </rules>
         <spellcasting name="Stoneblood" ability="Wisdom" prepare="false">
             <list>Stoneblood</list>
         </spellcasting>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Stone Fists" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_STONE_FISTS">
         <description>
-            <p></p>
+            <p>Starting at 1st level, when you roll initiative or as a bonus action at any time, you can transform one or both arms into durable forms of living stone. You cannot wield weapons or shields in hands that you have turned to stone, but they can be used to grapple creatures.</p>
+            <p class="indent">While you are grappling a creature with your stone fists, that fist can only attack that creature. The stone fists last until you dismiss them as a bonus action.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you roll initiative or as a bonus action at any time, you can transform one or both arms into durable forms of living stone. You cannot wield weapons or shields in hands that you have turned to stone, but they can be used to grapple creatures.
+            While you are grappling a creature with your stone fists, that fist can only attack that creature. The stone fists last until you dismiss them as a bonus action.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Stone Fist" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_STONE_FIST">
         <description>
-            <p></p>
+            <p>A hardened limb of stone. This becomes a natural one handed melee weapon that deals 1d6 bludgeoning damage on hit, and has the Light and Special properties.</p>
+            <p class="indent">Special: You gain +1 to your AC while wielding one of these weapons in each hand (two or more of these if you have more than 2 hands, you cannot benefit from this bonus and the bonus AC of a shield).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>A natural one handed melee weapon that deals 1d6 bludgeoning damage on hit, and has the Light and Special properties.
+            Special: You gain +1 to your AC while wielding one of these weapons in each hand (two or more of these if you have more than 2 hands, you cannot benefit from this bonus and the bonus AC of a shield).</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Empowered Earth" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_EMPOWERED_EARTH">
         <description>
-            <p></p>
+            <p>At 1st level, you gain the manipulate earth and stone forming cantrips. When you use stone forming, you can meld any one handed weapon created with it with your Stone Fists, giving you proficiency in that weapon and replacing Stone Fist’s properties (including Special property) with the created weapon’s damage dice, damage type, and any properties (beside thrown).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use stone forming, you can meld any one handed weapon created with it with your Stone Fists, giving you proficiency in that weapon and replacing Stone Fist’s properties (including Special property) with the created weapon’s damage dice, damage type, and any properties (beside thrown).</description>
         </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Stoneblood" id="ID_KTH_COLAL_SPELL_MANIPULATE_EARTH" level="1" />
+            <grant type="Spell" spellcasting="Stoneblood" id="ID_KTH_COLAL_SPELL_STONE_FORMING" level="1" />
+        </rules>
     </element>
     <element name="Innate Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_INNATE_MAGIC">
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Additionally when you select this bond, you gain access to several innate magical abilities by channeling the power of your primal connection.</p>
+            <p class="indent">You gain the following spells at the listed levels, and can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</p>
             <table>
                 <thead>
                     <tr><td>Warden Level</td><td>Innate Spells (1/Long Rest each)</td></tr>
                 </thead>
-                <tr><td>1st</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data2</td></tr>
-                <tr><td>5th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
-                <tr><td>13th</td><td>data4</td></tr>
-                <tr><td>17th</td><td>data4</td></tr>
+                <tr><td>1st</td><td>create pit</td></tr>
+                <tr><td>3rd</td><td>earth ripple</td></tr>
+                <tr><td>5th</td><td>become stone</td></tr>
+                <tr><td>9th</td><td>quicksand</td></tr>
+                <tr><td>13th</td><td>stone coffin</td></tr>
+                <tr><td>17th</td><td>orbital stones</td></tr>
             </table>
         </description>
         <sheet>
             <description>You can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</description>
         </sheet>
         <rules>
-            
+            <grant type="Spell" spellcasting="Stoneblood" id="ID_KTH_COLAL_SPELL_CREATE_PIT" level="1" />
+            <grant type="Spell" spellcasting="Stoneblood" id="ID_KTH_COLAL_SPELL_EARTH_RIPPLE" level="3" />
+            <grant type="Spell" spellcasting="Stoneblood" id="ID_KTH_COLAL_SPELL_BECOME_STONE" level="5" />
+            <grant type="Spell" spellcasting="Stoneblood" id="ID_KTH_COLAL_SPELL_QUICKSAND" level="9" />
+            <grant type="Spell" spellcasting="Stoneblood" id="ID_KTH_COLAL_SPELL_STONE_COFFIN" level="13" />
+            <grant type="Spell" spellcasting="Stoneblood" id="ID_KTH_COLAL_SPELL_ORBITAL_STONES" level="17" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Seismic Backlash" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_SEISMIC_BACKLASH">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, each time you expend an Endurance Die, you store the die in a special pool of charged power for 1 minute. You can have a number of charges stored equal to your proficiency bonus. As a bonus action on your turn, you can unleash all of this stored power in an explosive tremor, rolling all the stored dice and expending them from the pool.</p>
+            <p class="indent">All creatures of your choice within the radius of your Primal Interdiction feature must make a Strength saving throw with a DC of 8 + your Strength or Wisdom modifier (your choice) + your Proficiency bonus. On a failed save, they take damage equal to the amount rolled and fall prone. On a successful save, they take half as much damage and do not fall prone.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Each time you expend an Endurance Die, you store the die in a special pool of charged power for 1 minute. You can have {{proficiency}} charges stored. As a bonus action on your turn, you can unleash all of this stored power in an explosive tremor, rolling all the stored dice and expending them from the pool.
+            All creatures of your choice within the radius of your Primal Interdiction feature must make a Strength saving throw with a DC {{Seismic:dc:wis}} or {{Seismic:dc:str}}. On a failed save, they take damage equal to the amount rolled and fall prone. On a successful save, they take half as much damage and do not fall prone.</description>
+        </sheet>
+        <rules>
+            <stat name="Seismic:dc" value="8" bonus="base" />
+            <stat name="Seismic:dc" value="proficiency" />
+            <stat name="Seismic:dc:wis" value="Seismic:dc" />
+            <stat name="Seismic:dc:str" value="Seismic:dc" />
+            <stat name="Seismic:dc:wis" value="wisdom:modifier" />
+            <stat name="Seismic:dc:str" value="strength:modifier" />
+        </rules>
+    </element>
+    <element name="Gravitational Pull" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_GRAVITATIONAL_PULL">
+        <description>
+            <p>Additionally at 3rd level, when you take the Attack action on your turn, you can replace one of your attacks with a surge of gravitational force. A Large or smaller creature of your choice within 60 feet of you must make a Strength saving throw with a DC of 8 + your Strength or Wisdom modifier (your choice) + your proficiency bonus. On a failure, they are pulled up to 15 feet toward you or knocked prone (your choice). The distance they are pulled toward is doubled if the target creature is flying.</p>
+        </description>
+        <sheet>
+            <description>When you take the Attack action on your turn, you can replace one of your attacks with a surge of gravitational force. A Large or smaller creature of your choice within 60 feet of you must make a Strength saving throw with a DC {{Seismic:dc:wis}} or {{Seismic:dc:str}}. On a failure, they are pulled up to 15 feet toward you or knocked prone (your choice). The distance they are pulled toward is doubled if the target creature is flying.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Resilient Bulwark" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_RESILIENT_BULWARK">
         <description>
-            <p></p>
+            <p>Starting at 7th level, the damage reduction of your Mystic Bulwark is increased by 1.</p>
+            <p class="indent">Additionally, you have resistance to damage from effects that cause you to bleed.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have resistance to damage from effects that cause you to bleed.</description>
         </sheet>
+        <rules>            
+            <stat name="mystical-bulwark:dmg" value="1" level="7" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="World Breaker" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_WORLD_BREAKER">
         <description>
-            <p></p>
+            <p>Starting at 14th level, you can cast fissure without expending a spell slot. Once you do so, you cannot do so again until you complete a long rest.</p>
+            <p class="indent">You can use it again early by expending 5 or more charges of Seismic Backlash, casting fissure in place of unleashing the normal effect. Spending additional charges increases the level of it is cast by 1 level per additional charge spent.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast fissure without expending a spell slot.
+            You can use it again early by expending 5 or more charges of Seismic Backlash, casting fissure in place of unleashing the normal effect. Spending additional charges increases the level of it is cast by 1 level per additional charge spent.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Stoneblood" id="ID_KTH_COLAL_SPELL_FISSURE" level="14" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
+    <element name="Stone Sense" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_STONE_SENSE">
         <description>
-            <p></p>
+            <p>Additionally at 14th level, you gain tremorsense with a range equal to your Primal Interdiction.</p>
         </description>
         <sheet>
-            <description></description>
         </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_TREMORSENSE" />
+            <stat name="tremorsense:range" value="15" bonus="base" />
+            <stat name="tremorsense:range" value="5" level="17" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
+    <element name="Primordial Avatar" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_STONEBLOOD_PRIMORDIAL_AVATAR">
         <description>
-            <p></p>
+            <p>Starting at 17th level, as an action you can draw on the strength of the world beneath your feet to become an embodiment of its power for 1 minute. If you start your turn in contact with the ground you gain the following benefits:</p>
+            <ul>
+                <li><strong>Strength Advantage.</strong> You have advantage on Strength checks and saving throws.</li>
+                <li><strong>Endless Vitality.</strong> You regain hit points equal to half your Warden level (rounded down).</li>
+                <li><strong>Call of the Earth.</strong> Creatures lose their flying speed in range of your Primal Interdiction.</li>
+                <li><strong>Reflective Carapace.</strong> If you are targeted by a magic missile, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 4–5 you are unaffected. On a 6, you are unaffected and the effect is reflected back at the caster as though it originated from you, turning the cast into the target.</li>
+                <li><strong>Empowered Backlash.</strong> You add a bonus die to your Seismic Backlash pool.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As an action you can draw on the strength of the world beneath your feet to become an embodiment of its power for 1 minute. If you start your turn in contact with the ground you gain the following benefits:
+            Strength Advantage. You have advantage on Strength checks and saving throws.
+            Endless Vitality. You regain hit points equal to half your Warden level (rounded down).
+            Call of the Earth. Creatures lose their flying speed in range of your Primal Interdiction.
+            Reflective Carapace. If you are targeted by a magic missile, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 4–5 you are unaffected. On a 6, you are unaffected and the effect is reflected back at the caster as though it originated from you, turning the cast into the target.
+            Empowered Backlash. You add a bonus die to your Seismic Backlash pool.</description>
         </sheet>
     </element>
 </elements>
