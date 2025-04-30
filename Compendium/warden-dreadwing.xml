@@ -14,7 +14,7 @@
             <div element="ID__" />
             <div element="ID___" />
             <div element="ID____" />
-            <div element="ID_____" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_DREADWING_INNATE_MAGIC" />
             <div element="ID______" />
             <div element="ID_______" />
             <div element="ID________" />
@@ -29,7 +29,7 @@
             <grant type="Archetype Feature" id="ID__" level="1" />
             <grant type="Archetype Feature" id="ID___" level="1" />
             <grant type="Archetype Feature" id="ID____" level="1" />
-            <grant type="Archetype Feature" id="ID_____" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_DREADWING_INNATE_MAGIC" level="1" />
             <grant type="Archetype Feature" id="ID______" level="3" />
             <grant type="Archetype Feature" id="ID_______" level="3" />
             <grant type="Archetype Feature" id="ID________" level="7" />
@@ -82,7 +82,7 @@
             </table>
         </description>
         <sheet>
-            <description></description>
+            <description>You can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</description>
         </sheet>
         <rules>
             
