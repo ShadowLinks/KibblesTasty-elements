@@ -123,13 +123,18 @@
             <p class="indent">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 2. This value increases at 5th level (to 3), 9th level (to 4), and 13th level (to 5), and 17th level (to 6).</p>
         </description>
         <sheet>
-            <description>While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 2.</description>
-            <description level="5">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 3.</description>
-            <description level="9">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 4.</description>
-            <description level="13">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 5.</description>
-            <description level="17">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by 6.</description>
+            <description>While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by {{mystical-bulwark:dmg}}.</description>
+            <description level="5">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by {{mystical-bulwark:dmg}}.</description>
+            <description level="9">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by {{mystical-bulwark:dmg}}.</description>
+            <description level="13">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by {{mystical-bulwark:dmg}}.</description>
+            <description level="17">While you have your armor integrated with your primal power, when you take bludgeoning, piercing, or slashing damage, you can reduce the damage taken by {{mystical-bulwark:dmg}}.</description>
         </sheet>
         <rules>
+            <stat name="mystical-bulwark:dmg" value="2" bonus="base" />
+            <stat name="mystical-bulwark:dmg" value="1" level="5" />
+            <stat name="mystical-bulwark:dmg" value="1" level="9" />
+            <stat name="mystical-bulwark:dmg" value="1" level="13" />
+            <stat name="mystical-bulwark:dmg" value="1" level="17" />
             <stat name="ac:mysticbulwark" value="ac:armored:armor" bonus="base" />
             <stat name="ac:mysticbulwark" value="ac:armored:enhancement" />
             <stat name="ac:mysticbulwark" value="wisdom:modifier" />
