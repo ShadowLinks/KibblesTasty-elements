@@ -9,131 +9,139 @@
     <element name="Sunwatcher" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARDEN_SUNWATCHER">
         <supports>warden-bond</supports>
         <description>
-            <p></p>
+            <p>Drawing power from the highest primal authority, you embody the radiance of the sun. The sun burns away all that lurks in the darkness, while bringing the relief of morning light to those that seek it. Ever vigilant, these Wardens weave fire and radiance to destroy their enemies and empower their allies.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_SOLAR_FRAGMENT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_RADIANT_BLAST" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_INNATE_MAGIC" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_SOLAR_FLARE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_RADIANT_AURA" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_EMPOWERING_PRESENCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_TRANSCENDENT_PASSAGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_SOLAR_AVATAR" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_SOLAR_FRAGMENT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_RADIANT_BLAST" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_INNATE_MAGIC" level="1" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="3" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="14" />
-            <grant type="Archetype Feature" id="ID__________" level="14" />
-            <grant type="Archetype Feature" id="ID___________" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_SOLAR_FLARE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_RADIANT_AURA" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_EMPOWERING_PRESENCE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_TRANSCENDENT_PASSAGE" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_SOLAR_AVATAR" level="17" />
         </rules>
         <spellcasting name="Sunwatcher" ability="Wisdom" prepare="false">
             <list>Sunwatcher</list>
         </spellcasting>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Solar Fragment" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_SOLAR_FRAGMENT">
         <description>
-            <p></p>
+            <p>Starting at 1st level, you can cast the light spell. Wisdom is your spellcasting modifier for it. If you cast light on a simple melee weapon you are wielding, the spell lasts as long as the weapon remains in your possession, and the weapon deals fire or radiant damage (your choice) instead of its normal damage type. The damage of a weapon under this effect is increased by Warden abilities that increase the damage of your natural weapons.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>If you cast light on a simple melee weapon you are wielding, the spell lasts as long as the weapon remains in your possession, and the weapon deals fire or radiant damage (your choice) instead of its normal damage type. The damage of a weapon under this effect is increased by Warden abilities that increase the damage of your natural weapons.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Sunwatcher" id="ID_PHB_SPELL_LIGHT" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Radiant Blast" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_RADIANT_BLAST">
         <description>
-            <p></p>
+            <p>At 1st level, you gain the ability to gather and release fiery radiant power from your hands or a weapon you are wielding. Radiant Blasts are a ranged natural weapon attack with a normal range of 60 feet, and a long range of 120 feet, that deal 1d6 fire or radiant damage (your choice). If the damage die increases to 1d8 (through Warden features that increase the damage of your natural weapons), the damage becomes 1d4 fire damage and 1d4 radiant damage. You choose which damage type to add your modifier to when you deal damage. You can use your Strength or Wisdom (your choice) in place of your Dexterity for the attack and damage rolls of this ability.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>Radiant Blasts are a ranged natural weapon attack with a normal range of 60 feet, and a long range of 120 feet, that deal 1d6 fire or radiant damage (your choice). If the damage die increases to 1d8 (through Warden features that increase the damage of your natural weapons), the damage becomes 1d4 fire damage and 1d4 radiant damage. You choose which damage type to add your modifier to when you deal damage. You can use your Strength or Wisdom (your choice) in place of your Dexterity for the attack and damage rolls of this ability.</description>
         </sheet>
     </element>
     <element name="Innate Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_INNATE_MAGIC">
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Additionally when you select this bond, you gain access to several innate magical abilities by channeling the power of your primal connection.</p>
+            <p class="indent">You gain the following spells at the listed levels, and can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice</p>
             <table>
                 <thead>
                     <tr><td>Warden Level</td><td>Innate Spells (1/Long Rest each)</td></tr>
                 </thead>
-                <tr><td>1st</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data2</td></tr>
-                <tr><td>5th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
-                <tr><td>13th</td><td>data4</td></tr>
-                <tr><td>17th</td><td>data4</td></tr>
+                <tr><td>1st</td><td>heroism</td></tr>
+                <tr><td>3rd</td><td>guiding bolt</td></tr>
+                <tr><td>5th</td><td>blazing beacon</td></tr>
+                <tr><td>9th</td><td>daylight</td></tr>
+                <tr><td>13th</td><td>brilliant blade</td></tr>
+                <tr><td>17th</td><td>heavenly ray</td></tr>
             </table>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-        <rules>
-            
-        </rules>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
         </description>
         <sheet>
             <description>You can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Sunwatcher" level="1" id="ID_PHB_SPELL_HEROISM" />
+            <grant type="Spell" spellcasting="Sunwatcher" level="3" id="ID_PHB_SPELL_GUIDING_BOLT" />
+            <grant type="Spell" spellcasting="Sunwatcher" level="5" id="ID_KTH_COLAL_SPELL_BLAZING_BEACON" /> 
+            <grant type="Spell" spellcasting="Sunwatcher" level="9" id="ID_PHB_SPELL_DAYLIGHT" />
+            <grant type="Spell" spellcasting="Sunwatcher" level="13" id="ID_KTH_COLAL_SPELL_BRILLIANT_BLADE" /> 
+            <grant type="Spell" spellcasting="Sunwatcher" level="17" id="ID_KTH_COLAL_SPELL_HEAVENLY_RAY" /> 
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="Solar Flare" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_SOLAR_FLARE">
         <description>
-            <p></p>
+            <p>At 3rd level, when you expend an Endurance Die to block damage, you can cause a brilliant flare of blinding light. The attacker must make a Constitution saving throw with a DC of 8 + your Constitution modifier + your proficiency bonus, or become blinded until the start of their next turn. Pass or fail, if the target is invisible, it is revealed until the start of their next turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you expend an Endurance Die to block damage, you can cause a brilliant flare of blinding light. The attacker must make a Constitution saving throw with a {{solar-flare}} DC , or become blinded until the start of their next turn. Pass or fail, if the target is invisible, it is revealed until the start of their next turn</description>
+        </sheet>
+        <rules>
+            <stat name="solar-flare" value="8" bonus="base" />
+            <stat name="solar-flare" value="proficiency" />
+            <stat name="solar-flare" value="constitution:modifier" />
+        </rules>
+    </element>
+    <element name="Radiant Aura" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_RADIANT_AURA">
+        <description>
+            <p>Additionally at 3rd level, your Primal Interdiction is filled with bright light, and it casts dim light for an additional radius equal to the radius of your Primal Interdiction. This light is difficult to quench, and counts as a spell equal to half your Warden level (rounded down) for the purposes of countering magical darkness. You can dim, extinguish, or relight this light at any time, no action required.</p>
+            <p class="indent">Creatures inside your Primal Interdiction remain comfortably warm, ignoring the effects of cold weather, or heat caused by the sun (though other sources of heat may still cause discomfort, such as lava). You and all friendly creatures within range of Primal Interdiction can apply the damage reduction of your Mystic Bulwark to cold and necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>Your Primal Interdiction is filled with bright light, and it casts dim light for an additional radius equal to the radius of your Primal Interdiction. This light is difficult to quench, and counts as a spell equal of {{level:warden:half}} level (rounded down) for the purposes of countering magical darkness. You can dim, extinguish, or relight this light at any time, no action required.
+            Creatures inside your Primal Interdiction remain comfortably warm, ignoring the effects of cold weather, or heat caused by the sun (though other sources of heat may still cause discomfort, such as lava). You and all friendly creatures within range of Primal Interdiction can apply the damage reduction of your Mystic Bulwark to cold and necrotic damage.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
+    <element name="Empowering Presence" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_EMPOWERING_PRESENCE">
         <description>
-            <p></p>
+            <p>Starting at 7th level, when you expend an Endurance Die to boost a saving throw against a spell, all allies within your Primal Interdiction that make a saving throw against the same spell before the start of your next turn can add the same Endurance Die to their saving throw.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you expend an Endurance Die to boost a saving throw against a spell, all allies within your Primal Interdiction that make a saving throw against the same spell before the start of your next turn can add the same Endurance Die to their saving throw.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
+    <element name="Transcendent Passage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_TRANSCENDENT_PASSAGE">
         <description>
-            <p></p>
+            <p>Starting at 14th level, as a bonus action, you can transform into a swirling burst of radiant sunlight, traveling up to 60 feet in a straight line. You can pass through creatures and objects, but are blocked by obstructions that completely block light (such as solid opaque walls). This movement does not provoke attacks of opportunity.</p>
+            <p class="indent">Hostile creatures of your choice in your path must make a Dexterity saving throw against 8 + your Strength or Wisdom modifier (your choice) + your proficiency bonus. On failure, they take 2d6 fire damage, 2d6 radiant damage, and are blinded until the start of your next turn. On a success, they take half as much damage and are not blinded. Allied creatures of your choice in your path gain 4d6 temporary hit points. Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>As a bonus action, you can transform into a swirling burst of radiant sunlight, traveling up to 60 feet in a straight line. You can pass through creatures and objects, but are blocked by obstructions that completely block light (such as solid opaque walls). This movement does not provoke attacks of opportunity.
+            Hostile creatures of your choice in your path must make a Dexterity saving throw against 8 + your Strength ({{strength:modifier}}) or Wisdom modifier ({{wisdom:modifier}}) (your choice) + {{proficiency}}. On failure, they take 2d6 fire damage, 2d6 radiant damage, and are blinded until the start of your next turn. On a success, they take half as much damage and are not blinded. Allied creatures of your choice in your path gain 4d6 temporary hit points.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
+    <element name="Solar Avatar" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_SUNWATCHER_SOLAR_AVATAR">
         <description>
-            <p></p>
+            <p>Starting at 17th level, as a bonus action you can call upon the power of the sun to embody its power for 1 minute. For the duration, you gain the following benefits:</p>
+            <ul>
+                <li><strong>Sun Light.</strong> You shed bright light for 60 feet, and dim light for additional 60 feet. The bright light is sunlight.</li>
+                <li><strong>Harsh Light.</strong> Creatures in the bright light you shed have disadvantage on saving throws against your Warden abilities and spells.</li>
+                <li><strong>Empowered Radiance.</strong> When you make a Radiant Blast, you can shoot a beam of energy instead of an attack, forcing all creatures in a 60 foot line to make a Dexterity saving throw against 8 + your Strength or Wisdom modifier (your choice) + your proficiency bonus, taking damage equal to your Radiant Blast damage on failure, or half as much on a success.</li>
+                <li><strong>Lingering Light.</strong> When you deal radiant damage against a target, you imbue the target with a radiant illumination, granting advantage to the next attack made against that target before the start of your next turn.</li>
+            </ul>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action you can call upon the power of the sun to embody its power for 1 minute. For the duration, you gain the following benefits:
+            Sun Light. You shed bright light for 60 feet, and dim light for additional 60 feet. The bright light is sunlight.
+            Harsh Light. Creatures in the bright light you shed have disadvantage on saving throws against your Warden abilities and spells.
+            Empowered Radiance. When you make a Radiant Blast, you can shoot a beam of energy instead of an attack, forcing all creatures in a 60 foot line to make a Dexterity saving throw against 8 + your Strength ({{strength:modifier}}) or Wisdom modifier ({{wisdom:modifier}}) (your choice) + {{proficiency}}, taking damage equal to your Radiant Blast damage on failure, or half as much on a success.
+            Lingering Light. When you deal radiant damage against a target, you imbue the target with a radiant illumination, granting advantage to the next attack made against that target before the start of your next turn.</description>
         </sheet>
     </element>
 </elements>
