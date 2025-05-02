@@ -9,131 +9,133 @@
     <element name="Timetwister" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARDEN_TIMETWISTER">
         <supports>warden-bond</supports>
         <description>
-            <p></p>
+            <p>The Timetwister draws upon the enigmatic forces of time, its unstoppable march, and the ebb and flow of the past, present, and future. These Wardens manipulate the battlefield, expedite their allies’ actions to a blur while slow their enemies to a crawl. They witness flickers of the past, glimpses of the future, and the ever branching pathways of the present. In battle, a fleeting moment is the only gap between life and death, and these Wardens are the masters of moments.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_DILATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_FORESHADOWING" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_INNATE_MAGIC" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_DISTORTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIMELY_INTERVENTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_ZONE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_CHRONO_CONTROLLER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_LOCK" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_DILATION" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_FORESHADOWING" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_INNATE_MAGIC" level="1" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="3" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="14" />
-            <grant type="Archetype Feature" id="ID__________" level="14" />
-            <grant type="Archetype Feature" id="ID___________" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_DISTORTION" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIMELY_INTERVENTION" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_ZONE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_CHRONO_CONTROLLER" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_LOCK" level="17" />
         </rules>
         <spellcasting name="Timetwister" ability="Wisdom" prepare="false">
             <list>Timetwister</list>
         </spellcasting>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Time Dilation" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_DILATION">
         <description>
-            <p></p>
+            <p>Starting at 1st level, you gain the ability to manipulate the flow of time for a creature. As an action, you can accelerate the movement through time for a creature within 60 feet of you, allowing them to move more rapidly. That creature’s movement speed is increased by 10 feet, and when they take the Attack action, they can make a single additional weapon attack as part of the same action until the start of your next turn.</p>
+            <p class="indent">Alternatively, you can decelerate down the movement through time of a creature within 60 feet of you. That creature’s speed is reduced by 10 feet and it subtracts a d4 from its attack rolls and Dexterity saving throws until the start of your next turn. When you gain a feature that increases the size of the die for natural weapons you gain from the Warden class, the size of the die increases by one step.</p>
+            <p class="indent">When you reach 5th level in this subclass, you can accelerate or decelerate a creature as an attack as part of attack action, but you can only do each once per turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can accelerate the movement through time for a creature within 60 feet of you, allowing them to move more rapidly. That creature’s movement speed is increased by 10 feet, and when they take the Attack action, they can make a single additional weapon attack as part of the same action until the start of your next turn.
+            Alternatively, you can decelerate down the movement through time of a creature within 60 feet of you. That creature’s speed is reduced by 10 feet and it subtracts a d4 from its attack rolls and Dexterity saving throws until the start of your next turn. When you gain a feature that increases the size of the die for natural weapons you gain from the Warden class, the size of the die increases by one step.</description>
+            <description level="5">As an action, you can accelerate the movement through time for a creature within 60 feet of you, allowing them to move more rapidly. That creature’s movement speed is increased by 10 feet, and when they take the Attack action, they can make a single additional weapon attack as part of the same action until the start of your next turn.
+            Alternatively, you can decelerate down the movement through time of a creature within 60 feet of you. That creature’s speed is reduced by 10 feet and it subtracts a d4 from its attack rolls and Dexterity saving throws until the start of your next turn. When you gain a feature that increases the size of the die for natural weapons you gain from the Warden class, the size of the die increases by one step.
+            You can accelerate or decelerate a creature as an attack as part of attack action, but you can only do each once per turn.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Foreshadowing" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_FORESHADOWING">
         <description>
-            <p></p>
+            <p>Additionally at 1st level, you can glimpse future possibilities. When you roll initiative, record the result on the d20. Within the next minute, you can replace one of your attack rolls, ability checks, or saving throws with the roll.</p>
+            <p class="indent"></p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>When you roll initiative, record the result on the d20. Within the next minute, you can replace one of your attack rolls, ability checks, or saving throws with the roll.
+            Alternatively, you can replace one attack roll or contested ability check of an enemy within 5 feet of you with the roll. This range extends to the range of your Primal Interdiction when you gain that feature.</description>
         </sheet>
     </element>
     <element name="Innate Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_INNATE_MAGIC">
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Additionally when you select this bond, you gain access to several innate magical abilities by channeling the power of your primal connection.</p>
+            <p class="indent">You gain the following spells at the listed levels, and can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</p>
             <table>
                 <thead>
                     <tr><td>Warden Level</td><td>Innate Spells (1/Long Rest each)</td></tr>
                 </thead>
-                <tr><td>1st</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data2</td></tr>
-                <tr><td>5th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
-                <tr><td>13th</td><td>data4</td></tr>
-                <tr><td>17th</td><td>data4</td></tr>
+                <tr><td>1st</td><td>longstrider</td></tr>
+                <tr><td>3rd</td><td>hold person</td></tr>
+                <tr><td>5th</td><td>alacrity</td></tr>
+                <tr><td>9th</td><td>slow</td></tr>
+                <tr><td>13th</td><td>haste</td></tr>
+                <tr><td>17th</td><td>hold monster</td></tr>
             </table>
         </description>
         <sheet>
             <description>You can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</description>
         </sheet>
         <rules>
-            
+            <grant type="Spell" spellcasting="Timetwister" level="1" id="ID_PHB_SPELL_LONGSTRIDER" />
+            <grant type="Spell" spellcasting="Timetwister" level="3" id="ID_PHB_SPELL_HOLD_PERSON" />
+            <grant type="Spell" spellcasting="Timetwister" level="5" id="ID_KTH_COLAL_SPELL_ALACRITY" />
+            <grant type="Spell" spellcasting="Timetwister" level="9" id="ID_PHB_SPELL_SLOW" />
+            <grant type="Spell" spellcasting="Timetwister" level="13" id="ID_PHB_SPELL_HASTE" />
+            <grant type="Spell" spellcasting="Timetwister" level="17" id="ID_PHB_SPELL_HOLD_MONSTER" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Time Distortion" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_DISTORTION">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, your Primal Interdiction begins to distort time. The difficult terrain created by your Primal Interdiction affects the movement of flying creatures as well, and when you recklessly defend your allies with your Primal Interdiction you can grant them advantage on Dexterity saving throws as well.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The difficult terrain created by your Primal Interdiction affects the movement of flying creatures as well, and when you recklessly defend your allies with your Primal Interdiction you can grant them advantage on Dexterity saving throws as well.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Timely Intervention" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIMELY_INTERVENTION">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, you can expend Endurance Dice to further bend time within your Primal Interdiction, gaining the following new options for using them:</p>
+            <ul>
+                <li><strong>Missed Beat:</strong> As a reaction to a creature within your Primal Interdiction being attacked, you can expend an Endurance Die to slow the creature's reactions, giving the triggering attack against them advantage.</li>
+                <li><strong>Minor Adjustment:</strong> As a reaction to a creature within your Primal Interdiction being affected by an area of effect, you stop time long enough for them to move up to 5 feet before the effect applies, potentially moving out of the area of effect.</li>
+                <li><strong>Arrow Time:</strong> As a reaction to a creature within your Primal Interdiction being attacked by a ranged weapon projectile attack, you can stop the projectile in time, rolling the Endurance Die and subtracting the roll from the weapon’s attack roll.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>You can expend Endurance Dice to further bend time within your Primal Interdiction.
+            Missed Beat: As a reaction to a creature within your Primal Interdiction being attacked, you can expend an Endurance Die to slow the creature's reactions, giving the triggering attack against them advantage.
+            Minor Adjustment: As a reaction to a creature within your Primal Interdiction being affected by an area of effect, you stop time long enough for them to move up to 5 feet before the effect applies, potentially moving out of the area of effect.
+            Arrow Time: As a reaction to a creature within your Primal Interdiction being attacked by a ranged weapon projectile attack, you can stop the projectile in time, rolling the Endurance Die and subtracting the roll from the weapon’s attack roll.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="Time Zone" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_ZONE">
         <description>
-            <p></p>
+            <p>Starting at 7th level, as a bonus action you can project your Primal Interdiction to be centered on a point within 60 feet instead of you. When you do so, the effects of difficult terrain and your abilities that take place inside your Primal Interdiction cover the area within range of the point rather than you. The aura returns to surrounding you if you move more than 60 feet from the point, or if you return it to you as a bonus action. You cannot recklessly defend your allies with your Primal Interdiction while it is projected at a point that does not also contain you within its radius.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As a bonus action you can project your Primal Interdiction to be centered on a point within 60 feet instead of you. When you do so, the effects of difficult terrain and your abilities that take place inside your Primal Interdiction cover the area within range of the point rather than you. The aura returns to surrounding you if you move more than 60 feet from the point, or if you return it to you as a bonus action. You cannot recklessly defend your allies with your Primal Interdiction while it is projected at a point that does not also contain you within its radius.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
+    <element name="Chrono Controller" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_CHRONO_CONTROLLER">
         <description>
-            <p></p>
+            <p>Starting at 14th level, your mastery of time becomes more extensive and intuitive. You can no longer lose concentration on spells granted by your Innate Magic feature from this subclass by taking damage, and when you cast them, you can cast them as if they were cast with a spell slot one level higher than their default spell level when they have an applicable effect.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can no longer lose concentration on spells granted by your Innate Magic feature from this subclass by taking damage, and when you cast them, you can cast them as if they were cast with a spell slot one level higher than their default spell level when they have an applicable effect.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
+    <element name="Time Lock" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_TIMETWISTER_TIME_LOCK">
         <description>
-            <p></p>
+            <p>Starting at 17th level, you can cast time stop without expending a spell slot. When you cast time stop, you always stop time for maximum amount of time rather than rolling.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast time stop without expending a spell slot. When you cast time stop, you always stop time for maximum amount of time rather than rolling.</description>
         </sheet>
     </element>
 </elements>
