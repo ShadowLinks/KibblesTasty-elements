@@ -9,131 +9,147 @@
     <element name="Ironbound" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARDEN_IRONBOUND">
         <supports>warden-bond</supports>
         <description>
-            <p></p>
+            <p>Ironbound Wardens assert that all that comes of earth is born of primal power, embracing forged metal. Often drawn from mining communities, blacksmiths, or otherwise those with deep understanding and appreciation of the fusion of nature and civilization that forged metal represents, they take full advantage of its power to become invincible edifices of iron.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_IRONMONGER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_ARMOR_BOND" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_INNATE_MAGIC" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_UNBREAKABLE_ENDURANCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_BINDING_INTERDICTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_IRON_CARAPACE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_IRON_INCARCERATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_METALLIC_MONOLITH" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_IRONMONGER" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_ARMOR_BOND" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_INNATE_MAGIC" level="1" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="3" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="14" />
-            <grant type="Archetype Feature" id="ID__________" level="14" />
-            <grant type="Archetype Feature" id="ID___________" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_UNBREAKABLE_ENDURANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_BINDING_INTERDICTION" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_IRON_CARAPACE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_IRON_INCARCERATION" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_METALLIC_MONOLITH" level="17" />
         </rules>
         <spellcasting name="Ironbound" ability="Wisdom" prepare="false">
             <list>Ironbound</list>
         </spellcasting>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Ironmonger" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_IRONMONGER">
         <description>
-            <p></p>
+            <p>Starting at 1st level you gain proficiency in heavy armor and martial melee weapons. Your Mystical Bulwark functions even when using heavy armor, though if you gain additional sources of passive damage reduction, additional sources beyond the highest value only increase the damage reduction by one for each additional source of passive damage reduction.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your Mystical Bulwark functions even when using heavy armor, though if you gain additional sources of passive damage reduction, additional sources beyond the highest value only increase the damage reduction by one for each additional source of passive damage reduction.</description>
         </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Armor Bond" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_ARMOR_BOND">
         <description>
-            <p></p>
+            <p>At 1st level, as an action, you can touch a set of metal armor worn by a creature of your choice (including yourself) and fortify it. The creature gains temporary hit points equal to 1d8 + your Warden level. Once you use this ability, you cannot use it again until you complete a short or long rest. Any temporary hit points remaining from this feature fade when you use it again.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, you can touch a set of metal armor worn by a creature of your choice (including yourself) and fortify it. The creature gains temporary hit points equal to 1d8 + {{level:warden}}.</description>
         </sheet>
     </element>
     <element name="Innate Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_INNATE_MAGIC">
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Additionally when you select this bond, you gain access to several innate magical abilities by channeling the power of your primal connection.</p>
+            <p class="indent">You gain the following spells at the listed levels, and can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</p>
             <table>
                 <thead>
                     <tr><td>Warden Level</td><td>Innate Spells (1/Long Rest each)</td></tr>
                 </thead>
-                <tr><td>1st</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data2</td></tr>
-                <tr><td>5th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
-                <tr><td>13th</td><td>data4</td></tr>
-                <tr><td>17th</td><td>data4</td></tr>
+                <tr><td>1st</td><td>unburden</td></tr>
+                <tr><td>3rd</td><td>arcane ablation</td></tr>
+                <tr><td>5th</td><td>clay touch</td></tr>
+                <tr><td>9th</td><td>protection from energy</td></tr>
+                <tr><td>13th</td><td>iron garden</td></tr>
+                <tr><td>17th</td><td>repair</td></tr>
             </table>
         </description>
         <sheet>
             <description>You can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</description>
         </sheet>
         <rules>
-            
+            <grant type="Spell" spellcasting="Ironbound" level="1" id="ID_KTH_COLAL_SPELL_UNBURDEN" />
+            <grant type="Spell" spellcasting="Ironbound" level="3" id="ID_KTH_COLAL_SPELL_ARCANE_ABLATION" />
+            <grant type="Spell" spellcasting="Ironbound" level="5" id="ID_KTH_COLAL_SPELL_CLAY_TOUCH" />
+            <grant type="Spell" spellcasting="Ironbound" level="9" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" />
+            <grant type="Spell" spellcasting="Ironbound" level="13" id="ID_KTH_COLAL_SPELL_IRON_GARDEN" />
+            <grant type="Spell" spellcasting="Ironbound" level="17" id="ID_KTH_COLAL_SPELL_REPAIR" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Unbreakable Endurance" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_UNBREAKABLE_ENDURANCE">
         <description>
-            <p></p>
+            <p>At 3rd level, when you use an Endurance Die to block damage, if it does not completely block the damage taken, you gain resistance to the remaining damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use an Endurance Die to block damage, if it does not completely block the damage taken, you gain resistance to the remaining damage.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Binding Interdiction" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_BINDING_INTERDICTION">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, you gain the ability to manifest chains within the range of your Primal Interdiction.</p>
+            <p class="indent">As a reaction to a creature attempting to leave your Primal Interdiction or as an attack as part of the Attack action, you can manifest a chain and attempt to bind a Large or smaller creature with it, making a grapple check against the target. On a success, they are grappled by the chain until they escape (contesting your grapple check), the chain is destroyed, or they are no longer within your primal interdiction.</p>
+            <p class="indent">The chain can be destroyed. It has an AC of 18 and number of hit points equal to your Warden level, but you take no damage when the chain is destroyed. If a target escapes the chains, the chains fall to the ground and turn to dust.</p>
+            <p class="indent">You can manifest one chain at a time. If you manifest an additional chain while you already have your maximum number of chains manifested, the first created one vanishes, releasing the target. The number of chains you can manifest this way increases by one each time you gain an effect that would increase the damage die of your Warden natural weapons (such as Evolving Power or Savage Weapons). Once you can manifest more than one chain, you can target the same creature with multiple chains. A creature is restrained while grappled by more than one chain.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As a reaction to a creature attempting to leave your Primal Interdiction or as an attack as part of the Attack action, you can manifest a chain and attempt to bind a Large or smaller creature with it, making a grapple check against the target. On a success, they are grappled by the chain until they escape (contesting your grapple check), the chain is destroyed, or they are no longer within your primal interdiction.
+            The chain can be destroyed. It has an AC of 18 and {{level:warden}} hp, but you take no damage when the chain is destroyed. If a target escapes the chains, the chains fall to the ground and turn to dust.
+            You can manifest one chain at a time. If you manifest an additional chain while you already have your maximum number of chains manifested, the first created one vanishes, releasing the target. The number of chains you can manifest this way increases by one each time you gain an effect that would increase the damage die of your Warden natural weapons (such as Evolving Power or Savage Weapons). Once you can manifest more than one chain, you can target the same creature with multiple chains. A creature is restrained while grappled by more than one chain.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="Iron Carapace" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_IRON_CARAPACE">
         <description>
-            <p></p>
+            <p>Starting at 7th level, you can use your power to morph and adapt heavy armor you are wearing. As an action, you can reconfigure your armor, selecting one of the following options.</p>
+            <ul>
+                <li><strong>Reinforced Carapace.</strong> Your AC while wearing heavy armor increases by 1.</li>
+                <li><strong>Regenerating Carapace. </strong>At the end of each of your turns, you restore any damage it has taken, restoring its original AC value. Any pieces that have been removed before regeneration rust away to nothing. If you are wearing no armor, you can use this feature to create a set of mundane heavy armor of your choice (which is automatically equipped). Armor created this way rusts away to nothing when removed.</li>
+                <li><strong>Spiked Carapace.</strong> When a creature hits you with a melee weapon attack while within 5 feet of you or attempts to grapple you, they take 1d4 piercing damage. The damage increases to 2d4 when you reach 14th level.</li>
+            </ul>
+            <p class="indent">The effect lasts until you select another effect, or end the effect as a bonus action.</p>
         </description>
         <sheet>
-            <description></description>
+            <description> As an action, you can reconfigure your heavy armor, selecting one of the following options.
+            Reinforced Carapace. Your AC while wearing heavy armor increases by 1.
+            Regenerating Carapace. At the end of each of your turns, you restore any damage it has taken, restoring its original AC value. Any pieces that have been removed before regeneration rust away to nothing. If you are wearing no armor, you can use this feature to create a set of mundane heavy armor of your choice (which is automatically equipped). Armor created this way rusts away to nothing when removed.
+            Spiked Carapace. When a creature hits you with a melee weapon attack while within 5 feet of you or attempts to grapple you, they take 1d4 piercing damage.
+            The effect lasts until you select another effect, or end the effect as a bonus action.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
+    <element name="Iron Incarceration" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_IRON_INCARCERATION">
         <description>
-            <p></p>
+            <p>Starting at 14th level, as bonus action, you can force all Large or smaller creatures of your choice within range of your primal Interdiction to make a Dexterity saving throw against 8 + your Strength or Wisdom modifier (your choice) + your Proficiency bonus. On failure, they are grappled by chains as per your Binding Interdiction feature. Chains created by this feature do not count against your maximum number of chains. You can choose to pull creatures that fail their saving throw to the closest available space to you when they fail their save.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>s bonus action, you can force all Large or smaller creatures of your choice within range of your primal Interdiction to make a Dexterity saving throw against 8 + your Strength or Wisdom modifier (your choice) + your Proficiency bonus. On failure, they are grappled by chains as per your Binding Interdiction feature. Chains created by this feature do not count against your maximum number of chains. You can choose to pull creatures that fail their saving throw to the closest available space to you when they fail their save.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
+    <element name="Metallic Monolith" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_IRONBOUND_METALLIC_MONOLITH">
         <description>
-            <p></p>
+            <p>Starting at 17th level, as an action you can empower yourself for 1 minute. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Enlarged Weapons.</strong> Metal weapons you are carrying grow larger and more powerful, increasing their damage by 1d8 while you wield them.</li>
+                <li><strong>Unlimited Chains.</strong> You can generate an unlimited number of chains with Binding Interdiction, and they no longer have any size limit on what they can restrain.</li>
+                <li><strong></strong>Implacable Monolith. You are immune to any effect that would move you against your will or knock you prone.</li>
+                <li><strong>Damage Resistance.</strong> You gain resistance to bludgeoning, piercing, and slashing damage.</li>
+            </ul>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As an action you can empower yourself for 1 minute. You gain the following benefits:
+            Enlarged Weapons. Metal weapons you are carrying grow larger and more powerful, increasing their damage by 1d8 while you wield them.
+            Unlimited Chains. You can generate an unlimited number of chains with Binding Interdiction, and they no longer have any size limit on what they can restrain.
+            Implacable Monolith. You are immune to any effect that would move you against your will or knock you prone.
+            Damage Resistance. You gain resistance to bludgeoning, piercing, and slashing damage.</description>
         </sheet>
     </element>
 </elements>
