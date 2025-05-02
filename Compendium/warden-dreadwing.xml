@@ -214,11 +214,11 @@
         <description>
             <p>Starting at 17th level, when you would manifest your Draconic Talons, you can instead completely turn into a dragon. You gain the benefits of your Draconic Talons and Dragon Wings, but with the following properties:</p>
             <ul>
-                <li><strong></strong>Large Size. Your size becomes Large, and you gain advantage on Strength (Athletics) checks to grapple creatures smaller than you.</li>
-                <li><strong></strong>Empowered Dragon Breath. When you use your Dragon Breath, you roll twice the number of stored dice for damage.</li>
-                <li><strong></strong>Extra Natural Weapons. You gain a Bite and Tail attack, which are natural weapons like your Draconic Claws and deal the same amount of damage, but change their damage type and replace their special property. The Bite deals piercing damage instead of slashing damage and gains an additional 1d8 elemental damage (matching your Dragon Breath damage type) in place of the special property, and the Tail deals bludgeoning damage instead of piercing damage and gains the reach property in place of the special property.</li>
-                <li><strong></strong>Empowered Weapons. Your natural weapons deal one additional die of damage while transformed this way.</li>
-                <li><strong></strong>Dragon Dread. Creatures frightened by your Intimidating Interdiction become frightened for 1 minute instead. Frightened creatures can repeat the saving throw against the frightened condition at the end of each of their turns, ending the effect on success.</li>
+                <li><strong>Large Size.</strong> Your size becomes Large, and you gain advantage on Strength (Athletics) checks to grapple creatures smaller than you.</li>
+                <li><strong>Empowered Dragon Breath.</strong> When you use your Dragon Breath, you roll twice the number of stored dice for damage.</li>
+                <li><strong>Extra Natural Weapons.</strong> You gain a Bite and Tail attack, which are natural weapons like your Draconic Claws and deal the same amount of damage, but change their damage type and replace their special property. The Bite deals piercing damage instead of slashing damage and gains an additional 1d8 elemental damage (matching your Dragon Breath damage type) in place of the special property, and the Tail deals bludgeoning damage instead of piercing damage and gains the reach property in place of the special property.</li>
+                <li><strong>Empowered Weapons.</strong> Your natural weapons deal one additional die of damage while transformed this way.</li>
+                <li><strong>Dragon Dread.</strong> Creatures frightened by your Intimidating Interdiction become frightened for 1 minute instead. Frightened creatures can repeat the saving throw against the frightened condition at the end of each of their turns, ending the effect on success.</li>
             </ul>
             <p class="indent">You can maintain this form for up to 10 minutes, after which you must return to your normal form. You return to your original form early if you fall unconscious, or you can end the form early as an action. Once you assume this form, you cannot assume it again until you complete a long rest.</p>
         </description>
