@@ -9,131 +9,270 @@
     <element name="Bone Binder" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARDEN_BONEBINDER">
         <supports>warden-bond</supports>
         <description>
-            <p></p>
+            <p>Commanding the dark powers of the fallen, a Bone Warden watches over the endless and final silence of the end of life. Solemn and grim, they recycle the remains of life to one final service, binding the bones of once living creatures to form their armor, weapons, and grim constructs to bind and crush those that stand in their way of their primal decrees.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_CONSTRUCT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_MACABRE_MANTLE" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_INNATE_MAGIC" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_EMISSARY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONDED_ENDURANCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_UNEARTHED_TITAN" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_UNLIVING_RESILIENCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_GRAVE_GRIP" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_DEATHS_DOMAIN" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_CONSTRUCT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_MACABRE_MANTLE" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_INNATE_MAGIC" level="1" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="3" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="14" />
-            <grant type="Archetype Feature" id="ID__________" level="14" />
-            <grant type="Archetype Feature" id="ID___________" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_EMISSARY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONDED_ENDURANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_UNEARTHED_TITAN" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_UNLIVING_RESILIENCE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_GRAVE_GRIP" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_DEATHS_DOMAIN" level="17" />
         </rules>
         <spellcasting name="Bone Binder" ability="Wisdom" prepare="false">
             <list>Bone Binder</list>
         </spellcasting>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Bone Construct" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_CONSTRUCT">
         <description>
-            <p></p>
+            <p>Starting at 1st level, as an action you can call forth a grim construct of bones that bursts from the ground in an empty space within 10 feet of you. It has the following stat block. It shares your turn, but cannot take any actions unless you use your action to direct it to take the Dodge action, Dash action, or take an action listed in its stat block. In addition to the actions in a stat block, it can follow simple instructions and perform simple tasks out of combat, but cannot communicate or execute complicated directions on its own. If you give it no directions, it stands still or follows you if you are more than 30 feet from it. When you gain the Extra Attack feature, you can replace one attack you can make with directing your Bone Construct to take an action.</p>
+            <p class="indent">Its Strength (indicated in its stat block as a *) is equal to your Strength or Wisdom ability score (your choice).</p>
+            <p class="indent">If it is more than 120 feet from you or reduced to zero hit points, it crumbles to dust. You can dismiss your Construct at any time as a bonus action, causing crumble to dust and await your call again.</p>
+            <p class="indent">Your Bone Construct’s hit points are maintained between summons, but if it has less than your Warden level in hit points (such as if it was previously destroyed by being reduced to 0 hit points), it gains hit points equal to your Warden level when you spend your action calling it, and regains all of its hit points when you complete a long rest.</p>
+            <p class="indent">Your Bone Constructs Slam damage die is increased in size by any effect that increases the size of your natural weapon damage dice.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action you can call forth a grim construct of bones that bursts from the ground in an empty space within 10 feet of you. It has the following stat block. It shares your turn, but cannot take any actions unless you use your action to direct it to take the Dodge action, Dash action, or take an action listed in its stat block. In addition to the actions in a stat block, it can follow simple instructions and perform simple tasks out of combat, but cannot communicate or execute complicated directions on its own. If you give it no directions, it stands still or follows you if you are more than 30 feet from it. When you gain the Extra Attack feature, you can replace one attack you can make with directing your Bone Construct to take an action.
+            Its Strength is equal to your Strength or Wisdom ability score (your choice).
+            If it is more than 120 feet from you or reduced to zero hit points, it crumbles to dust. You can dismiss your Construct at any time as a bonus action, causing crumble to dust and await your call again.
+            Your Bone Construct’s hit points are maintained between summons, but if it has less than {{level:warden}} hit points, it gains {{level:warden}} hit points when you spend your action calling it, and regains all of its hit points when you complete a long rest.
+            Your Bone Constructs Slam damage die is increased in size by any effect that increases the size of your natural weapon damage dice.</description>
+        </sheet>
+        <rules>
+            <select type="Companion" name="Bone Construct" supports="bone-construct-companion" />
+        </rules>
+    </element>
+    <element name="Bone Construct" type="Companion" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_WARDEN_BONEBINDER_BONE_CONSTRUCT">
+        <supports>bone-construct-companion</supports>
+        <description>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Undead</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">12 + proficiency</set>
+            <set name="hp">5 x warden level</set>
+            <set name="speed">30 ft.</set>
+            <set name="strength">10</set>
+            <set name="dexterity">8</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">1</set>
+            <set name="wisdom">1</set>
+            <set name="charisma">1</set>
+            <set name="vulnerabilities">bludgeoning</set>
+            <set name="resistances">piercing, necrotic</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">exhausted</set>            
+            <set name="senses">darkvison 60ft., passive Perception 5</set>
+            <set name="languages"></set>
+            <set name="challenge">1</set>
+            <set name="traits">ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_CONSTRUCT_STATS</set>
+            <set name="actions">ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_CONSTRUCT_GRAPPLE,ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_CONSTRUCT_SLAM</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" />
+            <stat name="companion:hp:max" value="5" bonus="base" />
+            <stat name="companion:speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Bone Construct Stats" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_CONSTRUCT_STATS">
+        <description>
+            <p>STR = your STR or WIS</p>
+            <p class="indent">AC = 12 + Proficiency</p>
+            <p class="indent">HP = 5 x Warden Level</p>
+            <p class="indent">Athletics = STR + proficiency</p>
+        </description>
+        <sheet>
+            <description>STR = your STR or WIS
+            AC = 12 + Proficiency
+            HP = 5 x Warden Level
+            Athletics = STR + proficiency</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Grapple" type="Companion Action" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_CONSTRUCT_GRAPPLE">
         <description>
-            <p></p>
+            <p>The Bone Construct makes a grapple or shove check against a target creature within 5 feet.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The Bone Construct makes a grapple or shove check against a target creature within 5 feet.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Slam" type="Companion Action" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_CONSTRUCT_SLAM">
         <description>
-            <p></p>
+            <p><i>Melee Weapon Attack:</i> STR + Prof to hit, reach 5 ft., one target. <i>Hit:</i> 1d8 + STR bludgeoning damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Melee Weapon Attack: STR + Prof to hit, reach 5 ft., one target. Hit: 1d8 + STR bludgeoning damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Macabre Mantle" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_MACABRE_MANTLE">
+        <description>
+            <p>At 1st level, if your armor becomes damaged, you can repair it using the bones of a medium or larger creature’s corpse (provided it has bones). You can forge entirely new armor this way. Armor forged this way can be any mundane armor with a maximum value of 100 times your Warden level in gold pieces, and can only be used by you.</p>
+            <p class="indent">Additionally, while you are wearing armor created this way or that you’ve bonded with Mystic Bulwark, you gain proficiency with the Intimidation skill.</p>
+        </description>
+        <sheet>
+            <description>If your armor becomes damaged, you can repair it using the bones of a medium or larger creature’s corpse (provided it has bones). You can forge entirely new armor this way. Armor forged this way can be any mundane armor with a maximum value of {{level:warden}}00 in gold pieces, and can only be used by you.
+            While you are wearing armor created this way or that you’ve bonded with Mystic Bulwark, you gain proficiency with the Intimidation skill.</description>
         </sheet>
     </element>
     <element name="Innate Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_INNATE_MAGIC">
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Additionally when you select this bond, you gain access to several innate magical abilities by channeling the power of your primal connection.</p>
+            <p class="indent">You gain the following spells at the listed levels, and can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</p>
             <table>
                 <thead>
                     <tr><td>Warden Level</td><td>Innate Spells (1/Long Rest each)</td></tr>
                 </thead>
-                <tr><td>1st</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data2</td></tr>
-                <tr><td>5th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
-                <tr><td>13th</td><td>data4</td></tr>
-                <tr><td>17th</td><td>data4</td></tr>
+                <tr><td>1st</td><td>grip of the dead</td></tr>
+                <tr><td>3rd</td><td>false life</td></tr>
+                <tr><td>5th</td><td>augury</td></tr>
+                <tr><td>9th</td><td>speak with the dead</td></tr>
+                <tr><td>13th</td><td>animated dead*</td></tr>
+                <tr><td>17th</td><td>ribcage</td></tr>
             </table>
+            <p class="indent">*cannot be cast again early using endurance dice.</p>
         </description>
         <sheet>
             <description>You can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</description>
+            <description level="13">You can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.
+            Animate dead cannot be cast again early using endurance dice.</description>
         </sheet>
         <rules>
-            
+            <grant type="Spell" spellcasting="Bone Binder" level="1" id="ID_KTH_COLAL_SPELL_GRIP_OF_THE_DEAD" />
+            <grant type="Spell" spellcasting="Bone Binder" level="3" id="ID_PHB_SPELL_DETECT_MAGIC" />
+            <grant type="Spell" spellcasting="Bone Binder" level="5" id="ID_PHB_SPELL_AUGURY" />
+            <grant type="Spell" spellcasting="Bone Binder" level="9" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+            <grant type="Spell" spellcasting="Bone Binder" level="13" id="ID_PHB_SPELL_ANIMATE_DEAD" />
+            <grant type="Spell" spellcasting="Bone Binder" level="17" id="ID_KTH_COLAL_SPELL_RIBCAGE" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Bone Emissary" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONE_EMISSARY">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, your Bone Construct gains its own Primal Interdiction extending to a range of 5 feet around it. When you recklessly defend your allies within range of your Primal Interdiction, your Bone Construct does the same for any creatures within the range of the Primal Interdiction emitting from it.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your Bone Construct gains its own Primal Interdiction extending to a range of 5 feet around it. When you recklessly defend your allies within range of your Primal Interdiction, your Bone Construct does the same for any creatures within the range of the Primal Interdiction emitting from it.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Bonded Endurance" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_BONDED_ENDURANCE">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, you can use Endurance Dice to reduce damage taken by your Bone Construct. When you do so, you gain temporary hit points equal to the value rolled on the die. When you block damage with an Endurance Die against yourself, your Bone Construct gains temporary hit points equal to value rolled on the die.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can use Endurance Dice to reduce damage taken by your Bone Construct. When you do so, you gain temporary hit points equal to the value rolled on the die. When you block damage with an Endurance Die against yourself, your Bone Construct gains temporary hit points equal to value rolled on the die.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="Unearthed Titan" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_UNEARTHED_TITAN">
         <description>
-            <p></p>
+            <p>Starting at 7th level, your Bone Construct gain the following features:</p>
+            <ul>
+                <li><strong>Large Size.</strong> When you summon it, you can summon it as a Large sized creature.</li>
+                <li><strong>Immediate Commands.</strong> When you use your action to summon it, you can use your bonus action to command it to take one of its actions.</li>
+                <li><strong>Magical Attacks.</strong> Its attacks become magical for the purposes of overcoming resistance to nonmagical attacks.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Your Bone Construct gain the following features:
+            Large Size. When you summon it, you can summon it as a Large sized creature.
+            Immediate Commands. When you use your action to summon it, you can use your bonus action to command it to take one of its actions.
+            Magical Attacks. Its attacks become magical for the purposes of overcoming resistance to nonmagical attacks.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
+    <element name="Unliving Resilience" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_UNLIVING_RESILIENCE">
         <description>
-            <p></p>
+            <p>Additionally at 7th level, you gain resistance to one damage type of your choice from cold, necrotic, or poison damage.</p>
+            <p class="indent">Additionally, you gain advantage on saving throws against poison or disease, and you can go twice as long without breathing, eating, and sleeping without suffering negative consequences.</p>
+        </description>
+        <sheet display="false">
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="unliving-resilience" />
+        </rules>
+    </element>    
+    <element name="Unliving Resilience (Cold)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_UNLIVING_RESILIENCE_COLD">
+        <supports>unliving-resilience</supports>
+        <description>
+            <p>Additionally at 7th level, you gain resistance to one damage type of your choice from cold, necrotic, or poison damage.</p>
+            <p class="indent">Additionally, you gain advantage on saving throws against poison or disease, and you can go twice as long without breathing, eating, and sleeping without suffering negative consequences.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain advantage on saving throws against poison or disease, and you can go twice as long without breathing, eating, and sleeping without suffering negative consequences.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Unliving Resilience (Necrotic)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_UNLIVING_RESILIENCE_NECROTIC">
+        <supports>unliving-resilience</supports>
+        <description>
+            <p>Additionally at 7th level, you gain resistance to one damage type of your choice from cold, necrotic, or poison damage.</p>
+            <p class="indent">Additionally, you gain advantage on saving throws against poison or disease, and you can go twice as long without breathing, eating, and sleeping without suffering negative consequences.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on saving throws against poison or disease, and you can go twice as long without breathing, eating, and sleeping without suffering negative consequences.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+    <element name="Unliving Resilience (Poison)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_UNLIVING_RESILIENCE_POISON">
+        <supports>unliving-resilience</supports>
+        <description>
+            <p>Additionally at 7th level, you gain resistance to one damage type of your choice from cold, necrotic, or poison damage.</p>
+            <p class="indent">Additionally, you gain advantage on saving throws against poison or disease, and you can go twice as long without breathing, eating, and sleeping without suffering negative consequences.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on saving throws against poison or disease, and you can go twice as long without breathing, eating, and sleeping without suffering negative consequences.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+    <element name="Grave Grip" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_GRAVE_GRIP">
+        <description>
+            <p>Starting at 14th level, as an action, you can call for skeletal grasping hands to raise from the ground and bind your foes. All Large or smaller creatures of your choice within range of your Primal Interdiction (or the Primal Interdiction of your Bone Construct) must make a Dexterity saving throw with a DC of 8 + your Strength or Wisdom modifier (your choice) + your proficiency bonus.</p>
+            <p class="indent">On failure, the creature becomes Restrained by a skeletal hand rising from the earth. The creature can break free as an action by making a Strength saving throw with the same DC as the original save, or can be freed if the skeletal hand is destroyed. It has an AC of 13 and 13 hit points, with a vulnerability to bludgeoning damage.</p>
+            <p class="indent">If a creature ends its turn while restrained by a skeletal hand from this ability, it takes 3d6 necrotic damage.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>as an action, you can call for skeletal grasping hands to raise from the ground and bind your foes. All Large or smaller creatures of your choice within range of your Primal Interdiction (or the Primal Interdiction of your Bone Construct) must make a Dexterity saving throw with a DC of 8 + your Strength or Wisdom modifier (your choice) + {{proficiency}}.
+            On failure, the creature becomes Restrained by a skeletal hand rising from the earth. The creature can break free as an action by making a Strength saving throw with the same DC as the original save, or can be freed if the skeletal hand is destroyed. It has an AC of 13 and 13 hit points, with a vulnerability to bludgeoning damage.
+            If a creature ends its turn while restrained by a skeletal hand from this ability, it takes 3d6 necrotic damage.
+            </description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
+    <element name="Death's Domain" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BONEBINDER_DEATHS_DOMAIN">
         <description>
-            <p></p>
+            <p>Starting at 17th level, as a bonus action you can project your domain around you for 1 minute, with the following effects:</p>
+            <ul>
+                <li><strong>Expanded Domain.</strong> The range of your Primal Interdiction is doubled.</li>
+                <li><strong>Spare the Dying.</strong> If an allied creature falls to 0 hit points within range of your Primal Interdiction, you can cast spare the dying on them as a reaction (without needing to be able to touch them).</li>
+                <li><strong>Boneyard.</strong> Skeletal constructs you create (including your Bone Construct, skeletal hands from Grave Grip, objects created by spells such as ribcage, or skeletons created by spells such as animate dead) gain resistance to all damage while within range of your Primal Interdiction.</li>
+            </ul>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action you can project your domain around you for 1 minute, with the following effects:
+            Spare the Dying. If an allied creature falls to 0 hit points within range of your Primal Interdiction, you can cast spare the dying on them as a reaction (without needing to be able to touch them).
+            Boneyard. Skeletal constructs you create (including your Bone Construct, skeletal hands from Grave Grip, objects created by spells such as ribcage, or skeletons created by spells such as animate dead) gain resistance to all damage while within range of your Primal Interdiction.</description>
         </sheet>
     </element>
 </elements>
