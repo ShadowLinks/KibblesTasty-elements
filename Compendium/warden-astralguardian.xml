@@ -152,10 +152,10 @@
         <description>
             <p>Starting at 17th level, you can astrally project your soul out of your body as an action. When you do so, your body becomes stunned and incapacitated, but you can act in your astral form. While in your astral form, you have the following benefits:</p>
             <ul>
-                <li><strong></strong>Astral Form. Your astral form is resistant to bludgeoning, piercing, and slashing damage.</li>
-                <li><strong></strong>Flying Speed. You gain a flying speed equal to your movement speed, and can hover.</li>
-                <li><strong></strong>Ethereal. You can pass through physical objects and creatures as if they are difficult terrain, but cannot end your turn inside another creatures or objects’ space, being moved to the last unoccupied space you occupied if you try.</li>
-                <li><strong></strong>Planar Shift. You can move between your current plane and the ethereal plane as an action. While on the ethereal plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can’t see anything there more than 60 feet away.</li>
+                <li><strong>Astral Form.</strong> Your astral form is resistant to bludgeoning, piercing, and slashing damage.</li>
+                <li><strong>Flying Speed.</strong> You gain a flying speed equal to your movement speed, and can hover.</li>
+                <li><strong>Ethereal.</strong> You can pass through physical objects and creatures as if they are difficult terrain, but cannot end your turn inside another creatures or objects’ space, being moved to the last unoccupied space you occupied if you try.</li>
+                <li><strong>Planar Shift.</strong> You can move between your current plane and the ethereal plane as an action. While on the ethereal plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can’t see anything there more than 60 feet away.</li>
             </ul>
             <p class="indent">Otherwise, your astral form shares all abilities and statistics with your normal form. While you use this ability, your Primal Interdiction projects from your astral form instead of your body. When you use this ability, you can project yourself to any plane or location you are familiar with. If your astral form is reduced to 0 hit points, you are returned to your body and regain 1 hit point. You can end the project at any time as a bonus action, returning to your body.</p>
         </description>
