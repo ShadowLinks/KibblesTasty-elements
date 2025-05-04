@@ -9,7 +9,8 @@
         <file name="source.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/source.xml" />
         <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/feats.xml" />
         <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spells.xml" />
-        
+        <file name="psionic.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionic.xml" />
+
         <file name="class-occultist.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/class-occultist.xml" />
         <file name="occultist-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-spelllist.xml" />
         <file name="occultrites.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultrites.xml" />
@@ -21,6 +22,31 @@
         <file name="occultist-voidwatcher.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-voidwatcher.xml" />
         <file name="occultist-witch.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-witch.xml" />
         
+        <file name="class-spellblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-spellblade.xml" />
+        <file name="spellblade-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-spelllist.xml" />
+        <file name="spellblade-aetherblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-aetherblade.xml" />
+        <file name="spellblade-battlemage.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-battlemage.xml" />
+        <file name="spellblade-flyingsword.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-flyingsword.xml" />
+        <file name="spellblade-guardian.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-guardian.xml" />
+        <file name="spellblade-magehunter.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-magehunter.xml" />
+        <file name="spellblade-rimeblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-rimeblade.xml" />
+        <file name="spellblade-sanguinesword.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-sanguinesword.xml" />
+        <file name="spellblade-spellfist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-spellfist.xml" />
+        <file name="spellblade-spellshot.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-spellshot.xml" />
+        <file name="spellblade-swiftblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spellblade-swiftblade.xml" />
+
+        <file name="class-warden.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-warden.xml" />
+        <file name="warden-primalmanifestations.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-primalmanifestations.xml" />
+        <file name="warden-astralguardian.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-astralguardian.xml" />
+        <file name="warden-bloodforger.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-bloodforger.xml" />
+        <file name="warden-bonebinder.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-bonebinder.xml" />
+        <file name="warden-dreadwing.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-dreadwing.xml" />
+        <file name="warden-elderheart.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-elderheart.xml" />
+        <file name="warden-elementalsoul.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-elementalsoul.xml" />
+        <file name="warden-ironbound.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-ironbound.xml" />
+        <file name="warden-stoneblood.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-stoneblood.xml" />
+        <file name="warden-sunwatcher.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-sunwatcher.xml" />
+        <file name="warden-timetwister.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-timetwister.xml" />
         
         <!--
         <file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-cursesmith.xml" />
