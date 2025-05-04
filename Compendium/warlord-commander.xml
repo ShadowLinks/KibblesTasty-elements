@@ -1,0 +1,31 @@
+<elements>
+    <info>
+        <name>Commander Bond for Warlord</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="warlord-commander.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-commander.xml" />
+        </update>
+    </info>
+    <element name="Commander's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_COMMANDER">
+        <supports>warlord-specialization</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID____" />
+            <div element="ID____" />
+            <div element="ID____" />
+            <div element="ID____" />
+            <div element="ID____" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="1" />
+        </rules>
+    </element>
+</elements>
