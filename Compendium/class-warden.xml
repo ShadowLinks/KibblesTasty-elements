@@ -97,6 +97,14 @@
         </setters>
         <sheet display="false" />
         <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+            <select type="Proficiency" number="2" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
             <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_MYSTICAL_BULWARK" level="1" />
             <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_BOND" level="1" />
             <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_ENDURANCE_DICE" level="2" />
