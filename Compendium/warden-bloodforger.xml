@@ -9,131 +9,162 @@
     <element name="Blood Forger" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARDEN_BLOODFORGER">
         <supports>warden-bond</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
+            <p>Blood Forgers are immediately different from other Wardens, drawing their power from something more visceral but no less primal than the forces of nature: the blood of creatures. Fundamentally tied to the essence of life that beats in the heart of every creature, they are self-appointed guardians and gardeners of it, preserving, curating, and pruning.</p>
+            <p class="indent">Their comfort with blood and death often makes creatures uncomfortable, but they can be as potent an ally as they are a dangerous enemy, capable of giving life as easily as taking it, able to keep their companions alive against all odds.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_BLOOD_FORGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_CRIMSON_FONT" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_INNATE_MAGIC" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_LIFE_BOND" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_RESTORE_VITALITY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_REAPERS_HARVEST" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_LIFE_CONTROL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_BLOOD_DOMAIN" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_BLOOD_FORGE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_CRIMSON_FONT" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_INNATE_MAGIC" level="1" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="3" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="14" />
-            <grant type="Archetype Feature" id="ID__________" level="14" />
-            <grant type="Archetype Feature" id="ID___________" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_LIFE_BOND" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_RESTORE_VITALITY" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_REAPERS_HARVEST" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_LIFE_CONTROL" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_BLOOD_DOMAIN" level="17" />
         </rules>
         <spellcasting name="Blood Forger" ability="Wisdom" prepare="false">
             <list>Blood Forger</list>
         </spellcasting>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Blood Forge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_BLOOD_FORGE">
         <description>
-            <p></p>
+            <p>Starting at 1st level, when you roll initiative or as a bonus action at any time, you can forge your blood into armaments. You can conjure up to two weapons, or a weapon and a shield at the same time in this way. Weapons and shields created this way are automatically equipped as part of conjuring them, and can be dismissed at any time (no action required). Shields act as a normal shield would, while weapons depend on the properties selected from the Blood Forged Weapon table below.</p>
+            <p class="indent">If you become bloodied (reduced to half your maximum hit points or less), your Blood Forged weapons deal 1d4 additional necrotic damage. The size of this die increases at 5th (to 1d6), 11th (to 1d8), and 17th (to 1d10) level.</p>
+            <table>
+                <thead>
+                    <tr><td>Properties</td><td>Damage Dice</td></tr>
+                </thead>
+                <tr><td>-</td><td>1d4 slashing + 1d4 necrotic</td></tr>
+                <tr><td>Light</td><td>1d6 slashing</td></tr>
+                <tr><td>Reach</td><td>1d6 slashing</td></tr>
+                <tr><td>Two-Handed</td><td>1d6 slashing + 1d6 necrotic</td></tr>
+            </table>
+            <p class="indent">The damage die of these weapons are increased by any Warden class feature that increases the damage die of natural weapons. If the damage die of any d6 weapon is increased to a d8, it instead becomes 1d4 slashing and 1d4 necrotic damage. When the damage die of any weapon with multiple dice increases, you can select which damage die to increase.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you roll initiative or as a bonus action at any time, you can forge your blood into armaments. You can conjure up to two weapons, or a weapon and a shield at the same time in this way. Weapons and shields created this way are automatically equipped as part of conjuring them, and can be dismissed at any time (no action required). Shields act as a normal shield would, while weapons depend on the properties selected from the Blood Forged Weapon table.
+            If you become reduced to half your maximum hit points or less, your Blood Forged weapons deal 1d4 additional necrotic damage.
+            Default - 1d4 slashing + 1d4 necrotic
+            Light or Reach - 1d6 slashing
+            Two-Handed - 1d6 slashing + 1d6 necrotic
+            The damage die of these weapons are increased by any Warden class feature that increases the damage die of natural weapons. If the damage die of any d6 weapon is increased to a d8, it instead becomes 1d4 slashing and 1d4 necrotic damage. When the damage die of any weapon with multiple dice increases, you can select which damage die to increase.
+            </description>
+            <description level="5">When you roll initiative or as a bonus action at any time, you can forge your blood into armaments. You can conjure up to two weapons, or a weapon and a shield at the same time in this way. Weapons and shields created this way are automatically equipped as part of conjuring them, and can be dismissed at any time (no action required). Shields act as a normal shield would, while weapons depend on the properties selected from the Blood Forged Weapon table.
+            If you become reduced to half your maximum hit points or less, your Blood Forged weapons deal 1d6 additional necrotic damage.
+            Default - 1d4 slashing + 1d4 necrotic
+            Light or Reach - 1d6 slashing
+            Two-Handed - 1d6 slashing + 1d6 necrotic
+            The damage die of these weapons are increased by any Warden class feature that increases the damage die of natural weapons. If the damage die of any d6 weapon is increased to a d8, it instead becomes 1d4 slashing and 1d4 necrotic damage. When the damage die of any weapon with multiple dice increases, you can select which damage die to increase.
+            </description>
+            <description level="11">When you roll initiative or as a bonus action at any time, you can forge your blood into armaments. You can conjure up to two weapons, or a weapon and a shield at the same time in this way. Weapons and shields created this way are automatically equipped as part of conjuring them, and can be dismissed at any time (no action required). Shields act as a normal shield would, while weapons depend on the properties selected from the Blood Forged Weapon table.
+            If you become reduced to half your maximum hit points or less, your Blood Forged weapons deal 1d8 additional necrotic damage.
+            Default - 1d4 slashing + 1d4 necrotic
+            Light or Reach - 1d6 slashing
+            Two-Handed - 1d6 slashing + 1d6 necrotic
+            The damage die of these weapons are increased by any Warden class feature that increases the damage die of natural weapons. If the damage die of any d6 weapon is increased to a d8, it instead becomes 1d4 slashing and 1d4 necrotic damage. When the damage die of any weapon with multiple dice increases, you can select which damage die to increase.
+            </description>
+            <description level="17">When you roll initiative or as a bonus action at any time, you can forge your blood into armaments. You can conjure up to two weapons, or a weapon and a shield at the same time in this way. Weapons and shields created this way are automatically equipped as part of conjuring them, and can be dismissed at any time (no action required). Shields act as a normal shield would, while weapons depend on the properties selected from the Blood Forged Weapon table.
+            If you become reduced to half your maximum hit points or less, your Blood Forged weapons deal 1d10 additional necrotic damage.
+            Default - 1d4 slashing + 1d4 necrotic
+            Light or Reach - 1d6 slashing
+            Two-Handed - 1d6 slashing + 1d6 necrotic
+            The damage die of these weapons are increased by any Warden class feature that increases the damage die of natural weapons. If the damage die of any d6 weapon is increased to a d8, it instead becomes 1d4 slashing and 1d4 necrotic damage. When the damage die of any weapon with multiple dice increases, you can select which damage die to increase.
+            </description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Crimson Font" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_CRIMSON_FONT">
         <description>
-            <p></p>
+            <p>At 1st level, when you cast a blood magic spell, you can contribute hit points of blood up to your Warden Level to the spell without taking damage. Any hit points contributed beyond that reduce your hit points as normal.</p>
+            <p class="indent">Additionally, you are immune to any effect that drains your blood, makes you take damage from bleeding, or causes effects that involve bleeding. You are not immune to the damage that makes you bleed.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>When you cast a blood magic spell, you can contribute hit points of blood up to {{level:warden}} to the spell without taking damage. Any hit points contributed beyond that reduce your hit points as normal.
+            Additionally, you are immune to any effect that drains your blood, makes you take damage from bleeding, or causes effects that involve bleeding. You are not immune to the damage that makes you bleed.</description>
         </sheet>
     </element>
     <element name="Innate Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_INNATE_MAGIC">
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Additionally when you select this bond, you gain access to several innate magical abilities by channeling the power of your primal connection.</p>
+            <p class="indent">You gain the following spells at the listed levels, and can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</p>
             <table>
                 <thead>
                     <tr><td>Warden Level</td><td>Innate Spells (1/Long Rest each)</td></tr>
                 </thead>
-                <tr><td>1st</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data2</td></tr>
-                <tr><td>5th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
-                <tr><td>13th</td><td>data4</td></tr>
-                <tr><td>17th</td><td>data4</td></tr>
+                <tr><td>1st</td><td>blood transfusion</td></tr>
+                <tr><td>3rd</td><td>sense blood</td></tr>
+                <tr><td>5th</td><td>morbid puppet</td></tr>
+                <tr><td>9th</td><td>crimson tide</td></tr>
+                <tr><td>13th</td><td>locate creature</td></tr>
+                <tr><td>17th</td><td>ichorous blood</td></tr>
             </table>
         </description>
         <sheet>
             <description>You can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</description>
         </sheet>
         <rules>
-            
+            <grant type="Spell" spellcasting="Blood Forger" level="1" id="ID_KTH_COLAL_SPELL_BLOOD_TRANSFUSION" />
+            <grant type="Spell" spellcasting="Blood Forger" level="3" id="ID_KTH_COLAL_SPELL_SENSE_BLOOD" />
+            <grant type="Spell" spellcasting="Blood Forger" level="5" id="ID_KTH_COLAL_SPELL_MORBID_PUPPET" />
+            <grant type="Spell" spellcasting="Blood Forger" level="9" id="ID_KTH_COLAL_SPELL_CRIMSON_TIDE" />
+            <grant type="Spell" spellcasting="Blood Forger" level="13" id="ID_PHB_SPELL_LOCATE_CREATURE" />
+            <grant type="Spell" spellcasting="Blood Forger" level="17" id="ID_KTH_COLAL_SPELL_ICHOROUS_BLOOD" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Life Bond" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_LIFE_BOND">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, once per turn, when a creature within range of your Primal Interdiction takes damage, you can give one (or more if multiple creatures take damage at the same time) resistance to the damage taken (no action required). When you do so, you take the same amount of damage (after the resistance is applied).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once per turn, when a creature within range of your Primal Interdiction takes damage, you can give one (or more if multiple creatures take damage at the same time) resistance to the damage taken (no action required). When you do so, you take the same amount of damage (after the resistance is applied).</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Restore Vitality" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_RESTORE_VITALITY">
         <description>
-            <p></p>
+            <p>Starting at 7th level, your Innate Magic ability to cast blood transfusion without expending a spell slot is refreshed when you complete a short rest. When you cast blood transfusion on a target other than yourself, you can expend hit points up to your Warden level (instead of up to 5), increasing the amount it heals the target based on the spell effect.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your Innate Magic ability to cast blood transfusion without expending a spell slot is refreshed when you complete a short rest. When you cast blood transfusion on a target other than yourself, you can expend hit points up to {{level:warden}}, increasing the amount it heals the target based on the spell effect.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="Reaper's Harvest" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_REAPERS_HARVEST">
         <description>
-            <p></p>
+            <p>Additionally at 7th level, once per turn while you are bloodied (at less than half your maximum hit points) and deal necrotic damage to an enemy, you regain hit points equal to your Constitution modifier. This cannot restore hit points beyond half of your maximum hit points.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once per turn while you are at less than half your maximum hit points and deal necrotic damage to an enemy, you regain {{constitution:modifier}} HP. This cannot restore hit points beyond half of your maximum hit points.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
+    <element name="Life Control" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_LIFE_CONTROL">
         <description>
-            <p></p>
+            <p>Starting at 14th level, you are under the effects of death ward until the effect is triggered, ending the effect as normal. You regain this effect when you complete a long rest.</p>
+            <p class="indent">Additionally, when a creature makes a death save within 60 feet of you, you can use your reaction to turn the roll into a 20, allowing them to recover with 1 hit point. Once you do so, you cannot do so again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You are under the effects of death ward until the effect is triggered, ending the effect as normal.
+            Additionally, when a creature makes a death save within 60 feet of you, you can use your reaction to turn the roll into a 20, allowing them to recover with 1 hit point.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
+    <element name="Blood Domain" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_BLOODFORGER_BLOOD_DOMAIN">
         <description>
-            <p></p>
+            <p>Starting at 17th level, as a bonus action you exert influence over the blood of creatures within 20 feet of you for 1 minute. All allied creatures of your choice within range gain resistance to slashing and piercing damage, while all hostile creatures in range bleed profusely when taking piercing or slashing damage, taking an additional 10 damage at the start of their turn if they’ve taken piercing or slashing damage since the end of their last turn.</p>
+            <p class="indent">Additionally, once during the effect as an action, you can exert your full control over the field to cast hold monster or hold person as a 5th-level spell, without expending a spell slot, targeting a creature (or creatures if the spell targets multiple creatures) within the domain. When you cast it this way, if a creature passes their saving throw against the effect, they are under the effect of slow until the start of your next turn.</p>
+            <p class="indent">Creatures without blood are unaffected by the blood domain. Once you use this ability, you cannot use it again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action you exert influence over the blood of creatures within 20 feet of you for 1 minute. All allied creatures of your choice within range gain resistance to slashing and piercing damage, while all hostile creatures in range bleed profusely when taking piercing or slashing damage, taking an additional 10 damage at the start of their turn if they’ve taken piercing or slashing damage since the end of their last turn.
+            Additionally, once during the effect as an action, you can exert your full control over the field to cast hold monster or hold person as a 5th-level spell, without expending a spell slot, targeting a creature (or creatures if the spell targets multiple creatures) within the domain. When you cast it this way, if a creature passes their saving throw against the effect, they are under the effect of slow until the start of your next turn.
+            Creatures without blood are unaffected by the blood domain.</description>
         </sheet>
     </element>
 </elements>
