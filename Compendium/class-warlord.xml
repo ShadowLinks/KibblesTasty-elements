@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Warlord</name>
+        <update version="0.0.1">
+            <file name="class-warlord.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-warlord.xml" />
+        </update>
+    </info>
+    <element name="Warlord" type="Class" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_WARLORD">
+        <description>
+            <p>Warlords are force multipliers for their companions. Some may be fearsome combatants, while others may never lift a weapon, but in either case their presence on the battlefield will drive their allies to new heights, guiding them safely through what would surely have been their doom.</p>
+            <p class="indent">How victory is stolen from the jaws of defeat can vary, from inciting crazed zeal, to tempering an overeager charge, to pulling their friends out of the line of danger in the nick of time. The sole commonality is that a Warlord alone is but a man, while a Warlord with their companions is a legend.</p>
+            <h4>Purpose and Drive</h4>
+            <p>Purpose is a common element to those that walk the path of a Warlord. Purpose empowers Warlords to be a larger-than-life, and allows them to be a guiding hand to their comrades. Some Warlords may not seek any particular cause, and merely pursue victory— a god they worship or simply to attain personal glory. More often, though, a Warlord is driven by a higher purpose—a loyalty to their country or their men, a drive to protect the innocent or crush the weak.</p>
+            <p class="indent"></p>
+            <h4>Power of Presence</h4>
+            <p>Most warlords have no explicitly magical powers, but the presence on the battlefield allows people to exceed what they might have thought of as their own limits, pushing beyond what they could hope to achieve on their own. A Warlord will make their allies feel like they’ve become better at everything, they will make problems seem surmountable, and they will make the path clear. They make the world less bleak, they make the foes less terrifying. When you have a Warlord on your side, more things go right.</p>
+            <p class="indent"></p>
+            <h4>CREATING A WARLORD</h4>
+            <p>When creating a Warlord you should always start with answering the question: what sort of Presence does this person bring to the battlefield? Are they a charismatic inspiration to their allies that drives them to fight on? Are they a wise veteran who acts as a force multiplier for their companions, offering pointers and grit? Or are they a scheming manipulator who sees one step ahead of any move their foes can make, always making sure their allies are in the right spot?</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can make a warlord quickly by following these suggestions. For a Commander, select Strength as your highest ability score, followed by Wisdom. For a Chieftain or Paragon, select Strength as your highest ability score, followed by Charisma. For a Noble, select Charisma as your highest ability score, followed by Constitution. For a Packleader, select Dexterity as your highest ability score, followed by Wisdom. For a Tactician, select Intelligence as your highest ability score, followed by Constitution.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As a warlord, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per warlord level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per warlord level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> light armor, medium armor</li>
+                <li><strong>Weapons:</strong> simple weapons</li>
+                <li><strong>Tools:</strong> </li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+                <li><strong>Skills:</strong> Choose three from Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Performance, and Persuasion</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a simple melee weapon, or (b) a martial weapon (if proficient)</li>
+                <li>(a) a light crossbow and 20 bolts, or (b) a shield (if proficient)</li>
+                <li>(a) leather armor, or (b) scale mail, or (c) chain mail (if proficient)</li>
+                <li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+            </ul>
+            <p class="indent">Alternatively, you may start with 5d4 × 10 gp to buy your own equipment.</p>
+            <!-- class table here -->
+            <h5 class="caption">THE WARLORD</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency</td><td class="col-10">Leadership Dice</td><td class="col-10">Leadership Dice Size</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>+2</td><td>—</td><td>—</td><td class="left">Warlord Specialization, Battlefield Presence</td></tr>
+                <tr><td> 2nd</td><td>+2</td><td>2</td><td>d6</td><td class="left">Leadership Dice</td></tr>
+                <tr><td> 3rd</td><td>+2</td><td>3</td><td>d6</td><td class="left">Warlord Specialization Feature, Warlord’s Expertise Dice</td></tr>
+                <tr><td> 4th</td><td>+2</td><td>4</td><td>d6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>+3</td><td>5</td><td>d6</td><td class="left">Extra Attack</td></tr>
+                <tr><td> 6th</td><td>+3</td><td>6</td><td>d6</td><td class="left">Prepare for Battle, Leadership Dice Limit Increase (2)</td></tr>
+                <tr><td> 7th</td><td>+3</td><td>7</td><td>d6</td><td class="left">Warlord Specialization Feature</td></tr>
+                <tr><td> 8th</td><td>+3</td><td>8</td><td>d6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>+4</td><td>9</td><td>d8</td><td class="left">Press the Attack</td></tr>
+                <tr><td>10th</td><td>+4</td><td>10</td><td>d8</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>11th</td><td>+4</td><td>11</td><td>d8</td><td class="left">Warlord Specialization Feature, Leadership Dice Limit Increase (3)</td></tr>
+                <tr><td>12th</td><td>+4</td><td>12</td><td>d8</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>13th</td><td>+5</td><td>13</td><td>d10</td><td class="left">Warlord’s Intuition</td></tr>
+                <tr><td>14th</td><td>+5</td><td>14</td><td>d10</td><td class="left">Shift the Field</td></tr>
+                <tr><td>15th</td><td>+5</td><td>15</td><td>d10</td><td class="left">Warlord Specialization Feature</td></tr>
+                <tr><td>16th</td><td>+5</td><td>16</td><td>d10</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>+6</td><td>17</td><td>d12</td><td class="left">Unbreakable Will, Leadership Dice Limit Increase (4)</td></tr>
+                <tr><td>18th</td><td>+6</td><td>18</td><td>d12</td><td class="left">Warlord Specialization Feature</td></tr>
+                <tr><td>19th</td><td>+6</td><td>19</td><td>d12</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>+6</td><td>20</td><td>d12</td><td class="left">Tireless Leader</td></tr>
+            </table>
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORD_SPECIALIZATION" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_BATTLEFIELD_PRESENCE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_LEADERSHIP_DICE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_EXPERTISE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_ASI" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_EXTRA_ATTACK" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_PREPARE_FOR_BATTLE" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_PRESS_THE_ATTACK" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_INTUITION" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_SHIFT_THE_FIELD" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_UNBREAKABLE_WILL" />
+            <div element="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_TIRELESS_LEADER" />
+        </description>
+        <setters>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+            <select type="Proficiency" number="3" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORD_SPECIALIZATION" level="1" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_BATTLEFIELD_PRESENCE" level="1" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_LEADERSHIP_DICE" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_EXPERTISE" level="3" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_ASI" level="4" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_PREPARE_FOR_BATTLE" level="6" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_PRESS_THE_ATTACK" level="9" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_INTUITION" level="13" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_SHIFT_THE_FIELD" level="14" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_UNBREAKABLE_WILL" level="17" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_TIRELESS_LEADER" level="20" />
+        </rules>
+    </element>
+    <element name="Warlord Specialization" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORD_SPECIALIZATION">
+        <description>
+            <p>At 1st level, you pick the archetype of Warlord you embody, called a Presence, choosing from Commander, Chieftain, Noble, Packleader, Paragon or Tactician, each of which are detailed at the end of the class description. Your choice grants you features at 1st level, and again at 3rd, 7th, 11th, 15th, and 18th level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" supports="warlord-specialization" name="Warlord Specialization"/>
+        </rules>
+    </element>
+    <element name="Battlefield Presence" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_BATTLEFIELD_PRESENCE">
+        <description>
+            <p>Starting at 1st level, when you take the Attack action, in place of making an attack, you can use your Battlefield Presence to grant a friendly creature that can see or hear you an additional attack the next time they take the Attack action during their turn.</p>
+            <p class="indent">Any additional attacks granted that are unused at the start of your next turn are lost. A friendly creature can only gain one additional attack from this feature per round from this feature.</p>
+        </description>
+        <sheet>
+            <description>When you take the Attack action, in place of making an attack, you can use your Battlefield Presence to grant a friendly creature that can see or hear you an additional attack the next time they take the Attack action during their turn.
+            Any additional attacks granted that are unused at the start of your next turn are lost. A friendly creature can only gain one additional attack from this feature per round from this feature.</description>
+        </sheet>
+    </element>
+    <element name="Leadership Dice" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_LEADERSHIP_DICE">
+        <description>
+            <p>Starting at 2nd level, you have access to Leadership Dice. These represent your ability to focus your battlefield presence for powerful results. Your Warlord level determines the number and size of the dice, as shown on the Leadership Dice column of the Warlord table. You can spend these to fuel various features.</p>
+            <p class="indent">You know three such features: Rallying Mark, Urgent Orders, and Helpful Word. When you get this feature, you can spend one Leadership Die per turn. Starting at 6th level, you can spend two Leadership Dice per turn. The number you can expend increases to three at 11th level, and to four at 17th level.</p>
+            <p class="indent">A Leadership Die is expended when you use it. You regain all of your expended Leadership Dice when you finish a short or long rest.</p>
+            <p><strong>Rallying Mark</strong></p>
+            <p class="indent">As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to rally your allies to attack a hostile creature within 60 feet of you.</p>
+            <p class="indent">The next time damage is rolled against that target by an allied creature before the start of your next turn, they can add the Leadership Dice to the damage roll, and the attacking creature regains hit points equal to the amount rolled on the Leadership Dice.</p>
+            <p><strong>Urgent Orders</strong></p>
+            <p class="indent">As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action.</p>
+            <p class="indent">Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to its movement speed (up to a maximum of 30 feet) without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</p>
+            <p><strong>Helpful Word</strong></p>
+            <p class="indent">As a bonus action, you can spend a Leadership Die to take the Help action. When you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if your ally can see or hear you.</p>
+        </description>
+        <sheet usage="{{leadership-die:count}}{{leadership-die:size}}/Short Rest">
+            <description>You can spend 1 per turn</description>
+            <description level="6">You can spend 2 per turn</description>
+            <description level="11">You can spend 3 per turn</description>
+            <description level="17">You can spend 4 per turn</description>
+        </sheet>
+        <rules>
+            <stat name="leadership-die:count" value="level:warlord" bonus="base" />
+            <stat name="leadership-die:size" value="d6" inline="true" level="2" />
+            <stat name="leadership-die:size" value="d8" inline="true" level="9" />
+            <stat name="leadership-die:size" value="d10" inline="true" level="13" />
+            <stat name="leadership-die:size" value="d12" inline="true" level="17" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_RALLYING_MARK" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_URGENT_ORDERS" level="2" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_HELPFUL_WORD" level="2" />
+        </rules>
+    </element>
+    <element name="Rallying Mark" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_RALLYING_MARK">
+        <description>
+            <p>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to rally your allies to attack a hostile creature within 60 feet of you.
+            The next time damage is rolled against that target by an allied creature before the start of your next turn, they can add the Leadership Dice to the damage roll, and the attacking creature regains hit points equal to the amount rolled on the Leadership Dice.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to rally your allies to attack a hostile creature within 60 feet of you.
+            The next time damage is rolled against that target by an allied creature before the start of your next turn, they can add the Leadership Dice to the damage roll, and the attacking creature regains hit points equal to the amount rolled on the Leadership Dice.</description>
+            <description level="9">As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to rally your allies to attack a hostile creature within 60 feet of you.
+            The next time damage is rolled against that target by an allied creature before the start of your next turn, they can add the Leadership Dice to the damage roll, and the attacking creature regains hit points equal to the amount rolled on the Leadership Dice.
+            When a creature gains hit points from Rallying Mark, you can use your reaction to expend one Leadership die to cause another creature within 60 feet of the attacker to regain the same number of hit points.</description>
+        </sheet>
+    </element>
+    <element name="Urgent Orders" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_URGENT_ORDERS">
+        <description>
+            <p>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action.
+            Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to its movement speed (up to a maximum of 30 feet) without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action.
+            Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to its movement speed (up to a maximum of 30 feet) without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</description>
+            <description level="9">As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action.
+            Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to its movement speed (up to a maximum of 30 feet) without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.
+            When you use Urgent Orders, you can expend additional Leadership dice to target additional creatures (targeting one additional creature for each extra die spent).</description>
+        </sheet>
+    </element>
+    <element name="Helpful Word" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_HELPFUL_WORD">
+        <description>
+            <p>As a bonus action, you can spend a Leadership Die to take the Help action. When you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if your ally can see or hear you.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can spend a Leadership Die to take the Help action. When you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if your ally can see or hear you.</description>
+            <description level="9">As a bonus action, you can spend a Leadership Die to take the Help action. When you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if your ally can see or hear you.
+            When a creature benefits from your Help action, you can use your reaction to expend a Leadership Die and add it to their roll. You can use this ability after the original roll, but before the outcome is revealed.</description>
+        </sheet>
+    </element>
+    <element name="Warlord's Expertise" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_EXPERTISE">
+        <description>
+            <p>Starting at 3rd level, choose one of the following skills: Investigation, Insight, Intimidation, or Persuasion. If you are not proficient in the chosen skill you become proficient If you are already proficient in the skill you select, your proficiency bonus is doubled for any ability check you make that uses that skill.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" supports="warlord-expertise" />
+        </rules>
+    </element>
+    <element name="Warlord's Expertise (Investigation)" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_EXPERTISE_INVESTIGATION">
+        <supports>warlord-expertise</supports>
+        <description>
+            <p>Starting at 3rd level, choose one of the following skills: Investigation, Insight, Intimidation, or Persuasion. If you are not proficient in the chosen skill you become proficient If you are already proficient in the skill you select, your proficiency bonus is doubled for any ability check you make that uses that skill.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INVESTIGATION" />
+        </rules>
+    </element>
+    <element name="Warlord's Expertise (Insight)" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_EXPERTISE_INSIGHT">
+        <supports>warlord-expertise</supports>
+        <description>
+            <p>Starting at 3rd level, choose one of the following skills: Investigation, Insight, Intimidation, or Persuasion. If you are not proficient in the chosen skill you become proficient If you are already proficient in the skill you select, your proficiency bonus is doubled for any ability check you make that uses that skill.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INSIGHT" />
+        </rules>
+    </element>
+    <element name="Warlord's Expertise (Intimidation)" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_EXPERTISE_INTIMIDATION">
+        <supports>warlord-expertise</supports>
+        <description>
+            <p>Starting at 3rd level, choose one of the following skills: Investigation, Insight, Intimidation, or Persuasion. If you are not proficient in the chosen skill you become proficient If you are already proficient in the skill you select, your proficiency bonus is doubled for any ability check you make that uses that skill.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+        </rules>
+    </element>
+    <element name="Warlord's Expertise (Persuasion)" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_EXPERTISE_PERSUASION">
+        <supports>warlord-expertise</supports>
+        <description>
+            <p>Starting at 3rd level, choose one of the following skills: Investigation, Insight, Intimidation, or Persuasion. If you are not proficient in the chosen skill you become proficient If you are already proficient in the skill you select, your proficiency bonus is doubled for any ability check you make that uses that skill.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERSUASION" />
+        </rules>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_ASI">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Warlord 4)" supports="Improvement Option,Warlord,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Warlord 8)" supports="Improvement Option,Warlord,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Warlord 10)" supports="Improvement Option,Warlord,10" level="10"/>
+            <select type="Class Feature" name="Improvement Option (Warlord 12)" supports="Improvement Option,Warlord,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Warlord 16)" supports="Improvement Option,Warlord,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Warlord 19)" supports="Improvement Option,Warlord,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Extra Attack" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. You can use Battlefield Presence in place of either or both attacks.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn. You can use Battlefield Presence in place of either or both attacks.</description>
+        </sheet>
+    </element>
+    <element name="Prepare for Battle" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_PREPARE_FOR_BATTLE">
+        <description>
+            <p>Starting at 6th level, you can spend a minute preparing creatures for combat. You can expend a number of Leadership Dice (up to your per turn limit), rolling them and causing five your creatures of your choice (potentially including yourself) to gain temporary hit points equal to the number rolled.</p>
+            <p class="indent">Creatures that have benefited from this ability can expend a number of hit dice equal to the number of Leadership Dice you expended, using them as they would during a short rest. Any temporary hit points gained from this last until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You can spend a minute preparing creatures for combat. You can expend a number of Leadership Dice (up to your per turn limit), rolling them and causing five your creatures of your choice (potentially including yourself) to gain temporary hit points equal to the number rolled.
+            Creatures that have benefited from this ability can expend a number of hit dice equal to the number of Leadership Dice you expended, using them as they would during a short rest. Any temporary hit points gained from this last until you complete a short or long rest.</description>
+        </sheet>
+    </element>
+    <element name="Press the Attack" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_PRESS_THE_ATTACK">
+        <description>
+            <p>Starting at 9th level, your abilities are further empowered:</p>
+            <p><strong>Rallying Mark: Boost Morale</strong></p>
+            <p class="indent">When a creature gains hit points from Rallying Mark, you can use your reaction to expend one Leadership die to cause another creature within 60 feet of the attacker to regain the same number of hit points.</p>
+            <p><strong>Urgent Orders: Coordinated Movements</strong></p>
+            <p class="indent">When you use Urgent Orders, you can expend additional Leadership dice to target additional creatures (targeting one additional creature for each extra die spent).</p>
+            <p><strong>Helpful Word: Expert Instructions</strong></p>
+            <p class="indent">When a creature benefits from your Help action, you can use your reaction to expend a Leadership Die and add it to their roll. You can use this ability after the original roll, but before the outcome is revealed.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Warlord's Intuition" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_WARLORDS_INTUITION">
+        <description>
+            <p>Starting at 13th level, before rolling an ability check you are proficient in, you can exercise this ability, choosing for the d20 to be equal to your Warlord level rather than rolling. Once you do this, you cannot do this until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Before rolling an ability check you are proficient in, you can exercise this ability, choosing for the d20 to be equal to {{level:warlord}} rather than rolling.</description>
+        </sheet>
+    </element>
+    <element name="Shift the Field" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_SHIFT_THE_FIELD">
+        <description>
+            <p>Starting at 14th level, you gain the ability to relocate friendly creatures. As an action, you can expend one Leadership Die to move up to 5 friendly creatures that can see or hear you up to half their movement speed without provoking attacks of opportunity.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can expend one Leadership Die to move up to 5 friendly creatures that can see or hear you up to half their movement speed without provoking attacks of opportunity.</description>
+        </sheet>
+    </element>
+    <element name="Unbreakable Will" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_UNBREAKABLE_WILL">
+        <description>
+            <p>Starting at 17th level, you are immune to the frightened and charmed conditions.</p>
+        </description>
+        <sheet>
+            <description>You are immune to the frightened and charmed conditions.</description>
+        </sheet>
+    </element>
+    <element name="Tireless Leader" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARLORD_TIRELESS_LEADER">
+        <description>
+            <p>Starting at 20th level, you can roll d4s and use them instead of expending Leadership Dice for Rallying Mark, Urgent Orders, Helpful Word, or Prepare for Battle.</p>
+        </description>
+        <sheet>
+            <description>You can roll d4s and use them instead of expending Leadership Dice for Rallying Mark, Urgent Orders, Helpful Word, or Prepare for Battle.</description>
+        </sheet>
+    </element>
+</elements>
