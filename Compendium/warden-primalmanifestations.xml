@@ -88,17 +88,393 @@
             <description>The barrier has an AC equal to your AC (unless it is already higher).</description>
         </sheet>
     </element>
-</elements>
-
-<!-- 
-
-    <element name="Featurename" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_FEATURENAME">
+    <element name="Elemental Rebuke" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_ELEMENTAL_REBUKE">
         <supports>primal-manifestation</supports>
+        <description>
+            <p>You learn the spell Aldricor’s elemental rebuke. You don’t need any components to cast it, and can cast it once without expending a spell slot. Once you do so, you cannot do so again until you complete a long rest. You can cast it again early be expending 2 Endurance Dice.</p>
+        </description>
+        <sheet>
+            <description>You learn the spell Aldricor’s elemental rebuke. You don’t need any components to cast it, and can cast it once without expending a spell slot. Once you do so, you cannot do so again until you complete a long rest. You can cast it again early be expending 2 Endurance Dice.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ALDRICORS_ELEMENTAL_REBUKE" />
+        </rules>
+    </element>
+    <element name="Gift of Life" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_GIFT_OF_LIFE">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>As an action, you can expend an Endurance Die to heal a creature you touch for 1 hit point and give them a number of temporary hit points equal to a roll of your Endurance Die + your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can expend an Endurance Die to heal a creature you touch for 1 hit point and give them a number of temporary hit points equal to a roll of your Endurance Die + {{wisdom:modifier}}.</description>
+        </sheet>
+    </element>
+    <element name="Guided Wrath" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_GUIDED_WRATH">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>When you make an attack with a natural weapon granted by this class, you can use your Wisdom modifier, instead of Strength or Dexterity, for the attack and damage rolls.</p>
+            <p class="indent">Based on your subclass, you may gain additional benefits:</p>
+            <ul>
+                <li><strong>Living Weapons</strong><em> (Prerequisite: Elderheart subclass).</em> You can use your Wisdom modifier, instead of your Strength, to initiate and maintain grapple checks made with your Lashing Vines.</li>
+                <li><strong>Living Chains</strong><em> (Prerequisite: Ironbound subclass).</em> You can use your Wisdom modifier, instead of your Strength, to initiate and maintain grapple checks made with the Chains created with Binding Interdiction.</li>
+                <li><strong>Living Arms </strong><em>(Prerequisite: Astral Guardian subclass).</em> You can use your Wisdom modifier, instead of your Strength, to initiate and maintain grapple checks with your Astral Arms.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you make an attack with a natural weapon granted by this class, you can use your Wisdom modifier, instead of Strength or Dexterity, for the attack and damage rolls.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_GUIDED_WRATH_CHAINS" requirements="ID_KTH_COLAL_ARCHETYPE_WARDEN_IRONBOUND" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_GUIDED_WRATH_WEAPONS" requirements="ID_KTH_COLAL_ARCHETYPE_WARDEN_ELDERHEART" />
+            <grant type="Class Feature" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_GUIDED_WRATH_ARMS" requirements="ID_KTH_COLAL_ARCHETYPE_WARDEN_ASTRALGUARDIAN" />
+        </rules>
+    </element>
+    <element name="Living Weapons" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_GUIDED_WRATH_WEAPONS">
         <description>
             <p></p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can use your Wisdom modifier, instead of your Strength, to initiate and maintain grapple checks made with your Lashing Vines.</description>
         </sheet>
     </element>
+    <element name="Living Chains" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_GUIDED_WRATH_CHAINS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You can use your Wisdom modifier, instead of your Strength, to initiate and maintain grapple checks made with the Chains created with Binding Interdiction.</description>
+        </sheet>
+    </element>
+    <element name="Living Arms" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_GUIDED_WRATH_ARMS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You can use your Wisdom modifier, instead of your Strength, to initiate and maintain grapple checks with your Astral Arms.</description>
+        </sheet>
+    </element>
+    <element name="Engulfing Vines" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_ENGULFING_VINES">
+        <supports>primal-manifestation</supports>
+        <prerequisite>Elderheart subclass</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARDEN_ELDERHEART</requirements>
+        <description>
+            <p>You can grapple a number of creatures with each of your Lashing Vines equal to your Wisdom modifier. While it is not grappling the maximum number of targets, it can attack creatures you are not grappling with it. Additionally, at the start of your turn, you can pull any creature grappled by your Lashing Vines 5 feet towards you (no action required).</p>
+        </description>
+        <sheet>
+            <description>You can grapple a number of creatures with each of your Lashing Vines equal to {{wisdom:modifier}}. While it is not grappling the maximum number of targets, it can attack creatures you are not grappling with it. Additionally, at the start of your turn, you can pull any creature grappled by your Lashing Vines 5 feet towards you (no action required).</description>
+        </sheet>
+    </element>
+    <element name="Heart of the Storm" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_HEART_OF_THE_STORM">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>You gain resistance to damage from area of effect spells cast by allied creatures. If you would normally resist the damage, you take no damage from the spell instead.</p>
+        </description>
+        <sheet>
+            <description>You gain resistance to damage from area of effect spells cast by allied creatures. If you would normally resist the damage, you take no damage from the spell instead.</description>
+        </sheet>
+    </element>
+    <element name="Karmic Edict" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_KARMIC_EDICT">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>The spell karmic reflection is added to your innate spells, allowing you to cast it once for free without expending a spell slot or endurance dice, regaining the ability to do so again on a long rest. You can cast it early by spending Endurance Dice.</p>
+        </description>
+        <sheet>
+            <description>The spell karmic reflection is added to your innate spells, allowing you to cast it once for free without expending a spell slot or endurance dice, regaining the ability to do so again on a long rest. You can cast it early by spending Endurance Dice.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_KARMIC_REFLECTION" />
+        </rules>
+    </element>
+    <element name="Mystic Deflection" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_MYSTIC_DEFLECTION">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>Your AC is increased by 1 while you are wearing light or medium armor.</p>
+        </description>
+        <sheet>
+            <description>Your AC is increased by 1 while you are wearing light or medium armor.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" equipped="[armor:medium]|[armor:light]" />
+        </rules>
+    </element>
+    <element name="Mystic Reinforcement" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_MYSTIC_REINFORCEMENT">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>The damage reduction granted by Mystic Bulwark increases by 1</p>
+        </description>
+        <sheet>
+            <description>The damage reduction granted by Mystic Bulwark increases by 1</description>
+        </sheet>
+        <rules>
+            <stat name="mystical-bulwark:dmg" value="1" />
+        </rules>
+    </element>
+    <element name="Primal Intuition" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_PRIMAL_INTUITION">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>You gain a blindsight out to a range of 10 feet.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+            <stat name="blindsight:range" value="10" bonus="base" />
+        </rules>
+    </element>
+    <element name="Protective Interdiction" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_PROTECTIVE_INTERDICTION">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>If an allied creature within range of your Primal Interdiction takes nonmagical bludgeoning, piercing, or slashing damage, you can use your reaction to reduce the damage taken by twice the damage reduction of your Mystic Bulwark.</p>
+        </description>
+        <sheet>
+            <description>If an allied creature within range of your Primal Interdiction takes nonmagical bludgeoning, piercing, or slashing damage, you can use your reaction to reduce the damage taken by twice the damage reduction of your Mystic Bulwark.</description>
+        </sheet>
+    </element>
+    <element name="Temporal Torsion" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_TEMPORAL_TORSION">
+        <supports>primal-manifestation</supports>
+        <prerequisite>Timetwister subclass</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARDEN_TIMETWISTER</requirements>
+        <description>
+            <p>As an attack as part of the attack action, you can violent distort time for a creature within 30 feet, causing be displaced from reality. The target must make a Charisma saving throw, taking 1d8 + your Wisdom modifier necrotic damage and having their movement speed reduced by 10 feet on failed saving throw. The damage of this ability is increased by any effect that increases the damage of your natural weapons.</p>
+        </description>
+        <sheet>
+            <description>As an attack as part of the attack action, you can violent distort time for a creature within 30 feet, causing be displaced from reality. The target must make a Charisma saving throw, taking 1d8 + {{wisdom:modifier}} necrotic damage and having their movement speed reduced by 10 feet on failed saving throw. The damage of this ability is increased by any effect that increases the damage of your natural weapons.</description>
+        </sheet>
+    </element>
+    <element name="Time Trick" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_TIME_TRICK">
+        <supports>primal-manifestation</supports>
+        <prerequisite>Timetwister subclass</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARDEN_TIMETWISTER</requirements>
+        <description>
+            <p>You gain the ability greatly speed up your own actions within narrow limitations, allowing you to very quickly don or doff, change clothes, or complete simple task that would take less than a minute in an action. You cannot move from your space, interact with other creatures, cast spells, attack, or make ability checks during this action.</p>
+            <p class="indent">You can use this ability an number of times equal to your Wisdom modifier, regaining all uses on a long rest.</p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>You gain the ability greatly speed up your own actions within narrow limitations, allowing you to very quickly don or doff, change clothes, or complete simple task that would take less than a minute in an action. You cannot move from your space, interact with other creatures, cast spells, attack, or make ability checks during this action.</description>
+        </sheet>
+    </element>
+    <element name="Unrelenting Onslaught" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_UNRELENTING_ONSLAUGHT">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>If you cast a spell as an action, you can make a single weapon attack with a natural weapon as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>If you cast a spell as an action, you can make a single weapon attack with a natural weapon as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Well of Fortitude" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_WELL_OF_FORTITUDE">
+        <supports>primal-manifestation</supports>
+        <description>
+            <p>When you complete a short rest, you can roll 1 hit die for free without expending it. You can do this a number of times equal to your proficiency bonus before you need to complete a long rest to do so again, but not more than once per short rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest (1/Short Rest)">
+            <description>When you complete a short rest, you can roll 1 hit die for free without expending it.</description>
+        </sheet>
+    </element>
+    <element name="Wildheart" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_WILDHEART">
+        <supports>primal-manifestation</supports>
+        <prerequisite>Beasthide subclass</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARDEN_BEASTHIDE</requirements>
+        <description>
+            <p>For all Beast type creatures of a CR equal to your Warden level, you are under the effect of sanctuary. You gain advantage on Animal Handling checks, or checks to persuade, deter, or seek help from beasts.</p>
+        </description>
+        <sheet>
+            <description>For all Beast type creatures of {{level:warden}} CR, you are under the effect of sanctuary. You gain advantage on Animal Handling checks, or checks to persuade, deter, or seek help from beasts.</description>
+        </sheet>
+    </element>
+    <element name="Sacrificing Stance" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_SACRIFICING_STANCE">
+        <supports>primal-manifestation</supports>
+        <prerequisite>6th level Warden</prerequisite>
+        <requirements>[level:warden:6]</requirements>
+        <description>
+            <p>When you roll a saving throw against an area of effect spell or magical effect that does damage, you can roll your save with disadvantage to shield your allies.</p>
+            <p class="indent">When you do so allied creatures in the area of your Primal Interdiction gain resistance to the damage taken from the effect.</p>
+        </description>
+        <sheet>
+            <description>When you roll a saving throw against an area of effect spell or magical effect that does damage, you can roll your save with disadvantage to shield your allies.
+            When you do so allied creatures in the area of your Primal Interdiction gain resistance to the damage taken from the effect.</description>
+        </sheet>
+    </element>
+    <element name="Savage Weapons" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_SAVAGE_WEAPONS">
+        <supports>primal-manifestation</supports>
+        <prerequisite>6th level Warden</prerequisite>
+        <requirements>[level:warden:6]</requirements>
+        <description>
+            <p>The damage dice of all natural weapons granted by the class increases by 1 size (for example, a d6 becomes a d8). If a weapon has multiple dice, only one die increases.</p>
+        </description>
+        <sheet>
+            <description>The damage dice of all natural weapons granted by the class increases by 1 size (for example, a d6 becomes a d8). If a weapon has multiple dice, only one die increases.</description>
+        </sheet>
+    </element>
+    <element name="Devouring Earth" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_DEVOURING_EARTH">
+        <supports>primal-manifestation</supports>
+        <prerequisite>9th level Warden</prerequisite>
+        <requirements>[level:warden:9]</requirements>
+        <description>
+            <p>You can cast quicksand without expending a spell slot. Once you do so, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast quicksand without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_QUICKSAND" />
+        </rules>
+    </element>
+    <element name="Falling Sky" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_FALLING_SKY">
+        <supports>primal-manifestation</supports>
+        <prerequisite>9th level Warden</prerequisite>
+        <requirements>[level:warden:9]</requirements>
+        <description>
+            <p>You can cast sleet storm without expending a spell slot. Once you do so, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast sleet storm without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" />
+        </rules>
+    </element>
+    <element name="One With Stone" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_ONE_WITH_STONE">
+        <supports>primal-manifestation</supports>
+        <prerequisite>9th level Warden</prerequisite>
+        <requirements>[level:warden:9]</requirements>
+        <description>
+            <p>You can cast meld into stone without expending a spell slot. Once you do so, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast meld into stone without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MELD_INTO_STONE" />
+        </rules>
+    </element>
+    <element name="Arise Stone" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_ARISE_STONE">
+        <supports>primal-manifestation</supports>
+        <prerequisite>12th level Warden</prerequisite>
+        <requirements>[level:warden:12]</requirements>
+        <description>
+            <p>You can cast wall of stone without expending a spell slot. Once you do so, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast wall of stone without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" />
+        </rules>
+    </element>
+    <element name="Crushing Grip" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_CRUSHING_GRIP">
+        <supports>primal-manifestation</supports>
+        <prerequisite>12th level Warden</prerequisite>
+        <requirements>[level:warden:12]</requirements>
+        <description>
+            <p>At the start of your turn, you deal 2d6 bludgeoning damage to all creatures you are grappling.</p>
+        </description>
+        <sheet>
+            <description>At the start of your turn, you deal 2d6 bludgeoning damage to all creatures you are grappling.</description>
+        </sheet>
+    </element>
+    <element name="Font of Will" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_FONT_OF_WILL">
+        <supports>primal-manifestation</supports>
+        <prerequisite>12th level Warden</prerequisite>
+        <requirements>[level:warden:12]</requirements>
+        <description>
+            <p>When you would make a saving throw at the end of your turn, you can instead make that saving throw at the start of your turn.</p>
+        </description>
+        <sheet>
+            <description>When you would make a saving throw at the end of your turn, you can instead make that saving throw at the start of your turn.</description>
+        </sheet>
+    </element>
+    <element name="Revitalizing Endurance" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_REVITALIZING_ENDURANCE">
+        <supports>primal-manifestation</supports>
+        <prerequisite>12th level Warden</prerequisite>
+        <requirements>[level:warden:12]</requirements>
+        <description>
+            <p>When you start your turn with 0 hit points, you can expend an Endurance Die, rolling it and regaining hit points equal to the number rolled.</p>
+        </description>
+        <sheet>
+            <description>When you start your turn with 0 hit points, you can expend an Endurance Die, rolling it and regaining hit points equal to the number rolled.</description>
+        </sheet>
+    </element>
+    <element name="Unlimited Endurance" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_UNLIMITED_ENDURANCE">
+        <supports>primal-manifestation</supports>
+        <prerequisite>12th level Warden</prerequisite>
+        <requirements>[level:warden:12]</requirements>
+        <description>
+            <p>You gain an additional Endurance Die.</p>
+        </description>
+        <sheet>
+            <description>You gain an additional Endurance Die.</description>
+        </sheet>
+    </element>
+    <element name="Arise Thorns" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_ARISE_THORNS">
+        <supports>primal-manifestation</supports>
+        <prerequisite>16th level Elderheart Warden</prerequisite>
+        <requirements>[level:warden:16],ID_KTH_COLAL_ARCHETYPE_WARDEN_ELDERHEART</requirements>
+        <description>
+            <p>You can cast wall of thorns without expending a spell slot. Once you do so, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast wall of thorns without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_THORNS" />
+        </rules>
+    </element>
+    <element name="Arise Ice" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_ARISE_ICE">
+        <supports>primal-manifestation</supports>
+        <prerequisite>16th level Elemental Soul Warden</prerequisite>
+        <requirements>[level:warden:16],ID_KTH_COLAL_ARCHETYPE_WARDEN_ELEMENTALSOUL</requirements>
+        <description>
+            <p>You can cast wall of ice without expending a spell slot. Once you do so, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast wall of ice without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_ICE" />
+        </rules>
+    </element>
+    <element name="Immortal Body" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_IMMORTAL_BODY">
+        <supports>primal-manifestation</supports>
+        <prerequisite>16th level Warden</prerequisite>
+        <requirements>[level:warden:16]</requirements>
+        <description>
+            <p>If you start your turn with less than half your hit points, you regain 1d6 hit points. You don’t gain this benefit if you have 0 hit points.</p>
+        </description>
+        <sheet>
+            <description>If you start your turn with less than half your hit points, you regain 1d6 hit points. You don’t gain this benefit if you have 0 hit points.</description>
+        </sheet>
+    </element>
+    <element name="Last Stand" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_LAST_STAND">
+        <supports>primal-manifestation</supports>
+        <prerequisite>16th level Warden</prerequisite>
+        <requirements>[level:warden:16]</requirements>
+        <description>
+            <p>At the end of your turn, you can start a Last Stand. Until the start of your next turn, any damage taken by allied creatures within 60 feet that would reduce them below 1 hit point is instead taken by you. This effect ends if you fall unconscious.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>At the end of your turn, you can start a Last Stand. Until the start of your next turn, any damage taken by allied creatures within 60 feet that would reduce them below 1 hit point is instead taken by you. This effect ends if you fall unconscious.</description>
+        </sheet>
+    </element>
+    <element name="Planar Guardian" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_WARDEN_PM_PLANAR_GUARDIAN">
+        <supports>primal-manifestation</supports>
+        <prerequisite>16th level Astral Guardian Warden</prerequisite>
+        <requirements>[level:warden:16],ID_KTH_COLAL_ARCHETYPE_WARDEN_ASTRALGUARDIAN</requirements>
+        <description>
+            <p>You can cast the spell plane shift without expending a spell slot. You can only target willing creatures when you cast it this way. Once you do so, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can cast the spell plane shift without expending a spell slot. You can only target willing creatures when you cast it this way.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PLANE_SHIFT" />
+        </rules>
+    </element>
+</elements>
+
+<!-- 
+
+    
 -->
