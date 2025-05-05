@@ -48,6 +48,17 @@
         <file name="warden-sunwatcher.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-sunwatcher.xml" />
         <file name="warden-timetwister.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warden-timetwister.xml" />
         
+        <file name="class-warlord.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-warlord.xml" />
+        <file name="warlord-commander.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-commander.xml" />
+        <file name="warlord-chieftan.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-chieftan.xml" />
+        <file name="warlord-noble.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-noble.xml" />
+        <file name="warlord-packleader.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-packleader.xml" />
+        <file name="warlord-paragon.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-paragon.xml" />
+        <file name="warlord-tactician.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-tactician.xml" />
+        <file name="warlord-dancer.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-dancer.xml" />
+        <file name="warlord-dreadlord.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-dreadlord.xml" />
+
+
         <!--
         <file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-cursesmith.xml" />
         <file name="artificer-expandedoptions.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-expandedoptions.xml" />
