@@ -1,121 +1,118 @@
 <elements>
     <info>
-        <name>Chieftan Specialization for Warlord</name>
+        <name>Chieftain Specialization for Warlord</name>
         <description></description>
         <update version="0.0.1">
-            <file name="warlord-chieftan.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-chieftan.xml" />
+            <file name="warlord-chieftain.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-chieftain.xml" />
         </update>
     </info>
-    <element name="Chieftan's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_CHIEFTAN">
+    <element name="Chieftain's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_CHIEFTIAN">
         <supports>warlord-specialization</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <p>A chieftain is a Warlord that rules by the sheer force of their personality, marked by their booming voice and fearless attitude, it is easy to believe that your band is infallible while your chieftain stands.</p>
+            <p class="indent">They can be lawful or chaotic, good or evil, with such things depending on how they got to where they are in life. An orc that cut their way to the top may be chaotic, believing that strength needs room to rise to the top unfettered by rules, while someone that inherited their authority may have a more lawful bent.</p>
+            <p class="indent">A Warlord with the Presence of a Chieftain need not literally rule anything, but is an exemplar of someone that has or could walk that path through their force of personality and the boisterous inspiration they give those around them.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_CHIEFTAINS_PROFICIENCY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WOLFPACK_RUSH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WARCRY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_SAVAGE_MOMENTUM" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_RECKLESS_ASSAULT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WOLFPACK_TACTICS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_BOOMING_SHOUT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_BLOODY_VICTORY" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
-            <grant type="Archetype Feature" id="ID_____" level="3" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="7" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="11" />
-            <grant type="Archetype Feature" id="ID__________" level="15" />
-            <grant type="Archetype Feature" id="ID___________" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_CHIEFTAINS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WOLFPACK_RUSH" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WARCRY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_SAVAGE_MOMENTUM" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_RECKLESS_ASSAULT" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WOLFPACK_TACTICS" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_BOOMING_SHOUT" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_BLOODY_VICTORY" level="18" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Chieftain's Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_CHIEFTAINS_PROFICIENCY">
         <description>
-            <p></p>
+            <p>Starting at 1st level when you take this Presence, you gain proficiency in shields, martial weapons, and the Intimidation skill, or another skill of your choice if you are already proficient.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <select type="Proficiency" support="Skill" requirements="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        </rules>
+    </element>
+    <element name="Wolfpack Rush" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WOLFPACK_RUSH">
+        <description>
+            <p>Starting at 1st level, the first time an allied creature moves after rolling initiative, it can bring a number of willing creatures equal to your Charisma modifier (minimum 1) within 20 feet of you along with it in the same distance and direction that they move, but cannot move more than half of their movement speed and cannot move more than 20 feet from you. Creatures can stop this movement at any point along the path.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The first time an allied creature moves after rolling initiative, it can bring {{charisma:modifier}} willing creatures within 20 feet of you along with it in the same distance and direction that they move, but cannot move more than half of their movement speed and cannot move more than 20 feet from you. Creatures can stop this movement at any point along the path.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="War Cry" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WARCRY">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, as an action or in place of an attack as part of the Attack action, you can expend a number of Leadership Dice (up to your per turn limit) to inspire your allies with a mighty Warcry. You and friendly creatures within 20 feet of you gain temporary hit points equal to the Leadership Dice roll + your Charisma modifier (minimum 1). This can affect a number of creatures up to your 1 + Charisma modifier (minimum 1).</p>
+            <p class="indent">You can make a single weapon attack as a bonus action after unleashing a War Cry, but the attack roll has disadvantage unless made with a weapon with light property.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action or in place of an attack as part of the Attack action, you can expend a number of Leadership Dice (up to your per turn limit) to inspire your allies with a mighty Warcry. You and friendly creatures within 20 feet of you gain temporary hit points equal to the Leadership Dice roll + {{charisma:modifier}}. This can affect up to {{charisma:modifier}} creatures.
+            You can make a single weapon attack as a bonus action after unleashing a War Cry, but the attack roll has disadvantage unless made with a weapon with light property.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Savage Momentum" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_SAVAGE_MOMENTUM">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, whenever you spend a Leadership Die, you gain advantage on the next attack roll you make before the end of your turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you spend a Leadership Die, you gain advantage on the next attack roll you make before the end of your turn.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Reckless Assault" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_RECKLESS_ASSAULT">
         <description>
-            <p></p>
+            <p>Starting at 7th level, when a creature with temporary hit points from one of your abilities deals damage, they can expend those temporary hit points to add damage equal to half the temporary hit points sacrificed to their damage dealt.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When a creature with temporary hit points from one of your abilities deals damage, they can expend those temporary hit points to add damage equal to half the temporary hit points sacrificed to their damage dealt.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Wolfpack Tactics" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WOLFPACK_TACTICS">
         <description>
-            <p></p>
+            <p>Starting at 11th level, you excel at taking down prey in coordination with your allies. The first creature you hit that has taken damage from one of your allies since the end of your last turn suffers an additional 1d12 damage.</p>
+            <p class="indent">The first time a creature you grant a creature an attack with Battlefield Presence deals damage to a creature you had dealt damage to during your turn, that attack deals an additional 1d4 damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The first creature you hit that has taken damage from one of your allies since the end of your last turn suffers an additional 1d12 damage.
+            The first time a creature you grant a creature an attack with Battlefield Presence deals damage to a creature you had dealt damage to during your turn, that attack deals an additional 1d4 damage.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Booming Shout" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_BOOMING_SHOUT">
         <description>
-            <p></p>
+            <p>Starting at 15th level, when you unleash your Warcry you can attempt to frighten enemies. Any number of creatures of your choice within range of your Warcry must make a Wisdom saving throw (DC of 8 + Charisma modifier + your proficiency bonus) or become frightened of you until the end of their turn. Once you have used Booming Shout, you cannot use it again until you complete a short or long rest.</p>
+            <p class="indent">Additionally, the range of your Rallying Mark, Urgent Orders, Helpful Word, and Warcry is doubled.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>Any number of creatures of your choice within range of your Warcry must make a Wisdom saving throw DC {{Booming-shout}} or become frightened of you until the end of their turn.
+            Additionally, the range of your Rallying Mark, Urgent Orders, Helpful Word, and Warcry is doubled.</description>
         </sheet>
+        <rules>
+            <stat name="Booming-shout" value="8" bonus="base" />
+            <stat name="Booming-shout" value="proficiency" />
+            <stat name="Booming-shout" value="charisma:modifier" />
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="Bloody Victory" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_BLOODY_VICTORY">
         <description>
-            <p></p>
+            <p>Starting at 18th level, when you or an ally reduces a hostile creature that has dealt damage to you to 0 hit points, you can unleash a Warcry as a reaction. When you unleash your Warcry in this way, you do not expend any Leadership Dice and you use a d12 in place of your Leadership Die.</p>
+            <p class="indent">You can use this reaction a number of times equal to your Charisma modifier, regaining all uses on a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{charisma:modifier}}/Long Rest">
+            <description>When you or an ally reduces a hostile creature that has dealt damage to you to 0 hit points, you can unleash a Warcry as a reaction. When you unleash your Warcry in this way, you do not expend any Leadership Dice and you use a d12 in place of your Leadership Die.</description>
         </sheet>
     </element>
 </elements>
