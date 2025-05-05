@@ -1,0 +1,139 @@
+<elements>
+    <info>
+        <name>Packleader Specialization for Warlord</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="warlord-packleader.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-packleader.xml" />
+        </update>
+    </info>
+    <element name="Packleader's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_PACKLEADER">
+        <supports>warlord-specialization</supports>
+        <description>
+            <p>While Warlords may specialize in the control of battles, an Packleader is a Warlord that aims to win a fight before it becomes a battle. Through scouting, preparing, and stacking the odds, they don’t fight fair, they fight to win, and seek to only fight when they’ve already won.</p>
+            <p class="indent">Their control of the battlefield doesn’t merely extend to those that fight on it, but to twisting the battlefield itself to suit their needs, stymieing and stupefying their foes while concealing and sheltering their allies with the terrain itself.</p>
+            <p class="indent">While good and evil rarely play directly into a Packleader’s perspective (they can be either or Neutral just as easily), they tend be Chaotic, viewing the so called “rules of engagement” and other traditions of civilization to be convenient weaknesses they can exploit rather than any sort of guideline they might actually follow.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_TOOLS_OF_THE_WILD" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_CONCEALED_APPROACH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_NATURES_GIFT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_SHROUD_OF_NATURE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_TRACKLESS_TRAILS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_FLEETING_STRIKERS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_GHOSTS_OF_THE_WILD" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_WARLORD_OF_THE_WILDS" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_TOOLS_OF_THE_WILD" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_CONCEALED_APPROACH" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_NATURES_GIFT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_SHROUD_OF_NATURE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_TRACKLESS_TRAILS" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_FLEETING_STRIKERS" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_GHOSTS_OF_THE_WILD" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_WARLORD_OF_THE_WILDS" level="18" />
+        </rules>
+        <spellcasting name="Packleader" ability="Wisdom" prepare="false">
+            <list>Packleader</list>
+        </spellcasting>
+    </element>
+    <element name="Tools of the Wild" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_TOOLS_OF_THE_WILD">
+        <description>
+            <p>Starting at 1st level when you take this Presence, you gain proficiency in martial weapons, the Survival skill, or another skill of your choice if already proficient, and your choice of the Herbalism Kit or the Poisoner’s Kit.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency, Tools of the Wild" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <select type="Proficiency" name="Skill Proficiency, Tools of the Wild" supports="Skill" requirements="ID_PROFICIENCY_SKILL_SURVIVAL,!ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_SURVIVAL"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_PROFICIENCY_SKILL_SURVIVAL" />
+            
+        </rules>
+    </element>
+    <element name="Concealed Approach" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_CONCEALED_APPROACH">
+        <description>
+            <p>Starting at 1st level, if you have at least a minute to prepare, you can add your Wisdom modifier to a Dexterity (Stealth) check for you and up five friendly creatures. You and friendly creatures within 30 feet of you that roll for initiative while hidden can add your Wisdom modifier to the initiative result.</p>
+        </description>
+        <sheet>
+            <description>If you have at least a minute to prepare, you can add {{wisdom:modifier}} to a Dexterity (Stealth) check for you and up five friendly creatures. You and friendly creatures within 30 feet of you that roll for initiative while hidden can add {{wisdom:modifier}} to the initiative result.</description>
+        </sheet>
+    </element>
+    <element name="Nature's Gift" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_NATURES_GIFT">
+        <description>
+            <p>Starting at 3rd level, through your connection to the wild battlefields you’ve mastered offers you some measure of control of them. You learn the spell mold earth, and can pick one additional cantrip from the Druid list that you know.</p>
+            <p class="indent">Additionally, you can expend one Leadership Die to cast fog cloud or snare as 1st level spells. The casting time of snare is one action when you cast it this way. You can pick one additional 1st level spell from the Druid spell list with a casting time of one action to cast this way.</p>
+            <p class="indent">Your spell casting modifier for these spells is Wisdom, and your spell Save DC for these spells is 8 + your Proficiency bonus + your Wisdom Modifier.</p>
+        </description>
+        <sheet>
+            <description>You can expend one Leadership Die to cast fog cloud or snare as 1st level spells. The casting time of snare is one action when you cast it this way. You can pick one additional 1st level spell from the Druid spell list with a casting time of one action to cast this way. Your DC is {{natures-gift:dc}}/</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SNARE" level="3" />
+            <select type="Spell" name="Nature's Gift, Spell" supports="Druid,1" />
+            <select type="Spell" name="Nature's Gift, Cantrip" supports="Druid,0" />
+            <stat name="natures-gift:dc" value="8" bonus="base" />
+            <stat name="natures-gift:dc" value="proficiency" />
+            <stat name="natures-gift:dc" value="wisdom:modifier" />
+        </rules>
+    </element>
+    <element name="Shroud of Nature" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_SHROUD_OF_NATURE">
+        <description>
+            <p>Starting at 7th level, you and your allies can fade away behind natural shrouds. Whenever you cast a spell that results in you or a friendly creature becoming obscured (such as being within the radius of a fog cloud or behind earth moved by mold earth), the obscured creature can use their reaction to take the Hide action.</p>
+        </description>
+        <sheet>
+            <description>Whenever you cast a spell that results in you or a friendly creature becoming obscured (such as being within the radius of a fog cloud or behind earth moved by mold earth), the obscured creature can use their reaction to take the Hide action.</description>
+        </sheet>
+    </element>
+    <element name="Trackless Trails" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_TRACKLESS_TRAILS">
+        <description>
+            <p>Additionally at 7th level, you can spend 2 Leadership Dice to cast pass without trace without providing material components.</p>
+        </description>
+        <sheet>
+            <description>You can spend 2 Leadership Dice to cast pass without trace without providing material components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="7" />
+        </rules>
+    </element>
+    <element name="Fleeting Strikers" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_FLEETING_STRIKERS">
+        <description>
+            <p>Starting at 11th level, if you are not in the same spot you were at the end of your last turn or are obscured from your target, the first attack you make during your turn deals an additional 1d10 damage.</p>
+            <p class="indent">Additionally, a creature that you grant an Attack with Battlefield Presence can take the Dash action instead of making the attack you granted.</p>
+        </description>
+        <sheet>
+            <description>If you are not in the same spot you were at the end of your last turn or are obscured from your target, the first attack you make during your turn deals an additional 1d10 damage.
+            Additionally, a creature that you grant an Attack with Battlefield Presence can take the Dash action instead of making the attack you granted.</description>
+        </sheet>
+    </element>
+    <element name="Ghosts of the Wild" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_GHOSTS_OF_THE_WILD">
+        <description>
+            <p>Starting at 15th level, while under the effect of pass without trace, you can expend one Leadership Die to take the Hide action at the end of your turn without expending an action.</p>
+            <p class="indent">If you use Battlefield Presence to grant an attack to a creature, you can expend one Leadership Die to shroud them with shadows or natural phenomena, granting them advantage on the first attack they make before the start of your next turn. If they are under the effect of pass without trace, you can do this without expending a Leadership Die.</p>
+        </description>
+        <sheet>
+            <description>While under the effect of pass without trace, you can expend one Leadership Die to take the Hide action at the end of your turn without expending an action.
+            If you use Battlefield Presence to grant an attack to a creature, you can expend one Leadership Die to shroud them with shadows or natural phenomena, granting them advantage on the first attack they make before the start of your next turn. If they are under the effect of pass without trace, you can do this without expending a Leadership Die.</description>
+        </sheet>
+    </element>
+    <element name="Warlord of the Wilds" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_PACKLEADER_WARLORD_OF_THE_WILDS">
+        <description>
+            <p>Starting at 18th level, you can pick five additional spells from the Druid spell list of 4th level or lower. You can cast these spells using Leadership Dice equal to the level of the spell. You can change the list of spells you have selected when you complete a long rest. The spell Save DC for these spells is 8 + your Proficiency bonus + your Wisdom Modifier.</p>
+            <p class="indent">Any time you use Leadership Dice to cast a spell, you can take the Attack action (one weapon attack only) as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>You can pick five additional spells from the Druid spell list of 4th level or lower. You can cast these spells using Leadership Dice equal to the level of the spell. You can change the list of spells you have selected when you complete a long rest. The spell Save DC for these spells is {{warlord-of-the-wilds}}.
+            Any time you use Leadership Dice to cast a spell, you can take the Attack action (one weapon attack only) as a bonus action.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Warlord of the Wilds, Spell" supports="Druid,4||Druid,3||Druid,2||Druid,1" number="5"  />
+            <stat name="warlord-of-the-wilds" value="8" bonus="base" />
+            <stat name="warlord-of-the-wilds" value="proficiency" />
+            <stat name="warlord-of-the-wilds" value="wisdom:modifier" />
+        </rules>
+    </element>
+</elements>
