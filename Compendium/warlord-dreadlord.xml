@@ -1,12 +1,12 @@
 <elements>
     <info>
-        <name>Commander Specialization for Warlord</name>
+        <name>Dreadlord Specialization for Warlord</name>
         <description></description>
         <update version="0.0.1">
-            <file name="warlord-commander.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-commander.xml" />
+            <file name="warlord-dreadlord.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-dreadlord.xml" />
         </update>
     </info>
-    <element name="Commander's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_COMMANDER">
+    <element name="Dreadlord's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_DREADLORD">
         <supports>warlord-specialization</supports>
         <description>
             <p></p>

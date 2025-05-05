@@ -1,12 +1,12 @@
 <elements>
     <info>
-        <name>Commander Specialization for Warlord</name>
+        <name>Paragon Specialization for Warlord</name>
         <description></description>
         <update version="0.0.1">
-            <file name="warlord-commander.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-commander.xml" />
+            <file name="warlord-paragon.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-paragon.xml" />
         </update>
     </info>
-    <element name="Commander's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_COMMANDER">
+    <element name="Paragon's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_PARAGON">
         <supports>warlord-specialization</supports>
         <description>
             <p></p>
