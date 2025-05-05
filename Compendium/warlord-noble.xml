@@ -9,113 +9,141 @@
     <element name="Noble's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_NOBLE">
         <supports>warlord-specialization</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <p>A Warlord with a Noble Presence is not inherently one that was born a Noble, though many are. A Noble Presence Warlord is one that serves to drive their retainers and companions onto greater heights through sheer charisma, a shining beacon of what they are fighting for standing beside them.</p>
+            <p class="indent">Since time immemorial men have fought twice as hard on a battlefield when their leader takes the field to stand among them, driven to heights that would seem impossible in order to protect their liege—while an adventurer of this path may or may not be their liege, their charisma invokes the same fervor in their companions and retainers.</p>
+            <p class="indent">An adventurer on this path is not inherently of noble background, though many often are. A noble reared on the laws of the land is usually lawful, but extraordinary circumstances may have brought about a rebellious streak in one that now seeks to overthrow unfit rulers (or rulers that aren’t them, anyway).</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_DESTINED_LEADER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_CALL_TO_ARMS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_INSPIRING_LEADER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_DIVINE_RIGHT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_CHARISMATIC_LEADERSHIP" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_WORDS_OF_CONVICTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_IMPERATIVE_ORDER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_INSPIRED_ZEAL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_UNTOUCHABLE_PRESENCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_GRAND_DECREE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
-            <grant type="Archetype Feature" id="ID_____" level="3" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="7" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="11" />
-            <grant type="Archetype Feature" id="ID__________" level="15" />
-            <grant type="Archetype Feature" id="ID___________" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_DESTINED_LEADER" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_CALL_TO_ARMS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_INSPIRING_LEADER" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_DIVINE_RIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_CHARISMATIC_LEADERSHIP" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_WORDS_OF_CONVICTION" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_IMPERATIVE_ORDER" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_INSPIRED_ZEAL" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_UNTOUCHABLE_PRESENCE" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_GRAND_DECREE" level="18" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Destined Leader" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_DESTINED_LEADER">
         <description>
-            <p></p>
+            <p>Starting at 1st level when you take this Presence you gain proficiency with rapiers, longswords and the Persuasion skill, or another skill of your choice if you are already proficient. Additionally, you gain an additional Leadership Die at 3rd level, 9th level, and 15th level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="leadership-die:count" value="1" level="3" />
+            <stat name="leadership-die:count" value="1" level="9" />
+            <stat name="leadership-die:count" value="1" level="15" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+            <select type="Proficiency" supports="Skill" requirements="ID_PROFICIENCY_SKILL_PERSUASION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_PROFICIENCY_SKILL_PERSUASION"/>
+        </rules>
+    </element>
+    <element name="Call to Arms" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_CALL_TO_ARMS">
+        <description>
+            <p>Starting at 1st level, when you roll initiative you can call out to friendly creatures within 60 feet of you, providing them with a surge of inspiration. Creatures of your choice equal to your Charisma modifier (minimum 1) gain advantage on their first attack roll.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you roll initiative you can call out to friendly creatures within 60 feet of you, providing them with a surge of inspiration. {{charisma:modifier}} creatures of your choice gain advantage on their first attack roll.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Inspiring Leader" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_INSPIRING_LEADER">
         <description>
-            <p></p>
+            <p>Additionally at 1st level, an allied creature with a CR of less than half your Warlord level (or with fewer class levels than you have Warlord levels if the creature does not have a CR) can choose to use your proficiency bonus + Charisma modifier for the attack roll modifier on the first Attack they make in a turn where they have been granted by Battlefield Presence.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>An allied creature with a CR of less than {{level:warlord:half}} (or with fewer class levels than you have Warlord levels if the creature does not have a CR) can choose to use +{{inspiring-leader}} for the attack roll modifier on the first Attack they make in a turn where they have been granted by Battlefield Presence.</description>
+        </sheet>
+        <rules>
+            <stat name="inspiring-leader" value="proficiency" bonus="base" />
+            <stat name="inspiring-leader" value="charisma:modifier" />
+        </rules>
+    </element>
+    <element name="Divine Right" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_DIVINE_RIGHT">
+        <description>
+            <p>Starting at 3rd level, you can use Leadership Dice (up to your per turn limit) to cast command. The level of the spell is equal to the number of Leadership Dice spent.</p>
+            <p class="indent">The spell save DC for these spells are 8 + your Charisma modifier + your Proficiency bonus.</p>
+            <p class="indent">You can also add your Charisma (maximum 2) to your AC so long as you are not wearing heavy armor or using a shield.</p>
+        </description>
+        <sheet>
+            <description>You can use Leadership Dice (up to your per turn limit) to cast command DC {{divine-right}}. The level of the spell is equal to the number of Leadership Dice spent.
+            You can also add your Charisma (maximum 2) to your AC so long as you are not wearing heavy armor or using a shield.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+            <stat name="divine-right" value="8" bonus="base" />
+            <stat name="divine-right" value="proficiency" />
+            <stat name="divine-right" value="charisma:modifier" />
+            <stat name="ac:misc" value="1" requirements="[cha:12]" equipped="![armor:heavy],[shield:none]"/>
+            <stat name="ac:misc" value="1" requirements="[cha:14]" equipped="![armor:heavy],[shield:none]"/>
+        </rules>
+    </element>
+    <element name="Charismatic Leadership" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_CHARISMATIC_LEADERSHIP">
+        <description>
+            <p>Additionally at 3rd level, you can add your Charisma modifier to the damage bonus of Rallying Mark, the temporary hit points granted by Urgent Orders, and the attack roll of a creature that gains advantage from Helpful Word.</p>
+        </description>
+        <sheet>
+            <description>You can add {{charisma:modifier}} to the damage bonus of Rallying Mark, the temporary hit points granted by Urgent Orders, and the attack roll of a creature that gains advantage from Helpful Word.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Words of Conviction" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_WORDS_OF_CONVICTION">
         <description>
-            <p></p>
+            <p>Starting at 7th level, you can use Leadership Dice (Up to your per turn limit) to cast bless or heroism without providing material components. The level of the spell is equal to the number of Leadership Dice spent.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can use Leadership Dice (Up to your per turn limit) to cast bless or heroism without providing material components. The level of the spell is equal to the number of Leadership Dice spent.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Imperative Order" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_IMPERATIVE_ORDER">
         <description>
-            <p></p>
+            <p>Starting at 7th level, when you spend 2 or more Leadership Dice on a target with Urgent Orders, you can allow the target creature to make a single weapon attack with their reaction instead of moving. If you spend 3 or more Leadership Dice on a target, the target creature can both move and make a single weapon attack with their reaction.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you spend 2 or more Leadership Dice on a target with Urgent Orders, you can allow the target creature to make a single weapon attack with their reaction instead of moving. If you spend 3 or more Leadership Dice on a target, the target creature can both move and make a single weapon attack with their reaction.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Inspired Zeal" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_INSPIRED_ZEAL">
         <description>
-            <p></p>
+            <p>Starting at 11th level, all creatures of your choice within 30 feet of you deal an extra 1d4 radiant damage when they hit with a weapon attack.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>All creatures of your choice within 30 feet of you deal an extra 1d4 radiant damage when they hit with a weapon attack.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Untouchable Presence" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_UNTOUCHABLE_PRESENCE">
         <description>
-            <p></p>
+            <p>Starting at 15th level, you are under the effect of sanctuary spell. This effect ends as normal if you take an action that would break it, but returns at the start of your next turn.</p>
+            <p class="indent">The spell save DC for this spell is 8 + your Charisma modifier + your Proficiency bonus.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You are under the effect of sanctuary spell with DC {{divine-right}}. This effect ends as normal if you take an action that would break it, but returns at the start of your next turn.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" />
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="Grand Decree" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_GRAND_DECREE">
         <description>
-            <p></p>
+            <p>Starting at 18th level, you can use this ability to cast command without expending a spell slot or Leadership Dice. When you do so, the spell affects all creatures of your choice within range that could be affected by the spell.</p>
+            <p class="indent">Once you cast command using this ability, you cannot cast it using this ability again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can use this ability to cast command without expending a spell slot or Leadership Dice. When you do so, the spell affects all creatures of your choice within range that could be affected by the spell.</description>
         </sheet>
     </element>
 </elements>
