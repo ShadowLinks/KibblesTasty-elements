@@ -9,113 +9,98 @@
     <element name="Commander's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_COMMANDER">
         <supports>warlord-specialization</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <p>A Commander on the field can be many things—a trusted sergeant, a weary veteran, or merely a person with an uncommon degree of common sense and a particularly keen eye for how to win a fight.</p>
+            <p class="indent">While not as flashy as some of the other Presences on the Battlefield, that just means they are less likely to get themselves skewered. A keen word there and helping hand here, their influence is subtle but effective, inexorably shifting the tides of battle in their favor.</p>
+            <p class="indent">A Commander can come from any background, but is usually someone that has acquired their Wisdom the hard way, having seen a bit of what life and battlefields have to offer.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_MARTIAL_PROFICIENCY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_FORM_UP" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_KEEN_POINTERS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_ON_YOUR_FEET" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_MARTIAL_ADVANTAGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_BULWARK" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_NO_ONE_LEFT_BEHIND" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
-            <grant type="Archetype Feature" id="ID_____" level="3" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="7" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="11" />
-            <grant type="Archetype Feature" id="ID__________" level="15" />
-            <grant type="Archetype Feature" id="ID___________" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_MARTIAL_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_FORM_UP" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_KEEN_POINTERS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_ON_YOUR_FEET" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_MARTIAL_ADVANTAGE" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_BULWARK" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_NO_ONE_LEFT_BEHIND" level="18" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Martial Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_MARTIAL_PROFICIENCY">
         <description>
-            <p></p>
+            <p>Starting at 1st level when you take this Presence, you gain proficiency in heavy armor, shields, and martial weapons.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        </rules>
+    </element>
+    <element name="Form Up!" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_FORM_UP">
+        <description>
+            <p>Starting at 1st level, when you roll initiative and are not surprised, any number of friendly creatures within 30 feet of you can move up to their speed a number of feet equal to five times your Wisdom modifier (minimum 5 feet).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you roll initiative and are not surprised, any number of friendly creatures within 30 feet of you can move up to their speed up to {{form-up:distancce}} feet.</description>
+        </sheet>
+        <rules>
+            <stat name="form-up:distance" value="wisdom:modifier" bonus="base" />
+            <stat name="form-up:distance" value="wisdom:modifier" />
+            <stat name="form-up:distance" value="wisdom:modifier" />
+            <stat name="form-up:distance" value="wisdom:modifier" />
+            <stat name="form-up:distance" value="wisdom:modifier" />
+        </rules>
+    </element>
+    <element name="Keen Pointer" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_KEEN_POINTERS">
+        <description>
+            <p>Starting at 3rd level, you can take the Helpful Word bonus action without expending a Leadership Die if you are within 5 feet of the creature you are taking the Help action against.</p>
+            <p class="indent">When you do so, you can expend Leadership Dice to apply Rallying Mark to the creature you are targeting with this Help action.</p>
+        </description>
+        <sheet>
+            <description>You can take the Helpful Word bonus action without expending a Leadership Die if you are within 5 feet of the creature you are taking the Help action against.
+            When you do so, you can expend Leadership Dice to apply Rallying Mark to the creature you are targeting with this Help action.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="On Your Feet!" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_ON_YOUR_FEET">
         <description>
-            <p></p>
+            <p>Starting at 7th level, you can use a bonus action and expend one Leadership Die to restore the will to fight in an allied creature. Choose a friendly creature within 5 feet of you. That creature regains hit points equal to your Leadership die.</p>
+            <p class="indent">When you use this feature to restore hit points to a creature at 0 hit points, you can add your Wisdom modifier to the amount of hit points restored. If the creature is prone, it can choose to stand immediately.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can use a bonus action and expend one Leadership Die to restore the will to fight in an allied creature. Choose a friendly creature within 5 feet of you. That creature regains hit points equal to your Leadership die.
+            When you use this feature to restore hit points to a creature at 0 hit points, you can add {{wisdom:modifier}} to the amount of hit points restored. If the creature is prone, it can choose to stand immediately.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Martial Advantage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_MARTIAL_ADVANTAGE">
         <description>
-            <p></p>
+            <p>Starting at 11th level, you’ve learned to leverage fighting alongside an ally. Once per turn, you can deal an extra 2d6 damage to a creature you hit with a weapon attack if that creature is within 5 feet of one of your allies that isn’t incapacitated.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once per turn, you can deal an extra 2d6 damage to a creature you hit with a weapon attack if that creature is within 5 feet of one of your allies that isn’t incapacitated.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Bulwark" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_BULWARK">
         <description>
-            <p></p>
+            <p>Starting at 15th level, when you and any number of friendly creatures within 30 feet of you make a Saving Throw against the same effect, your allies gain Advantage on their Saving Throw if you succeed on the saving throw.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you and any number of friendly creatures within 30 feet of you make a Saving Throw against the same effect, your allies gain Advantage on their Saving Throw if you succeed on the saving throw.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="No One Left Behind!" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_COMMANDER_NO_ONE_LEFT_BEHIND">
         <description>
-            <p></p>
+            <p>Starting at 18th level, you can move up to your speed to get within 5 feet of a creature while using your On Your Feet feature. During this movement you gain resistance to all damage and the target regains an additional 1d8 hit points for each attack of opportunity made against you during this movement.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>You can move up to your speed to get within 5 feet of a creature while using your On Your Feet feature. During this movement you gain resistance to all damage and the target regains an additional 1d8 hit points for each attack of opportunity made against you during this movement.</description>
         </sheet>
     </element>
 </elements>
