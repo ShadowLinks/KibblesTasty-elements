@@ -48,66 +48,95 @@
     </element>
     <element name="Unapproachable" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_UNAPPROACHABLE">
         <description>
-            <p></p>
+            <p>Additionally at 1st level, your intimidating presences causes your foes to falter at the start of combat. After rolling initiative, the first attack by the first hostile creature to attack an allied creature within 30 feet of you has disadvantage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>After rolling initiative, the first attack by the first hostile creature to attack an allied creature within 30 feet of you has disadvantage.</description>
         </sheet>
     </element>
     <element name="Demoralizing Dice" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DEMORIZATION_DICE">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, whenever you spend a Leadership Die, you gain a special Demoralization Die of equal size. Demoralization Dice last until you have gone 1 minute without earning or spending one. You can spend Demoralization Die as a reaction on one of the following effects:</p>
+            <ul>
+                <li><strong>Make it Excruciating.</strong> When a creature within 30 feet of you takes damage from a weapon attack roll made by an ally of yours, as a reaction you can expend Demoralization Dice (up to your Leadership Die limit), rolling them and causing the target to take additional damage of the same damage type equal the value of the rolled dice.</li>
+                <li><strong>Don’t Touch That.</strong> When a creature attacks an allied creature within 30 feet of you, as a reaction you can expend one Demoralization Dice, rolling it and reducing the attacker’s attack roll.</li>
+                <li><strong>Are You Sure?</strong> When a creature ends their turn within 5 feet of you, as a reaction you can expend Demoralization Dice (up to your Leadership Die limit) and force the creature to make a Wisdom saving throw (DC 8 + your Charisma modifier + your proficiency bonus). On failure, the creature uses their reaction to move a number of feet away from you equal to 10 × the Demoralization Dice spent. The target automatically passes if they are immune to the frightened condition.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you spend a Leadership Die, you gain a special Demoralization Die of equal size. Demoralization Dice last until you have gone 1 minute without earning or spending one. You can spend Demoralization Die as a reaction on one of the following effects:
+            Make it Excruciating. When a creature within 30 feet of you takes damage from a weapon attack roll made by an ally of yours, as a reaction you can expend Demoralization Dice (up to your Leadership Die limit), rolling them and causing the target to take additional damage of the same damage type equal the value of the rolled dice.
+            Don’t Touch That. When a creature attacks an allied creature within 30 feet of you, as a reaction you can expend one Demoralization Dice, rolling it and reducing the attacker’s attack roll.
+            Are You Sure? When a creature ends their turn within 5 feet of you, as a reaction you can expend Demoralization Dice (up to your Leadership Die limit) and force the creature to make a Wisdom saving throw DC {{Demoralizing-dice:dc}}. On failure, the creature uses their reaction to move a number of feet away from you equal to 10 × the Demoralization Dice spent. The target automatically passes if they are immune to the frightened condition.</description>
         </sheet>
+        <rules>
+            <stat name="Demoralizing-dice:dc" value="8" bonus="base" />
+            <stat name="Demoralizing-dice:dc" value="proficiency" />
+            <stat name="Demoralizing-dice:dc" value="charisma:modifier" />
+        </rules>
     </element>
     <element name="Supernatural Dread" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_SUPERNATURAL_DREAD">
         <description>
-            <p></p>
+            <p>Starting at 7th level, you can use Leadership Dice (up to your per turn limit) to cast frighten without a spell slot. The level of the spell is equal to the number of Leadership Dice spent.</p>
+            <p class="indent">Alternatively, can spend 3 Leadership Dice (even if it exceeds your per turn limit) to instead cast fear without expending a spell slot or material component once. After you do this, you cannot cast fear this way again until you complete a long rest. Charisma is your spell casting modifier for these spells.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can use Leadership Dice (up to your per turn limit) to cast frighten without a spell slot. The level of the spell is equal to the number of Leadership Dice spent.
+            Alternatively, can spend 3 Leadership Dice (even if it exceeds your per turn limit) to instead cast fear without expending a spell slot or material component once. After you do this, you cannot cast fear this way again until you complete a long rest. Charisma is your spell casting modifier for these spells.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_SPELL_FRIGHTEN" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" />
+        </rules>
     </element>
     <element name="Iron Mask" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_IRON_MASK">
         <description>
-            <p></p>
+            <p>Additionally at 7th level, you are exceptionally good at masking your emotions. Creatures have disadvantage on Wisdom (Insight) ability checks against you.</p>
+            <p class="indent">Additionally, you can suppress the effect of the frightened condition on yourself, but it requires concentration (as if concentrating on a spell). You cannot lose concentration on the effect, but cannot maintain it while concentrating on spell.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Creatures have disadvantage on Wisdom (Insight) ability checks against you.
+            Additionally, you can suppress the effect of the frightened condition on yourself, but it requires concentration (as if concentrating on a spell). You cannot lose concentration on the effect, but cannot maintain it while concentrating on spell.</description>
         </sheet>
     </element>
     <element name="Punish the Weak" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_PUNISH_THE_WEAK">
         <description>
-            <p></p>
+            <p>Starting at 11th level, when you target a creature within 60 feet of you with any ability, feature, or attack, you can mark them for punishment (no action required). The mark lasts until the creature ends their turn more than 60 feet from you, dies, or you mark another creature. Once per turn when the marked creature takes damage, they take an additional 1d8 damage. This is increased to 1d12 if the target is frightened of you.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you target a creature within 60 feet of you with any ability, feature, or attack, you can mark them for punishment (no action required). The mark lasts until the creature ends their turn more than 60 feet from you, dies, or you mark another creature. Once per turn when the marked creature takes damage, they take an additional 1d8 damage. This is increased to 1d12 if the target is frightened of you.</description>
         </sheet>
     </element>
     <element name="Instinctive Flinch" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_INSTINCTIVE_FLINCH">
         <description>
-            <p></p>
+            <p>Starting at 15th level, when a creature passes a Wisdom saving throw against one of your features that would cause them to become frightened or flee, they still gain disadvantage on their next attack role made before the start of your next turn. This has no effect if the target is immune to the frightened condition.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When a creature passes a Wisdom saving throw against one of your features that would cause them to become frightened or flee, they still gain disadvantage on their next attack role made before the start of your next turn. This has no effect if the target is immune to the frightened condition.</description>
         </sheet>
     </element>
     <element name="Expanded Dominion" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_EXPANDED_DOMINION">
         <description>
-            <p></p>
+            <p>Additionally at 15th level, the range of your Demoralization dice effects are doubled (making them 60 feet, 60 feet, and 10 feet, respectively).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The range of your Demoralization dice effects are doubled (making them 60 feet, 60 feet, and 10 feet, respectively).</description>
         </sheet>
     </element>
     <element name="Dreadful Terror" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DREADFUL_TERROR">
         <description>
-            <p></p>
+            <p>Starting at 18th level, when a target becomes frightened of you, you can expend demoralization Dice to enhance the effect (no action required).</p>
+            <ul>
+                <li><strong>Panicked Terror.</strong> The target immediately spends their reaction to move up to half of their movement speed away from you.</li>
+                <li><strong>Blind Terror.</strong> You can expend 2 Demoralization Dice to cause the target become blinded until the start of your next turn.</li>
+                <li><strong>Paralyzing Terror.</strong> You can expend 3 Demoralization Dice to cause the target to become paralyzed until the start of your next turn.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>When a target becomes frightened of you, you can expend demoralization Dice to enhance the effect (no action required).
+            Panicked Terror. The target immediately spends their reaction to move up to half of their movement speed away from you.
+            Blind Terror. You can expend 2 Demoralization Dice to cause the target become blinded until the start of your next turn.
+            Paralyzing Terror. You can expend 3 Demoralization Dice to cause the target to become paralyzed until the start of your next turn.</description>
         </sheet>
     </element>
 </elements>
