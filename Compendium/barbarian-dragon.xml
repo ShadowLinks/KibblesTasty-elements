@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Path of the Dragon Barbarian</name>
+        <update version="0.0.1">
+            <file name="barbarian-dragon.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-dragon.xml" />
+        </update>
+    </info>
+    <element name="Path of the Dragon" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_BARBARIAN_DRAGON">
+        <supports>Primal Path</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+            <div element="ID_______" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID___" level="3" />
+            <grant type="Archetype Feature" id="ID____" level="6" />
+            <grant type="Archetype Feature" id="ID_____" level="6" />
+            <grant type="Archetype Feature" id="ID______" level="10" />
+            <grant type="Archetype Feature" id="ID_______" level="14" />
+        </rules>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
