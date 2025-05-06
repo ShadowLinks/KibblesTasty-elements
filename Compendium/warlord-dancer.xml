@@ -9,113 +9,115 @@
     <element name="Dancer's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_DANCER">
         <supports>warlord-specialization</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <p>A unique presence on the battlefield, these graceful agents wind their way through death and destruction with a curious elegance, uplifting their allies and distracting their enemies. A dancer comes in many forms, be they prancing jesters or graceful enchanters, their presence seems supernaturally captivating to all who encounter them, for good or ill.</p>
+            <p class="indent">Though they seem out of place in danger, confused onlookers will often find them as the last ones standing in the most dangerous of situations, always one step out of out the greatest danger.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_DANCERS_GRACE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_GRACEFUL_ENTRANCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_BEWILDERING_STEPS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_DANCERS_DODGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_BATTLEFIELD_GRACE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_WHIRLING_THORNS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_FURIOUS_TEMPO" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_EVASION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_ELEGANT_EXCHANGE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
-            <grant type="Archetype Feature" id="ID_____" level="3" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="7" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="11" />
-            <grant type="Archetype Feature" id="ID__________" level="15" />
-            <grant type="Archetype Feature" id="ID___________" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_DANCERS_GRACE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_GRACEFUL_ENTRANCE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_BEWILDERING_STEPS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_DANCERS_DODGE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_BATTLEFIELD_GRACE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_WHIRLING_THORNS" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_FURIOUS_TEMPO" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_EVASION" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_ELEGANT_EXCHANGE" level="18" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Dancer's Grace" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_DANCERS_GRACE">
         <description>
-            <p></p>
+            <p>Starting at 1st level when you take this Presence, you gain proficiency with Performance. If you already have proficiency with performance, you gain expertise with it, meaning you can add twice your proficiency bonus to checks made with it.</p>
+            <p class="indent">Additionally, while you are not wearing armor or carrying a shield, you gain an unarmored defense that is 10 + your Dexterity modifier + your Charisma modifier.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERFORMANCE" />
+            <stat name="dancers-grace:ac" value="10" bonus="base" />
+            <stat name="dancers-grace:ac" value="dexterity:modifier" />
+            <stat name="dancers-grace:ac" value="charisma:modifier" />
+            <stat name="ac:calculation" value="dancers-grace:ac" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Dancer's Grace"/>
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Graceful Entrance" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_GRACEFUL_ENTRANCE">
         <description>
-            <p></p>
+            <p>Starting at 1st level, you can give yourself a bonus to your initiative rolls equal to your Charisma modifier. Additionally when you roll initiative and are not surprised, you can move up to your half movement speed, and you and any creature you end this movement within 5 feet of gains temporary hit points equal to your Charisma modifier.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can give yourself a +{{charisma:modifier}} bonus to your initiative rolls. Additionally when you roll initiative and are not surprised, you can move up to your half movement speed, and you and any creature you end this movement within 5 feet of gains {{charisma:modifier}} temporary hit points.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Bewildering Steps" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_BEWILDERING_STEPS">
         <description>
-            <p></p>
+            <p>At 3rd level, you gain an additional use for Leadership Dice.</p>
+            <p><strong>Distract</strong></p>
+            <p class="indent">As a bonus action, you attempt to distract a creature within 30 feet. Until the start of your next turn, if that creature attacks a creature other than you while you are within range of its attack, you can roll your leadership die and subtract it from their attacks.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet alt="Distract">
+            <description>As a bonus action, you attempt to distract a creature within 30 feet. Until the start of your next turn, if that creature attacks a creature other than you while you are within range of its attack, you can roll your leadership die and subtract it from their attacks.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Dancer's Dodge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_DANCERS_DODGE">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, when you take the Dodge action while you are not wearing armor or carrying a shield, you can use Distract, Helpful Word, Urgent Orders, or Rallying Mark without expending a leadership die. When you do so, it applies as if you had spent 1 leadership die on it for its effect.</p>
+            <p class="indent">Additionally, when you take the Dodge action, you can expend leadership dice to grant attacks through Battlefield Presence. You can grant a number of attacks equal to the leadership dice spent, up to your per turn limit.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you take the Dodge action while you are not wearing armor or carrying a shield, you can use Distract, Helpful Word, Urgent Orders, or Rallying Mark without expending a leadership die. When you do so, it applies as if you had spent 1 leadership die on it for its effect.
+            Additionally, when you take the Dodge action, you can expend leadership dice to grant attacks through Battlefield Presence. You can grant a number of attacks equal to the leadership dice spent, up to your per turn limit.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Battlefield Grace" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_BATTLEFIELD_GRACE">
         <description>
-            <p></p>
+            <p>Starting at 7th level, whenever a creature misses you with an attack, you regain 1 spent leadership die and can move 5 feet. You cannot regain a leadership die this way again until the start of your next turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever a creature misses you with an attack, you regain 1 spent leadership die and can move 5 feet. You cannot regain a leadership die this way again until the start of your next turn.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Whirling Thorns" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_WHIRLING_THORNS">
         <description>
-            <p></p>
+            <p>Additionally at 7th level, if you are carrying a melee weapon with the light property, you can make a single attack with it as a bonus action. You can expend Leadership Dice to make additional attacks as part of the same action, but each attack must be against a different target within range. If you have taken Dancer's Dodge, You can attack one additionally target (as if you'd spent a Leadership Die on the ability).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>If you are carrying a melee weapon with the light property, you can make a single attack with it as a bonus action. You can expend Leadership Dice to make additional attacks as part of the same action, but each attack must be against a different target within range. If you have taken Dancer's Dodge, You can attack one additionally target (as if you'd spent a Leadership Die on the ability).</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="Furious Tempo" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_FURIOUS_TEMPO">
         <description>
-            <p></p>
+            <p>Starting at 11th level, you can add your Charisma modifier to the damage of attacks you make or grant through Battlefield Presence.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can add your {{charisma:modifier}} to the damage of attacks you make or grant through Battlefield Presence.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
+    <element name="Evasion" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_EVASION">
         <description>
-            <p></p>
+            <p>Starting at 15th level, you can nimbly dodge out of the way of certain area effects. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
+    <element name="Elegant Exchange" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DANCER_ELEGANT_EXCHANGE">
         <description>
-            <p></p>
+            <p>Starting at 18th level, when an willing creature within 15 feet of you is the target of a spell, attack, or targeted effect that would cause them to take damage, you can move their position as a reaction, moving them 5 feet in any direction and becoming the target of the attack.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>When an willing creature within 15 feet of you is the target of a spell, attack, or targeted effect that would cause them to take damage, you can move their position as a reaction, moving them 5 feet in any direction and becoming the target of the attack.</description>
         </sheet>
     </element>
 </elements>
