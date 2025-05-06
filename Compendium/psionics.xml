@@ -6,6 +6,207 @@
             <file name="psionic.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionic.xml" />
         </update>
     </info>
+    <element name="Compelled Query" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_COMPELLED_QUERY">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You focus your telepathic powers on a creature you can see within range and ask it a simple question. It must succeed on an Intelligence saving throw or conjure a short thought or image that answers your question to the best of its ability. You perceive this response telepathically. If you cast this spell on the same creature more than once in a 24-hour period, it gains a cumulative +5 bonus to the save on every subsequent query after the first.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Delve Mind" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_DELVE_MIND">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You rummage through a creature’s mind, forcing it to make an Intelligence saving throw. On a failure, you gain access to its memories from the past 12 hours and are able to recall its memories as if they were your own for the duration.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you can delve 12 hours further back in the target's memories for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Flicker" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_FLICKER">
+        <supports>Psionic</supports>
+        <description>
+            <p>You flicker between the material and ethereal planes. Until the start of your next turn, each time you would take damage, including the triggering attack, roll a d4. On a 2, you gain resistance to that instance of damage. On a 4, you don’t take any damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">psionic</set>
+            <set name="time">1 reaction, when you would take damage</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Future Insight" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_FUTURE_INSIGHT">
+        <supports>Psionic</supports>
+        <description>
+            <p>Roll 3d4 or 1d12 (your choice) and record the results. For the duration, you can expend one of these dice to add or subtract it from any attack roll, saving throw, or ability check made by a creature within 60 feet of you. You must expend the die after the roll is made, but before you know the outcome of the roll. Once all the dice have been expended, the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (60-foot radius)</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Glimpse the Future" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_GLIMPSE_THE_FUTURE">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You give a creature within range a glimpse of its future. Roll a d4 to determine the outcome from the following table:</p>
+            <table>
+                <thead>
+                    <tr><td>d4</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>1</td><td>The target foresees an upcoming action. Roll a d20 and record the value. Once before the spell ends, the target can replace one of its d20 rolls with the value rolled.</td></tr>
+                <tr><td>2</td><td>The target sees its own death. Once before the spell ends, if it is reduced to 0 hit points by an attack or due to failing a save throw, it can instead evade the attack or succeed on the saving throw. It cannot do so if it is already incapacitated.</td></tr>
+                <tr><td>3</td><td>The target gains the confidence of a future victory. It gains 10 temporary hit points and is immune to the frightened condition for the duration of the spell.</td></tr>
+                <tr><td>4</td><td>The target sees an ambush or a surprise attack. Once before the spell ends, it can choose not to be surprised if it would be surprised, or if an attack against it would be made at advantage, it can force the attack to be made at disadvantage.</td></tr>
+            </table>
+            <p class="indent">Once one of the foreseen events occurs, the spell ends.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can select the effect instead of rolling a d4.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Inner World" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_INNER_WORLD">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>As an action, you create and enter an imaginary world, and pull all other creatures within 120 feet in with you. This world is centered on you, and extends in 120 feet in all directions. You leave a psionic rift in your place when you exit the real world.</p>
+            <p class="indent">A creature that reaches the edge of this world and has at least 5 feet of movement remaining can make a Charisma saving throw to attempt to exit. On a success, it can move 5 feet to exit the world and return to its prior location. On a failure, it can't exit and can't try again until its next turn. A creature outside the world can attempt to enter it by moving to the location where you cast the spell and succeeding on a Charisma saving throw. You can choose to allow any creature to automatically succeed on a save to enter or exit the world.</p>
+            <p class="indent">When you create this world, you can include any obstacles or terrain of your choice. These walls, pillars, or other obstacles can occupy up to twenty 5-square-foot areas, rising to any height. They can be placed in adjacent spaces or spread out as you wish, but every creature within the world must have open paths to reach both you and the world's edge.</p>
+            <p class="indent">You can additionally create up to five hazardous spaces in 5-square-foot areas on the ground. These can take any form (e.g. fire, spikes), and deal 4d4 + 4 psychic damage to a creature when it enters the effect’s area for the first time on a turn or starts its turn there. Each hazard must be at least 20 feet from every other hazard.</p>
+            <p class="indent">While in your inner world, if you fail a saving throw, you can choose to succeed instead. You can do so up to 3 times over the spell's duration. Additionally, all your spells and psionic powers have their psi point costs reduced by 1.</p>
+            <p class="indent">As an action, you can attempt to destroy a creature within the world. The target must succeed on an Intelligence saving throw or take 8d8 + 8 psychic damage and be forcibly ejected from the imaginary world, returning to its prior location in the real world.</p>
+            <p class="indent">The world can be brightly or dimly lit, and you control the weather within it. You control the aesthetic features of the world and any terrain and hazards you create inside.</p>
+            <p class="indent">When the spell ends, you and any creatures remaining in the world exit and return to your prior locations in the real world.</p>
+        </description>
+        <setters>
+            <set name="keywords">psychic</set>
+            <set name="level">8</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Nullify Effect" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_NULLIFY_EFFECT">
+        <supports>Psionic</supports>
+        <description>
+            <p>You gain advantage on Intelligence, Wisdom, and Charisma saving throws, including the triggering save, until the start of your next turn. You also gain resistance to psychic and force damage until the start of your next turn.</p>
+            <p class="indent">At Higher Levels. If you cast this spell using a spell slot of 4th level or higher, you can reroll one of the dice after making an applicable saving throw at advantage. If you cast this spell using a spell slot of 5th level or higher, you gain immunity to psychic and force damage for the duration.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">psionic</set>
+            <set name="time">1 reaction, which you take when you are forced to make an Intelligence, Wisdom, or Charisma saving throw</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mind Blast" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_MIND_BLAST">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You emit a devastating blast of psychic energy. Each creature in a 60-foot cone must make an Intelligence saving throw. On a failure, a creature takes 6d8 psychic damage and is stunned until the end of its next turn. On a success, it takes half as much damage and is not stunned.</p>
+        </description>
+        <setters>
+            <set name="keywords">psychic, stunned</set>
+            <set name="level">6</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (60-foot cone)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Psychic Drain" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_PSYCHIC_DRAIN">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You draw on the psychic energy of another creature you can see to sustain yourself. The target must make a Charisma saving throw. On failure it takes 3d8 psychic damage and you gain temporary hit points equal to half the amount of psychic damage dealt and regain one expended psi point.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the spell deals an additional 1d8 psychic damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">psychic</set>
+            <set name="level">2</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
     <element name="Shockwave" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_SHOCKWAVE">
         <supports>Psionic, Spell Saving Throw</supports>
         <description>
@@ -26,4 +227,69 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Spacial Manipulation" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_SPACIAL_MANIPULATION">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You can swap the position of two creatures you can see within range. An unwilling creature can make a Charisma saving throw, preventing the swap on success.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, you can target another pair of creatures for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (120-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Unlocked Potential" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_UNLOCKED_POTENTIAL">
+        <supports>Psionic</supports>
+        <description>
+            <p>You unlock the potential of a creature’s mind, allowing it to fully reach its limits. Once per turn for the duration, the target can add 1d4 to any attack roll, damage roll, or saving throw it makes. Each time it does so, it takes 1 psychic damage as it strains against its natural limitations.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
 </elements>
+
+<!-- 
+<element name="Spellname" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_SPELLNAME">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    -->
