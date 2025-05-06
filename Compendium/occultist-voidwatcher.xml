@@ -139,7 +139,7 @@
                 <thead>
                     <tr><td>Occultisist Level</td><td>Spells Learned</td></tr>
                 </thead>
-                <tr><td>1st</td><td>message, minor illusion, terrifying visions</td></tr>
+                <tr><td>1st</td><td>message, minor illusion, dissonant whispers</td></tr>
                 <tr><td>3rd</td><td>disorient</td></tr>
                 <tr><td>5th</td><td>fear</td></tr>
                 <tr><td>7th</td><td>compulsion</td></tr>
@@ -150,8 +150,8 @@
             <description></description>
         </sheet>
         <rules>
-<!--        Error in original print references a channel divinity effect from dream domain
-            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_TERRIFYING_VISIONS" /> -->            
+<!--        original spell terrifying vision was a stand in for dissonant whispers-->  
+            <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_DISSONANT_WHISPERS" />           
             <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_MESSAGE" />
             <grant type="Spell" level="1" spellcasting="Occultist" prepared="true" id="ID_PHB_SPELL_MINOR_ILLUSION" />
             <grant type="Spell" level="3" spellcasting="Occultist" prepared="true" id="ID_KTH_COLAL_SPELL_DISORIENT" />
