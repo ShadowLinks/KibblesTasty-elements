@@ -6632,11 +6632,35 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <!-- End of Compendium content
+    Referenced free content below-->
+    <!-- Based on cause fear so i used that as reference for the missing components section -->
+    <element name="Frighten" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_FRIGHTEN">
+        <supports>Occultist, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You invoke a sudden fear within a creature you can see within range. The target creature must succeed a Wisdom saving throw, or become frightened for the duration. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a 2nd level or higher, you can target one additional creature for each slot above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">frightened</set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">material</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!--             
 
-<element name="Spell Name (blood magic)" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_SPELL NAME">
+<element name="Spell Name" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_SPELL NAME">
         <supports></supports>
         <description>
             <p></p>
