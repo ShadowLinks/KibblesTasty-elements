@@ -9,36 +9,44 @@
     <element name="Dreadlord's Presence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLORD_DREADLORD">
         <supports>warlord-specialization</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
-            <div element="ID_________" />
-            <div element="ID__________" />
-            <div element="ID___________" />
+            <p>A warlord that follows this path specializes in terror and fear, usually localized to their enemies. While other warlords look to boost and inspire their allies, a Dreadlord works to undermine and terrify their enemies, crushing their will to fight and leaving them as prey easily slaughtered.</p>
+            <p class="indent">A dreadlord is not always evil, though they most often show up in the ranks of evil, but by their very nature they are someone that can instill dread and terror. The source of this dread can be cursed visage, supernatural gift, or simply a tyrannical force of will.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DREADLORD_PROFICIENCY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_UNAPPROACHABLE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DEMORIZATION_DICE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_SUPERNATURAL_DREAD" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_IRON_MASK" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_PUNISH_THE_WEAK" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_INSTINCTIVE_FLINCH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_EXPANDED_DOMINION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DREADFUL_TERROR" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="1" />
-            <grant type="Archetype Feature" id="ID_____" level="3" />
-            <grant type="Archetype Feature" id="ID______" level="3" />
-            <grant type="Archetype Feature" id="ID_______" level="7" />
-            <grant type="Archetype Feature" id="ID________" level="7" />
-            <grant type="Archetype Feature" id="ID_________" level="11" />
-            <grant type="Archetype Feature" id="ID__________" level="15" />
-            <grant type="Archetype Feature" id="ID___________" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DREADLORD_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_UNAPPROACHABLE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DEMORIZATION_DICE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_SUPERNATURAL_DREAD" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_IRON_MASK" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_PUNISH_THE_WEAK" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_INSTINCTIVE_FLINCH" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_EXPANDED_DOMINION" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DREADFUL_TERROR" level="18" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Dreadlord Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DREADLORD_PROFICIENCY">
+        <description>
+            <p>Starting at 1st level when you select this Presence, you gain proficiency in heavy armor and the Intimidation skill.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+        </rules>
+    </element>
+    <element name="Unapproachable" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_UNAPPROACHABLE">
         <description>
             <p></p>
         </description>
@@ -46,7 +54,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Demoralizing Dice" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DEMORIZATION_DICE">
         <description>
             <p></p>
         </description>
@@ -54,7 +62,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Supernatural Dread" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_SUPERNATURAL_DREAD">
         <description>
             <p></p>
         </description>
@@ -62,7 +70,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Iron Mask" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_IRON_MASK">
         <description>
             <p></p>
         </description>
@@ -70,7 +78,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Punish the Weak" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_PUNISH_THE_WEAK">
         <description>
             <p></p>
         </description>
@@ -78,7 +86,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Instinctive Flinch" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_INSTINCTIVE_FLINCH">
         <description>
             <p></p>
         </description>
@@ -86,7 +94,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID________">
+    <element name="Expanded Dominion" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_EXPANDED_DOMINION">
         <description>
             <p></p>
         </description>
@@ -94,23 +102,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___________">
+    <element name="Dreadful Terror" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_DREADLORD_DREADFUL_TERROR">
         <description>
             <p></p>
         </description>
