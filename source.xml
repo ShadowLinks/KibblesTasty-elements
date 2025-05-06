@@ -24,6 +24,23 @@
             <set name="release">2025</set>
         </setters>
     </element>
+    <element name="Kibbles' Tasty Homebrew" type="Source" source="KTH" id="ID_KTH_SOURCE">
+        <description>
+            <p>Source for unpublished/free material created by Kibbles' Tasty</p>
+        </description>
+        <setters>
+            <set name="abbreviation">KTH</set>
+            <set name="url">https://www.kthomebrew.com/</set>
+            <set name="image">https://images.squarespace-cdn.com/content/v1/5e7eab9fcc76e2321541f8b3/a18ba2dd-becb-48d9-baf3-744e25a20e87/Doggo512Icon.png?format=1500w</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+        </setters>
+    </element>
     <!-->
     <element name="KibblesTasty's Subclasses" type="Source" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_SOURCE_KIBBLESTASTYS_SUBCLASSES">
         <description>
