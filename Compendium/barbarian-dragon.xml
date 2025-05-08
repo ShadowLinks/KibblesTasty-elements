@@ -9,63 +9,240 @@
     <element name="Path of the Dragon" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_BARBARIAN_DRAGON">
         <supports>Primal Path</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>Barbarians tap into primal powers, and a Barbarian of this path taps into one of the most ancient and primeval of them all: the power of dragons.</p>
+            <p class="indent">Some say this path was born during the rage of dragons by mortals tapping into the primal rage as it washed across the world, others say that only those with latent dragon blood coursing through them can walk this path. What all can agree on is the result is a being to be feared.</p>
+            <p class="indent">As with most Barbarian, ones following this path tend toward chaos, as they contain potent destructive power that paces at the edges of the cage, just waiting to be unleashed. Some, particularly those rare individuals that channel metallic colors, may be exceptions to this tendency.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_UNLEASHED_SAVAGERY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_PRIMAL_WEAPONS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRAGONHIDE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_TYRANT_OF_THE_SKIES" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="10" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_UNLEASHED_SAVAGERY" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_PRIMAL_WEAPONS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRAGONHIDE" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_TYRANT_OF_THE_SKIES" level="14" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Draconic Wrath" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH">
         <description>
-            <p></p>
+            <p>When you choose this path at 3rd level, when you enter a rage, you can choose to make your Rage bonus damage deal elemental damage matching your draconic type (shown on the table below).</p>
+            <p class="indent">Additionally, when you enter a rage you can take on aspects of a draconic entity, growing savage natural weapons as claws grow from your hands, fangs sprout from your maw, and a vicious lashing tail grows from your back. Your claws deal 1d4 slashing damage. Your fangs deal 1d8 piercing damage, and your lashing tail deals 1d6 bludgeoning damage and has the reach property.</p>
+            <p class="indent">Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.</p>
+            <p class="indent">When you gain this feature, you pick a color, and gain resistance corresponding to the element type of that color on the following Path of the Dragon Elements table below while raging.</p>
+            <table>
+                <thead>
+                    <tr><td>Dragon Color</td><td>Element</td></tr>
+                </thead>
+                <tr><td>Black</td><td>Acid</td></tr>
+                <tr><td>Blue</td><td>Lightning</td></tr>
+                <tr><td>Green</td><td>Poison</td></tr>
+                <tr><td>Red</td><td>Fire</td></tr>
+                <tr><td>White</td><td>Cold</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Draconic Wrath" supports="draconic-wrath-element" />
+        </rules>
+    </element>
+    <element name="Draconic Wrath (Black)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_BLACK">
+        <supports>draconic-wrath-element</supports>
+        <description>
+            <p>When you choose this path at 3rd level, when you enter a rage, you can choose to make your Rage bonus damage deal acid damage.</p>
+            <p class="indent">Additionally, when you enter a rage you can take on aspects of a draconic entity, growing savage natural weapons as claws grow from your hands, fangs sprout from your maw, and a vicious lashing tail grows from your back. Your claws deal 1d4 slashing damage. Your fangs deal 1d8 piercing damage, and your lashing tail deals 1d6 bludgeoning damage and has the reach property.</p>
+            <p class="indent">Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.</p>
+            <p class="indent">When you gain this feature, you pick a color, and gain resistance corresponding to the element type of that color on the following Path of the Dragon Elements table below while raging.</p>
+            <table>
+                <thead>
+                    <tr><td>Dragon Color</td><td>Element</td></tr>
+                </thead>
+                <tr><td>Black</td><td>Acid</td></tr>
+                <tr><td>Blue</td><td>Lightning</td></tr>
+                <tr><td>Green</td><td>Poison</td></tr>
+                <tr><td>Red</td><td>Fire</td></tr>
+                <tr><td>White</td><td>Cold</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you enter a rage, you can choose to make your Rage bonus damage deal Acid damage.
+            Additionally, when you enter a rage you can take on claws (1d4 slashing), fangs (1d8 piercing), and tail (1d6 bludgeoning with reach) natural weapons.
+            Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.
+            You gain resistance to acid damage while raging.</description>
+        </sheet>
+        <rules>
+            <stat name="Draconic-wrath-element" value="acid" inline="true" />
+        </rules>
+    </element>
+    <element name="Draconic Wrath (Blue)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_BLUE">
+        <supports>draconic-wrath-element</supports>
+        <description>
+            <p>When you choose this path at 3rd level, when you enter a rage, you can choose to make your Rage bonus damage deal lightning damage.</p>
+            <p class="indent">Additionally, when you enter a rage you can take on aspects of a draconic entity, growing savage natural weapons as claws grow from your hands, fangs sprout from your maw, and a vicious lashing tail grows from your back. Your claws deal 1d4 slashing damage. Your fangs deal 1d8 piercing damage, and your lashing tail deals 1d6 bludgeoning damage and has the reach property.</p>
+            <p class="indent">Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.</p>
+            <p class="indent">When you gain this feature, you pick a color, and gain resistance corresponding to the element type of that color on the following Path of the Dragon Elements table below while raging.</p>
+            <table>
+                <thead>
+                    <tr><td>Dragon Color</td><td>Element</td></tr>
+                </thead>
+                <tr><td>Black</td><td>Acid</td></tr>
+                <tr><td>Blue</td><td>Lightning</td></tr>
+                <tr><td>Green</td><td>Poison</td></tr>
+                <tr><td>Red</td><td>Fire</td></tr>
+                <tr><td>White</td><td>Cold</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you enter a rage, you can choose to make your Rage bonus damage deal Lightning damage.
+            Additionally, when you enter a rage you can take on claws (1d4 slashing), fangs (1d8 piercing), and tail (1d6 bludgeoning with reach) natural weapons.
+            Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.
+            You gain resistance to lightning damage while raging.</description>
+        </sheet>
+        <rules>
+            <stat name="Draconic-wrath-element" value="lightning" inline="true" />
+        </rules>
+    </element>
+    <element name="Draconic Wrath (Green)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_GREEN">
+        <supports>draconic-wrath-element</supports>
+        <description>
+            <p>When you choose this path at 3rd level, when you enter a rage, you can choose to make your Rage bonus damage deal poison damage.</p>
+            <p class="indent">Additionally, when you enter a rage you can take on aspects of a draconic entity, growing savage natural weapons as claws grow from your hands, fangs sprout from your maw, and a vicious lashing tail grows from your back. Your claws deal 1d4 slashing damage. Your fangs deal 1d8 piercing damage, and your lashing tail deals 1d6 bludgeoning damage and has the reach property.</p>
+            <p class="indent">Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.</p>
+            <p class="indent">When you gain this feature, you pick a color, and gain resistance corresponding to the element type of that color on the following Path of the Dragon Elements table below while raging.</p>
+            <table>
+                <thead>
+                    <tr><td>Dragon Color</td><td>Element</td></tr>
+                </thead>
+                <tr><td>Black</td><td>Acid</td></tr>
+                <tr><td>Blue</td><td>Lightning</td></tr>
+                <tr><td>Green</td><td>Poison</td></tr>
+                <tr><td>Red</td><td>Fire</td></tr>
+                <tr><td>White</td><td>Cold</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you enter a rage, you can choose to make your Rage bonus damage deal Poison damage.
+            Additionally, when you enter a rage you can take on claws (1d4 slashing), fangs (1d8 piercing), and tail (1d6 bludgeoning with reach) natural weapons.
+            Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.
+            You gain resistance to poison damage while raging.</description>
+        </sheet>
+        <rules>
+            <stat name="Draconic-wrath-element" value="poison" inline="true" />
+        </rules>
+    </element>
+    <element name="Draconic Wrath (Red)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_RED">
+        <supports>draconic-wrath-element</supports>
+        <description>
+            <p>When you choose this path at 3rd level, when you enter a rage, you can choose to make your Rage bonus damage deal fire damage.</p>
+            <p class="indent">Additionally, when you enter a rage you can take on aspects of a draconic entity, growing savage natural weapons as claws grow from your hands, fangs sprout from your maw, and a vicious lashing tail grows from your back. Your claws deal 1d4 slashing damage. Your fangs deal 1d8 piercing damage, and your lashing tail deals 1d6 bludgeoning damage and has the reach property.</p>
+            <p class="indent">Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.</p>
+            <p class="indent">When you gain this feature, you pick a color, and gain resistance corresponding to the element type of that color on the following Path of the Dragon Elements table below while raging.</p>
+            <table>
+                <thead>
+                    <tr><td>Dragon Color</td><td>Element</td></tr>
+                </thead>
+                <tr><td>Black</td><td>Acid</td></tr>
+                <tr><td>Blue</td><td>Lightning</td></tr>
+                <tr><td>Green</td><td>Poison</td></tr>
+                <tr><td>Red</td><td>Fire</td></tr>
+                <tr><td>White</td><td>Cold</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you enter a rage, you can choose to make your Rage bonus damage deal Fire damage.
+            Additionally, when you enter a rage you can take on claws (1d4 slashing), fangs (1d8 piercing), and tail (1d6 bludgeoning with reach) natural weapons.
+            Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.
+            You gain resistance to fire damage while raging.</description>
+        </sheet>
+        <rules>
+            <stat name="Draconic-wrath-element" value="fire" inline="true" />
+        </rules>
+    </element>
+    <element name="Draconic Wrath (White)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_WHITE">
+        <supports>draconic-wrath-element</supports>
+        <description>
+            <p>When you choose this path at 3rd level, when you enter a rage, you can choose to make your Rage bonus damage deal cold damage.</p>
+            <p class="indent">Additionally, when you enter a rage you can take on aspects of a draconic entity, growing savage natural weapons as claws grow from your hands, fangs sprout from your maw, and a vicious lashing tail grows from your back. Your claws deal 1d4 slashing damage. Your fangs deal 1d8 piercing damage, and your lashing tail deals 1d6 bludgeoning damage and has the reach property.</p>
+            <p class="indent">Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.</p>
+            <p class="indent">When you gain this feature, you pick a color, and gain resistance corresponding to the element type of that color on the following Path of the Dragon Elements table below while raging.</p>
+            <table>
+                <thead>
+                    <tr><td>Dragon Color</td><td>Element</td></tr>
+                </thead>
+                <tr><td>Black</td><td>Acid</td></tr>
+                <tr><td>Blue</td><td>Lightning</td></tr>
+                <tr><td>Green</td><td>Poison</td></tr>
+                <tr><td>Red</td><td>Fire</td></tr>
+                <tr><td>White</td><td>Cold</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you enter a rage, you can choose to make your Rage bonus damage deal Cold damage.
+            Additionally, when you enter a rage you can take on claws (1d4 slashing), fangs (1d8 piercing), and tail (1d6 bludgeoning with reach) natural weapons.
+            Whenever you attack with one of these natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.
+            You gain resistance to cold damage while raging.</description>
+        </sheet>
+        <rules>
+            <stat name="Draconic-wrath-element" value="cold" inline="true" />
+        </rules>
+    </element>
+    <element name="Unleashed Savagery" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_UNLEASHED_SAVAGERY">
+        <description>
+            <p>Starting at 6th level, once during a rage, as an attack as part of the Attack action, you can unleash your rage into pure energy, exhaling a blast of elemental power. Creatures within 15 foot cone must make a Dexterity saving throw. The DC of this saving throw is 8 + your proficiency modifier + your strength modifier. A creature takes 6d6 damage of the Elemental Type of your Dragon Color on a failed save.</p>
+            <p class="indent">The damage and range of this breath weapon increases at 10th level (to 8d6 in a 30 foot cone), at 14th level (10d6 in a 45 foot cone), and at 18th level (12d6 in a 60 foot cone)</p>
+        </description>
+        <sheet usage="1/Rage">
+            <description>Once during a rage, as an attack as part of the Attack action, you can unleash your rage into pure energy, exhaling a blast of elemental power. Creatures within 15 foot cone must make a Dexterity saving throw of DC {{Unleashed-savagery}}. A creature takes 6d6 {{Draconic-wrath-element}} damage on a failed save.</description>
+            <description level="10">Once during a rage, as an attack as part of the Attack action, you can unleash your rage into pure energy, exhaling a blast of elemental power. Creatures within 30 foot cone must make a Dexterity saving throw of DC {{Unleashed-savagery}}. A creature takes 8d6 {{Draconic-wrath-element}} damage on a failed save.</description>
+            <description level="14">Once during a rage, as an attack as part of the Attack action, you can unleash your rage into pure energy, exhaling a blast of elemental power. Creatures within 45 foot cone must make a Dexterity saving throw of DC {{Unleashed-savagery}}. A creature takes 10d6 {{Draconic-wrath-element}} damage on a failed save.</description>
+            <description level="18">Once during a rage, as an attack as part of the Attack action, you can unleash your rage into pure energy, exhaling a blast of elemental power. Creatures within 60 foot cone must make a Dexterity saving throw of DC {{Unleashed-savagery}}. A creature takes 12d6 {{Draconic-wrath-element}} damage on a failed save.</description>
+        </sheet>
+        <rules>
+            <stat name="Unleashed-savagery" value="8" bonus="base" />
+            <stat name="Unleashed-savagery" value="proficiency" />
+            <stat name="Unleashed-savagery" value="strength:modifier" />
+        </rules>
+    </element>
+    <element name="Primal Weapons" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_PRIMAL_WEAPONS">
+        <description>
+            <p>Additionally at 6th level, the natural weapons you gain while raging now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+        </description>
+        <sheet>
+            <description>The natural weapons you gain while raging now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+    <element name="Dragonhide" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRAGONHIDE">
+        <description>
+            <p>Starting at 10th level, the marks of your Draconic path now remain outside of your rage, manifesting as heavy scales that grant you resistance to bludgeoning, piercing, and slashing damage from nonmagical sources even when you are not raging.</p>
+            <p class="indent">Additionally, you gain resistance to your dragon color’s elemental type even when you are not raging.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_BLACK" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_BLUE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_GREEN" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_RED" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_DRACONIC_WRATH_WHITE" />
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Tyrant of the Skies" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_DRAGON_TYRANT_OF_THE_SKIES">
         <description>
-            <p></p>
+            <p>By 14th level, when you enter a rage, you can sprout massive dragon wings from your back. If you are not wearing heavy armor, you gain a flying speed equal to your movement speed.</p>
+            <p class="indent">If you choose to manifest natural weapons and wings when you enter a rage, you can choose to entirely take on a draconic form while raging, becoming Large sized. When you take on a full draconic form, you choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>When you enter a rage, you can sprout massive dragon wings from your back. If you are not wearing heavy armor, you gain a flying speed equal to your movement speed ({{speed}}).
+            If you choose to manifest natural weapons and wings when you enter a rage, you can choose to entirely take on a draconic form while raging, becoming Large sized. When you take on a full draconic form, you choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it.</description>
         </sheet>
     </element>
 </elements>
