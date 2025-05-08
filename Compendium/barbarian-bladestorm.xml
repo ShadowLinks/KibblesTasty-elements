@@ -9,73 +9,92 @@
     <element name="Path of the Bladestorm" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_BARBARIAN_BLADESTORM">
         <supports>Primal Path</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>Barbarians are notorious for being engines of destruction on the battlefield, and for none is this more an apt description than those that have chosen the Path of the Bladestorm. They are Barbarians whose rage is such a transcendent force that their very weapons are restless embodiments of their destructive wrath.</p>
+            <p class="indent">When a Path of the Bladestorm Barbarian walks onto a battlefield, those unprepared to withstand the rain of sharp steel ought to run and hide until the storm passes. The ones who stay will have to face the winds of destruction and will soon be drenched by flying droplets of blood as the barbarian at the center of the maelstrom smashes, hacks and slashes at the strength of primal winds.</p>
+            <p class="indent">Woe to the fool who would stand before the storm.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_WALKING_ARMORY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_FURIOUS_HOWL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_WHIRLING_DEATH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_ENDLESS_BLADES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_WINDS_OF_RAGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_BLADESTORM" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="10" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_WALKING_ARMORY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_FURIOUS_HOWL" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_WHIRLING_DEATH" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_ENDLESS_BLADES" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_WINDS_OF_RAGE" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_BLADESTORM" level="14" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Walking Armory" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_WALKING_ARMORY">
         <description>
-            <p></p>
+            <p>Starting when you choose this path at 3rd level, all melee weapons with the light property also gain the thrown (20/60) property for you if they don't already have a thrown property with greater range.</p>
+            <p class="indent">Additionally, when you make an attack to throw a weapon, you can draw a weapon. You can either draw a weapon before throwing it, or draw a new weapon immediately after throwing a weapon if you have another weapon available.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>All melee weapons with the light property also gain the thrown (20/60) property for you if they don't already have a thrown property with greater range.
+            Additionally, when you make an attack to throw a weapon, you can draw a weapon. You can either draw a weapon before throwing it, or draw a new weapon immediately after throwing a weapon if you have another weapon available.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Furious Hurl" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_FURIOUS_HOWL">
         <description>
-            <p></p>
+            <p>At 3rd level, you can add your Rage bonus damage to damage rolls made with thrown weapons, as well as use your Reckless Attack feature when you make a ranged weapon attack with a light melee weapon. Additionally, being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged weapon attack rolls.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can add your Rage bonus damage to damage rolls made with thrown weapons, as well as use your Reckless Attack feature when you make a ranged weapon attack with a light melee weapon. Additionally, being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged weapon attack rolls.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Whirling Death" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_WHIRLING_DEATH">
         <description>
-            <p></p>
+            <p>Starting at 6th level, when you throw a weapon while raging it becomes animated with your fury. A whirling weapon stays spinning where it was thrown until the end of your next turn, and automatically attacks the first hostile creature that ends its turn within 5 feet of it using the attack and damage modifiers used to throw it. A creature can only take damage from this feature once per turn (meaning can be attacked a second time if the first attack misses, but not if it hits).</p>
+            <p class="indent">Additionally, you can use your reaction to make an attack of opportunity with any weapon animated by this feature if a target moves out of its reach.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you throw a weapon while raging it becomes animated with your fury. A whirling weapon stays spinning where it was thrown until the end of your next turn, and automatically attacks the first hostile creature that ends its turn within 5 feet of it using the attack and damage modifiers used to throw it. A creature can only take damage from this feature once per turn.
+            Additionally, you can use your reaction to make an attack of opportunity with any weapon animated by this feature if a target moves out of its reach.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Endless Blades" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_ENDLESS_BLADES">
         <description>
-            <p></p>
+            <p>At 6th level, while raging, your rage suffuses any weapon within 20 feet of you that is not being worn or carried. As a bonus action, you can call one or more such weapons to your open hands.</p>
+            <p class="indent">Additionally, any blade you throw counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While raging, your rage suffuses any weapon within 20 feet of you that is not being worn or carried. As a bonus action, you can call one or more such weapons to your open hands.
+            Additionally, any blade you throw counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Winds of  Rage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_WINDS_OF_RAGE">
         <description>
-            <p></p>
+            <p>Beginning at 10th level, the winds around you are tied to your anger. You learn the manipulate wind spell. While you are raging, you can cast manipulate wind as a bonus action, and the range you can pick up weapons with Endless Blades increases to 60 feet.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While you are raging, you can cast manipulate wind as a bonus action, and the range you can pick up weapons with Endless Blades increases to 60 feet.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MANIPULATE_WIND" level="10" />
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Bladestorm" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_BLADESTORM_BLADESTORM">
         <description>
-            <p></p>
+            <p>Starting at 14th level, as an action when you are raging, you can start a Bladestorm. You can fling two light melee weapons you are carrying and pull any weapons already animated by Whirling Death into a wild vortex surrounding you. All creatures of your choice within 20 feet of you must make a Dexterity saving throw with a DC of 8 + your proficiency bonus + your Strength modifier. On failure, they take 3d6 + your Strength modifier + your Rage bonus damage. The damage is increased by 1d6 for each Whirling Death weapon included (up to a maximum of +3d6). On success, a creature takes half as much damage.</p>
+            <p class="indent">On subsequent turns while raging, you can use your action to keep the Bladestorm going, forcing all creatures within 20 feet of you to make the save again. You can keep a Bladestorm going for a number of turns equal to your Strength modifier. You can use this feature once per rage. When a bladestorm ends, all included weapons fall to the ground around you.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Rage up to {{strength:modifier}} turns" >
+            <description>As an action when you are raging, you can start a Bladestorm. You can fling two light melee weapons you are carrying and pull any weapons already animated by Whirling Death into a wild vortex surrounding you. All creatures of your choice within 20 feet of you must make a Dexterity saving throw with a DC of {{bladestorm:dc}}. On failure, they take 3d6 + {{bladestorm:dmg}}. The damage is increased by 1d6 for each Whirling Death weapon included (up to a maximum of +3d6). On success, a creature takes half as much damage.
+            On subsequent turns while raging, you can use your action to keep the Bladestorm going, forcing all creatures within 20 feet of you to make the save again. When a bladestorm ends, all included weapons fall to the ground around you.</description>
         </sheet>
+        <rules>
+            <stat name="bladestorm:dc" value="8" bonus="base" />
+            <stat name="bladestorm:dc" value="proficiency" />
+            <stat name="bladestorm:dc" value="strength:modifier" />
+            <stat name="bladestorm:dmg" value="strength:modifier" bonus="base" />
+            <stat name="bladestorm:dmg" value="barbarian rage:damage" />
+        </rules>
     </element>
 </elements>
