@@ -50,8 +50,8 @@
             <stat name="leadership-die:count" value="1" level="15" />
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
-            <select type="Proficiency" supports="Skill" requirements="ID_PROFICIENCY_SKILL_PERSUASION" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_PROFICIENCY_SKILL_PERSUASION"/>
+            <select type="Proficiency" name="Skill Proficiency, Destined Leader" supports="Skill" requirements="ID_PROFICIENCY_SKILL_PERSUASION,!ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_PERSUASION"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_PROFICIENCY_SKILL_PERSUASION" />
         </rules>
     </element>
     <element name="Call to Arms" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_NOBLE_CALL_TO_ARMS">

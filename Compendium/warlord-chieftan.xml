@@ -43,8 +43,8 @@
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-            <select type="Proficiency" support="Skill" requirements="ID_PROFICIENCY_SKILL_INTIMIDATION" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <select type="Proficiency" name="Skill Proficiency, Chieftan's Proficiency" supports="Skill" requirements="ID_PROFICIENCY_SKILL_INTIMIDATION,!ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_INTIMIDATION"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_PROFICIENCY_SKILL_INTIMIDATION" />
         </rules>
     </element>
     <element name="Wolfpack Rush" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLORD_CHIEFTIAN_WOLFPACK_RUSH">
