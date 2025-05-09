@@ -9,26 +9,62 @@
     <element name="Path of Mutation" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_BARBARIAN_MUTATION">
         <supports>Primal Path</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>For most Barbarians, their rage manifests as a mystically empowered state of mind, but Barbarians of this path manifest their rage in a more profound and physical manner. Barbarians of the Path of Mutation embody their rage through terrifying mutation, transforming into hulking brutes.</p>
+            <p class="indent">The origin of their power varies, be it ancient blood awakening, consumption of an alchemical substance, blessing of astral entities, or a past exposure to specific kinds of radiant damage. Regardless, the effects all embody physical manifestation of a Barbarians rage, granting them increased power, size, and durability. The form these manifestations take varies for each barbarian; some grow into towering monstrous humanoids, some take on draconic aspects, some channel their powers to become giant apes or other beasts, while others simply turn large and green.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_TRANSFORMING_RAGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_COLLATERAL_DAMAGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_ADAPTIVE_RAGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_BUILDING_FRUSTRATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_HULKING_SMASH" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="10" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_TRANSFORMING_RAGE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_COLLATERAL_DAMAGE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_ADAPTIVE_RAGE" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_BUILDING_FRUSTRATION" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_HULKING_SMASH" level="14" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Transforming Rage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_TRANSFORMING_RAGE">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Collateral Damage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_COLLATERAL_DAMAGE">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Adaptive Rage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_ADAPTIVE_RAGE">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Building Frustration" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_BUILDING_FRUSTRATION">
         <description>
             <p></p>
         </description>
@@ -36,33 +72,10 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Hulking Smash" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_HULKING_SMASH">
         <description>
             <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
+            <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
