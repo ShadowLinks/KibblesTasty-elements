@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Circle of Growth Druid</name>
+        <update version="0.0.1">
+            <file name="druid-growth.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/druid-growth.xml" />
+        </update>
+    </info>
+    <element name="Circle of Growth" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_DRUID_GROWTH">
+        <supports>Druid Circle</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID__" />
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+            <div element="ID_______" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID__" level="3" />
+            <grant type="Archetype Feature" id="ID___" level="3" />
+            <grant type="Archetype Feature" id="ID____" level="6" />
+            <grant type="Archetype Feature" id="ID_____" level="6" />
+            <grant type="Archetype Feature" id="ID______" level="10" />
+            <grant type="Archetype Feature" id="ID_______" level="14" />
+        </rules>
+    </element>
+    <element name="Circle of Growth Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+        <description>
+            <p></p>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Circle Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>data1</td></tr>
+                <tr><td>3rd</td><td>data1</td></tr>
+                <tr><td>5th</td><td>data2</td></tr>
+                <tr><td>7th</td><td>data3</td></tr>
+                <tr><td>9th</td><td>data4</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+        </rules>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
