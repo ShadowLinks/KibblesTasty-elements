@@ -30,55 +30,65 @@
     </element>
     <element name="Transforming Rage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_TRANSFORMING_RAGE">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, you gain the ability to mutate your body, taking a physical manifestation of your inner rage. You gain the following benefits when you enter a rage:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Size.</strong> You can grow to Large size. While Large, you deal double damage to objects and structures.</li>
+                <li><strong>Durability.</strong> You gain temporary hit points equal to your Barbarian level.</li>
+                <li><strong>Damage.</strong> Your rage bonus damage grows from +2 to +2d4. When your rage damage would normally increase by 1, it instead increases by 1d4.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain the following benefits when you enter a rage:
+            Size. You can grow to Large size. While Large, you deal double damage to objects and structures.
+            Durability. You gain {{level:barbarian}} temporary hit points.
+            Damage. Your rage bonus damage grows from +2 to +2d4. When your rage damage would normally increase by 1, it instead increases by 1d4.</description>
         </sheet>
     </element>
     <element name="Collateral Damage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_COLLATERAL_DAMAGE">
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>At 3rd level, you gain proficiency in improvised weapons. Improvised weapons that do not otherwise use the stats of a weapon deal 1d8 bludgeoning damage (instead of 1d4 damage) as long as they weigh more than 20 pounds.</p>
+            <p class="indent">Additionally, you can make Strength ability checks against objects that would normally take an action as an object interaction (such as attempting to break down a door, smash a table, or break free of restraints).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Improvised weapons that do not otherwise use the stats of a weapon deal 1d8 bludgeoning damage (instead of 1d4 damage) as long as they weigh more than 20 pounds.
+            Additionally, you can make Strength ability checks against objects that would normally take an action as an object interaction (such as attempting to break down a door, smash a table, or break free of restraints).</description>
         </sheet>
     </element>
     <element name="Adaptive Rage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_ADAPTIVE_RAGE">
         <description>
-            <p></p>
+            <p>Starting at 6th level, when you enter a rage, you can control your mutation to a small extent, granting you adaptive advantages against your enemies. When you enter a rage, you gain two of the following benefits (each option can only be selected once):</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong></strong>Adaptive Resistance. You gain resistance to one damage type of your choice.</li>
+                <li><strong></strong>Adaptive Resilience. You gain proficiency in one saving throw of your choice.</li>
+                <li><strong></strong>Adaptive Movement. You gain a swimming or climbing speed equal to your walking speed.</li>
+                <li><strong></strong>Regeneration. You regenerate hit points equal to half your Constitution modifier (rounded down) at the start of your turns while raging.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>When you enter a rage, you gain two of the following benefits (each option can only be selected once):
+            Adaptive Resistance. You gain resistance to one damage type of your choice.
+            Adaptive Resilience. You gain proficiency in one saving throw of your choice.
+            Adaptive Movement. You gain a swimming or climbing speed of {{speed}} feet.
+            Regeneration. You regenerate half of your Constitution modifier hit points at the start of your turns while raging.</description>
         </sheet>
     </element>
     <element name="Building Frustration" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_BUILDING_FRUSTRATION">
         <description>
-            <p></p>
+            <p>Starting at 10th level, if you miss an attack roll or fail a Strength saving throw or ability check while raging, you can add your Strength modifier to your next attempt to accomplish the same during that rage (attack the same creature, break the same object, save against the same spell). Failing a saving throw persists your rage until the end of your next turn if it would normally end.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>If you miss an attack roll or fail a Strength saving throw or ability check while raging, you can add {{strength:modifier}} to your next attempt to accomplish the same during that rage (attack the same creature, break the same object, save against the same spell). Failing a saving throw persists your rage until the end of your next turn if it would normally end.</description>
         </sheet>
     </element>
+    <!-- small typo fix-->
     <element name="Hulking Smash" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_BARBARIAN_MUTATION_HULKING_SMASH">
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>At 14th level, you gain the ability to exert the full force of your rage, unleashing a devastating attack. As an action while you are raging, you can attempt to make a single, massive, weapon attack, dealing normal weapon damage + 6d6 bonus damage of the same damage type and knocking the target prone on hit. All other creatures besides yourself within 5 feet of where you hit the target take 1d6 + your Strength damage bludgeoning damage from the shock wave of the impact.</p>
+            <p class="indent">If this attack is made using a creature you are grappling as a weapon (using an improvised weapon attack), the grappled creature takes the same 6d6 bonus damage as the target on hit, or half as much on a miss.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action while you are raging, you can attempt to make a single, massive, weapon attack, dealing normal weapon damage + 6d6 bonus damage of the same damage type and knocking the target prone on hit. All other creatures besides yourself within 5 feet of where you hit the target take 1d6 + {{strength:modifier}} bludgeoning damage from the shock wave of the impact.
+            If this attack is made using a creature you are grappling as a weapon (using an improvised weapon attack), the grappled creature takes the same 6d6 bonus damage as the target on hit, or half as much on a miss.</description>
         </sheet>
     </element>
 </elements>
