@@ -11,93 +11,127 @@
         <description>
             <p></p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_SACRED_JUDGEMENT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_CD_INVOKE_JUDGEMENT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_REBUKE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_DIVINE_EMPOWERMENT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_ETERNAL_JUDGEMENT" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="2" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="8" />
-            <grant type="Archetype Feature" id="ID_______" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_SACRED_JUDGEMENT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_CD_INVOKE_JUDGEMENT" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_REBUKE" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_DIVINE_EMPOWERMENT" level="8" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_ETERNAL_JUDGEMENT" level="17" />
         </rules>
     </element>
-    <element name="Judgement Domain Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Judgement Domain Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_SPELLS">
         <description>
-            <p></p>
+            <p>When you choose this domain at 1st level, you gain the sacred flame cantrip if you don’t already know it.</p>
+            <p class="indent">You gain domain spells at the cleric levels listed on the Judgment Domain Spells table. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.</p>
+            <p class="indent">If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you.</p>
             <table>
                 <thead>
                     <tr><td>Cleric Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spell</td></tr>
-                <tr><td>3rd</td><td>spell</td></tr>
-                <tr><td>5th</td><td>spell</td></tr>
-                <tr><td>7th</td><td>spell</td></tr>
-                <tr><td>9th</td><td>spell</td></tr>
+                <tr><td>1st</td><td>hellish rebuke, sanctuary</td></tr>
+                <tr><td>3rd</td><td>detect thoughts, zone of truth</td></tr>
+                <tr><td>5th</td><td>counterspell, fear</td></tr>
+                <tr><td>7th</td><td>banishment, locate creature</td></tr>
+                <tr><td>9th</td><td>dispel evil and good, geas</td></tr>
             </table>
         </description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_LEVITATE" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_SLEET_STORM" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_CONTROL_WATER" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_STONE_SHAPE" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SACRED_FLAME" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_HELLISH_REBUKE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SANCTUARY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_ZONE_OF_TRUTH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_COUNTERSPELL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_FEAR" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_BANISHMENT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_LOCATE_CREATURE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_GEAS" spellcasting="Cleric" prepared="true" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Sacred Judgement" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_SACRED_JUDGEMENT">
         <description>
-            <p></p>
+            <p>Starting at 1st level, when you deal damage to a creature with a cleric spell, you can apply additional damage to a creature equal to your Wisdom modifier damage if that target has dealt damage to another creature since the end of your last turn.</p>
+            <p class="indent">You can do this a number of times equal to your Wisdom modifier, regaining all uses on a long rest.</p>
         </description>
-        <sheet usage="Channel Divinity" alt="">
-            <description></description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>When you deal damage to a creature with a cleric spell, you can apply {{wisdom:modifier}} additional damage if that target has dealt damage to another creature since the end of your last turn.
+            </description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Channel Divinity: Invoke Judgement" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_CD_INVOKE_JUDGEMENT">
         <description>
-            <p></p>
+            <p>Starting at 2nd level, as an action you can present your holy symbol and invoke judgment upon your enemies. You crush a target within 60 feet under the weight of their sins. The target makes a Wisdom saving throw. On failure, the creature is knocked prone and their movement speed is dropped to zero for 1 minute. The creature can repeat their saving throw at the end of each of their turns. They make this save with disadvantage if they have dealt damage since the start of their turn.</p>
+            <p class="indent">You can apply the bonus damage of Sacred Judgment when dealing damage with a Cleric spell to a creature you have used Invoked Judgment on regardless if they have damaged another creature. This persists for 1 minute regardless of their save.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="Channel Divinity" alt="Invoke Judgement">
+            <description>As an action you can present your holy symbol and invoke judgment upon your enemies. You crush a target within 60 feet under the weight of their sins. The target makes a Wisdom saving throw. On failure, the creature is knocked prone and their movement speed is dropped to zero for 1 minute. The creature can repeat their saving throw at the end of each of their turns. They make this save with disadvantage if they have dealt damage since the start of their turn.
+            You can apply the bonus damage of Sacred Judgment when dealing damage with a Cleric spell to a creature you have used Invoked Judgment on regardless if they have damaged another creature. This persists for 1 minute regardless of their save.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Rubuke" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_REBUKE">
         <description>
-            <p></p>
+            <p>Starting at 6th level, when an allied creature within 60 feet of you is reduced to zero hit points or takes damage from another creature while under the effect of a sanctuary spell you cast, you can cast hellish rebuke targeting the attacker without expending a spell slot.</p>
+            <p class="indent">You can do this a number of times equal to your Wisdom modifier, regain all uses on a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>When an allied creature within 60 feet of you is reduced to zero hit points or takes damage from another creature while under the effect of a sanctuary spell you cast, you can cast hellish rebuke targeting the attacker without expending a spell slot.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Divine Empowerment" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_DIVINE_EMPOWERMENT">
         <description>
-            <p></p>
+            <p>At 8th level, pick one of the following options:</p>
+            <p><strong>Divine Strike</strong></p>
+            <p class="indent">At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 1d8 radiant damage to the target.</p>
+            <p class="indent">When you reach 11th level, the extra damage increases to 2d8, and when you reach 17th level, the extra damage increases to 3d8</p>
+            <p><strong>Potent Spellcasting</strong></p>
+            <p class="indent">Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_DIVINE_EMPOWERMENT_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_DIVINE_EMPOWERMENT_POTENT_SPELLCASTING" level="8" />
+        </rules>
+    </element>
+    <element name="Divine Strike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_DIVINE_EMPOWERMENT_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 1d8 radiant damage to the target.</p>
+            <p class="indent">When you reach 11th level, the extra damage increases to 2d8, and when you reach 17th level, the extra damage increases to 3d8</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 1d8 radiant damage to the target.</description>
+            <description level="11">Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 2d8 radiant damage to the target.</description>
+            <description level="17">Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 3d8 radiant damage to the target.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Potent Spellcasting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_DIVINE_EMPOWERMENT_POTENT_SPELLCASTING">
         <description>
-            <p></p>
+            <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</description>
+        </sheet>
+    </element>
+    <element name="Eternal Judgement" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_JUDGEMENT_ETERNAL_JUDGEMENT">
+        <description>
+            <p>Starting at 17th level, your Sacred Judgment can be used an unlimited number of times.</p>
+        </description>
+        <sheet>
+            <description>Sacred Judgment can be used an unlimited number of times.</description>
         </sheet>
     </element>
 </elements>
