@@ -9,95 +9,150 @@
     <element name="Dream Domain" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_CLERIC_DREAM">
         <supports>Divine Domain</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>Clerics of the Dream Domain draw upon the power of the ethereal realm of dreams, using their connection to this mystical place to heal allies, control enemies, and shape the dreams of those around them.</p>
+            <p class="indent">They follow gods of dreams, creativity, art, music, and the moon.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_DREAMWEAVER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_CD_DREAM_TRANCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_DREAM_MANIFESTATIONS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_POTENT_SPELLCASTING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_DREAM_WALKER" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="2" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="8" />
-            <grant type="Archetype Feature" id="ID_______" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_DREAMWEAVER" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_CD_DREAM_TRANCE" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_DREAM_MANIFESTATIONS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_POTENT_SPELLCASTING" level="8" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_DREAM_WALKER" level="17" />
         </rules>
     </element>
-    <element name="Dream Domain Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Dream Domain Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_SPELLS">
         <description>
-            <p></p>
+            <p>You gain domain spells at the cleric levels listed on the Dream Domain Spells table. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.</p>
+            <p class="indent">If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you.</p>
             <table>
                 <thead>
                     <tr><td>Cleric Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spell</td></tr>
-                <tr><td>3rd</td><td>spell</td></tr>
-                <tr><td>5th</td><td>spell</td></tr>
-                <tr><td>7th</td><td>spell</td></tr>
-                <tr><td>9th</td><td>spell</td></tr>
+                <tr><td>1st</td><td>hideous laughter, sleep</td></tr>
+                <tr><td>3rd</td><td>disorient, enthrall</td></tr>
+                <tr><td>5th</td><td>hypnotic pattern, major image</td></tr>
+                <tr><td>7th</td><td>banishment, confusion</td></tr>
+                <tr><td>9th</td><td>dream, modify memory</td></tr>
             </table>
         </description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_LEVITATE" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_SLEET_STORM" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_CONTROL_WATER" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_STONE_SHAPE" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SLEEP" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_SPELL_DISORIENT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_ENTHRALL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_MAJOR_IMAGE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_BANISHMENT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_CONFUSION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_DREAM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_MODIFY_MEMORY" spellcasting="Cleric" prepared="true" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Dreamweaver" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_DREAMWEAVER">
         <description>
-            <p></p>
-        </description>
-        <sheet usage="Channel Divinity" alt="">
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
-        <description>
-            <p></p>
+            <p>At 1st level, you can protect and guide the dreams of others around you. Up to 4 + your Cleric level other creatures of your choice sleeping within 120 feet of you have advantage on saving throws against beings intruding into or influencing their dreams.</p>
+            <p class="indent">Additionally, when they take a long rest and sleep during that rest, you can shape and guide their dreams to grant them tranquil sleep or prophetic preparations. You can apply one of the following options to all affected creatures:</p>
+            <ul>
+                <li><strong>Focused Dreams.</strong> The creature gains the effect of guidance on a number of skill checks of their choice equal to your proficiency bonus, losing any unused uses when they complete their next long rest.</li>
+                <li><strong>Restful Dreams.</strong> The creature regains additional expended hit dice equal to one quarter of your Cleric level (rounded down).</li>
+                <li><strong>Tranquil Dreams.</strong> The creature gains 1d4 + your Cleric level temporary hit points at the end of their long rest.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Up to {{dreamweaver:count}} other creatures of your choice sleeping within 120 feet of you have advantage on saving throws against beings intruding into or influencing their dreams.
+            Additionally, when they take a long rest and sleep during that rest, you can apply one of the following options to all affected creatures:
+            Focused Dreams. The creature gains the effect of guidance on {{proficiency}} skill checks of their choice, losing any unused uses when they complete their next long rest.
+            Restful Dreams. The creature regains additional expended hit dice equal to one quarter of your Cleric level (rounded down).
+            Tranquil Dreams. The creature gains 1d4 + {{level:cleric}} temporary hit points at the end of their long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="dreamweaver:count" value="4" bonus="base" />
+            <stat name="dreamweaver:count" value="level:cleric" />
+        </rules>
+    </element>
+    <element name="Channel Divinity: Dream Trance" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_CD_DREAM_TRANCE">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to pull a creature’s mind into dreaming trance.</p>
+            <p class="indent">As an action, you present your holy symbol and choose a creature within 60 feet, attempting to pull their mind into the dreamscape for up to 10 minutes. An unwilling creature can make a Wisdom saving throw, preventing the effect on a successful save. If they fail and become ensnared, they can repeat their saving throw at the end of each of their turns, escaping the trance on a success.</p>
+            <p class="indent">While their mind is in the dreamscape, the creature is incapacitated, blinded, and deafened to the real world.</p>
+            <p class="indent">As a bonus action, you can guide the dreams of an affected creature, ending the effect and causing one of the following conditions:</p>
+            <ul>
+                <li><strong>Terrifying Visions.</strong> The creature takes psychic damage equal to 4 times your Cleric level and becomes frightened of you until the start of your next turn.</li>
+                <li><strong>Tranquil Visions.</strong> Any charmed or frightened condition on the creature is ended, and they gain temporary hit points equal to 4 times your cleric level, waking at the end of their next turn.</li>
+            </ul>
+            <p class="indent">Creatures that are already asleep automatically fail their initial saving throw against this effect. A creature that takes damage is broken out of their dream trance, ending the effect. A creature that cannot be charmed automatically passes their saving throw against this ability.</p>
+        </description>
+        <sheet usage="Channel Divinity" alt="Dream Trance">
+            <description>As an action, you present your holy symbol and choose a creature within 60 feet, attempting to pull their mind into the dreamscape for up to 10 minutes. An unwilling creature can make a Wisdom saving throw, preventing the effect on a successful save. If they fail and become ensnared, they can repeat their saving throw at the end of each of their turns, escaping the trance on a success.
+            While their mind is in the dreamscape, the creature is incapacitated, blinded, and deafened to the real world.
+            As a bonus action, you can guide the dreams of an affected creature, ending the effect and causing one of the following conditions:
+            Terrifying Visions. The creature takes {{levelx4}} psychic damage and becomes frightened of you until the start of your next turn.
+            Tranquil Visions. Any charmed or frightened condition on the creature is ended, and they gain {{levelx4}} temporary hit points, waking at the end of their next turn.
+            Creatures that are already asleep automatically fail their initial saving throw against this effect. A creature that takes damage is broken out of their dream trance, ending the effect. A creature that cannot be charmed automatically passes their saving throw against this ability.</description>
+        </sheet>
+        <rules>
+            <stat name="levelx4" value="level:cleric" bonus="base"/>
+            <stat name="levelx4" value="level:cleric" />
+            <stat name="levelx4" value="level:cleric" />
+            <stat name="levelx4" value="level:cleric" />
+        </rules>
+    </element>
+    <element name="Dream Manifestations" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_DREAM_MANIFESTATIONS">
+        <description>
+            <p>Starting at 6th level, as an action you can manifest parts of your dreams into the real world as fleeting creations within a 20-foot cube within 30 feet of you. You can create an object (such as a chair or bed), structure (such as a small empty house, a bridge, or stairs), or creature this way, but whatever is created must fit within a 20-foot cube. Creatures created this way are illusionary, behaving as per the major image spell, but objects and effects can be made real with the following limitations:</p>
+            <ul>
+                <li><strong>Magical Nature.</strong> Objects and structures created this way are obviously magical in nature and crumble to nothing after 1 minute.</li>
+                <li><strong>Unreal.</strong> They have no value, and cannot be moved outside of the 20-foot cube they were made in.</li>
+                <li><strong>No Information.</strong> They cannot contain any information you don’t yourself know (for example a book on a subject you don’t know would be blank).</li>
+                <li><strong>Durability.</strong> Objects created this way have an AC equal to your Cleric level and crumble to dust if they take any damage. They cannot deal any damage, crumbling to dust if they would deal damage.</li>
+            </ul>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest, though you can use it again early by expending a 3rd-level spell slot.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>s an action you can manifest parts of your dreams into the real world as fleeting creations within a 20-foot cube within 30 feet of you. You can create an object (such as a chair or bed), structure (such as a small empty house, a bridge, or stairs), or creature this way, but whatever is created must fit within a 20-foot cube. Creatures created this way are illusionary, behaving as per the major image spell, but objects and effects can be made real with the following limitations:
+            Magical Nature. Objects and structures created this way are obviously magical in nature and crumble to nothing after 1 minute.
+            Unreal. They have no value, and cannot be moved outside of the 20-foot cube they were made in.
+            No Information. They cannot contain any information you don’t yourself know.
+            Durability. Objects created this way have {{level:cleric}} AC and crumble to dust if they take any damage. They cannot deal any damage, crumbling to dust if they would deal damage.
+            You can use it again early by expending a 3rd-level spell slot.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Potent Spellcasting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_POTENT_SPELLCASTING">
         <description>
-            <p></p>
+            <p>At 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You add {{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Dream Walker" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_DREAM_DREAM_WALKER">
         <description>
-            <p></p>
+            <p>Starting at 17th level, you can physically enter dreams to travel, gain information, or influence them. When you fall asleep, or as an action while awake, you can enter the ethereal realm of dreams for up to an hour. You can exit the realm of dreams as a bonus action. You can only exit the realm of dreams within 120 feet of where you entered, or within 5 feet of a sleeping creature. While in the realm of dreams, you can do any of the following:</p>
+            <ul>
+                <li><strong>Dream Passage.</strong> Teleport to a location you’ve been to before or a person you are familiar with (though you can only exit the dream realm there if there is a sleeping person to use as a conduit).</li>
+                <li><strong>Cast Dream.</strong> Cast the dream spell once without expending a spell slot, after which you cannot do so again until next you enter the dream realm.</li>
+                <li><strong>Search Dreams.</strong> Search for information from the dreams of others, making a Wisdom (Insight) check with a DC based on the difficulty of finding the information, or contested by a Deception check using Intelligence, Wisdom, or Charisma by the target if you are trying to acquire it from a specific target (their choice of which). If you fail a check to acquire a piece of information, you cannot ever attempt to acquire that piece of information again.</li>
+            </ul>
+            <p class="indent">You can enter the dream realm in this way once, after which you must complete a long rest before doing so again.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>When you fall asleep, or as an action while awake, you can enter the ethereal realm of dreams for up to an hour. You can exit the realm of dreams as a bonus action. You can only exit the realm of dreams within 120 feet of where you entered, or within 5 feet of a sleeping creature. While in the realm of dreams, you can do any of the following:
+            Dream Passage. Teleport to a location you’ve been to before or a person you are familiar with (though you can only exit the dream realm there if there is a sleeping person to use as a conduit).
+            Cast Dream. Cast the dream spell once without expending a spell slot, after which you cannot do so again until next you enter the dream realm.
+            Search Dreams. Search for information from the dreams of others, making a Wisdom (Insight) check with a DC based on the difficulty of finding the information, or contested by a Deception check using Intelligence, Wisdom, or Charisma by the target if you are trying to acquire it from a specific target (their choice of which). If you fail a check to acquire a piece of information, you cannot ever attempt to acquire that piece of information again.</description>
         </sheet>
     </element>
 </elements>
