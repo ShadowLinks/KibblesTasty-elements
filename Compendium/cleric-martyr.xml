@@ -11,93 +11,149 @@
         <description>
             <p></p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_CLAD_IN_GRACE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_RELIEVE_SUFFERING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_CD_BEAR_THE_BURDEN" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_OVERCOME_ADVERSITY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_DIVINE_EMPOWERMENT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_UNYIELDING_CONCENTRATION" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="2" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="8" />
-            <grant type="Archetype Feature" id="ID_______" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_CLAD_IN_GRACE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_RELIEVE_SUFFERING" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_CD_BEAR_THE_BURDEN" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_OVERCOME_ADVERSITY" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_DIVINE_EMPOWERMENT" level="8" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_UNYIELDING_CONCENTRATION" level="17" />
         </rules>
     </element>
-    <element name="Martyr Domain Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Martyr Domain Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_SPELLS">
         <description>
             <p></p>
             <table>
                 <thead>
                     <tr><td>Cleric Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spell</td></tr>
-                <tr><td>3rd</td><td>spell</td></tr>
-                <tr><td>5th</td><td>spell</td></tr>
-                <tr><td>7th</td><td>spell</td></tr>
-                <tr><td>9th</td><td>spell</td></tr>
+                <tr><td>1st</td><td>cure wounds, shield of faith</td></tr>
+                <tr><td>3rd</td><td>lesser restoration, warding bond</td></tr>
+                <tr><td>5th</td><td>invest life, revivify</td></tr>
+                <tr><td>7th</td><td>death ward, resilient sphere</td></tr>
+                <tr><td>9th</td><td>greater restoration, mass cure wounds</td></tr>
             </table>
         </description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_LEVITATE" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_SLEET_STORM" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_CONTROL_WATER" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_STONE_SHAPE" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SHIELD_OF_FAITH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_WARDING_BOND" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_KTH_COLAL_SPELL_INVEST_LIFE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_REVIVIFY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" spellcasting="Cleric" prepared="true" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Clad in Grace" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_CLAD_IN_GRACE">
         <description>
-            <p></p>
-        </description>
-        <sheet usage="Channel Divinity" alt="">
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
-        <description>
-            <p></p>
+            <p>Starting at 1st level, while you are not wearing any armor, your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier. You can use a shield and still gain this benefit.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While you are not wearing any armor, your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier. You can use a shield and still gain this benefit.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:clad-in-grace" value="10" bonus="base" />
+            <stat name="ac:clad-in-grace" value="constitution:modifier" />
+            <stat name="ac:clad-in-grace" value="wisdom:modifier" />
+            <stat name="ac:calculation" value="ac:clad-in-grace" bonus="calculation" equipped="[armor:none]" alt="Clad in Grace" />
+        </rules>
+    </element>
+    <element name="Relieve Suffering" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_RELIEVE_SUFFERING">
+        <description>
+            <p>Starting at 1st level, when you cast a spell of 1st level or higher that restores hit points, you can expend some of your own hit points to increase the amount another creature that is healed by the spell regains, expending a number of hit points up to your Cleric level to increase the amount one creature is healed by an equivalent value.</p>
+            <p class="indent">Additionally, you can touch a creature suffering a disease or the blinded, deafened, paralyzed or poisoned condition and transfer that disease or condition to yourself. Starting at 9th level, the range of conditions you can take increases, including exhaustion (1 level at a time), petrified, stunned, the effect of a curse, or any reduction to their ability scores. You are afflicted by the effect in the same manner the creature you took it was, for the same duration and possible methods of ending the effect.</p>
+            <p class="indent">You can transfer a condition affecting another creature to yourself a number of times equal to your Wisdom modifier, regaining all uses on a long rest.</p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>When you cast a spell of 1st level or higher that restores hit points, you can expend some of your own hit points to increase the amount another creature that is healed by the spell regains, expending up to {{level:cleric}} hit points to increase the amount one creature is healed by an equivalent value.
+            Additionally, you can touch a creature suffering a disease or the blinded, deafened, paralyzed or poisoned condition and transfer that disease or condition to yourself.You are afflicted by the effect in the same manner the creature you took it was, for the same duration and possible methods of ending the effect.
+            </description>
+            <description level="9">When you cast a spell of 1st level or higher that restores hit points, you can expend some of your own hit points to increase the amount another creature that is healed by the spell regains, expending up to {{level:cleric}} hit points to increase the amount one creature is healed by an equivalent value.
+            Additionally, you can touch a creature suffering a disease or the blinded, deafened, paralyzed or poisoned condition and transfer that disease or condition to yourself. Starting at 9th level, the range of conditions you can take increases, including exhaustion (1 level at a time), petrified, stunned, the effect of a curse, or any reduction to their ability scores. You are afflicted by the effect in the same manner the creature you took it was, for the same duration and possible methods of ending the effect.
+            </description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Channel Divinity: Bear the Burden" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_CD_BEAR_THE_BURDEN">
         <description>
-            <p></p>
+            <p>Starting at 2nd level, you can use your Channel Divinity to bring all the suffering your allies suffer onto yourself.</p>
+            <p class="indent">As an action, you present your holy symbol and enter a divine trance. Until the start of your next turn, your movement speed becomes zero and you gain temporary hit points equal to twice your Cleric level. Any time an allied creature within 30 feet of you takes damage, they have resistance to the damage taken, but you take damage equal to the damage they take.</p>
+        </description>
+        <sheet usage="Channel Divinity" alt="Bear the Burden">
+            <description>As an action, you present your holy symbol and enter a divine trance. Until the start of your next turn, your movement speed becomes zero and you gain {{bear-the-burden}} temporary hit points. Any time an allied creature within 30 feet of you takes damage, they have resistance to the damage taken, but you take damage equal to the damage they take.</description>
+        </sheet>
+        <rules>
+            <stat name="bear-the-burden" value="level:cleric" bonus="base" />
+            <stat name="bear-the-burden" value="level:cleric" />
+        </rules>
+    </element>
+    <element name="Overcome Adversity" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_OVERCOME_ADVERSITY">
+        <description>
+            <p>Starting at 6th level, when you use your Relieve Suffering to take the condition affecting a creature, you can repeat the original saving throw against the feature if it had one. On success, the condition ends instead of being transferred.</p>
+            <p class="indent">Additionally, when you take damage as a result of the warding bond spell, you have resistance to that damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use your Relieve Suffering to take the condition affecting a creature, you can repeat the original saving throw against the feature if it had one. On success, the condition ends instead of being transferred.
+            Additionally, when you take damage as a result of the warding bond spell, you have resistance to that damage.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Divine Empowerment" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_DIVINE_EMPOWERMENT">
         <description>
-            <p></p>
+            <p>At 8th level, pick one of the following options:</p>
+            <p><strong>Divine Strike</strong></p>
+            <p class="indent">At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 1d8 radiant damage to the target.</p>
+            <p class="indent">When you reach 11th level, the extra damage increases to 2d8, and when you reach 17th level, the extra damage increases to 3d8</p>
+            <p><strong>Potent Spellcasting</strong></p>
+            <p class="indent">Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_DIVINE_STRIKE" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_POTENT_SPELLCASTING" />
+        </rules>
+    </element>
+    <element name="Divine Strike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 1d8 radiant damage to the target.</p>
+            <p class="indent">When you reach 11th level, the extra damage increases to 2d8, and when you reach 17th level, the extra damage increases to 3d8</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 1d8 radiant damage to the target.</description>
+            <description level="11">Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 2d8 radiant damage to the target.</description>
+            <description level="17">Once on each of your turns when you hit a creature with a weapon attack made as part of the attack action, you can cause the attack to deal an extra 3d8 radiant damage to the target.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Potent Spellcasting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_POTENT_SPELLCASTING">
         <description>
-            <p></p>
+            <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</description>
+        </sheet>
+    </element>
+    <element name="Unyielding Concentration" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_CLERIC_MARTYR_UNYIELDING_CONCENTRATION">
+        <description>
+            <p>Starting at 17th level, while you are concentrating on a Cleric spell that targets you or your allies, your concentration can’t be broken as a result of taking damage.</p>
+        </description>
+        <sheet>
+            <description>While you are concentrating on a Cleric spell that targets you or your allies, your concentration can’t be broken as a result of taking damage.</description>
         </sheet>
     </element>
 </elements>
