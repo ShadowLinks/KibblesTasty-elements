@@ -9,73 +9,362 @@
     <element name="Spiritsworn" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FIGHTER_SPIRITSWORN">
         <supports>Martial Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>A Spiritsworn fighter is one that masters their martial prowess in tandem with a special spirit weapon, forming an unbreakable bond of shared growth and becoming a peerless martial team.</p>
+            <p><strong>Spirit's Nature</strong></p>
+            <p>The nature of the spirit that forms this archetype’s spirit weapon is open ended. You can roll from the following table, pick one that suits the character, or invent an entirely unique relationship between the spirit and fighter</p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>Spirit Type</td></tr>
+                </thead>
+                <tr><td>1</td><td>A manifestation of your own mystical aura, it represents your will to fight.</td></tr>
+                <tr><td>2</td><td>A fey spirit that has become inseparably bonded to you.</td></tr>
+                <tr><td>3</td><td>A celestial entity that chose you for a destiny or task.</td></tr>
+                <tr><td>4</td><td>An heirloom weapon passed down through your family, inhabited by an ancestral spirit.ta4</td></tr>
+                <tr><td>5</td><td>A fiendish spirit granted as part of an infernal contract paid at a terrible price.</td></tr>
+                <tr><td>6</td><td>A mysterious piece of your shadow.</td></tr>
+            </table>
+            <p><strong>Spirit’s Aspect</strong></p>
+            <p>Though the spirit’s primary function is that of a weapon, it is a magical entity that forms a mystic bond with the fighter, granting them unique powers.</p>
+            <p class="indent">You can roll on the following table for the primordial aspect, or select one that suits the character. The selection expands the subclass spell list, found at the end of the subclass.</p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>Spirit's Power</td></tr>
+                </thead>
+                <tr><td>1</td><td>Fire</td></tr>
+                <tr><td>2</td><td>Ice</td></tr>
+                <tr><td>3</td><td>Storm</td></tr>
+                <tr><td>4</td><td>Illusion</td></tr>
+                <tr><td>5</td><td>Gravity</td></tr>
+                <tr><td>6</td><td>Nature</td></tr>
+            </table>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SPIRIT_WEAPON" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_BONDED_FIGHTING_STYLE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SPIRIT_MAGIC" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ADVANCED_WEAPON_FORMATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_EMPOWERED_STRIKE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SENCOND_SENSES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_EMPOWERING_BOND" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SYNCHONIZED_ASSAULT" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="7" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="15" />
-            <grant type="Archetype Feature" id="ID_______" level="18" />
+            <select type="Archetype Feature" supports="spirit-power-type" name="Spirit's Aspect" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SPIRIT_WEAPON" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_BONDED_FIGHTING_STYLE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SPIRIT_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ADVANCED_WEAPON_FORMATION" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_EMPOWERED_STRIKE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SENCOND_SENSES" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_EMPOWERING_BOND" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SYNCHONIZED_ASSAULT" level="18" />
+        </rules>
+        <spellcasting name="Spiritsworn" ability="Wisdom" prepare="false">
+            <list>Spiritsworn</list>
+        </spellcasting>
+    </element>
+    <element name="Fire Spirit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_FIRE">
+        <supports>spirit-power-type</supports>
+        <description>
+            <p>Though the spirit’s primary function is that of a weapon, it is a magical entity that forms a mystic bond with the fighter, granting them unique powers.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ice Spirit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ICE">
+        <supports>spirit-power-type</supports>
+        <description>
+            <p>Though the spirit’s primary function is that of a weapon, it is a magical entity that forms a mystic bond with the fighter, granting them unique powers.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Storm Spirit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_STORM">
+        <supports>spirit-power-type</supports>
+        <description>
+            <p>Though the spirit’s primary function is that of a weapon, it is a magical entity that forms a mystic bond with the fighter, granting them unique powers.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Illusion Spirit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ILLUSION">
+        <supports>spirit-power-type</supports>
+        <description>
+            <p>Though the spirit’s primary function is that of a weapon, it is a magical entity that forms a mystic bond with the fighter, granting them unique powers.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Gravity Spirit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_GRAVITY">
+        <supports>spirit-power-type</supports>
+        <description>
+            <p>Though the spirit’s primary function is that of a weapon, it is a magical entity that forms a mystic bond with the fighter, granting them unique powers.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Nature Spirit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_NATURE">
+        <supports>spirit-power-type</supports>
+        <description>
+            <p>Though the spirit’s primary function is that of a weapon, it is a magical entity that forms a mystic bond with the fighter, granting them unique powers.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Spirit Weapon" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SPIRIT_WEAPON">
+        <description>
+            <p>Starting at 3rd level when you select this archetype, you become permanently bonded to a special spirit that can manifest into the form of any weapon or pair of weapons you are proficient with. You can manifest the spirit as a bonus action, and it lasts until you spend a bonus action to return it to its intangible form. The spirit is typically intangible and imperceptible to anyone other than you when not manifested.</p>
+            <p class="indent">While it is manifested, you can change its form as a bonus action. If you are ever more than 300 feet from the weapon, or enter a different plane, the spirit returns to you in its intangible form, while its weapon form vanishes.</p>
+            <p class="indent">If the spirit manifests as a ranged weapon, it manifests with one piece of ammunition already loaded. Further attacks require ammunition (and loading, if applicable) as necessary. Each time you change the form of your Spirit Weapon, it reforms in your hand.</p>
+            <p class="indent">As part of a long rest, the spirit can absorb a magic weapon as long as that weapon is not a sentient weapon. When it does so, the spirit gains any bonus to attack and damage rolls that weapon has, and can perfectly imitate that weapon (though only gains any property other than a bonus to attack and damage rolls when mimicking the absorbed weapon). It can have one weapon absorbed in this way at a time, and absorbing a new weapon returns the previously absorbed weapon.</p>
+        </description>
+        <sheet>
+            <description>You become permanently bonded to a special spirit that can manifest into the form of any weapon or pair of weapons you are proficient with. You can manifest the spirit as a bonus action, and it lasts until you spend a bonus action to return it to its intangible form. The spirit is typically intangible and imperceptible to anyone other than you when not manifested.
+            While it is manifested, you can change its form as a bonus action. If you are ever more than 300 feet from the weapon, or enter a different plane, the spirit returns to you in its intangible form, while its weapon form vanishes.
+            If the spirit manifests as a ranged weapon, it manifests with one piece of ammunition already loaded. Further attacks require ammunition (and loading, if applicable) as necessary. Each time you change the form of your Spirit Weapon, it reforms in your hand.
+            As part of a long rest, the spirit can absorb a magic weapon as long as that weapon is not a sentient weapon. When it does so, the spirit gains any bonus to attack and damage rolls that weapon has, and can perfectly imitate that weapon (though only gains any property other than a bonus to attack and damage rolls when mimicking the absorbed weapon). It can have one weapon absorbed in this way at a time, and absorbing a new weapon returns the previously absorbed weapon.</description>
+        </sheet>
+    </element>
+    <element name="Bonded Fighting Style" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_BONDED_FIGHTING_STYLE">
+        <description>
+            <p>When you gain your Spirit Weapon, your ability and prowess at fighting becomes linked to it. Whenever you manifest your spirit, you can change your Fighting Style to apply to the weapon type it has formed as (for example, if you form it as a rapier, you can gain the Dueling Fighting Style). You may revert your Fighting Style to its original choice when you dismiss your Spirit Weapon.</p>
+        </description>
+        <sheet>
+            <description>Whenever you manifest your spirit, you can change your Fighting Style to apply to the weapon type it has formed as (for example, if you form it as a rapier, you can gain the Dueling Fighting Style). You may revert your Fighting Style to its original choice when you dismiss your Spirit Weapon.</description>
+        </sheet>
+    </element>
+    <element name="Spirit Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SPIRIT_MAGIC">
+        <description>
+            <p>Additionally at 3rd level, your link to a mystical spirit grants you the ability to use certain magic through it. Your Spirit Weapon counts as an arcane focus, and is considered worth the value of the weapon it takes the form of when being used as a material component for spells.</p>
+            <h4>SPELL SLOTS</h4>
+            <p>The Spiritsworn table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <h4>SPELLS KNOWN OF 1ST-LEVEL AND HIGHER</h4>
+            <p>You learn two spells of your choice from the Spiritsworn spell list. You gain additional spells based on the spirit’s aspect, listed at the end of this class. The Spells known column shows when you learn more spells of 1st level or higher. Whenever you gain a level in this class, you can replace one of the spells you know with another spell of your choice from the Spiritsworn spell list. Spells gained from the spirit’s aspect cannot be replaced. The new spell must be of a level for which you have spell slots.</p>
+            <h4>SPELLCASTING ABILITY</h4>
+            <p>Your spell casting ability is Wisdom, with your spells being an expression of bond with a spirit. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for spells you can cast, and when you make an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+            </center>
+            <h4>Spiritsworn Spellcasting</h4>
+            <table>
+                <thead>
+                    <tr><td>Level</td><td>Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>3</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+                <tr><td>4th</td><td>3</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+                <tr><td>5th</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+                <tr><td>6th</td><td>4</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>7th</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>8th</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>9th</td><td>6</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>10th</td><td>6</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>11th</td><td>7</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>12th</td><td>7</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>13th</td><td>8</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+                <tr><td>14th</td><td>8</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+                <tr><td>15th</td><td>9</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+                <tr><td>16th</td><td>9</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+                <tr><td>17th</td><td>10</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+                <tr><td>18th</td><td>10</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+                <tr><td>19th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+                <tr><td>20th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>Your Spirit Weapon counts as an arcane focus, and is considered worth the value of the weapon it takes the form of when being used as a material component for spells.
+            You regain you spell slots on a long rest.
+            Whenever you gain a level in this class, you can replace one of the spells you know with another spell of your choice from the Spiritsworn spell list. Spells gained from the spirit’s aspect cannot be replaced. The new spell must be of a level for which you have spell slots</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <select type="Spell" supports="Spiritsworn,$(spellcasting:slots)" spellcasting="Spiritsworn" number="3" name="Spiritsworn Spell" level="3" />
+            <select type="Spell" supports="Spiritsworn,$(spellcasting:slots)" spellcasting="Spiritsworn" number="1" name="Spiritsworn Spell" level="5" />
+            <select type="Spell" supports="Spiritsworn,$(spellcasting:slots)" spellcasting="Spiritsworn" number="1" name="Spiritsworn Spell" level="7" />
+            <select type="Spell" supports="Spiritsworn,$(spellcasting:slots)" spellcasting="Spiritsworn" number="1" name="Spiritsworn Spell" level="9" />
+            <select type="Spell" supports="Spiritsworn,$(spellcasting:slots)" spellcasting="Spiritsworn" number="1" name="Spiritsworn Spell" level="11" />
+            <select type="Spell" supports="Spiritsworn,$(spellcasting:slots)" spellcasting="Spiritsworn" number="1" name="Spiritsworn Spell" level="13" />
+            <select type="Spell" supports="Spiritsworn,$(spellcasting:slots)" spellcasting="Spiritsworn" number="1" name="Spiritsworn Spell" level="15" />
+            <select type="Spell" supports="Spiritsworn,$(spellcasting:slots)" spellcasting="Spiritsworn" number="1" name="Spiritsworn Spell" level="17" />
+            <select type="Spell" supports="Spiritsworn,$(spellcasting:slots)" spellcasting="Spiritsworn" number="1" name="Spiritsworn Spell" level="19" />
+            <stat name="spiritsworn:spellcasting:slots:1" value="2" level="3"/>
+            <stat name="spiritsworn:spellcasting:slots:1" value="1" level="4"/>
+            <stat name="spiritsworn:spellcasting:slots:1" value="1" level="7"/>
+            <stat name="spiritsworn:spellcasting:slots:2" value="2" level="7"/>
+            <stat name="spiritsworn:spellcasting:slots:2" value="1" level="10"/>
+            <stat name="spiritsworn:spellcasting:slots:3" value="2" level="13"/>
+            <stat name="spiritsworn:spellcasting:slots:3" value="1" level="16"/>
+            <stat name="spiritsworn:spellcasting:slots:4" value="1" level="19"/>
+            <grant typ="Spell" spellcasting="Spiritsworn" level="3" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_FIRE" id="ID_PHB_SPELL_BURNING_HANDS" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="7" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_FIRE" id="ID_PHB_SPELL_SCORCHING_RAY" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="13" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_FIRE" id="ID_PHB_SPELL_FIREBALL" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="19" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_FIRE" id="ID_PHB_SPELL_WALL_OF_FIRE" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="3" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ICE" id="ID_KTH_COLAL_SPELL_ARCTIC_BREATH" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="7" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ICE" id="ID_KTH_COLAL_SPELL_COLD_SNAP" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="13" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ICE" id="ID_PHB_SPELL_SLEET_STORM" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="19" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ICE" id="ID_PHB_SPELL_ICE_STORM" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="3" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_STORM" id="ID_KTH_COLAL_SPELL_GALE_BOLT" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="7" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_STORM" id="ID_KTH_COLAL_SPELL_HURRICANE_SLASH" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="13" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_STORM" id="ID_PHB_SPELL_LIGHTNING_BOLT" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="19" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_STORM" id="ID_KTH_COLAL_SPELL_JUMPING_JOLT" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="3" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ILLUSION" id="ID_PHB_SPELL_DISGUISE_SELF" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="7" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ILLUSION" id="ID_PHB_SPELL_MIRROR_IMAGE" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="13" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ILLUSION" id="ID_PHB_SPELL_MAJOR_IMAGE" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="19" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ILLUSION" id="ID_PHB_SPELL_GREATER_INVISIBILITY" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="3" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_GRAVITY" id="ID_PHB_SPELL_FEATHER_FALL" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="7" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_GRAVITY" id="ID_PHB_SPELL_LEVITATE" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="13" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_GRAVITY" id="ID_PHB_SPELL_FLY" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="19" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_GRAVITY" id="ID_KTH_COLAL_SPELL_ORBITAL_STONES" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="3" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_NATURE" id="ID_PHB_SPELL_ENTANGLE" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="7" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_NATURE" id="ID_KTH_COLAL_SPELL_SPROUT_TREE" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="13" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_NATURE" id="ID_PHB_SPELL_PLANT_GROWTH" />
+            <grant typ="Spell" spellcasting="Spiritsworn" level="19" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_NATURE" id="ID_KTH_COLAL_SPELL_CARNIVOROUS_GARDEN" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Advanced Weapon Formation" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_ADVANCED_WEAPON_FORMATION">
         <description>
-            <p></p>
+            <p>Starting at 7th level, when you manifest or morph your Spirit Weapon, you can take advantage of its unique nature to imbue it with exotic properties that would otherwise be impossible. You can select one of the following properties when you manifest or change its form:</p>
+            <ul>
+                <li><strong>Enlarged Form.</strong> The Spirit Weapon grows one size larger, but your bond with it allows you to wield it effortlessly. It deals an additional 1d4 damage on hit.</li>
+                <li><strong>Extended Form.</strong> The weapon narrows and extends, gaining the Reach property. If it already has the reach property, its reach increases by 5 feet.</li>
+                <li><strong>Shield Form.</strong> The spirit can take the form of a Shield, and you can equip it as part of its manifestation or when it changes its form. If the spirit’s weapon form has a bonus to attack and damage rolls, that bonus becomes a bonus to AC while in this form. You can form both a shield and weapon at the same time.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>You can select one of the following properties when you manifest or change its form:
+            Enlarged Form. The Spirit Weapon grows one size larger, but your bond with it allows you to wield it effortlessly. It deals an additional 1d4 damage on hit.
+            Extended Form. The weapon narrows and extends, gaining the Reach property. If it already has the reach property, its reach increases by 5 feet.
+            Shield Form. The spirit can take the form of a Shield, and you can equip it as part of its manifestation or when it changes its form. If the spirit’s weapon form has a bonus to attack and damage rolls, that bonus becomes a bonus to AC while in this form. You can form both a shield and weapon at the same time.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Empowered Strike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_EMPOWERED_STRIKE">
         <description>
-            <p></p>
+            <p>Additionally at 7th level, you gain the ability to empower your weapon with its aspect. When you manifest or change the form of your Spirit Weapon, you can expend a spell slot of 1st level or higher. When you do so, the first time you deal damage with it before dismissing or changing its shape again, it deals an additional 2d6 damage of a type matching it’s aspect (fire, cold, lightning, psychic, bludgeoning, or acid respectively) + 1d6 for each level of the spell slot above 1st. The effect expires if unused after 1 minute.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you manifest or change the form of your Spirit Weapon, you can expend a spell slot of 1st level or higher. When you do so, the first time you deal damage with it before dismissing or changing its shape again, it deals an additional 2d6 damage of a type matching it’s aspect (fire, cold, lightning, psychic, bludgeoning, or acid respectively) + 1d6 for each level of the spell slot above 1st. The effect expires if unused after 1 minute.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Second Senses" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SENCOND_SENSES">
         <description>
-            <p></p>
+            <p>Starting at 10th level, your spirit’s ability to share your senses allows it to forewarn and assist you. You gain proficiency in the Perception skill. If you are already proficient, you gain expertise in the Perception skill, meaning you can add twice your proficiency bonus to Perception ability checks.</p>
+            <p class="indent">Additionally, this heightened awareness gives you proficiency with Dexterity saving throws against effects you can see.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>This heightened awareness gives you proficiency with Dexterity saving throws against effects you can see.</description>
         </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERCEPTION" />
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Empowering Bond" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_EMPOWERING_BOND">
         <description>
-            <p></p>
+            <p>Starting at 15th level, when you cast a spell using your Spirit Weapon as an arcane focus, you gain a bonus to your spell save DC and saving throws to maintain concentration on it equal to any bonus to attack rolls your Spirit Weapon has (minimum +2).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you cast a spell using your Spirit Weapon as an arcane focus, you gain a bonus to your spell save DC and saving throws to maintain concentration on it equal to any bonus to attack rolls your Spirit Weapon has (minimum +2).</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Synchonized Assault" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_SPIRITSWORN_SYNCHONIZED_ASSAULT">
         <description>
-            <p></p>
+            <p>Starting at 18th level, manifesting or changing the form of your Spirit Weapon no longer requires a bonus action. You can cause it to take any form it could normally take at will during your turn, no action required. Once per turn, when manifesting the weapon or changing the form of your weapon, you can gain advantage on the next attack you make before the end of your turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Manifesting or changing the form of your Spirit Weapon no longer requires a bonus action. You can cause it to take any form it could normally take at will during your turn, no action required. 
+            Once per turn, when manifesting the weapon or changing the form of your weapon, you can gain advantage on the next attack you make before the end of your turn.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
+
+    <!-- Spell list-->
+    <append id="ID_KTH_COLAL_SPELL_ARCANE_WEAPON">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_BLADE_MIRAGE">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_ELECTRIFY">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_EXPLOSIVE_DEFLECTION">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_GALE_BOLT">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_HEAVY_BLOW">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_INFINITE_EDGE">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_MULTISHOT">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_RETURNING_WEAPON">
+        <supports>Spiritsworn</supports>
+    </append>
+
+    
+    <append id="ID_KTH_COLAL_SPELL_ALACRITY">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_BURNING_STRIKE">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_CRESCENT_WIND_SLASH">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_IRON_WIND_STRIKE">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_INSTANT_COUNTER">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_WEAPON">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_SPIRIT_ECHO">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_WIND_CUTTER">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_WINDSENSE">
+        <supports>Spiritsworn</supports>
+    </append>
+
+    
+    <append id="ID_PHB_SPELL_DISPEL_MAGIC">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HASTE">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_WHIRLING_CONFLAGRATION">
+        <supports>Spiritsworn</supports>
+    </append>
+    
+
+    <append id="ID_KTH_COLAL_SPELL_DIMENSION_CUTTER">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIRE_SHIELD">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STONESKIN">
+        <supports>Spiritsworn</supports>
+    </append>
+    <append id="ID_KTH_COLAL_SPELL_QUICKSILVER_STEPS">
+        <supports>Spiritsworn</supports>
+    </append>
 </elements>
