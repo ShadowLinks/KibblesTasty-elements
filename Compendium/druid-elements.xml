@@ -9,92 +9,160 @@
     <element name="Circle of Elements" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_DRUID_ELEMENTS">
         <supports>Druid Circle</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>The Circle of Elements allows druids to tap the purest of primal powers, unleashing devastating elemental powers destroy their enemies and reshape the battlefield. These druids are the wrath of nature incarnate, and leave a path that is burned, frozen, scorched, or broken through all that would defile.</p>
+            <p class="indent">Anyone that makes the mistake of thinking that nature is serene beauty would do well remember why civilized creatures spend so much of their time trying to keep it at bay.</p>
+            <p class="indent">A druid of this circle is not wantonly destructive, but most see destruction as the world returning to its natural state. To blow down or burn what has been built allows nature to thrive anew.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_INVOKE_ELEMENT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_PRIMAL_SCULPTING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_PARAELEMENTAL_MANIFESTATIONS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_EMPOWERED_MANIFESTATIONS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_ELEMENTAL_ADAPTATION" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="10" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_INVOKE_ELEMENT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_PRIMAL_SCULPTING" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_PARAELEMENTAL_MANIFESTATIONS" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_EMPOWERED_MANIFESTATIONS" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_ELEMENTAL_ADAPTATION" level="14" />
         </rules>
     </element>
-    <element name="Circle of Elements Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Circle of Elements Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_SPELLS">
         <description>
-            <p></p>
-            <table>
-                <thead>
-                    <tr><td>Druid Level</td><td>Circle Spells</td></tr>
-                </thead>
-                <tr><td>2nd</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data1</td></tr>
-                <tr><td>5th</td><td>data2</td></tr>
-                <tr><td>7th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
-            </table>
+            <p>Additionally at 2nd level, your mystical connection to the primal powers allows you to learn additional elemental spells. When you pick a druid spell, you can additionally select from the Circle of Elements Expanded Spells list. The number of spells you can prepare increases by 1 when you gain this feature, and again at 3rd, 5th, 7th, and 9th levels.</p>
+            
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+        <!-- need to fix the cantrips so they just add to the spell list-->
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_FIRE_BOLT" />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_ELECTRIC_ARC" />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_RAY_OF_FROST" />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_BURNING_HANDS" />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_ELECTRIFY" />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_ELEMENTAL_ORB" />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_ENTOMB" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_BURNING_STRIKE" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_COLD_SNAP" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_CRESCENT_WIND_SLASH" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_DRAGON_SURGE" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_LIGHTNING_CHARGED" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_SCORCHING_RAY" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_UNSTABLE_EXPLOSION" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_FIREBALL" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_FLAMETHROWER" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_FLASH_FREEZE" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_ELECTROCUTE" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_LIGHTNING_BOLT" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_STATIC_FIELD" />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_AERO_BARRAGE" />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_ICE_SPIKE" />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_JUMPING_JOLT" />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_PILLAR_OF_FIRE" />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_SUFFOCATE" />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_PRESSURE_CUTTER" />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_PYROCLASTIC_LANCE" />
+            <grant type="Spell" level="11" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_BEAM_OF_ANNIHILATION" />
+            <grant type="Spell" level="11" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_CHAIN_LIGHTNING" />
+            <grant type="Spell" level="11" spellcasting="Druid" prepared="false" id="ID_KTH_COLAL_SPELL_MELT" />
+            <grant type="Spell" level="13" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_DELAYED_BLAST_FIREBALL" />
+            <grant type="Spell" level="17" spellcasting="Druid" prepared="false" id="ID_PHB_SPELL_METEOR_SWARM" />
+            
+            <stat name="druid:spellcasting:prepare" value="1" level="2" />
+            <stat name="druid:spellcasting:prepare" value="1" level="3" />
+            <stat name="druid:spellcasting:prepare" value="1" level="5" />
+            <stat name="druid:spellcasting:prepare" value="1" level="7" />
+            <stat name="druid:spellcasting:prepare" value="1" level="9" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Invoke Element" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_INVOKE_ELEMENT">
         <description>
-            <p></p>
+            <p>When you choose this circle at 2nd level, you gain an alternate use for Wild Shape. As a bonus action, you can expend a use of your Wild Shape to invoke primal powers to manifest elemental forces at a point within 60 feet. When you invoke this power, select an element to invoke, which has a different effect.</p>
+            <ul>
+                <li><strong>Air: Coalesced Lightning.</strong> Creates a crackling ball of energy at the target point. When you manifest the power, and as a bonus action on subsequent turns, you can force one creature within 30 feet of the point to pass a Dexterity saving throw, or be struck by an arc of lightning, taking 1d6 + your Wisdom modifier damage.</li>
+                <li><strong>Earth: Stone Pillar.</strong> When you manifest the power, a stone eruption fills an unoccupied space within 5 feet of the point, rising up to 10 feet and blocking the space. It has an AC of 16 and hit points equal to your Wisdom modifier + your druid level. The pillar is three quarters cover for creatures behind it. It becomes difficult terrain when destroyed.</li>
+                <li><strong>Fire: Wildfire.</strong> The area within 5 feet of the point is filled with flames. Creatures that start their turn in the area take 1d6 fire damage.</li>
+                <li><strong>Water: Icy Blizzard.</strong> The area within 5 feet of the point is filled with an icy storm of sleet, becoming difficult terrain.</li>
+            </ul>
+            <p class="indent">You can move an elemental manifestation up to 20 feet on subsequent turns as a bonus action. If you move a stone pillar, the pillar is destroyed and you can create a new pillar.</p>
+            <p class="indent">Instead of moving a Wildfire or Icy Blizzard, you can expand their radius by 5 feet as a bonus action. You can use this on a manifestation a number of times equal to your proficiency bonus. Their radius is reset to the base size if you move them. You are unaffected by the effects of your own elemental manifestations (though cannot move through stone pillars you create unless otherwise able to).</p>
+            <p class="indent">The manifested elemental lasts for 1 minute, ending early if you dismiss it (no action required), are incapacitated, die, or use this feature again.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As a bonus action, you can expend a use of your Wild Shape to invoke primal powers to manifest elemental forces at a point within 60 feet. When you invoke this power, select an element to invoke, which has a different effect.
+            Air: Coalesced Lightning. Creates a crackling ball of energy at the target point. When you manifest the power, and as a bonus action on subsequent turns, you can force one creature within 30 feet of the point to pass a Dexterity saving throw, or be struck by an arc of lightning, taking 1d6 + {{wisdom:modifier}} damage.
+            Earth: Stone Pillar. When you manifest the power, a stone eruption fills an unoccupied space within 5 feet of the point, rising up to 10 feet and blocking the space. It has an AC of 16 and {{stonepillar:hp}} hit points. The pillar is three quarters cover for creatures behind it. It becomes difficult terrain when destroyed.
+            Fire: Wildfire. The area within 5 feet of the point is filled with flames. Creatures that start their turn in the area take 1d6 fire damage.
+            Water: Icy Blizzard. The area within 5 feet of the point is filled with an icy storm of sleet, becoming difficult terrain.
+            You can move an elemental manifestation up to 20 feet on subsequent turns as a bonus action. If you move a stone pillar, the pillar is destroyed and you can create a new pillar.
+            Instead of moving a Wildfire or Icy Blizzard, you can expand their radius by 5 feet as a bonus action. You can use this on a manifestation {{proficiency}} times. Their radius is reset to the base size if you move them. You are unaffected by the effects of your own elemental manifestations (though cannot move through stone pillars you create unless otherwise able to).
+            The manifested elemental lasts for 1 minute, ending early if you dismiss it (no action required), are incapacitated, die, or use this feature again.</description>
+        </sheet>
+        <rules>
+            <stat name="stonepillar:hp" value="level:druid" bonus="base" />
+            <stat name="stonepillar:hp" value="wisdom:modifier" />
+        </rules>
+    </element>
+    <element name="Primal Sculpting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_PRIMAL_SCULPTING">
+        <description>
+            <p>Starting at 6th level, when you deal bludgeoning, cold, fire, or lightning damage with Invoke Elements or a druid spell, you can choose a number of creatures equal to your proficiency bonus that you can see to exclude from the effect.</p>
+            <p class="indent">The chosen creatures automatically pass their saving throw (if applicable) against the effect, and take no damage from the effect.</p>
+        </description>
+        <sheet>
+            <description>when you deal bludgeoning, cold, fire, or lightning damage with Invoke Elements or a druid spell, you can choose {{proficiency}} creatures that you can see to exclude from the effect.
+            The chosen creatures automatically pass their saving throw (if applicable) against the effect, and take no damage from the effect.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Paraelemental Manifestations" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_PARAELEMENTAL_MANIFESTATIONS">
         <description>
-            <p></p>
+            <p>Starting at 10th level, when you use Invoke Element, you can invoke two elements, gaining a new effect based on their combination:</p>
+            <table>
+                <thead>
+                    <tr><td>--</td><td>Air</td><td>Earth</td><td>Fire</td><td>Water</td></tr>
+                </thead>
+                <tr><td>Air</td><td>--</td><td>Dust</td><td>Smoke</td><td>Fog</td></tr>
+                <tr><td>Earth</td><td>Dust</td><td>--</td><td>Magma</td><td>Mud</td></tr>
+                <tr><td>Fire</td><td>Smoke</td><td>Magma</td><td>--</td><td>Strean</td></tr>
+                <tr><td>Water</td><td>Fog</td><td>Mud</td><td>Stream</td><td>--</td></tr>
+            </table>
+            <ul>
+                <li><strong>Dust: Dust Cloud.</strong> The area within 10 feet of the point becomes heavily obscured. Creatures attempting to speak in the area must make a Constitution saving throw against your spell save DC, or be muted until the start of their next turn or they exit the dust cloud. You can expand or move this Dust Cloud with your Invoke Elements feature.</li>
+                <li><strong>Fog, Smoke, or Steam: Obscuring Cloud.</strong> The area has the effect of both contributing powers. In addition, the area covered by Wildfire or Icy Blizzard also becomes heavily obscured.</li>
+                <li><strong>Magma: Magma Pillar.</strong> Has the effect of Stone Pillar, but additionally creatures that start their turn within 5 feet of the stone pillar take 2d6 fire damage and creatures that hit the magma pillar with a melee attack take 2d6 fire damage.</li>
+                <li><strong>Mud: Mud Mire.</strong> The area within 5 feet of the point is filled with thick icy mud, creating difficult terrain. The difficult terrain generated on the ground requires an additional foot of movement for each foot of movement through it. You can expand or move this Mud Mire with your Invoke Elements feature.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use Invoke Element, you can invoke two elements, gaining a new effect based on their combination:
+            Dust: Dust Cloud (earth x air). The area within 10 feet of the point becomes heavily obscured. Creatures attempting to speak in the area must make a Constitution saving throw against your spell save DC, or be muted until the start of their next turn or they exit the dust cloud. You can expand or move this Dust Cloud with your Invoke Elements feature.
+            Fog, Smoke, or Steam: Obscuring Cloud (water/fire x air, fire x water ). The area has the effect of both contributing powers. In addition, the area covered by Wildfire or Icy Blizzard also becomes heavily obscured.
+            Magma: Magma Pillar (fire x earth). Has the effect of Stone Pillar, but additionally creatures that start their turn within 5 feet of the stone pillar take 2d6 fire damage and creatures that hit the magma pillar with a melee attack take 2d6 fire damage.
+            Mud: Mud Mire (water x earth). The area within 5 feet of the point is filled with thick icy mud, creating difficult terrain. The difficult terrain generated on the ground requires an additional foot of movement for each foot of movement through it. You can expand or move this Mud Mire with your Invoke Elements feature.
+            </description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Empowered Manifestations" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_EMPOWERED_MANIFESTATIONS">
         <description>
-            <p></p>
+            <p>Additionally at 10th level, the damage of the Coalesced Lightning and Wildfire is increased by 1d6 (when not used to make up Paraelemental Manifestations)</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The damage of the Coalesced Lightning and Wildfire is increased by 1d6 (when not used to make up Paraelemental Manifestations)</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Elemental Adaptation" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ELEMENTS_ELEMENTAL_ADAPTATION">
         <description>
-            <p></p>
+            <p>Starting at 14th level, when you complete a short or long rest, you can gain resistance to one damage type from the following list until your next short or long rest: cold, fire, or lightning.</p>
+            <p class="indent">When you have resistance to cold damage you can see through the obscurement of steam or fog. When you have resistance to fire damage, you can see through the obscurement of steam or smoke. When you have resistance to lightning damage you can see through the obscurement of dust, smoke, or steam.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>When you complete a short or long rest, you can gain resistance to one damage type from the following list until your next short or long rest: cold, fire, or lightning.
+            When you have resistance to cold damage you can see through the obscurement of steam or fog. When you have resistance to fire damage, you can see through the obscurement of steam or smoke. When you have resistance to lightning damage you can see through the obscurement of dust, smoke, or steam.</description>
         </sheet>
     </element>
 </elements>

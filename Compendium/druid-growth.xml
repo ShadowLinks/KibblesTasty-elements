@@ -11,90 +11,187 @@
         <description>
             <p></p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_SPROUT_SAPLING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_VERDANT_POWER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_ENTANGLING_ROOTS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_GRASP_OF_NATURE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_NOURISHING_MAGIC" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="10" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_SPROUT_SAPLING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_VERDANT_POWER" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_ENTANGLING_ROOTS" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_GRASP_OF_NATURE" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_NOURISHING_MAGIC" level="14" />
         </rules>
     </element>
-    <element name="Circle of Growth Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Circle of Growth Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_SPELLS">
         <description>
-            <p></p>
+            <p>At 2nd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of the Growth Spells table. Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.</p>
             <table>
                 <thead>
                     <tr><td>Druid Level</td><td>Circle Spells</td></tr>
                 </thead>
-                <tr><td>2nd</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data1</td></tr>
-                <tr><td>5th</td><td>data2</td></tr>
-                <tr><td>7th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
+                <tr><td>2nd</td><td>bramble binding, entangle</td></tr>
+                <tr><td>3rd</td><td>barkskin, sprout tree</td></tr>
+                <tr><td>5th</td><td>plant growth, speak with plants</td></tr>
+                <tr><td>7th</td><td>grasping vine, carnivorous garden</td></tr>
+                <tr><td>9th</td><td>tree stride, wild evocation (wrath of nature)</td></tr>
             </table>
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_KTH_COLAL_SPELL_BRAMBLE_BINDING"  />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_ENTANGLE"  />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_BARKSKIN"  />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_KTH_COLAL_SPELL_SPROUT_TREE"  />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_PLANT_GROWTH"  />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS"  />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_GRASPING_VINE"  />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_KTH_COLAL_SPELL_CARNIVOROUS_GARDEN"  />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_TREE_STRIDE"  />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_XGTE_SPELL_WRATH_OF_NATURE"  />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Sprout Sapling" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_SPROUT_SAPLING">
         <description>
-            <p></p>
+            <p>Starting at 2nd level, as a bonus action, you can expend one use of your Wild Shape feature to sprout a Sapling, rather than assuming a beast form. The Sapling to sprouts to life in an empty space you can see within 30 feet. The Sapling is friendly to you and your companions and obeys your commands. See this creature’s game statistics in the Sapling stat block, which uses your proficiency bonus (PB) in several places.</p>
+            <p class="indent">In combat, the Sapling shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. You can command your Sapling as part of the same bonus action used to summon it. That action can be one in its stat block or some other action. If you are incapacitated, the Sapling can take any action of its choice, not just Dodge. When you cast a spell with a range other than self, the spell can originate from you or your Sapling.</p>
+            <p class="indent">The Sapling manifests for 10 minutes, until it is reduced to 0 hit points, until you use this feature to summon the spirit again, or until you die.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As a bonus action, you can expend one use of your Wild Shape feature to sprout a Sapling, rather than assuming a beast form. The Sapling to sprouts to life in an empty space you can see within 30 feet. The Sapling is friendly to you and your companions and obeys your commands. See this creature’s game statistics in the Sapling stat block, which uses your proficiency bonus (PB) in several places.
+            In combat, the Sapling shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. You can command your Sapling as part of the same bonus action used to summon it. That action can be one in its stat block or some other action. If you are incapacitated, the Sapling can take any action of its choice, not just Dodge. When you cast a spell with a range other than self, the spell can originate from you or your Sapling.
+            The Sapling manifests for 10 minutes, until it is reduced to 0 hit points, until you use this feature to summon the spirit again, or until you die.</description>
         </sheet>
+        <rules>
+            <select type="Companion" name="Sapling" supports="growth-sapling-companion" />
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Verdant Power" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_VERDANT_POWER">
         <description>
-            <p></p>
+            <p>Starting at 6th level, whenever you expend a spell slot of 1st level or higher while your Sapling is manifested, you can select one of the following benefits:</p>
+            <ul>
+                <li><strong>Multiattack.</strong> The Sapling can make additional attacks on its turn equal to the level of the spell slot divided by 2 (minimum 1).</li>
+                <li><strong>Verdant Aura.</strong> All allied creatures of your choice within 30 feet of the Sapling gain temporary hit points equal twice the level of the spell slot.</li>
+                <li><strong>Reposition.</strong> The Sapling can move a number of feet equal to 5 + 5 times the level of the spell slot spent feet on its turn. Until the start of your next turn, any space it moved through is difficult terrain for creatures of your choice.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you expend a spell slot of 1st level or higher while your Sapling is manifested, you can select one of the following benefits:
+            Multiattack. The Sapling can make additional attacks on its turn equal to the level of the spell slot divided by 2 (minimum 1).
+            Verdant Aura. All allied creatures of your choice within 30 feet of the Sapling gain temporary hit points equal twice the level of the spell slot.
+            Reposition. The Sapling can move a number of feet equal to 5 + 5 times the level of the spell slot spent feet on its turn. Until the start of your next turn, any space it moved through is difficult terrain for creatures of your choice.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Entangling Roots" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_ENTANGLING_ROOTS">
         <description>
-            <p></p>
+            <p>Starting at 10th level, a creature that ends its turn within the Grasping Roots area of effect of your Sapling must make a Dexterity saving throw against your spell save DC, or become grappled by the Sapling.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>A creature that ends its turn within the Grasping Roots area of effect of your Sapling must make a Dexterity saving throw against your spell save DC, or become grappled by the Sapling.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Grasp of Nature" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_GRASP_OF_NATURE">
         <description>
-            <p></p>
+            <p>Starting at 10th level, when a creature starts its turn grappled or restrained by you, your spells, creatures created by your spells, or your Sapling, it takes damage equal to your Wisdom modifier.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When a creature starts its turn grappled or restrained by you, your spells, creatures created by your spells, or your Sapling, it takes {{wisdom:modifier}} damage.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Nourishing Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_GROWTH_NOURISHING_MAGIC">
         <description>
-            <p></p>
+            <p>Starting at 14th level, whenever you trigger an effect of Verdant Power, your Sapling regains 1d10 hit points per level of spell slot spent, and you can cause it to grow one size (up to a maximum of huge). Its reach increases by 5 feet for each size category above medium.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you trigger an effect of Verdant Power, your Sapling regains 1d10 hit points per level of spell slot spent, and you can cause it to grow one size (up to a maximum of huge). Its reach increases by 5 feet for each size category above medium.</description>
         </sheet>
     </element>
+    <element name="Sapling" type="Companion" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_SAPLING">
+        <supports>growth-sapling-companion</supports>
+        <description>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Plant</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">12 + PB</set>
+            <set name="hp">10 + 5x druid level</set>
+            <set name="speed">0 ft.</set>
+            <set name="strength">16</set>
+            <set name="dexterity">1</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">8</set>
+            <set name="wisdom">14</set>
+            <set name="charisma">10</set>
+            <set name="skills">Athletics +3 + PB</set>
+            <set name="saves">STR, CON</set>
+            <set name="resistances">bludgeoning</set>
+            <set name="conditionImmunities">charmed, frightened, prone, restrained</set>            
+            <set name="senses">blindsight 30 feet</set>
+            <set name="languages">understands the languages you spek</set>
+            <set name="challenge">2</set>
+            <set name="traits">ID_KTH_COLAL_COMPANION_TRAIT_SAPLING_STATS,ID_KTH_COLAL_COMPANION_TRAIT_SAPLING_GRASPING_ROOTS,ID_KTH_COLAL_COMPANION_TRAIT_SAPLING_SHELTERING_BRANCHES</set>
+            <set name="actions">ID_KTH_COLAL_COMPANION_ACTION_SAPLING_SLAM,ID_KTH_COLAL_COMPANION_ACTION_SAPLING_LASHING_VINES</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14" />
+            <stat name="companion:hp:max" value="20" bonus="base" />
+            <stat name="companion:speed" value="0" bonus="base" />
+        </rules>
+    </element>
+    <element name="Sapling Stats" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_SAPLING_STATS">
+        <description>
+            <p>AC= 12 + PB</p>
+            <p>HP= 10 + (5 x druid level)</p>
+            <p>Saves: STR and CON + 3 + PB</p>
+            <p>Athletics + 3 + PB</p>
+            <p>CR= PB</p>
+        </description>
+        <sheet>
+            <description>AC=12 + PB
+            HP= 10 + (5 x druid level)
+            Saves: STR and CON + 3 + PB
+            Athletics + 3 + PB
+            CR= PB</description>
+        </sheet>
+    </element>
+    <element name="Grasping Roots" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_SAPLING_GRASPING_ROOTS">
+        <description>
+            <p>Terrain within 5 feet of the Sapling is difficult terrain for hostile creatures.</p>
+        </description>
+        <sheet>
+            <description>Terrain within 5 feet of the Sapling is difficult terrain for hostile creatures.</description>
+        </sheet>
+    </element>
+    <element name="Sheltering Branches" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_SAPLING_SHELTERING_BRANCHES">
+        <description>
+            <p>Allied creatures within 5 feet of Sapling gain half cover.</p>
+        </description>
+        <sheet>
+            <description>Allied creatures within 5 feet of Sapling gain half cover.</description>
+        </sheet>
+    </element>
+    <element name="Slam" type="Companion Action" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_ACTION_SAPLING_SLAM">
+        <description>
+            <p><i>Melee Weapon Attack:</i> +spell attack modifier to hit, reach 10 ft., one target. <i>Hit:</i> 1d8 + PB bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +spell attack modifier to hit, reach 10 ft., one target. Hit: 1d8 + PB bludgeoning slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Lashing Vines" type="Companion Action" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_ACTION_SAPLING_LASHING_VINES">
+        <description>
+            <p><i>Melee Weapon Attack:</i> +spell attack modifier to hit, reach 30 ft., one target. <i>Hit:</i> 1d4 + PB slashing damage and must make a Strength saving throw against your spell save DC or by dragged up to 15 feet toward the Sapling. This distance is reduced by 5 feet for every size category about Medium..</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +spell attack modifier to hit, reach 30 ft., one target. Hit: 1d4 + PB slashing damage and must make a Strength saving throw against your spell save DC or by dragged up to 15 feet toward the Sapling. This distance is reduced by 5 feet for every size category about Medium..</description>
+        </sheet>
+    </element>    
 </elements>

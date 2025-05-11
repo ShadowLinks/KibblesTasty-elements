@@ -9,92 +9,106 @@
     <element name="Circle of the Aspects" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_DRUID_ASPECTS">
         <supports>Druid Circle</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>A circle of the aspects druid, frequently called a spirit shifter, is a druid that has attuned themselves to the spiritual aspects of beasts. These druids tap into their fundamental nature, calling up certain aspects of wilderness and embodying them in spirit. A druid of this circle can be said to Wild Shape their soul, rather than their body.</p>
+            <p class="indent">Druids of this circle must walk a fine line, as it can be easy for them to delve too deeply into the powerful and savage states of mind they enter. However, these magical aspects grant them both unique power and perspective as they walk the world, seeing the world through the eyes of the bestial spirits that boil within them.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_SPIRIT_SHAPE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_TWIN_SOUL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_SPIRITUAL_REGROWTH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_CHIMERA_SOUL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_ASPECT_EAGLE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="10" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_SPIRIT_SHAPE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_TWIN_SOUL" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_SPIRITUAL_REGROWTH" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_CHIMERA_SOUL" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_ASPECT_EAGLE" level="14" />
         </rules>
     </element>
-    <element name="Circle of the Aspects Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Circle of the Aspects Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_SPELLS">
         <description>
-            <p></p>
+            <p>At 2nd level, you learn the impact cantrip. At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of the Aspects Spells table.</p>
             <table>
                 <thead>
                     <tr><td>Druid Level</td><td>Circle Spells</td></tr>
                 </thead>
-                <tr><td>2nd</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data1</td></tr>
-                <tr><td>5th</td><td>data2</td></tr>
-                <tr><td>7th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
+                <tr><td>2nd</td><td>impact</td></tr>
+                <tr><td>3rd</td><td>alacrity, iron wind strike</td></tr>
+                <tr><td>5th</td><td>haste, spirit guardians</td></tr>
+                <tr><td>7th</td><td>fire shield, freedom of movement</td></tr>
+                <tr><td>9th</td><td>flickering strikes, commune with nature</td></tr>
             </table>
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_KTH_COLAL_SPELL_IMPACT"  />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_KTH_COLAL_SPELL_ALACRITY"  />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_KTH_COLAL_SPELL_IRON_WIND_STRIKE"  />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_HASTE"  />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_SPIRIT_GUARDIANS"  />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_FIRE_SHIELD"  />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT"  />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_KTH_COLAL_SPELL_FLICKERING_STRIKES"  />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE"  />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Spirit Shape" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_SPIRIT_SHAPE">
         <description>
-            <p></p>
+            <p>When you choose this circle at 2nd level, you gain an alternate use for Wild Shape. As a bonus action, you can shape your soul to incorporate a bestial aspect.</p>
+            <p class="indent">While your body remains unchanged, the magical essence fills you with a unique power depending on which aspect you assume, granting potent abilities. The Spirit Aspect lasts for 10 minutes, or until you use this feature again. Choose one of the following Spiritual Aspects:</p>
+            <ul>
+                <li><strong>Aspect of the Bear.</strong> You gain supernatural strength and your magical attacks impact with staggering force. Your Strength ability score becomes equal to your Wisdom ability score (if it was lower), and you can add your Strength modifier to the damage of your melee spell attacks. You gain proficiency in Strength saving throws while manifesting this aspect.</li>
+                <li><strong>Aspect of the Tiger.</strong> You gain a supernatural agility and unrelenting ferocity weaving your magic and attacks together. When you make a melee spell attack or cast a spell as part of your action, you can make one melee weapon attack as a bonus action. You gain proficiency in Dexterity saving throws while manifesting this aspect.</li>
+                <li><strong></strong>Aspect of the Turtle. You gain supernatural endurance and perseverance to withstand through a rain of blows. When you enter this form, you gain temporary hit points equal to your twice Druid level + your Wisdom modifier. You gain proficiency in Constitution saving throws while manifesting this aspect.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can use Wild Shape to gain a Spirit Aspect for 10 minutes or until you use this feature again.
+            Aspect of the Bear. Your Strength ability score becomes equal to your Wisdom ability score (if it was lower), and you can add your Strength modifier to the damage of your melee spell attacks. You gain proficiency in Strength saving throws while manifesting this aspect.
+            Aspect of the Tiger. When you make a melee spell attack or cast a spell as part of your action, you can make one melee weapon attack as a bonus action. You gain proficiency in Dexterity saving throws while manifesting this aspect.
+            Aspect of the Turtle. When you enter this form, you gain {{2xlevelwis}} temporary hit points. You gain proficiency in Constitution saving throws while manifesting this aspect.</description>
+        </sheet>
+        <rules>
+            <stat name="2xlevelwis" value="level:druid" bonus="base"/>
+            <stat name="2xlevelwis" value="level:druid" />
+            <stat name="2xlevelwis" value="wisdom:modifier" />
+        </rules>
+    </element>
+    <element name="Twin Soul" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_TWIN_SOUL">
+        <description>
+            <p>Starting at 6th level, when you assume a Spirit Aspect, you can assume two different aspects at the same time.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you assume a Spirit Aspect, you can assume two different aspects at the same time.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Spiritual Regrowth" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_SPIRITUAL_REGROWTH">
         <description>
-            <p></p>
+            <p>Additionally at 6th level, whenever you cast a spell while you have an active Spirit Aspect, you recover hit points equal to twice the spell level of the spell cast.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you cast a spell while you have an active Spirit Aspect, you recover hit points equal to twice the spell level of the spell cast.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Chimera Soul" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_CHIMERA_SOUL">
         <description>
-            <p></p>
+            <p>Starting at 10th level, when you assume a Spirit Aspect, you can assume three different aspects at the same time.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you assume a Spirit Aspect, you can assume three different aspects at the same time.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Aspect of the Eagle" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_ASPECTS_ASPECT_EAGLE">
         <description>
-            <p></p>
+            <p>Starting at 14th level, when you assume any other Spiritual Aspect, you can also assume the Aspect of the Eagle, causing ethereal wings to erupt from your aura. You gain a flying speed of 30 feet while in this aspect. It ends when you are no longer assuming a Spiritual Aspect.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>When you assume any other Spiritual Aspect, you can also assume the Aspect of the Eagle, causing ethereal wings to erupt from your aura. You gain a flying speed of 30 feet while in this aspect. It ends when you are no longer assuming a Spiritual Aspect.</description>
         </sheet>
     </element>
 </elements>
