@@ -9,73 +9,141 @@
     <element name="Crusader" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FIGHTER_CRUSADER">
         <supports>Martial Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>Crusaders are fighters that serve a faith, often zealously so. They may be directly in the service of god, belong to an order of some kind, or have taken up a more personal cause. They wield powers that let them protect themselves from the evils of their foes and purge that which defies them.</p>
+            <p class="indent">Some see them as similar to Paladins, but mistaking them for one can be a fatal mistake, as Crusaders are not restrained by an oath: enacting the will of the higher power they serve without such fetters.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_SPELLCASTING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_DEVOUT_DOCTRINE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_FERVENT_ZEAL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_STRENGTH_OF_FAITH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_PURIFYING_POWERS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_UNBREAKABLE_CONVICTION" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="7" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="15" />
-            <grant type="Archetype Feature" id="ID_______" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_SPELLCASTING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_DEVOUT_DOCTRINE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_FERVENT_ZEAL" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_STRENGTH_OF_FAITH" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_PURIFYING_POWERS" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_UNBREAKABLE_CONVICTION" level="18" />
+        </rules>
+        <spellcasting name="Crusader" ability="Wisdom" prepare="false" allowReplace="true">
+            <list>Cleric</list>
+        </spellcasting>
+    </element>
+    <element name="Spellcasting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_SPELLCASTING">
+        <description>
+            <p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See Spells Rules for the general rules of spellcasting and the Spells Listing for the cleric spell list.</p>
+            <h4>CANTRIPS</h4>
+            <p>You learn two cantrips of your choice from the cleric spell list. You learn an additional cleric cantrip of your choice at 10th level.</p>
+            <h4>SPELL SLOTS</h4>
+            <p>The Crusader Spellcasting table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <h4>SPELLS KNOWN OF 1ST-LEVEL AND HIGHER</h4>
+            <p>You know three 1st-level cleric spells of your choice from the cleric spell list.</p>
+            <p class="indent">The Spells Known column of the Crusader Spellcasting table shows when you learn more cleric spells of 1st level or higher.</p>
+            <p class="indent">Whenever you gain a level in this class, you can replace one of the cleric spells you know with another spell of your choice from the cleric spell list.</p>
+            <h4>SPELLCASTING ABILITY</h4>
+            <p>Wisdom is your spellcasting ability for your cleric spells, since you learn your spells through faith and conviction. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+            </center>            
+            <h4>Crusader Spellcasting</h4>
+            <table>
+                <thead>
+                    <tr><td>Level</td><td>Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>3</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+                <tr><td>4th</td><td>3</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+                <tr><td>5th</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+                <tr><td>6th</td><td>4</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>7th</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>8th</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>9th</td><td>6</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>10th</td><td>6</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>11th</td><td>7</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>12th</td><td>7</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>13th</td><td>8</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+                <tr><td>14th</td><td>8</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+                <tr><td>15th</td><td>9</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+                <tr><td>16th</td><td>9</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+                <tr><td>17th</td><td>10</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+                <tr><td>18th</td><td>10</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+                <tr><td>19th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+                <tr><td>20th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You regain your spell slots on Long Rest.
+            You can replace one spell with another cleric spell when you level up.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <select type="Spell" supports="Cleric,0" spellcasting="Crusader" number="2" name="Crusader Cantrip" />
+            <select type="Spell" supports="Cleric,0" spellcasting="Crusader" number="1" name="Crusader Cantrip 2" level="10" />
+            <select type="Spell" supports="Cleric,$(spellcasting:slots)" spellcasting="Crusader" number="3" name="Crusader Spell" level="3" />
+            <select type="Spell" supports="Cleric,$(spellcasting:slots)" spellcasting="Crusader" number="1" name="Crusader Spell" level="5" />
+            <select type="Spell" supports="Cleric,$(spellcasting:slots)" spellcasting="Crusader" number="1" name="Crusader Spell" level="7" />
+            <select type="Spell" supports="Cleric,$(spellcasting:slots)" spellcasting="Crusader" number="1" name="Crusader Spell" level="9" />
+            <select type="Spell" supports="Cleric,$(spellcasting:slots)" spellcasting="Crusader" number="1" name="Crusader Spell" level="11" />
+            <select type="Spell" supports="Cleric,$(spellcasting:slots)" spellcasting="Crusader" number="1" name="Crusader Spell" level="13" />
+            <select type="Spell" supports="Cleric,$(spellcasting:slots)" spellcasting="Crusader" number="1" name="Crusader Spell" level="15" />
+            <select type="Spell" supports="Cleric,$(spellcasting:slots)" spellcasting="Crusader" number="1" name="Crusader Spell" level="17" />
+            <select type="Spell" supports="Cleric,$(spellcasting:slots)" spellcasting="Crusader" number="1" name="Crusader Spell" level="19" />
+            <stat name="crusader:spellcasting:slots:1" value="2" level="3"/>
+            <stat name="crusader:spellcasting:slots:1" value="1" level="4"/>
+            <stat name="crusader:spellcasting:slots:1" value="1" level="7"/>
+            <stat name="crusader:spellcasting:slots:2" value="2" level="7"/>
+            <stat name="crusader:spellcasting:slots:2" value="1" level="10"/>
+            <stat name="crusader:spellcasting:slots:3" value="2" level="13"/>
+            <stat name="crusader:spellcasting:slots:3" value="1" level="16"/>
+            <stat name="crusader:spellcasting:slots:4" value="1" level="19"/>
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Devout Doctrine" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_DEVOUT_DOCTRINE">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, you gain proficiency in the Religion skill and gain the ability to use a holy symbol as your spell casting focus for your cleric spells. If you are already proficient in Religion, you can gain proficiency in another skill of your choice.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain the ability to use a holy symbol as your spell casting focus for your cleric spells.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Devout Doctrine" supports="Skill" requirements="ID_PROFICIENCY_SKILL_RELIGION,!ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_RELIGION"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_RELIGION" requirements="!ID_PROFICIENCY_SKILL_RELIGION" />
+        </rules>
+    </element>
+    <element name="Fervent Zeal" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_FERVENT_ZEAL">
+        <description>
+            <p>Beginning at 7th level, when you cast a spell that targets yourself (it does not have to target only you), you can make one weapon attack as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that targets yourself (it does not have to target only you), you can make one weapon attack as a bonus action.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Strength of Faith" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_STRENGTH_OF_FAITH">
         <description>
-            <p></p>
+            <p>Starting at 10th level, you can add half of your Strength or Dexterity modifier (your choice, rounded down) to your spell save DC and spell attack modifier for Cleric spells.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can add half of your Strength or Dexterity modifier (your choice, rounded down) to your spell save DC and spell attack modifier for Cleric spells.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Purifying Powers" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_PURIFYING_POWERS">
         <description>
-            <p></p>
+            <p>Starting at 15th level, your powers shield you from the foul magics of heretics. When you are concentrating on a cleric spell, you have advantage on saving throws against spells.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you are concentrating on a cleric spell, you have advantage on saving throws against spells.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Unbreakable Conviction" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CRUSADER_UNBREAKABLE_CONVICTION">
         <description>
-            <p></p>
+            <p>Starting at 18th level, while you are concentrating on a cleric spell that targets you (it does not have to target only you), your concentration can’t be broken as a result of taking damage.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>While you are concentrating on a cleric spell that targets you (it does not have to target only you), your concentration can’t be broken as a result of taking damage.</description>
         </sheet>
     </element>
 </elements>
