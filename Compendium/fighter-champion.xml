@@ -9,73 +9,158 @@
     <element name="Champion" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FIGHTER_CHAMPION">
         <supports>Martial Archetype</supports>
         <description>
-            <p></p>
+            <p>Champions strive for perfection—exemplars of form and fitness, they represent masters of straightforward martial prowess.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_CRITICAL" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_ATHLETIC_CHAMPION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_ADDITIONAL_FIGHTING_STYLE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_DETERMINATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_SURVIVOR" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_FIGHTING_MASTERY" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="7" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="15" />
-            <grant type="Archetype Feature" id="ID_______" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_CRITICAL" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_ATHLETIC_CHAMPION" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_ADDITIONAL_FIGHTING_STYLE" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_DETERMINATION" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_SURVIVOR" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_FIGHTING_MASTERY" level="18" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Improved Critical" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_CRITICAL">
         <description>
-            <p></p>
+            <p>Improved Critical Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20.</p>
+            <p class="indent">This bonus increases at 7th level (to scoring a critical hit on a roll of 18–20), and again at 15th level (to scoring a critical hit on a 17–20).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your weapon attacks score a critical hit on a roll of 19 or 20.</description>
+            <description level="7">Your weapon attacks score a critical hit on a roll of 18 or 20.</description>
+            <description level="15">Your weapon attacks score a critical hit on a roll of 17 or 20.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Improved Fighting Style" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, your selected Fighting Style is further refined. You gain the following the bonus based on your Fighting Style:</p>
+            <ul>
+                <li><strong>Archery:</strong> You gain a +1 bonus to damage rolls you make with ranged weapons when benefiting from this Fighting Style.</li>
+                <li><strong>Defense:</strong> All damage taken is reduced by 1 while wearing armor when benefiting from this Fighting Style</li>
+                <li><strong>Dueling:</strong> You gain a +1 bonus to attack rolls you make while wielding a weapon in one hand and not wielding another weapon when benefiting from this Fighting Style.</li>
+                <li><strong>Great Weapon Fighting:</strong> You can add half of your Strength modifier (rounded down) to damage rolls made with melee weapons you are holding in both hands while benefiting from this Fighting Style.</li>
+                <li><strong>Protection:</strong> You gain a second reaction action which can only be used on the reaction granted by this style (allowing you to use it and one other reaction, or to use it twice).</li>
+                <li><strong>Two Weapon Fighting:</strong> Attacking with your second weapon no longer requires your bonus action, but you can make that attack only once per turn while benefiting from this Fighting Style</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" level="3" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_ARCHERY" requirements="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY" />
+            <grant type="Archetype Feature" level="3" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_DEFENSE" requirements="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE" />
+            <grant type="Archetype Feature" level="3" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_DUELING" requirements="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING" />
+            <grant type="Archetype Feature" level="3" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_GREAT_WEAPON" requirements="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING" />
+            <grant type="Archetype Feature" level="3" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_PROTECTION" requirements="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION" />
+            <grant type="Archetype Feature" level="3" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_TWO_WEAPON" requirements="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" />
+        </rules>
+    </element>
+    <element name="Improved Archery" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_ARCHERY">
+        <description>
+            <p>You gain a +1 bonus to damage rolls you make with ranged weapons when benefiting from this Fighting Style.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain a +1 bonus to damage rolls you make with ranged weapons when benefiting from this Fighting Style.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Improved Defense" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_DEFENSE">
         <description>
-            <p></p>
+            <p>All damage taken is reduced by 1 while wearing armor when benefiting from this Fighting Style</p>
         </description>
         <sheet>
-            <description></description>
+            <description>All damage taken is reduced by 1 while wearing armor when benefiting from this Fighting Style</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Improved Dueling" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_DUELING">
         <description>
-            <p></p>
+            <p>You gain a +1 bonus to attack rolls you make while wielding a weapon in one hand and not wielding another weapon when benefiting from this Fighting Style.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain a +1 bonus to attack rolls you make while wielding a weapon in one hand and not wielding another weapon when benefiting from this Fighting Style.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Improved Great Weapon Fighting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_GREAT_WEAPON">
         <description>
-            <p></p>
+            <p>You can add half of your Strength modifier (rounded down) to damage rolls made with melee weapons you are holding in both hands while benefiting from this Fighting Style.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can add half of your Strength modifier (rounded down) to damage rolls made with melee weapons you are holding in both hands while benefiting from this Fighting Style.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Improved Protection" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_PROTECTION">
         <description>
-            <p></p>
+            <p>You gain a second reaction action which can only be used on the reaction granted by this style (allowing you to use it and one other reaction, or to use it twice).</p>
+        </description>
+        <sheet>
+            <description>You gain a second reaction action which can only be used on the reaction granted by this style (allowing you to use it and one other reaction, or to use it twice).</description>
+        </sheet>
+    </element>
+    <element name="Improved Two Weapon Fighting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_IMPROVED_FIGHTING_STYLE_TWO_WEAPON">
+        <description>
+            <p>Attacking with your second weapon no longer requires your bonus action, but you can make that attack only once per turn while benefiting from this Fighting Style</p>
+        </description>
+        <sheet>
+            <description>Attacking with your second weapon no longer requires your bonus action, but you can make that attack only once per turn while benefiting from this Fighting Style</description>
+        </sheet>
+    </element>
+    <element name="Athletic Champion" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_ATHLETIC_CHAMPION">
+        <description>
+            <p>Starting at 7th level, you gain proficiency in Athletics. If you already have proficiency in Athletics, you gain Expertise in Athletics, allowing you to add twice your Proficiency bonus to Athletics checks.</p>
+            <p class="indent">Additionally, you gain a climbing and swimming speed equal to your walking speed, and your jumping distance is doubled.</p>
+        </description>
+        <sheet>
+            <description>Your jumping distance is doubled.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
+            <stat name="speed:swim" value="speed" />
+            <stat name="speed:climb" value="speed" />
+        </rules>
+    </element>
+    <element name="Additional Fighting Style" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_ADDITIONAL_FIGHTING_STYLE">
+        <description>
+            <p>At 10th level, you can choose a second option from the Fighting Style class feature. You gain the benefits of Improved Fighting Style with this second Fighting Style as well.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Additional Fighting Style" supports="Fighting Style, Fighter" />
+        </rules>
+    </element>
+    <element name="Determination" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_DETERMINATION">
+        <description>
+            <p>Starting at 15th level, you can attempt to use your physical prowess to break through magical effects that are otherwise physically impassable. As an action, you can make a Strength (Athletics) check against the spell save DC of the caster to attempt to force your way through magical barriers or effects. On success, you can move through the effect, spending four feet of movement for each foot moved through the effect.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can make a Strength (Athletics) check against the spell save DC of the caster to attempt to force your way through magical barriers or effects. On success, you can move through the effect, spending four feet of movement for each foot moved through the effect.</description>
+        </sheet>
+    </element>
+    <element name="Survivor" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_SURVIVOR">
+        <description>
+            <p>At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</p>
+        </description>
+        <sheet>
+            <description>At the start of each of your turns, you regain hit points equal to 5 + {{constitution:modifier}} if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</description>
+        </sheet>
+    </element>
+    <element name="Fighting Mastery" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_CHAMPION_FIGHTING_MASTERY">
+        <description>
+            <p>Additionally at 18th level, you learn all the Fighting Styles available to the Fighter.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Class Feature" supports="Fighting Style, Fighter" number="10" />
+        </rules>
     </element>
 </elements>
