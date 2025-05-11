@@ -9,92 +9,272 @@
     <element name="Circle of the Wild" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_DRUID_WILD">
         <supports>Druid Circle</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>For some druids, they have found their friends among the beasts of the wild, forming a close kinship with the furred and the fanged. They often roam the wilderness, placing little value on the trappings of civilization, more concerned with nature, hunting, and exploring.</p>
+            <p class="indent">The longer they spend in the wild with their animal friends, the more their habits tend to intertwine with the beasts around them. Sometimes they will cook food for their animal friends, while other times they will take to eating their food raw. They play the role of a caretaker, warden, and advocate for the wild.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_PRIMAL_COMPANION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_MAGICAL_BOND" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_BEAST_SENSES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_EMPOWERED_FRENZY" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="10" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_PRIMAL_COMPANION" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_MAGICAL_BOND" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_BEAST_SENSES" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_EMPOWERED_FRENZY" level="14" />
         </rules>
     </element>
-    <element name="Circle of the Wild Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Circle of the Wild Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_SPELLS">
         <description>
-            <p></p>
+            <p>At 2nd, 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of the Wild Spells table. Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.</p>
             <table>
                 <thead>
                     <tr><td>Druid Level</td><td>Circle Spells</td></tr>
                 </thead>
-                <tr><td>2nd</td><td>data1</td></tr>
-                <tr><td>3rd</td><td>data1</td></tr>
-                <tr><td>5th</td><td>data2</td></tr>
-                <tr><td>7th</td><td>data3</td></tr>
-                <tr><td>9th</td><td>data4</td></tr>
+                <tr><td>2nd</td><td>animal friendship, speak with animals</td></tr>
+                <tr><td>3rd</td><td>animal messenger, darkvision</td></tr>
+                <tr><td>5th</td><td>conjure animals, spider bite</td></tr>
+                <tr><td>7th</td><td>dominate beast, polymorph</td></tr>
+                <tr><td>9th</td><td>commune with nature, hold monster</td></tr>
             </table>
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
-            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_"  />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP"  />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS"  />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_ANIMAL_MESSENGER"  />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_DARKVISION"  />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_CONJURE_ANIMALS"  />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_KTH_COLAL_SPELL_SPIDER_BITE"  />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_DOMINATE_BEAST"  />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_POLYMORPH"  />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE"  />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_HOLD_MONSTER"  />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Primal Companion" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_PRIMAL_COMPANION">
         <description>
-            <p></p>
+            <p>Starting at 2nd level when you join this circle, you form a bond with a beast spirit and can allow it to take form by expending a use of your Wild Shape as an action. Its statblock becomes that of your Beast Companion, applying the modifications from the customization table that best fit the form it takes. At the GM’s discretion, custom abilities can replace those powers to better represent the beast companion. Once selected, the traits cannot be changed, as the beast’s spirit takes on that form permanently.</p>
+            <p class="indent">The beast’s soul becomes entangled with your own, granting you the ability to call it forth from wherever it is, and even return it to life should it ever fall, by expending a use of your Wild Shape ability. As an action you can expend a use of Wild Shape to call it to an empty space within 10 feet of you, where it appears at full hit points and free of any conditions or spells that were affecting it. You can cause it to return to its spirit form as a bonus action, but must expend a use of Wild Shape to call it forth once more after doing so.</p>
+            <p class="indent">In combat, the Beast Companion shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. You can command your Beast Companion as part of the same bonus action used to summon it. That action can be the one in its stat block or some other action. If you are incapacitated, the Beast Companion can take any action of its choice, not just Dodge.</p>
+            <p class="indent">When you manifest the companion, it lasts until you complete a long rest (unless you expend a use of Wild Shape to keep it manifested until a subsequent long rest), it is reduced to zero hit points, or you die, at which point it vanishes, fading away until you expend a use of Wild Shape to call it forth again.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You form a bond with a beast spirit and allow it to take form by expending a use of your wildshape as an action. It uses the Beast Companion Stat block and up to 3 traits or custom abilities which are permanent.
+            As an action you can expend a use of Wild Shape to call it to an empty space within 10 feet of you, where it appears at full hit points and free of any conditions or spells that were affecting it. You can cause it to return to its spirit form as a bonus action, but must expend a use of Wild Shape to call it forth once more after doing so.
+            In combat, the Beast Companion shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. You can command your Beast Companion as part of the same bonus action used to summon it. That action can be the one in its stat block or some other action. If you are incapacitated, the Beast Companion can take any action of its choice, not just Dodge.
+            When you manifest the companion, it lasts until you complete a long rest (unless you expend a use of Wild Shape to keep it manifested until a subsequent long rest), it is reduced to zero hit points, or you die, at which point it vanishes, fading away until you expend a use of Wild Shape to call it forth again.</description>
+        </sheet>
+        <rules>
+            <select type="Companion" name="Primal Companion" supports="primal-companion"  />
+        </rules>
+    </element>
+    <element name="Magical Bond" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_MAGICAL_BOND">
+        <description>
+            <p>Starting at 6th level, your Beast Companion’s attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+            <p class="indent">Additionally, whenever you expend a spell slot of 3rd level or higher on your turn, your companion can take one additional action on its turn. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, or Hide action.</p>
+        </description>
+        <sheet>
+            <description>Beast Companion’s attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+            Additionally, whenever you expend a spell slot of 3rd level or higher on your turn, your companion can take one additional action on its turn. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, or Hide action.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Beast Senses" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_BEAST_SENSES">
         <description>
-            <p></p>
+            <p>Starting at 10th level, your bond with your companion enhances your senses with it, and its senses with yours. You gain expertise in Perception, allowing you to add twice your proficiency modifier to ability checks made for that skill, you gain any darkvision or blindsight range your beast has, and it gains any darkvision or blindsight range you have (if both of you already have one type of vision, the ranges are added together).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain any darkvision or blindsight range your beast has, and it gains any darkvision or blindsight range you have (if both of you already have one type of vision, the ranges are added together).</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_PERCEPTION_DOUBLE" />
+        </rules>
+    </element>
+    <element name="Empowered Frenzy" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_DRUID_WILD_EMPOWERED_FRENZY">
+        <description>
+            <p>Starting at 14th level, while your Beast Companion is manifested and within 60 feet of you, you can expend a spell slot (no action required) to empower it for a number of turns equal to the spell slot spent. It gains temporary hit points equal to 5 times the level of the spell slot spent, and while empowered in this way, the beast is under the effect of freedom of movement, and deals an additional 1d8 on hit with its attacks.</p>
+        </description>
+        <sheet>
+            <description>While your Beast Companion is manifested and within 60 feet of you, you can expend a spell slot (no action required) to empower it for a number of turns equal to the spell slot spent. It gains temporary hit points equal to 5 times the level of the spell slot spent, and while empowered in this way, the beast is under the effect of freedom of movement, and deals an additional 1d8 on hit with its attacks.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Beast Companion" type="Companion" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_BEAST_COMPANION">
+        <supports>primal-companion</supports>
         <description>
-            <p></p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">beast</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">10 + PB</set>
+            <set name="hp">5 + (4 x druid level)</set>
+            <set name="speed">30 ft.</set>
+            <set name="strength">16</set>
+            <set name="dexterity">104</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">5</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">6</set>        
+            <set name="senses">passive Perception 10 + PB </set>
+            <set name="languages">understands the languages you speak</set>
+            <set name="challenge">1</set>
+            <set name="traits">ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_STATS,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_ATTACK_TYPE,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_AMPHIBIOUS,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_BLINDSIGHT,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_FLYING,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_KEEN_SENSES,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_MASSIVE,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_PACK_TACTICS,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_POISONOUS,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_POUNCE_CHARGE,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_QUICK,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_SIMIAN_NATURE,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_SNEAKY,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_SPIDER_CLIMB,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_SHELL,ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_TOUGH</set>
+            <set name="actions">ID_KTH_COLAL_COMPANION_ACTION_BEAST_COMPANION_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" />
+            <stat name="companion:hp:max" value="13" bonus="base" />
+            <stat name="companion:speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Stats" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_STATS">
+        <description>
+            <p>AC: 10 + PB</p>
+            <p>HP: 5 + (4 x druid level)</p>
+            <p>Saves: STR, CON 3 + PB</p>
+            <p>Skills: Perception + PB</p>
+            <p>Senses: Passive Perception 10 + PB</p>
+            <p class="indent">Choice of up to 3 other Traits</p>
         </description>
         <sheet>
-            <description></description>
+            <description>AC: 10 + PB
+            HP: 5 + (4 x druid level)
+            Saves: STR, CON 3 + PB
+            Skills: Perception + PB
+            Senses: Passive Perception 10 + PB
+            Choice of up to 3 other traits</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Attack Type (Free)" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_ATTACK_TYPE">
         <description>
-            <p></p>
+            <p> You can change your companion’s attack to Claw, dealing slashing damage instead, or Slam, dealing bludgeoning damage instead. This does not cost a Trait.</p>
         </description>
         <sheet>
-            <description></description>
+            <description> You can change your companion’s attack to Claw, dealing slashing damage instead, or Slam, dealing bludgeoning damage instead. This does not cost a Trait.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Amphibious" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_AMPHIBIOUS">
         <description>
-            <p></p>
+            <p>Your companion gains a swimming speed equal to its walking speed, and it can breathe underwater.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your companion gains a swimming speed equal to its walking speed, and it can breathe underwater.</description>
+        </sheet>
+    </element>
+    <element name="Blindsight" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_BLINDSIGHT">
+        <description>
+            <p> Your companion gains a Blindsight of 10 feet</p>
+        </description>
+        <sheet>
+            <description> Your companion gains a Blindsight of 10 feet</description>
+        </sheet>
+    </element>
+    <element name="Flying" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_FLYING">
+        <description>
+            <p>(Costs 2 Traits; selected beast must have wings). The beast gains a flying speed equal to its walking speed.</p>
+        </description>
+        <sheet>
+            <description>(Costs 2 Traits; selected beast must have wings). The beast gains a flying speed equal to its walking speed.</description>
+        </sheet>
+    </element>
+    <element name="Keen Senses" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_KEEN_SENSES">
+        <description>
+            <p>Your companion can add twice your proficiency in the Perception skill.</p>
+        </description>
+        <sheet>
+            <description>Your companion can add twice your proficiency in the Perception skill.</description>
+        </sheet>
+    </element>
+    <element name="Massive" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_MASSIVE">
+        <description>
+            <p>(Costs 2 Traits; incompatible with Flying). Your companion’s size is Large, and its natural weapon becomes 2d6 + its Strength modifier.</p>
+        </description>
+        <sheet>
+            <description>(Costs 2 Traits; incompatible with Flying). Your companion’s size is Large, and its natural weapon becomes 2d6 + its Strength modifier.</description>
+        </sheet>
+    </element>
+    <element name="Pack Tactics" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_PACK_TACTICS">
+        <description>
+            <p>Your companion has advantage on an attack roll against a creature if at least one of the beast’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</p>
+        </description>
+        <sheet>
+            <description>Your companion has advantage on an attack roll against a creature if at least one of the beast’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</description>
+        </sheet>
+    </element>
+    <element name="Poisonous" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_POISONOUS">
+        <description>
+            <p> The beast’s attack becomes Sting, dealing an additional 1d4 poison damage on hit. The size of the damage die increases when your proficiency bonus does (to 1d6 at +3, etc.).</p>
+        </description>
+        <sheet>
+            <description> The beast’s attack becomes Sting, dealing an additional 1d4 poison damage on hit. The size of the damage die increases when your proficiency bonus does (to 1d6 at +3, etc.).</description>
+        </sheet>
+    </element>
+    <element name="Pounce/Charge" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_POUNCE_CHARGE">
+        <description>
+            <p>If the beast moves at least 20 feet straight toward a creature and then hits it with an attack on the same turn, that target must succeed on a Strength saving throw with a DC equal to your Spell Save DC or be knocked prone.</p>
+        </description>
+        <sheet>
+            <description>If the beast moves at least 20 feet straight toward a creature and then hits it with an attack on the same turn, that target must succeed on a Strength saving throw with a DC equal to your Spell Save DC or be knocked prone.</description>
+        </sheet>
+    </element>
+    <element name="Quick" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_QUICK">
+        <description>
+            <p>Your companion’s walking speed increases by 10 feet.</p>
+        </description>
+        <sheet>
+            <description>Your companion’s walking speed increases by 10 feet.</description>
+        </sheet>
+    </element>
+    <element name="Simian Nature" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_SIMIAN_NATURE">
+        <description>
+            <p>Your companion gains climbing speed equal to its movement speed, proficiency with throwing rocks (ranged weapon, 1d4 + PB bludgeoning damage, thrown(20/60) ), and the ability to hold small items</p>
+        </description>
+        <sheet>
+            <description>Your companion gains climbing speed equal to its movement speed, proficiency with throwing rocks (ranged weapon, 1d4 + PB bludgeoning damage, thrown(20/60), )and the ability to hold small items</description>
+        </sheet>
+    </element>
+    <element name="Sneaky" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_SNEAKY">
+        <description>
+            <p>Your companion gains proficiency in the Stealth and Deception skills.</p>
+        </description>
+        <sheet>
+            <description>Your companion gains proficiency in the Stealth and Deception skills.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_SPIDER_CLIMB">
+        <description>
+            <p>Your companion can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check, and ignores movement restrictions caused by webbing.</p>
+        </description>
+        <sheet>
+            <description>Your companion can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check, and ignores movement restrictions caused by webbing.</description>
+        </sheet>
+    </element>
+    <element name="Shell" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_SHELL">
+        <description>
+            <p>Your companion’s AC becomes 15 + PB, but its speed is reduced to 20 feet.</p>
+        </description>
+        <sheet>
+            <description>Your companion’s AC becomes 15 + PB, but its speed is reduced to 20 feet.</description>
+        </sheet>
+    </element>
+    <element name="Tough" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_TRAIT_BEAST_COMPANION_TOUGH">
+        <description>
+            <p>Your companion’s hit points become 10 + five times your Druid level.</p>
+        </description>
+        <sheet>
+            <description>Your companion’s hit points become 10 + five times your Druid level.</description>
+        </sheet>
+    </element>
+    <element name="Bite" type="Companion Action" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_ACTION_BEAST_COMPANION_BITE">
+        <description>
+            <p><i>Melee Weapon Attack:</i> +your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d8 + PB piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + PB piercing damage.</description>
         </sheet>
     </element>
 </elements>
