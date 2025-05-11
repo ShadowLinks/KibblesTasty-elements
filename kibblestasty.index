@@ -58,6 +58,32 @@
         <file name="warlord-dancer.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-dancer.xml" />
         <file name="warlord-dreadlord.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlord-dreadlord.xml" />
 
+        <file name="barbarian-bladestorm.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-bladestorm.xml" />
+        <file name="barbarian-dragon.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-dragon.xml" />
+        <file name="barbarian-instinct.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-instinct.xml" />
+        <file name="barbarian-mutation.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-mutation.xml" />
+        
+        <file name="bard-fools.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/bard-fools.xml" />
+
+        <file name="cleric-dream.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/cleric-dream.xml" />
+        <file name="cleric-judgement.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/cleric-judgement.xml" />
+        <file name="cleric-martyr.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/cleric-martyr.xml" />
+
+        <file name="druid-aspects.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/druid-aspects.xml" />
+        <file name="druid-city.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/druid-city.xml" />
+        <file name="druid-elements.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/druid-elements.xml" />
+        <file name="druid-growth.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/druid-growth.xml" />
+        <file name="druid-roots.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/druid-roots.xml" />
+        <file name="druid-wild.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/druid-wild.xml" />
+
+        <file name="fighter-adventurer.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/fighter-adventurer.xml" />
+        <file name="fighter-brawler.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/fighter-brawler.xml" />
+        <file name="fighter-champion.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/fighter-champion.xml" />
+        <file name="fighter-crusader.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/fighter-crusader.xml" />
+        <file name="fighter-greenknight.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/fighter-greenknight.xml" />
+        <file name="fighter-spiritsworn.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/fighter-spiritsworn.xml" />
+        
+
 
         <!--
         <file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-cursesmith.xml" />
