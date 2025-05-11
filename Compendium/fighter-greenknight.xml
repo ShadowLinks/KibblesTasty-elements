@@ -9,73 +9,154 @@
     <element name="Green Knight" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FIGHTER_GREENKNIGHT">
         <supports>Martial Archetype</supports>
         <description>
-            <p></p>
+            <p>The Green Knight is a fighter who draws on the power of nature to imbue their attacks with the strength of the earth itself. They are fierce defenders of the natural world, sworn to protect it at all costs.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_SPELLCASTING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_NATURES_BLESSING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_VERDANT_WEAPON" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_REGROWTH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_ANCIENT_WARDING" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_IMMORTAL_REGENERAGION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_PRIMAL_COMMAND" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="7" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="15" />
-            <grant type="Archetype Feature" id="ID_______" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_SPELLCASTING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_NATURES_BLESSING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_VERDANT_WEAPON" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_REGROWTH" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_ANCIENT_WARDING" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_IMMORTAL_REGENERAGION" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_PRIMAL_COMMAND" level="18" />
+        </rules>
+        <spellcasting name="Green Knight" ability="Wisdom" prepare="false">
+            <list>Druid</list>
+        </spellcasting>
+    </element>
+    <element name="Spellcasting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_SPELLCASTING">
+        <description>
+            <p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See Spells Rules for the general rules of spellcasting and the Spells Listing for the druid spell list.</p>
+            <h4>CANTRIPS</h4>
+            <p>You learn two cantrips of your choice from the druid spell list. You learn an additional druid cantrip of your choice at 10th level.</p>
+            <h4>SPELL SLOTS</h4>
+            <p>The Green Knight Spellcasting table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <h4>SPELLS KNOWN OF 1ST-LEVEL AND HIGHER</h4>
+            <p>You know three 1st-level druid spells of your choice from the druid spell list.</p>
+            <p class="indent">The Spells Known column of the Green Knight Spellcasting table shows when you learn more druid spells of 1st level or higher.</p>
+            <p class="indent">Whenever you gain a level in this class, you can replace one of the druid spells you know with another spell of your choice from the druid spell list.</p>
+            <h4>SPELLCASTING ABILITY</h4>
+            <p>Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+            </center>            
+            <h4>Green Knight Spellcasting</h4>
+            <table>
+                <thead>
+                    <tr><td>Level</td><td>Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>3</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+                <tr><td>4th</td><td>3</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+                <tr><td>5th</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+                <tr><td>6th</td><td>4</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>7th</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>8th</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>9th</td><td>6</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>10th</td><td>6</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>11th</td><td>7</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>12th</td><td>7</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+                <tr><td>13th</td><td>8</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+                <tr><td>14th</td><td>8</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+                <tr><td>15th</td><td>9</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+                <tr><td>16th</td><td>9</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+                <tr><td>17th</td><td>10</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+                <tr><td>18th</td><td>10</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+                <tr><td>19th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+                <tr><td>20th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You regain your spell slots on Long Rest.
+            You can replace one spell with another druid spell when you level up.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <select type="Spell" supports="Druid,0" spellcasting="Green Knight" number="2" name="Green Knight Cantrip" />
+            <select type="Spell" supports="Druid,0" spellcasting="Green Knight" number="1" name="Green Knight Cantrip 2" level="10" />
+            <select type="Spell" supports="Druid,$(spellcasting:slots)" spellcasting="Green Knight" number="3" name="Green Knight Spell" level="3" />
+            <select type="Spell" supports="Druid,$(spellcasting:slots)" spellcasting="Green Knight" number="1" name="Green Knight Spell" level="5" />
+            <select type="Spell" supports="Druid,$(spellcasting:slots)" spellcasting="Green Knight" number="1" name="Green Knight Spell" level="7" />
+            <select type="Spell" supports="Druid,$(spellcasting:slots)" spellcasting="Green Knight" number="1" name="Green Knight Spell" level="9" />
+            <select type="Spell" supports="Druid,$(spellcasting:slots)" spellcasting="Green Knight" number="1" name="Green Knight Spell" level="11" />
+            <select type="Spell" supports="Druid,$(spellcasting:slots)" spellcasting="Green Knight" number="1" name="Green Knight Spell" level="13" />
+            <select type="Spell" supports="Druid,$(spellcasting:slots)" spellcasting="Green Knight" number="1" name="Green Knight Spell" level="15" />
+            <select type="Spell" supports="Druid,$(spellcasting:slots)" spellcasting="Green Knight" number="1" name="Green Knight Spell" level="17" />
+            <select type="Spell" supports="Druid,$(spellcasting:slots)" spellcasting="Green Knight" number="1" name="Green Knight Spell" level="19" />
+            <stat name="green knight:spellcasting:slots:1" value="2" level="3"/>
+            <stat name="green knight:spellcasting:slots:1" value="1" level="4"/>
+            <stat name="green knight:spellcasting:slots:1" value="1" level="7"/>
+            <stat name="green knight:spellcasting:slots:2" value="2" level="7"/>
+            <stat name="green knight:spellcasting:slots:2" value="1" level="10"/>
+            <stat name="green knight:spellcasting:slots:3" value="2" level="13"/>
+            <stat name="green knight:spellcasting:slots:3" value="1" level="16"/>
+            <stat name="green knight:spellcasting:slots:4" value="1" level="19"/>
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Nature's Blessing" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_NATURES_BLESSING">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, you gain proficiency with the Nature skill and gain the ability to use a druidic focus as your spellcasting focus for your druid spells. If you are already proficient in Nature, you gain proficiency in another skill of your choice.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain the ability to use a druidic focus as your spellcasting focus for your druid spells.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Nature's Blessing" supports="Skill" requirements="ID_PROFICIENCY_SKILL_NATURE,!ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_NATURE"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_NATURE" requirements="!ID_PROFICIENCY_SKILL_NATURE" />
+        </rules>
+    </element>
+    <element name="Verdant Weapon" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_VERDANT_WEAPON">
+        <description>
+            <p>Additionally at 3rd level, you learn the shillelagh cantrip. This does not count against your cantrips known. You can target any weapon with it, but when targeting a weapon other than a club, quarterstaff, or greatclub, its effect does not change the damage dice. When you target a greatclub, the damage dice becomes 1d12.</p>
+        </description>
+        <sheet>
+            <description>You can target any weapon with shillelagh, but when targeting a weapon other than a club, quarterstaff, or greatclub, its effect does not change the damage dice. When you target a greatclub, the damage dice becomes 1d12.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHILLELAGH" spellcasting="Green Knight" level="3" />
+        </rules>
+    </element>
+    <element name="Regrowth" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_REGROWTH">
+        <description>
+            <p>Beginning at 7th level, you gain an additional use of your Second Wind feature, allowing you to use it again before you need to complete a rest.</p>
+        </description>
+        <sheet>
+            <description>You gain an additional use of your Second Wind feature.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Ancient Warding" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_ANCIENT_WARDING">
         <description>
-            <p></p>
+            <p>At 10th level, when you use your Indomitable feature to reroll a saving throw against a magical effect, you can add your proficiency bonus to the result (potentially adding twice your proficiency bonus if you are already proficient in the save)></p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use your Indomitable feature to reroll a saving throw against a magical effect, you can add your proficiency bonus to the result (potentially adding twice your proficiency bonus if you are already proficient in the save).</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Immortal Regeneration" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_IMMORTAL_REGENERAGION">
         <description>
-            <p></p>
+            <p>Starting at 15th level, your Second Wind feature restores an additional 1d10 hit points, and you can use your Second Wind feature while you are Incapacitated and could otherwise not take actions.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your Second Wind feature restores an additional 1d10 hit points, and you can use your Second Wind feature while you are Incapacitated and could otherwise not take actions.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Primal Command" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_GREENKNIGHT_PRIMAL_COMMAND">
         <description>
-            <p></p>
+            <p>Starting at 18th level, when you cast a Druid spell that has a casting time of 1 action, you can change the casting time to 1 bonus action for this casting. Once you do this, you cannot do so again until you complete a short rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>When you cast a Druid spell that has a casting time of 1 action, you can change the casting time to 1 bonus action for this casting.</description>
         </sheet>
     </element>
 </elements>
