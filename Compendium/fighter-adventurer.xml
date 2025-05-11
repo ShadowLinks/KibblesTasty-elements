@@ -9,73 +9,185 @@
     <element name="Adventurer" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FIGHTER_ADVENTURER">
         <supports>Martial Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>An adventurer is a well rounded fighter that specializes in preparation. They are resourceful survivors that excel at tackling a wide range of situations with preparation.</p>
+            <p class="indent">They are generalists who are always useful to have around. They come from any walk of life, sharing only a spirit of adventure and knack for being useful.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_IMPROVISED_RESOURCES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_WELL_ROUNDED" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_RESOURCEFUL_TALENTS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_AQUIRED_KNACK" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_SURVIVAL_SKILLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_INTUITION" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="7" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="15" />
-            <grant type="Archetype Feature" id="ID_______" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_IMPROVISED_RESOURCES" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_WELL_ROUNDED" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_RESOURCEFUL_TALENTS" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_AQUIRED_KNACK" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_SURVIVAL_SKILLS" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_INTUITION" level="18" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID__">
+    <element name="Improvised Resources" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_IMPROVISED_RESOURCES">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, you excel at making do with whatever you can get your hands on. During a long rest, you can create two potions of healing, 1st level spell scrolls (selecting a spell from the Druid or Wizard list), or adventuring gear items worth less than 5 gold pieces each, assembled out of miscellaneous items you pick during the day.</p>
+            <p class="indent">Any scroll or potion created this way expires if not used by the next time you complete a long rest. You can cast scrolls created this way without a check, as if the scroll was on your spell list. If a scroll requires a spellcasting modifier, you use your Intelligence or Wisdom (your choice). Scrolls created this way cannot be copied or used in crafting.</p>
+            <p class="indent">The number of items you can create this way increases to 3 items at 9th level, and 4 items at 15th level. The quality of items you can create increases at 7th level, 10th level, 13th level, and 16th level as shown on the table below (you can still choose to make items of lower level when gaining higher level options).</p>
+            <p class="indent">If using Kibbles’ Alchemy, you can make any uncommon/rare oil, concoction, or explosive in place of an uncommon/rare potion.</p>
+            <table>
+                <thead>
+                    <tr><td>Level</td><td>Improvised Potion</td><td>Scroll Level</td><td>Item Value</td></tr>
+                </thead>
+                <tr><td>1</td><td>Potion of Healing</td><td>1st Level</td><td>5 gp</td></tr>
+                <tr><td>2</td><td>Any Uncommon Potion</td><td>2nd Level</td><td>10 gp</td></tr>
+                <tr><td>3</td><td>Potion of Superior Healing</td><td>2nd Level</td><td>30 gp</td></tr>
+                <tr><td>4</td><td>Potion of Superior Healing</td><td>3rd Level</td><td>40 gp</td></tr>
+                <tr><td>4</td><td>Any Rare Potion</td><td>3rd Level</td><td>50 gp</td></tr>
+                <tr><td>4</td><td>Potion of Supreme Healing</td><td>4th Level</td><td>60 gp</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>During a long rest, you can create {{improvised-quantity}} {{improvised-potion}}, {{improvised-scroll}} level spell scrolls (selecting a spell from the Druid or Wizard list), or adventuring gear items worth less than {{improvised-value}} gold pieces each, assembled out of miscellaneous items you pick during the day.
+            Any scroll or potion created this way expires if not used by the next time you complete a long rest. You can cast scrolls created this way without a check, as if the scroll was on your spell list. If a scroll requires a spellcasting modifier, you use your Intelligence or Wisdom (your choice). Scrolls created this way cannot be copied or used in crafting.
+            You can also make oils, concotions, or explosive in place of potions.</description>
+        </sheet>
+        <rules>
+            <stat name="improvised-quantity" value="2" level="3"/>
+            <stat name="improvised-quantity" value="1" level="9"/>
+            <stat name="improvised-quantity" value="1" level="15"/>
+            <stat name="improvised-potion" value="Potions of Healing" level="3" inline="true" />
+            <stat name="improvised-potion" value="of Any Uncommon Potions" level="7" inline="true" />
+            <stat name="improvised-potion" value="Potions of Superior Healing" level="10" inline="true" />
+            <stat name="improvised-potion" value="of Any Rare Potion" level="16" inline="true" />
+            <stat name="improvised-potion" value="Potions of Supreme Healing" level="19" inline="true" />
+            <stat name="improvised-scroll" value="1st" level="3" inline="true" />
+            <stat name="improvised-scroll" value="2nd" level="7" inline="true" />
+            <stat name="improvised-scroll" value="3rd" level="13" inline="true" />
+            <stat name="improvised-scroll" value="4th" level="19" inline="true" />
+            <stat name="improvised-value" value="5" level="3"  />
+            <stat name="improvised-value" value="5" level="7" />
+            <stat name="improvised-value" value="20" level="10" />
+            <stat name="improvised-value" value="10" level="13" />
+            <stat name="improvised-value" value="10" level="16" />
+            <stat name="improvised-value" value="10" level="19" />
+        </rules>
+    </element>
+    <element name="Well Rounded" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_WELL_ROUNDED">
+        <description>
+            <p>Additionally at 3rd level, you learn two additional skills, tools, or languages of your choice. You learn one additional skill, tool, or language of your choice at 9th and 15th level.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Proficiency" name="Proficiency, Well Rounded" supports="Skill||Tool||Language" number="2" />
+            <select type="Proficiency" name="Proficiency, Well Rounded" supports="Skill||Tool||Language" number="1" level="9" />
+            <select type="Proficiency" name="Proficiency, Well Rounded" supports="Skill||Tool||Language" number="1" level="15" />
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID___">
+    <element name="Resourceful Talents" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_RESOURCEFUL_TALENTS">
         <description>
-            <p></p>
+            <p>Starting at 7th level, you can find small breaks in the flow of battle to drink potions. You can drink any potion that would normally require an action as a bonus action.</p>
+            <p class="indent">Additionally, you can attempt to cast spell scrolls that would normally be unintelligible to you. When doing so, you automatically succeed if the DC of the required spellcasting check is less than 10 + your proficiency bonus, otherwise you roll 1d20 + your proficiency bonus in place of making a spellcasting check, unless your spellcasting check would be higher.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can drink any potion that would normally require an action as a bonus action.
+            Additionally, you can attempt to cast spell scrolls that would normally be unintelligible to you. When doing so, you automatically succeed if the DC of the required spellcasting check is less than {{resourceful-talents}}, otherwise you roll 1d20 + {{proficiency}} in place of making a spellcasting check, unless your spellcasting check would be higher.</description>
+        </sheet>
+        <rules>
+            <stat name="resourceful-talents" value="10" bonus="base"/>
+            <stat name="resourceful-talents" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Aquired Knack" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_AQUIRED_KNACK">
+        <description>
+            <p>At 10th level, you can select one of the following abilities:</p>
+            <ul>
+                <li><strong>Heightened Awareness.</strong> You gain a +5 bonus to initiative rolls, can’t be surprised unless you are incapacitated, and other creatures do not gain advantage on attacks against you due to being unseen.</li>
+                <li><strong>Perfected Athletics.</strong> Standing up from being prone only uses 5 feet of your movement, you gain a climbing speed equal to your movement speed, and can make a running high jump or long run after moving only 5 feet.</li>
+                <li><strong>Ritual Dabbler.</strong> You gain the ability to record and cast ritual spells, selecting one class that has ritual casting. You learn two ritual spells from that class spell list, and can record new ritual spells from that book that you come across in written form. Recording a spell takes 2 hours and costs 50 gold pieces per spell level. You can only record and ritually cast spells of a level equal to half your Fighter level (rounded down).</li>
+                <li><strong>Dungeon Veteran.</strong> You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks to detect the presence of secret doors, you have advantage on saving throws made to avoid or resist traps, and only take half damage from the effects of traps.</li>
+                <li><strong>Shadow Lurker.</strong> You can attempt to hide even when you are only lightly obscured, when you are hidden from a creature attacking that creature does not reveal your location if you miss, and dim light does not impose disadvantage on your Wisdom (Perception) ability checks, even when they rely on sight.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" supports="aquired-knack" />
+        </rules>
+    </element>
+    <element name="Heightened Awareness" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_AQUIRED_KNACK_AWARENESS">
+        <supports>aquired-knack</supports>
+        <description>
+            <p>You gain a +5 bonus to initiative rolls, can’t be surprised unless you are incapacitated, and other creatures do not gain advantage on attacks against you due to being unseen.</p>
+        </description>
+        <sheet>
+            <description>You gain a +5 bonus to initiative rolls, can’t be surprised unless you are incapacitated, and other creatures do not gain advantage on attacks against you due to being unseen.</description>
+        </sheet>
+        <rules>
+            <stat name="initiative" value="5" />
+            
+        </rules>
+    </element>
+    <element name="Perfected Athletics" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_AQUIRED_KNACK_ATHLETICS">
+        <supports>aquired-knack</supports>
+        <description>
+            <p>Standing up from being prone only uses 5 feet of your movement, you gain a climbing speed equal to your movement speed, and can make a running high jump or long run after moving only 5 feet.</p>
+        </description>
+        <sheet>
+            <description>Standing up from being prone only uses 5 feet of your movement, you gain a climbing speed equal to your movement speed, and can make a running high jump or long run after moving only 5 feet.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID____">
+    <element name="Ritual Dabbler" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_AQUIRED_KNACK_RITUAL">
+        <supports>aquired-knack</supports>
         <description>
-            <p></p>
+            <p>You gain the ability to record and cast ritual spells, selecting one class that has ritual casting. You learn two ritual spells from that class spell list, and can record new ritual spells from that book that you come across in written form. Recording a spell takes 2 hours and costs 50 gold pieces per spell level. You can only record and ritually cast spells of a level equal to half your Fighter level (rounded down).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain the ability to record and cast ritual spells, selecting one class that has ritual casting. You learn two ritual spells from that class spell list, and can record new ritual spells from that book that you come across in written form. Recording a spell takes 2 hours and costs 50 gold pieces per spell level. You can only record and ritually cast spells of a level {{level:fighter:half}}.</description>
+        </sheet>
+        <rules>            
+            <select type="Feat Feature" name="Ritual Caster" supports="Ritual Caster"/>
+        </rules>
+    </element>
+    <element name="Dungeon Veteran" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_AQUIRED_KNACK_VETERAN">
+        <supports>aquired-knack</supports>
+        <description>
+            <p>You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks to detect the presence of secret doors, you have advantage on saving throws made to avoid or resist traps, and only take half damage from the effects of traps.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks to detect the presence of secret doors, you have advantage on saving throws made to avoid or resist traps, and only take half damage from the effects of traps.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_____">
+    <element name="Shadow Lurker" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_AQUIRED_KNACK_LURKER">
+        <supports>aquired-knack</supports>
         <description>
-            <p></p>
+            <p>You can attempt to hide even when you are only lightly obscured, when you are hidden from a creature attacking that creature does not reveal your location if you miss, and dim light does not impose disadvantage on your Wisdom (Perception) ability checks, even when they rely on sight.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can attempt to hide even when you are only lightly obscured, when you are hidden from a creature attacking that creature does not reveal your location if you miss, and dim light does not impose disadvantage on your Wisdom (Perception) ability checks, even when they rely on sight.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID______">
+    <element name="Survival Skills" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_SURVIVAL_SKILLS">
         <description>
-            <p></p>
+            <p>Starting at 15th level, you can add half your proficiency bonus, rounded down, to your initiative checks, and to any saving throw you don’t already add your proficiency to. Additionally, you gain a climbing and swimming speed equal to your walking speed.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can add half your proficiency bonus ({{proficiency:half}}), to your initiative checks, and to any saving throw you don’t already add your proficiency to.</description>
         </sheet>
+        <rules>
+            <stat name="initiative" value="proficiency:half" />
+            <stat name="speed:swim" value="speed" />
+            <stat name="speed:climb" value="speed" />
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_______">
+    <element name="Adventurer' Intuition" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_FIGHTER_ADVENTURER_INTUITION">
         <description>
-            <p></p>
+            <p>Starting at 18, you have survived so many dangerous situations and seen every trick in the book. At key moments, your intuition kicks in. When you make an attack roll, saving throw, or ability check, you can replace the roll with your Fighter level. You can use this after you roll, but before you know the outcome. Once you do this, you cannot do so again until you complete a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>When you make an attack roll, saving throw, or ability check, you can replace the roll with {{level:fighter}}. You can use this after you roll, but before you know the outcome.</description>
         </sheet>
     </element>
 </elements>
