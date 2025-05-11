@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Way of the Elements Monk Monastic Tradition</name>
+        <update version="0.0.1">
+            <file name="monk-elements.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/monk-elements.xml" />
+        </update>
+    </info>
+    <element name="Way of the Elements" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_MONK_ELEMENTS">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME" level="17" />
+        </rules>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_ELEMENTS_FEATURENAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
