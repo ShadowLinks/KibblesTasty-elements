@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Oath of Silence Paladin</name>
+        <update version="0.0.1">
+            <file name="paladin-silence.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-silence.xml" />
+        </update>
+    </info>
+    <element name="Oath of Silence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PALADIN_SILENCE">
+         <supports>Sacred Oath</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <h5 class="caption">TENANTS</h5>
+            <p></p>
+            <p class="indent">
+                <b><i></i></b>
+                tenant
+            </p>
+            <p class="indent">
+                <b><i></i></b>
+                tenant
+            </p>
+            <p class="indent">
+                <b><i></i></b>
+                tenant
+            </p>
+            <p class="indent">
+                <b><i></i></b>
+                tenant
+            </p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" level="9" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" level="13" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" level="17" />
+        </rules>
+    </element>
+    <element name="Channel Divinity" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="" />
+            <grant type="Archetype Feature" id="" />
+        </rules>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD_FEATURENAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD_FEATURENAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Oath Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_SPELLS">
+        <description>
+            <p></p>
+            <table>
+                <thead>
+                    <tr><td>Paladin Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>spells</td></tr>
+                <tr><td>5th</td><td>spells</td></tr>
+                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>13th</td><td>spells</td></tr>
+                <tr><td>17th</td><td>spells</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
+        </rules>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
