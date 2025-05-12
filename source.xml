@@ -41,6 +41,31 @@
             <set name="league">false</set>
         </setters>
     </element>
+    <element name="Kibbles' Compendium of Craft and Creation" type="Source" source="KT-CCC" id="ID_KTH_CCC_SOURCE">
+        <description>
+            <p>A Collection of Advanced Options for Classes, Crafting, and more.</p>
+            <ul>
+                <li>Psion and Inventor Classes</li>
+                <li>17 subclasses</li>
+                <li>4 Races</li>
+                <li>Feats</li>
+                <li>Spells (most are in the other compendium)</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="abbreviation">KT-CCC</set>
+            <set name="url">https://kibbles-compendium.backerkit.com/hosted_preorders</set>
+            <set name="image">https://marketplace.shardtabletop.com/m?redirect=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fshard-alley.appspot.com%2Fo%2Fusers%252FDJ9ENZp8amW3yvluUVMIEdwPEYq2%252FMyProducts%252Fd516z3avqn41h47w%252Fso88f40mo46c79tx.png%3Falt%3Dmedia</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">2023</set>
+        </setters>
+    </element>
     <!-->
     <element name="KibblesTasty's Subclasses" type="Source" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_SOURCE_KIBBLESTASTYS_SUBCLASSES">
         <description>
