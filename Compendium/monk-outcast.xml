@@ -9,24 +9,58 @@
     <element name="Way of the Outcast" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_MONK_OUTCAST">
         <supports>Monastic Tradition</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME" />
+            <p>An Outcast is a monk that has lost their Way. Trained in the basics of the style, they have abandoned the rigorous discipline and philosophy of their tradition, and are usually now enrolled only in the school of hard knocks.</p>
+            <p class="indent">Having been trained in the fundamentals of the art of ki, these monks choose as often as not to apply that art to tavern brawls and street fights. Much to the horror of many more formal monks, their rough and tumble lifestyle tends to be a solid source of further training.</p>
+            <p class="indent">With great power comes great responsibility? These monks are going to stick with just the great power, thank you very much. Almost always Chaotic, they can range the spectrum from Good to Evil and everything in between just as easily. A distaste for the rigorous philosophy of an order does not mean a penchant for Evil, but Evil and vice can sometimes lead a monk down this road.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_OFF_THE_WAGON" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_BONUS_PROFICIENCIES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_PRAGMATISM" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_SOAK_IT_UP" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_WHERE_IT_HURTS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_LEAN_INTO_IT" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME" level="11" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_OFF_THE_WAGON" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_BONUS_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_PRAGMATISM" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_SOAK_IT_UP" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_WHERE_IT_HURTS" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_LEAN_INTO_IT" level="17" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME">
+    <element name="Off the Wagon" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_OFF_THE_WAGON">
+        <description>
+            <p>Meditating to regain your ki points can now include things such as playing cards, drinking ale, smoking leafy matter of various types, or other relaxing activities that reset the stress of all that punching.</p>
+        </description>
+        <sheet>
+            <description>Meditating to regain your ki points can now include things such as playing cards, drinking ale, smoking leafy matter of various types, or other relaxing activities that reset the stress of all that punching.</description>
+        </sheet>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_BONUS_PROFICIENCIES">
+        <description>
+            <p>At 3rd level, you gain proficiency in the Athletics skill, or another skill of your choice if you are already proficient in Athletics.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_DECEPTION" />
+            <select type="Proficiency" supports="Skill" requirements="!ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_DECEPTION,ID_PROFICIENCY_SKILL_DECEPTION" />
+        </rules>
+    </element>
+    <element name="Pragmatism" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_PRAGMATISM">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></lig>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Soak It Up" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_SOAK_IT_UP">
         <description>
             <p></p>
         </description>
@@ -34,7 +68,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME">
+    <element name="Where It Hurts" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_WHERE_IT_HURTS">
         <description>
             <p></p>
         </description>
@@ -42,15 +76,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_FEATURENAME">
+    <element name="Lean into It" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_LEAN_INTO_IT">
         <description>
             <p></p>
         </description>
