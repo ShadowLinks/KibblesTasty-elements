@@ -9,53 +9,259 @@
     <element name="Way of the Sword Saint" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_MONK_SWORDSAINT">
         <supports>Monastic Tradition</supports>
         <description>
-            <p></p>
+            <p>Monks of the Way of the Sword Saint train in dedication to mastering a level of weapon expertise that surpasses normal limitations. They can strike like the wind, step into the sky, or even sunder stone. Though they most often treat their mastery of the weapons as an art, seeking spiritual understanding through martial perfection, turning this art to more practical ends can result in very deadly encounters for their foes.</p>
             <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MYSTICAL_TECHNIQUES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_WEAPON_MASTERY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_PERFECT_STATE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_EMPOWERED_TECHNIQUES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FLAWLESS_FORM" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME" level="11" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MYSTICAL_TECHNIQUES" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_WEAPON_MASTERY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_PERFECT_STATE" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_EMPOWERED_TECHNIQUES" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FLAWLESS_FORM" level="17" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME">
+    <element name="Mystical Techniques" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MYSTICAL_TECHNIQUES">
         <description>
-            <p></p>
+            <p>When you choose this tradition at 3rd level, you learn Mystical Techniques that allow you to unleash supernatural feats with your weapons. You learn three techniques of your choice, which are detailed in the “List of Mystic Techniques” section below. You learn two additional techniques of your choice at 6th, 11th, and 17th level.</p>
+            <p class="indent">Mystical Techniques can only be performed with unarmed strikes or monk weapons. If a Mystical Technique uses a DC, it uses your Ki Save DC.</p>
+            <p class="indent">Whenever you gain a new level in this class, you can replace one Mystical Technique you already know with a different technique.</p>
+            <p class="indent">You can spend a number of ki points on Mystical Techniques equal to your proficiency bonus, after which you cannot spend more ki on Mystical Techniques until the start of your next turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Mystical Techniques can only be performed with unarmed strikes or monk weapons. If a Mystical Technique uses a DC, it uses your Ki Save DC.
+            Whenever you gain a new level in this class, you can replace one Mystical Technique you already know with a different technique.
+            You can spend up to {{proficiency}} ki points on Mystical Techniques, after which you cannot spend more ki on Mystical Techniques until the start of your next turn.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Mystic Techniques 1" supports="Mystic-Techniques" level="3" number="3" />
+            <select type="Archetype Feature" name="Mystic Techniques 2" supports="Mystic-Techniques" level="6" number="2" />
+            <select type="Archetype Feature" name="Mystic Techniques 3" supports="Mystic-Techniques" level="11" number="2" />
+            <select type="Archetype Feature" name="Mystic Techniques 4" supports="Mystic-Techniques" level="17" number="2" />
+        </rules>
+    </element>
+    <element name="Weapon Mastery" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_WEAPON_MASTERY">
+        <description>
+            <p>Additionally at 3rd level, you can choose to master a weapon that would not normally be a monk weapon. Choose a simple or martial melee weapon that lacks the heavy and special properties. You gain proficiency in the weapon, and it becomes a monk weapon for you. You can choose an additional weapon in this way at 6th, 11th, and 17th level.</p>
+        </description>
+        <sheet>
+            <description>Choose 1 simple or martial melee weapon that lacks the heavy and special properties. You gain proficiency in the weapon, and it becomes a monk weapon for you.</description>
+            <description level="6">Choose 2 simple or martial melee weapons that lacks the heavy and special properties. You gain proficiency in the weapon, and it becomes a monk weapon for you.</description>
+            <description level="11">Choose 3 simple or martial melee weapons that lacks the heavy and special properties. You gain proficiency in the weapon, and it becomes a monk weapon for you.</description>
+            <description level="17">Choose 4 simple or martial melee weapons that lacks the heavy and special properties. You gain proficiency in the weapon, and it becomes a monk weapon for you.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME">
+    <element name="Perfect State" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_PERFECT_STATE">
         <description>
-            <p></p>
+            <p>At 6th level, your weapon becomes an extension of yourself, flowing naturally with your abilities.</p>
+            <ul>
+                <li><strong></strong>Empowered Weapons. Your attacks with your Monk Weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</li>
+                <li><strong></strong>Blade Flurry. When you make a Flurry of Blows, you can make the additional attacks with a Monk Weapon.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Empowered Weapons. Your attacks with your Monk Weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+            Blade Flurry. When you make a Flurry of Blows, you can make the additional attacks with a Monk Weapon.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME">
+    <element name="Empowered Techniques" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_EMPOWERED_TECHNIQUES">
         <description>
-            <p></p>
+            <p>Starting at 11th level, at the start of your turn, you gain 1 free ki point you can spend on a Mystic Technique before the start of your next turn. If it is not spent before the start of your next turn, it is lost.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>At the start of your turn, you gain 1 free ki point you can spend on a Mystic Technique before the start of your next turn. If it is not spent before the start of your next turn, it is lost.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FEATURENAME">
+    <element name="Flawless Form" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_FLAWLESS_FORM">
         <description>
-            <p></p>
+            <p>At 17th level, your mastery of the weapons allows you eliminate any room for error. If you miss with an attack roll using a monk weapon on your turn, you can reroll the attack. You can only do this once on each of your turns.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Turn">
+            <description>If you miss with an attack roll using a monk weapon on your turn, you can reroll the attack. You can only do this once on each of your turns.</description>
+        </sheet>
+    </element>
+    <element name="Agile Defense" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_AGILE_DEFENSE">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>As a reaction to being attacked, you can attempt to parry the attack, rolling your Martial Arts die and increasing your AC by the value rolled against the attack. If the attack still hits, you reduce the damage taken by the value rolled + your proficiency bonus.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>As a reaction to being attacked, you can attempt to parry the attack, rolling your Martial Arts die and increasing your AC by the value rolled against the attack. If the attack still hits, you reduce the damage taken by the value rolled + {{proficiency}}.</description>
+        </sheet>
+    </element>
+    <element name="Cut the Weave" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_CUT_THE_WEAVE">
+        <supports>Mystic-Techniques</supports>
+        <prerequisite>6th Level</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p>For 3 ki you cast dispel magic with a range of 5 feet. Alternatively, as an attack as part of the attack action, you can attempt to open a 5-foot by 5-foot hole in a magical barrier, lasting until the start of your next turn. Make a weapon attack treating the magical effect as having an AC equal to the spellcaster’s spell save DC (your DM determines what magical barriers this might work on).</p>
+        </description>
+        <sheet usage="Ki">
+            <description>For 3 ki you cast dispel magic with a range of 5 feet. Alternatively, as an attack as part of the attack action, you can attempt to open a 5-foot by 5-foot hole in a magical barrier, lasting until the start of your next turn. Make a weapon attack treating the magical effect as having an AC equal to the spellcaster’s spell save DC (your DM determines what magical barriers this might work on).</description>
+        </sheet>
+    </element>
+    <element name="Dancing Weapon" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_DANCING_WEAPON">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>As a bonus action, you infuse a monk weapon you are holding with ki, causing it to animate with your will. Until the end of your next turn, when you make an attack you can attack with it as if you were holding it, causing it to fly up to 30 feet before striking a target. It returns to you after any attacks made this way.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>As a bonus action, you infuse a monk weapon you are holding with ki, causing it to animate with your will. Until the end of your next turn, when you make an attack you can attack with it as if you were holding it, causing it to fly up to 30 feet before striking a target. It returns to you after any attacks made this way.</description>
+        </sheet>
+    </element>
+    <element name="Deft Attack" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_DEFT_ATTACK">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>When you make an attack roll, you can gain advantage on the attack. If the attack hits, you can add your Martial Arts die to the damage dealt.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>When you make an attack roll, you can gain advantage on the attack. If the attack hits, you can add your Martial Arts die to the damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Dimension Slash" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_DIMENSION_SLASH">
+        <supports>Mystic-Techniques</supports>
+        <prerequisite>11th Level</prerequisite>
+        <requirements>[level:11]</requirements>
+        <description>
+            <p>For 4 ki you can cast dimension cutter.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>For 4 ki you can cast dimension cutter.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_DIMENSION_CUTTER" />
+        </rules>
+    </element>
+    <element name="Distracting Strike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_DISTRACTING_STRIKE">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>When you hit a creature with a weapon attack, it deals additional damage equal to your Martial Arts die and leaves an opening for the next attack. The next attack against that creature has advantage.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>When you hit a creature with a weapon attack, it deals additional damage equal to your Martial Arts die and leaves an opening for the next attack. The next attack against that creature has advantage.</description>
+        </sheet>
+    </element>
+    <element name="Imparted Force" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_IMPARTED_FORCE">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>When you hit a target with an attack, you can expend up to 3 ki points and roll a number of Martial Arts die equal to the ki spent, dealing damage to the target equal to the result and forcing it to make a Strength saving throw. On failure, they are pushed 10 feet for each ki point spent</p>
+        </description>
+        <sheet usage="Ki">
+            <description>When you hit a target with an attack, you can expend up to 3 ki points and roll a number of Martial Arts die equal to the ki spent, dealing damage to the target equal to the result and forcing it to make a Strength saving throw. On failure, they are pushed 10 feet for each ki point spent</description>
+        </sheet>
+    </element>
+    <element name="Instant Strike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_INSTANT_STRIKE">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p> As a reaction to a creature moving within your reach, you can make a melee weapon attack against them.</p>
+        </description>
+        <sheet usage="Ki">
+            <description> As a reaction to a creature moving within your reach, you can make a melee weapon attack against them.</description>
+        </sheet>
+    </element>
+    <element name="Iron WInd Strike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_IRON_WIND_STRIKE">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>You can cast iron wind strike, casting it at a level equal to the Ki spent.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>You can cast iron wind strike, casting it at a level equal to the Ki spent (2+).</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_IRON_WIND_STRIKE" />
+        </rules>
+    </element>
+    <element name="Sever Soul" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_SEVER_SOUL">
+        <supports>Mystic-Techniques</supports>
+        <prerequisite>17th Level</prerequisite>
+        <requirements>[level:17]</requirements>
+        <description>
+            <p>For 6 ki when you strike a creature, you can attempt to sever its soul. The target must make a Constitution saving throw. On failure, they take necrotic damage equal to 6 rolls of your Martial Arts die. If this damage reduces them to 0 hit points, they die. Otherwise, they gain a level of exhaustion. On pass, they take half as much damage, and suffer none of the other effects.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>For 6 ki when you strike a creature, you can attempt to sever its soul. The target must make a Constitution saving throw. On failure, they take necrotic damage equal to 6 rolls of your Martial Arts die. If this damage reduces them to 0 hit points, they die. Otherwise, they gain a level of exhaustion. On pass, they take half as much damage, and suffer none of the other effects.</description>
+        </sheet>
+    </element>
+    <element name="Sharpen the Blade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_SHARPEN_THE_BLADE">
+        <supports>Mystic-Techniques</supports>
+        <prerequisite>6th Level</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p>You can infuse a monk weapon you are holding with ki, granting it a bonus to attack and damage rolls equal to the ki spent for 1 minute (no action required). This bonus can stack with an existing bonus a weapon has, but the total bonus cannot exceed +3.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>You can infuse a monk weapon you are holding with ki, granting it a bonus to attack and damage rolls equal to the ki spent for 1 minute (no action required). This bonus can stack with an existing bonus a weapon has, but the total bonus cannot exceed +3.</description>
+        </sheet>
+    </element>
+    <element name="Slashing Spin" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_SLASHING_SPIN">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>As an attack as part of the attack action, you can whirl your blade in a circle, forcing all creatures within 5 of you feet to make a Dexterity saving throw. On failure, they take damage equal to a roll of your Martial Arts die + your Dexterity modifier, or half as much on success.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>As an attack as part of the attack action, you can whirl your blade in a circle, forcing all creatures within 5 of you feet to make a Dexterity saving throw. On failure, they take damage equal to a roll of your Martial Arts die + {{dexterity:modifier}}, or half as much on success.</description>
+        </sheet>
+    </element>
+    <element name="Skyward Leap" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_SKYWARD_LEAP">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>As a bonus action, you jump 20 feet per ki spent and can hover as if under the effect of the levitate spell by concentrating (as if concentrating on a spell) until the end of your next turn. You can end this concentration at any time.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>As a bonus action, you jump 20 feet per ki spent and can hover as if under the effect of the levitate spell by concentrating (as if concentrating on a spell) until the end of your next turn. You can end this concentration at any time.</description>
+        </sheet>
+    </element>
+    <element name="Steel Wind Strike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_STEEL_WIND_STRIKE">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>For 5 ki you can cast flickering strikes.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>For 5 ki you can cast flickering strikes.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_FLICKERING_STRIKES" />
+        </rules>
+    </element>
+    <element name="Sundering Strike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_SUNDERING_STRIKE">
+        <supports>Mystic-Techniques</supports>
+        <prerequisite>11th Level</prerequisite>
+        <requirements>[level:11]</requirements>
+        <description>
+            <p>For 2 ki, when you strike a target, you can empower the attack with destructive ki. If you are attacking an object that is not being worn or carried, the attack becomes a critical hit and deals double damage to the object. If the target is a creature, it takes damage equal to two rolls of your Martial Die, and if it is using nonmagical armor or a nonmagical shield, it must make a Constitution saving throw. On failure, you can destroy its shield or damage its armor (reducing its AC by 2).</p>
+        </description>
+        <sheet usage="Ki">
+            <description>For 2 ki, when you strike a target, you can empower the attack with destructive ki. If you are attacking an object that is not being worn or carried, the attack becomes a critical hit and deals double damage to the object. If the target is a creature, it takes damage equal to two rolls of your Martial Die, and if it is using nonmagical armor or a nonmagical shield, it must make a Constitution saving throw. On failure, you can destroy its shield or damage its armor (reducing its AC by 2).</description>
+        </sheet>
+    </element>
+    <element name="Sword Spirit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_SWORD_SPIRIT">
+        <supports>Mystic-Techniques</supports>
+        <prerequisite>6th Level</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p>For 2 ki you can cast spirit echo.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>For 2 ki you can cast spirit echo.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_SPIRIT_ECHO" />
+        </rules>
+    </element>
+    <element name="Vaulting Strike" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_SWORDSAINT_MT_VAULTING_STRIKE">
+        <supports>Mystic-Techniques</supports>
+        <description>
+            <p>When you hit a target with an attack, you can expend a ki point to deal additional damage to the target equal to a roll of your Martial Arts die and leap over the target, landing in an occupied space adjacent to them.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>When you hit a target with an attack, you can expend a ki point to deal additional damage to the target equal to a roll of your Martial Arts die and leap over the target, landing in an occupied space adjacent to them.</description>
         </sheet>
     </element>
 </elements>
