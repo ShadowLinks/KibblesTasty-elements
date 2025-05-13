@@ -51,37 +51,76 @@
     </element>
     <element name="Pragmatism" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_PRAGMATISM">
         <description>
-            <p></p>
+            <p>At 3rd level, you embrace a more pragmatic view, gaining the following benefits:</p>
             <ul>
-                <li><strong></strong></lig>
+                <li><strong>Improvised Monk Weapons.</strong> You have proficiency in improvised weapons. Improvised melee weapons count as Monk weapons for you.</li>
+                <li><strong>Matter Over Mind.</strong> You gain proficiency in light armor and medium armor, and gain the benefits of Martial Arts and Unarmored Movement while wearing it.</li>
+                <li><strong>Function Over Form.</strong> You can use your Strength modifier in place of your Wisdom modifier for calculating your Ki Save DC.</li>
+            </ul>
+            <p class="indent">You gain the following additional Pragmatic Techniques you can spend ki on.</p>
+            <ul>
+                <li><strong>Kick ‘em While They’re Down (1 Ki).</strong> When you hit a target that is prone, restrained, or incapacitated, you can expend a ki point to deal additional damage equal to two rolls of your Martial Arts die.</li>
+                <li><strong>Unexpected Technique (1 Ki).</strong> When you make a grapple check, you can expend a ki point to add your Martial Arts die to the roll. You can do this after the contested roll, and it can potentially turn a failure into a success. On success, the target takes damage equal to the amount rolled on the added die.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>You have proficiency in improvised weapons. Improvised melee weapons count as Monk weapons for you.
+            You gain the benefits of Martial Arts and Unarmored Movement while wearing light/medium armor.
+            You can use your Strength modifier in place of your Wisdom modifier for calculating your Ki Save DC.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_PRAGMATISM_KICKEM" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_PRAGMATISM_UNEXPECTED_TECHNIQUE" />
+        </rules>
+    </element>
+    <element name="Kick'em While They're Down" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_PRAGMATISM_KICKEM">
+        <description>
+            <p>When you hit a target that is prone, restrained, or incapacitated, you can expend a ki point to deal additional damage equal to two rolls of your Martial Arts die.</p>
+        </description>
+        <sheet usage="ki">
+            <description>When you hit a target that is prone, restrained, or incapacitated, you can expend a ki point to deal additional damage equal to two rolls of your Martial Arts die.</description>
+        </sheet>
+    </element>
+    <element name="Unexpected Technique" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_PRAGMATISM_UNEXPECTED_TECHNIQUE">
+        <description>
+            <p>When you make a grapple check, you can expend a ki point to add your Martial Arts die to the roll. You can do this after the contested roll, and it can potentially turn a failure into a success. On success, the target takes damage equal to the amount rolled on the added die.</p>
+        </description>
+        <sheet usage="ki">
+            <description>When you make a grapple check, you can expend a ki point to add your Martial Arts die to the roll. You can do this after the contested roll, and it can potentially turn a failure into a success. On success, the target takes damage equal to the amount rolled on the added die.</description>
         </sheet>
     </element>
     <element name="Soak It Up" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_SOAK_IT_UP">
         <description>
-            <p></p>
+            <p>At 6th level, your extensive training in the art of getting hit with bar stools and broken bottles grants you increased endurance. When you roll initiative you gain temporary hit points equal to your Constitution modifier + your proficiency bonus. These temporary hit points are refreshed any time you take the Dodge action.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you roll initiative you gain {{soakitup}} temporary hit. These temporary hit points are refreshed any time you take the Dodge action.</description>
         </sheet>
+        <rules>
+            <stat name="soakitup" value="proficiency" bonus="base" />
+            <stat name="soakitup" value="constitution:modifier" />
+        </rules>
     </element>
     <element name="Where It Hurts" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_WHERE_IT_HURTS">
         <description>
-            <p></p>
+            <p>At 11th level, when you use Stunning Strike on a critical hit or on an attack made against an enemy that was unaware of you, the target has disadvantage on their saving throw against being stunned.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use Stunning Strike on a critical hit or on an attack made against an enemy that was unaware of you, the target has disadvantage on their saving throw against being stunned.</description>
         </sheet>
     </element>
     <element name="Lean into It" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_MONK_OUTCAST_LEAN_INTO_IT">
         <description>
-            <p></p>
+            <p>At 17th level, you have thrown your fair share of walloping hits, and know how to make them reliably. You can forgo adding your proficiency bonus to an attack roll with an unarmed strike or melee monk weapon. When you do so, you can add twice your proficiency bonus to the damage roll.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can forgo adding your proficiency bonus to an attack roll with an unarmed strike or melee monk weapon. When you do so, you can add {{leanintoit}} to the damage roll.</description>
         </sheet>
+        <rules>
+            <stat name="leanintoit" value="proficiency" bonus="base" />
+            <stat name="leanintoit" value="proficiency" />
+        </rules>
     </element>
 </elements>
