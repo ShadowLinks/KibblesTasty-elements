@@ -83,7 +83,10 @@
         <file name="fighter-greenknight.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/fighter-greenknight.xml" />
         <file name="fighter-spiritsworn.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/fighter-spiritsworn.xml" />
         
-
+        <file name="monk-elements.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/monk-elements.xml" />
+        <file name="monk-outcast.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/monk-outcast.xml" />
+        <file name="monk-swordsaint.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/monk-swordsaint.xml" />
+        
 
         <!--
         <file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-cursesmith.xml" />
