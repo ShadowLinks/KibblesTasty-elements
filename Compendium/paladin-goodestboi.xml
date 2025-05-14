@@ -9,121 +9,137 @@
     <element name="Oath of the Goodest Boi" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PALADIN_GOODESTBOI">
          <supports>Sacred Oath</supports>
         <description>
+            <p>Few paths are as demanding as the oath of these dauntless doggos, for they walk not just the path of being good, but being the goodest. These are no man’s second best friend, but man’s best friend itself, in the fur. They allow no evil to go unbarked, no stick to go unfetched, and no tail to go unwagged.</p>
+            <p class="indent">This prestigious path is so precarious that only a doggo could hope to tread it, though the forms of the doggo are many, from your everyday goodest bois working hard to do their best, to perhaps more erudite awakened doggos, or even demigods in doggo form.</p>
+            <h5 class="caption">TENANTS OF THE GOODEST BOI</h5>
             <p></p>
-            <p class="indent"></p>
-            <h5 class="caption">TENANTS</h5>
-            <p></p>
             <p class="indent">
-                <b><i></i></b>
-                tenant
+                <b><i>Be Good</i></b>
+                Do the goodest thing
             </p>
             <p class="indent">
-                <b><i></i></b>
-                tenant
+                <b><i>Be Happy</i></b>
+                The world is just a tail wag from happiness.
             </p>
             <p class="indent">
-                <b><i></i></b>
-                tenant
+                <b><i>Be Diligent</i></b>
+                Leave no stick to go unfetched.
             </p>
             <p class="indent">
-                <b><i></i></b>
-                tenant
+                <b><i>Be Friendly</i></b>
+                Never pass up a treat or a headscritch.
             </p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME" />
+            <p class="indent">
+                <b><i>Be Vigilant</i></b>
+                Bark the evil away.
+            </p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_CD" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_SPELLS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_THERAPY_DOGGO" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_UNWAVERING_LOYALTY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_MY_YARD" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_CD" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_SPELLS" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME" level="9" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME" level="13" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_THERAPY_DOGGO" level="9" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_UNWAVERING_LOYALTY" level="13" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_MY_YARD" level="17" />
         </rules>
     </element>
     <element name="Channel Divinity" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_CD">
         <description>
-            <p></p>
+            <p>When you take this oath at 3rd level, you gain the following Channel Divinity option.</p>
+            <p><strong>Bark the Evil:</strong> As an action, you can unleash a ferocious storm of holy barks to drive away evil. All non-allied creatures within 30 feet of you and that can see or hear you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 round or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
+            <p class="indent">If the creature is on your property, it has disadvantage on the saving throw.</p>
+            <p><strong>To the Rescue:</strong> As a reaction to an allied creature being reduced to zero hit points, you can run up to your movement speed toward that creature and if you can reach it, you can use your Lay on Paws feature as part of the reaction, as long as you have at least 1 point of hit points left to restore with it.</p>
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Archetype Feature" id="" />
-            <grant type="Archetype Feature" id="" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_CD_BARK_THE_EVIL" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_CD_TO_THE_RESCUE" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_CD_FEATURENAME">
+    <element name="Bark the Evil" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_CD_BARK_THE_EVIL">
         <description>
-            <p></p>
+            <p>As an action, you can unleash a ferocious storm of holy barks to drive away evil. All non-allied creatures within 30 feet of you and that can see or hear you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 round or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
         </description>
         <sheet usage="Channel Divinity">
-            <description>description</description>
+            <description>As an action, you can unleash a ferocious storm of holy barks to drive away evil. All non-allied creatures within 30 feet of you and that can see or hear you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 round or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.
+            If the creature is on your property, it has disadvantage on the saving throw.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_CD_FEATURENAME">
+    <element name="To the Rescue" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_CD_TO_THE_RESCUE">
         <description>
-            <p></p>
+            <p>As a reaction to an allied creature being reduced to zero hit points, you can run up to your movement speed toward that creature and if you can reach it, you can use your Lay on Paws feature as part of the reaction, as long as you have at least 1 point of hit points left to restore with it.</p>
         </description>
         <sheet usage="Channel Divinity">
-            <description>description</description>
+            <description>As a reaction to an allied creature being reduced to zero hit points, you can run up to your movement speed toward that creature and if you can reach it, you can use your Lay on Paws feature as part of the reaction, as long as you have at least 1 point of hit points left to restore with it.</description>
         </sheet>
     </element>
     <element name="Oath Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_SPELLS">
         <description>
-            <p></p>
+            <p>You gain oath spells at the paladin levels listed.</p>
             <table>
                 <thead>
                     <tr><td>Paladin Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
-                <tr><td>13th</td><td>spells</td></tr>
-                <tr><td>17th</td><td>spells</td></tr>
+                <tr><td>3rd</td><td>alarm, charm person</td></tr>
+                <tr><td>5th</td><td>calm emotions, find traps</td></tr>
+                <tr><td>9th</td><td>dig, fear</td></tr>
+                <tr><td>13th</td><td>heavenly ray, locate creature</td></tr>
+                <tr><td>17th</td><td>dispel evil and good, thunderous barking (sonic shriek)</td></tr>
             </table>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_ALARM" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_CHARM_PERSON" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_FIND_TRAPS" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_KTH_COLAL_SPELL_DIG" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_FEAR" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_KTH_COLAL_SPELL_HEAVENLY_RAY" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_LOCATE_CREATURE" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_KTH_COLAL_SPELL_SONIC_SHRIEK" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME">
+    <element name="Therapy Doggo" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_THERAPY_DOGGO">
         <description>
-            <p></p>
+            <p>Beginning at 7th level, your presence can heal the mind, body, and soul. When you restore at least 5 hit points to a creature with Lay on Paws it automatically removes the Frightened, Paralyzed, or Poisoned condition, and makes that creature immune to those effects for 1 minute.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you restore at least 5 hit points to a creature with Lay on Paws it automatically removes the Frightened, Paralyzed, or Poisoned condition, and makes that creature immune to those effects for 1 minute.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME">
+    <element name="Unwavering Loyalty" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_UNWAVERING_LOYALTY">
         <description>
-            <p></p>
+            <p>Starting at 15th level, if you would drop to zero hit points while at least one allied creature that has called you a “good boi” within the last 24 hours is within 60 feet, you can make a Charisma saving throw with a DC equal to the amount of damage taken over your current hit points minus the number of qualifying allies in range. On success, you are instead dropped to 1 hit point.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>If you would drop to zero hit points while at least one allied creature that has called you a “good boi” within the last 24 hours is within 60 feet, you can make a Charisma saving throw with a DC equal to the amount of damage taken over your current hit points minus the number of qualifying allies in range. On success, you are instead dropped to 1 hit point.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_FEATURENAME">
+    <element name="My Yard" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_GOODESTBOI_MY_YARD">
         <description>
-            <p></p>
+            <p>At 20th level, you establish the holy domain of your yard wherever it is needed. As an action, you can unleash a profound bark claiming the area within 500 feet of you as your territory for 1 minute, with the following effects while within your territory:</p>
+            <ul>
+                <li>You can use your Channel Divinity options without expending the Channel Divinity option. When using Bark the Evil this way, you can use it as a bonus action.</li>
+                <li>Your movement speed and jumping distance is doubled, and you have advantage on attack rolls.</li>
+                <li>Allied creatures have advantage on Saving Throws against becoming frightened.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can unleash a profound bark claiming the area within 500 feet of you as your territory for 1 minute, with the following effects while within your territory:
+            You can use your Channel Divinity options without expending the Channel Divinity option. When using Bark the Evil this way, you can use it as a bonus action.
+            Your movement speed and jumping distance is doubled, and you have advantage on attack rolls.
+            Allied creatures have advantage on Saving Throws against becoming frightened.</description>
         </sheet>
     </element>
 </elements>
