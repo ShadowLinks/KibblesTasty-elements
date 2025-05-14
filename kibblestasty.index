@@ -87,6 +87,8 @@
         <file name="monk-outcast.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/monk-outcast.xml" />
         <file name="monk-swordsaint.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/monk-swordsaint.xml" />
         
+        <file name="paladin-goodestboi.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-goodestboi.xml" />
+        <file name="paladin-silence.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-silence.xml" />
 
         <!--
         <file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-cursesmith.xml" />
