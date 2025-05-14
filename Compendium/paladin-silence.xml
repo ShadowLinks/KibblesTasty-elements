@@ -9,68 +9,80 @@
     <element name="Oath of Silence" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PALADIN_SILENCE">
          <supports>Sacred Oath</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <h5 class="caption">TENANTS</h5>
-            <p></p>
+            <p>The Oath of Silence is taken by those that have seen the chaos of the world and have chosen to take a stand. Rather than shout over the clamor, they lead by example and action, showing that the world needs not fiery rhetoric or the manipulations of honeyed words, but people to act as they should with purpose and pride.</p>
+            <p class="indent">Paladins of this oath can come from many backgrounds and espouse endless variants of their conviction, but most often tend to be Lawful. They often believe that the power of words should be in the reason and virtue they carry, rather than volume or, worst of all, manipulating magics that twist the minds of those they fall on.</p>
+            <h5 class="caption">TENANTS OF SILENCE</h5>
+            <p>Though the exact words and strictures of the Oath of Silence vary, paladins of this oath share these tenets.</p>
             <p class="indent">
-                <b><i></i></b>
-                tenant
+                <b><i>Temperance</i></b>
+                Whispering in silence conveys greater power than shouting in clamor.
             </p>
             <p class="indent">
-                <b><i></i></b>
-                tenant
+                <b><i>Precision</i></b>
+                Speak with purpose and say what must be said.
             </p>
             <p class="indent">
-                <b><i></i></b>
-                tenant
+                <b><i>Sanctuary</i></b>
+                Be the port in the storm, be the tranquility in the chaos.
             </p>
             <p class="indent">
-                <b><i></i></b>
-                tenant
+                <b><i>Purpose</i></b>
+                Actions speak louder than words. Let your sword and shield be your voice.
             </p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" />
+            <p class="indent">
+                <b><i>Shield</i></b>
+                 Be wary of those that use their voice to bend the world to their will for their own gain, and rebuke those that use their voice to bend creatures to their will for their own gain.
+            </p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD" />
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_SPELLS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_AURA_OF_SERENITY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_REBUKE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_ORDERED_WORLD" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_SPELLS" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" level="9" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" level="13" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_AURA_OF_SERENITY" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_REBUKE" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_ORDERED_WORLD" level="20" />
         </rules>
     </element>
     <element name="Channel Divinity" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD">
         <description>
-            <p></p>
+            <p><strong>Shroud of Silence.</strong> As a bonus action, you present your holy symbol and whisper a prayer, shrouding one creature within 60 feet in an aura of silence. For 10 minutes, the target makes no noise. It cannot speak (including the verbal components of spells) and gains advantage on Dexterity (Stealth) ability checks.</p>
+            <p class="indent">An unwilling creature makes a Wisdom saving throw against your spell save DC to prevent the effect when targeted, and can repeat the saving throw at the end of each of their turns to end the effect on a success.</p>
+            <p class="indent"><strong>Sanctuary of the Sacrosanct.</strong> As an action, you present your holy symbol and whisper prayer to bring refugees from the turmoil of the world. All creatures of your choice within 30 feet gain temporary hit points equal to your Paladin level + your Charisma modifier, and if they are under the effect of a condition or spell they can normally save against the end of their turn, they can immediately make a save against the effect, ending it on success as normal.</p>
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Archetype Feature" id="" />
-            <grant type="Archetype Feature" id="" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD_SHROUD_OF_SILENCE" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD_SANCTUARY_OF_THE_SACROSANCT" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD_FEATURENAME">
+    <element name="Shroud of Silence" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD_SHROUD_OF_SILENCE">
         <description>
-            <p></p>
+            <p>As a bonus action, you present your holy symbol and whisper a prayer, shrouding one creature within 60 feet in an aura of silence. For 10 minutes, the target makes no noise. It cannot speak (including the verbal components of spells) and gains advantage on Dexterity (Stealth) ability checks.</p>
+            <p class="indent">An unwilling creature makes a Wisdom saving throw against your spell save DC to prevent the effect when targeted, and can repeat the saving throw at the end of each of their turns to end the effect on a success.</p>
         </description>
         <sheet usage="Channel Divinity">
-            <description>description</description>
+            <description>As a bonus action, you present your holy symbol and whisper a prayer, shrouding one creature within 60 feet in an aura of silence. For 10 minutes, the target makes no noise. It cannot speak (including the verbal components of spells) and gains advantage on Dexterity (Stealth) ability checks.
+            An unwilling creature makes a Wisdom saving throw against your spell save DC to prevent the effect when targeted, and can repeat the saving throw at the end of each of their turns to end the effect on a success.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD_FEATURENAME">
+    <element name="Sancturary of the Sacrosanct" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_CD_SANCTUARY_OF_THE_SACROSANCT">
         <description>
-            <p></p>
+            <p>As an action, you present your holy symbol and whisper prayer to bring refugees from the turmoil of the world. All creatures of your choice within 30 feet gain temporary hit points equal to your Paladin level + your Charisma modifier, and if they are under the effect of a condition or spell they can normally save against the end of their turn, they can immediately make a save against the effect, ending it on success as normal.</p>
         </description>
         <sheet usage="Channel Divinity">
-            <description>description</description>
+            <description>As an action, you present your holy symbol and whisper prayer to bring refugees from the turmoil of the world. All creatures of your choice within 30 feet gain {{sancturary-sacrosanct}} temporary hit points, and if they are under the effect of a condition or spell they can normally save against the end of their turn, they can immediately make a save against the effect, ending it on success as normal.</description>
         </sheet>
+        <rules>
+            <stat name="sanctuary-sacrosanct" value="level:paladin" bonus="base"/>
+            <stat name="sanctuary-sacrosanct" value="charisma:modifier" />
+        </rules>
     </element>
     <element name="Oath Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_SPELLS">
         <description>
@@ -79,51 +91,55 @@
                 <thead>
                     <tr><td>Paladin Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
-                <tr><td>13th</td><td>spells</td></tr>
-                <tr><td>17th</td><td>spells</td></tr>
+                <tr><td>3rd</td><td>sanctuary, sleep</td></tr>
+                <tr><td>5th</td><td>blindness/deafness, silence</td></tr>
+                <tr><td>9th</td><td>counterspell, dispel magic</td></tr>
+                <tr><td>13th</td><td>banishment, commandment</td></tr>
+                <tr><td>17th</td><td>hallow, mislead</td></tr>
             </table>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
-            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_SANCTUARY" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_SLEEP" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_SILENCE" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_COUNTERSPELL" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_DISPEL_MAGIC" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_BANISHMENT" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_KTH_COLAL_SPELL_COMMANDMENT" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_HALLOW" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_MISLEAD" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME">
+    <element name="Aura of Serenity" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_AURA_OF_SERENITY">
         <description>
-            <p></p>
+            <p>Starting at 7th level, you permeate an aura of quiet serenity, reducing the volume of all noises within 10 feet. You and friendly creatures in the aura gain resistance to thunder damage, and armor does not give disadvantage on Dexterity (Stealth) checks for creatures within the aura.</p>
+            <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You permeate an aura of quiet serenity, reducing the volume of all noises within 10 feet. You and friendly creatures in the aura gain resistance to thunder damage, and armor does not give disadvantage on Dexterity (Stealth) checks for creatures within the aura.</description>
+            <description level="18">You permeate an aura of quiet serenity, reducing the volume of all noises within 30 feet. You and friendly creatures in the aura gain resistance to thunder damage, and armor does not give disadvantage on Dexterity (Stealth) checks for creatures within the aura.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME">
+    <element name="Rebuke" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_REBUKE">
         <description>
-            <p></p>
+            <p>Starting at 15th level, when a creature within your Aura of Serenity attempts to speak, attack, or cast a spell, you can rebuke them as a reaction, causing them to take radiant damage equal to your Charisma modifier and forcing them to make a Wisdom saving throw. On a failed saving throw their attempt to speak fails, and they are silenced until the start of their next turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When a creature within your Aura of Serenity attempts to speak, attack, or cast a spell, you can rebuke them as a reaction, causing them to take {{charisma:modifier}} radiant damage and forcing them to make a Wisdom saving throw. On a failed saving throw their attempt to speak fails, and they are silenced until the start of their next turn.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_FEATURENAME">
+    <element name="Ordered World" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PALADIN_SILENCE_ORDERED_WORLD">
         <description>
-            <p></p>
+            <p>At 20th level, as an action, you can bring ordered tranquility to the world around you for 1 minute. Your Aura of Serenity doubles in size, and you can use Rebuke without expending your reaction a number of times equal to your Charisma modifier, regaining all uses at the start of your next turn.</p>
+            <p class="indent">For the duration, all creatures of your choice have advantage on saving throws against the charmed and frightened conditions, or the effects of spells.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can bring ordered tranquility to the world around you for 1 minute. Your Aura of Serenity doubles in size, and you can use Rebuke without expending your reaction {{charisma:modifier}} times, regaining all uses at the start of your next turn.
+            For the duration, all creatures of your choice have advantage on saving throws against the charmed and frightened conditions, or the effects of spells.</description>
         </sheet>
     </element>
 </elements>
