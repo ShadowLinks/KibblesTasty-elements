@@ -9,93 +9,144 @@
     <element name="Bounty Hunter" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_RANGER_BOUNTYHUNTER">
         <supports>Ranger Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" />
+            <p>Anyone that knows about adventurers will know that their legacy is equal parts heroics and burning drinking establishments to the ground. Equal parts dragons slain and merchants robbed. Everyone needs someone to fear, and Rangers that take the Bounty Hunter path are what those who bring fear to others must fear.</p>
+            <p class="indent">Excelling at hunting down targets wherever they should hide, they bring them down dead or alive.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_URBAN_TRACKER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FIST_OF_THE_LAW" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_DEAD_OR_ALIVE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_QUICK_THROW" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_DEFT_KNOTS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_PIN_DOWN" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_UNWAVERING_PURSUIT" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" level="7" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" level="7" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" level="11" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_URBAN_TRACKER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FIST_OF_THE_LAW" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_DEAD_OR_ALIVE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_QUICK_THROW" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_DEFT_KNOTS" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_PIN_DOWN" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_UNWAVERING_PURSUIT" level="15" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME">
+    <element name="Bounty Hunter Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_SPELLS">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Bounty Hunter Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>
+            <h5 class="caption">Bounty Hunter Spells</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Ranger Level</td>
+                        <td>Spells</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>3rd</td>
+                    <td>
+                        <em>hunter's mark</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>
+                        <em>hold person</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>
+                        <em>speak with dead</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>
+                        <em>arcane eye</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>
+                        <em>hold monster</em>
+                    </td>
+                </tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" level="3" spellcasting="Ranger" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Ranger" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="9" spellcasting="Ranger" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="13" spellcasting="Ranger" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Ranger" prepared="true"/>
+        </rules>
+    </element>
+    <element name="Urban Tracker" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_URBAN_TRACKER">
+        <description>
+            <p>Starting at 3rd level, you excel at tracking prey even if they take refuge in the trappings of civilization. When you make an Intelligence or Wisdom check related to tracking a creature in cities or towns, your proficiency bonus is doubled if you are using a skill that you’re proficient in. You can only gain this benefit if you are familiar with the target’s race or general appearance (such as a sketch from a wanted poster).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you make an Intelligence or Wisdom check related to tracking a creature in cities or towns, your proficiency bonus is doubled if you are using a skill that you’re proficient in. You can only gain this benefit if you are familiar with the target’s race or general appearance (such as a sketch from a wanted poster).</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME">
+    <element name="Fist of the Law" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FIST_OF_THE_LAW">
         <description>
-            <p></p>
+            <p>At 3rd level, you gain proficiency in Intimidation. If you are already proficient in Intimidation, you gain expertise in Intimidation, allowing you to add double your proficiency bonus to Intimidation skill checks.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+        </rules>
+    </element>
+    <element name="Dead or Alive" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_DEAD_OR_ALIVE">
+        <description>
+            <p>Additionally at 3rd level, you can mark a target to bring them down dead or alive. You can place this mark on a creature you can see within 120 feet as a bonus action, or as part of placing a mark on the creature that requires a bonus action (such as hunter’s mark). This mark lasts for 1 minute, or until you use it again. Choose one of the following when you mark a creature:</p>
+            <ul>
+                <li><strong>Dead.</strong> When you roll a 1 or 2 on a damage die for an attack, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. Any attack roll you make against the marked target is a critical hit on a roll of 19 or 20 on the d20.</li>
+                <li><strong>Alive.</strong> When you make an attack roll against the target with a net, you don’t have disadvantage when attacking at melee range or long range. You can deal nonlethal damage with ranged attacks against the marked target.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>You can place this mark on a creature you can see within 120 feet as a bonus action, or as part of placing a mark on the creature that requires a bonus action (such as hunter’s mark). This mark lasts for 1 minute, or until you use it again. Choose one of the following when you mark a creature:
+            Dead. When you roll a 1 or 2 on a damage die for an attack, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. Any attack roll you make against the marked target is a critical hit on a roll of 19 or 20 on the d20.
+            Alive. When you make an attack roll against the target with a net, you don’t have disadvantage when attacking at melee range or long range. You can deal nonlethal damage with ranged attacks against the marked target.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME">
+    <element name="Quick Throw" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_QUICK_THROW">
         <description>
-            <p></p>
+            <p>Starting at 7th level, when you use a net as part of your Attack action, you can make the normal number of attacks, though you can only make one of those attacks with a net.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use a net as part of your Attack action, you can make the normal number of attacks, though you can only make one of those attacks with a net.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME">
+    <element name="Deft Knots" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_DEFT_KNOTS">
         <description>
-            <p></p>
+            <p>Additionally at 7th level, you can add your proficiency bonus to the DC of any check made to escape the restrained condition you inflicted on a creature that you do not already add your proficiency to (for example, tied ropes, shackles, nets, etc.). Additionally, you have advantage on ability checks to tie knots or secure ropes.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can add {{proficiency}} to the DC of any check made to escape the restrained condition you inflicted on a creature that you do not already add your proficiency to (for example, tied ropes, shackles, nets, etc.). Additionally, you have advantage on ability checks to tie knots or secure ropes.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME">
+    <element name="Pin Down" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_PIN_DOWN">
         <description>
-            <p></p>
+            <p>Starting at 11th level, when a creature you have marked with Dead or Alive moves 5 feet, stands up from being prone, or escapes from the Restrained condition while within 60 feet of you, you can use your reaction to make an opportunity attack against them if they are in range of a weapon you are wielding. If you make this attack with a ranged weapon, you have disadvantage on the attack.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When a creature you have marked with Dead or Alive moves 5 feet, stands up from being prone, or escapes from the Restrained condition while within 60 feet of you, you can use your reaction to make an opportunity attack against them if they are in range of a weapon you are wielding. If you make this attack with a ranged weapon, you have disadvantage on the attack.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME">
+    <element name="Unwavering Pursuit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_UNWAVERING_PURSUIT">
         <description>
-            <p></p>
+            <p>Starting at 15th level, when you mark a creature with Dead or Alive, you get truesight against that creature, and are aware of their exact location as long as they are within 300 feet of you until the mark ends.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_RANGER_BOUNTYHUNTER_FEATURENAME">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>When you mark a creature with Dead or Alive, you get truesight against that creature, and are aware of their exact location as long as they are within 300 feet of you until the mark ends.</description>
         </sheet>
     </element>
 </elements>
