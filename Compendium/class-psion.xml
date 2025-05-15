@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Psion</name>
+        <update version="0.0.1">
+            <file name="class-psion.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-psion.xml" />
+        </update>
+    </info>
+    <element name="Psion" type="Class" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_PSION">
+        <description>
+            <p>Psions are those who have tapped into a special otherworldly force, with the ability to actualize the power of their mind to accomplish impossible feats. Reading minds, lifting vast weights, and transcending physical limitations, they tend to inspire awe and terror in equal measure.</p>
+            <p class="indent">The exact nature of what psionic power is might be a question answered in your setting, or it might not be. Most view psionic power as coming from within, though other answers exist—anything from the leaking power of the realms beyond, to an alternate way to express magic, to an actualization of an individual’s will upon the world.</p>
+            <h4>Powerful Minds</h4>
+            <p>Since a psion’s weapon is their mind, they are always a careless thought away from harming those around them. For a psion, the line between thinking and doing can be very thin, forcing them to keep their thoughts and emotions in check, lest their powers run amok. This leads to many of them developing odd behaviors or mannerisms to help them control their state of mind, frequently seeming quite eccentric to an outside observer.</p>
+            <p class="indent">Consider how your psion keeps their powers in check, and how much their power bleeds into their everyday life. How reading minds may affect their body language or habits. Do they add wood to the campfire from the comfort of their bedroll, or do they restrain themselves from using their power for trivial matters lest they slip up?</p>
+            <h4>Misunderstood Powers</h4>
+            <p>In a world of widespread magic, many will assume a psion to be a type of Sorcerer or Wizard, mistaking their powers for the common applications of magic. The common villager keeps only one mental category for the supernatural and creepy people that bend reality to their will. But even among magic users, a psion’s powers will frequently be found unnerving.</p>
+            <p class="indent">It is often those who do understand magic that find a psion’s abilities the most aberrant. A force that intersects the magical weave rather than obeys it, the nature of the power that the psion wields one can only contemplate with unease.</p>
+            <h4>CREATING A PSION</h4>
+            <p>When creating a psion, consider your character’s background. How did you become a psion? Were you born with latent powers? Or did something happen to you granting your powers? Or did you intentionally train yourself through rigorous mental exercise to leverage them? Consider how developing a rare and mysterious power would have affected your interactions with people.</p>
+            <p class="indent">Consider what your purpose is with your newfound powers, or how you plan to use your powers. Do you intend to be taken for a Wizard casting magic, or are you freely open about being of a... different nature?</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can make a psion quickly by following these suggestions. First, make Intelligence your highest ability score, followed by Dexterity or Constitution. Second, choose a background that lends itself to intelligence skills.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an psion, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 10d6 per psion level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per psion level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor</li>
+                <li><strong>Weapons:</strong> Simple weapons</li>
+                <li><strong>Tools:</strong> </li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+                <li><strong>Skills:</strong> Psionics, and choose two from Deception, History, Insight, Intimidation, Investigation, Medicine, Perception, or Religion</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a quarterstaff, (b) a dagger, or (c) a martial weapon (if proficient)</li>
+                <li>(a) leather armor or (b) scale mail (if proficient)</li>
+                <li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+            </ul>
+            <!-- class table here -->
+            <h5 class="caption">THE PSION</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Psi Points</td><td class="col-10">Psi Limit</td><td class="col-10">Psi Talent</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>1</td><td>1</td><td>—</td><td class="left">Psionic Archetype, Psionics</td></tr>
+                <tr><td> 2nd</td><td>2</td><td>1</td><td>2</td><td class="left">Psionic Talents</td></tr>
+                <tr><td> 3rd</td><td>3</td><td>2</td><td>2</td><td class="left">Secondary Discipline, Psionic Archetype feature</td></tr>
+                <tr><td> 4th</td><td>4</td><td>2</td><td>2</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>5</td><td>3</td><td>3</td><td class="left">Psionic Mastery</td></tr>
+                <tr><td> 6th</td><td>6</td><td>3</td><td>3</td><td class="left">Psionic Archetype feature</td></tr>
+                <tr><td> 7th</td><td>7</td><td>4</td><td>4</td><td class="left">—</td></tr>
+                <tr><td> 8th</td><td>8</td><td>4</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>9</td><td>5</td><td>5</td><td class="left">—</td></tr>
+                <tr><td>10th</td><td>10</td><td>5</td><td>5</td><td class="left">Psionic Archetype feature</td></tr>
+                <tr><td>11th</td><td>11</td><td>6</td><td>5</td><td class="left">Innate Psionic Ability (6th level)</td></tr>
+                <tr><td>12th</td><td>12</td><td>6</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>13th</td><td>13</td><td>7</td><td>6</td><td class="left">Innate Psionic Ability (7th level)</td></tr>
+                <tr><td>14th</td><td>14</td><td>7</td><td>6</td><td class="left">Psionic Archetype feature </td></tr>
+                <tr><td>15th</td><td>15</td><td>8</td><td>7</td><td class="left">Innate Psionic Ability (8th level)</td></tr>
+                <tr><td>16th</td><td>16</td><td>8</td><td>7</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>17</td><td>9</td><td>7</td><td class="left">Innate Psionic Ability (9th level)</td></tr>
+                <tr><td>18th</td><td>18</td><td>9</td><td>8</td><td class="left">Third Discipline</td></tr>
+                <tr><td>19th</td><td>19</td><td>10</td><td>8</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>20</td><td>10</td><td>8</td><td class="left">Ascension</td></tr>
+            </table>
+            <div element="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_ARCHETYPE" />
+            <div element="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONICS" />
+            <div element="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_TALENTS" />
+            <div element="ID_KTH_CCC_CLASS_FEATURE_PSION_SECOND_DISCIPLINE" />
+            <div element="ID_KTH_CCC_CLASS_FEATURE_PSION_ASI" />
+            <div element="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_MASTERY" />
+            <div element="ID_KTH_CCC_CLASS_FEATURE_PSION_INNATE_PSIONICS" />
+            <div element="ID_KTH_CCC_CLASS_FEATURE_PSION_THIRD_DISCIPLINE" />
+            <div element="ID_KTH_CCC_CLASS_FEATURE_PSION_ASCENSION" />
+        </description>
+        <setters>
+            <set name="hd">d6</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <select type="Proficiency" name="Skills, Psion" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION" />
+            <grant type="Class Feature" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_ARCHETYPE" level="1" />
+            <grant type="Class Feature" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONICS" level="1" />
+            <grant type="Class Feature" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_TALENTS" level="2" />
+            <grant type="Class Feature" id="ID_KTH_CCC_CLASS_FEATURE_PSION_SECOND_DISCIPLINE" level="3" />
+            <grant type="Class Feature" id="ID_KTH_CCC_CLASS_FEATURE_PSION_ASI" level="4" />
+            <grant type="Class Feature" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_MASTERY" level="5" />
+            <grant type="Class Feature" id="ID_KTH_CCC_CLASS_FEATURE_PSION_INNATE_PSIONICS" level="11" />
+            <grant type="Class Feature" id="ID_KTH_CCC_CLASS_FEATURE_PSION_THIRD_DISCIPLINE" level="18" />
+            <grant type="Class Feature" id="ID_KTH_CCC_CLASS_FEATURE_PSION_ASCENSION" level="20" />
+        </rules>
+        <spellcasting name="Psion" ability="Intelligence" prepare="false">
+            <list>Psionic</list>
+        </spellcasting>
+    </element>
+    <element name="Psionic Archetype" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_ARCHETYPE">
+        <description>
+            <p>At 1st level, you pick the archetype of psion you embody, choosing from Awakened Mind, Unleashed Mind, Transcended Mind, Shaper’s Mind, Wandering Mind, Elemental Mind or Consuming Mind, each of which are detailed at the end of the class description. Your choice grants you features at 1st level, and again at 3rd, 6th, 10th, and 14th level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" supports="Psionic-Archetype" />
+        </rules>
+    </element>
+    <element name="Psionics" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONICS">
+        <description>
+            <h5>Psionic Disciplines</h5>
+            <p>You are granted access to a psionic discipline (such as Telepathy or Telekinesis) by your chosen archetype. A psionic discipline comes with a passive feature that expands your character’s capabilities and an active psionic power that can be modified and empowered with psi points. Additionally you can use your discipline in more detailed applications to recreate the effect of certain spells, listed at the end of the discipline description. At 3rd level you can select a second discipline, and 18th level you can select a 3rd discipline.</p>
+            <p class="indent">Psionic powers are suppressed by antimagic fields and can be dispelled with dispel magic, but are only affected by counterspell if recreating the effect of a spell. Any check required to dispel magic, counterspell or to identify a spell being cast with psionics is made with disadvantage unless the caster also has the Psionics feature. The detect magic spell will detect the usage of psionics, but not their nature: it will show up as a mysterious untyped power, even if being used to generate the effect of a spell.</p>
+            <p class="indent">When recreating a spell through a psionic effect (using a psionic discipline to cast the spell) the spell has no material or verbal components, but using any psionic ability requires somatic components and causes the psion to vibrantly glow with the otherworldly psionic energies they are controlling.</p>
+            <h5>Psi Points</h5>
+            <p>Starting at 1st level, you gain access to psi points used to fuel psionic discipline powers and effects. You have a number of psi points equal to your psion level, and you regain all spent points when you finish a short or long rest. You can spend a number of psi points equal to half your Psion level (rounded up) at a time. For example, if you’re a 5th-level Psion, you can spend 3 psi points on a psionic power or cast a spell with a cost of 3 psi points.</p>
+            <h5>Psionic Ability</h5>
+            <p></p>
+            <center>
+                <p><strong>Psionic save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                <p><strong>Psionic attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+        </description>
+        <sheet>
+            <description>You have {{psi-points:count}} Psi Points and your Psi limit is {{psi-points:max}} and restore on short rest.
+            When recreating a spell through a psionic effect (using a psionic discipline to cast the spell) the spell has no material or verbal components, but using any psionic ability requires somatic components and causes the psion to vibrantly glow.</description>
+        </sheet>
+        <rules>
+            <stat name="psi-points:count" value="level:psion" />
+            <stat name="psi-points:max" value="level:psion:half:up" />
+        </rules>
+    </element>
+    <element name="Psionic Talents" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_TALENTS">
+        <description>
+            <p>Starting at 2nd level, you gain access to a psionic talent allowing you to further specialize. Pick two talents from the list of psionic talents presented at the end of the class description. You can pick a new psionic talent at 5th, 7th, 9th, 12th, 15th, and 18th level. When you level up, you can replace a psionic talent you have previously selected with a different option.</p>
+        </description>
+        <sheet>
+            <description>You may replace a talent when you level up.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Psionic Talents 1" supports="psionic-talent"  number="2" />
+        </rules>
+    </element>
+    <element name="Second Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_SECOND_DISCIPLINE">
+        <description>
+            <p>When you reach 3rd level, you can select a second psionic discipline from the list of psionic disciplines. You can’t select a Discipline you already know. You gain all features of a psionic discipline when selecting it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>            
+            <select type="Class Feature" name="Second Discipline" supports="psionic-discipline" />
+        </rules>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_ASI">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Psion 4)" supports="Improvement Option,Psion,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Psion 8)" supports="Improvement Option,Psion,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Psion 12)" supports="Improvement Option,Psion,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Psion 16)" supports="Improvement Option,Psion,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Psion 19)" supports="Improvement Option,Psion,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Psionic Mastery" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_MASTERY">
+        <description>
+            <p>When you reach 5th level, you gain mastery of your psionic powers. At the start of your turn you get 1 free psi point. This can be spent to empower psionic disciplines, but not to recreate spells or fuel Psionic Talents. If you have any unspent free psi points granted by this feature left at the end of your turn, then they are lost.</p>
+            <p class="indent">At 11th level, this is increased to 2 free psi points, and at 17th level, this is increased to 3. Points can be split between different abilities.</p>
+        </description>
+        <sheet>
+            <description> At the start of your turn you get 1 free psi point. This can be spent to empower psionic disciplines, but not to recreate spells or fuel Psionic Talents. Points are lost at the end of your turn.</description>
+            <description level="11"> At the start of your turn you get 2 free psi points. This can be spent to empower psionic disciplines, but not to recreate spells or fuel Psionic Talents. Points are lost at the end of your turn.</description>
+            <description level="17"> At the start of your turn you get 3 free psi points. This can be spent to empower psionic disciplines, but not to recreate spells or fuel Psionic Talents. Points are lost at the end of your turn.</description>
+        </sheet>
+    </element>
+    <element name="Innate Psionics" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_INNATE_PSIONICS">
+        <description>
+            <p>At 11th level, you gain the ability to exert great feats of psionic power. Choose one 6th-level spell from the psion spell list as an innate ability. You can use this innate ability to cast that spell once. You must finish a long rest before you can do so again. At higher levels, you gain more innate abilities of your choice that can be used in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Innate Psionics when you finish a long rest.</p>
+            <p class="indent">Innate Psionics are well beyond the normal scope of your powers and are not restricted by what disciplines you have. Unlike psionic disciplines, they require any component the spell requires.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Choose one 6th-level spell from the psion spell list as an innate ability. You can use this innate ability to cast that spell once.
+            Innate Psionics are well beyond the normal scope of your powers and are not restricted by what disciplines you have. Unlike psionic disciplines, they require any component the spell requires.</description>
+            <description level="13">Choose one 6th-level and one 7th-level spell from the psion spell list as an innate ability. You can use this innate ability to cast that spell once.
+            Innate Psionics are well beyond the normal scope of your powers and are not restricted by what disciplines you have. Unlike psionic disciplines, they require any component the spell requires.</description>
+            <description level="15">Choose one 6th-level, one 7th-level, and one 8th-level spell from the psion spell list as an innate ability. You can use this innate ability to cast that spell once.
+            Innate Psionics are well beyond the normal scope of your powers and are not restricted by what disciplines you have. Unlike psionic disciplines, they require any component the spell requires.</description>
+            <description level="17">Choose one 6th-level, one 7th-level, one 8th-level, and one 9th-level spell from the psion spell list as an innate ability. You can use this innate ability to cast that spell once.
+            Innate Psionics are well beyond the normal scope of your powers and are not restricted by what disciplines you have. Unlike psionic disciplines, they require any component the spell requires.</description>
+        </sheet>
+    </element>
+    <element name="Third Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_THIRD_DISCIPLINE">
+        <description>
+            <p>When you reach 18th level, you can select a third psionic discipline from the list of psionic disciplines. You can’t select a discipline you already know. You gain all features of a psionic discipline when selecting it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>            
+            <select type="Class Feature" name="Third Discipline" supports="psionic-discipline" />
+        </rules>
+    </element>
+    <element name="Ascension" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_ASCENSION">
+        <description>
+            <p>Starting at 20th level, if you die you can choose to become an incorporeal entity on the Border Ethereal at the spot you died in the Material Plane at the start of your next turn. This entity has the physical ability scores (Strength, Dexterity, Constitution) and abilities of a ghost, but has your mental ability scores (Intelligence, Wisdom, Charisma) and your psion class abilities.</p>
+            <p class="indent">When you take this form your current and maximum hit points becomes that of the ghost while you are in the form, if you have less than 10 psi points when you would assume this form, you have 10 psi points. While in this form you can’t rest to regain spent abilities. If you exhaust all Psi Points or the ghost is destroyed, you die as a normal creature would.</p>
+        </description>
+        <sheet>
+            <description>If you die you can choose to become an incorporeal entity on the Border Ethereal at the spot you died in the Material Plane at the start of your next turn. This entity has the physical ability scores and abilities of a ghost, but has your mental ability scores and your psion class abilities.
+            When you take this form your current and maximum hit points becomes that of the ghost while you are in the form, if you have less than 10 psi points when you would assume this form, you have 10 psi points. While in this form you can’t rest to regain spent abilities. If you exhaust all Psi Points or the ghost is destroyed, you die as a normal creature would.</description>
+        </sheet>
+    </element>
+
+    <!-- Psionic Disciplines -->
+
+    <element name="Enhancement Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT">
+        <supports>psionic-discipline</supports>
+        <description>
+            <p>Enhancement is the ability to interact with a creature’s nature and abilities with your psionic power</p>
+            <div element="ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT_ENHANCING_SKILL" />
+            <div element="ID_KTH_CCC_PSIONIC_POWER_ENHANCING_SURGE" />
+            <div element="ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT_ALTERNATE_EFFECTS" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT_ENHANCING_SKILL" />
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_ENHANCING_SURGE" spellcasting="Psion" />
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT_ALTERNATE_EFFECTS" />
+        </rules>
+    </element>
+    <element name="Enhancing Skill" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT_ENHANCING_SKILL">
+        <description>
+            <p>You can focus your psionics to enhance your abilities. Whenever you make a skill check using Strength or Dexterity, you can add 1d4 to the result.</p>
+        </description>
+        <sheet>
+            <description>Whenever you make a skill check using Strength or Dexterity, you can add 1d4 to the result.</description>
+        </sheet>
+    </element>
+    <element name="Enhancing Surge" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_ENHANCING_SURGE">
+        <supports>Psionic</supports>
+        <description>
+            <p>You empower the body of a target creature you can see with your Psionics. The target gains 1d6 temporary hit points and the next time the target deals damage, it deals 1d6 additional damage to one application of that damage roll. Any remaining temporary hit points from this power fade when you use it again.</p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Enhancing Surge (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p><strong>Fortifying</strong>(1+ psi point): The target gains an additional +1d6 temporary hit points for each point spent.</p>
+            <p><strong>Resilient</strong>(3 psi points): the target gains resistance to all damage until the start of your next turn.</p>
+            <p><strong>Savage</strong> (1+ psi point): The target's next weapon attack deals an +1d6 additional damage for each point spent.</p>            
+            <p><strong>Swift</strong>(2 psi points): The target gains an additional action. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
+            
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Alternate Effects (Enhancement)" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT_ALTERNATE_EFFECTS">
+        <description>
+            <p>Additionally, when you learn the Enhancement psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td>heroism, longstrider, unlocked potential</td></tr>
+                <tr><td>2</td><td>alter self, enlarge/reduce, lesser restoration</td></tr>
+                <tr><td>3</td><td>haste, protection from energy</td></tr>
+                <tr><td>4</td><td>freedom of movement, stoneskin</td></tr>
+                <tr><td>4</td><td>greater restoration, invested competency</td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend additional psi points to cast it at a level equal to the psi points spent.</p>
+        </description>
+        <sheet>
+            <description>You can cast additional spells using Psi Points</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Psion" />
+            <!--<grant type="Spell" id="ID_KTH_CCC_PSION_SPELL_UNLOCKED_POTENTIAL" spellcasting="Psion" /> -->
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Psion" />
+            <!--<grant type="Spell" id="ID_KTH_CCC_PSION_SPELL_INVESTED_COMPETENCY" spellcasting="Psion" />-->
+        </rules>
+    </element>
+
+    <element name="Precognition Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION">
+        <supports>psionic-discipline</supports>
+        <description>
+            <p>Precognition is the ability to see what lies ahead, piercing the veil of the future. Seeing things that most people cannot a Psion with Precognitive abilites can, to a limited extent, know the future; such a future is known by tracing its roots from the present, and grows more mysterious and cloudy as such roots grow distant.</p>
+            <p class="indent">Such a future can be changed by the actions of the present, particularly by knowledge of said future and action to prevent or change it. This is the function most often leveraged by Precognitive Psions, peering into the future to steer around courses they seek to prevent or steer toward a possible outcome they seek.</p>
+            <div element="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION_PRESCIENCE" />
+            <div element="ID_KTH_CCC_PSIONIC_POWER_SEEING" />
+            <div element="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION_ALTERNATE_EFFECTS" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION_PRESCIENCE" />
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_SEEING" spellcasting="Psion" />
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION_ALTERNATE_EFFECTS" />
+        </rules>
+    </element>
+    <element name="Presciencce" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION_PRESCIENCE">
+        <description>
+            <p>Your eyes wander to events before they happen. You can add your proficiency to Perception and initiative rolls; if you already are able to add your proficiency to Perception, you can add twice your proficiency</p>
+            <p class="indent">If you concentrate on keeping an eye on the future (as if concentrating on a spell), you can use your Intelligence modifier for Wisdom (Perception) checks (instead of Wisdom) and initiative rolls (instead of Dexterity), and you make Intelligence saving throws in place of Dexterity saving throws. You can initiate this concentration at any time.</p>
+        </description>
+        <sheet>If you concentrate on keeping an eye on the future (as if concentrating on a spell), you can use your Intelligence modifier for Wisdom (Perception) checks (instead of Wisdom) and initiative rolls (instead of Dexterity), and you make Intelligence saving throws in place of Dexterity saving throws. You can initiate this concentration at any time.
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERCEPTION" />
+            <stat name="initiative" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Seeing" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_SEEING">
+        <supports>Psionic</supports>
+        <description>
+            <p>You concentrate and peer into the stream of future possibilities, gaining insight into what will happen next; you can select one of the following:</p>
+            <ul>
+                <li>You can grant advantage to yourself or to a creature that can see or hear you on their next attack roll made before the start of your next turn; if an attack that gained advantage from this feature hits, it deals an extra 1d6 damage.</li>
+                <li>You can grant disadvantage on the next attack roll against yourself or a creature that can see or hear you before the start of your next turn; if that attack hits despite the disadvantage, the damaged creature rolls 1d6 and subtracts that from the damage dealt.</li>
+                <li>You can spend psi points up to your per use limit to add the following modifiers to Seeing (you can add multiple modifiers).</li>
+            </ul>
+            <p><strong>Omniscient (1 psi point):</strong> The beneficiary of your Seeing is under the effect of bless and guidance until the start of your next turn.</p>
+            <p><strong>Piercing (1+ psi points):</strong> You see through the target’s defenses when granting advantage, increasing the damage of the attack benefiting from advantage by 1d8 per psi point spent if it hits.</p>
+            <p><strong>Positioning (1+ psi points):</strong> The beneficiary of your Seeing can immediately move 5 feet per psi point spent (up to their speed) without provoking opportunity attacks.</p>
+            <p><strong>Thwarting (2 psi points):</strong> The beneficiary of your Seeing has advantage on the next saving throw they make before the start of your next turn.</p>
+            <p><strong>Withheld (0 psi points):</strong> Rather than granting advantage or disadvantage on the next attack, you can grant advantage or disavantage as a reaction to an attack being made until the start of your next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+     <element name="Alternate Effects (Enhancement)" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION_ALTERNATE_EFFECTS">
+        <description>
+            <p>Additionally, when you learn the Precognition psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td>detect good and evil, future insight</td></tr>
+                <tr><td>2</td><td>augury†, glimpse the future</td></tr>
+                <tr><td>3</td><td>clairvoyance</td></tr>
+                <tr><td>4</td><td>death ward†, divination</td></tr>
+                <tr><td>4</td><td>scrying</td></tr>
+            </table>
+            <p class="indent">†augury has the same effect, but doesn’t consult a specific entity when cast in this way</p>
+            <p class="indent">†death ward has the same effect, but gives a forewarning to a creature allowing them to avoid death when cast in this way</p>
+            <p class="indent">If a spell can be cast at a higher level, you can spend additional psi points to cast it at a level equal to the psi points spent.</p>
+        </description>
+        <sheet>
+            <description>You can cast additional spells using Psi Points.
+            †augury has the same effect, but doesn’t consult a specific entity when cast in this way.
+            †death ward has the same effect, but gives a forewarning to a creature allowing them to avoid death when cast in this way.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" spellcasting="Psion" />
+            <!--<grant type="Spell" id="ID_KTH_CCC_PSION_SPELL_FUTURE_INSIGHT" spellcasting="Psion" /> -->
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIVINATION" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCRYING" spellcasting="Psion" />
+            <!--<grant type="Spell" id="ID_KTH_CCC_PSION_SPELL_GLIMPSE_THE_FUTURE spellcasting="Psion" />-->
+        </rules>
+    </element>
+</elements>
