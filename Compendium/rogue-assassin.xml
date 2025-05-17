@@ -9,63 +9,142 @@
     <element name="Assassin" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_ROGUE_ASSASSIN">
         <supports>Roguish Archetype</supports>
         <description>
-            <p></p>
+            <p>You specialize in the grim art of dealing death. Those who adhere to this archetype are diverse: assassins, hired killers, spies, bounty hunters and more.</p>
             <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_BONUS_PROFICIENCY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_BACKSTAB" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_KILLERS_METHOD" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FAVORED_APPROACH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_LETHAL_BLOW" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" level="9" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" level="13" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_BONUS_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_BACKSTAB" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_KILLERS_METHOD" level="9" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FAVORED_APPROACH" level="13" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_LETHAL_BLOW" level="17" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME">
+    <element name="Bonus Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_BONUS_PROFICIENCY">
         <description>
-            <p></p>
+            <p>When you choose this archetype at 3rd level, you gain proficiency with your choice of either disguise kit or poisoner’s kit.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Bonus Proficiency (Assassin)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+        </rules>
+    </element>
+    <element name="Backstab" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_BACKSTAB">
+        <description>
+            <p>Starting at 3rd level, you are pragmatic and deadly in eliminating your foes. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet, or when an allied creature within 5 feet of the target is directly on the other side of a creature.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet, or when an allied creature within 5 feet of the target is directly on the other side of a creature.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME">
+    <element name="Killer's Method" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_KILLERS_METHOD">
         <description>
-            <p></p>
+            <p>Starting at 9th level, you have mastered one technique of your choice for approaching a target. Select one of the following benefits:</p>
+            <ul>
+                <li><strong>False Face.</strong> You gain proficiency (or expertise if you already have proficiency) with the disguise kit, and can assume a prepared disguise with the bonus action granted by Cunning Action.</li>
+                <li><strong>Blade in the Dark.</strong> You gain proficiency (or expertise if you already have proficiency) with the Stealth skill. You can attempt to hide even when you are only lightly obscured by dim light.</li>
+                <li><strong>Poisoner’s Path.</strong> You gain proficiency (or expertise if you already have proficiency) with the poisoner’s kit. During a long rest, you can create a long lasting poison for one or more weapons for free. Until the end of your next long rest your Sneak Attack damage with that weapon becomes Poison damage and creatures struck with it must make a Constitution saving throw with a DC of 8 + your Proficiency modifier + your Dexterity modifier or become Poisoned for one minute. Creatures poisoned this way make a new save at the end of each of their turns, ending the condition on success. Once a creature passes the save against this effect, it cannot suffer the Poisoned condition from it again for 24 hours.</li>
+            </ul>
+            <p class="indent">If you gain expertise in a skill you already have expertise in, you can instead select another skill or tool you have proficiency in to gain expertise in.</p>
+        </description>
+        <rules>
+            <select type="Archetype Feature" name="Killer's Method" supports="killers-method" />
+        </rules>
+    </element>
+    <element name="False Face" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_KILLERS_METHOD_FALSE_FACE">
+        <supports>killers-method</supports>
+        <description>
+            <p>You gain proficiency (or expertise if you already have proficiency) with the disguise kit, and can assume a prepared disguise with the bonus action granted by Cunning Action.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain proficiency (or expertise if you already have proficiency) with the disguise kit, and can assume a prepared disguise with the bonus action granted by Cunning Action.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+        </rules>
+    </element>
+    <element name="Blade in the Dark" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_KILLERS_METHOD_BLADE_IN_THE_DARK">
+        <supports>killers-method</supports>
+        <description>
+            <p>You gain proficiency (or expertise if you already have proficiency) with the Stealth skill. You can attempt to hide even when you are only lightly obscured by dim light.</p>
+        </description>
+        <sheet>
+            <description>You can attempt to hide even when you are only lightly obscured by dim light.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_STEALTH" />
+        </rules>
+    </element>
+    <element name="Poisoner's Path" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_KILLERS_METHOD_POISONERS_PATH">
+        <supports>killers-method</supports>
+        <description>
+            <p>You gain proficiency (or expertise if you already have proficiency) with the poisoner’s kit. During a long rest, you can create a long lasting poison for one or more weapons for free. Until the end of your next long rest your Sneak Attack damage with that weapon becomes Poison damage and creatures struck with it must make a Constitution saving throw with a DC of 8 + your Proficiency modifier + your Dexterity modifier or become Poisoned for one minute. Creatures poisoned this way make a new save at the end of each of their turns, ending the condition on success. Once a creature passes the save against this effect, it cannot suffer the Poisoned condition from it again for 24 hours.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency (or expertise if you already have proficiency) with the poisoner’s kit. During a long rest, you can create a long lasting poison for one or more weapons for free. Until the end of your next long rest your Sneak Attack damage with that weapon becomes Poison damage and creatures struck with it must make a Constitution saving throw with a DC of {{poisoners-path:dc}} or become Poisoned for one minute. Creatures poisoned this way make a new save at the end of each of their turns, ending the condition on success. Once a creature passes the save against this effect, it cannot suffer the Poisoned condition from it again for 24 hours.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+            <stat name="poisoners-path:dc" value="8" bonus="base" />
+            <stat name="poisoners-path:dc" value="proficiency" />
+            <stat name="poisoners-path:dc" value="dexterity:modifier" />
+        </rules>
+    </element>
+    <element name="Favored Approach" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FAVORED_APPROACH">
+        <description>
+            <p>Starting at 13th level, you hone your skills gaining a favored approach to dealing death. Select one of the following benefits:</p>
+            <ul>
+                <li><strong>Trusted Face.</strong> If you spend seven days establishing a fake identity for yourself or three hours studying another person to impersonate, you have advantage on any Charisma (Deception) check involving maintaining your disguise and identity.</li>
+                <li><strong>Swift Blade.</strong> When you roll initiative while Hidden from all hostile creatures rolling initiative, you gain advantage on the roll.</li>
+                <li><strong>Specialized Poisons.</strong> When you create a poison, you can designate one creature type (for example, Fiends). The damage of that poison ignores resistance or immunity that creature type may have to poison or the Poisoned condition.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Favored Approach" supports="favored-approach" />
+        </rules>
+    </element>
+    <element name="Trusted Face" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FAVORED_APPROACH_TRUSTED_FACE">
+        <supports>favored-approach</supports>
+        <description>
+            <p>If you spend seven days establishing a fake identity for yourself or three hours studying another person to impersonate, you have advantage on any Charisma (Deception) check involving maintaining your disguise and identity.</p>
+        </description>
+        <sheet>
+            <description>If you spend seven days establishing a fake identity for yourself or three hours studying another person to impersonate, you have advantage on any Charisma (Deception) check involving maintaining your disguise and identity.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME">
+    <element name="Swift Blade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FAVORED_APPROACH_SWIFT_BLADE">
+        <supports>favored-approach</supports>
         <description>
-            <p></p>
+            <p>When you roll initiative while Hidden from all hostile creatures rolling initiative, you gain advantage on the roll.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you roll initiative while Hidden from all hostile creatures rolling initiative, you gain advantage on the roll.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME">
+    <element name="Specialized Poisons" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FAVORED_APPROACH_SPECIALIZED_POISONS">
+        <supports>favored-approach</supports>
         <description>
-            <p></p>
+            <p>When you create a poison, you can designate one creature type (for example, Fiends). The damage of that poison ignores resistance or immunity that creature type may have to poison or the Poisoned condition.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you create a poison, you can designate one creature type (for example, Fiends). The damage of that poison ignores resistance or immunity that creature type may have to poison or the Poisoned condition.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_FEATURENAME">
+    <element name="Lethal Blow" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_ASSASSIN_LETHAL_BLOW">
         <description>
-            <p></p>
+            <p>Starting at 17th level, after you deal sneak attack damage to a creature, if the target's remaining hit points is less than your Rogue level, the target dies. You can forgo this when intentionally making nonlethal attacks.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>After you deal sneak attack damage to a creature, if the target's remaining hit points is less than {{level:rogue}}, the target dies. You can forgo this when intentionally making nonlethal attacks.</description>
         </sheet>
     </element>
 </elements>
