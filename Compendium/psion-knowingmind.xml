@@ -7,75 +7,107 @@
         </update>
     </info>
     <element name="Knowing Mind" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND">
-        <supports>Psionic Archetype</supports>
+        <supports>Psionic-Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" />
+            <p>A Knowing Mind is a psion that grasps that future as intuitively as the present, weaving together strings of casualty and fate in ways that would shatter the mind of a lesser mortal. They live one step ahead and use that advantage to the fullest, bending probability, manipulating fate, and bringing their plans to fruition without room for failure.</p>
+            <p class="indent">They are remarkable individuals whose clairvoyant abilities stem from a variety of sources—from a lineage of divine oracles, to a connection to beings from another temporal axis, to a mind that has somehow been flung into the future.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FOREWARNED" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_PRACTICED_PRESCIENCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_CLIMACTIC_MOMENT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_THREAD_OF_FATE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_WINDOW_OF_OPPORTUNITY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_MASTERMIND" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FOREWARNED" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_PRACTICED_PRESCIENCE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_CLIMACTIC_MOMENT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_THREAD_OF_FATE" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_WINDOW_OF_OPPORTUNITY" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_MASTERMIND" level="14" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME">
+    <element name="Forewarned" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FOREWARNED">
         <description>
-            <p></p>
+            <p>At 1st level, when you select this archetype, you begin to glimpse the future, granting the psionic discipline of Precognition.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION" />
+        </rules>
+    </element>
+    <element name="Practiced Prescience" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_PRACTICED_PRESCIENCE">
+        <description>
+            <p>Additionally at 1st level, gazing into the future with the Prescience feature of Precognition no longer requires your concentration.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Gazing into the future with the Prescience feature of Precognition no longer requires your concentration.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME">
+    <element name="Climactic Moment" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_CLIMACTIC_MOMENT">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, your ability to see and influence the future allows you to set things up to have even greater influence throughout the sequence of events, building up to a pivotal moment where exerting your foresight can provide the greatest impact.</p>
+            <p class="indent">Once per turn when you use Seeing empowered by 1 or psi points to look into the future while in initiative (or under a similar high stakes situation), you gain an Influence point. You can have a maximum number of Influence points equal to your Intelligence modifier.</p>
+            <p class="indent">When you start your turn with one or more Influence points, you can expend all of your Influence points as psi points to empower a psionic power. Influence points spent this way can exceed your psi point limit, but cannot be combined with psi points.</p>
+            <p class="indent">Any generated Influence Points are lost after 1 minute, or when no longer in combat (or a similar high stakes situation).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once per turn when you use Seeing empowered by 1 or psi points to look into the future while in initiative (or under a similar high stakes situation), you gain an Influence point. You can have a max of {{intelligence:modifier}} Influence points.
+            When you start your turn with one or more Influence points, you can expend all of your Influence points as psi points to empower a psionic power. Influence points spent this way can exceed your psi point limit, but cannot be combined with psi points.
+            Any generated Influence Points are lost after 1 minute, or when no longer in combat (or a similar high stakes situation).</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME">
+    <element name="Thread of Fate" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_THREAD_OF_FATE">
         <description>
-            <p></p>
+            <p>Starting at 6th level, you can begin to see the path you must take to bring your plans to fruition. When you start your turn with one or more Influence Points, you gain temporary hit points equal to twice your current Influence Points.</p>
+            <p class="indent">While you have temporary hit points from this feature, you can transfer these temporary hit points to another creature that is the target of one of your psionic abilities, or the beneficiary of your Seeing power.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you start your turn with one or more Influence Points, you gain temporary hit points equal to twice your current Influence Points.
+            While you have temporary hit points from this feature, you can transfer these temporary hit points to another creature that is the target of one of your psionic abilities, or the beneficiary of your Seeing power.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME">
+    <element name="Window of Opportunity" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_WINDOW_OF_OPPORTUNITY">
         <description>
-            <p></p>
+            <p>Starting at 10th level, you can see the flow of battle, giving time to exploit openings and opportunities. When a creature you can see misses you with an attack, you can use your reaction to make a weapon attack against that target or use a psionic power against them. When using a psionic power with this reaction, you cannot expend psi points to empower it, but can use Influence Points.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Reaction">
+            <description>When a creature you can see misses you with an attack, you can use your reaction to make a weapon attack against that target or use a psionic power against them. When using a psionic power with this reaction, you cannot expend psi points to empower it, but can use Influence Points.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME">
+    <element name="Mastermind" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_MASTERMIND">
         <description>
-            <p></p>
+            <p>Starting at 14th level, once per turn, when you use your Seeing power, you can select two beneficiaries of your power. Psi points spent are unique to each target affected (and not shared between them).</p>
+            <p class="indent">When using Glimpsed Future, you can still use Mastermind to target a second creature, but neither benefits from the bonus damage or damage reduction.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once per turn, when you use your Seeing power, you can select two beneficiaries of your power. Psi points spent are unique to each target affected (and not shared between them).
+            When using Glimpsed Future, you can still use Mastermind to target a second creature, but neither benefits from the bonus damage or damage reduction.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_FEATURENAME">
+    <element name="Knife of Fate" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_KNIFE_OF_FATE">
+        <supports>psionic-talent</supports>
+        <prerequisite>6th level Knowing Mind Psion</prerequisite>
+        <requirements>[level:psion:6],ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
         <description>
-            <p></p>
+            <p>While you have temporary hit points from Thread of Fate, when you hit a creature with an attack roll you can expend them to deal damage equal to half the temporary hit points expended (rounded down).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While you have temporary hit points from Thread of Fate, when you hit a creature with an attack roll you can expend them to deal damage equal to half the temporary hit points expended (rounded down).</description>
+        </sheet>
+    </element>
+    <element name="Plans Within Plans" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_PLANS_WITHIN_PLANS">
+        <supports>psionic-talent</supports>
+        <prerequisite>Knowing Mind Psion</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
+        <description>
+            <p>When you empower a psionic power that has an attack roll or saving throw, you regain half of the Influence Points powers spent (rounded up) if the attack misses or the target succeeds their saving throw.</p>
+        </description>
+        <sheet>
+            <description>When you empower a psionic power that has an attack roll or saving throw, you regain half of the Influence Points powers spent (rounded up) if the attack misses or the target succeeds their saving throw.</description>
         </sheet>
     </element>
 </elements>
