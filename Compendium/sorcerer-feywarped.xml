@@ -9,86 +9,117 @@
     <element name="Fey Warped" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SORCERER_FEYWARPED">
         <supports>Sorcerous Origin</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME1" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME5" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME6" />
+            <p>Your innate magic comes from the touch of the fey. Chaotic and varied, this can be a blessing, curse, or both. How directly this touch has effected your appearance and character can vary from quite a bit to not at all, but it grants powers tied to illusion, enchantment, and twisting reality.</p>
+            <p class="indent">It is more common in ancestries that have a clear fey origin, such as elves or fairies, but is known to occur among humans as well.</p>
+            <p class="indent">Though neither illusion or enchantment is inherently evil, few will be willing to trust sorcerers who have been obviously touched by such powers. Nonetheless, they can make powerful allies and entertaining companions.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEY_MAGIC" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEY_TRICKERY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_DRAMATIC_POWERS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_BITING_ILLUSIONS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEY_STEPS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_ILLUSORY_DOPPELGANAGERS" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME3" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME4" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME5" level="14" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME6" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEY_MAGIC" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEY_TRICKERY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_DRAMATIC_POWERS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_BITING_ILLUSIONS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEY_STEPS" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_ILLUSORY_DOPPELGANAGERS" level="18" />
         </rules>
     </element>
-    <element name="Featurename1" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME1">
+    <element name="Fey Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEY_MAGIC">
         <description>
-            <p></p>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Fey Origin Spells table. For each level of spells, you can select one of the two spells to learn. You learn the selected spell and it becomes a sorcerer spell for you, but it doesn’t count against your number of sorcerer spells known.</p>
             <table>
                 <thead>
                     <tr><td>Sorerer Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spell</td></tr>
-                <tr><td>3rd</td><td>spell</td></tr>
-                <tr><td>5th</td><td>cspell</td></tr>
-                <tr><td>7th</td><td>banspell</td></tr>
-                <tr><td>9th</td><td>haspell</td></tr>
+                <tr><td>1st</td><td>charm person, faerie fire</td></tr>
+                <tr><td>3rd</td><td>mirror image, misty step</td></tr>
+                <tr><td>5th</td><td>blink, hypnotic pattern</td></tr>
+                <tr><td>7th</td><td>confusion, greater invisibility</td></tr>
+                <tr><td>9th</td><td>dominate person, mislead</td></tr>
             </table>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <select type="Spell" name="Magic" level="1"  supports="ID_PHB_SPELL_|ID_PHB_SPELL_" spellcasting="Sorcerer" />
+            <select type="Spell" name="Fey Magic 1" level="1"  supports="ID_PHB_SPELL_CHARM_PERSON|ID_PHB_SPELL_FAERIE_FIRE" spellcasting="Sorcerer" prepared="true"/>
+            <select type="Spell" name="Fey Magic 2" level="3"  supports="ID_PHB_SPELL_MIRROR_IMAGE|ID_PHB_SPELL_MISTY_STEP" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Fey Magic 3" level="5"  supports="ID_PHB_SPELL_BLINK|ID_PHB_SPELL_HYPNOTIC_PATTERN" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Fey Magic 4" level="7"  supports="ID_PHB_SPELL_CONFUSION|ID_PHB_SPELL_GREATER_INVISIBILITY" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Fey Magic 5" level="9"  supports="ID_PHB_SPELL_DOMINATE_PERSON|ID_PHB_SPELL_MISLEAD" spellcasting="Sorcerer" prepared="true" />
         </rules>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME2">
+    <element name="Fey Trickery" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEY_TRICKERY">
         <description>
-            <p></p>
+            <p>You learn the minor illusion cantrip. It does not count against your cantrips known.</p>
+            <p class="indent">Additionally, you are adept at illusory tricks, gaining the ability to befuddle, trick and baffle people with your magic. As a bonus action, you can do any of the following:</p>
+            <ul>
+                <li><strong></strong>Minor Illusions. You can cast minor illusion.</li>
+                <li><strong></strong>Obscuring Tricks. Make a creature of your choice (including yourself) within 30 feet invisible or heavily obscured by an illusion until the start of its next turn.</li>
+                <li><strong></strong>Glamorous Presence. Gain advantage on a Deception, Intimidation, Performance, or Persuasion check, gaining a grander presence through your illusions.</li>
+            </ul>
+            <p class="indent">You can do this a number of times equal to your proficiency bonus, regaining all uses when you complete a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+            <description>As a bonus action, you can do any of the following:
+            Minor Illusions. You can cast minor illusion.
+            Obscuring Tricks. Make a creature of your choice (including yourself) within 30 feet invisible or heavily obscured by an illusion until the start of its next turn.
+            Glamorous Presence. Gain advantage on a Deception, Intimidation, Performance, or Persuasion check, gaining a grander presence through your illusions.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" spellcasting="Sorcerer" prepared="true" />
+        </rules>
+    </element>
+    <element name="Dramatic Powers" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_DRAMATIC_POWERS">
+        <description>
+            <p>Your magic gives you a flair that easily impresses others. You gain proficiency in your choice of persuasion, intimidation, deception, or performance. If you already proficiency in all options, you gain proficiency in one skill of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERFORMANCE" />
+        </rules>
+    </element>
+    <element name="Biting Illusions" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_BITING_ILLUSIONS">
+        <description>
+            <p>Starting at 6th level, once per turn on your turn when you roll damage with an illusion spell, you can add your Charisma modifier to the damage roll.</p>
+            <p class="indent">Additionally, once per turn when a creature interacts with one of your illusions you can choose deal psychic damage equal to your charisma modifier to them (such as destroying a mirror image, inspecting an a major image, or being bite by vicious hound). If they make a check or save to determine the reality of the illusion that has damage them that turn, it is made with disadvantage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once per turn on your turn when you roll damage with an illusion spell, you can add {{charisma:modifier}} to the damage roll.
+            Additionally, once per turn when a creature interacts with one of your illusions you can choose deal {{charisma:modifier}} psychic damage to them. If they make a check or save to determine the reality of the illusion that has damage them that turn, it is made with disadvantage.</description>
         </sheet>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME3">
+    <element name="Fey Steps" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEY_STEPS">
         <description>
-            <p></p>
+            <p>Starting at 14th level, when you spend sorcery points to empower a spell with metamagic, before or after you cast the spell, you can teleport up to 5 feet per sorcery point spent.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you spend sorcery points to empower a spell with metamagic, before or after you cast the spell, you can teleport up to 5 feet per sorcery point spent.</description>
         </sheet>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME4">
+    <element name="Illusory Doppelganagers" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_ILLUSORY_DOPPELGANAGERS">
         <description>
-            <p></p>
+            <p>At 18th level, as a bonus action you can create an illusory duplicate of yourself at a point within 30 feet. The duplicate’s AC equals 10 + your Dexterity modifier, and if targeted with an effect that forces a save, it uses your saving throws. If an attack hits a duplicate or it fails a saving throw that would cause it to take damage the duplicate is destroyed. It ignores all other damage and effects, but an effect that would otherwise cause it to take damage reveals it to be a duplicate. The duplicate mimics your action and is indistinguishable from you until you attack, cast a spell, or take damage. The duplicate looks real even to creatures with blindsight or truesight.</p>
+            <p class="indent">When you create the duplicate, you can expend 2 sorcery points to create an additional duplicate, creating up to 3 duplicates.</p>
+            <p class="indent">At the end of each of your turns while a duplicate exists, you can switch places with any active duplicate within 120 feet, leaving no trace of which one is real until you attack, cast a spell, or take damage.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest. You can use it again early by expending 2 sorcery points.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest" action="Bonus Action" >
+            <description>You can create an illusory duplicate of yourself at a point within 30 feet. The duplicate’s AC equals {{illusory-duplicate:ac}} and if targeted with an effect that forces a save, it uses your saving throws. If an attack hits a duplicate or it fails a saving throw that would cause it to take damage the duplicate is destroyed. It ignores all other damage and effects, but an effect that would otherwise cause it to take damage reveals it to be a duplicate. The duplicate mimics your action and is indistinguishable from you until you attack, cast a spell, or take damage. The duplicate looks real even to creatures with blindsight or truesight.
+            When you create the duplicate, you can expend 2 sorcery points to create an additional duplicate, creating up to 3 duplicates.
+            At the end of each of your turns while a duplicate exists, you can switch places with any active duplicate within 120 feet, leaving no trace of which one is real until you attack, cast a spell, or take damage.
+            You can use it again early by expending 2 sorcery points.</description>
         </sheet>
-    </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME5">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename6" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FEYWARPED_FEATURENAME6">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <rules>
+            <stat name="illusory-duplicate:ac" value="10" bonus="base" />
+            <stat name="illusory-duplicate:ac" value="dexterity:modifier" />
+        </rules>
     </element>
 </elements>
