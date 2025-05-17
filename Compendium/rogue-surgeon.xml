@@ -9,63 +9,94 @@
     <element name="Surgeon" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_ROGUE_SURGEON">
         <supports>Roguish Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" />
+            <p>These are Rogues that come from the bloodiest walk of life... that of a medic. Few Rogues have sliced open more creatures than a Surgeon, and they leverage their masterful understanding of anatomy to cut open and sew close in equal measure. They have seen everything an adventuring life has to offer—roper bites, dragon burns, bore holes in skulls—and turned that array of knowledge into a complete understanding of what a creature can survive... and what it can’t.</p>
+            <p class="indent">Surgeons will tend to exhibit some degree of education, be it academic or hands on. They have seen the best and worst of humanity and the battlefield. Sometimes they are selfless heroes that act as a bulwark against death, while other times they are cynical and jaded to carnage, falling to apathy or worse.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_MEDICS_EXPERTISE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_APPLIED_KNOWLEDGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_PATCH_UP" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_MEDICAL_MIRACLE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_CARVE_UP" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" level="9" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" level="13" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME" level="17" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_MEDICS_EXPERTISE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_APPLIED_KNOWLEDGE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_PATCH_UP" level="9" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_MEDICAL_MIRACLE" level="13" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_CARVE_UP" level="17" />
         </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME">
+    <element name="Medic's Expertise" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_MEDICS_EXPERTISE">
         <description>
-            <p></p>
+            <p>When you choose this archetype at 3rd level, you gain proficiency in the Medicine skill. If you already have proficiency in the Medicine skill, you gain expertise in the Medicine skill. If you already have expertise in the Medicine skill, you gain proficiency in another tool or skill of your choice.</p>
+            <p class="indent">Additionally, when you would make a Wisdom (Medicine) check, you can use your Intelligence in place of your Wisdom.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you would make a Wisdom (Medicine) check, you can use your Intelligence in place of your Wisdom.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_MEDICINE" />
+        </rules>
+    </element>
+    <element name="Applied Knowledge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_APPLIED_KNOWLEDGE">
+        <description>
+            <p>Starting at 3rd level, you can use the bonus action granted by your Cunning Action in new ways, gaining the following uses for the ability:</p>
+            <p><strong>Quick Treatment</strong></p>
+            <p>You can use your Cunning Action to use or administer a healing potion (any potion that restores hit points) or Healer’s Kit.</p>
+            <p><strong>Surgical Assessment</strong></p>
+            <p>You can assess the anatomical weaknesses of a creature that you can see. Make a Wisdom (Medicine) check against a creature you can see, with a DC equal to the target’s AC. On success, you learn the target’s AC, and can use your Sneak Attack against that target even if you don’t have advantage on the attack roll. Additionally, if you deal Sneak Attack damage with a dagger against the target, you can reroll a number of Sneak Attack damage dice up to your Intelligence or Wisdom modifier (your choice, minimum 1). You must use the new rolls when rerolling dice. This benefit lasts for 10 minutes against a target.</p>
+        </description>
+        <sheet>
+            <description>Cunning Action's bonus action can be used in additional ways:
+            Quick Treatment: You can use your Cunning Action to use or administer a healing potion (any potion that restores hit points) or Healer’s Kit.
+            Surgical Assessment: Make a Wisdom (Medicine) check against a creature you can see, with a DC equal to the target’s AC. On success, you learn the target’s AC, and can use your Sneak Attack against that target even if you don’t have advantage on the attack roll. Additionally, if you deal Sneak Attack damage with a dagger against the target, you can reroll a number of Sneak Attack damage dice up to your Intelligence or Wisdom modifier (your choice, minimum 1). You must use the new rolls when rerolling dice. This benefit lasts for 10 minutes against a target.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME">
+    <element name="Patch Up" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_PATCH_UP">
         <description>
-            <p></p>
+            <p>Starting at 9th level, as an action, you can bandage a creature to help them recover. They gain hit points equal to 1d8 + your proficiency bonus, and you can cure them of one of the following conditions: Blinded, Deafened, Paralyzed, or Poisoned. Once a creature gains this benefit, they cannot gain it again until they complete a short or long rest.</p>
+            <p class="indent">During a short rest, you can perform this action on up to six beasts or humanoids that have not already gained its benefit.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can bandage a creature to help them recover. They gain hit points equal to 1d8 + {{proficiency}}, and you can cure them of one of the following conditions: Blinded, Deafened, Paralyzed, or Poisoned. Once a creature gains this benefit, they cannot gain it again until they complete a short or long rest.
+            During a short rest, you can perform this action on up to six beasts or humanoids that have not already gained its benefit.</description>
         </sheet>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME">
+    <element name="Medical Miracle" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_MEDICAL_MIRACLE">
         <description>
-            <p></p>
+            <p>When you reach 13th level, as an action, you can perform a medical miracle to bring back a recently deceased creature that has died within the last minute. When you do, it is returned to life with 1 hit point + twice your proficiency modifier in temporary hit points. The creature gains 1 level of Exhaustion and cannot be revived by this feature again until it completes a long rest.</p>
+            <p class="indent">Additionally, your Patch Up feature can now cure the Stunned and Petrified conditions.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can perform a medical miracle to bring back a recently deceased creature that has died within the last minute. When you do, it is returned to life with 1 hit point + {{double-prof}} temporary hit points. The creature gains 1 level of Exhaustion and cannot be revived by this feature again until it completes a long rest.
+            Additionally, your Patch Up feature can now cure the Stunned and Petrified conditions.</description>
         </sheet>
+        <rules>
+            <stat name="double-prof" value="proficiency" bonus="base" />
+            <stat name="double-prof" value="proficiency" />
+        </rules>
     </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME">
+    <element name="Carve Up" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_CARVE_UP">
         <description>
-            <p></p>
+            <p>When you reach 17th level, you gain the ability to use your Surgical Assessment to determine how to disable a target most effectively.</p>
+            <p class="indent">Once per turn, when you make a melee weapon attack against a target under the effect of your Surgical Assessment, you can cripple it, inflicting one of the following conditions:</p>
+            <ul>
+                <li><strong></strong>Hamstring. You impede the creature’s locomotion, halving its movement speed.</li>
+                <li><strong></strong>Artery. You open a critical artery, causing it to take 4d4 piercing damage at the start of its turns.</li>
+                <li><strong></strong>Larynx. You attack the creature’s vocal apparatus. The target is muted and cannot speak or perform verbal components.</li>
+                <li><strong></strong>Eyes. You strike the creature’s eyes. The target is blinded.</li>
+            </ul>
+            <p>At the end of a crippled creature’s turns, it makes a Constitution saving throw (DC 8 + your Wisdom or Intelligence modifier + your proficiency bonus). On success, the effect of the crippling wound ends. Once a creature has saved against a wound type, they are immune to that wound type for 24 hours.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_ROGUE_SURGEON_FEATURENAME">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>Once per turn, when you make a melee weapon attack against a target under the effect of your Surgical Assessment, you can cripple it, inflicting one of the following conditions:
+            Hamstring. You impede the creature’s locomotion, halving its movement speed.
+            Artery. You open a critical artery, causing it to take 4d4 piercing damage at the start of its turns.
+            Larynx. You attack the creature’s vocal apparatus. The target is muted and cannot speak or perform verbal components.
+            Eyes. You strike the creature’s eyes. The target is blinded.
+            At the end of a crippled creature’s turns, it makes a Constitution saving throw (DC 8 + your Wisdom or Intelligence modifier + your proficiency bonus). On success, the effect of the crippling wound ends. Once a creature has saved against a wound type, they are immune to that wound type for 24 hours.</description>
         </sheet>
     </element>
 </elements>
