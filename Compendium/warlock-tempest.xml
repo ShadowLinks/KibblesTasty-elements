@@ -9,82 +9,152 @@
     <element name="The Tempest" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLOCK_TEMPEST">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>You have made pact with a tempestuous being, born of wind and rain: an ancient elemental, powerful storm giant, or perhaps a demigod of disagreeable weather. What they sought through you may vary, but the mere touch of their powers causes the storm winds to bend the knee.</p>
+            <p class="indent">Such powers tend to be far better at calling the chaotic power at their disposal than calming it, and many who ride the tempest will find the same is true for them, leaving destruction in their wake if they are not careful in how the use their power... if they even care about what remains in their wake.</p>
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_SPELLS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME5" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_BUILDING_STORM" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_ROLLING_THUNDER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_TEMPESTUOUS_BLASTS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_WHISPERING_WINDS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_EVERSTORM" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_SPELLS" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME3" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME4" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME5" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_BUILDING_STORM" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_ROLLING_THUNDER" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_TEMPESTUOUS_BLASTS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_WHISPERING_WINDS" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_EVERSTORM" level="14" />
         </rules>
     </element>
     <element name="Tempest Expanded Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_SPELLS">
         <description>
-            <p></p>
+            <p>The ancient entity of tempestuous power you’ve made a pact lets you choose from an expended list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
             <table>
                 <thead>
                     <tr><td>Spell Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>Aldricor’s elemental rebuke, elemental orb</td></tr>
-                <tr><td>2nd</td><td>alter self, elemental exhalation</td></tr>
-                <tr><td>3rd</td><td>meteor jump, wind wall</td></tr>
-                <tr><td>4th</td><td>fire shield, secret chest</td></tr>
-                <tr><td>5th</td><td>control wind, summon tempest</td></tr>
+                <tr><td>1st</td><td>feather fall, thunderwave</td></tr>
+                <tr><td>2nd</td><td>dust cyclone, levitate</td></tr>
+                <tr><td>3rd</td><td>lightning bolt, vortex blast</td></tr>
+                <tr><td>4th</td><td>aero barrage, ice storm</td></tr>
+                <tr><td>5th</td><td>sky burst, tornado</td></tr>
             </table>
         </description>
         <sheet display="false" />
         <spellcasting name="Warlock" extend="true">
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
+            <extend>ID_PHB_SPELL_FEATHER_FALL</extend>
+            <extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+            <extend>ID_KTH_COLAL_SPELL_DUST_CYCLONE</extend>
+            <extend>ID_PHB_SPELL_LEVITATE</extend>
+            <extend>ID_PHB_SPELL_LIGHTNING_BOLT</extend>
+            <extend>ID_KTH_COLAL_SPELL_VORTEX_BLAST</extend>
+            <extend>ID_KTH_COLAL_SPELL_AERO_BARRAGE</extend>
+            <extend>ID_PHB_SPELL_ICE_STORM</extend>
+            <extend>ID_KTH_COLAL_SPELL_SKY_BURST</extend>
+            <extend>ID_KTH_COLAL_SPELL_TORNADO</extend>
         </spellcasting>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME2">
+    <element name="Building Storm" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_BUILDING_STORM">
         <description>
-            <p></p>
+            <p>Starting at 1st level, when you cast a warlock spell of 1st level or higher using a Pact Magic spell slot on your turn, a storm begins to brew around you. The storm gains storm levels based equal to the level of the spell slot used. If you cast a spell while the storm is active, the storm level is increased by the level of the spell slot used (up to a maximum equal to your Charisma ability modifier).</p>
+            <p class="indent">While a storm is active around you, you gain the following abilities based on how powerful the storm is:</p>
+            <table>
+                <thead>
+                    <tr><td>Storm Level</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>1</td><td>You can cast manipulate wind as a bonus action.</td></tr>
+                <tr><td>2</td><td>You can use your reaction to impose disadvantage on a ranged weapon attack made against a target within 15 feet of you.</td></tr>
+                <tr><td>3</td><td>You gain a flying speed of 15 feet, though cannot fly more than 15 feet above the ground with this flying speed.</td></tr>
+                <tr><td>4</td><td>If a creature ends their turn within 15 feet of you or strikes you with a melee attack, you can use your reaction to deal 1d8 lightning damage to them.</td></tr>
+                <tr><td>5</td><td>You gain flying speed equal to your movement speed and are not longer restricted in how you can fly.</td></tr>
+            </table>
+            <p class="indent">The storm loses 1 level each time you end your turn without casting a 1st level or higher spell. You can prevent this by concentrating on maintaining the storm (as if it were a spell) starting from any action that increases the storm’s level. You can maintain this concentration for up to 1 minute.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you cast a warlock spell of 1st level or higher using a Pact Magic spell slot on your turn, a storm begins to brew around you. The storm gains storm levels based equal to the level of the spell slot used. If you cast a spell while the storm is active, the storm level is increased by the level of the spell slot used up to a max of {{charisma:modifier}}.
+            While a storm is active around you, you gain the following abilities based on how powerful the storm is:
+            1 You can cast manipulate wind as a bonus action.
+            2 You can use your reaction to impose disadvantage on a ranged weapon attack made against a target within 15 feet of you.
+            3 You gain a flying speed of 15 feet, though cannot fly more than 15 feet above the ground with this flying speed.
+            4 If a creature ends their turn within 15 feet of you or strikes you with a melee attack, you can use your reaction to deal 1d8 lightning damage to them.
+            5 You gain flying speed equal to your movement speed and are not longer restricted in how you can fly.
+            The storm loses 1 level each time you end your turn without casting a 1st level or higher spell. You can prevent this by concentrating on maintaining the storm (as if it were a spell) starting from any action that increases the storm’s level. You can maintain this concentration for up to 1 minute.</description>
         </sheet>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME3">
+    <element name="Rolling Thunder" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_ROLLING_THUNDER">
         <description>
-            <p></p>
+            <p>Starting at 6th level, you learn the spell call lightning. It is a Warlock spell for you, but does not count against your spells known.</p>
+            <p class="indent">Additionally, while you have a storm level of 1 or higher, you can use your action to conjure bolts of lightning as per the call lightning spell, treating your Building Storm as the storm cloud (even if you are indoors). If your storm level is 2 or higher, you are considered under “stormy conditions” as per the spell. If you cast call lightning expending a Pact Magic slot, your storm level does not decrease while concentrating on it.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While you have a storm level of 1 or higher, you can use your action to conjure bolts of lightning as per the call lightning spell, treating your Building Storm as the storm cloud (even if you are indoors). If your storm level is 2 or higher, you are considered under “stormy conditions” as per the spell. If you cast call lightning expending a Pact Magic slot, your storm level does not decrease while concentrating on it.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" spellcasting="Warlock" prepared="true" />
+        </rules>
+    </element>
+    <element name="Tempestuous Blasts" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_TEMPESTUOUS_BLASTS">
+        <description>
+            <p>Additionally at 6th level, when you cast eldritch blast you can choose to replace the damage type with lightning or thunder damage.</p>
+        </description>
+        <sheet>
+            <description>When you cast eldritch blast you can choose to replace the damage type with lightning or thunder damage.</description>
         </sheet>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME4">
+    <element name="Whispering Winds" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_WHISPERING_WINDS">
         <description>
-            <p></p>
+            <p>Starting at 10th level, you can hear a whisper on the winds that tells you where they go and what they do. You can predict the weather accurately up to 8 hours away, and know if any weather effect is natural or magical in nature.</p>
+            <p class="indent">Additionally, you may hear other things on the winds by way of what they hear; you can cast scrying without expending a spell slot or requiring any verbal or material components, but when cast in this way, your sensor can only hear and not see. A target gets a −5 penalty to the save if they are in a place open to the wind (such as outdoors), or a +5 bonus to the save if they are in a place that the wind cannot reach (such as caves or indoors).</p>
+            <p class="indent">Once you cast scrying in this way, you cannot cast it again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can predict the weather accurately up to 8 hours away, and know if any weather effect is natural or magical in nature.
+            Additionally, you may hear other things on the winds by way of what they hear; you can cast scrying without expending a spell slot or requiring any verbal or material components, but when cast in this way, your sensor can only hear and not see. A target gets a −5 penalty to the save if they are in a place open to the wind (such as outdoors), or a +5 bonus to the save if they are in a place that the wind cannot reach (such as caves or indoors).
+            </description>
         </sheet>
     </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_FEATURENAME5">
+    <element name="Everstorm" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_TEMPEST_EVERSTORM">
         <description>
-            <p></p>
+            <p>Starting at 14th level, the storm level of your Building Storm no longer decreases at the end of your turn. You can end the effect of your storm as an action. You can spend an action to start building a storm around you, or increase the storm level by one if you already have a storm.</p>
+            <p class="indent">While the Storm Level is 1 or more, you can cast spells feather fall and levitate without expending spell slots as long as they are targeting creatures that are within 15 feet of you within the effect of the storm.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The storm level of your Building Storm no longer decreases at the end of your turn. You can end the effect of your storm as an action. You can spend an action to start building a storm around you, or increase the storm level by one if you already have a storm.
+            While the Storm Level is 1 or more, you can cast spells feather fall and levitate without expending spell slots as long as they are targeting creatures that are within 15 feet of you within the effect of the storm.</description>
         </sheet>
+    </element>
+    
+    <element name="Stormblessed" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_STORMBLESSED" >
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Tempest patron</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARLOCK_TEMPEST</requirements>
+        <description>
+            <p>You gain resistance to lightning and thunder damage. While in a natural storm, you gain the benefits of a bless spell.</p>
+        </description>
+        <sheet>
+            <description>While in a natural storm, you gain the benefits of a bless spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+        </rules>
+    </element>
+    <element name="Stormcaller" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_STORMCALLER" >
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>15th level, Tempest patron</prerequisite>
+        <requirements>[level:warlock:15],ID_KTH_COLAL_ARCHETYPE_WARLOCK_TEMPEST</requirements>
+        <description>
+            <p>You learn the spell control weather and can cast it without expending a spell slot. When you cast it in this way, and change the Precipitation or Wind, you can only increase the stage.</p>
+        </description>
+        <sheet>
+            <description>You learn the spell control weather and can cast it without expending a spell slot. When you cast it in this way, and change the Precipitation or Wind, you can only increase the stage.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WEATHER" spellcasting="Warlock" prepared="true" />
+        </rules>
     </element>
 </elements>
