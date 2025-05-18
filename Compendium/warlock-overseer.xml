@@ -9,82 +9,134 @@
     <element name="The Overseer" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLOCK_OVERSEER">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p></p>
+            <p>You have made a pact with an all seeing being of the outer planes: an infamous creature whose very name is forbidden from being put to text by almighty coastal wizards, most known for its all seeing eyes, great paranoia, and reality warping dreams. The nature of your pact may be down to madness (yours, its, or both), or working toward some greater scheme of such brilliance that lesser minds cannot hope to comprehend.</p>
             <p class="indent"></p>
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_SPELLS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME5" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_OVERSEERS_GAZE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_LINGERING_GAZE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_PATRONS_PARANOIA" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_SUPPRESSORS_SIGHT" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_SPELLS" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME3" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME4" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME5" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_OVERSEERS_GAZE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_LINGERING_GAZE" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_PATRONS_PARANOIA" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_SUPPRESSORS_SIGHT" level="14" />
         </rules>
     </element>
     <element name="Overseer Expanded Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_SPELLS">
         <description>
-            <p></p>
+            <p>The Overseer lets you choose from an expanded list of spells when you learn a Warlock spell. The following spells are added to the Warlock spell list for you.</p>
             <table>
                 <thead>
                     <tr><td>Spell Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>Aldricor’s elemental rebuke, elemental orb</td></tr>
-                <tr><td>2nd</td><td>alter self, elemental exhalation</td></tr>
-                <tr><td>3rd</td><td>meteor jump, wind wall</td></tr>
-                <tr><td>4th</td><td>fire shield, secret chest</td></tr>
-                <tr><td>5th</td><td>control wind, summon overseer</td></tr>
+                <tr><td>1st</td><td>sleep, tranquil moment</td></tr>
+                <tr><td>2nd</td><td>blindness/deafness, see invisibility</td></tr>
+                <tr><td>3rd</td><td>clairvoyance, slow</td></tr>
+                <tr><td>4th</td><td>arcane eye, fabricate</td></tr>
+                <tr><td>5th</td><td>creation, telekinesis</td></tr>
             </table>
         </description>
         <sheet display="false" />
         <spellcasting name="Warlock" extend="true">
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
+            <extend>ID_PHB_SPELL_SLEEP</extend>
+            <extend>ID_KTH_COLAL_SPELL_TRANQUIL_MOMENT</extend>
+            <extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+            <extend>ID_PHB_SPELL_SEE_INVISIBILITY</extend>
+            <extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+            <extend>ID_PHB_SPELL_SLOW</extend>
+            <extend>ID_PHB_SPELL_ARCANE_EYE</extend>
+            <extend>ID_PHB_SPELL_FABRICATE</extend>
+            <extend>ID_PHB_SPELL_CREATION</extend>
+            <extend>ID_PHB_SPELL_TELEKINESIS</extend>
         </spellcasting>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME2">
+    <element name="Overseer's Gaze" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_OVERSEERS_GAZE">
         <description>
-            <p></p>
+            <p>Starting at 1st level, as a bonus action, you can summon a spectral eye in your space or on your body that immediately fires one ray at a creature of your choice within 120 feet of you, rolling on the Eye Ray Effect table below after choosing the target, after which the spectral eye fades away.</p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>1. Fear Ray</td><td>The targeted creature must make a Wisdom saving throw or become frightened of you until the start of your next turn.</td></tr>
+                <tr><td>2. Telekinetic Ray</td><td>The target creature must make a Strength saving throw or be moved 10 feet in a direction of your choice.</td></tr>
+                <tr><td>3. Slowing Ray</td><td>The target’s movement speed is halved until the start of your next turn.</td></tr>
+                <tr><td>4. Petrification Ray</td><td>The target must succeed a Constitution saving throw or be affected by the slow spell until the start of your next turn.</td></tr>
+                <tr><td>5. Enervation Ray</td><td>The target must succeed a Constitution saving throw or take 1d8 + your Charisma modifier necrotic damage.</td></tr>
+                <tr><td>6. Disintegration Ray</td><td>The target must succeed a Constitution saving throw or take 1d10 + your Charisma modifier force damage.</td></tr>
+            </table>
+            <p class="indent">You can do this a number of times equal to your Proficiency bonus, regaining all uses on a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>As a bonus action, you can summon a spectral eye in your space or on your body that immediately fires one ray at a creature of your choice within 120 feet of you, rolling on the Eye Ray Effect table below after choosing the target, after which the spectral eye fades away.
+            1 The targeted creature must make a Wisdom saving throw or become frightened of you until the start of your next turn.
+            2 The target creature must make a Strength saving throw or be moved 10 feet in a direction of your choice.
+            3 The target’s movement speed is halved until the start of your next turn.
+            4 The target must succeed a Constitution saving throw or be affected by the slow spell until the start of your next turn.
+            5 The target must succeed a Constitution saving throw or take 1d8 + {{charisma:modifier}} necrotic damage.
+            6 The target must succeed a Constitution saving throw or take 1d10 + {{charisma:modifier}} force damage.</description>
         </sheet>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME3">
+    <element name="Lingering Gaze" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_LINGERING_GAZE">
         <description>
-            <p></p>
+            <p>At 6th level, when you invoke your Overseer’s Gaze, the spectral eye lasts for 1 minute before fading away, and you use your bonus action on each of turns to cause it to fire again, rolling on the table anew. Once during the duration of each eye, you can pick the effect it fires instead of rolling. The spectral eye moves with you and is always in your space.</p>
+            <p class="indent">While you have the spectral eye with you, have advantage on Wisdom (Perception) checks and can perform the Search action as a bonus action (instead of firing an eye ray).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>hen you invoke your Overseer’s Gaze, the spectral eye lasts for 1 minute before fading away, and you use your bonus action on each of turns to cause it to fire again, rolling on the table anew. Once during the duration of each eye, you can pick the effect it fires instead of rolling. The spectral eye moves with you and is always in your space.
+            While you have the spectral eye with you, have advantage on Wisdom (Perception) checks and can perform the Search action as a bonus action (instead of firing an eye ray).</description>
         </sheet>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME4">
+    <element name="Patron's Paranoia" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_PATRONS_PARANOIA">
         <description>
-            <p></p>
+            <p>Beginning at 10th level, your patrons paranoia affects and benefits you with constant vigilance. You can no longer be surprised, benefit from your normal passive perception even while sleeping, and can add your Charisma modifier to your initiative rolls.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can no longer be surprised, benefit from your normal passive perception even while sleeping, and can add {{charisma:modifier}} to your initiative rolls.</description>
+        </sheet>
+        <rules>
+            <stat name="initiative" value="charisma:modifier" />
+        </rules>
+    </element>
+    <element name="Suppressor's Sight" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_SUPPRESSORS_SIGHT">
+        <description>
+            <p>Starting at 14th level, you can conjure the full power of your patron’s magic suppressing eye. As an action, you manifest a giant spectral eye in your space which creates an antimagic field (as per the spell) in a 150 foot cone until the start of your next turn. This eye does not move from the space it was manifested in.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you manifest a giant spectral eye in your space which creates an antimagic field (as per the spell) in a 150 foot cone until the start of your next turn. This eye does not move from the space it was manifested in.
+            </description>
         </sheet>
     </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OVERSEER_FEATURENAME5">
+    <element name="Controlled Chaos" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_CONTROLLED_CHAOS" >
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Overseer Patron</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARLOCK_OVERSEER</requirements>
         <description>
-            <p></p>
+            <p>When you roll on the Eye Ray Effects table, you can roll twice and choose between the two effects. If you roll the same value on both dice, you can pick any effect from the table.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you roll on the Eye Ray Effects table, you can roll twice and choose between the two effects. If you roll the same value on both dice, you can pick any effect from the table.</description>
         </sheet>
+    </element>
+    <element name="Overseer's Sight" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_OVERSEERS_SIGHT" >
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>15th level, Overseer patron</prerequisite>
+        <requirements>[level:warlock:15],ID_KTH_COLAL_ARCHETYPE_WARLOCK_OVERSEER</requirements>
+        <description>
+            <p>You gain truesight with a range of 30 feet. This range is doubled while you have a spectral eye manifested from Lingering Gaze.</p>
+        </description>
+        <sheet>
+            <description>You gain truesight with a range of 30 feet. This range is doubled while you have a spectral eye manifested from Lingering Gaze.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_TRUESIGHT" />
+            <stat name="truesight:range" value="30" bonus="base" />
+        </rules>
     </element>
 </elements>
