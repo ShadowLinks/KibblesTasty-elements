@@ -9,23 +9,25 @@
     <element name="The Ooze" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLOCK_OOZE">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p></p>
+            <p>You have made a pact with a powerful ooze, gaining the ability to summon and control the primordial essence of slime and ooze. As you gain power, you become more like your patron: your body taking on slimy and gelatinous features.</p>
             <p class="indent"></p>
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_SPELLS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME5" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_ADAPTIVE_ABSORBTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FLOWING_FORM" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_CORROSIVE_CONDUIT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_ACIDIC_ADAPTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_DIVISION_ON_DEATH" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_SPELLS" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME3" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME4" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME5" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_ADAPTIVE_ABSORBTION" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FLOWING_FORM" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_CORROSIVE_CONDUIT" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_ACIDIC_ADAPTION" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_DIVISION_ON_DEATH" level="14" />
         </rules>
     </element>
     <element name="Ooze Expanded Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_SPELLS">
@@ -35,56 +37,109 @@
                 <thead>
                     <tr><td>Spell Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>Aldricor’s elemental rebuke, elemental orb</td></tr>
-                <tr><td>2nd</td><td>alter self, elemental exhalation</td></tr>
-                <tr><td>3rd</td><td>meteor jump, wind wall</td></tr>
-                <tr><td>4th</td><td>fire shield, secret chest</td></tr>
-                <tr><td>5th</td><td>control wind, summon ooze</td></tr>
+                <tr><td>1st</td><td>grease, summon ooze</td></tr>
+                <tr><td>2nd</td><td>acid arrow, alter self</td></tr>
+                <tr><td>3rd</td><td>erode, protection from energy</td></tr>
+                <tr><td>4th</td><td>black tentacles, freedom of movement</td></tr>
+                <tr><td>5th</td><td>acid rain, contagion</td></tr>
             </table>
         </description>
         <sheet display="false" />
         <spellcasting name="Warlock" extend="true">
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
+            <extend>ID_PHB_SPELL_GREASE</extend>
+            <extend>ID_KTH_COLAL_SPELL_SUMMON_OOZE</extend>
+            <extend>ID_PHB_SPELL_MELFS_ACID_ARROW</extend>
+            <extend>ID_PHB_SPELL_ALTER_SELF</extend>
+            <extend>ID_KTH_COLAL_SPELL_ERODE</extend>
+            <extend>ID_PHB_SPELL_PROTECTION_FROM_ENERGY</extend>
+            <extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+            <extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+            <extend>ID_KTH_COLAL_SPELL_ACID_RAIN</extend>
+            <extend>ID_PHB_SPELL_CONTAGION</extend>
         </spellcasting>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME2">
+    <element name="Adaptive Absorbtion" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_ADAPTIVE_ABSORBTION">
         <description>
-            <p></p>
+            <p>Starting at 1st level when you make the pact, as a reaction to taking damage you can manipulate your body gaining resistance to the damage type of the attack until the start of your next turn. If the trigger of the reaction is taking damage from a melee weapon attack, you can force the attacker to make a Strength saving throw against your spell save DC. On failure, their weapon becomes stuck, forcing them to either release it, or become grappled by you (their choice). As an action they can repeat the saving throw to retrieve a stuck weapon. You can release stuck weapons at any time (no action required).</p>
+            <p class="indent">You can use this feature a number of times equal to you proficiency bonus, regaining all uses when you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>s a reaction to taking damage you can manipulate your body gaining resistance to the damage type of the attack until the start of your next turn. If the trigger of the reaction is taking damage from a melee weapon attack, you can force the attacker to make a Strength saving throw against your spell save DC. On failure, their weapon becomes stuck, forcing them to either release it, or become grappled by you (their choice). As an action they can repeat the saving throw to retrieve a stuck weapon. You can release stuck weapons at any time (no action required).</description>
         </sheet>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME3">
+    <element name="Flowing Form" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FLOWING_FORM">
         <description>
-            <p></p>
+            <p>At 1st level, as a bonus action you can briefly completely assume a form akin to your patron. Until the start of your next turn, your body and every object you are wearing and carrying becomes elastic and amorphous, allowing you to pass through gaps as narrow as one inch and granting immunity to the grappled and restrained conditions (freeing you if you are currently affected by them).</p>
+            <p class="indent">Once you do this, you cannot do so again until you complete a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>As a bonus action you can briefly completely assume a form akin to your patron. Until the start of your next turn, your body and every object you are wearing and carrying becomes elastic and amorphous, allowing you to pass through gaps as narrow as one inch and granting immunity to the grappled and restrained conditions (freeing you if you are currently affected by them).</description>
         </sheet>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME4">
+    <element name="Corrosive Conduit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_CORROSIVE_CONDUIT">
         <description>
-            <p></p>
+            <p>Starting at 6th level, you can easily channel the melting powers of your patron. You have resistance to acid damage, and when you cast a spell that deals acid damage, you can add your Charisma modifier to one damage roll of that spell.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you cast a spell that deals acid damage, you can add {{charisma:modifier}} to one damage roll of that spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Acidic Adaption" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_ACIDIC_ADAPTION">
+        <description>
+            <p>Starting at 10th level, your resistance to acid damage evolves to immunity to acid damage. Additionally, when you use Adaptive Absorption against a melee weapon attack, the triggering attacker takes 3d6 acid damage.</p>
+        </description>
+        <sheet>
+            <description>hen you use Adaptive Absorption against a melee weapon attack, the triggering attacker takes 3d6 acid damage.</description>
+        </sheet>
+        <rules>            
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" />
+        </rules>
+    </element>
+    <element name="Division on Death" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_DIVISION_ON_DEATH">
+        <description>
+            <p>Starting at 14th level, when you would drop to 0 hit points, you can instead explode into drops of ooze (no action required). All creatures of your choice within 10 feet of you must make a Dexterity saving throw, or take 3d6 + your Charisma modifier acid damage, after which you leave behind a number of small acidic blobs equal to your Charisma modifier. Each one has an AC of 8, and 10 hit points, each placed in the closest available space to where to where you were before dividing. The blobs are creatures. They automatically fail all strength and dexterity saving throws, but use your statistics for other saving throws.</p>
+            <p class="indent">At the start of your next turn, all remaining blobs combine to reform your body, granting you hit points equal to their combined hit points. If all of them were destroyed, you reform at 0 hit points.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you would drop to 0 hit points, you can instead explode into drops of ooze (no action required). All creatures of your choice within 10 feet of you must make a Dexterity saving throw, or take 3d6 + {{charisma:modifier}} acid damage, after which you leave behind {{charisma:modifier}} small acidic blobs. Each one has an AC of 8, and 10 hit points, each placed in the closest available space to where to where you were before dividing. The blobs are creatures. They automatically fail all strength and dexterity saving throws, but use your statistics for other saving throws.
+            At the start of your next turn, all remaining blobs combine to reform your body, granting you hit points equal to their combined hit points. If all of them were destroyed, you reform at 0 hit points.</description>
         </sheet>
     </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_OOZE_FEATURENAME5">
+    <element name="Corrosive Consumption" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_CORROSIVE_CONSUMPTION" >
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Ooze patron</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARLOCK_OOZE</requirements>
         <description>
-            <p></p>
+            <p>You gain the ability to subsist off of any organic matter, and cannot become poisoned by things you consume.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain the ability to subsist off of any organic matter, and cannot become poisoned by things you consume.</description>
+        </sheet>
+    </element>
+    <element name="Melting Mimicry" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_MELTING_MIMICRY" >
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Ooze patron</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARLOCK_OOZE</requirements>
+        <description>
+            <p>You can absorb the corpse of a Medium or smaller creature, erasing all evidence of it. When you do so, you gain advantage on Charisma (Deception) checks to act to mimic that creature, and can perfectly recreate their features when disguising yourself as them with magic (such as alter self). At your DM’s discretion, you may be able to absorb limited memories or insights into the creature if it was recently deceased (potentially learning its name, minor insights into its final experiences, etc.).</p>
+        </description>
+        <sheet>
+            <description>You can absorb the corpse of a Medium or smaller creature, erasing all evidence of it. When you do so, you gain advantage on Charisma (Deception) checks to act to mimic that creature, and can perfectly recreate their features when disguising yourself as them with magic (such as alter self). At your DM’s discretion, you may be able to absorb limited memories or insights into the creature if it was recently deceased (potentially learning its name, minor insights into its final experiences, etc.).</description>
+        </sheet>
+    </element>
+    <element name="Pseudopod Whip" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_PSEUDOPOD_WHIP" >
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Ooze patron, Pact of the Blade</prerequisite>
+        <requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE,ID_KTH_COLAL_ARCHETYPE_WARLOCK_OOZE</requirements>
+        <description>
+            <p>You can create a natural weapon taking the form of an acidic whip as your pact weapon. It has the reach and finesse properties, and deals 2d4 acid damage on hit. You can consume a weapon with a bonus to attack and damage rolls, destroying it and granting your acidic whip the bonus to attack and damage rolls of the consumed weapon (this cannot be used on cursed items, artifacts, or sentient items). This weapon counts as a whip for the purposes of weapon interactions (such as feats). At your DM’s discretion, it may be able to absorb other properties from absorbed magical weapons.</p>
+        </description>
+        <sheet>
+            <description>You can create a natural weapon taking the form of an acidic whip as your pact weapon. It has the reach and finesse properties, and deals 2d4 acid damage on hit. You can consume a weapon with a bonus to attack and damage rolls, destroying it and granting your acidic whip the bonus to attack and damage rolls of the consumed weapon (this cannot be used on cursed items, artifacts, or sentient items). This weapon counts as a whip for the purposes of weapon interactions (such as feats). At your DM’s discretion, it may be able to absorb other properties from absorbed magical weapons.</description>
         </sheet>
     </element>
 </elements>
