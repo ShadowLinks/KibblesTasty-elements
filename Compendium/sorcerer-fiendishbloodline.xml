@@ -9,86 +9,126 @@
     <element name="Fiendish Bloodline" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SORCERER_FIENDISHBLOODLINE">
         <supports>Sorcerous Origin</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME1" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME5" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME6" />
+            <p>Your innate magic comes from a bloodline tainted by fiendish influence of the lower planes. How directly this blood is inherited varies wildly. Perhaps your lineage includes a Warlock that has made some infernal pact, or you may even have a fiend in your family tree. Such blood lines can express themselves more strongly throughout generations in unpredictable ways. Sometimes it is merely the product of some sort of corruption, perhaps before you were even born.</p>
+            <p class="indent">The influence is most often seen in races that have obvious fiendish heritage, such as tieflings, but it is not inherently tied to them.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FIENDISH_LEGACY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_TOUCH_OF_DAMNATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_EMBRACED_HERITAGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_SOUL_SIPHON" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_EYE_OF_DESTRUCTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_UNLEASHED_HERITAGE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME3" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME4" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME5" level="14" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME6" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FIENDISH_LEGACY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_TOUCH_OF_DAMNATION" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_EMBRACED_HERITAGE" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_SOUL_SIPHON" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_EYE_OF_DESTRUCTION" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_UNLEASHED_HERITAGE" level="18" />
         </rules>
     </element>
-    <element name="Featurename1" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME1">
+    <element name="Fiend Origin Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_SPELLS">
         <description>
-            <p></p>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Fiend Origin Spells table. For each level of spells, you can select one of the two spells to learn. You learn the selected spell and it becomes a sorcerer spell for you, but it doesn’t count against your number of sorcerer spells known.</p>
             <table>
                 <thead>
                     <tr><td>Sorerer Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spell</td></tr>
-                <tr><td>3rd</td><td>spell</td></tr>
-                <tr><td>5th</td><td>cspell</td></tr>
-                <tr><td>7th</td><td>banspell</td></tr>
-                <tr><td>9th</td><td>haspell</td></tr>
+                <tr><td>1st</td><td>burning hands, hellish rebuke</td></tr>
+                <tr><td>3rd</td><td>darkness, infernal shackles</td></tr>
+                <tr><td>5th</td><td>fireball, stinking cloud</td></tr>
+                <tr><td>7th</td><td>eron garden, wall of fire</td></tr>
+                <tr><td>9th</td><td>insect plague, pyroclastic lance</td></tr>
             </table>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <select type="Spell" name="Magic" level="1"  supports="ID_PHB_SPELL_|ID_PHB_SPELL_" spellcasting="Sorcerer" />
+            <select type="Spell" name="Fiend Origin Spell 1" level="1"  supports="ID_PHB_SPELL_BURNING_HANDS|ID_PHB_SPELL_HELLISH_REBUKE" spellcasting="Sorcerer"  prepared="true"/>
+            <select type="Spell" name="Fiend Origin Spell 2" level="3"  supports="ID_PHB_SPELL_DARKNESS|ID_KTH_COLAL_SPELL_INFERNAL_SHACKLES" spellcasting="Sorcerer"  prepared="true"/>
+            <select type="Spell" name="Fiend Origin Spell 3" level="5"  supports="ID_PHB_SPELL_FIREBALL|ID_PHB_SPELL_STINKING_CLOUD" spellcasting="Sorcerer"  prepared="true"/>
+            <select type="Spell" name="Fiend Origin Spell 4" level="7"  supports="ID_KTH_COLAL_SPELL_IRON_GARDEN|ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Sorcerer"  prepared="true"/>
+            <select type="Spell" name="Fiend Origin Spell 5" level="9"  supports="ID_PHB_SPELL_INSECT_PLAGUE|ID_KTH_COLAL_SPELL_PYROCLASTIC_LANCE" spellcasting="Sorcerer"  prepared="true"/>
         </rules>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME2">
+    <element name="Fiendish Legacy" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FIENDISH_LEGACY">
         <description>
-            <p></p>
+            <p>At 1st level, you learn Infernal or Abyssal. This choice is most often tied to the origin of your fiendish powers.</p>
+            <p class="indent">Additionally, when your Spellcasting feature lets you learn a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the warlock spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Language" name="Language, Fiendish Legacy" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
+        </rules>
+        <spellcasting name="Sorcerer" extend="true">
+            <extend>Warlock</extend>
+        </spellcasting>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME3">
+    <element name="Touch of Damnation" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_TOUCH_OF_DAMNATION">
         <description>
-            <p></p>
+            <p>influence you can focus to weaken those that stand against you. As a reaction to a creature you can see within 30 feet making an attack roll or saving throw, you can bestow misfortune on them, rolling 1d6 and subtracting it from the total, possibly changing the outcome.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest" action="Reaction">
+            <description>As a reaction to a creature you can see within 30 feet making an attack roll or saving throw, you can bestow misfortune on them, rolling 1d6 and subtracting it from the total, possibly changing the outcome.</description>
         </sheet>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME4">
+    <element name="Embraced Heritage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_EMBRACED_HERITAGE">
         <description>
-            <p></p>
+            <p>Starting at 6th level, when drawing upon the power of your blood, you can embrace the dark power the courses through it to briefly enhance your fiendish traits. Once on each of your turns when you spend one or more sorcery points, you can gain one of the following benefits for a number of rounds equal to 1 + the number of sorcery points spent (ending at the start of your turn after the number of rounds).</p>
+            <ul>
+                <li><strong>Blood of the Fiend.</strong> The power in your blood courses, granting you advantage on saving throws against spells and other magical effects.</li>
+                <li><strong>Eyes of the Fiend.</strong> Your eyes glow with an infernal gleam, and you can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</li>
+                <li><strong>Skin of the Fiend.</strong> Your skin takes on an exotic hue, and you gain resistance to your choice of poison, fire, lightning, or cold damage.</li>
+            </ul>
+            <p class="indent">Alternatively, you can spend 1 sorcery point to activate one of these effects as a bonus action, lasting for 1 hour.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once on each of your turns when you spend one or more sorcery points, you can gain one of the following benefits for a number of rounds equal to 1 + the number of sorcery points spent (ending at the start of your turn after the number of rounds). 
+            Blood of the Fiend. The power in your blood courses, granting you advantage on saving throws against spells and other magical effects.
+            Eyes of the Fiend. Your eyes glow with an infernal gleam, and you can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
+            Skin of the Fiend. Your skin takes on an exotic hue, and you gain resistance to your choice of poison, fire, lightning, or cold damage.
+            Alternatively, you can spend 1 sorcery point to activate one of these effects as a bonus action, lasting for 1 hour.</description>
         </sheet>
     </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME5">
+    <element name="Soul Siphon" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_SOUL_SIPHON">
         <description>
-            <p></p>
+            <p>Starting at 14th level, when you cast a spell on your turn that targets one or more creatures, if a target creature fails a saving throw against one of your spells, you gain temporary hit points equal to the level of the spell.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you cast a spell on your turn that targets one or more creatures, if a target creature fails a saving throw against one of your spells, you gain temporary hit points equal to the level of the spell.</description>
         </sheet>
     </element>
-    <element name="Featurename6" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_FEATURENAME6">
+    <element name="Eye of Destruction" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_EYE_OF_DESTRUCTION">
         <description>
-            <p></p>
+            <p>Additionally at 14th level, you can choose to automatically pass saving throws against your own spells. When you do so, if you would take half damage on a successful saving throw, you can take no damage instead.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can choose to automatically pass saving throws against your own spells. When you do so, if you would take half damage on a successful saving throw, you can take no damage instead.</description>
+        </sheet>
+    </element>
+    <element name="Unleashed Heritage" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_FIENDISHBLOODLINE_UNLEASHED_HERITAGE">
+        <description>
+            <p>When you gain a feature through Embraced Heritage, you can expend an additional sorcery point to ascend that aspect. The duration extends to 1 minute per sorcery point, and gains an additional effect:</p>
+            <ul>
+                <li><strong>Blood of the Fiend.</strong> You additionally are immune to spells of 2nd level or below.</li>
+                <li><strong>Eyes of the Fiend.</strong> You additionally gain truesight of 120 feet.</li>
+                <li><strong>Skin of the Fiend.</strong> You additionally, gain resistance to poison, fire, lightning, and cold damage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you gain a feature through Embraced Heritage, you can expend an additional sorcery point to ascend that aspect. The duration extends to 1 minute per sorcery point, and gains an additional effect:
+            Blood of the Fiend. You additionally are immune to spells of 2nd level or below
+            Eyes of the Fiend. You additionally gain truesight of 120 feet.
+            Skin of the Fiend. You additionally, gain resistance to poison, fire, lightning, and cold damage.</description>
         </sheet>
     </element>
 </elements>
