@@ -62,9 +62,7 @@
             <p>At 1st level, you learn Infernal or Abyssal. This choice is most often tied to the origin of your fiendish powers.</p>
             <p class="indent">Additionally, when your Spellcasting feature lets you learn a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the warlock spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <rules>
             <select type="Language" name="Language, Fiendish Legacy" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
         </rules>
