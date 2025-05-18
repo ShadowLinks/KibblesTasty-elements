@@ -9,82 +9,111 @@
     <element name="The Fey" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLOCK_FEY">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Your patron is a powerful being from the fanciful and chaotic fey realm. Pacts with fey are often strange and eclectic in nature, granting some small fraction of the vast but mysterious powers of the fey onto a mortal for often unknowable reasons... or perhaps trivial reasons mortal minds may find equally as baffling.</p>
+            <p class="indent">These sort of beings include powerful fairies, ancient hags, and fey lords of all types, ranging from beings curious and mischievous to horrifying and terrifying, from exuberant and joyful to seething piles of hatred given form. One never knows exactly what to expect when making a pact with a fey, but can safely assume their life will never be quite the same.</p>
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_SPELLS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME5" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEY_BURST" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_DAZZLING_TRICKS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEY_TRICKERY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_BEGUILING_DEFENSES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_HYPNOTIC_CHARM" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_SPELLS" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME3" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME4" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME5" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEY_BURST" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_DAZZLING_TRICKS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEY_TRICKERY" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_BEGUILING_DEFENSES" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_HYPNOTIC_CHARM" level="14" />
         </rules>
     </element>
     <element name="Fey Expanded Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_SPELLS">
         <description>
-            <p></p>
+            <p>Selecting this Otherworldly Patron lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
             <table>
                 <thead>
                     <tr><td>Spell Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>Aldricor’s elemental rebuke, elemental orb</td></tr>
-                <tr><td>2nd</td><td>alter self, elemental exhalation</td></tr>
-                <tr><td>3rd</td><td>meteor jump, wind wall</td></tr>
-                <tr><td>4th</td><td>fire shield, secret chest</td></tr>
-                <tr><td>5th</td><td>control wind, summon fey</td></tr>
+                <tr><td>1st</td><td>faerie fire, sleep</td></tr>
+                <tr><td>2nd</td><td>blur, phantasmal forc</td></tr>
+                <tr><td>3rd</td><td>blink, plant growth</td></tr>
+                <tr><td>4th</td><td>confusion, greater invisibility</td></tr>
+                <tr><td>5th</td><td>dominate person, seeming</td></tr>
             </table>
         </description>
         <sheet display="false" />
         <spellcasting name="Warlock" extend="true">
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
+            <extend>ID_PHB_SPELL_FAERIE_FIRE</extend>
+            <extend>ID_PHB_SPELL_SLEEP</extend>
+            <extend>ID_PHB_SPELL_PHANTASMAL_FORCE</extend>
+            <extend>ID_PHB_SPELL_BLINK</extend>
+            <extend>ID_PHB_SPELL_PLANT_GROWTH</extend>
+            <extend>ID_PHB_SPELL_CONFUSION</extend>
+            <extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+            <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+            <extend>ID_PHB_SPELL_SEEMING</extend>
         </spellcasting>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME2">
+    <element name="Fey Burst" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEY_BURST">
         <description>
-            <p></p>
+            <p>Starting at 1st level, your patron bestows upon the ability to draw on dazzling fey magic, using it to boost your abilities or unleashing it small bursts.</p>
+            <ul>
+                <li><strong>Fairy Lights.</strong> When you hit a creature with an attack roll, you can cause it glow with colorful lights with the effect of faerie fire until the start of your next turn.</li>
+                <li><strong>Amplify.</strong> You can project a supernatural aura, bolstering your presence and presentation to give yourself advantage on a Persuasion, Intimidation, or Performance ability check.</li>
+                <li><strong>Bedazzle.</strong> As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn.</li>
+                <li><strong>Glamour.</strong> Create a glamour, casting disguise self without expending a spell slot.</li>
+            </ul>
+            <p class="indent">You can use this ability a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>Fairy Lights. When you hit a creature with an attack roll, you can cause it glow with colorful lights with the effect of faerie fire until the start of your next turn.
+            Amplify. You can project a supernatural aura, bolstering your presence and presentation to give yourself advantage on a Persuasion, Intimidation, or Performance ability check.
+            Bedazzle. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn.
+            Glamour. Create a glamour, casting disguise self without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+        </rules>
+    </element>
+    <element name="Dazzling Tricks" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_DAZZLING_TRICKS">
+        <description>
+            <p>Additionally at 1st level, you learn your choice of one of the minor illusion, thaumaturgy, or dancing lights cantrips.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Spell" name="Dazzling Tricks" supports="ID_PHB_SPELL_MINOR_ILLUSION|ID_PHB_SPELL_THAUMATURGY|ID_PHB_SPELL_DANCING_LIGHTS" />
+        </rules>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME3">
+    <element name="Fey Trickery" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEY_TRICKERY">
         <description>
-            <p></p>
+            <p>Starting at 6th level, the touch of fey illusions and glamour on leave things never quite as they seem. As an action, or as a reaction when you take damage, you can turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible until the start of your next or cast a spell. When you do so, you can choose to leave behind a mirror image yourself. If this mirror takes any damage, it vanishes into a puff of mist.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, or as a reaction when you take damage, you can turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible until the start of your next or cast a spell. When you do so, you can choose to leave behind a mirror image yourself. If this mirror takes any damage, it vanishes into a puff of mist.</description>
         </sheet>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME4">
+    <element name="Beguiling Defenses" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_BEGUILING_DEFENSES">
         <description>
-            <p></p>
+            <p>Starting at 10th level, your frequent exposure to the fey makes you immune to the charmed condition. Additionally, when a creature attempts to charm you or attack you, as a reaction you can force them to make a Wisdom saving throw against your Warlock spell save DC, or become charmed by you instead for 1 minute. A creature that is charmed this way by you can repeat their saving throw at the end of each of their turns, and the charm effect ends if they take damage.</p>
+            <p class="indent">Once you charm a target with this feature, you cannot use it again until you complete a long rest. You can use it again early by expending a use of Fey Burst.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You are immune to the charmed condition. Additionally, when a creature attempts to charm you or attack you, as a reaction you can force them to make a Wisdom saving throw against your Warlock spell save DC, or become charmed by you instead for 1 minute. A creature that is charmed this way by you can repeat their saving throw at the end of each of their turns, and the charm effect ends if they take damage.
+             You can use it again early by expending a use of Fey Burst.</description>
         </sheet>
     </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_FEATURENAME5">
+    <element name="Hypnotic Charm" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_FEY_HYPNOTIC_CHARM">
         <description>
-            <p></p>
+            <p>Starting at 14th level, your influence on the minds of others you have charmed causes strengthens your influence. When a creature starts their turn charmed by you, you can force them to make a Wisdom saving throw against your Warlock spell save DC, or move up to their movement speed where you direct. This cannot make them move into hazardous terrain, and if they take damage during the movement, the movement ends and they regain control.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When a creature starts their turn charmed by you, you can force them to make a Wisdom saving throw against your Warlock spell save DC, or move up to their movement speed where you direct. This cannot make them move into hazardous terrain, and if they take damage during the movement, the movement ends and they regain control.</description>
         </sheet>
     </element>
 </elements>
