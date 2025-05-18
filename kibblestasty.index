@@ -90,7 +90,30 @@
         <file name="paladin-goodestboi.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-goodestboi.xml" />
         <file name="paladin-silence.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-silence.xml" />
 
+        <file name="psion-knowingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-knowingmind.xml" />
+
         <file name="ranger-bountyhunter.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/ranger-bountyhunter.xml" />
+
+        <file name="rogue-assassin.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/rogue-assassin.xml" />
+        <file name="rogue-divinehand.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/rogue-divinehand.xml" />
+        <file name="rogue-surgeon.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/rogue-surgeon.xml" />
+
+        <file name="sorcerer-feywarped.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-feywarped.xml" />
+        <file name="sorcerer-fiendishbloodline.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-fiendishbloodline.xml" />
+        <file name="sorcerer-phoenixspark.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-phoenixspark.xml" />
+        <file name="sorcerer-seasoul.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-seasoul.xml" />
+        <file name="sorcerer-stoneheart.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-stoneheart.xml" />
+
+        <file name="warlock-bloodbound.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-bloodbound.xml" />
+        <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-dragon.xml" />
+        <file name="warlock-fey.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-fey.xml" />
+        <file name="warlock-knowledgekeeper.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-knowledgekeeper.xml" />
+        <file name="warlock-ooze.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-ooze.xml" />
+        <file name="warlock-overseer.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-overseer.xml" />
+        <file name="warlock-tempest.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-tempest.xml" />
+
+        <file name="wizard-astronomicalorder.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-astronomicalorder.xml" />
+        <file name="wizard-theurge.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-theurge.xml" />
 
         <!--
         <file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/artificer-cursesmith.xml" />
