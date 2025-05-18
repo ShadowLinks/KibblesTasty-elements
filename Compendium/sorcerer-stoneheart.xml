@@ -9,86 +9,123 @@
     <element name="Stoneheart" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SORCERER_STONEHEART">
         <supports>Sorcerous Origin</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME1" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME5" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME6" />
+            <p>Your blood comes from a steadfast lineage, touched by the elemental forces of the earth itself. Be it the blood of ancient dwarves first formed from stone or from a dao lineage from another plane, your blood runs thicker and your heart beats more steady than others. While particularly common among the genasi and the dwarves, these sorcerers can appear in any bloodline with ancient roots.</p>
+            <p class="indent">Blessed with natural resilience and command over the stones on which they stand, most of these sorcerers are solid and deliberate in both action and thought. They are slow to act, but once set on a course they become stubborn and immovable from their chosen path.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_BOON_OF_THE_EARTH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_STRENGTH_OF_STONE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_EARTHEN_ENDURANCE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_EARTHEN_ONSLAUGHT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_STONEWALK" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_SKIN_OF_STONE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME3" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME4" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME5" level="14" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME6" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_BOON_OF_THE_EARTH" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_STRENGTH_OF_STONE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_EARTHEN_ENDURANCE" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_EARTHEN_ONSLAUGHT" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_STONEWALK" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_SKIN_OF_STONE" level="18" />
         </rules>
     </element>
-    <element name="Featurename1" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME1">
+    <element name="Earth Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_SPELLS">
         <description>
-            <p></p>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Stoneheart Origin Spells table. For each level of spells, you can select one of the two spells to learn. You learn the selected spell and it becomes a sorcerer spell for you, but it doesn’t count against your number of sorcerer spells known.</p>
             <table>
                 <thead>
                     <tr><td>Sorerer Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spell</td></tr>
-                <tr><td>3rd</td><td>spell</td></tr>
-                <tr><td>5th</td><td>cspell</td></tr>
-                <tr><td>7th</td><td>banspell</td></tr>
-                <tr><td>9th</td><td>haspell</td></tr>
+                <tr><td>1st</td><td>create pit, stone fist</td></tr>
+                <tr><td>3rd</td><td>earth ripple, stone pillar</td></tr>
+                <tr><td>5th</td><td>quicksand, seismic wave</td></tr>
+                <tr><td>7th</td><td>stoneskin, stone coffin</td></tr>
+                <tr><td>9th</td><td>fissure, wall of stone</td></tr>
             </table>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <select type="Spell" name="Magic" level="1"  supports="ID_PHB_SPELL_|ID_PHB_SPELL_" spellcasting="Sorcerer" />
+            <select type="Spell" name="Earth Magic 1" level="1"  supports="ID_KTH_COLAL_SPELL_CREATE_PIT|ID_KTH_COLAL_SPELL_STONE_FIST" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Earth Magic 2" level="3"  supports="ID_KTH_COLAL_SPELL_EARTH_RIPPLE|ID_KTH_COLAL_SPELL_STONE_PILLAR" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Earth Magic 3" level="5"  supports="ID_KTH_COLAL_SPELL_QUICKSAND|ID_KTH_COLAL_SPELL_SEISMIC_WAVE" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Earth Magic 4" level="7"  supports="ID_PHB_SPELL_STONESKIN|ID_KTH_COLAL_SPELL_STONE_COFFIN" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Earth Magic 5" level="9"  supports="ID_KTH_COLAL_SPELL_FISSURE|ID_PHB_SPELL_WALL_OF_STONE" spellcasting="Sorcerer" prepared="true" />
         </rules>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME2">
+    <element name="Boon of the Earth" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_BOON_OF_THE_EARTH">
         <description>
-            <p></p>
+            <p>At 1st level when you select this origin, you learn the stone formingK cantrip, and gain proficiency with weapons created by it. Any weapon you create with stone formingK gains a bonus to attack and damage rolls equal to any bonus you have to the spell attack and damage rolls from magic items.</p>
+            <p class="indent">Your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level in this class.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain proficiency with weapons created by stone forming. Any weapon you create with stone forming gains a bonus to attack and damage rolls equal to any bonus you have to the spell attack and damage rolls from magic items</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_STONE_FORMING" spellcasting="Sorcerer" />
+            <stat name="hp" value="level:sorcerer" />
+        </rules>
+    </element>
+    <element name="Strength of Stone" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_STRENGTH_OF_STONE">
+        <description>
+            <p>At 1st level when you select this origin, you gain the ability to use your magical power to draw fortitude from the earth beneath your feet. As a bonus action, you can bolster your strength, gaining the following benefits for 1 minute, ending early if you become incapacitated or you end it as a bonus action.</p>
+            <ul>
+                <li><strong></strong>Stone Strength. You can use your Charisma modifier in place of your Strength modifier for attack rolls, damage rolls, and ability checks.</li>
+                <li><strong></strong>Stone Hide. Your skin assumes a stony appearance. If you are not wearing armor, your AC equals 13 + your Charisma modifier.</li>
+                <li><strong></strong>Stone Aegis. You form a stone aegis around yourself, reducing bludgeoning, piercing, and slashing damage taken by your proficiency bonus.</li>
+            </ul>
+            <p class="indent">You can cast stone forming as part of the same bonus action used to activate this ability. You can use this ability a number of times equal to your proficiency bonus. If you have no uses remaining, you can use it again by expending a sorcery point. You regain all expended uses of this ability when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can bolster your strength, gaining the following benefits for 1 minute, ending early if you become incapacitated or you end it as a bonus action.
+            Stone Strength. You can use your Charisma modifier in place of your Strength modifier for attack rolls, damage rolls, and ability checks.
+            Stone Hide. Your skin assumes a stony appearance. If you are not wearing armor, your AC equals {{Stonehide:ac}}.
+            Stone Aegis. You form a stone aegis around yourself, reducing bludgeoning, piercing, and slashing damage taken by {{proficiency}}.
+            You can cast stone forming as part of the same bonus action used to activate this ability. You can use this ability a number of times equal to your proficiency bonus. If you have no uses remaining, you can use it again by expending a sorcery point. You regain all expended uses of this ability when you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="Stonehide:ac" value="13" bonus="base" />
+            <stat name="Stonehide:ac" value="charisma:modifier" />
+        </rules>
+    </element>
+    <element name="Earthen Endurance" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_EARTHEN_ENDURANCE">
+        <description>
+            <p>Starting at 6th level, when you activate Strength of Stone, you can share the benefits of the stone aegis with another creature of your choice within 30 feet, reducing bludgeoning, piercing, and slashing damage taken by that creature equal to your proficiency bonus.</p>
+            <p class="indent">When a creature under the effect of your protection takes damage (of any damage type), as a reaction you can expend one or more sorcery points to reduce the damage taken 1d8 per sorcery points spent. After you absorb damage in this way, the next time you hit an melee attack before the end of your next turn, you can add 1d8 per sorcery points to the damage roll.</p>
+        </description>
+        <sheet>
+            <description>When you activate Strength of Stone, you can share the benefits of the stone aegis with another creature of your choice within 30 feet, reducing bludgeoning, piercing, and slashing damage taken by that creature by {{proficiency}}.
+            When a creature under the effect of your protection takes damage (of any damage type), as a reaction you can expend one or more sorcery points to reduce the damage taken 1d8 per sorcery points spent. After you absorb damage in this way, the next time you hit an melee attack before the end of your next turn, you can add 1d8 per sorcery points to the damage roll.</description>
         </sheet>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME3">
+    <element name="Earthen Onslaught" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_EARTHEN_ONSLAUGHT">
         <description>
-            <p></p>
+            <p>Additionally, starting at 6th level, while empowered by your Strength of Stone, you can attack twice, instead of once, whenever you take the Attack action.</p>
+            <p class="indent">When you cast a spell using your action, you can expend 1 sorcery point to make a single melee weapon attack as a bonus action.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While empowered by your Strength of Stone, you can attack twice, instead of once, whenever you take the Attack action.
+            When you cast a spell using your action, you can expend 1 sorcery point to make a single melee weapon attack as a bonus action.</description>
         </sheet>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME4">
+    <element name="Stonewalk" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_STONEWALK">
         <description>
-            <p></p>
+            <p>Starting at 14th level, you gain a burrowing speed of 15 feet, allowing you to travel through the earth. You can pass through soil and stone, but when you pass through stone you leave no hole behind you, becoming one with it and passing through. If you would end your turn inside of stone, you get pushed to where you entered the stone surface.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain a burrowing speed of 15 feet, allowing you to travel through the earth. You can pass through soil and stone, but when you pass through stone you leave no hole behind you, becoming one with it and passing through. If you would end your turn inside of stone, you get pushed to where you entered the stone surface.</description>
         </sheet>
     </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME5">
+    <element name="Skin of Stone" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_SKIN_OF_STONE">
         <description>
-            <p></p>
+            <p>At 18th level, while you are empowered by Strength of Stone, you have resistance to bludgeoning, piercing, and slashing damage.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename6" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_STONEHEART_FEATURENAME6">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>While you are empowered by Strength of Stone, you have resistance to bludgeoning, piercing, and slashing damage.</description>
         </sheet>
     </element>
 </elements>
