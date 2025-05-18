@@ -9,86 +9,128 @@
     <element name="Sea Soul" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_SORCERER_SEASOUL">
         <supports>Sorcerous Origin</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME1" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME5" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME6" />
+            <p>The power of water is the strength of flexibility, resilience, and a relentless nature. Water parts to allow a ship to sail over it or a diver to plunge into it, but their passing leaves no mark. Water flowing down a mountain reaches the sea. It might bend and turn across valleys and down hillsides, but it slowly and steadily returns to the waves. Those whose souls are touched by the power of elemental water command a similar power.</p>
+            <p class="indent">Your heritage ties back to powerful creatures of the sea, such as nereids, the lords of the merfolk, or elemental powers. Like a river, you feel the call of the ocean. The call is ever present in your heart, and you are never completely at peace until you are near the sea.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_SPELLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_PART_THE_WAVES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_GIFT_OF_THE_DEPTHS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_TURMOIL_OF_THE_SEA" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_WAVE_DASH" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_MISTY_SHROUD" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_ONE_WITH_THE_WAVES" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME3" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME4" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME5" level="14" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME6" level="18" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_PART_THE_WAVES" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_GIFT_OF_THE_DEPTHS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_TURMOIL_OF_THE_SEA" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_WAVE_DASH" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_MISTY_SHROUD" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_ONE_WITH_THE_WAVES" level="18" />
         </rules>
     </element>
-    <element name="Featurename1" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME1">
+    <element name="Wave Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_SPELLS">
         <description>
-            <p></p>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Sea Soul Origin Spells list. For each level of spells, you can select one of the two spells to learn. You learn the selected spell and it becomes a sorcerer spell for you, but it doesn’t count against your number of sorcerer spells known.</p>
             <table>
                 <thead>
                     <tr><td>Sorerer Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spell</td></tr>
-                <tr><td>3rd</td><td>spell</td></tr>
-                <tr><td>5th</td><td>cspell</td></tr>
-                <tr><td>7th</td><td>banspell</td></tr>
-                <tr><td>9th</td><td>haspell</td></tr>
+                <tr><td>1st</td><td>crashing wave, water blast</td></tr>
+                <tr><td>3rd</td><td>become water, dancing wave</td></tr>
+                <tr><td>5th</td><td>sleet storm, water cannon</td></tr>
+                <tr><td>7th</td><td>ice storm, geyser</td></tr>
+                <tr><td>9th</td><td>acid rainK, pressure cutter</td></tr>
             </table>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <select type="Spell" name="Magic" level="1"  supports="ID_PHB_SPELL_|ID_PHB_SPELL_" spellcasting="Sorcerer" />
+            <select type="Spell" name="Wave Magic 1" level="1"  supports="ID_KTH_COLAL_SPELL_CRASHING_WAVE|ID_KTH_COLAL_SPELL_WATER_BLAST" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Wave Magic 2" level="3"  supports="ID_KTH_COLAL_SPELL_BECOME_WATER|ID_KTH_COLAL_SPELL_DANCING_WAVE" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Wave Magic 3" level="5"  supports="ID_PHB_SPELL_SLEET_STORM|ID_KTH_COLAL_SPELL_WATER_CANNON" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Wave Magic 4" level="7"  supports="ID_PHB_SPELL_ICE_STORM|ID_KTH_COLAL_SPELL_GEYSER" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Wave Magic 5" level="9"  supports="ID_KTH_COLAL_SPELL_ACID_RAIN|ID_KTH_COLAL_SPELL_PRESSURE_CUTTER" spellcasting="Sorcerer" prepared="true" />
         </rules>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME2">
+    <element name="Part the Waves" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_PART_THE_WAVES">
         <description>
-            <p></p>
+            <p>At 1st level, your connection to waves and waters lets you bend them to your will. You learn the manipulate water cantrip, and it does not count against your spells known.</p>
+            <p class="indent">Additionally, when you cast a water or cold spell (a spell that controls water, deals water based bludgeoning damage, or deals cold damage) that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell’s level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you cast a water or cold spell (a spell that controls water, deals water based bludgeoning damage, or deals cold damage) that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell’s level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MANIPULATE_WATER" spellcasting="Sorcerer" prepared="true" />
+        </rules>
+    </element>
+    <element name="Gift of the Depths" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_GIFT_OF_THE_DEPTHS">
+        <description>
+            <p>Additionally, you gain a swimming speed of 30 feet. If you already have a swimming speed, your swimming speed increases by 10 feet. At 6th level, you also gain the ability to breath underwater.</p>
+        </description>
+        <sheet>
+            <description level="6">You also gain the ability to breath underwater</description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="30" bonus="base" requirements="![innate speed:swim:30]" />
+            <stat name="speed:swim:misc" value="10" requirements="[innate speed:swim:1]" />
+        </rules>
+    </element>
+    <element name="Turmoil of the Sea" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_TURMOIL_OF_THE_SEA">
+        <description>
+            <p>Starting at 6th level, whenever you use a spell to move, knock prone, or reduce the movement speed of a creature, you can deal bludgeoning damage to them equal to your Charisma modifier. You can deal this damage to a creature once per turn.</p>
+        </description>
+        <sheet>
+            <description>Whenever you use a spell to move, knock prone, or reduce the movement speed of a creature, you can deal {{charisma:modifier}} bludgeoning damage to them. You can deal this damage to a creature once per turn.</description>
         </sheet>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME3">
+    <element name="Wave Dash" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_WAVE_DASH">
         <description>
-            <p></p>
+            <p>Additionally at 6th level, you can cast <em>become water</em> as a reaction to taking damage. Additionally, you can cast it by expending 2 sorcery points instead of expending spell slot.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can cast become water as a reaction to taking damage. Additionally, you can cast it by expending 2 sorcery points instead of expending spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_WATER" />
+        </rules>
+    </element>
+    <element name="Misty Shroud" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_MISTY_SHROUD">
+        <description>
+            <p>Starting at 14th level, you are followed by a perpetual wispy fog. When you cast a spell of 1st level or higher, the fog thickens, lightly obscuring the area within a 10 foot radius of you for a number of rounds equal to the level of the spell cast. This thickened fog leaves a sodden rime on creatures of your choice within it, leaving them vulnerable to your magic. This rime fades as soon as they leave the area of the fog.</p>
+            <p class="indent">You have advantage on spell attack rolls against creatures effected by this rime, and creatures effected by this rime within the fog are under the effect of the bane spell when saving against your spells.</p>
+        </description>
+        <sheet>
+            <description>You are followed by a perpetual wispy fog. When you cast a spell of 1st level or higher, the fog thickens, lightly obscuring the area within a 10 foot radius of you for a number of rounds equal to the level of the spell cast. This thickened fog leaves a sodden rime on creatures of your choice within it, leaving them vulnerable to your magic. This rime fades as soon as they leave the area of the fog.
+            You have advantage on spell attack rolls against creatures effected by this rime, and creatures effected by this rime within the fog are under the effect of the bane spell when saving against your spells.</description>
         </sheet>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME4">
+    <element name="One with the Waves" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_ONE_WITH_THE_WAVES">
         <description>
-            <p></p>
+            <p>Starting at 18th level, you learn the form of water spell. If you already know the form of water spell, you can learn one additional spell of 6th level or lower from the Sorcerer spell list. This spell does not count against your spells known. The spell form of water does not require concentration for you, though you can end it early at any time (no action required). You can cast it by expending 4 sorcery points in place of a spell slot.</p>
+            <p class="indent">While in the watery form granted by the form of water spell, the sorcery point cost of all Metamagic options is reduced by 1 for all spells that control or manipulate water or ice.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The spell form of water does not require concentration for you, though you can end it early at any time (no action required). You can cast it by expending 4 sorcery points in place of a spell slot.
+            While in the watery form granted by the form of water spell, the sorcery point cost of all Metamagic options is reduced by 1 for all spells that control or manipulate water or ice.</description>
         </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_ONE_WITH_THE_WAVES_SPELL" requirements="!ID_KTH_COLAL_SPELL_FORM_OF_WATER"/>
+            <select type="Spell" supports="Sorcerer,(0||1||2||3||4||5||6)" spellcasting="Sorcerer" prepared="true" requirements="ID_KTH_COLAL_SPELL_FORM_OF_WATER,!ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_ONE_WITH_THE_WAVES_SPELL" />
+        </rules>
     </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME5">
+    <element name="Form of Water" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_ONE_WITH_THE_WAVES_SPELL"  >
         <description>
             <p></p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename6" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_SORCERER_SEASOUL_FEATURENAME6">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_FORM_OF_WATER" spellcasting="Sorcerer" prepared="true" />
+        </rules>
     </element>
 </elements>
