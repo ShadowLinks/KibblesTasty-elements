@@ -9,23 +9,25 @@
     <element name="The Bloodbound" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLOCK_BLOODBOUND">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p></p>
+            <p>The Bloodbound Patron is an ancient and powerful entity of blood. Ancient vampires or other creatures that feast on the power of blood are the most common, but there is a primordial power to blood that has created many ancient entities with deep ties to the secrets of life and death that may be sought for the impressive eldritch powers. As a warlock with a Bloodbound Patron, you gain unique abilities to manipulate blood and the life force of creatures.</p>
             <p class="indent"></p>
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_SPELLS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME5" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_LIFE_DRAIN" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_BEATING_HEARTS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_SANGUINE_EMPOWERMENT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_VITAL_RESERVES" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_THE_HUNGER" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_SPELLS" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME3" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME4" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME5" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_LIFE_DRAIN" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_BEATING_HEARTS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_SANGUINE_EMPOWERMENT" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_VITAL_RESERVES" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_THE_HUNGER" level="14" />
         </rules>
     </element>
     <element name="Bloodbound Expanded Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_SPELLS">
@@ -35,56 +37,87 @@
                 <thead>
                     <tr><td>Spell Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>Aldricor’s elemental rebuke, elemental orb</td></tr>
-                <tr><td>2nd</td><td>alter self, elemental exhalation</td></tr>
-                <tr><td>3rd</td><td>meteor jump, wind wall</td></tr>
-                <tr><td>4th</td><td>fire shield, secret chest</td></tr>
-                <tr><td>5th</td><td>control wind, summon bloodbound</td></tr>
+                <tr><td>1st</td><td>false life, inflict wounds</td></tr>
+                <tr><td>2nd</td><td>bloody burst, compelled convulsion</td></tr>
+                <tr><td>3rd</td><td>crimson tide, invest life</td></tr>
+                <tr><td>4th</td><td>blood frenzy, vital surge</td></tr>
+                <tr><td>5th</td><td>dominate person, life support</td></tr>
             </table>
         </description>
         <sheet display="false" />
         <spellcasting name="Warlock" extend="true">
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
+            <extend>ID_PHB_SPELL_FALSE_LIFE</extend>
+            <extend>ID_PHB_SPELL_INFLICT_WOUNDS</extend>
+            <extend>ID_KTH_COLAL_SPELL_BLOODY_BURST</extend>
+            <extend>ID_KTH_COLAL_SPELL_COMPELLED_CONVULSION</extend>
+            <extend>ID_KTH_COLAL_SPELL_CRIMSON_TIDE</extend>
+            <extend>ID_KTH_COLAL_SPELL_INVEST_LIFE</extend>
+            <extend>ID_KTH_COLAL_SPELL_BLOOD_FRENZY</extend>
+            <extend>ID_KTH_COLAL_SPELL_VITAL_SURGE</extend>
+            <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+            <extend>ID_KTH_COLAL_SPELL_LIFE_SUPPORT</extend>
         </spellcasting>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME2">
+    <element name="Life Drain" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_LIFE_DRAIN">
         <description>
-            <p></p>
+            <p>At 1st level, you gain the ability to drain the vitality of other creatures through their blood. When you hit a creature with an attack (including weapon or spell attacks), you can use your bonus action to drain their life, dealing additional necrotic damage equal to your Charisma modifier and regaining hit points equal to the necrotic damage dealt.</p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all uses when you complete a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you hit a creature with an attack (including weapon or spell attacks), you can use your bonus action to drain their life, dealing additional {{charisma:modifier}} necrotic damage and regaining hit points equal to the necrotic damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Beating Hearts" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_BEATING_HEARTS">
+        <description>
+            <p>Starting at 1st level, you can sense the beating hearts of life in creatures around you. You can use your spellcasting modifier, instead of your Wisdom modifier, for making Perception and Insight checks against living creatures with blood, and to calculate your passive scores to sense living creatures.</p>
+            <p class="indent">You can heighten this sense further by casting sense bloodK without expending a spell slot or material components, but once you do so, you cannot do so this way again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description> You can use your spellcasting modifier, instead of your Wisdom modifier, for making Perception and Insight checks against living creatures with blood, and to calculate your passive scores to sense living creatures.
+            You can heighten this sense further by casting sense bloodK without expending a spell slot or material components, but once you do so, you cannot do so this way again until you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Sanguine Empowerment" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_SANGUINE_EMPOWERMENT">
+        <description>
+            <p>Starting at 6th level, you can sacrifice your hit points to empower your magic. When you expend a Pact Magic spell slot to cast a spell that has an effect that scales with spell level, you can expend a number of hit points equal 1 + to the level of the spell to increase the level at which you cast the spell by one level (for example, if you cast the 2nd level spell hold person using a 3rd level Pact Magic Spell slot, you could expend 3 hit points to cast it at the 4th level).</p>
+            <p class="indent">When you cast a cantrip, you can scale the cantrip to its next level of power (for example, casting it as if you were 11th level) by spending 3 hit points this way. This works even when you are 17th level, and the cantrip would generally not scale further (adding an additional die or firing an additional beam in the case of eldritch blast).</p>
+            <p class="indent">You can spend a total number of hit points this way equal to your Warlock level, after which you cannot spend more hit points to empower your spells until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can sacrifice your hit points to empower your magic. When you expend a Pact Magic spell slot to cast a spell that has an effect that scales with spell level, you can expend a number of hit points equal 1 + to the level of the spell to increase the level at which you cast the spell by one level.
+            When you cast a cantrip, you can scale the cantrip to its next level of power.
+            You can spend {{level:warlock}} hit points this way, after which you cannot spend more hit points to empower your spells until you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Vital Reserves" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_VITAL_RESERVES">
+        <description>
+            <p>Starting at 10th level, your maximum hit points are increased by your Warlock level.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <stat name="hp" value="level:warlock" />
+        </rules>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME3">
+    <element name="The Hunger" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_THE_HUNGER">
         <description>
-            <p></p>
+            <p>Beginning at 14th level, you can temporarily transform into a powerful avatar that devours blood. As an action, you assume this form for 1 minute, gaining the following powers:</p>
+            <ul>
+                <li><strong>Damage Resistance.</strong> You have resistance to bludgeoning, piercing, and slashing damage from non-magical attacks.</li>
+                <li><strong>Blood Frenzy.</strong> You have advantage on attack rolls against bloodied creatures (creatures with less than half of their maximum hit points).</li>
+                <li><strong>Life Drain.</strong> You can use Life Drain on each of your turns without expending uses of the feature.</li>
+                <li><strong>Bloody Shroud.</strong> When you use Sanguine Empowerment, you gain temporary hit points equal to the hit points expended.</li>
+            </ul>
+            <p class="indent">This form ends early if you end your turn without dealing or receiving damage since the start of your last turn or if you become incapacitated. Once you use this feature, you cannot use it again until you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME4">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_BLOODBOUND_FEATURENAME5">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you assume this form for 1 minute, gaining the following powers:
+            Damage Resistance. You have resistance to bludgeoning, piercing, and slashing damage from non-magical attacks.
+            Blood Frenzy. You have advantage on attack rolls against bloodied creatures (creatures with less than half of their maximum hit points).
+            Life Drain. You can use Life Drain on each of your turns without expending uses of the feature.
+            Bloody Shroud. When you use Sanguine Empowerment, you gain temporary hit points equal to the hit points expended.
+            This form ends early if you end your turn without dealing or receiving damage since the start of your last turn or if you become incapacitated.</description>
         </sheet>
     </element>
 </elements>
