@@ -12,25 +12,25 @@
             <p></p>
             <p class="indent"></p>
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_SPELLS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME5" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_HOARD_BUILDER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRAGON_FORM" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_SPELLS" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME3" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME4" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME5" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_HOARD_BUILDER" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRAGON_FORM" level="14" />
         </rules>
     </element>
     <element name="Dragon Expanded Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_SPELLS">
         <description>
-            <p></p>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a Warlock spell. The following spells are added to the Warlock spell list for you.</p>
             <table>
                 <thead>
                     <tr><td>Spell Level</td><td>Spells</td></tr>
@@ -44,47 +44,354 @@
         </description>
         <sheet display="false" />
         <spellcasting name="Warlock" extend="true">
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
+            <extend>ID_KTH_COLAL_SPELL_ALDRICORS_ELEMENTAL_REBUKE</extend>
+            <extend>ID_KTH_COLAL_SPELL_ELEMENTAL_ORB</extend>
+            <extend>ID_PHB_SPELL_ALTER_SELF</extend>
+            <extend>ID_KTH_COLAL_SPELL_ELEMENTAL_EXHALATION</extend>
+            <extend>ID_KTH_COLAL_SPELL_METEOR_JUMP</extend>
+            <extend>ID_PHB_SPELL_WIND_WALL</extend>
+            <extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+            <extend>ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST</extend>
+            <extend>ID_PHB_SPELL_CONTROL_WIND</extend>
+            <extend>ID_KTH_COLAL_SPELL_SUMMON_DRAGON</extend>
         </spellcasting>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME2">
+    <element name="Draconic Blast" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST">
+        <description>
+            <p>Beginning at 1st level, you gain the ability to unleash blasts of primal draconic energy from your hand or mouth. As an action, you can unleash this power in a 15 foot cone or a 30 foot long, 5 foot wide line. Invocations that apply to eldritch blast also apply to Draconic Blast, though Eldritch Spear has a special interaction, making it a 30 foot cone or 60 foot long, 5 foot wide line.</p>
+            <p class="indent">When you gain this feature, select one damage type of acid, cold, fire, lightning, or poison. Creatures in the area of effect must make a Dexterity saving throw, or take 1d8 elemental damage of the selected type. This feature’s damage increases by 1d8 when you reach 5th level in Warlock (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p class="indent">When you use this ability, you can expend a pact magic spell slot to empower the draconic blast, dealing 1d8 additional damage per level of the pact magic slot expended. When empowered, it deals half damage even against creatures that pass their saving throw against it.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can unleash this power in a 15 foot cone or a 30 foot long, 5 foot wide line. Invocations that apply to eldritch blast also apply to Draconic Blast, though Eldritch Spear has a special interaction, making it a 30 foot cone or 60 foot long, 5 foot wide line.
+            Creatures in the area of effect must make a Dexterity saving throw, or take 1d8 {{draconic-blast:element}} damage.
+            When you use this ability, you can expend a pact magic spell slot to empower the draconic blast, dealing 1d8 additional damage per level of the pact magic slot expended. When empowered, it deals half damage even against creatures that pass their saving throw against it.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="draconic-blast" name="Draconic Blast Element" />
+        </rules>
+    </element>
+    <element name="Acid" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_ACID">
+        <supports>draconic-blast</supports>
         <description>
             <p></p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet display="false" />
+        <rules>
+            <stat name="draconic-blast:element" value="acid" inline="true" />
+        </rules>
+    </element>
+    <element name="Cold" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_COLD">
+        <supports>draconic-blast</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="draconic-blast:element" value="cold" inline="true" />
+        </rules>
+    </element>
+    <element name="Fire" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_FIRE">
+        <supports>draconic-blast</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="draconic-blast:element" value="fire" inline="true" />
+        </rules>
+    </element>
+    <element name="Lightning" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_LIGHTNING">
+        <supports>draconic-blast</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="draconic-blast:element" value="lightning" inline="true" />
+        </rules>
+    </element>
+    <element name="Poison" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_POISON">
+        <supports>draconic-blast</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="draconic-blast:element" value="poison" inline="true" />
+        </rules>
+    </element>
+    <element name="Elemental Devastation" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION">
+        <description>
+            <p>At 6th level, when you deal the elemental damage type you selected as part of Dragon Blast to a creature, you can inflict an additional elemental ailment based on the elemental type.</p>
+            <ul>
+                <li><strong>Acid.</strong> You can erode the creature’s defenses, giving the next attack roll against them advantage.</li>
+                <li><strong>Cold.</strong> You can freeze the creature, forcing them to make a Strength saving throw. On failure, they are restrained until the start of your next turn.</li>
+                <li><strong>Fire.</strong> You can ignite the creature, causing them to 1d6 fire damage at the start of each of their turns, until a creature spends an action to douse the flames.</li>
+                <li><strong>Lightning.</strong> You can shock the creature, forcing them to make a Constitution saving throw. On failure they are stunned until the start of their next turn.</li>
+                <li><strong>Poison.</strong> You can poison the creature, forcing them to make a Constitution saving throw. On failure, they are poisoned for 1 minute. They can repeat their saving throw at the end of each of their turns.</li>
+            </ul>
+            <p class="indent">You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_ACID" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_ACID" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_COLD" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_COLD" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_FIRE" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_FIRE" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_LIGHTNING" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_LIGHTNING" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_POISON" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_POISON" />
+        </rules>
+    </element>
+    <element name="Elemental Devastation (Acid)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_ACID">
+        <description>
+            <p>At 6th level, when you deal the elemental damage type you selected as part of Dragon Blast to a creature, you can inflict an additional elemental ailment based on the elemental type.</p>
+            <ul>
+                <li><strong>Acid.</strong> You can erode the creature’s defenses, giving the next attack roll against them advantage.</li>
+            </ul>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you deal acid damage, you can erode the creature’s defenses, giving the next attack roll against them advantage.</description>
         </sheet>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME3">
+    <element name="Elemental Devastation (Cold)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_COLD">
         <description>
-            <p></p>
+            <p>At 6th level, when you deal the elemental damage type you selected as part of Dragon Blast to a creature, you can inflict an additional elemental ailment based on the elemental type.</p>
+            <ul>
+                <li><strong>Cold.</strong> You can freeze the creature, forcing them to make a Strength saving throw. On failure, they are restrained until the start of your next turn.</li>
+            </ul>
+            <p class="indent">You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you deal cold damage, you can freeze the creature, forcing them to make a Strength saving throw. On failure, they are restrained until the start of your next turn.</description>
         </sheet>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME4">
+    <element name="Elemental Devastation (Fire)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_FIRE">
         <description>
-            <p></p>
+            <p>At 6th level, when you deal the elemental damage type you selected as part of Dragon Blast to a creature, you can inflict an additional elemental ailment based on the elemental type.</p>
+            <ul>
+                <li><strong>Fire.</strong> You can ignite the creature, causing them to 1d6 fire damage at the start of each of their turns, until a creature spends an action to douse the flames.</li>
+                
+            </ul>
+            <p class="indent">You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you deal fire damage, you can ignite the creature, causing them to 1d6 fire damage at the start of each of their turns, until a creature spends an action to douse the flames.</description>
         </sheet>
     </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_FEATURENAME5">
+    <element name="Elemental Devastation (Lightning)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_LIGHTNING">
         <description>
-            <p></p>
+            <p>At 6th level, when you deal the elemental damage type you selected as part of Dragon Blast to a creature, you can inflict an additional elemental ailment based on the elemental type.</p>
+            <ul>
+                
+                <li><strong>Lightning.</strong> You can shock the creature, forcing them to make a Constitution saving throw. On failure they are stunned until the start of their next turn.</li>
+            </ul>
+            <p class="indent">You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you deal lightning damage, you can shock the creature, forcing them to make a Constitution saving throw. On failure they are stunned until the start of their next turn.</description>
+        </sheet>
+    </element>
+    <element name="Elemental Devastation (Poison)" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_DEVASTATION_POISON">
+        <description>
+            <p>At 6th level, when you deal the elemental damage type you selected as part of Dragon Blast to a creature, you can inflict an additional elemental ailment based on the elemental type.</p>
+            <ul>
+                
+                <li><strong>Poison.</strong> You can poison the creature, forcing them to make a Constitution saving throw. On failure, they are poisoned for 1 minute. They can repeat their saving throw at the end of each of their turns.</li>
+            </ul>
+            <p class="indent">You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you deal poison damage, you can poison the creature, forcing them to make a Constitution saving throw. On failure, they are poisoned for 1 minute. They can repeat their saving throw at the end of each of their turns.</description>
+        </sheet>
+    </element>
+    <element name="Hoard Builder" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_HOARD_BUILDER">
+        <description>
+            <p>Starting at 10th level, when you take a long rest, at the end of the long rest you gain 1 temporary hit points for each 100 gold pieces in your possession, up to a maximum of your Warlock level.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>when you take a long rest, at the end of the long rest you gain 1 temporary hit points for each 100 gold pieces in your possession, up to a maximum of {{level:warlock}}.</description>
+        </sheet>
+    </element>
+    <element name="Elemental Resistance" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_ELEMENTAL_RESISTANCE">
+        <description>
+            <p>Additionally at 10th level, you gain resistance to the damage type selected for your Draconic Blast.</p>
+        </description>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_ACID" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_COLD" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_FIRE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_LIGHTNING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_POISON" />
+        </rules>
+    </element>
+    <element name="Dragon Form" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRAGON_FORM">
+        <description>
+            <p>Starting at 14th level, as an action you can take a form reminiscent of your patron, becoming a dragon for 1 minute. You grow mighty horns, thick scales, wings, wicked claws, fangs, and a lashing tail. Any creatures of your choice within 30 feet that witnesses the transformation must make a Wisdom saving throw against your spell save DC, or become frightened until the start of your next turn. While in this form, you gain the following benefits:</p>
+            <ul>
+                <li><strong></strong>Large Sized. You are a large sized creature. Any gear you cannot use as a large draconic creature merges with your form and is unavailable until the transformation ends.</li>
+                <li><strong></strong>Mighty Form. Your Strength becomes equal to your Charisma.</li>
+                <li><strong></strong>Dragon Scales. Your scales provide a base AC of 17. You do not add your Dexterity modifier to this.</li>
+                <li><strong></strong>Natural Weapons. Your horns, fangs, and a tail that serve as natural weapons that deal 1d10 piercing damage on hit. You also grow claws that deal 1d6 slashing damage on hit. If you attack with any natural weapon, you can attack with your claws as a bonus action.</li>
+                <li><strong></strong>Empowered Blasts. The damage of your Draconic Blasts increases by 1 die, and it’s range is doubled.</li>
+                <li><strong></strong>Flight. You have a flying speed of 40 feet.</li>
+                <li><strong></strong>Elemental Immunity. You gain immunity to the damage type selected for your Dragon Blast.</li>
+            </ul>
+            <p class="indent">Once you have used this ability, you may not use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action you can take a form reminiscent of your patron, becoming a dragon for 1 minute. You grow mighty horns, thick scales, wings, wicked claws, fangs, and a lashing tail. Any creatures of your choice within 30 feet that witnesses the transformation must make a Wisdom saving throw against your spell save DC, or become frightened until the start of your next turn. While in this form, you gain the following benefits:
+            Large Sized. You are a large sized creature. Any gear you cannot use as a large draconic creature merges with your form and is unavailable until the transformation ends.
+            Mighty Form. Your Strength becomes equal to your Charisma.
+            Dragon Scales. Your scales provide a base AC of 17. You do not add your Dexterity modifier to this.
+            Natural Weapons. Your horns, fangs, and a tail that serve as natural weapons that deal 1d10 piercing damage on hit. You also grow claws that deal 1d6 slashing damage on hit. If you attack with any natural weapon, you can attack with your claws as a bonus action.
+            Empowered Blasts. The damage of your Draconic Blasts increases by 1 die, and it’s range is doubled.
+            Flight. You have a flying speed of 40 feet.
+            Elemental Immunity. You gain immunity to {{draconic-blast:element}}.</description>
+        </sheet>
+    </element>
+    <element name="Draconic Companion" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_DRACONIC_COMPANION">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Prerequisite: 5th level, Dragon patron, Pact of the Chain</prerequisite>
+        <requirements>[level:warlock:5],ID_KTH_COLAL_ARCHETYPE_WARLOCK_DRAGON,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN</requirements>
+        <description>
+            <p>You can cast chromatic breath targeting your pact of the chain familiar without expending a spell slot. Once you do so, you cannot do so again until you complete a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can cast chromatic breath targeting your pact of the chain familiar without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_CHROMATIC_BREATH" />
+        </rules>
+    </element>
+    <element name="Dragon Claws" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_DRAGON_CLAWS">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Dragon patron, Pact of the Blade; Incompatible with Improved Pact Weapon</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARLOCK_DRAGON,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+        <description>
+            <p>As an action, you can grow draconic claws on one or both hands, lasting until you dismiss them as an action.</p>
+            <p class="indent">This claws count as your pact weapon. While the claws are formed, you cannot use a weapon or shield in the hand they are manifested in. These are natural weapons that deal 1d6 slashing damage. When you form claws in both hands, if you make an attack with your claws, you can make one additional weapon attack with them as a bonus action. When you attack with your claws, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls.</p>
+            <p class="indent">In addition, the claws gain a +1 bonus to its attack and damage rolls. These benefits (Charisma, attack and damage bonus, and counting the natural weapons as your pact weapon) also applies to any natural weapons you gain through the Dragon Subclass (such as Dragon Form). You can sacrifice a martial weapon with a bonus greater than +1 to attack and damage rolls to your patron, permanently destroying it. When you do so, the bonus to attack and damage rolls of your claws increases to that of the sacrificed weapon. Your DM has the final say of which weapons can be sacrificed in this way, and if any other properties are gained from the ritual.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can grow draconic claws on one or both hands, lasting until you dismiss them as an action.
+            This claws count as your pact weapon. While the claws are formed, you cannot use a weapon or shield in the hand they are manifested in. These are natural weapons that deal 1d6 slashing damage. When you form claws in both hands, if you make an attack with your claws, you can make one additional weapon attack with them as a bonus action. When you attack with your claws, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls.
+            In addition, the claws gain a +1 bonus to its attack and damage rolls. These benefits (Charisma, attack and damage bonus, and counting the natural weapons as your pact weapon) also applies to any natural weapons you gain through the Dragon Subclass (such as Dragon Form). You can sacrifice a martial weapon with a bonus greater than +1 to attack and damage rolls to your patron, permanently destroying it. When you do so, the bonus to attack and damage rolls of your claws increases to that of the sacrificed weapon. Your DM has the final say of which weapons can be sacrificed in this way, and if any other properties are gained from the ritual.</description>
+        </sheet>
+    </element>
+    <element name="Dragon Wings" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_DRAGON_WINGS">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>15th level, Dragon patron</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARLOCK_DRAGON,[level:warlock:15]</requirements>
+        <description>
+            <p>You gain the ability to sprout a pair of dragon wings from your back, gaining a 30 foot flying speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to sprout a pair of dragon wings from your back, gaining a 30 foot flying speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Elemental Magic" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_ELEMENTAL_MAGIC">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Dragon patron, Pact of the Tome</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_WARLOCK_DRAGON,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME</requirements>
+        <description>
+            <p>You gain the following spells at the following levels based on the damage type selected for the Draconic Blast. They are warlock spells for you, and do not count against your spells known.</p>
+            <h5 class="caption">Acid</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>acid bubble</td></tr>
+                <tr><td>3rd</td><td>pseudopod slam</td></tr>
+                <tr><td>5th</td><td>erode</td></tr>
+                <tr><td>7th</td><td>bile beam</td></tr>
+                <tr><td>9th</td><td>acid rain</td></tr>
+            </table>
+            <h5 class="caption">Cold</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>arctic breath</td></tr>
+                <tr><td>3rd</td><td>cold snap</td></tr>
+                <tr><td>5th</td><td>flash freeze</td></tr>
+                <tr><td>7th</td><td>ice storm</td></tr>
+                <tr><td>9th</td><td>cone of cold</td></tr>
+            </table>
+            <h5 class="caption">Fire</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>burning hands</td></tr>
+                <tr><td>3rd</td><td>scorching ray</td></tr>
+                <tr><td>5th</td><td>fireball</td></tr>
+                <tr><td>7th</td><td>wall of fire</td></tr>
+                <tr><td>9th</td><td>pyroclastic lance</td></tr>
+            </table>
+            <h5 class="caption">Lightning</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>lightning tendril</td></tr>
+                <tr><td>3rd</td><td>crackle</td></tr>
+                <tr><td>5th</td><td>lightning bolt</td></tr>
+                <tr><td>7th</td><td>jumping jolt</td></tr>
+                <tr><td>9th</td><td>sky burst</td></tr>
+            </table>
+            <h5 class="caption">Poison</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>bad blood</td></tr>
+                <tr><td>3rd</td><td>poison dart</td></tr>
+                <tr><td>5th</td><td>stinking cloud</td></tr>
+                <tr><td>7th</td><td>poison blast</td></tr>
+                <tr><td>9th</td><td>cloudkill</td></tr>
+            </table>
+        </description>
+        <rules>
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_SPELL_ACID_BUBBLE" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_ACID" prepared="true" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_SPELL_PSEUDOPOD_SLAM" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_ACID" prepared="true" />
+            <grant type="Spell" level="5" id="ID_KTH_COLAL_SPELL_ERODE" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_ACID" prepared="true" />
+            <grant type="Spell" level="7" id="ID_KTH_COLAL_SPELL_BILE_BEAM" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_ACID" prepared="true" />
+            <grant type="Spell" level="9" id="ID_KTH_COLAL_SPELL_ACID_RAIN" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_ACID" prepared="true" />
+
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_SPELL_ARCTIC_BREATH" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_COLD" prepared="true" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_SPELL_COLD_SNAP" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_COLD" prepared="true" />
+            <grant type="Spell" level="5" id="ID_KTH_COLAL_SPELL_FLASH_FREEZE" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_COLD" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_ICE_STORM" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_COLD" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_COLD" prepared="true" />
+            
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_FIRE" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_FIRE" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_FIREBALL" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_FIRE" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_FIRE" prepared="true" />
+            <grant type="Spell" level="9" id="ID_KTH_COLAL_SPELL_PYROCLASTIC_LANCE" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_FIRE" prepared="true" />
+            
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_SPELL_LIGHTNING_TENDRIL" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_LIGHTNING" prepared="true" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_SPELL_CRACKLE" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_LIGHTNING" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_LIGHTNING" prepared="true" />
+            <grant type="Spell" level="7" id="ID_KTH_COLAL_SPELL_JUMPING_JOLT" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_LIGHTNING" prepared="true" />
+            <grant type="Spell" level="9" id="ID_KTH_COLAL_SPELL_SKY_BURST" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_LIGHTNING" prepared="true" />
+            
+            <grant type="Spell" level="1" id="ID_KTH_COLAL_SPELL_BAD_BLOOD" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_POISON" prepared="true" />
+            <grant type="Spell" level="3" id="ID_KTH_COLAL_SPELL_POISON_DART" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_POISON" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_STINKING_CLOUD" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_POISON" prepared="true" />
+            <grant type="Spell" level="7" id="ID_KTH_COLAL_SPELL_POISON_BLAST" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_POISON" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_CLOUDKILL" spellcasting="Warlock" requirements="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_DRAGON_DRACONIC_BLAST_POISON" prepared="true" />
+        </rules>
+    </element>
+    <element name="True Dragon Form" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_ELDRITCH_INVOCATION_TRUE_DRAGON_FORM">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>18th level, true polymorph spell</prerequisite>
+        <requirements>[level:warlock:18],ID_PHB_SPELL_TRUE_POLYMORPH</requirements>
+        <description>
+            <p>When you use true polymorph on yourself to take the form of a dragon and allow it to become a permanent effect, the effect cannot be dispelled, and for all intents and purposes of the rules, you become a dragon. This does not revert even if you die, and can only be reversed by wish if you allow it to be.</p>
+        </description>
+        <sheet>
+            <description>When you use true polymorph on yourself to take the form of a dragon and allow it to become a permanent effect, the effect cannot be dispelled, and for all intents and purposes of the rules, you become a dragon. This does not revert even if you die, and can only be reversed by wish if you allow it to be.</description>
         </sheet>
     </element>
 </elements>
