@@ -9,82 +9,120 @@
     <element name="The Knowledge Keeper" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WARLOCK_KNOWLEDGEKEEPER">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>You have made a pact with being of ancient knowledge. The actual nature of this being can vary greatly, it can be a Pact with a sentient library, an ancient spirit, or perhaps even a lost god of knowledge. This is a pact for a Warlock that seeks something beyond simple power: they seek knowledge—ancient and unknown knowledge that has once and will again exist.</p>
+            <p class="indent">You can leverage this knowledge to know things that your mortal peers would consider miracles, delve the secrets that others do not even know exist, and (most importantly) perhaps even understand the philosophical mechanics of existence.</p>
             <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SPELLS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME5" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_ANCIENT_SECRETS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_ESOTERIC_KNOWLEDGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_MAGICAL_MECHANICS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SINGLE_MINDED_FOCUS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SEEPED_IN_ANCIENT_KNOWLEDGE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FLEETING_OMNISCIENCE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SPELLS" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME3" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME4" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME5" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_ANCIENT_SECRETS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_ESOTERIC_KNOWLEDGE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_MAGICAL_MECHANICS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SINGLE_MINDED_FOCUS" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SEEPED_IN_ANCIENT_KNOWLEDGE" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FLEETING_OMNISCIENCE" level="14" />
         </rules>
     </element>
     <element name="Knowledge Keeper Expanded Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SPELLS">
         <description>
-            <p></p>
+            <p>The ancient entity of knowledge you’ve made a pact with lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
             <table>
                 <thead>
                     <tr><td>Spell Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>Aldricor’s elemental rebuke, elemental orb</td></tr>
-                <tr><td>2nd</td><td>alter self, elemental exhalation</td></tr>
-                <tr><td>3rd</td><td>meteor jump, wind wall</td></tr>
-                <tr><td>4th</td><td>fire shield, secret chest</td></tr>
-                <tr><td>5th</td><td>control wind, summon knowledgekeeper</td></tr>
+                <tr><td>1st</td><td>induce headache, identify</td></tr>
+                <tr><td>2nd</td><td>detect thoughts, locate object</td></tr>
+                <tr><td>3rd</td><td>immutability, speak with dead</td></tr>
+                <tr><td>4th</td><td>divination, secret chest</td></tr>
+                <tr><td>5th</td><td>legend lore, field of stars</td></tr>
             </table>
         </description>
         <sheet display="false" />
         <spellcasting name="Warlock" extend="true">
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
-            <extend>ID_PHB_SPELL_</extend>
+            <extend>ID_KTH_COLAL_SPELL_INDUCE_HEADACHE</extend>
+            <extend>ID_PHB_SPELL_IDENTIFY</extend>
+            <extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+            <extend>ID_PHB_SPELL_LOCACTE_OBJECT</extend>
+            <extend>ID_KTH_COLAL_SPELL_IMMUTABILITY</extend>
+            <extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+            <extend>ID_PHB_SPELL_DIVINATION</extend>
+            <extend>ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST</extend>
+            <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+            <extend>ID_KTH_COLAL_SPELL_FIELD_OF_STARS</extend>
         </spellcasting>
     </element>
-    <element name="Featurename2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME2">
+    <element name="Ancient Secrets" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_ANCIENT_SECRETS">
         <description>
-            <p></p>
+            <p>When you select this Patron at 1st level, you can access the ancient secrets your patron has granted you. By expending a pact magic spell slot of at least one level higher than the spell you want to cast (or a 1st-level spell slot for a cantrip), you can cast an Abjuration, Divination, or Transmutation spell that does not appear on your spell list. This spell can be from any class’s spell list, but counts as a Warlock spell for you when you cast it this way. Spells cast this way are cast at one level lower than the spell slot used.</p>
+            <p class="indent">You can do this a number of times equal to your spellcasting modifier, and regain all uses of this feature at the end of a long rest.</p>
+        </description>
+        <sheet usage="{{spellcasting:attack}}/Long Rest">
+            <description>By expending a pact magic spell slot of at least one level higher than the spell you want to cast (or a 1st-level spell slot for a cantrip), you can cast an Abjuration, Divination, or Transmutation spell that does not appear on your spell list. This spell can be from any class’s spell list, but counts as a Warlock spell for you when you cast it this way. Spells cast this way are cast at one level lower than the spell slot used.</description>
+        </sheet>
+    </element>
+    <element name="Esoteric Knowledge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_ESOTERIC_KNOWLEDGE">
+        <description>
+            <p>Additionally at 1st level, you gain proficiency in one skill of your choice from Arcana, History, or Nature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Esoteric Knowledge" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_NATURE" />
+        </rules>
+    </element>
+    <element name="Magical Mechanics" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_MAGICAL_MECHANICS">
+        <description>
+            <p>Starting at 6th level, your understanding of the mechanics behind magical effects and the cosmic forces are developed enough that if you see a spell being cast, you can use your reaction to make an Arcana check to know what the spell is. If the spell you identify with this check would force you to make a saving throw, you can make that saving throw with advantage.</p>
+            <p class="indent">Additionally, your comprehension of magic allows you to access magic that is beyond your power, but not beyond your knowledge. You can cast from a Spell Scroll even if the spell isn’t on your spell list, and you can add your proficiency bonus to the ability check to successfully cast from a Spell Scroll.</p>
+        </description>
+        <sheet>
+            <description>If you see a spell being cast, you can use your reaction to make an Arcana check to know what the spell is. If the spell you identify with this check would force you to make a saving throw, you can make that saving throw with advantage.
+            You can cast from a Spell Scroll even if the spell isn’t on your spell list, and you can add your proficiency bonus to the ability check to successfully cast from a Spell Scroll.</description>
+        </sheet>
+    </element>
+    <element name="Single Minded Focus" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SINGLE_MINDED_FOCUS">
+        <description>
+            <p>Starting at 10th level, when you make a constitution saving throw to maintain concentration on a Divination school spell, you automatically pass the saving throw. If you are concentrating on a spell from another school, you can add your spellcasting modifier to the result.</p>
+        </description>
+        <sheet>
+            <description>When you make a constitution saving throw to maintain concentration on a Divination school spell, you automatically pass the saving throw. If you are concentrating on a spell from another school, you can add your spellcasting modifier to the result.</description>
+        </sheet>
+    </element>
+    <element name="Seeped in Ancient Knowledge" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SEEPED_IN_ANCIENT_KNOWLEDGE">
+        <description>
+            <p>Additionally at 10th level, ancient knowledge has seeped so deeply into you, you instinctively draw from the ancient knowledge of your Patron. You gain the eldritch invocation Eyes of the Rune Keeper and it does not count against your Invocations Known. If you already have this invocation, you can select either Beast Speech or Eldritch Sight instead.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Class Feature" name="Seeped in Ancient Knowledge" supports="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEAST_SPEECH|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SIGHT" requirements="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNEKEEPER,!ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SEEPED_IN_ANCIENT_KNOWLEDGE_EYES" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SEEPED_IN_ANCIENT_KNOWLEDGE_EYES" requirements="!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNEKEEPER" />
+        </rules>
     </element>
-    <element name="Featurename3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME3">
+    <element name="Eyes of the Rune Keeper" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_SEEPED_IN_ANCIENT_KNOWLEDGE_EYES">
         <description>
             <p></p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
+        <rules>
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNEKEEPER" />
+        </rules>
     </element>
-    <element name="Featurename4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME4">
+    <element name="Fleeting Omniscience" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FLEETING_OMNISCIENCE">
         <description>
-            <p></p>
+            <p>Starting at 14th level, you can briefly comprehend the true form of knowledge and use it to weave together the perfect form of magic. As a bonus action, you can replace your spellcasting ability modifier with the sum of your Intelligence, Wisdom, and Charisma modifiers until the end of your turn. You can’t use this feature again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featurename5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARLOCK_KNOWLEDGEKEEPER_FEATURENAME5">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action, you can replace your spellcasting ability modifier with the sum of your Intelligence, Wisdom, and Charisma modifiers until the end of your turn.</description>
         </sheet>
     </element>
 </elements>
