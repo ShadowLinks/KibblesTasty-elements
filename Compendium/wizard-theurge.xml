@@ -1,0 +1,82 @@
+<elements>
+    <info>
+        <name>Theurge Arcane Tradition for Wizard</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="wizard-theurge.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-theurge.xml" />
+        </update>
+    </info>
+    <element name="Theurge" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WIZARD_THEURGE">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p>Wizards of this pursuit delve what other Wizards consider untouchable. The secrets of the divine. They discover and delve the paths of power that divine magic activates, and seek to recreate it through precise understanding and deep knowledge.</p>
+            <p class="indent">Some are deeply religious, devoted to gods and seeking to understand them at a higher level, some follow unrestrained academic curiosity, and yet others seek this power for blasphemous reasons.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_STUDY_OF_THE_DIVINE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_THEOLOGIAN" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_CELESTIAL_CONDUIT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_DIVINE_REVELATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_DIVINE_SYNTHESIS" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_STUDY_OF_THE_DIVINE" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_THEOLOGIAN" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_CELESTIAL_CONDUIT" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_DIVINE_REVELATION" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_DIVINE_SYNTHESIS" level="14" />
+        </rules>
+    </element>
+    <element name="Study of the Divine" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_STUDY_OF_THE_DIVINE">
+        <description>
+            <p>Beginning at 2nd level, you delve the secrets of the divine, prying into magic usually denied to the arcane paths. Whenever you gain a Wizard level, you can replace one of the Wizard spells you add to your spellbook with a spell from the Cleric spell list. Any Cleric spell you gain from this feature is considered a Wizard spell for you and is recorded in your spellbook, but other Wizards are unable to copy these spells into their own spellbooks. The spell must be of a level for which you have spell slots, and can never be a spell level higher than your proficiency bonus (meaning you will be unable to learn Cleric spells of 7th level or higher).</p>
+            <p class="indent">Your ability to recreate divine magic using arcane magics is limited. You can cast a number of spells gained from this feature equal to your proficiency bonus. You regain all uses when you complete a long rest. When you use your Arcane Recovery feature, you can choose to reset this limit instead of regain spell slots. Using divine magic that brings creatures back from the dead strains your body, causing you to gain 2 levels of exhaustion when you cast a spell learned through this feature that restores a creature to life.</p>
+        </description>
+        <sheet>
+            <description>You can add cleric spells but other wizards cannot copy those spells and are limited to 6th level.
+            Your ability to recreate divine magic using arcane magics is limited. You can cast a number of spells gained from this feature equal {{proficiency}}. You regain all uses when you complete a long rest. When you use your Arcane Recovery feature, you can choose to reset this limit instead of regain spell slots. Using divine magic that brings creatures back from the dead strains your body, causing you to gain 2 levels of exhaustion when you cast a spell learned through this feature that restores a creature to life.</description>
+        </sheet>
+        <spellcasting name="Wizard" extend="true">
+            <extend>Cleric,(0||1||2||3||4||5||6)</extend>
+        </spellcasting>
+    </element>
+    <element name="Theologian" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_THEOLOGIAN">
+        <description>
+            <p>Additionally at 2nd level, you gain proficiency in the Religion skill. If you already have proficiency in Religion, you can select another skill to gain proficiency in.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Theologian" supports="Skill" requirements="ID_PROFICIENCY_SKILL_RELIGION,!ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_RELIGION"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_RELIGION" requirements="!ID_PROFICIENCY_SKILL_RELIGION" />
+        </rules>
+    </element>
+    <element name="Celestial Conduit" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_CELESTIAL_CONDUIT">
+        <description>
+            <p>Starting at 6th level, when you cast a spell from the Cleric spell list, you gain temporary hit points equal to your Intelligence modifier + the level of the spell.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell from the Cleric spell list, you gain temporary hit points equal to {{intelligence:modifier}} + the level of the spell.</description>
+        </sheet>
+    </element>
+    <element name="Divine Revelation" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_DIVINE_REVELATION">
+        <description>
+            <p>Beginning at 10th level, your understanding of divine magic reaches complete comprehension. You can copy Cleric spells into your spellbook from scrolls or other written records of them.</p>
+            <p class="indent">Additionally, when you deal fire or lightning damage, you can replace half the damage dealt with radiant damage. When you deal cold or poison damage, you can replace half the damage dealt with necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>You can copy Cleric spells into your spellbook from scrolls or other written records of them.
+            Additionally, when you deal fire or lightning damage, you can replace half the damage dealt with radiant damage. When you deal cold or poison damage, you can replace half the damage dealt with necrotic damage.</description>
+        </sheet>
+    </element>
+    <element name="Divine Synthesis" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_THEURGE_DIVINE_SYNTHESIS">
+        <description>
+            <p>Starting at 14th level, your research into the synthesis of divine and arcane reveals to you a greater harmony of power. When you cast a 1st level or higher spell from the Wizard spell list or a spell from the Cleric spell list as your action, you can cast a 1st level or higher spell from the other list with a casting time of an action or bonus action as a bonus action (regardless of its casting time).</p>
+            <p class="indent">The total level of the two spells combined cannot exceed your half your Wizard level (rounded down).</p>
+        </description>
+        <sheet>
+            <description>When you cast a 1st level or higher spell from the Wizard spell list or a spell from the Cleric spell list as your action, you can cast a 1st level or higher spell from the other list with a casting time of an action or bonus action as a bonus action (regardless of its casting time).
+            The total level of the two spells combined cannot exceed {{level:wizard:half}}.</description>
+        </sheet>
+    </element>
+</elements>

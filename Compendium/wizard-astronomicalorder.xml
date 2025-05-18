@@ -1,0 +1,177 @@
+<elements>
+    <info>
+        <name>Astronomical Order Arcane Tradition for Wizard</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="wizard-astronomicalorder.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-astronomicalorder.xml" />
+        </update>
+    </info>
+    <element name="Astronomical Order" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_WIZARD_ASTRONOMICALORDER">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p>The Astronomical Order are Wizards that specialize in the study of the celestial bodies and their movements, interpreting mystical meaning and understanding aspects of nature and magic from their order. They draw on the stars and the insights they glean from these celestial mysteries empower their magic.</p>
+            <p class="indent">Often found buried in star charts and ancient tomes, they seek to delve into the secrets of ancient skies and uncover new insights into the infinite depths above.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_ASTRAL_ORRERY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_STAR_SHARDS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_NEBULA_OF_CREATION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CELESTIAL_CANVAS" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_ASTRAL_ORRERY" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_STAR_SHARDS" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_NEBULA_OF_CREATION" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CELESTIAL_CANVAS" level="14" />
+        </rules>
+    </element>
+    <element name="Astral Orrery" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_ASTRAL_ORRERY">
+        <description>
+            <p>Starting at 2nd level, you can invoke a special ritual as an action, creating an ethereal orrery representing an accurate real time star chart around you, even during the day or underground. While surrounded by your Astral Orrery, you are able to see the positions of the stars and celestial bodies in great detail, even during the day, and gain the following abilities:</p>
+            <ul>
+                <li><strong></strong>North Star. You can determine which direction is north and what time of day it is.</li>
+                <li><strong></strong>Celestial Navigation. You can gain advantage or grant advantage to another creature on making Wisdom (Survival) checks to determine your location.</li>
+                <li><strong></strong>Read the Heavens. You can cast the augury spell as a ritual, consulting astral omens, even without having the spell known or prepared.</li>
+            </ul>
+            <p class="indent">This ability may have unpredictable results or not function as expected when used on planes other than the material. This ethereal orrery lasts until you dismiss it (no action required) or move.</p>
+        </description>
+        <sheet>
+            <description>You can invoke a special ritual as an action and gain the following abilities:
+            North Star. You can determine which direction is north and what time of day it is.
+            Celestial Navigation. You can gain advantage or grant advantage to another creature on making Wisdom (Survival) checks to determine your location.
+            Read the Heavens. You can cast the augury spell as a ritual, consulting astral omens, even without having the spell known or prepared.
+            This ability may have unpredictable results or not function as expected when used on planes other than the material. This ethereal orrery lasts until you dismiss it (no action required) or move.</description>
+        </sheet>
+    </element>
+    <element name="Star Shards" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_STAR_SHARDS">
+        <description>
+            <p>Additionally at 2nd level, you gain the ability to channel astral power as you cast spells. When you expend a spell slot of 1st level or higher on a Wizard spell, you generate a star mote orbiting you as a glowing point of starlight. While you have one or more of these star motes, you can expend them in the following ways:</p>
+            <ul>
+                <li>As a bonus action, you can expend one or more to fire them at a creature within 60 feet, dealing 1d4 + 1 radiant damage per mote expended this way.</li>
+                <li>As a bonus action, you can expend motes to protect yourself, granting you 1d4 temporary hit points per mote expended this way.</li>
+                <li>As a reaction to failing a Wisdom or Intelligence saving throw, or a Constitution saving throw to maintain concentration on a spell, you can expend one or more motes to add 1 to the roll per mote expended (you can do this after rolling, potentially turning a failure into a success).</li>
+            </ul>
+            <p class="indent">You can have a maximum number of unused star motes equal to your Intelligence modifier. All unused star motes fade when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>When you expend a spell slot of 1st level or higher on a Wizard spell, you generate a star mote orbiting you as a glowing point of starlight. While you have one or more of these star motes, you can expend them in the following ways:
+            As a bonus action, you can expend one or more to fire them at a creature within 60 feet, dealing 1d4 + 1 radiant damage per mote expended this way.
+            As a bonus action, you can expend motes to protect yourself, granting you 1d4 temporary hit points per mote expended this way.
+            As a reaction to failing a Wisdom or Intelligence saving throw, or a Constitution saving throw to maintain concentration on a spell, you can expend one or more motes to add 1 to the roll per mote expended (you can do this after rolling, potentially turning a failure into a success).
+            You can have a maximum of{{intelligence:modifier}} unused star motes. All unused star motes fade when you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Constellations" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS">
+        <description>
+            <p>Starting at 6th level, as a bonus action, you can form orbiting motes from Star Shards into Constellations that empower you with astral powers. A Constellation can be broken up at any time (no action required) returning the component motes and ending the effect of the Constellation. Forming a new Constellation while you already have one active breaks apart the previously formed Constellation. The forms of the Constellations vary from wizard to wizard, representing intricacies of beliefs and magic, but always take the form of stars from the planet they are on, just connected in unique ways. You can form the following Constellations:</p>
+            <ul>
+                <li><strong>Constellation of Nightfall (2 Motes).</strong> While this Constellation is active, you gain darkvision with a range of 60 feet.</li>
+                <li><strong>Constellation of Navigation (2 Motes).</strong> While this Constellation is active, you gain the benefits of your Astral Orrery; moving does not dismiss it.</li>
+                <li><strong>Constellation of the Eye (3 Motes).</strong> While the Constellation is active, you gain advantage on Wisdom (Perception) checks.</li>
+                <li><strong>Constellation of Mystery (3 Motes).</strong> While this Constellation is active, you gain advantage on Intelligence (Arcana) checks.</li>
+                <li><strong>Constellation of Brilliance (4 Motes).</strong> While the Constellation is active, when you cast a spell that deals damage you can choose to have it deal radiant damage instead of its normal damage type.</li>
+                <li><strong>Constellation of the Void (4 motes).</strong> While this Constellation is active all creatures of your choice within 20 feet of you gain resistance to radiant damage.</li>
+                <li><strong>Constellation of the Messenger (5 Motes).</strong> While this Constellation is active, you gain a flying speed of 30 feet.</li>
+                <li><strong>Constellation of the Shield (5 motes).</strong> While this Constellation is active, you gain half cover against attacks</li>
+            </ul>
+            <p class="indent">While you have a Constellation formed, you shed 5 feet of dim light for each mote forming the constellation. Any formed Constellation fades when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can form orbiting motes from Star Shards into Constellations that empower you with astral powers. A Constellation can be broken up at any time (no action required) returning the component motes and ending the effect of the Constellation. Forming a new Constellation while you already have one active breaks apart the previously formed Constellation. The forms of the Constellations vary from wizard to wizard, representing intricacies of beliefs and magic, but always take the form of stars from the planet they are on, just connected in unique ways.
+            While you have a Constellation formed, you shed 5 feet of dim light for each mote forming the constellation. Any formed Constellation fades when you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_NIGHTFALL" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_NAVIGATION" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_EYE" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_MYSTERY" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_BRILLIANCE" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_VOID" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_MESSENGER" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_SHIELD" />
+        </rules>
+    </element>
+    <element name="Constellation of Nightfall (2 Motes)." type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_NIGHTFALL">
+        <description>
+            <p> While this Constellation is active, you gain darkvision with a range of 60 feet.</p>
+        </description>
+        <sheet>
+            <description>hile this Constellation is active, you gain darkvision with a range of 60 feet.</description>
+        </sheet>
+    </element>
+    <element name="Constellation of Navigation (2 Motes)." type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_NAVIGATION">
+        <description>
+            <p> While this Constellation is active, you gain the benefits of your Astral Orrery; moving does not dismiss it.</p>
+        </description>
+        <sheet>
+            <description> While this Constellation is active, you gain the benefits of your Astral Orrery; moving does not dismiss it.</description>
+        </sheet>
+    </element>
+    <element name="Constellation of the Eye (3 Motes)." type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_EYE">
+        <description>
+            <p> While the Constellation is active, you gain advantage on Wisdom (Perception) checks.</p>
+        </description>
+        <sheet>
+            <description>While the Constellation is active, you gain advantage on Wisdom (Perception) checks.</description>
+        </sheet>
+    </element>
+    <element name="Constellation of Mystery (3 Motes)." type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_MYSTERY">
+        <description>
+            <p> While this Constellation is active, you gain advantage on Intelligence (Arcana) checks.</p>
+        </description>
+        <sheet>
+            <description>While this Constellation is active, you gain advantage on Intelligence (Arcana) checks.</description>
+        </sheet>
+    </element>
+    <element name="Constellation of Brilliance (4 Motes)." type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_BRILLIANCE">
+        <description>
+            <p> While the Constellation is active, when you cast a spell that deals damage you can choose to have it deal radiant damage instead of its normal damage type.</p>
+        </description>
+        <sheet>
+            <description>While the Constellation is active, when you cast a spell that deals damage you can choose to have it deal radiant damage instead of its normal damage type.</description>
+        </sheet>
+    </element>
+    <element name="Constellation of the Void (4 motes)." type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_VOID">
+        <description>
+            <p> While this Constellation is active all creatures of your choice within 20 feet of you gain resistance to radiant damage.</p>
+        </description>
+        <sheet>
+            <description>While this Constellation is active all creatures of your choice within 20 feet of you gain resistance to radiant damage.</description>
+        </sheet>
+    </element>
+    <element name="Constellation of the Messenger (5 Motes)." type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_MESSENGER">
+        <description>
+            <p> While this Constellation is active, you gain a flying speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>While this Constellation is active, you gain a flying speed of 30 feet.</description>
+        </sheet>
+    </element>
+    <element name="Constellation of the Shield (5 motes)." type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CONSTELLATIONS_SHIELD">
+        <description>
+            <p>While this Constellation is active, you gain half cover against attacks</p>
+        </description>
+        <sheet>
+            <description>While this Constellation is active, you gain half cover against attacks</description>
+        </sheet>
+    </element>
+    <element name="Nebula of Creation" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_NEBULA_OF_CREATION">
+        <description>
+            <p>Starting at 10th level, as an action, you can create a number of star motes from your Star Shards feature equal to your Intelligence modifier. Once you use this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>s an action, you can create {{intelligence:modifier}} star motes from your Star Shards feature.</description>
+        </sheet>
+    </element>
+    <element name="Celestial Canvas" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WIZARD_ASTRONOMICALORDER_CELESTIAL_CANVAS">
+        <description>
+            <p>Starting at 14th level, you can form and maintain an additional Constellation using your Star Motes before the last created Constellation is removed.</p>
+        </description>
+        <sheet>
+            <description>You can form and maintain an additional Constellation using your Star Motes before the last created Constellation is removed.</description>
+        </sheet>
+    </element>
+</elements>
