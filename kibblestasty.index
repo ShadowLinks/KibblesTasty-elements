@@ -9,7 +9,10 @@
         <file name="source.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/source.xml" />
         <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/feats.xml" />
         <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spells.xml" />
+        
         <file name="psionic.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionic.xml" />
+
+        <file name="race-awakenedundead.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-awakenedundead.xml" />
 
         <file name="class-occultist.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/class-occultist.xml" />
         <file name="occultist-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-spelllist.xml" />
