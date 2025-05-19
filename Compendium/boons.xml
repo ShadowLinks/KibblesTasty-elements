@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Boons</name>
+        <update version="0.0.1">
+            <file name="boons.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/boons.xml" />
+        </update>
+    </info>
+    <element name="Boon of Attunement" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_ATTUNEMENT ">
+        <description>
+            <p>Your attunement slots increase by 1.</p>
+            
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <stat name="attunement:max" value="1" />
+        </rules>
+    </element>
+</elements>
+<!--
+
+    <element name="Boon of " type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_ ">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element> -->
