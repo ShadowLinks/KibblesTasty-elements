@@ -1,0 +1,542 @@
+<elements>
+    <info>
+        <name>Awakened Undead</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="race-awakenedundead.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-awakenedundead.xml" />
+        </update>
+    </info>
+    <element name="Awakened Undead" type="Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACE_AWAKENED_UNDEAD">
+        <description>
+            <p>You are the skeletal remains of what once was a living creature; you are both the power that animates these remains and bound to the remains themselves. The source of your second life varies—perhaps risen as a mindless undead by a necromancer you eventually awakened sentience, perhaps you are fey spirit that inhabited the bones and got stuck, or perhaps you fiendish creature bound to this form to walk the material plane—there are many options for how you ended up in this predicament, but beware, your new life is as fragile as any mortal, and you can die as they do.</p>
+            <p class="indent">This is a unique and flexible race where your exact nature depends on several factors of your circumstance and it presents unique traits and challenges, including some large conveniences and inconveniences that can lead to nonstandard circumstances, particularly around healing</p>
+            <h4>Being Undead is not Normal</h4>
+            <p>...usually. This is a race that will always be under the approval of a DM if fits with their setting and campaign. Being undead will not be a normal player experience: if your nature is revealed, the vast majority of creatures will find you either terrifying or a threat to be destroyed. Various disguises or illusions will almost always be required to interact with the living</p>
+            <h4>Awakened Undead Traits</h4>
+            <p></p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> As an undead, you have increased resilience. Your Constitution score and one other ability score of choice increase by 1. You gain one additional ability score increase from the type of Remains selected in your subrace choice.</p>
+            <p class="indent"><strong><em>Age.</em></strong>  Awakened undead are effectively ageless. Their age can be measured from when they have awakened, but they do not change with age beyond their lived experience from that point.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> While typical undead are nearly universally evil due to the negative energy that animates them, there are other sources of undead animation that run a broader range of possibilities. Regardless of your animating force, what differentiates an Awakened Undead is awareness and control, and as such they can freely choose their alignment. Some will still choose evil, but others find a new path upon awakening.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Undead are typically animated from Medium sized humanoid corpses, and have sizes based on the creature they once were. Your size is Medium unless otherwise specified by your Remains type.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> Due to the unique nature of your sight, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Undead Nature.</em></strong> Your creature type is undead, rather than humanoid. As a result of being undead, you have the following benefits:</p>
+            <ul>
+                <li>You don't need to eat, drink, or breathe.</li>
+                <li>You are immune to disease.</li>
+                <li>You are immune to poison damage and the poisoned condition.</li>
+            </ul>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common.</p>
+            <p class="indent"><strong><em>Magical Vitality.</em></strong> As you are powered by magic, your vitality can be restored by magical power. Any creature (including you) with access to spell slots can expend a spell slot as an action with a range of touch to restore 1d8 + their spell casting modifier hit points donating their magical power to your vitality. The amount restored increases by 1d8 for each spell slot level above 1st. Whenever you are healed in this fashion, you can expend hit dice (rolling them as normal) equal to the spell slot level used to regain additional hit points.</p>
+            <p class="indent">Additionally, you can be returned to life with the animate dead spell, which has the effects of revivify when cast targeting only you.</p>
+            <p class="indent"><strong><em>Reassembly.</em></strong> Your body can be assembled if pieces are broken off. A lost limb can be reattached over a short rest while spending 1 or more hit dice as long as the limb is in your possession, and your corpse counts as intact if all pieces of it can be found and assembled for when using animate dead to recreate revivify on you.</p>
+            <p class="indent"><strong><em>Turn Resistance.</em></strong> Due to your awakened nature, you have advantage on saving throws against any effect that turns undead.</p>
+            <p class="indent"><strong><em>Antimagic Susceptibility.</em></strong> As a magically alive force, you are weakened while in the area of an antimagic field. At the start of each turn you spend it, you must make a DC 10 Charisma saving throw. On failure, you have disadvantage on all attack rolls and ability checks, and your speed is halved. If you fail by 5 or more, you are stunned until the end of your turn.</p>
+            <p class="indent">If you are the target of dispel magic, you must succeed a Charisma saving throw against the caster's spell save DC (even if the caster is an allied creature). On failure, you are stunned until the end of your next turn.</p>
+            <p class="indent"><strong><em>Subtype.</em></strong> Awakened Undead are extremely varied by their nature, and consequently create their subrace in a unique way by selecting two values: their remains, and their animating force. Their remains indicate what sort of corpse you are animating, and your the animating force dictates what sort of force is driving the animation.</p>
+            <p class="indent">Your selection of remains gives you an ability score (listed in the table below) which is increased by one, and a feature that is defined below. Your animating force gives a language known as well as a feature (also defined below). If the language is listed as "matching remains" it means the language of the type of corpse you are animating spoke in life (for example, for an elf corpse, Elvish).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_UNDEAD_NATURE" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_MAGICAL_VITALITY" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REASSEMBLY" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_TURN_RESISTANCE" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_ANTIMAGIC_SUSCEPTIBILITY" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_SUBTYPE" />
+        </rules>
+    </element>
+    <element name="Undead Nature" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_UNDEAD_NATURE">
+        <description>
+            <p>Your creature type is undead, rather than humanoid. As a result of being undead, you have the following benefits:</p>
+            <ul>
+                <li>You don't need to eat, drink, or breathe.</li>
+                <li>You are immune to disease.</li>
+                <li>You are immune to poison damage and the poisoned condition.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your creature type is undead. You don't need to eat, drink, or breathe. You are immune to disease. You are immune to poison damage and the poisoned condition.</description>
+        </sheet>
+    </element>
+    <element name="Magical Vitality" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_MAGICAL_VITALITY">
+        <description>
+            <p>As you are powered by magic, your vitality can be restored by magical power. Any creature (including you) with access to spell slots can expend a spell slot as an action with a range of touch to restore 1d8 + their spell casting modifier hit points donating their magical power to your vitality. The amount restored increases by 1d8 for each spell slot level above 1st. Whenever you are healed in this fashion, you can expend hit dice (rolling them as normal) equal to the spell slot level used to regain additional hit points.</p>
+            <p class="indent">Additionally, you can be returned to life with the animate dead spell, which has the effects of revivify when cast targeting only you.</p>
+        </description>
+        <sheet>
+            <description>Any creature (including you) with access to spell slots can expend a spell slot as an action with a range of touch to restore 1d8 + their spell casting modifier hit points donating their magical power to your vitality. The amount restored increases by 1d8 for each spell slot level above 1st. Whenever you are healed in this fashion, you can expend hit dice (rolling them as normal) equal to the spell slot level used to regain additional hit points.
+            Additionally, you can be returned to life with the animate dead spell, which has the effects of revivify when cast targeting only you.</description>
+        </sheet>
+    </element>
+    <element name="Reassembly" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REASSEMBLY">
+        <description>
+            <p>Your body can be assembled if pieces are broken off. A lost limb can be reattached over a short rest while spending 1 or more hit dice as long as the limb is in your possession, and your corpse counts as intact if all pieces of it can be found and assembled for when using animate dead to recreate revivify on you.</p>
+        </description>
+        <sheet>
+            <description>A lost limb can be reattached over a short rest while spending 1 or more hit dice as long as the limb is in your possession, and your corpse counts as intact if all pieces of it can be found and assembled for when using animate dead to recreate revivify on you.</description>
+        </sheet>
+    </element>
+    <element name="Turn Resistance" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_TURN_RESISTANCE">
+        <description>
+            <p>Due to your awakened nature, you have advantage on saving throws against any effect that turns undead.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against any effect that turns undead.</description>
+        </sheet>
+    </element>
+    <element name="Antimagic Susceptibility" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_ANTIMAGIC_SUSCEPTIBILITY">
+        <description>
+            <p>As a magically alive force, you are weakened while in the area of an antimagic field. At the start of each turn you spend it, you must make a DC 10 Charisma saving throw. On failure, you have disadvantage on all attack rolls and ability checks, and your speed is halved. If you fail by 5 or more, you are stunned until the end of your turn.</p>
+            <p class="indent">If you are the target of dispel magic, you must succeed a Charisma saving throw against the caster's spell save DC (even if the caster is an allied creature). On failure, you are stunned until the end of your next turn.</p>
+        </description>
+        <sheet>
+            <description>At the start of each turn you spend in an antimagic field, you must make a DC 10 Charisma saving throw. On failure, you have disadvantage on all attack rolls and ability checks, and your speed is halved. If you fail by 5 or more, you are stunned until the end of your turn.
+            If you are the target of dispel magic, you must succeed a Charisma saving throw against the caster's spell save DC (even if the caster is an allied creature). On failure, you are stunned until the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Subtype" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_SUBTYPE">
+        <description>
+            <p>Awakened Undead are extremely varied by their nature, and consequently create their subrace in a unique way by selecting two values: their remains, and their animating force. Their remains indicate what sort of corpse you are animating, and your the animating force dictates what sort of force is driving the animation.</p>
+            <p class="indent">Your selection of remains gives you an ability score (listed in the table below) which is increased by one, and a feature that is defined below. Your animating force gives a language known as well as a feature (also defined below). If the language is listed as "matching remains" it means the language of the type of corpse you are animating spoke in life (for example, for an elf corpse, Elvish).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Sub Race" name="Remains" supports="remains-type" />
+            <select type="Racial Trait" name="Animating Force" supports="animating-force-type" />
+        </rules>
+    </element>
+
+    <element name="Human Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_HUMAN">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">You can choose an ability score to increase by 1 and you gain the Universal Parts Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_UNIVERSAL_PARTS" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_UNIVERSAL_PARTS" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <select type="Ability Score Improvement" name="Ability Score Improvement +1 (Human Remains)" supports="Custom Ability Score Increase 1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Elf Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_ELF">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">Your dexterity increases by 1 and you gain the Mystic Bones Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_MYSTIC_BONES" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_MYSTIC_BONES" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Dwarf Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_DWARF">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">Your constitution increases by 1 and you gain the Sturdy Bones Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_STURDY_BONES" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_STURDY_BONES" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Minotaur Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_MINOTAUR">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">Your strength increases by 1 and you gain the Mystic Bones Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_RAMMING_HORNS" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_RAMMING_HORNS" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Beast Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_BEAST">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">Your strength or constitution increases by 1 and you gain the Bestial Configuration Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_BEASTIAL_CONFIGURATION" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_BEASTIAL_CONFIGURATION" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <select type="Ability Score Improvement" name="Beast Remains" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Catfolk Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_CATFOLK">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">Your dexterity increases by 1 and you gain the Climbing Configured Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_CLIMBING_CONFIGURED" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_CLIMBING_CONFIGURED" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    
+    <element name="Angelic Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_ANGELIC">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">Your charisma increases by 1 and you gain the Relic Bones Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_RELIC_BONES" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_RELIC_BONES" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Kobold Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_KOBOLD">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">Your Dexterity increases by 1 and you gain the Scurrying Frame Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_SCURRYING_FRAME" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_SCURRYING_FRAME" />
+            <stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Turtlefolk Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_TURTLEFOLK">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">Your Constitution increases by 1 and you gain the Bone Shell Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_BONE_SHELL" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_BONE_SHELL" />
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Centaur Remains" type="Sub Race" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_CENTAUR">
+        <supports>remains-type</supports>
+        <description>
+            <p class="indent">Your Strength increases by 1 and you gain the Galloping Frame Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_GALLOPING_FRAME" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_GALLOPING_FRAME" />
+            <stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+
+    <element name="Universal Parts" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_UNIVERSAL_PARTS">
+        <description>
+            <p>You can often find useful spare laying about, and your parts are easier to repair in general. When you complete a long rest, you regain an additional hit die. The number of hit dice you regain increases when your proficiency bonus does.</p>
+        </description>
+        <sheet>
+            <description>When you complete a long rest, you regain an additional hit die.</description>
+            <description level="5">When you complete a long rest, you regain 2 additional hit die.</description>
+            <description level="9">When you complete a long rest, you regain 3 additional hit die.</description>
+            <description level="13">When you complete a long rest, you regain 4 additional hit die.</description>
+            <description level="17">When you complete a long rest, you regain 5 additional hit die.</description>
+        </sheet>
+    </element>
+    <element name="Mystic Bones" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_MYSTIC_BONES">
+        <description>
+            <p>You have advantage on Charisma saving throws for Antimagic Susceptibility, and you cannot be put to sleep by magical means.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma saving throws for Antimagic Susceptibility, and you cannot be put to sleep by magical means.</description>
+        </sheet>
+    </element>
+    <element name="Sturdy Bones" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_STURDY_BONES">
+        <description>
+            <p>Your bones are particularly sturdy. Your speed becomes 25 feet. Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma saving throws for Antimagic Susceptibility, and you cannot be put to sleep by magical means.</description>
+        </sheet>
+        <rules>
+            <stat name="hp" value="level" />
+            <stat name="innate speed" value="25" bonus="base" />
+        </rules>
+    </element>
+    <element name="Beastial Configuration" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_BEASTIAL_CONFIGURATION">
+        <description>
+            <p>Inconveniently, you don't have hands. You cannot do anything that requires hands (such as holding weapons or casting spells with somatic components), but you can grapple a single target with your mouth.</p>
+            <p class="indent">Your movement speed becomes 35 feet, and you gain natural weapons in the form of fangs that deal 1d10 + your Strength modifier piercing damage, and claws that deal 1d6 + your Strength modifier slashing damage. Your claws have the Light property, you are considered to be holding them for the purpose of using them as weapons.</p>
+        </description>
+        <sheet>
+            <description>You cannot do anything that requires hands (such as holding weapons or casting spells with somatic components), but you can grapple a single target with your mouth.
+            Your movement speed becomes 35 feet, and you gain natural weapons in the form of fangs that deal 1d10 + {{strength:modifier}} piercing damage, and claws that deal 1d6 + {{strength:modifier}} slashing damage. Your claws have the Light property, you are considered to be holding them for the purpose of using them as weapons.</description>
+        </sheet>
+        <rules>            
+            <stat name="innate speed" value="35" bonus="base" />
+        </rules>
+    </element>
+    <element name="Bone Shell" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_BONE_SHELL">
+        <description>
+            <p>Your remains have a study bone shell that can be used to deflect attacks. When you aren't wearing armor, your AC is 17. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</p>
+        </description>
+        <sheet>
+            <description> When you aren't wearing armor, your AC is 17. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:calculation" value="17" bonus="calculation" equipped="![armor:any]" alt="Natural Armor (Bone Shell)" />
+        </rules>
+    </element>
+    <element name="Climbing Configured" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_CLIMBING_CONFIGURED">
+        <description>
+            <p>Your remains are well configured for climbing, being light and with built in claws. You gain a climbing speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:climb" value="30" />
+        </rules>
+    </element>
+    <element name="Galloping Frame" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_GALLOPING_FRAME">
+        <description>
+            <p>Your movement speed becomes 35 feet, but any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.</p>
+        </description>
+        <sheet>
+            <description>Your movement speed becomes 35 feet, but any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed" value="35" />
+        </rules>
+    </element>
+    <element name="Ramming Horns" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_RAMMING_HORNS">
+        <description>
+            <p>Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + {{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
+        </sheet>
+    </element>
+    <element name="Relic Bones" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_RELIC_BONES">
+        <description>
+            <p>Your bones have a lingering holy aura. You are immune to effects that turn undead and have resistance to radiant damage.</p>
+        </description>
+        <sheet>
+            <description>Your bones have a lingering holy aura. You are immune to effects that turn undead and have resistance to radiant damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+        </rules>
+    </element>
+    <element name="Scurrying Frame" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_SCURRYING_FRAME">
+        <description>
+            <p>Your size becomes Small, and you can move through other creatures' spaces as if you were one size smaller (Tiny) but cannot end your turn inside their space unless you otherwise could.</p>
+        </description>
+        <sheet>
+            <description>Your size becomes Small, and you can move through other creatures' spaces as if you were one size smaller (Tiny) but cannot end your turn inside their space unless you otherwise could.</description>
+        </sheet>
+        <rules>
+            <grant type="Size" id="ID_SIZE_SMALL" />
+        </rules>
+    </element>
+    <element name="Blightborn" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_BLIGHTBORN">
+        <description>
+            <p>Uniquely your animating force is a physical (though still magical) phenomena; twisting vines growing through your remains. Your creature type is both Plant and Undead, and you can leverage your vines to constrict your enemies. You can grapple a number of creatures equal to your Constitution modifier without using your hands.</p>
+        </description>
+        <sheet>
+            <description>Your creature type is both Plant and Undead, and you can leverage your vines to constrict your enemies. You can grapple {{constitution:modifier}} creatures without using your hands.</description>
+        </sheet>
+    </element>
+    <element name="Emotional Void" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_EMOTIONAL_VOID">
+        <description>
+            <p>You are animated by a thread of negative energy that has somehow gained greater awareness. You still feel the innate urge to destroy all life, and can control and channel that urge. As bonus action, you can unleash your normal undead nature for 1 minute. You become immune to the charmed and frightened conditions, but lose your Turn Resistance feature.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You are animated by a thread of negative energy that has somehow gained greater awareness. You still feel the innate urge to destroy all life, and can control and channel that urge. As bonus action, you can unleash your normal undead nature for 1 minute. You become immune to the charmed and frightened conditions, but lose your Turn Resistance feature.</description>
+        </sheet>
+    </element>
+    <element name="Fey Spirit" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FEY_SPIRIT">
+        <description>
+            <p>Sometimes a fey spirit finds itself inhabiting a pile of bones, often not entirely aware of who, what or why, as is their way. Your creature type is both Fey and Undead. You have access to additional fey magic, and cast faerie fire and speak with animals each once without expending a spell slot, regaining the ability to do so when you finish a long rest. Your spell casting ability for these spells is Charisma.</p>
+        </description>
+        <sheet>
+            <description>Your creature type is both Fey and Undead. You have access to additional fey magic, and cast faerie fire and speak with animals each once without expending a spell slot, regaining the ability to do so when you finish a long rest. Your spell casting ability for these spells is Charisma.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+        </rules>
+    </element>
+    <element name="Flaming Skeleton" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FLAMING_SKELETON">
+        <description>
+            <p>You glow with an inner flame. As a bonus action, you can burst alight, becoming a flaming skeleton for 1 minute. For the duration, you have resistance to fire damage and any other creature that starts their turn within 5 feet of you takes 1d4 fire damage. While this effect is active, once per turn when you hit a creature within 5 feet of you with an attack or deal fire damage, you can add bonus damage to that damage roll equal to your proficiency bonus (affecting one target of the damage roll).</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action, you can burst alight, becoming a flaming skeleton for 1 minute. For the duration, you have resistance to fire damage and any other creature that starts their turn within 5 feet of you takes 1d4 fire damage. While this effect is active, once per turn when you hit a creature within 5 feet of you with an attack or deal fire damage, you can add {{proficiency}} bonus damage to that damage roll (affecting one target of the damage roll).</description>
+        </sheet>
+    </element>
+    <element name="Rememberance" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE">
+        <description>
+            <p>You've come back for your own bones... or at least you think you have. You retain some of the skills you had in life. You can select one of the following:</p>
+            <ul>
+                <li>Proficiency in a simple or martial weapon of your choice.</li>
+                <li>Proficiency in two skills or tools of your choice.</li>
+                <li>You additionally gain proficiency in one artisan’s tool or language of your choice.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" supports="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE_WEAPON|ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE_SKILL" />
+            <select type="Racial Trait" supports="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE_LANGUAGE|ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE_ARTISAN" />
+        </rules>
+    </element>
+    <element name="Artisan Tool Proficiency" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE_ARTISAN">
+        <description>
+            <p>You additionally gain proficiency in one artisan’s tool of your choice </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency, Rememberance" supports="Artisan" />
+        </rules>
+    </element>
+    <element name="Language Proficiency" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE_LANGUAGE">
+        <description>
+            <p>You additionally gain proficiency in one Language of your choice. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Language" name="Language, Rememberance" supports="Standard||Exotic" />
+        </rules>
+    </element>
+    <element name="Weapon Proficiency" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE_WEAPON">
+        <description>
+            <p>Proficiency in a simple or martial weapon of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Weapon Proficiency" supports="Simple||Martial" />
+        </rules>
+    </element>
+    <element name="Tool or skill Proficiency" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE_SKILL">
+        <description>
+            <p>Proficiency in two skills or tools of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Proficiency, Tokens of Past Lives" supports="Skill||Tool" />
+        </rules>
+    </element>
+    <element name="Spirit Soaring" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_SPIRIT_SOARING">
+        <description>
+            <p>You're loosely bound to this shell and capable of soaring free of it. As an action, you can cast gaseous form, but rather than transforming you leave your body behind, incapacitated, and when the spell ends you return to your body's location.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you can cast gaseous form, but rather than transforming you leave your body behind, incapacitated, and when the spell ends you return to your body's location.</description>
+        </sheet>
+    </element>
+
+    <element name="Necromancy" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FORCE_NECROMANCY">
+        <supports>animating-force-type</supports>
+        <description>
+            <p>You gain a language matching your remains and the Emotional Void Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_EMOTIONAL_VOID" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_EMOTIONAL_VOID" />
+            <select type="Language" name="Language, Human Remains" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_HUMAN" supports="Standard||Exotic" />
+            <grant type="Language" id="ID_LANGUAGE_ELVISH" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_ELF" />
+            <grant type="Language" id="ID_LANGUAGE_DWARVISH" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_DWARF" />
+            <grant type="Language" id="ID_GGTR_LANGUAGE_MINOTAUR" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_MINOTAUR" />
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_BEAST" />
+            <select type="Language" name="Language, Catfolk Remains" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_CATFOLK" supports="Standard||Exotic" />
+            <grant type="Language" id="ID_LANGUAGE_CELESTIAL" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_ANGELIC" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_KOBOLD" />
+            <grant type="Language" id="ID_MM_LANGUAGE_AQUAN" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_TURTLEFOLK" />
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_CENTAUR" />
+        </rules>
+    </element>
+    <element name="Wandering Spirit" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FORCE_WANDERING_SPIRIT">
+        <supports>animating-force-type</supports>
+        <description>
+            <p>You gain a language and the Spirit Soaring Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_SPIRIT_SOARING" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Language" name="Language, Wandering Spirit" supports="Standard||Exotic" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_SPIRIT_SOARING" />
+        </rules>
+    </element><element name="Returned Spirit" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FORCE_RETURNED_SPIRIT">
+        <supports>animating-force-type</supports>
+        <description>
+            <p>You gain a language matching your remains and the Rememberance Feature</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Language" name="Language, Human Remains" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_HUMAN" supports="Standard||Exotic" />
+            <grant type="Language" id="ID_LANGUAGE_ELVISH" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_ELF" />
+            <grant type="Language" id="ID_LANGUAGE_DWARVISH" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_DWARF" />
+            <grant type="Language" id="ID_GGTR_LANGUAGE_MINOTAUR" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_MINOTAUR" />
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_BEAST" />
+            <select type="Language" name="Language, Catfolk Remains" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_CATFOLK" supports="Standard||Exotic" />
+            <grant type="Language" id="ID_LANGUAGE_CELESTIAL" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_ANGELIC" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_KOBOLD" />
+            <grant type="Language" id="ID_MM_LANGUAGE_AQUAN" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_TURTLEFOLK" />
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="ID_KTH_COLAL_SUBRACE_AWAKENED_UNDEAD_CENTAUR" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_REMEMBERANCE" />
+        </rules>
+    </element><element name="Fey Energy" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FORCE_FEY_ENERGY">
+        <supports>animating-force-type</supports>
+        <description>
+            <p>You gain the Sylvan language and the Fey Spirit Feature</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FEY_SPIRIT" />
+        </description>
+        <sheet display="false" />
+        <rules>            
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FEY_SPIRIT" />
+        </rules>
+    </element><element name="Infernal Energy" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FORCE_INFERNAL_ENERGY">
+        <supports>animating-force-type</supports>
+        <description>
+            <p>You gain the Infernal language and the Flaming Skeleton Feature</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FLAMING_SKELETON" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FLAMING_SKELETON" />
+        </rules>
+    </element><element name="Blight Growth" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_FORCE_BLIGHT_GROWTH">
+        <supports>animating-force-type</supports>
+        <description>
+            <p>You gain the Blightborn Feature.</p>
+            <div element="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_BLIGHTBORN" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_KTH_COLAL_RACIAL_TRAIT_AWAKENED_UNDEAD_BLIGHTBORN" />
+        </rules>
+    </element>
+</elements>
