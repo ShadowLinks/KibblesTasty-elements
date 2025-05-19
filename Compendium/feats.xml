@@ -6,6 +6,111 @@
             <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/feats.xml" />
         </update>
     </info>
+    
+    <!-- Awakened Undead Feats-->
+    
+    <element name="Modified Remains" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_MODIFIED_REMAINS">
+        <prerequisite>Awakened Undead</prerequisite>
+        <requirements>ID_KTH_COLAL_RACE_AWAKENED_UNDEAD</requirements>
+        <description>
+            <p>You've found your remains to be somewhat... customizable. After all, what's the harm in swapping out a few parts here and there? You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength, Dexterity, or Constitution ability score by 1, to a maximum of 20.</li>
+                <li><strong>Skeleton Carving.</strong> You gain a natural weapon that deals 2d4 damage (piercing or slashing, your choice) or Increase your AC by 1. If you already have a natural weapon and select a natural weapon , you can increase the damage of your existing natural weapon by a d2 step instead (from a d6 to a d8, for example). If a natural weapon has multiple damage dice, increase only one this way.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Modified Remains" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+            <select type="Racial Trait" name="Modified Remains" supports="modified-remains" />
+        </rules>
+    </element>
+    <element name="Modified Remains (Natural Weapon)" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_MODIFIED_REMAINS">
+        <supports>modified-remains</supports>
+        <description>
+            <p> You gain a natural weapon that deals 2d4 damage (piercing or slashing, your choice).</p>
+            <p class="indent">If you already have a natural weapon and select a natural weapon , you can increase the damage of your existing natural weapon by a d2 step instead (from a d6 to a d8, for example). If a natural weapon has multiple damage dice, increase only one this way.</p>
+        </description>
+        <sheet>
+            <description>You gain a natural weapon that deals 2d4 damage (piercing or slashing, your choice).
+            If you already have a natural weapon and select a natural weapon , you can increase the damage of your existing natural weapon by a d2 step instead (from a d6 to a d8, for example). If a natural weapon has multiple damage dice, increase only one this way.
+            </description>
+        </sheet>
+    </element>
+    <element name="Modified Remains (AC)" type="Racial Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_MODIFIED_REMAINS">
+        <supports>modified-remains</supports>
+        <description>
+            <p>Increase your AC by 1.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" />
+        </rules>
+    </element>
+    <element name="Twice Awakened" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_TWICE_AWAKENED">
+        <prerequisite>Awakened Undead</prerequisite>
+        <requirements>ID_KTH_COLAL_RACE_AWAKENED_UNDEAD</requirements>
+        <description>
+            <p>You've mastered a second power of Awakening, gaining control of a greater set of powers over your condition. This can be from infusing yourself with energy of that source, or simply learning to imitate the powers natural to that source (for example, a returned spirit may find themselves mastering the powers of a Wandering Spirit after getting used to the condition). You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma ability score by 1, to a maximum of 20.</li>
+                <li><strong>Secondary Force.</strong> Select an additional option from the Animating Force table, gaining its features.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Twice Awakened" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>            
+            <select type="Racial Trait" name="Twice Awakened" supports="animating-force-type" />
+        </rules>
+    </element>
+    <element name="Refined Control" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_REFINED_CONTROL">
+        <prerequisite>Awakened Undead</prerequisite>
+        <requirements>ID_KTH_COLAL_RACE_AWAKENED_UNDEAD</requirements>
+        <description>
+            <p>You gain more granular control over your body, even when it is not all attached, allowing it to take advantage of its unnatural properties. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma ability score by 1, to a maximum of 20</li>
+                <li><strong>Removable Parts.</strong> You can remove a limb and continue to control it. It gains the statistics of a Crawling Claw, but has a blindsight of 5 × your proficiency bonus instead of 30 feet. This crawling claw gains all the abilities of a familiar as per the find familiar spell. You lose use of the limb for anything else while it is not attached. If it is destroyed, you can attach a new limb over the course of a long rest.</li>
+                <li><strong>Dullahan.</strong> Being beheaded (for example, by a vorpal sword) is no longer fatal to you, though your body cannot move more than 120 feet from your head.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Removable Parts. You can remove a limb and continue to control it. It gains the statistics of a Crawling Claw, but has a blindsight of {{5xprof}} instead of 30 feet. This crawling claw gains all the abilities of a familiar as per the find familiar spell. You lose use of the limb for anything else while it is not attached. If it is destroyed, you can attach a new limb over the course of a long rest.
+            Dullahan. Being beheaded (for example, by a vorpal sword) is no longer fatal to you, though your body cannot move more than 120 feet from your head.</description>
+        </sheet>
+        <rules>
+            <stat name="5xprof" value="proficiency" bonus="base" />
+            <stat name="5xprof" value="proficiency" />
+            <stat name="5xprof" value="proficiency" />
+            <stat name="5xprof" value="proficiency" />
+            <stat name="5xprof" value="proficiency" />
+            <select type="Ability Score Improvement" name="Refined Control" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>  
+        </rules>
+    </element>
+    
+    <!--Active martial Feats 13-->
+    
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+    <!-- Weapon Feats 15-->
+
+    <!-- Combat Style Feats 2-->
+    <!-- Mystic Path Feats 13-->
+    <!-- Esoteri Arts Feats 3-->
+    <!-- Transformation Arts Feats 4-->
+    <!-- Additional Feats 6-->
+
     <!-- Blood magic feats-->
     <element name="Hemomancer" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_HEMOMANCER">
         <prerequisite>Spellcasting or Pact Magic Feature</prerequisite>
