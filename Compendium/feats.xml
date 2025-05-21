@@ -531,6 +531,249 @@
     </element>
 
     <!-- Weapon Feats 15-->
+    <element name="Axe Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_AXE_EXPERT">
+        <description>
+            <p>You wield an axe like a force of nature, maximizing and embodying its relentless and unstoppable power. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength or Constitution ability score by 1, to a maximum of 20.</li>
+                <li><strong>Axe Rush. </strong>While wielding a handaxe, battleaxe, or greataxe, you can use a bonus action to move up to 5 feet and add 1d6 to your next attack and damage roll with an axe.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Axe Rush: While wielding a handaxe, battleaxe, or greataxe, you can use a bonus action to move up to 5 feet and add 1d6 to your next attack and damage roll with an axe.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Axe Expert" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Bow Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_BOW_EXPERT">
+        <description>
+            <p>Your relentless practice with a bow grants you the following benefits while using one:</p>
+            <ul>
+                <li><strong></strong>Ranging Shots. When you miss a ranged weapon attack with a bow, your next ranged weapon attack roll with a bow has advantage.</li>
+                <li><strong></strong>Overwatch. As a bonus action, you can ready a shot until the start of your next turn. If a creature moves 5 feet or more while within 30 feet of you while you have a shot readied, you can use your reaction to make a ranged weapon attack against that creature with a −5 penalty to the attack roll.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Ranging Shots. When you miss a ranged weapon attack with a bow, your next ranged weapon attack roll with a bow has advantage.
+            Overwatch. As a bonus action, you can ready a shot until the start of your next turn. If a creature moves 5 feet or more while within 30 feet of you while you have a shot readied, you can use your reaction to make a ranged weapon attack against that creature with a −5 penalty to the attack roll.</description>
+        </sheet>
+    </element>
+    <element name="Dagger Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_DAGGER_EXPERT">
+        <description>
+            <p>You wield daggers with perfection and poise, able to use them fluidly in any situation.</p>
+            <ul>
+                <li><strong></strong>Dagger Tricks. You can draw or stow any number of daggers during your turn. You have advantage on any ability check to conceal your daggers.</li>
+                <li><strong></strong>Improved Critical. Your attacks with daggers score a critical hit on a roll of 19 or 20.</li>
+                <li><strong></strong>Swift Stabbing. When you use two-weapon fighting using a dagger in both hands, you can take both attacks as part of the Attack action on your turn (without expending your bonus action). You can only make this attack once per turn.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Dagger Tricks. You can draw or stow any number of daggers during your turn. You have advantage on any ability check to conceal your daggers.
+            Improved Critical. Your attacks with daggers score a critical hit on a roll of 19 or 20.
+            Swift Stabbing. When you use two-weapon fighting using a dagger in both hands, you can take both attacks as part of the Attack action on your turn (without expending your bonus action). You can only make this attack once per turn.</description>
+        </sheet>
+    </element>
+    <element name="Flail Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FLAIL_EXPERT">
+        <description>
+            <p>Your mastery with a flail allows you to use the challenging weapon with deadly skill. You gain the following benefits while wielding a flail:</p>
+            <ul>
+                <li><strong>Dangerous Swings.</strong> When you miss a melee weapon attack made with a flail, you can make a new attack roll against another creature you of your choice within the weapon’s range. You cannot attack the same creature twice this way.</li>
+                <li><strong></strong>Wind Up. As a bonus action, you can whirl the flail building momentum. The next attack you make with it before the end of your turns an additional 1d8 damage on hit.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Dangerous Swings. When you miss a melee weapon attack made with a flail, you can make a new attack roll against another creature you of your choice within the weapon’s range. You cannot attack the same creature twice this way.
+            Wind Up. As a bonus action, you can whirl the flail building momentum. The next attack you make with it before the end of your turns an additional 1d8 damage on hit.</description>
+        </sheet>
+    </element>
+    <element name="Harpoon Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_HARPOON_EXPERT">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Impact Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_IMPACT_EXPERT">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Lance Master" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_LANCE_MASTER">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Morning Star Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_MORNING_STAR_EXPERT">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Natural Weapon Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_NATURAL_WEAPON_EXPERT">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Pike Master" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_PIKE_MASTER">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Stinger" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_STINGER">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Swordmaster" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_SWORDMASTER">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Warhammer Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_WARHAMMER_EXPERT">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="War Pick Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_WAR_PICK_EXPERT">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Whip Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_WHIP_EXPERT">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Feat Features" id="ID_KTH_COLAL_FEAT_FEATURE_WHIP_TRICKS" />
+        </rules>
+    </element>
+    <element name="Whip Tricks" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_WHIP_TRICKS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+    <!-- Combat Style Feats 2-->
+    
     <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
         <description>
             <p></p>
@@ -539,17 +782,15 @@
                 <li><strong></strong></li>
                 <li><strong></strong></li>
             </ul>
-            <p><strong></strong><em></em></p>
-            <p></p>
-            <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
         </sheet>
         <rules>
-            <grant type="Feat Feature" id="" />
+        
         </rules>
     </element>
+    
     <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
         <description>
             <p></p>
@@ -558,7 +799,6 @@
             <description></description>
         </sheet>
     </element>
-    <!-- Combat Style Feats 2-->
     <!-- Mystic Path Feats 13-->
     <!-- Esoteri Arts Feats 3-->
     <!-- Transformation Arts Feats 4-->
