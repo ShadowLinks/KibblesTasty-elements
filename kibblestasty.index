@@ -8,6 +8,7 @@
     <files>
         <file name="source.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/source.xml" />
         <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/feats.xml" />
+        <file name="boons.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/boons.xml" />
         <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spells.xml" />
         
         <file name="psionic.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionic.xml" />
