@@ -41,7 +41,7 @@
             <list>Elemental Soul</list>
         </spellcasting>
     </element>
-    <element name="Elemental Armaments" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_ARMAMENTS">
+    <element name="Elemental Armaments" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_ARMAMENTS">
         <description>
             <p>Starting at 1st level, when you roll initiative, or as a bonus action at any time, you can manifest elemental weapons into your hands, causing them to burst into flames, form icy claws, lashes of lightning, or frozen shields. Select one or two of the following weapons to manifest. You can manifest the same weapon in each hand, or different weapons in each hand. The weapons last until you drop them, summon new weapons, or dismiss them as a bonus action.</p>
             <p><strong>Primal Flames</strong></p>
@@ -64,7 +64,7 @@
             Lightning Lash: You conjure a whip of lightning, tethered to one of your hands. This becomes a one handed natural melee weapon that deals 1d6 lightning damage on hit, and has the Light, Reach, and Special properties. It sheds 10 feet of bright light and an additional 10 feet of dim light while manifested. Special: If you hit a creature with this weapon you can pull the creature up to 5 feet towards you.</description>
         </sheet>
     </element>
-    <element name="Elemental Manipulation" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_MANIPULATION">
+    <element name="Elemental Manipulation" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_MANIPULATION">
         <description>
             <p>At 1st level, you learn the cantrips manipulate fire and manipulate water.</p>
         </description>
@@ -76,7 +76,7 @@
             <grant type="Spell" id="ID_KTH_COLAL_SPELL_MANIPULATE_WATER" spellcasting="Elemental Soul" />
         </rules>
     </element>
-    <element name="Innate Magic" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_INNATE_MAGIC">
+    <element name="Innate Magic" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_INNATE_MAGIC">
         <description>
             <p>Additionally when you select this bond, you gain access to several innate magical abilities by channeling the power of your primal connection.</p>
             <p class="indent">You gain the following spells at the listed levels, and can cast each spell once without components or spell slots. Once you cast the spell in this way, you cannot cast it again until you complete a long rest. Wisdom is your spellcasting modifier for these spells. You can cast a spell again before completing a long rest by spending 1 + the level of the spell Endurance Dice.</p>
@@ -104,7 +104,7 @@
             <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Elemental Soul" level="17" />
         </rules>
     </element>
-    <element name="Elemental Interdiction" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_INTERDICTION">
+    <element name="Elemental Interdiction" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_INTERDICTION">
         <description>
             <p>Starting at 3rd level, your Primal Interdiction becomes a buffeting maelstrom of elemental power when you manifest an Elemental Armament. The difficult terrain of your Primal Interdiction affects flying creatures within range, and you can select one of the following effects (selecting each time you manifest an Elemental Armament).</p>
             <ul>
@@ -125,7 +125,7 @@
             Static Field: The first time a hostile creatures moves 5 feet or more within your Primal Interdiction, they take 2d8 lightning damage. Once this damage occurs, it cannot occur again until the start of your turn.</description>
         </sheet>
     </element>
-    <element name="Elemental Reflection" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_REFLECTION">
+    <element name="Elemental Reflection" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_REFLECTION">
         <description>
             <p>Additionally at 3rd level, when you expend an Endurance Die to block the damage against a melee attack, the attacker takes cold, fire or lightning damage (your choice) equal to the amount of damage blocked.</p>
         </description>
@@ -133,7 +133,7 @@
             <description>When you expend an Endurance Die to block the damage against a melee attack, the attacker takes cold, fire or lightning damage (your choice) equal to the amount of damage blocked.</description>
         </sheet>
     </element>
-    <element name="Elemental Body" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_BODY">
+    <element name="Elemental Body" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_BODY">
         <description>
             <p>Starting at 7th level, you gain resistance to your choice of cold, fire, or lightning damage. When you complete a long rest, you can change which damage type you resist.</p>
         </description>
@@ -141,7 +141,7 @@
             <description>You gain resistance to your choice of cold, fire, or lightning damage. When you complete a long rest, you can change which damage type you resist.</description>
         </sheet>
     </element>
-    <element name="Primal State" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PRIMAL_STATE">
+    <element name="Primal State" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PRIMAL_STATE">
         <description>
             <p>Additionally at 7th level, you can expend one Endurance Die to cast become fire, become water, or become wind.</p>
         </description>
@@ -154,7 +154,7 @@
             <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_WIND" spellcasting="Elemental Soul" />
         </rules>
     </element>
-    <element name="Elemental Form" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_FORM">
+    <element name="Elemental Form" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_ELEMENTAL_FORM">
         <description>
             <p>Starting at 14th level, you can cast form of fireK, form of iceK, or form of windK without expending a spell slot. When you cast the spell this way, you can cast the spell as a bonus action, and it does not require concentration. Once per turn during the transformation, you can use the action it grants in place of an attack made as part of the Attack action.</p>
             <p class="indent">Once you cast the spell in this way, you cannot do so again until you complete a long rest. You can use it again before completing a long rest by expending 6 Endurance Dice.</p>
@@ -164,7 +164,7 @@
             You can use it again before completing a long rest by expending 6 Endurance Dice.</description>
         </sheet>
     </element>
-    <element name="Paraelemental Interdiction" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PARAELEMENTAL_INTERDICTION">
+    <element name="Paraelemental Interdiction" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_PARAELEMENTAL_INTERDICTION">
         <description>
             <p>Additionally at 14th level, when you activate your Elemental Interdiction, you can select two options, activating both effects.</p>
         </description>
@@ -172,7 +172,7 @@
             <description>When you activate your Elemental Interdiction, you can select two options, activating both effects.</description>
         </sheet>
     </element>
-    <element name="Cataclysm Unleashed" type="Archetype Feature" source="kibbles' compendium of legends and legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_CATCLYSM_UNLEASHED">
+    <element name="Cataclysm Unleashed" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_WARDEN_ELEMENTALSOUL_CATCLYSM_UNLEASHED">
         <description>
             <p>Starting at 17th level, when you use your Elemental Form ability, you can instead cast form of the elements, and are no longer limited to using the action they grant in place of an attack once per turn, as long as you use two different actions granted by the different forms. When you cast form of the elements this way, you can choose to become a Large sized creature for the duration of the spell.</p>
             <p class="indent">While in this form, the damage dice of your Elemental Armaments and Elemental Interdiction effects are doubled.</p>
