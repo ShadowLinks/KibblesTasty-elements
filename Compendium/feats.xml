@@ -94,7 +94,463 @@
     
     <!--Active martial Feats 13-->
     
+    <element name="Athlete" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_ATHLETE">
+        <prerequisite>4th level and proficiency in Athletics</prerequisite>
+        <requirements>[level:4],ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
+        <description>
+            <p>You can accomplish mythical feats of athletic prowess. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength, Dexterity, or Constitution by 1, to a maximum of 20.</li>
+                <li><strong>Athletic Movement.</strong> Gain your choice of a climbing speed or swimming speed equal to your movement speed.</li>
+                <li>Gain the <strong>Athletic Feat</strong> special ability (below).</li>
+            </ul>
+            <p><strong>Athletic Feat</strong><em> Active Ability (Special)</em></p>
+            <p>You can perform an outrageous athletic feat. You can do any of the following during your turn:</p>
+            <ul>
+                <li>Jump a distance equal to your movement speed.</li>
+                <li>Lift twice your normal lifting capacity until the end of your turn.</li>
+                <li>Move at normal speed while carrying or dragging another creature until the end of your turn.</li>
+                <li>Make a free Strength or Dexterity saving throw or ability check against an ongoing effect or spell effecting you that would normally take an action or only occur at the end of your turn.</li>
+                <li>Take the Dash action as a bonus action.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest. You can use the feature again before completing a rest by taking a level of exhaustion.</p>
+        </description>
+        <sheet alt="Atheletic Feat" usage="1/Short Rest">
+            <description>You can do any of the following during your turn:
+            Jump a distance equal to your movement speed.
+            Lift twice your normal lifting capacity until the end of your turn.
+            Move at normal speed while carrying or dragging another creature until the end of your turn.
+            Make a free Strength or Dexterity saving throw or ability check against an ongoing effect or spell effecting you that would normally take an action or only occur at the end of your turn.
+            Take the Dash action as a bonus action.
+            You can use the feature again before completing a rest by taking a level of exhaustion.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Athlete" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+            <select type="Feat Feature" supports="ID_KTH_COLAL_FEAT_FEATURE_SWIM|ID_KTH_COLAL_FEAT_FEATURE_CLIMB" />
+        </rules>
+    </element>
+    <element name="Climbing" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_CLIMB">
+        <description>
+            <p>You gain climbing speed equal to your movement speed.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="speed:climb" value="speed" />
+        </rules>
+    </element>
+    <element name="Swimming" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_SWIM">
+        <description>
+            <p>You gain swimming speed equal to your movement speed.</p>
+        </description>
+        <sheet display="false" />
+        <rules>            
+            <stat name="speed:swim" value="speed" />
+        </rules>
+    </element>
+    <element name="Bodyguard" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_BODYGUARD">
+        <prerequisite>4th level and fighting style that uses your reaction to defend an allied creature</prerequisite>
+        <requirements>[level:4],(ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION)</requirements>
+        <description>
+            <p>Your reflexes and techniques safeguard your allies. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase Strength, Dexterity, or Constitution score by 1, to a maximum of 20.</li>
+                <li><strong>Leaping Saves.</strong> You can move up to 5 feet before using your reaction to protect an ally with a Fighting Style or Feat. Alternatively, when you use a reaction on a Fighting Style to defend an allied creature while you are already adjacent to them, you can swap positions with that ally after the attack completes as long as your movement speed isn’t zero. This movement does not provoke attacks of opportunity.</li>
+                <li>Gain the <strong>Heroic Intervention</strong> special reaction.</li>
+            </ul>
+            <p><strong>Heroic Intervention</strong><em> Active Ability (Reaction)</em></p>
+            <p>As a reaction, when an allied creature within range of your movement speed would take damage, you can move to them and into their space. If the damage came from an attack, you become the target of the attack.</p>
+            <p class="indent">They move to an unoccupied space of their choice within 5 feet, or the closest unoccupied space if there are no unoccupied spaces within 5 feet (potentially moving them out of an area of effect, but moving yourself into it).</p>
+            <p class="indent">You and the target creature have resistance to all damage until the start of your next turn.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You can move up to 5 feet before using your reaction to protect an ally with a Fighting Style or Feat. Alternatively, when you use a reaction on a Fighting Style to defend an allied creature while you are already adjacent to them, you can swap positions with that ally after the attack completes as long as your movement speed isn’t zero. This movement does not provoke attacks of opportunity.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Bodyguard" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_HEROIC_INTERVENTION" />
+        </rules>
+    </element>
+    <element name="Heroic Intervention" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_HEROIC_INTERVENTION">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As a reaction, when an allied creature within range of your movement speed would take damage, you can move to them and into their space. If the damage came from an attack, you become the target of the attack.
+            They move to an unoccupied space of their choice within 5 feet, or the closest unoccupied space if there are no unoccupied spaces within 5 feet (potentially moving them out of an area of effect, but moving yourself into it).
+            You and the target creature have resistance to all damage until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Breaker" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_BREAKER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You master the breaking of any creature within your grasp. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+                <li><strong>Punishing Blows.</strong> You have advantage on attack rolls against a creature you are grappling.</li>
+                <li>Gain the<strong> Merciless Break</strong> special attack (below)</li>
+            </ul>
+            <p><strong>Merciless Break</strong><em> Active Ability (Attack)</em></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks to inflict a debilitating injury on a creature you are grappling.</p>
+            <p class="indent">The creature takes 2d6 + your Strength modifier bludgeoning damage and suffers an injury for 1 minute. The number of d6 increases by one when your proficiency bonus increases (with the total number of d6 equaling your proficiency bonus). While suffering from this injury, the creature subtracts 1d6 from attack rolls and ability checks, and must pass a DC 10 Constitution saving throw to successfully cast a spell.</p>
+            <p class="indent">The target creature makes a Constitution saving throw at the end of each of their turns, ending the effect of the injury on a success. A creature can spend their action treating their injury to automatically pass the saving throw.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on attack rolls against a creature you are grappling.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Bodyguard" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_MERCILESS_BREAK" />
+        </rules>
+    </element>
+    <element name="Merciless Break" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_MERCILESS_BREAK">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks to inflict a debilitating injury on a creature you are grappling.
+            The creature takes {{proficiency}}d6 + {{strength:modifier}} bludgeoning damage and suffers an injury for 1 minute. While suffering from this injury, the creature subtracts 1d6 from attack rolls and ability checks, and must pass a DC 10 Constitution saving throw to successfully cast a spell.
+            The target creature makes a Constitution saving throw at the end of each of their turns, ending the effect of the injury on a success. A creature can spend their action treating their injury to automatically pass the saving throw.</description>
+        </sheet>
+    </element>
+    <element name="Brute" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_BRUTE">
+        <prerequisite>4th level and proficiency in Intimidation</prerequisite>
+        <requirements>[level:4],ID_PROFICIENCY_SKILL_INTIMIDATION</requirements>
+        <description>
+            <p>Your attacks leave your enemies devastated and cowering in fear. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution score by 1, to a maximum of 20</li>
+                <li><strong>Brutal Effort. When you roll damage for a melee weapon attack, you can reroll the weapon’s damage dice and use either total.</strong></li>
+                <li>Gain the<strong> Brutal Threat</strong> special attack</li>
+            </ul>
+            <p><strong>Brutal Threat</strong><em> Active Ability (Attack)</em></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks to issue a dire threat backed by your killing intent at a creature that can see or hear you within 60 feet. The target must make a Wisdom saving throw.</p>
+            <p class="indent">On failure, they become frightened for 1 minute. If it fails by 5 or more, it becomes frozen in terror, suffering the paralyzed condition while it is frightened. A frightened creature can repeat its saving throw at the end of each of its turns, ending the effect on success (if it fails by less than 5 it can end the paralyze effect, but cannot become paralyzed after the initial save).</p>
+            <p class="indent">If you kill a target while it is frightened in this way, you can repeat this action as a reaction targeting another creature within 30 feet that can see or hear you bypassing the usual usage restriction of the feature.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>When you roll damage for a melee weapon attack, you can reroll the weapon’s damage dice and use either total.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_BRUTAL_THREAT" />
+            <select type="Ability Score Improvement" name="Brute" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Brutal Threat" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_BRUTAL_THREAT">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks to issue a dire threat backed by your killing intent at a creature that can see or hear you within 60 feet. The target must make a Wisdom saving throw.
+            On failure, they become frightened for 1 minute. If it fails by 5 or more, it becomes frozen in terror, suffering the paralyzed condition while it is frightened. A frightened creature can repeat its saving throw at the end of each of its turns, ending the effect on success (if it fails by less than 5 it can end the paralyze effect, but cannot become paralyzed after the initial save).
+            If you kill a target while it is frightened in this way, you can repeat this action as a reaction targeting another creature within 30 feet that can see or hear you bypassing the usual usage restriction of the feature.</description>
+        </sheet>
+    </element>
+    <element name="Charger" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_CHARGER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You master the reckless rush of smashing into the enemy line. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+                <li><strong>Heavy Momentum.</strong> If you move at least 20 feet in a direction before making your first melee weapon attack roll on your turn, the attack deals an additional 1d8 damage.</li>
+                <li>Gain the <strong>Wild Charge</strong> special attack</li>
+            </ul>
+            <p><strong>Wild Charge</strong><em> Active Ability (Attack)</em></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks with making a charge. You or a mount you are controlling can move up to 30 feet in a straight line, flinging your enemies out of your path.</p>
+            <p class="indent">This movement does not provoke attacks of opportunity. Large or smaller creatures in your path must make a Strength saving throw, or be knocked out of your way and prone. If a creature has no where they can move, they are knocked prone but not moved, and you pass over them. A creature takes 2d6 + your Strength modifier bludgeoning damage on a failed save. The number of d6 increases by one when your proficiency bonus increases (with the total number of d6 equaling your proficiency bonus). Your charge ends early if a creature passes their save. Creatures with a CR equal to less than half of your character level automatically fail their save.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>If you move at least 20 feet in a direction before making your first melee weapon attack roll on your turn, the attack deals an additional 1d8 damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_WILD_CHARGE" />
+            <select type="Ability Score Improvement" name="Charger" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Wild Charge" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_WILD_CHARGE">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks with making a charge. You or a mount you are controlling can move up to 30 feet in a straight line, flinging your enemies out of your path.
+            This movement does not provoke attacks of opportunity. Large or smaller creatures in your path must make a Strength saving throw, or be knocked out of your way and prone. If a creature has no where they can move, they are knocked prone but not moved, and you pass over them. A creature takes {{proficiency}}d6 + {{strength:modifier}} bludgeoning damage on a failed save. Your charge ends early if a creature passes their save. Creatures with a CR equal to less than {{level:half}} automatically fail their save.</description>
+        </sheet>
+    </element>
+    <element name="Destroyer" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_DESTROYER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You bring ruin to the battlefield, cleaving through hordes. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+                <li><strong>Cleaving Blows. </strong>When you reduce a creature to 0 hit points with an attack, you can apply any overflow damage (damage dealt by the attack over what was required to bring the target to zero) to another creature within 5 feet of the target, if the attack roll would also hit that target.</li>
+                <li>Gain the <strong>Whirlwind Slash</strong> special attack</li>
+            </ul>
+            <p><strong>Whirlwind Slas</strong><em> Active Ability (Attack)</em></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks with spinning your weapon in a massive arc with great force. All creatures of your choice within 5 feet of you must make a Dexterity saving throw. On failure, they take 2d6 + your Strength modifier damage, or half as much on a successful save. The number of d6 increases by one when your proficiency bonus increases (with the total number of d6 equaling your proficiency bonus).</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>When you reduce a creature to 0 hit points with an attack, you can apply any overflow damage (damage dealt by the attack over what was required to bring the target to zero) to another creature within 5 feet of the target, if the attack roll would also hit that target.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_WHIRLWIND_SLASH" />
+            <select type="Ability Score Improvement" name="Destroyer" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Whirlwind Slash" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_WHIRLWIND_SLASH">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks with spinning your weapon in a massive arc with great force. All creatures of your choice within 5 feet of you must make a Dexterity saving throw. On failure, they take {{proficiency}}d6 + {{strength:modifier}} damage, or half as much on a successful save.</description>
+        </sheet>
+    </element>
+    <element name="Durable" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_DURABLE">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You possess an implausible resilience and are capable of amazing feats of endurance. You gain the following the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+                <li><strong>Rapid Recovery.</strong> When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).</li>
+                <li>Gain the <strong>Unyielding Endurance</strong> special reaction</li>
+            </ul>
+            <p><strong>Unyielding Endurance</strong><em> Active Ability (Reaction)</em></p>
+            <p>As a reaction to taking damage, you can brace yourself to weather the blow and any additional blows. Until the start of your next turn, you can reduce all damage taken (including from the damage that triggered this reaction) by your Proficiency bonus and gain advantage on Strength and Constitution saving throws. Additionally for the duration, if an attack would reduce you to 0, you can make a Constitution saving throw with a DC to the amount of damage taken. On a success, you are reduced to 1 instead. If you are not incapacitated at the start of your next turn after using this feature, you can expend a number of hit dice up to your proficiency bonus, rolling them to regain hit points as normal.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll is {{doublecon}}.</description>
+        </sheet>
+        <rules>
+            <stat name="doublecon" value="constitution:modifier" bonus="base" />
+            <stat name="doublecon" value="constitution:modifier" />
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_UNYIELDING_ENDURANCE" />
+            <select type="Ability Score Improvement" name="Durable" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Unyielding Endurance" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_UNYIELDING_ENDURANCE">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As a reaction to taking damage, until the start of your next turn, you can reduce all damage taken (including from the damage that triggered this reaction) by {{proficiency}} and gain advantage on Strength and Constitution saving throws. Additionally for the duration, if an attack would reduce you to 0, you can make a Constitution saving throw with a DC to the amount of damage taken. On a success, you are reduced to 1 instead. If you are not incapacitated at the start of your next turn after using this feature, you can expend up to {{proficiency}} hit dice, rolling them to regain hit points as normal</description>
+        </sheet>
+    </element>
+    <element name="Grappler" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_GRAPPLER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You master grappling and leverage to pin and fling your foes. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution by 1, to a maximum of 20.</li>
+                <li><strong>Quick Grabs. </strong>When you take the Attack action on your turn, you can make one unarmed strike or attempt to grapple as a bonus action.</li>
+                <li>Gain the <strong>Martial Toss</strong> special attack</li>
+            </ul>
+            <p><strong>Martial Toss</strong><em> Active Ability (Attack)</em></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks to attempt to hurl a creature of your size or smaller. The target must make a Strength saving throw. An object or creature you are grappling automatically fails. If you successfully lift them, you can throw them 20 feet. The range is increased by 10 feet for each size smaller than you the target is.</p>
+            <p class="indent">The creature’s movement ends early if it collides with another creature or obstacle. The thrown creature and anything it collides with takes 2d6 + your Strength modifier, and the thrown creature falls prone. The number of d6 increases by one when your proficiency bonus increases (with the total number of d6 equaling your proficiency bonus).</p>
+            <p class="indent">A creature can choose to fail their save against this ability. You can throw a willing creature more carefully, dealing no damage to them unless they collide with something during their flight.</p>
+            <p class="indent">Once you use this feature to successfully throw a creature or object, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>When you take the Attack action on your turn, you can make one unarmed strike or attempt to grapple as a bonus action.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_MARTIAL_TOSS" />
+            <select type="Ability Score Improvement" name="Grappler" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Martial Toss" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_MARTIAL_TOSS">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks to attempt to hurl a creature of your size or smaller. The target must make a Strength saving throw. An object or creature you are grappling automatically fails. If you successfully lift them, you can throw them 20 feet. The range is increased by 10 feet for each size smaller than you the target is.
+            The creature’s movement ends early if it collides with another creature or obstacle. The thrown creature and anything it collides with takes {{proficiency}}d6 + {{strength:modifier}}, and the thrown creature falls prone.
+            A creature can choose to fail their save against this ability. You can throw a willing creature more carefully, dealing no damage to them unless they collide with something during their flight.</description>
+        </sheet>
+    </element>
+    <element name="Line Breaker" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_LINE BREAKER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You smash through your enemies, clearing the way for your allies</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution by 1, to a maximum of 20.</li>
+                <li><strong>Heavy Impacts. </strong>When you push a creature, if the creature's movement is stopped early by another creature, object, or terrain, they take 1d4 bludgeoning damage for each 5 feet moved before the collision.</li>
+                <li>Gain the <strong>Might Impact</strong> special attack </li>
+            </ul>
+            <p><strong>Mighty Impact</strong><em> Active Ability (Attack)</em></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks to slam an enemy backwards. The target must make a Strength saving throw. On failure, it takes 2d6 + your Strength modifier damage and is pushed 15 feet away from you. On a success, it takes half as much damage and is pushed 5 feet away from you. The distance the target is pushed is reduced by 5 feet for every size larger than you it is. The number of d6 increases by one when your proficiency bonus increases (with the total number of d6 equaling your proficiency bonus).</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>When you push a creature, if the creature's movement is stopped early by another creature, object, or terrain, they take 1d4 bludgeoning damage for each 5 feet moved before the collision.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_MIGHTY_IMPACT" />
+            <select type="Ability Score Improvement" name="Line Breaker" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Mighty Impact" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_MIGHTY_IMPACT">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks to slam an enemy backwards. The target must make a Strength saving throw. On failure, it takes {{proficiency}}d6 +{{strength:modifier}} damage and is pushed 15 feet away from you. On a success, it takes half as much damage and is pushed 5 feet away from you. The distance the target is pushed is reduced by 5 feet for every size larger than you it is.</description>
+        </sheet>
+    </element>
+    <element name="Ruffian" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_RUFFIAN">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You have turned kicking people when they're down into an art form. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength, Dexterity, or Constitution by 1, to a maximum of 20.</li>
+                <li><strong>Painful Critical.</strong> When you score a critical hit with a melee weapon attack against a creature, it must make a Constitution saving throw or become blinded or dazed† until the start of your next turn. This does not affect undead, constructs, or other creatures that can feel no pain.</li>
+                <li>Gain the <strong>Dirty Strike</strong> special ability</li>
+            </ul>
+            <p><strong>Dirty Strike</strong><em> Active Ability (Special)</em></p>
+            <p>When you make a melee weapon attack, you can follow up with a dirty trick (a knee to the gut, handful of sand to eyes, etc.). The creature must make a Constitution saving throw. On failure, they become your choice of blinded or dazed† (your choice) for 1 minute. The target can repeat its saving throw at the end of each of their turns. A creature can spend their action treating their condition to automatically pass the saving throw. Once you use this against a target once, they are ready for subsequent attempts and automatically pass saving throws against it.</p>
+            <p class="indent">Once you use this feature to successfully blind or daze a creature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>When you score a critical hit with a melee weapon attack against a creature, it must make a Constitution saving throw or become blinded or dazed† until the start of your next turn. This does not affect undead, constructs, or other creatures that can feel no pain.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_DIRTY_STRIKE" />
+            <select type="Ability Score Improvement" name="Ruffian" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Dirty Strike" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DIRTY_STRIKE">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1 Sucess/Short Rest">
+            <description>When you make a melee weapon attack, you can follow up with a dirty trick (a knee to the gut, handful of sand to eyes, etc.). The creature must make a Constitution saving throw. On failure, they become your choice of blinded or dazed† (your choice) for 1 minute. The target can repeat its saving throw at the end of each of their turns. A creature can spend their action treating their condition to automatically pass the saving throw. Once you use this against a target once, they are ready for subsequent attempts and automatically pass saving throws against it.</description>
+        </sheet>
+    </element>
+    <element name="Storm Shooter" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_STORM_SHOOTER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p></p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength, Dexterity or Constitution by 1, to a maximum of 20.</li>
+                <li><strong>Raining Death. </strong>If you kill a creature within a single ranged weapon attack (reducing it from maximum hit points to 0 hit points) using the Attack action on your turn, you can make one additional ranged weapon attack as a bonus action that turn.</li>
+                <li>Gain the <strong>Arrow Storm </strong>special attack</li>
+            </ul>
+            <p><strong>Arrow Storm</strong><em> Active Ability (Attack)</em></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks by firing innumerable pieces of ammunition into the sky which rain down around a point within 60 feet of you. All creatures within 10 feet of the point must make a Dexterity saving throw. On failure, they take 2d6 + your Dexterity modifier damage, or half as much on success. The number of d6 increases by one when your proficiency bonus increases (with the total number of d6 equaling your proficiency bonus). A number of pieces of ammunition are consumed equal to the number of targets that make the save against the ability times two.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>If you kill a creature within a single ranged weapon attack (reducing it from maximum hit points to 0 hit points) using the Attack action on your turn, you can make one additional ranged weapon attack as a bonus action that turn.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_ARROW_STORM" />
+            <select type="Ability Score Improvement" name="Storm Shooter" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Arrow Storm" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_ARROW_STORM">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks by firing innumerable pieces of ammunition into the sky which rain down around a point within 60 feet of you. All creatures within 10 feet of the point must make a Dexterity saving throw. On failure, they take {{proficiency}}d6 + {{dexterity:modifier}} damage, or half as much on success. A number of pieces of ammunition are consumed equal to the number of targets that make the save against the ability times two.</description>
+        </sheet>
+    </element>
+    <element name="Striker" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_STRIKER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You move like the wind, striking faster than your foes can see. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.</li>
+                <li><strong>Battlefield Dancer.</strong> Each time you hit a creature, your movement speed increases by 5 feet until the end of your turn. If you attack and hit a creature with a melee weapon attack, you can pass through its space, treating it as difficult terrain.</li>
+                <li>Gain the <strong>Slashing Dash</strong> special attack.</li>
+            </ul>
+            <p><strong>Slashing Dash</strong><em> Active Ability (Attack)</em></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks with a rapid burst of movement, moving up to 30 feet along any surface in a straight line.</p>
+            <p class="indent">You can move on vertical or horizontal surfaces with this movement, can pass through creatures, and do not provoke attacks of opportunity, but cannot pass through objects or terrain. If you are carrying a weapon you are proficient with when you take this action, each time you pass through a creature, it must make a Dexterity saving throw. A creature takes 2d6 + your Strength or Dexterity modifier (your choice) damage of your weapon type on a failed save, or half as much on a successful save. The number of d6 increases by one when your proficiency bonus increases (with the total number of d6 equaling your proficiency bonus).</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Each time you hit a creature, your movement speed increases by 5 feet until the end of your turn. If you attack and hit a creature with a melee weapon attack, you can pass through its space, treating it as difficult terrain.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_SLASHING_DASH" />
+            <select type="Ability Score Improvement" name="Striker" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Slashing Dash" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_SLASHING_DASH">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks with a rapid burst of movement, moving up to 30 feet along any surface in a straight line.
+            You can move on vertical or horizontal surfaces with this movement, can pass through creatures, and do not provoke attacks of opportunity, but cannot pass through objects or terrain. If you are carrying a weapon you are proficient with when you take this action, each time you pass through a creature, it must make a Dexterity saving throw. A creature takes {{proficiency}}d6 + your Strength or Dexterity modifier (your choice) damage of your weapon type on a failed save, or half as much on a successful save.</description>
+        </sheet>
+    </element>
+    <element name="Weapon Thrower" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_WEAPON_THROWER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You excel at hurling objects, with a remarkably lack of concern for aerodynamics.</p>
+            <ul>
+                <li><strong>Ability Score Increase. </strong>Increase your Strength or Constitution by 1, to a maximum of 20.</li>
+                <li><strong>Reckless Aerodynamics.</strong> All melee weapons gain the thrown 20/60 property for you, unless they already had the thrown property with a greater range.</li>
+                <li>Gain the <strong>Thunderbolt Throw</strong> special attack.</li>
+            </ul>
+            <p><strong>Thunderbolt Throw</strong><em> Active Ability (Attack)</em></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks to hurl a Small or smaller object (including weapons for creatures of Medium size) at a target. Make an attack treating the object as a simple melee weapon with the thrown 60/180 property unless it already has a longer thrown range. On hit, the creature takes 2d6 + your Strength modifier bludgeoning damage (replaced by the weapons damage type when throwing a weapon) and must make a Constitution saving throw or be knocked prone and dazed†. The number of d6 increases by one when your proficiency bonus increases (with the total number of d6 equaling your proficiency bonus).</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_THUNDERBOLT_THROW" />
+            <select type="Ability Score Improvement" name="Weapon Thrower" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Thunderbolt Throw" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_THUNDERBOLT_THROW">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks to hurl a Small or smaller object (including weapons for creatures of Medium size) at a target. Make an attack treating the object as a simple melee weapon with the thrown 60/180 property unless it already has a longer thrown range. On hit, the creature takes {{proficiency}}d6 + {{strength:modifier}} bludgeoning damage (replaced by the weapons damage type when throwing a weapon) and must make a Constitution saving throw or be knocked prone and dazed.</description>
+        </sheet>
+    </element>
+
+    <!-- Weapon Feats 15-->
     <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+            <p><strong></strong><em></em></p>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="" />
+        </rules>
+    </element>
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
         <description>
             <p></p>
         </description>
@@ -102,9 +558,6 @@
             <description></description>
         </sheet>
     </element>
-
-    <!-- Weapon Feats 15-->
-
     <!-- Combat Style Feats 2-->
     <!-- Mystic Path Feats 13-->
     <!-- Esoteri Arts Feats 3-->
