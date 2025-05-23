@@ -589,31 +589,38 @@
     </element>
     <element name="Harpoon Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_HARPOON_EXPERT">
         <description>
-            <p></p>
+            <p>You are resourceful and skilled when it comes the use of harpoons, gaining the following benefits:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Increase. </strong>Increase your Strength or Constitution ability score by 1, to a maximum of 20.</li>
+                <li><strong>Throwing Arm.</strong> The normal range of your thrown weapons is doubled.</li>
+                <li><strong>Harpoon.</strong> As an action, you can use 30 feet of rope to turn any javelin, spear, or trident into a harpoon. When you throw that harpoon at a target 30 feet or less from you, you can pull it back to your hand as a bonus action. If the attack hit the target and the target is no more than one size larger than you, when you pull the harpoon back to you, you can force the target to make a Strength saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On failure, you drag the target up to 20 feet toward you.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Throwing Arm. The normal range of your thrown weapons is doubled.
+             Harpoon. As an action, you can use 30 feet of rope to turn any javelin, spear, or trident into a harpoon. When you throw that harpoon at a target 30 feet or less from you, you can pull it back to your hand as a bonus action. If the attack hit the target and the target is no more than one size larger than you, when you pull the harpoon back to you, you can force the target to make a Strength saving throw against a DC of 8 + {{harpoon:dc}}. On failure, you drag the target up to 20 feet toward you.</description>
         </sheet>
         <rules>
-        
+            <stat name="harpoon:dc" value="8" bonus="base" />
+            <stat name="harpoon:dc" value="proficiency" />
+            <stat name="harpoon:dc" value="strength:modifier" />
+            <select type="Ability Score Improvement" name="Harpoon Expert" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
         </rules>
     </element>
     <element name="Impact Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_IMPACT_EXPERT">
         <description>
-            <p></p>
+            <p>You have mastered heavy blows with bludgeoning weapons. When you hit a creature with a maul or greatclub, you gain a charge of momentum until the end of your current turn. You can expend your momentum charges as a bonus action on one of the following abilities.</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Knock Back</strong> (Requires 1 or more charges of momentum): You push a creature within reach of you 5 feet per charge of momentum directly away from you. The distance they are pushed decreases by 5 feet for every size larger than you they are (for example, if you are Medium pushing a Large creature, you need to push them 10 feet to move them 5 feet).</li>
+                <li><strong>Take Down</strong> (Requires 2 charges of momentum): You force a creature within reach of you to make a Strength saving throw or be knocked prone.</li>
+                <li><strong>Bonk!</strong> (Requires 1 or more charges of momentum): You expend the momentum slamming into a creature within 5 feet of you, dealing 1d4 bludgeoning damage per charge of momentum.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>When you hit a creature with a maul or greatclub, you gain a charge of momentum until the end of your current turn. You can expend your momentum charges as a bonus action on one of the following abilities.
+            >Knock Back (Requires 1 or more charges of momentum): You push a creature within reach of you 5 feet per charge of momentum directly away from you. The distance they are pushed decreases by 5 feet for every size larger than you they are (for example, if you are Medium pushing a Large creature, you need to push them 10 feet to move them 5 feet).
+            Take Down (Requires 2 charges of momentum): You force a creature within reach of you to make a Strength saving throw or be knocked prone.
+            Bonk! (Requires 1 or more charges of momentum): You expend the momentum slamming into a creature within 5 feet of you, dealing 1d4 bludgeoning damage per charge of momentum.</description>
         </sheet>
         <rules>
         
@@ -621,15 +628,17 @@
     </element>
     <element name="Lance Master" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_LANCE_MASTER">
         <description>
-            <p></p>
+            <p>You use maximize the effectiveness of a lance, gaining the following benefits:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Impaled Movement.</strong> While you are mounted, if you strike a creature smaller than your mount with a lance, you can push that creature until the end of your turn, you make another attack, or you move in something other than a straight line. This movement counts as if you are grappling the creature for the duration of the movement, and your mounts movement speed is reduced to half while pushing them.</li>
+                <li><strong>Piercing Charge.</strong> When you hit an attack with a lance after traveling at least 10 feet, you can make an additional attack at another creature behind the target hit with disadvantage, as long as they are in reach of your weapon (you can move between attacks, but only in a straight line) with disadvantage. You can continue to repeat this until you miss, run out of movement, or run out of creatures in a line to hit.</li>
+                <li><strong>Expert Handling.</strong> A lance no longer requires two-hands when you aren’t mounted.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Impaled Movement. While you are mounted, if you strike a creature smaller than your mount with a lance, you can push that creature until the end of your turn, you make another attack, or you move in something other than a straight line. This movement counts as if you are grappling the creature for the duration of the movement, and your mounts movement speed is reduced to half while pushing them.
+            Piercing Charge. When you hit an attack with a lance after traveling at least 10 feet, you can make an additional attack at another creature behind the target hit with disadvantage, as long as they are in reach of your weapon (you can move between attacks, but only in a straight line) with disadvantage. You can continue to repeat this until you miss, run out of movement, or run out of creatures in a line to hit.
+            Expert Handling. A lance no longer requires two-hands when you aren’t mounted.</description>
         </sheet>
         <rules>
         
@@ -637,18 +646,19 @@
     </element>
     <element name="Morning Star Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_MORNING_STAR_EXPERT">
         <description>
-            <p></p>
+            <p>You have mastered the use of a morning star, and are able to leverage greater effectiveness from it. You gain the following features:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution ability score by 1, to a maximum of 20.</li>
+                <li><strong>Improved Critical.</strong> Your attacks with morning stars score a critical hit on a roll of 19 or 20.</li>
+                <li><strong>Rend.</strong> Your critical strikes wound the target. The target loses 1d10 hit points at the end of each of their turns until the wound is healed. The target or any creature within 5 feet of it can make a DC 10 Wisdom (Medicine) check as an action to heal the wound.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Improved Critical. Your attacks with morning stars score a critical hit on a roll of 19 or 20.
+            Rend. Your critical strikes wound the target. The target loses 1d10 hit points at the end of each of their turns until the wound is healed. The target or any creature within 5 feet of it can make a DC 10 Wisdom (Medicine) check as an action to heal the wound.</description>
         </sheet>
         <rules>
-        
+            <select type="Ability Score Improvement" name="Morning Star Expert" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
         </rules>
     </element>
     <element name="Natural Weapon Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_NATURAL_WEAPON_EXPERT">
