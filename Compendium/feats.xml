@@ -550,8 +550,8 @@
         <description>
             <p>Your relentless practice with a bow grants you the following benefits while using one:</p>
             <ul>
-                <li><strong></strong>Ranging Shots. When you miss a ranged weapon attack with a bow, your next ranged weapon attack roll with a bow has advantage.</li>
-                <li><strong></strong>Overwatch. As a bonus action, you can ready a shot until the start of your next turn. If a creature moves 5 feet or more while within 30 feet of you while you have a shot readied, you can use your reaction to make a ranged weapon attack against that creature with a −5 penalty to the attack roll.</li>
+                <li><strong>Ranging Shots.</strong> When you miss a ranged weapon attack with a bow, your next ranged weapon attack roll with a bow has advantage.</li>
+                <li><strong>Overwatch.</strong> As a bonus action, you can ready a shot until the start of your next turn. If a creature moves 5 feet or more while within 30 feet of you while you have a shot readied, you can use your reaction to make a ranged weapon attack against that creature with a −5 penalty to the attack roll.</li>
             </ul>
         </description>
         <sheet>
@@ -563,9 +563,9 @@
         <description>
             <p>You wield daggers with perfection and poise, able to use them fluidly in any situation.</p>
             <ul>
-                <li><strong></strong>Dagger Tricks. You can draw or stow any number of daggers during your turn. You have advantage on any ability check to conceal your daggers.</li>
-                <li><strong></strong>Improved Critical. Your attacks with daggers score a critical hit on a roll of 19 or 20.</li>
-                <li><strong></strong>Swift Stabbing. When you use two-weapon fighting using a dagger in both hands, you can take both attacks as part of the Attack action on your turn (without expending your bonus action). You can only make this attack once per turn.</li>
+                <li><strong>Dagger Tricks.</strong> You can draw or stow any number of daggers during your turn. You have advantage on any ability check to conceal your daggers.</li>
+                <li><strong>Improved Critical.</strong> Your attacks with daggers score a critical hit on a roll of 19 or 20.</li>
+                <li><strong>Swift Stabbing.</strong> When you use two-weapon fighting using a dagger in both hands, you can take both attacks as part of the Attack action on your turn (without expending your bonus action). You can only make this attack once per turn.</li>
             </ul>
         </description>
         <sheet>
@@ -662,16 +662,17 @@
         </rules>
     </element>
     <element name="Natural Weapon Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_NATURAL_WEAPON_EXPERT">
+        <prerequisite>Have one or more natural weapons</prerequisite>
         <description>
-            <p></p>
+            <p>You master the use of your natural weapons, granting you the following benefits:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ferocity.</strong> As a bonus action, you can make a single weapon attack with your natural weapon.</li>
+                <li><strong>Natural Perfection.</strong> Your natural weapon damage die increases to 1d6. If it is already 1d6 or greater, it increases by d2 (or one step higher), up to a maximum of 1d12.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Ferocity. As a bonus action, you can make a single weapon attack with your natural weapon.
+            Natural Perfection. Your natural weapon damage die increases to 1d6. If it is already 1d6 or greater, it increases by d2 (or one step higher), up to a maximum of 1d12.</description>
         </sheet>
         <rules>
         
@@ -679,15 +680,17 @@
     </element>
     <element name="Pike Master" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_PIKE_MASTER">
         <description>
-            <p></p>
+            <p>You master the effective use of a pike, making the most of its extreme range.</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Extended Reach.</strong> Your reach with a pike increases by 5 feet on your turn.</li>
+                <li><strong>Set for Charge.</strong> If you haven’t yet moved this turn, you can use your bonus action to set for charge, reducing your movement speed to 0 and gaining a second reaction that can only be used to make attacks of opportunity until the start of your next turn.</li>
+                <li><strong>Zone Control.</strong> While wielding a pike, creatures provoke an attack of opportunity when they enter the reach of the pike.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Extended Reach. Your reach with a pike increases by 5 feet on your turn.
+            Set for Charge. If you haven’t yet moved this turn, you can use your bonus action to set for charge, reducing your movement speed to 0 and gaining a second reaction that can only be used to make attacks of opportunity until the start of your next turn.
+            Zone Control. While wielding a pike, creatures provoke an attack of opportunity when they enter the reach of the pike.</description>
         </sheet>
         <rules>
         
@@ -695,31 +698,34 @@
     </element>
     <element name="Stinger" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_STINGER">
         <description>
-            <p></p>
+            <p>You specialize in the quiet and agonizing kill with subtle weapons. You gain the following benefits related to blowguns and darts:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Increase.</strong> Increase your Dexterity, Wisdom, or Constitution ability score by 1, to a maximum of 20.</li>
+                <li><strong>Efficient Poisons.</strong> When you apply a poison blowgun needle or dart, you can apply it to twice as many pieces of ammunition.</li>
+                <li><strong>Hidden Death.</strong> If you attack while hidden from a target with a blowgun or dart, you can make a Dexterity (Stealth) check with a −5 penalty for each time you’ve hit the target this turn against their passive Wisdom (Perception) score (no action required). On a success, you remain hidden from that target, though the target will know which general direction you are in.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Efficient Poisons. When you apply a poison blowgun needle or dart, you can apply it to twice as many pieces of ammunition.
+            Hidden Death. If you attack while hidden from a target with a blowgun or dart, you can make a Dexterity (Stealth) check with a −5 penalty for each time you’ve hit the target this turn against their passive Wisdom (Perception) score (no action required). On a success, you remain hidden from that target, though the target will know which general direction you are in.</description>
         </sheet>
         <rules>
-        
+            <select type="Ability Score Improvement" name="Stinger" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM"/>
         </rules>
     </element>
     <element name="Swordmaster" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_SWORDMASTER">
         <description>
-            <p></p>
+            <p>Your swordplay leverages every advantage to build momentum, allowing you to strike or defend in new ways. When wielding a sword, you gain a special Swordplay d6 die each time you successfully attack a creature with it. You can have a maximum number of Swordplay dice equal to your proficiency bonus. You lose all accumulated dice if you stop wielding a sword or end your turn without making an attack with a sword.</p>
+            <p class="indent">You can spend your Swordplay dice on the following abilities:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Sword Parry</strong>. As a reaction to being hit by a melee weapon attack, you can expend your Swordplay dice, rolling them and reducing the damage taken by the amount rolled. If the amount rolled exceeds the damage taken, the attacker takes damage equal to the difference.</li>
+                <li><strong>Sword Finisher.</strong> As a bonus action when you hit a creature with a melee weapon attack, you can expend your Swordplay dice, rolling them and dealing additional damage equal to the roll.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>When wielding a sword, you gain a special Swordplay d6 die each time you successfully attack a creature with it. You can have a max of {{proficiency}} and are lost if you stop wielding a sword or end your turn without making an attack.
+            Sword Parry. As a reaction to being hit by a melee weapon attack, you can expend your Swordplay dice, rolling them and reducing the damage taken by the amount rolled. If the amount rolled exceeds the damage taken, the attacker takes damage equal to the difference.
+            Sword Finisher. As a bonus action when you hit a creature with a melee weapon attack, you can expend your Swordplay dice, rolling them and dealing additional damage equal to the roll.</description>
         </sheet>
         <rules>
         
@@ -727,49 +733,59 @@
     </element>
     <element name="Warhammer Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_WARHAMMER_EXPERT">
         <description>
-            <p></p>
+            <p>Your mastery over a warhammer ensures that your blows never fail to wear down the enemy, becoming an inexorable threat to any foe. You gain the following benefits:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution ability score by 1, to a maximum of 20.</li>
+                <li><strong>Battering Blows.</strong> When you miss a melee weapon attack with the warhammer, the target takes half the weapon damage the attack would have dealt. This does not count as a hit for things that require you to hit the target (such as spells, Divine Smite, or similar features), but does include modifiers to the attack damage roll.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Battering Blows. When you miss a melee weapon attack with the warhammer, the target takes half the weapon damage the attack would have dealt. This does not count as a hit for things that require you to hit the target (such as spells, Divine Smite, or similar features), but does include modifiers to the attack damage roll.</description>
         </sheet>
         <rules>
-        
+            <select type="Ability Score Improvement" name="Warhammer Expert" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
         </rules>
     </element>
     <element name="War Pick Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_WAR_PICK_EXPERT">
         <description>
-            <p></p>
+            <p>You have mastered the use of a war pick, and are able to tear down the most formidable foes.</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Increase.</strong> Increase your Strength or Constitution ability score by 1, to a maximum of 20.</li>
+                <li><strong>Siege Pick.</strong> Attacks you make with the war pick against objects deal double damage.</li>
+                <li><strong>Sunder.</strong> When you hit a target that is wearing armor or benefiting from natural armor, you can use your bonus action to sunder the target, temporarily leaving them vulnerable. The next attack roll against that creature has advantage</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Siege Pick. Attacks you make with the war pick against objects deal double damage.
+            Sunder. When you hit a target that is wearing armor or benefiting from natural armor, you can use your bonus action to sunder the target, temporarily leaving them vulnerable. The next attack roll against that creature has advantage</description>
         </sheet>
         <rules>
-        
+            <select type="Ability Score Improvement" name="War Pick Expert" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
         </rules>
     </element>
     <element name="Whip Expert" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_WHIP_EXPERT">
         <description>
-            <p></p>
+            <p>You master using a whip, gaining the following benefits:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Dexterity or Constitution ability score by 1, to a maximum of 20.</li>
+                <li><strong>Expert Handling.</strong> Whips gain the Light property for you and you can use a whip to extend your reach for certain object interactions, such as opening and closing doors, picking up objects, or similar simple interactions.</li>
+                <li>You gain the <strong>Whip Tricks</strong> special attacks.</li>
+            </ul>
+            <p><strong>Whip Tricks</strong></p>
+            <p>You master the manipulation of a whip to allow a level of extreme control over its use.</p>
+            <p class="indent">When you make a weapon attack with a whip, you can replace the attack with a trick, forcing the enemy to make a Dexterity saving throw saving with a DC of 8 + your Strength or Dexterity modifier (your choice) + your proficiency bonus. If the target fails its saving throw, you can perform any of the following tricks against it:</p>
+            <ul>
+                <li><strong>Sudden Yank.</strong> You wrap the whip around a Medium or smaller target, and yank them 5 feet towards you</li>
+                <li><strong>Tangle Weapon.</strong> You tangle one weapon the target is wielding, giving them disadvantage on attacks with that weapon until the start of your next turn, or until they miss an attack. You cannot make attacks with the whip used to make the attack until they free the weapon.</li>
+                <li><strong>Whip Trip.</strong> You tangle a Large or smaller creature’s feet, causing them to fall prone.</li>
             </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Expert Handling. Whips gain the Light property for you and you can use a whip to extend your reach for certain object interactions, such as opening and closing doors, picking up objects, or similar simple interactions.
+            </description>
         </sheet>
         <rules>
+            <select type="Ability Score Improvement" name="Whip Expert" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION"/>
             <grant type="Feat Features" id="ID_KTH_COLAL_FEAT_FEATURE_WHIP_TRICKS" />
         </rules>
     </element>
@@ -778,12 +794,54 @@
             <p></p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you make a weapon attack with a whip, you can replace the attack with a trick, forcing the enemy to make a Dexterity saving throw saving with a DC of 8 + your Strength or Dexterity modifier (your choice) + {{proficiency}}. If the target fails its saving throw, you can perform any of the following tricks against it:
+            Sudden Yank. You wrap the whip around a Medium or smaller target, and yank them 5 feet towards you
+            Tangle Weapon. You tangle one weapon the target is wielding, giving them disadvantage on attacks with that weapon until the start of your next turn, or until they miss an attack. You cannot make attacks with the whip used to make the attack until they free the weapon.
+            Whip Trip. You tangle a Large or smaller creature’s feet, causing them to fall prone.</description>
         </sheet>
     </element>
 
     <!-- Combat Style Feats 2-->
+    <element name="Versatile Weapon Master" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Versatile_Weapon_Master">
+        <description>
+            <p>You are an expert on the fluid use of versatile weapons, changing stances to fit any situation. When you draw a versatile weapon you are proficient with, or start your turn while wielding one, you can enter a special stance as long as you aren’t wielding other weapons or a shield.</p>
+            <p class="indent">This lasts until the start of your next turn, drop or sheath your weapon, or equip a shield. Each stance provides modifiers to your melee weapon attacks made with the versatile weapon while in that stance:</p>
+            <ul>
+                <li><strong>Neutral Stance:</strong> You add +1 to your attack rolls, damage rolls, and armor class.</li>
+                <li><strong>Power Stance:</strong> You don’t add your Proficiency bonus to attack rolls, but add twice your Proficiency bonus to your damage rolls.</li>
+                <li><strong>Accuracy Stance:</strong> You add twice your Proficiency bonus to attack rolls (instead of just your Proficiency Bonus, but don’t add your ability modifier to damage rolls.</li>
+                <li><strong>Defensive Stance:</strong> You don’t add your Proficiency bonus to attack rolls, but if you hit at least one attack against a hostile creature, you can add your proficiency bonus to your AC until the start of your next turn.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you draw a versatile weapon you are proficient with, or start your turn while wielding one, you can enter a special stance as long as you aren’t wielding other weapons or a shield.
+            This lasts until the start of your next turn, drop or sheath your weapon, or equip a shield. Each stance provides modifiers to your melee weapon attacks made with the versatile weapon while in that stance:
+            Neutral Stance: You add +1 to your attack rolls, damage rolls, and armor class.
+            Power Stance: You don’t add your Proficiency bonus to attack rolls, but add twice your Proficiency bonus to your damage rolls.
+            Accuracy Stance: You add twice your Proficiency bonus to attack rolls (instead of just your Proficiency Bonus, but don’t add your ability modifier to damage rolls.
+            Defensive Stance: You don’t add your Proficiency bonus to attack rolls, but if you hit at least one attack against a hostile creature, you can add your proficiency bonus to your AC until the start of your next turn.</description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element><element name="Lightning Strikes" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Lightning_Strikes">
+        <description>
+            <p>You have mastered wielding weapons with lightning speed, granting the following benefits:</p>
+            <ul>
+                <li><strong>Quick Draw.</strong> Whenever you make an attack, you can draw a light melee weapon as part of taking the attack.</li>
+                <li><strong>Twin Strike.</strong> When you make an attack while wielding more than one light melee weapon and make an attack with one of them, you can subtract the damage dice of another light melee weapon you are carrying from the attack roll to add twice its damage dice to the damage roll of that attack on hit.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Quick Draw. Whenever you make an attack, you can draw a light melee weapon as part of taking the attack.
+            Twin Strike. When you make an attack while wielding more than one light melee weapon and make an attack with one of them, you can subtract the damage dice of another light melee weapon you are carrying from the attack roll to add twice its damage dice to the damage roll of that attack on hit.</description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
     
+    <!-- Mystic Path Feats 13-->
     <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
         <description>
             <p></p>
@@ -809,8 +867,7 @@
             <description></description>
         </sheet>
     </element>
-    <!-- Mystic Path Feats 13-->
-    <!-- Esoteri Arts Feats 3-->
+    <!-- Esoteric Arts Feats 3-->
     <!-- Transformation Arts Feats 4-->
     <!-- Additional Feats 6-->
 
