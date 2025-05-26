@@ -842,6 +842,295 @@
     </element>
     
     <!-- Mystic Path Feats 13-->
+    <element name="One With Wind" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_One_With_Wind">
+        <description>
+            <p>You have mastered the supernatural ability striking like the wind, gaining the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Dexterity, or Wisdom ability score by 1, to a maximum of 20.</li>
+                <li><strong>Wind Walker.</strong> You are not affected by difficult terrain or additional movement costs when the difficult terrain or movement cost comes from strong winds (such as the gust of wind spell).</li>
+                <li>You gain the <strong>Wind Strike</strong> special attack. </li>
+            </ul>
+            <p><strong>Wind Strike</strong></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks with a special attack that lets you vanish into the wind before striking a number of nearby creatures with a weapon you are carrying in a flurry of blows, before reform from the wind within 5 feet of one of the creatures attacked. You can attack a number of creatures in this way equal to your proficiency bonus, but can only strike each creature once. You can strike creatures within a range of 5 × your proficiency bonus feet (for example when you proficiency bonus is +2, you can strike creatures within 10 feet).</p>
+            <p class="indent">Each time you strike a creature, make a melee weapon attack, dealing 1d6 + your Mystic Path modifier damage on a hit. The damage increases by 1d6 each time your proficiency bonus increases.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest</p>
+        </description>
+        <sheet>
+            <description>Wind Walker. You are not affected by difficult terrain or additional movement costs when the difficult terrain or movement cost comes from strong winds.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="One With Wind" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_WISDOM"/>
+            <grant type="Feature Feature" id="ID_KTH_COLAL_FEAT_FEATURE_WIND_STRIKE" />
+        </rules>
+    </element>
+    
+    <element name="Wind Strike" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_WIND_STRIKE">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks with a special attack that lets you vanish into the wind before striking a number of nearby creatures with a weapon you are carrying in a flurry of blows, before reform from the wind within 5 feet of one of the creatures attacked. You can attack {{proficiency}} creatures in this way, but can only strike each creature once. You can strike creatures within a range of {{5xprof}} feet.
+            Each time you strike a creature, make a melee weapon attack, dealing {{windstrike}}d6 + your Mystic Path modifier damage on a hit.
+            </description>            
+        </sheet>
+        <rules>
+            <stat name="5xprof" value="proficiency" bonus="base" />
+            <stat name="5xprof" value="proficiency" />
+            <stat name="5xprof" value="proficiency" />
+            <stat name="5xprof" value="proficiency" />
+            <stat name="5xprof" value="proficiency" />
+            <stat name="windstrike" value="1" bonus="base" />
+            <stat name="windstrike" value="1" level="5" />
+            <stat name="windstrike" value="1" level="9" />
+            <stat name="windstrike" value="1" level="13" />
+            <stat name="windstrike" value="1" level="17" />
+                
+        </rules>
+    </element>
+    <element name="Wind Affinity" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_WIND_AFFINITY">
+        <description>
+            <p>You are touched by the winds, either from a blessing of a powerful entity or through focused mastery and study of their essence, allowing you to borrow and harness their power.</p>
+            <p class="indent">You learn the windborne weapon and manipulate wind cantrips and the become wind spell. You can cast it innately without expending a spell slot once, regaining the ability to so when you complete a short or long rest. When you cast it this way, you cast it a level equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>You learn the become wind spell. You can cast it innately without expending a spell slot once, regaining the ability to so when you complete a short or long rest. When you cast it this way, you cast it at level {{proficiency}}.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_WINDBORNE_WEAPON" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MANIPULATE_WIND" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_WIND" />
+        </rules>
+    </element>
+    <element name="Wind Slash" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Wind_Slash">
+        <description>
+            <p>The wind conveys the will of your attacks, granting you the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Dexterity or Wisdom ability score by 1, to a maximum of 20.</li>
+                <li><strong>Cloudbreaker.</strong> You can cut dust, fog, or clouds. As an attack as part of the attack action, you can clear a 30 foot cone of dust, fog, or cloud. Depending on the source of the obscuring effect, the area may become obscured again after 1d4 rounds.</li>
+                <li>You gain the <strong>Wind Slash</strong> special attack.</li>
+            </ul>
+            <p><strong>Wind Slash</strong></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks with a special attack, launching a blades of wind at targets within 60 feet. You launch a number of blades equal to your proficiency modifier, but can increase the number of attacks made by giving up additional attacks you can make as part of the Attack action (launching one additional attack for each attack forgone). The blades are ranged weapon attacks using your Mystic Path modifier. Each blade deals 1d6 + your Mystic Path modifier slashing damage on damage on hit.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Cloudbreaker. As an attack as part of the attack action, you can clear a 30 foot cone of dust, fog, or cloud. Depending on the source of the obscuring effect, the area may become obscured again after 1d4 rounds.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Wind Slash" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_WISDOM"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_WIND_SLASH" />
+        </rules>
+    </element>
+    
+    <element name="Wind Slash" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_WIND_SLASH">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks with a special attack, launching a blades of wind at targets within 60 feet. You launch {{proficiency}} blades, but can increase the number of attacks made by giving up additional attacks you can make as part of the Attack action (launching one additional attack for each attack forgone). The blades are ranged weapon attacks using your Mystic Path modifier. Each blade deals 1d6 + your Mystic Path modifier slashing damage on damage on hit.</description>
+        </sheet>
+    </element>
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
     <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
         <description>
             <p></p>
@@ -868,6 +1157,31 @@
         </sheet>
     </element>
     <!-- Esoteric Arts Feats 3-->
+    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        
+        </rules>
+    </element>
+    
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
     <!-- Transformation Arts Feats 4-->
     <!-- Additional Feats 6-->
 
