@@ -979,9 +979,10 @@
     </element>
     
     <element name="Lightning Leaper" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Lightning_Leaper">
-        <description>
         <prerequisite>4th level</prerequisite>
         <requirements>[level:4]</requirements>
+        <description>
+        
             <p>You master the art of moving like lightning... literally. You gain the following benefits:</p>
             <ul>
                 <li><strong>Ability Score Bonus.</strong> Increase your Strength, Dexterity, or Intelligence ability score by 1, to a maximum of 20.</li>
@@ -1016,9 +1017,10 @@
         </rules>
     </element>
     <element name="Lightning Rod" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Lightning_Rod">
-        <description>        
         <prerequisite>4th level</prerequisite>
         <requirements>[level:4]</requirements>
+        <description>        
+        
             <p>You learn to store lightning energy within your body. You gain the following benefits:</p>
             <ul>
                 <li><strong>Ability Score Bonus.</strong> Increase your Strength, Constitution, or Intelligence ability score by 1, to a maximum of 20.</li>
@@ -1047,9 +1049,10 @@
         </sheet>
     </element>
     <element name="Earth Shaper" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Earth_Shaper">
-        <description>
         <prerequisite>4th level</prerequisite>
         <requirements>[level:4]</requirements>
+        <description>
+        
             <p>You have mastered a special connection to the earth and can call upon the stones buried in to heed your calls.</p>
             <ul>
                 <li><strong>Ability Score Bonus.</strong> Increase your Strength, Constitution, or Wisdom modifier by 1, to a maximum of 20</li>
@@ -1088,9 +1091,10 @@
         </rules>
     </element>
     <element name="Earth Binder" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Earth_Binder">
-        <description>
         <prerequisite>4th level</prerequisite>
         <requirements>[level:4]</requirements>
+        <description>
+        
             <p>Your mastery of the earthly powers allows you to call upon its power to entrap foes. You gain the following the benefits:</p>
             <ul>
                 <li><strong>Ability Score Bonus.</strong> Increase your Strength, Constitution, or Wisdom modifier by 1, to a maximum of 20.</li>
@@ -1166,9 +1170,10 @@
     </element>
     
     <element name="Water Weaver" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Water_Weaver">
-        <description>
+        
         <prerequisite>4th level</prerequisite>
         <requirements>[level:4]</requirements>
+        <description>
             <p>You have mastered a special connection to water and can beckon it to your call. You gain the following benefits:</p>
             <ul>
                 <li><strong>Ability Score Bonus.</strong> Increase your Strength, Dexterity, or Wisdom ability score by 1, to a maximum of 20.</li>
@@ -1189,6 +1194,8 @@
     </element>
     
     <element name="Water Whip" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_WATER_WHIP">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
         <description>
             <p></p>
         </description>
@@ -1197,7 +1204,114 @@
         </sheet>
     </element>
     <!-- Esoteric Arts Feats 3-->
+    <element name="Illusion Art" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_ILLUSION_ART">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You master the arts of illusion, mastering a special art to create them through a unique method. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Mind Tricks.</strong> You learn the minor illusion cantrip and cast it without a material component, using a spellcasting ability modifier of your choice. When you form a weapon with minor illusion, you can use it as if it were a real weapon for the duration. On hit, it does psychic damage instead of its normal damage type.</li>
+                <li>You gain the <strong>Illusion Steps </strong>special bonus action</li>
+            </ul>
+            <p><strong>Illusion Steps</strong></p>
+            <p>You can cast mirror image as a bonus action without expending a spell slot. When cast this way, it conjures a number of duplicates equal to your proficiency bonus. When you cast this ability or as a bonus action while it is active, you can move one or more of the duplicates out of your space, moving up to your movement speed. A duplicate outside of your space looks just like you and mimics your action, but if you attack or interact with anything while it is not in your space, it is revealed as an illusion until to returns to your space.</p>
+            <p class="indent">If you start your turn with one or more duplicate not in your space, you can either recall them to your space or swap positions with one (destroying the duplicate in the process).</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>Mind Tricks. You learn the minor illusion cantrip and cast it without a material component, using a spellcasting ability modifier of your choice. When you form a weapon with minor illusion, you can use it as if it were a real weapon for the duration. On hit, it does psychic damage instead of its normal damage type.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_ILLUSION_STEPS" />
+        </rules>
+    </element>
+    
+    <element name="Illusion Steps" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_ILLUSION_STEPS">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast mirror image as a bonus action without expending a spell slot. When cast this way, it conjures {{proficiency}} duplicates. When you cast this ability or as a bonus action while it is active, you can move one or more of the duplicates out of your space, moving up to your movement speed. A duplicate outside of your space looks just like you and mimics your action, but if you attack or interact with anything while it is not in your space, it is revealed as an illusion until to returns to your space.
+            If you start your turn with one or more duplicate not in your space, you can either recall them to your space or swap positions with one (destroying the duplicate in the process).</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" />
+        </rules>
+    </element>
+    <element name="Void Art" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_VOID_ART">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>After intense study and sudden enlightenment you’ve mastered the true essence of cutting through space itself. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Part Magic.</strong> When you succeed a Dexterity saving throw against a spell or similar magical effect and you would take half damage, you can use your reaction to cut the effect from existence around you, taking no damage instead.</li>
+                <li>You gain the<strong> Void Strike </strong>action.</li>
+            </ul>
+            <p><strong>Void Strike</strong></p>
+            <p>As an action, you make a special attack that strikes the dimensional boundaries around a creature, disrupting them and potentially briefly pulling the creature into the ethereal plane. The target makes a Charisma saving throw. On failure, they take force damage equal to 2d6 + your Mystic Path modifier and are banished to the ethereal plane until the start of your next turn. On success, they take half as much and are not banished to the ethereal plane.</p>
+            <p class="indent">The creature cannot move while on the ethereal plane, but can otherwise take any action they can normally take, but they cannot interact with things on the material plane unless they normally could. You can choose to do no damage with this ability, and the target can choose to fail their save. The number of d6 damage the target takes increases when your proficiency bonus increase, remaining equal to your proficiency bonus.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Part Magic. When you succeed a Dexterity saving throw against a spell or similar magical effect and you would take half damage, you can use your reaction to cut the effect from existence around you, taking no damage instead.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_VOID_STRIKE" />
+        </rules>
+    </element>
+    
+    <element name="Void Strike" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_VOID_STRIKE">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, you make a special attack that strikes the dimensional boundaries around a creature, disrupting them and potentially briefly pulling the creature into the ethereal plane. The target makes a Charisma saving throw. On failure, they take force damage equal to {{proficiency}}d6 + your Mystic Path modifier and are banished to the ethereal plane until the start of your next turn. On success, they take half as much and are not banished to the ethereal plane.
+            The creature cannot move while on the ethereal plane, but can otherwise take any action they can normally take, but they cannot interact with things on the material plane unless they normally could. You can choose to do no damage with this ability, and the target can choose to fail their save.</description>
+        </sheet>
+    </element>
+    <element name="Vanishing Trick" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_VANISHING_TRICK">
+        <prerequisite>8th level</prerequisite>
+        <requirements>[level:8]</requirements>
+        <description>
+            <p>You master an esoteric art of vanishing and leaving something (or someone) behind in your space, swapping positions with them. You gain the following abilities:</p>
+            <ul>
+                <li><strong>Decoy Death.</strong> If you would be reduced to 0 hit points as a result of taking damage, you can use Nether Swap as a reaction. When you do so, you instead fall to 1 hit point, with any additional damage beyond what would reduce to 1 hit point being taken by the object you swap places with. You can do this even if you have no use remaining, but once you use it this way you cannot use it this way again until you complete a long rest. You can only target objects when using it this way.</li>
+                <li>You gain the <strong>Nether Swap </strong>special bonus action.</li>
+            </ul>
+            <p><strong>Nether Swap</strong></p>
+            <p>As a bonus action, you swap places with a Small to Large creature or object that is not being worn or carried you can see within 15 feet of you. If the target is an unwilling creature, it makes a Charisma saving throw against your Mystic Path DC. On a successful save, the ability fails and neither creature is teleported. The maximum distance increases by 5 feet when your proficiency bonus increases (always equaling 5 times your proficiency bonus).</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Decoy Death. If you would be reduced to 0 hit points as a result of taking damage, you can use Nether Swap as a reaction. When you do so, you instead fall to 1 hit point, with any additional damage beyond what would reduce to 1 hit point being taken by the object you swap places with. You can do this even if you have no use remaining, but once you use it this way you cannot use it this way again until you complete a long rest. You can only target objects when using it this way.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_NETHER_SWAP" />
+        </rules>
+    </element>
+    
+    <element name="Nether Swap" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_NETHER_SWAP">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As a bonus action, you swap places with a Small to Large creature or object that is not being worn or carried you can see within {{netherswap}} feet of you. If the target is an unwilling creature, it makes a Charisma saving throw against your Mystic Path DC. On a successful save, the ability fails and neither creature is teleported.</description>
+        </sheet>
+        <rules>
+            <stat name="netherswap" value="proficiency" bonus="base" />
+            <stat name="netherswap" value="proficiency" />
+            <stat name="netherswap" value="proficiency" />
+            <stat name="netherswap" value="proficiency" />
+            <stat name="netherswap" value="proficiency" />
+        </rules>
+    </element>
+    
+    <!-- Transformation Arts Feats 4-->
+    
     <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
         <description>
             <p></p>
             <ul>
@@ -1205,12 +1319,15 @@
                 <li><strong></strong></li>
                 <li><strong></strong></li>
             </ul>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
         </sheet>
         <rules>
-        
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_WATER_WHIP" />
         </rules>
     </element>
     
@@ -1222,7 +1339,6 @@
             <description></description>
         </sheet>
     </element>
-    <!-- Transformation Arts Feats 4-->
     <!-- Additional Feats 6-->
 
     <!-- Blood magic feats-->
