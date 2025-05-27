@@ -930,230 +930,270 @@
             <description>When you take the Attack action on your turn, you can replace one of your attacks with a special attack, launching a blades of wind at targets within 60 feet. You launch {{proficiency}} blades, but can increase the number of attacks made by giving up additional attacks you can make as part of the Attack action (launching one additional attack for each attack forgone). The blades are ranged weapon attacks using your Mystic Path modifier. Each blade deals 1d6 + your Mystic Path modifier slashing damage on damage on hit.</description>
         </sheet>
     </element>
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+    <element name="Fire Dancer" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FIRE_DANCER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You harbor within your soul an ember of the flame of life akin to the power of a phoenix. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Constitution or Charisma ability score by 1, to a maximum of 20.</li>
+                <li><strong>Resilient Life.</strong> You gain advantage on death saving throws. If you have Explosive Rejuvenation available when you would fail your 3rd death saving throw, it automatically activates instead.</li>
+                <li>You gain the <strong>Explosive Rejuvenation </strong> special bonus action.</li>
+            </ul>
+            <p><strong>Explosive Rejuvenation</strong></p>
+            <p>As a bonus action, you can unleash the power of the ember within your soul, exploding with fire. You regain 2d4 hit points, and all creatures within 10 feet of you must make a Dexterity saving throw, taking 2d4 fire damage on a failed save, or half as much on a successful one.</p>
+            <p class="indent">The fire damage and hit points regard increase by 1d4 each time your proficiency increases (remaining equal to your proficiency bonus).</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>Resilient Life. You gain advantage on death saving throws. If you have Explosive Rejuvenation available when you would fail your 3rd death saving throw, it automatically activates instead.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Fire Dancer" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_EXPLOSIVE_REJUVENATION" />
+        </rules>
+    </element>
+    
+    <element name="Explosive Rejuvenation" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_EXPLOSIVE_REJUVENATION">
         <description>
             <p></p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action, you can unleash the power of the ember within your soul, exploding with fire. You regain {{proficiency}}d4 hit points, and all creatures within 10 feet of you must make a Dexterity saving throw, taking 2d4 fire damage on a failed save, or half as much on a successful one.
+            </description>
+        </sheet>
+    </element>
+    <element name="Fire Affinity" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Fire_Affinity">
+        <description>
+            <p>You are granted a special affinity with fire, allowing you to borrow and harness its power.</p>
+            <p class="indent">You learn the fire bolt and manipulate fire cantrips, and learn the become fire spell. You can cast it innately without expending a spell slot once, regaining the ability to so when you complete a short or long rest. When you cast it this way, you cast it a level equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>You learn the fire bolt and manipulate fire cantrips, and learn the become fire spell. You can cast it innately without expending a spell slot once, regaining the ability to so when you complete a short or long rest. When you cast it this way, you cast it at level {{proficiency}}.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MANIPULATE_FIRE" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_FIRE" />
+        </rules>
+    </element>
+    
+    <element name="Lightning Leaper" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Lightning_Leaper">
+        <description>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+            <p>You master the art of moving like lightning... literally. You gain the following benefits:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Dexterity, or Intelligence ability score by 1, to a maximum of 20.</li>
+                <li><strong>Lightning Dodge.</strong> When you succeed a dexterity saving throw, you can teleport up to 5 feet.</li>
+                <li>You gain the <strong>Lightning Leap</strong> special attack</li>
             </ul>
+            <p><strong>Lightning Leap</strong></p>
+            <p>When you take the Attack action on your turn, you can replace one attack by turning into lightning, leaping (as lightning) to a creature or empty space within 10 feet. If you target a creature, you can target a chain of creatures within 10 feet of the previous target, targeting a number of creatures equal to your proficiency bonus. Each creature you target makes a Dexterity saving, taking 2d6 lightning damage on a failed save, or half as much on a successful save. You then teleport to an empty spot of your choice adjacent to the last target of the chain. The damage increases by 1d6 and the range (initial and jump distance) increases by 5 feet whenever your proficiency bonus increases.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Lightning Dodge. When you succeed a dexterity saving throw, you can teleport up to 5 feet.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Fire Dancer" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_INTELLIGENCE"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_LIGHTNING_LEAP" />
+        </rules>
+    </element>   
+    <element name="Lightning Leap" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_LIGHTNING_LEAP">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one attack by turning into lightning, leaping (as lightning) to a creature or empty space within 10 feet. If you target a creature, you can target a chain of creatures within {{lightningleaprange}} feet of the previous target, targeting a number of creatures equal to your proficiency bonus. Each creature you target makes a Dexterity saving, taking {{proficiency}}d6 lightning damage on a failed save, or half as much on a successful save. You then teleport to an empty spot of your choice adjacent to the last target of the chain..</description>
+        </sheet>
+        <rules>
+            <stat name="lightningleaprange" value="10" bonus="base" />
+            <stat name="lightningleaprange" value="5" level="5" />
+            <stat name="lightningleaprange" value="5" level="9" />
+            <stat name="lightningleaprange" value="5" level="13" />
+            <stat name="lightningleaprange" value="5" level="17" />
+        </rules>
+    </element>
+    <element name="Lightning Rod" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Lightning_Rod">
+        <description>        
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+            <p>You learn to store lightning energy within your body. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Constitution, or Intelligence ability score by 1, to a maximum of 20.</li>
+                <li><strong>Lightning Draw.</strong> When a creature within 10 feet of you takes lightning damage, as a reaction you can redirect that damage to yourself.</li>
+                <li>You gain the <strong>Lightning Burst</strong> special attack.</li>
+            </ul>
+            <p><strong>Lightning Burst</strong></p>
+            <p>When you take the Attack action on your turn, you can replace one attack by unleashing lightning that blasts all targets of your choice within 10 feet of you. Each target must make a Dexterity saving throw. On failure, they take 2d6 lightning damage. On success they take half as much damage. The lightning damage increases by 1d6 each time your proficiency bonus increases.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Lightning Draw. When a creature within 10 feet of you takes lightning damage, as a reaction you can redirect that damage to yourself.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_LIGHTING_BURST" />
+            <select type="Ability Score Improvement" name="Lightning Rod" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE"/>
+        </rules>
+    </element>
+    
+    <element name="Lightning Burst" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_LIGHTING_BURST">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one attack by unleashing lightning that blasts all targets of your choice within 10 feet of you. Each target must make a Dexterity saving throw. On failure, they take {{proficiency}}d6 lightning damage. On success they take half as much damage.</description>
+        </sheet>
+    </element>
+    <element name="Earth Shaper" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Earth_Shaper">
+        <description>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+            <p>You have mastered a special connection to the earth and can call upon the stones buried in to heed your calls.</p>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Constitution, or Wisdom modifier by 1, to a maximum of 20</li>
+                <li><strong>Stone Forming.</strong> You learn the stone forming cantrip</li>
+                <li>You gain the <strong>Stonewall</strong> special action.</li>
+            </ul>
+            <p><strong>Stonewall</strong></p>
+            <p>As an action, you cause a 20 foot high, 1 foot thick wall of stone to erupt from the ground either in a 20 foot radius around you, or in a 30-foot long straight line that has a least one part of the wall within 20 feet of you.</p>
+            <p class="indent">The wall lasts for up to 10 minutes. The wall can be destroyed, and has an AC of 16 and a number of hit points equal to 5 × your character level (the entire ring sharing the same hit points, crumbling to dust when reduced to zero). The wall immediately crumbles if you fall unconscious.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
         <rules>
-        
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_STONE_FORMING" />
+            <select type="Ability Score Improvement" name="Earth Shaper" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_STONEWALL" />
         </rules>
     </element>
     
-    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+    <element name="Stonewall" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_STONEWALL">
         <description>
             <p></p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <description>
-            <p></p>
-            <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-            </ul>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you cause a 20 foot high, 1 foot thick wall of stone to erupt from the ground either in a 20 foot radius around you, or in a 30-foot long straight line that has a least one part of the wall within 20 feet of you.
+            The wall lasts for up to 10 minutes. The wall can be destroyed, and has an AC of 16 and {{stonewallhp}} HP (the entire ring sharing the same hit points, crumbling to dust when reduced to zero). The wall immediately crumbles if you fall unconscious.</description>
         </sheet>
         <rules>
-        
+            <stat name="stonewallhp" value="level" bonus="base" />
+            <stat name="stonewallhp" value="level" />
+            <stat name="stonewallhp" value="level" />
+            <stat name="stonewallhp" value="level" />
+            <stat name="stonewallhp" value="level" />
         </rules>
     </element>
-    
-    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+    <element name="Earth Binder" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Earth_Binder">
         <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <description>
-            <p></p>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+            <p>Your mastery of the earthly powers allows you to call upon its power to entrap foes. You gain the following the benefits:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Constitution, or Wisdom modifier by 1, to a maximum of 20.</li>
+                <li><strong></strong>Grasping Earth. Once per turn, when you hit a Large or smaller creature with a melee weapon attack as part of the Attack action, its speed is reduced by 10 feet. If it is flying, it must a Strength saving throw, or fall prone.</li>
+                <li>You gain the <strong>Earthen Wave</strong> special attack</li>
             </ul>
+            <p><strong>Earth Wave</strong></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks with causing the ground beneath a target creature within 30 feet to surge and warp. The target must make a Dexterity saving throw against your Mystic Path DC. On failure, you can cause one of the following effects of your choice:</p>
+            <ul>
+                <li><strong>Earth Spike.</strong> The target takes 2d6 + your Mystic Path modifier piercing damage.</li>
+                <li><strong>Earth Grip.</strong> The target is grasped by the earth and their movement speed becomes 0 until the start of your next turn.</li>
+                <li><strong>Earth Slam.</strong> The target takes 1d6 + your Mystic Path modifier bludgeoning damage and is knocked 5 feet in a direction of your choice.</li>
+            </ul>
+            <p>On success, they take no damage and suffer no additional effects. The damage the target takes is increased by 1d6 when your proficiency bonus increases.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Grasping Earth. Once per turn, when you hit a Large or smaller creature with a melee weapon attack as part of the Attack action, its speed is reduced by 10 feet. If it is flying, it must a Strength saving throw, or fall prone.</description>
         </sheet>
         <rules>
-        
-        </rules>
-    </element>
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <description>
-            <p></p>
-            <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-            </ul>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-        <rules>
-        
+            <select type="Ability Score Improvement" name="Earth Binder" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_EARTHEN_WAVE" />
         </rules>
     </element>
     
-    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+    <element name="Earthen Wave" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_EARTHEN_WAVE">
         <description>
             <p></p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <description>
-            <p></p>
-            <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-            </ul>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks with causing the ground beneath a target creature within 30 feet to surge and warp. The target must make a Dexterity saving throw against your Mystic Path DC. On failure, you can cause one of the following effects of your choice:
+            Earth Spike. The target takes {{proficiency}}d6 + your Mystic Path modifier piercing damage.
+            Earth Grip. The target is grasped by the earth and their movement speed becomes 0 until the start of your next turn.
+            Earth Slam. The target takes {{earthwave}}d6 + your Mystic Path modifier bludgeoning damage and is knocked 5 feet in a direction of your choice.
+            </description>
         </sheet>
         <rules>
-        
+            <stat name="earthwave" value="1" bonus="base" />
+            <stat name="earthwave" value="1" level="5" />
+            <stat name="earthwave" value="1" level="9" />
+            <stat name="earthwave" value="1" level="13" />
+            <stat name="earthwave" value="1" level="17" />
+        </rules>
+    </element>
+    <element name="Stone Affinity" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Stone_Affinity">
+        <description>
+            <p>You are granted a special affinity with stone, allowing you to borrow and harness its power.</p>
+            <p class="indent">You learn the impact and manipulate earth cantrip, and learn the become stone spell. You can cast it innately without expending a spell slot once, regaining the ability to so when you complete a short or long rest. When you cast it this way, you cast it a level equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>You learn the impact and manipulate earth cantrip, and learn the become stone spell. You can cast it innately without expending a spell slot once, regaining the ability to so when you complete a short or long rest. When you cast it this way, you cast it at level {{proficiency}}.</description>
+        </sheet>
+        <rules usage="1/Short Rest">
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_IMPACT" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MANIPULATE_EARTH" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_STONE" />
         </rules>
     </element>
     
-    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+    <element name="Water Affinity" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Water_Affinity">
         <description>
-            <p></p>
+            <p>You are granted a special affinity with water, allowing you to borrow and harness its power. </p>
+            <p class="indent">You learn the water bullet and manipulate water cantrip, and learn the become water spell. You can cast it innately without expending a spell slot once, regaining the ability to so when you complete a short or long rest. When you cast it this way, you cast it a level equal to your proficiency bonus.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <description>
-            <p></p>
-            <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-            </ul>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>You learn the water bullet and manipulate water cantrip, and learn the become water spell. You can cast it innately without expending a spell slot once, regaining the ability to so when you complete a short or long rest. When you cast it this way, you cast it at level {{proficiency}}.</description>
         </sheet>
         <rules>
-        
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_WATER_BULLET" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MANIPULATE_WATER" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_WATER" />
         </rules>
     </element>
     
-    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+    <element name="Water Weaver" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_Water_Weaver">
         <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <description>
-            <p></p>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+            <p>You have mastered a special connection to water and can beckon it to your call. You gain the following benefits:</p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Dexterity, or Wisdom ability score by 1, to a maximum of 20.</li>
+                <li><strong>Water Walker.</strong> You can walk on top of surfaces made of water as if they are solid ground.</li>
+                <li>You gain the <strong>Water Whip</strong> special attack.</li>
             </ul>
+            <p><strong>Water Whip</strong></p>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks with creating and using a whip of water. You can slam this into a creature within 30 feet of you, forcing it to make a Strength saving throw. On a failed save, the target takes a number of d8 damage equal to your proficiency bonus, and is knocked 10 feet in a direction of your choice (including straight up, if you so choose). On a successful save, the target takes half as much damage and isn’t moved.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Water Walker. You can walk on top of surfaces made of water as if they are solid ground.</description>
         </sheet>
         <rules>
-        
+            <select type="Ability Score Improvement" name="Water Weaver" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_WISDOM"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_WATER_WHIP" />
         </rules>
     </element>
     
-    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+    <element name="Water Whip" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_WATER_WHIP">
         <description>
             <p></p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <description>
-            <p></p>
-            <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-            </ul>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-        <rules>
-        
-        </rules>
-    </element>
-    
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <description>
-            <p></p>
-            <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-            </ul>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-        <rules>
-        
-        </rules>
-    </element>
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <description>
-            <p></p>
-            <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-            </ul>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-        <rules>
-        
-        </rules>
-    </element>
-    
-    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks with creating and using a whip of water. You can slam this into a creature within 30 feet of you, forcing it to make a Strength saving throw. On a failed save, the target takes {{proficiency}}d8 damage, and is knocked 10 feet in a direction of your choice (including straight up, if you so choose). On a successful save, the target takes half as much damage and isn’t moved.</description>
         </sheet>
     </element>
     <!-- Esoteric Arts Feats 3-->
