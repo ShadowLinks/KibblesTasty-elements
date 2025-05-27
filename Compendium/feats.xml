@@ -1309,6 +1309,299 @@
     
     <!-- Transformation Arts Feats 4-->
     
+    <element name="Dragon Form" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_DRAGON_FORM">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You have learned to invoke the powers of a dragon. You gain the following features:</p>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Constitution, or Charisma ability score by 1, to a maximum of 20.</li>
+                <li><strong>Mystic Language.</strong> You learn draconic. If you already know draconic, you learn one additional language of your choice.</li>
+                <li>You gain the<strong> Dragon Aspect</strong> special transformation ability.</li>
+            </ul>
+            <p><strong>Dragon Aspect</strong></p>
+            <p>As a bonus action, you can physical transform your body, choose number up to your Proficiency bonus of the following draconic features:</p>
+            <ul>
+                <li><strong>Fangs.</strong> Gain dragon-like fangs, gaining a natural weapon that deals 1d8 piercing damage.</li>
+                <li><strong>Claws.</strong> Transform one or both hands into dragonlike claws, gaining natural weapons that deal 1d6 slashing damage and have the Light property.</li>
+                <li><strong>Scales.</strong> Gain dragon-like scales. When you aren’t wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor. You gain resistance to acid, cold, fire, lightning or poison damage (selected when you take the feat).</li>
+                <li><strong>Wings</strong> (Requires 9th level). If you are not wearing armor, dragon-like wings sprout from your back. Until the transformation ends, you have a 30 foot flying speed.</li>
+                <li><strong>Eyes.</strong> You gain a darkvision of 60 feet. If you already have a darkvision, you gain a blindsight of 15 feet.</li>
+                <li><strong>Elemental Damage.</strong> A weapon you are holding or natural weapon of your choice is wreathed in elemental power, changing its damage type to that element. The first time you hit a creature with that weapon on your turn, you deal damage an additional 1d4 damage of that elemental type.</li>
+            </ul>
+            <p>The transformation lasts 1 minute or until you end it early as a bonus action. If they don’t otherwise have a bonus to attack and damage rolls, natural weapons granted by this transformation gain a bonus to attack and damage rolls equal to half your proficiency bonus (rounded down). Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_DRACONIC" requirements="!ID_LANGUAGE_DRACONIC" />
+            <select type="Language" name="Language (Dragon Form)" supports="Standard||Exotic" requirements="ID_LANGUAGE_DRACONIC,!ID_KTH_COLAL_FEAT_FEATURE_DRACONIC" />
+            <select type="Ability Score Improvement" name="Dragon Form" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_ASPECT" />
+            <stat name="dragonform:ac" value="13" bonus="base" />
+            <stat name="dragonform:ac" value="dexterity:modifier" />
+            <select type="Feat Feature" name="Dragon Form Element" supports="dragonform-element" />
+        </rules>
+    </element>
+    
+    <element name="Draconic" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRACONIC">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+        </rules>
+    </element>
+    <element name="Dragon Aspect" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_ASPECT">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As a bonus action, you can physical transform your body, choose {{proficiency}} of the following draconic features:
+            Fangs. Gain dragon-like fangs, gaining a natural weapon that deals 1d8 piercing damage.
+            Claws. Transform one or both hands into dragonlike claws, gaining natural weapons that deal 1d6 slashing damage and have the Light property.
+            Scales. Gain dragon-like scales. When you aren’t wearing armor, your base AC is{{dragonform:ac}}. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor. You gain resistance to {{dragonform:element}} damage.
+            Eyes. You gain a darkvision of 60 feet. If you already have a darkvision, you gain a blindsight of 15 feet.
+            Elemental Damage. A weapon you are holding or natural weapon of your choice is wreathed in elemental power, changing its damage type to that element. The first time you hit a creature with that weapon on your turn, you deal damage an additional 1d4 damage of that elemental type.
+            The transformation lasts 1 minute or until you end it early as a bonus action. If they don’t otherwise have a bonus to attack and damage rolls, natural weapons granted by this transformation gain a bonus to attack and damage rolls equal to {{proficiency:half}}.</description>
+            <description>As a bonus action, you can physical transform your body, choose {{proficiency}} of the following draconic features:
+            Fangs. Gain dragon-like fangs, gaining a natural weapon that deals 1d8 piercing damage.
+            Claws. Transform one or both hands into dragonlike claws, gaining natural weapons that deal 1d6 slashing damage and have the Light property.
+            Scales. Gain dragon-like scales. When you aren’t wearing armor, your base AC is{{dragonform:ac}}. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor. You gain resistance to {{dragonform:element}} damage.
+            Wings. If you are not wearing armor, dragon-like wings sprout from your back. Until the transformation ends, you have a 30 foot flying speed.
+            Eyes. You gain a darkvision of 60 feet. If you already have a darkvision, you gain a blindsight of 15 feet.
+            Elemental Damage. A weapon you are holding or natural weapon of your choice is wreathed in elemental power, changing its damage type to that element. The first time you hit a creature with that weapon on your turn, you deal damage an additional 1d4 damage of that elemental type.
+            The transformation lasts 1 minute or until you end it early as a bonus action. If they don’t otherwise have a bonus to attack and damage rolls, natural weapons granted by this transformation gain a bonus to attack and damage rolls equal to {{proficiency:half}}.</description>
+        </sheet>
+    </element>
+    <element name="Acid" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_ASPECT_ACID">
+        <supports>dragonform-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonform:element" value="acid" inline="true" />
+        </rules>
+    </element>
+    <element name="Cold" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_ASPECT_COLD">
+        <supports>dragonform-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonform:element" value="cold" inline="true" />
+        </rules>
+    </element>
+    <element name="Fire" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_ASPECT_FIRE">
+        <supports>dragonform-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonform:element" value="fire" inline="true" />
+        </rules>
+    </element>
+    <element name="Lightning" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_ASPECT_LIGHTNING">
+        <supports>dragonform-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonform:element" value="lightning" inline="true" />
+        </rules>
+    </element>
+    <element name="Poison" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_ASPECT_POISON">
+        <supports>dragonform-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonform:element" value="poison" inline="true" />
+        </rules>
+    </element>
+    
+    <element name="Dragon Breath Art" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_DRAGON_BREATH_ART">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You master the art of gathering elemental power within yourself to unleash in blasts akin to a dragon’s breath. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Constitution, or Charisma ability score by 1, to a maximum of 20.</li>
+                <li><strong>Familiarity.</strong> You gain advantage on saving throws against the breath weapons of dragons.</li>
+                <li>You gain the <strong>Dragon Breath</strong> special attack.</li>
+            </ul>
+            <p><strong>Dragon Breath</strong></p>
+            <p>As an attack as part of the attack action, you can unleash a cone of elemental devastation. Creatures in a 15 foot cone or 5 by 30 foot line (your choice) must make a Dexterity (for acid, fire or lightning) or Constitution (for cold or poison) saving throw. On failure, they take 3d6 acid, cold, fire, lightning, or poison damage (select when you take this feat), or half as much on a successful one. The number of d6 increases when your proficiency bonus increases (to 4d6 at 5th level, 5d6 at 9th level, 6d6 at 13th level, and 7d6 at 17th level).</p>
+            <p class="indent">If you are transformed by the Dragon Aspect of the Dragon Form feat, the area of effect is doubled (to a 30 foot cone or 60 foot line).</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Dragon Breath Element" supports="dragonbreath-element" />
+            <select type="Ability Score Improvement" name="Dragon Breath Art" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_ID_KTH_COLAL_FEAT_FEATURE_DRAGON_BREATHFEATURE_WATER_WHIP" />
+        </rules>
+    </element>
+    
+    <element name="Dragon Breath" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_BREATH">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an attack as part of the attack action, you can unleash a cone of elemental devastation. Creatures in a 15 foot cone or 5 by 30 foot line (your choice) must make a {{dragonbreath:save}} saving throw. On failure, they take {{dragonbreath:damage}}d6 {{dragonbreath:element}} damage, or half as much on a successful one.
+            If you are transformed by the Dragon Aspect of the Dragon Form feat, the area of effect is doubled</description>
+        </sheet>
+        <rules>
+            <stat name="dragonbreath:damage" value="3" bonus="base" />
+            <stat name="dragonbreath:damage" value="1" level="5" />
+            <stat name="dragonbreath:damage" value="1" level="9" />
+            <stat name="dragonbreath:damage" value="1" level="13" />
+            <stat name="dragonbreath:damage" value="1" level="17" />
+        </rules>
+    </element>
+    <element name="Acid" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_BREATH_ACID">
+        <supports>dragonbreath-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonbreath:element" value="acid" inline="true" />
+            <stat name="dragonbreath:save" value="Dexterity" inline="true" />
+        </rules>
+    </element>
+    <element name="Cold" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_BREATH_COLD">
+        <supports>dragonbreath-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonbreath:element" value="cold" inline="true" />
+            <stat name="dragonbreath:save" value="Constitution" inline="true" />
+        </rules>
+    </element>
+    <element name="Fire" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_BREATH_FIRE">
+        <supports>dragonbreath-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonbreath:element" value="fire" inline="true" />
+            <stat name="dragonbreath:save" value="Dexterity" inline="true" />
+        </rules>
+    </element>
+    <element name="Lightning" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_BREATH_LIGHTNING">
+        <supports>dragonbreath-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonbreath:element" value="lightning" inline="true" />
+            <stat name="dragonbreath:save" value="Dexterity" inline="true" />
+        </rules>
+    </element>
+    <element name="Poison" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_DRAGON_BREATH_POISON">
+        <supports>dragonbreath-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dragonbreath:element" value="poison" inline="true" />
+            <stat name="dragonbreath:save" value="Constitution" inline="true" />
+        </rules>
+    </element>
+    <element name="Thunderer" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_THUNDERER">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength or Constitution ability score by 1, to a maximum of 20.</li>
+                <li><strong>Stable Footing.</strong> You gain advantage from being knocked down by ground shaking or heaving.</li>
+                <li>You gain the <strong>Quaking Smash</strong> special attack.</li>
+            </ul>
+            <p><strong>Quaking Smash</strong></p>
+            <p>As an attack as part of the attack action, you slam the ground causing an eruption of thunder to erupt outward in a 15 foot cone. Creatures in the area must make a Constitution save. On failure they take 2d6 thunder damage and are knocked prone. On success, they take half as much damage and aren’t knocked prone. The number of d6 damage dealt increase when your proficiency bonus increases.</p>
+            <p class="indent">If you are Large or Larger when you take this action, the size of the cone caused by the effect doubles and the d6 damage dice become d8 damage dice.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Stable Footing. You gain advantage from being knocked down by ground shaking or heaving.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Thunderer" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_QUAKING_SMASH" />
+        </rules>
+    </element>
+    
+    <element name="Quaking Smash" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_QUAKING_SMASH">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an attack as part of the attack action, you slam the ground causing an eruption of thunder to erupt outward in a 15 foot cone. Creatures in the area must make a Constitution save. On failure they take {{proficiency}}d6 thunder damage and are knocked prone. On success, they take half as much damage and aren’t knocked prone.
+            If you are Large or Larger when you take this action, the size of the cone caused by the effect doubles and the d6 damage dice become d8 damage dice.</description>
+        </sheet>
+    </element>
+    <element name="Titanic" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_TITANIC">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You awaken or learn a mystical ability drawing on the ancient power of the titans. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Bonus.</strong> Increase your Strength, Constitution, or Wisdom ability score by 1, to a maximum of 20.</li>
+                <li><strong>Mystic Language.</strong> You learn giant. If you already know giant, you learn one additional language of your choice</li>
+                <li>You gain the <strong>Titanic Aspect</strong> special transformation.</li>
+            </ul>
+            <p><strong>Titanic Aspect</strong></p>
+            <p>As an action, you come under the Enlarge effect of the enlarge/reduce spell.</p>
+            <p class="indent">In addition to the normal effect, your flesh takes on rough stone-like appearance, causing your unarmed strikes to deal an additional 1d4 damage and reducing all damage from bludgeoning, piercing, and slashing damage by your proficiency bonus, or your damage reduction is increased by 1 if you already have a stronger source of it.</p>
+            <p class="indent">The effect lasts 10 minutes. You can end this effect early as an action, returning to normal size. It ends early if you fall unconscious. Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Titanic" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM"/>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_TITANIC_ASPECT" />
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_GIANT" requirements="!ID_LANGUAGE_GIANT" />
+            <select type="Language" name="Language (Titanic)" supports="Standard||Exotic" requirements="ID_LANGUAGE_GIANT,!ID_KTH_COLAL_FEAT_FEATURE_GIANT" />
+        </rules>
+    </element>
+    <element name="Giant" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_GIANT">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_GIANT" />
+        </rules>
+    </element>
+    <element name="Titanic Aspect" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_TITANIC_ASPECT">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, you come under the Enlarge effect of the enlarge/reduce spell.
+            In addition to the normal effect, your flesh takes on rough stone-like appearance, causing your unarmed strikes to deal an additional 1d4 damage and reducing all damage from bludgeoning, piercing, and slashing damage by {{proficiency}}, or your damage reduction is increased by 1 if you already have a stronger source of it.
+            The effect lasts 10 minutes. You can end this effect early as an action, returning to normal size. It ends early if you fall unconscious.</description>
+        </sheet>
+    </element>
+    <!-- Additional Feats 6-->
+
+    
     <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
         <prerequisite>4th level</prerequisite>
         <requirements>[level:4]</requirements>
@@ -1339,7 +1632,6 @@
             <description></description>
         </sheet>
     </element>
-    <!-- Additional Feats 6-->
 
     <!-- Blood magic feats-->
     <element name="Hemomancer" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_HEMOMANCER">
