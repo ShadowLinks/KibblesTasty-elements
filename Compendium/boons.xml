@@ -20,10 +20,237 @@
             <stat name="attunement:max" value="1" />
         </rules>
     </element>
+    <element name="Boon of Beasts" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_BEASTS">
+        <description>
+            <p>You are permanently under the effect of speak with animals, and can cast animal friendship at will without any components or expending a spell slot. You lose this effect for 24 hours if you kill a beast.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" name="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" />
+        </rules>
+    </element>
+    <element name="Boon of Bond" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_BOND">
+        <description>
+            <p>You and another willing creature become permanently bonded together by a magical connection. Any damage taken or healing done to either creature is split between the two creatures. Either creature can transfer their hit points to the other creature by touching them as an action if the other creature has less hit points than they do (up to an amount that would equalize their hit points).</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Carnage" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_CARNAGE">
+        <description>
+            <p>When you kill a creature with a weapon attack, you gain 5 temporary hit points and an additional action which can only be used to take the attack action (one weapon attack only) this additional action lasts until the end of your turn. Once you gain this bonus, you cannot gain it again until the start of your next turn.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Celestial Ascension" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_CELESTIAL_ASCENSION">
+        <description>
+            <p>Your creature type becomes Celestial. You gain resistance to radiant damage, and sprout angelic wings that grant you a flying speed of 30 feet. If you already have resistance to radiant damage, you gain immunity to radiant damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_RADIANT" requirments="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT,ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_RADIANT" />
+            <stat name="speed:flying" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element type="Grants" name="Resist Radiant" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_RADIANT">
+        <description>
+            <p>You have resistance to radiant damage.</p>
+        </description>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+        </rules>
+    </element>
+    <element name="Boon of Crafting" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_CRAFTING">
+        <description>
+            <p>You gain advantage on all crafting checks or ability checks made with artisan tools.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Divine Blessing" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DIVINE_BLESSING">
+        <description>
+            <p>You are permanently under the effect of the bless spell.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Divine Guidance" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DIVINE_GUIDANCE">
+        <description>
+            <p>You are permanently under the effect of the guidance spell. The spell does not end when you make an ability check.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Draconic Inheritance (Acid)" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DRACONIC_INHERITANCE_ACID">
+        <description>
+            <p>Your creature type becomes dragon. You gain resistance to one of the following damage types; acid, cold, fire, lightning or poison damage (selected by the creature giving you the boon), and sprout draconic wings that grant you a flying speed of 30 feet.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <stat name="speed:flying" value="30" bonus="base" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Boon of Draconic Inheritance (Cold)" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DRACONIC_INHERITANCE_COLD">
+        <description>
+            <p>Your creature type becomes dragon. You gain resistance to one of the following damage types; acid, cold, fire, lightning or poison damage (selected by the creature giving you the boon), and sprout draconic wings that grant you a flying speed of 30 feet.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <stat name="speed:flying" value="30" bonus="base" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Boon of Draconic Inheritance (Fire)" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DRACONIC_INHERITANCE_FIRE">
+        <description>
+            <p>Your creature type becomes dragon. You gain resistance to one of the following damage types; acid, cold, fire, lightning or poison damage (selected by the creature giving you the boon), and sprout draconic wings that grant you a flying speed of 30 feet.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <stat name="speed:flying" value="30" bonus="base" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Boon of Draconic Inheritance (Lightning)" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DRACONIC_INHERITANCE_LIGHTNING">
+        <description>
+            <p>Your creature type becomes dragon. You gain resistance to one of the following damage types; acid, cold, fire, lightning or poison damage (selected by the creature giving you the boon), and sprout draconic wings that grant you a flying speed of 30 feet.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <stat name="speed:flying" value="30" bonus="base" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Boon of Draconic Inheritance (Poison)" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DRACONIC_INHERITANCE_POISON">
+        <description>
+            <p>Your creature type becomes dragon. You gain resistance to one of the following damage types; acid, cold, fire, lightning or poison damage (selected by the creature giving you the boon), and sprout draconic wings that grant you a flying speed of 30 feet.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <stat name="speed:flying" value="30" bonus="base" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+    <element name="Boon of Demonic Transformation" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DEMONIC_TRANSFORMATION">
+        <description>
+            <p>Your creature type becomes fiend (demon). You gain resistance to fire and lightning damage. You sprout a demonic tail that can be used as a natural weapon, dealing 1d6 piercing damage and 1d6 poison damage.</p>
+            <p class="indent">If you already have resistance to fire or lightning or damage, you gain immunity to the damage type.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_FIRE" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_LIGHTNING" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE,!ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING,!ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    
+    <element type="Grants" name="Resist Fire" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_FIRE">
+        <description>
+            <p>You have resistance to fire damage.</p>
+        </description>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+    
+    <element type="Grants" name="Resist Lightning" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_LIGHTNING">
+        <description>
+            <p>You have resistance to lightning damage.</p>
+        </description>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Boon of Earth" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_EARTH">
+        <description>
+            <p>You gain resistance to poison damage and gain a tremorsense of 30 feet. You can cast become stone at will without any components or expending a spell slot.</p>
+            <p class="indent">If you are already resistant to poison damage, you gain immunity to poison damage.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_POISON" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON,!ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_POISON" />
+            <grant type="Spell" name="ID_KTH_COLAL_SPELL_BECOME_STONE" />
+        </rules>
+    </element>
+    <element type="Grants" name="Resist Poison" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_POISON">
+        <description>
+            <p>You have resistance to poison damage.</p>
+        </description>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
 </elements>
 <!--
 
-    <element name="Boon of " type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_ ">
+    <element name="Boon of Boonname" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_BOONNAME">
         <description>
             <p></p>
             <p class="indent"></p>
