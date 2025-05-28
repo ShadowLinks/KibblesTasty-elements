@@ -247,6 +247,125 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
         </rules>
     </element>
+    <element name="Boon of Everlasting Magic" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_EVERLASTING_MAGIC">
+        <description>
+            <p>The duration of all your spells with a duration is doubled.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Fire" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_FIRE">
+        <description>
+            <p>You gain resistance to fire damage and no longer suffer the effects of hot environments. You can cast become fire at will without any components or expending a spell slot.</p>
+            <p class="indent">If you already have resistance to fire damage, you gain immunity to fire damage.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_FIRE" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE,!ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_FIRE" />
+        </rules>
+    </element>
+    <element name="Boon of Freezing Water" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_FREEZING_WATER">
+        <description>
+            <p>You gain resistance to cold damage and no longer suffer the effects of cold environments. You can cast become water at will without any components or expending a spell slot.</p>
+            <p class="indent">If you already have resistance to cold damage, you gain immunity to cold damage.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_COLD" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD,!ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_COLD" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_WATER" />
+        </rules>
+    </element>
+    <element type="Grants" name="Resist Cold" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_COLD">
+        <description>
+            <p>You have resistance to cold damage.</p>
+        </description>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Boon of Illusions" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_ILLUSIONS">
+        <description>
+            <p>You can cast silent image at will without expending a spell slot. Additionally, you can see through all illusions, seeing them for what they are.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" />
+        </rules>
+    </element>
+    <element name="Boon of Infernal Damnation" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_INFERNAL_DAMNATION">
+        <description>
+            <p>Your creature type becomes fiend (devil). You gain resistance to fire and poison damage. You sprout infernal horns.</p>
+            <p class="indent">f you already have resistance to fire or poison damage, they gain immunity to the damage type.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_FIRE" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE,!ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_POISON" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON,!ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+    <element name="Boon of The Fairy" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_FAIRY">
+        <description>
+            <p>You become one size smaller. You can cast faerie fire at will without any components or expending a spell slot. You gain butterfly wings that grant you a flying speed of 30 feet, but leave behind an ephemeral trail of glittering dust when you fly that lasts one round, giving you disadvantage on stealth checks when on any turn you use your flying speed.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
+            <stat name="speed:flying" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Boon of The Giant" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_GIANT">
+        <description>
+            <p>Your size increases to Large (if smaller than Large), and the damage of your melee weapon attacks increase by 1d4.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Ghostly Passage" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_GHOSTLY_PASSAGE">
+        <description>
+            <p>As a bonus action, you can become ethereal until the start of your next turn. While ethereal, you can pass through creatures and objects without expending additional movement, but cannot end your turn inside an occupied space. You have resistance to all damage besides force and psychic damage. If you occupy the same spot as a solid object or creature when this effect ends, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved. Once you use this ability, you cannot use it again until you complete a short or long rest.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
 </elements>
 <!--
 
