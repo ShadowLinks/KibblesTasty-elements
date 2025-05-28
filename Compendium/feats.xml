@@ -1601,37 +1601,99 @@
     </element>
     <!-- Additional Feats 6-->
 
-    
-    <element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
-        <prerequisite>4th level</prerequisite>
-        <requirements>[level:4]</requirements>
+    <element name="Helping Hand" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_HELPING_HAND">
         <description>
             <p></p>
             <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+                <li><strong>Ability Score Increase.</strong> Increase Wisdom, Intelligence, or Charisma by 1, to a maximum of 20.</li>
+                <li><strong>Boosting Shoves.</strong> When a willing allied creature moves out of your reach, you can use your reaction to give them a boost, shoving them 5 feet. This occurs before any opportunity attack their movement might provoke, and may prevent them from taking an opportunity attack.</li>
+                <li><strong>Get Down.</strong> When an allied creature is forced to make a Dexterity saving throw while within 5 feet of you, you can use your reaction to shove them 5 feet, potentially out of the effect. If the effect is targeted, you can instead interpose yourself, giving them advantage on saving throw, but forcing you to save against the same effect.</li>
             </ul>
-            <p><strong></strong></p>
-            <p></p>
-            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description>Boosting Shoves. When a willing allied creature moves out of your reach, you can use your reaction to give them a boost, shoving them 5 feet. This occurs before any opportunity attack their movement might provoke, and may prevent them from taking an opportunity attack.
+            Get Down. When an allied creature is forced to make a Dexterity saving throw while within 5 feet of you, you can use your reaction to shove them 5 feet, potentially out of the effect. If the effect is targeted, you can instead interpose yourself, giving them advantage on saving throw, but forcing you to save against the same effect.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Helping Hand" supports="ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM"/>
+        </rules>
+    </element>
+    <element name="Occult Specialist" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_OCCULT_SPECIALIST">
+        <prerequisite>Occultist class</prerequisite>
+        <requirements>ID_KTH_COLAL_CLASS_OCCULTIST</requirements>
+        <description>
+            <p>You delve deeper into your tradition perfecting a new rite. You can select an Occult Rite from the Occultist class Occult Rite list. You cannot select a rite you already know, or one that requires a level restriction, even if you are already of that level. You can only select one from a subclass list if you have at least one level in that subclass.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
         <rules>
-            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_WATER_WHIP" />
+            <select type="Class Feature" name="Occult Specialist" supports="Occult-Rite,!occult-prereq" />
         </rules>
     </element>
-    
-    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+    <element name="Primal Prodigy" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_PRIMAL_PRODIGY">
+        <prerequisite>Warden class</prerequisite>
+        <requirements>ID_KTH_COLAL_CLASS_WARDEN</requirements>
         <description>
-            <p></p>
+            <p>Your connection to the primal power grows stronger. You learn one additional Primal Manifestation from the Warden Primal Manifestation list. You cannot select a manifestation you already know, or one that requires a level restriction, even if you are already of that level. You can only select one with a prerequisite of a subclass if you have at least one level in that subclass.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Class Feature" supports="primal-manifestation" name="Primal Prodigy" />
+        </rules>
     </element>
+    <element name="Prophetic Dreamer" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_PROPHETIC_DREAMER">
+        <description>
+            <p>When you sleep or fall deep within a trance, you often dream of prophetic events to come, vague hints and esoteric clues as to which paths may be beneficial to you, and which may lead to your doom.</p>
+            <p class="indent">You learn the augury spell and you can cast it without an action, spell slot, or components, though you must be asleep or deep within a trance for at least 1 hour to gain the prophetic visions. When you reach 9th level, you can instead cast the commune spell this way. Once you cast either augury or commune this way, you cannot cast them that way again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>
+            You learn the augury spell and you can cast it without an action, spell slot, or components, though you must be asleep or deep within a trance for at least 1 hour to gain the prophetic visions. When you reach 9th level, you can instead cast the commune spell this way. Once you cast either augury or commune this way, you cannot cast them that way again until you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
+        </rules>
+    </element>
+    <element name="Synchonized Combatant" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_SYNCHONIZED_COMBATANT">
+        <prerequisite>4th level Warlord</prerequisite>
+        <requirements>[level:warlord:4]</requirements>
+        <description>
+            <p>You have an intuitive understanding of your allies movement, allowing to coordinate perfectly with their actions. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase your Dexterity, Wisdom, or Charisma by 1.</li>
+                <li><strong>Synchronized Movement.</strong> Your space is not difficult terrain for your allies, and allies can move into your space to make an attack, but still cannot end their turn your space (and cannot move into your space if they don't have the movement to move out of it).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Synchronized Movement. Your space is not difficult terrain for your allies, and allies can move into your space to make an attack, but still cannot end their turn your space (and cannot move into your space if they don't have the movement to move out of it).</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Sychronized Combatant" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_WISDOM"/>
+        </rules>
+    </element>
+    <element name="Tactical Combatant" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_TACTICAL_COMBATANT">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You excel at creating opportunities for other. You gain the following benefits:</p>
+            <ul>
+                <li><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1.</li>
+                <li><strong>Combat Help.</strong> Once per turn when you take the Attack action, you can replace one attack with the Help action.</li>
+                <li><strong>Varied Tactics.</strong> When you take the Help action to aid a friendly creature in attacking a target, the range becomes 10 feet and you can Help an additional creature as part of the same action.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Combat Help. Once per turn when you take the Attack action, you can replace one attack with the Help action.
+            Varied Tactics. When you take the Help action to aid a friendly creature in attacking a target, the range becomes 10 feet and you can Help an additional creature as part of the same action.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Tactical Combatant" supports="Custom Ability Score Increase 1" />
+        </rules>
+    </element>
+    
 
     <!-- Blood magic feats-->
     <element name="Hemomancer" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_HEMOMANCER">
@@ -1669,3 +1731,45 @@
         </rules>
     </element>
 </elements>
+
+<!-- \
+<element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+<element name="Featname" type="Feat" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATNAME">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p></p>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_KTH_COLAL_FEAT_FEATURE_WATER_WHIP" />
+        </rules>
+    </element>
+    
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_FEAT_FEATURE_name">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    -->
