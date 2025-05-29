@@ -366,6 +366,505 @@
             <set name="slot">gift</set>
         </setters>
     </element>
+    <element name="Boon of Martial Vigor" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_MARTIAL_VIGOR">
+        <description>
+            <p>All expended active martial feats you have gain a "Recharge (6)" ability, meaning that at the start of each of your turns, you roll a d6 for each one. On a 6, they are refreshed immediately.</p>
+            <p class="indent">Active Martial Feats are feats that give you a short rest based power.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Mercy" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_MERCY">
+        <description>
+            <p>Whenever you restore hit points to another creature, you gain temporary hit points equal to the number of hit points restored.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Misfortune" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_MISFORTUNE">
+        <description>
+            <p>A twisted boon that doesn't negate your bad luck, but lets you share it. Whenever you roll a 1 on the d20 for an attack roll, saving throw, or ability check, you can choose a creature within 60 feet. Their d20 next roll before the start of your next turn becomes a 1.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Pacifism" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_PACIFISM">
+        <description>
+            <p>You are permanently under the effect of sanctuary. Any action that would normally break it still breaks it, but you regain the effect if you go 1 minute without taking an action that would break it.</p>
+            <p class="indent">Additionally, you gain the ability to cast calm emotions without any components or expending a spell slot once, regaining the ability to do so again after completing a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+        </rules>
+    </element>
+    <element name="Boon of Quicksilver Steps" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_QUICKSILVER_STEPS">
+        <description>
+            <p>As a reaction to being attacked or making a Dexterity saving throw, you can add your proficiency bonus to your AC or saving throw result. When you do so, you can move up to 10 feet without provoking opportunity attacks.</p>
+            <p class="indent">Once you use this, you cannot use it again until you end your turn without moving more than 5 feet.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Sacrifice" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_SACRIFICE">
+        <description>
+            <p>As an action, you can touch a creature and transfer it a number of your hit points up to twice your character level. You cannot reduce your own hit points below 1 when transferring hit points this way</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Shadows" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_SHADOWS">
+        <description>
+            <p>While in dim light or darkness, you can take the Hide action as a bonus action. When you take Hide action in dim light or darkness, you become invisible until take another action, deal damage, cast a spell, or are no longer in dim light or darkness.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of the Brute" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_BRUTE">
+        <description>
+            <p>You can add your Strength modifier to your Wisdom, Intelligence, and Charisma saving throws.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of the Chosen Hero" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_CHOSEN_HERO">
+        <description>
+            <p>You are permanently under the effect of the heroism spell.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Time" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_TIME">
+        <description>
+            <p>You gain the ability to cast time stop without expending a spell slot. When you cast it this way, it stops time for a number of turns equal to your proficiency bonus instead of rolling. Once you do so, you cannot do so again until you complete a long rest.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TIME_STOP" />
+        </rules>
+    </element>
+    <element name="Boon of Undeath" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_UNDEATH">
+        <description>
+            <p>Your creature type becomes undead. You gain resistance to necrotic damage. You no longer need to eat, drink, or breathe. Additionally, if you are reduced to 0 hit points, you can make a Constitution saving throw with a DC equal to 5 + the damage taken. On success, your are reduced to 1 hit point instead.</p>
+            <p class="indent">If you already have resistance to necrotic damage, you become immune to necrotic damage instead.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_NECROTIC" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC,!ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+    <element type="Grants" name="Resist Necrotic" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_NECROTIC">
+        <description>
+            <p>You have resistance to necrotic damage.</p>
+        </description>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+    <element name="Boon of Wind" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_WIND">
+        <description>
+            <p>You gain resistance to lightning damage and no longer take fall damage from falling. You can cast become wind at will without any components or expending a spell slot.</p>
+            <p class="indent">If you already have resistance to lightning damage, you gain immunity to lightning damage.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BECOME_WIND" />
+            <grant type="Grants" id="ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_LIGHTNING" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING,!ID_KTH_COLAL_BOON_FEATURE_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Boon of the Spiderqueen" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_SPIDERQUEEN">
+        <description>
+            <p>Your lower half becomes that of a spider. You are permanently under the effect of the spider climb spell and you can ignore movement restrictions caused by webbing. You deal an additional 1d4 poison damage on any weapon attack (including unarmed strikes or natural weapons) you make.</p>
+            <p class="indent">You can cast the web spell without components or expending a spell slot once, after which you must complete a short or long rest to cast it this way again.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WEB" />
+        </rules>
+    </element>
+
+    <!-- Minor Boons -->
+
+    <element name="Boon of Babble" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_BABBLE">
+        <description>
+            <p>You can understand, speak, and read all languages</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Bounding" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_BOUNDING">
+        <description>
+            <p>Your long and high jumping distance is doubled.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Coins" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_COINS">
+        <description>
+            <p>Each month, the amount of any coin you own or have stored increases by five percent. This property ceases to functions for that month if the coins are carefully observed during that time.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Doggos" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DOGGOS">
+        <prerequisite>Good Alignment</prerequisite>
+        <description>
+            <p>All dogs treat you as a friendly creature. You lose this boon if your alignment ever becomes neutral or evil.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Divine Light" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_DIVINE_LIGHT">
+        <description>
+            <p>You can emit 15 feet of bright light, and an additional 15 feet of dim light. The bright light is sunlight. You can douse or relight this light at any time without using an action.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Endless Masks" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_ENDLESS_MASKS">
+        <description>
+            <p>You gain the ability to cast disguise self at will. The spell lasts until you dismiss it when you cast it this way</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+        </rules>
+    </element>
+    <element name="Boon of Fair Winds" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_FAIR_WINDS">
+        <description>
+            <p>The wind always blows in a favorable direction while you are sailing on the water.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Heavy Hands" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_HEAVY_HANDS">
+        <description>
+            <p>Your unarmed strikes become considered natural weapons having the Heavy property, and their damage increases to 1d8. If you are Small, you ignore the disadvantage imposed by the Heavy property for unarmed strikes.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Inventory" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_INVENTORY">
+        <description>
+            <p>You gain a sub-dimensional space allowing you to store up to items in space roughly 64 cubic feet. As an action, you can place an item that you can carry into this space, or retrieve an item that is already in the space. You cannot place living things into this space. The passage of time does not affect items stored in this inventory.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Iron" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_IRON">
+        <description>
+            <p>You gain proficiency in all armor and weapons.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+        </rules>
+    </element>
+    <element name="Boon of Ink" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_INK">
+        <description>
+            <p>Copying spells into your spellbook, spellmanual, or similar record of spells no longer costs gold.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Open Mind" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_OPEN_MIND">
+        <description>
+            <p>You gain telepathy, which you can use to communicate with other creatures within 60 feet of you. You do not need to share a language, but a creature must speak at least one language to understand you. The creatures reply to messages sent this way.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Plenty" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_PLENTY">
+        <description>
+            <p>You gain the ability to cast goodberry without expending a spell slot. Berries created this way are particularly delicious. Once you use this ability, you cannot use it again until you complete a long rest.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" />
+        </rules>
+    </element>
+    <element name="Boon of Steady Hands" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_STEADY_HANDS">
+        <description>
+            <p>Being drunk no longer gives you disadvantage on attack rolls or ability checks.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Swiftness" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_SWIFTNESS">
+        <description>
+            <p>Your movement speed increases by 10 feet.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <stat name="speed" value="10" />
+        </rules>
+    </element>
+    <element name="Boon of Talent" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_TALENT">
+        <description>
+            <p>You gain proficiency in one skill of the entity granting the boon’s choice. If you are already proficient in that skill, you gain expertise in the skill.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of the Dancer" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_DANCER">
+        <description>
+            <p>You gain advantage on all Dexterity saving throws, and all ability checks involving dancing. When you dance, special effects based on the granter of the boon may appear (such as rays of moonlight).</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of the Familiar" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_FAMILIAR">
+        <description>
+            <p>You gain the ability to cast find familiar without any components or expending a spell slot. Once you do so, you cannot do so again until you complete a long rest.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+        </rules>
+    </element>
+    <element name="Boon of the Phoenix" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_PHOENIX">
+        <description>
+            <p>The first time you would die after receiving this boon, you are instead consumed by a pillar of flames shaped like a phoenix. In this fire you are healed for a number of hit points equal to your maximum and release a wave of fire hitting all creatures within 20 feet. Hostile creatures in range of the fire must make a Dexterity saving throw, taking 8d6 fire damage on a failed save, or half as much on a successful save. Allied creatures in range of the fire are instead healed for 4d6 hit points.</p>
+            <p class="indent">After this boon is triggered, you lose this boon.</p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of the Sea" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_SEA">
+        <description>
+            <p>You gain the ability to breathe underwater, and gain a swimming speed equal to walking speed.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <stat name="speed:swim" value="speed" bonus="base" />
+        </rules>
+    </element>
+    <element name="Boon of the Shroud" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_SHROUD">
+        <description>
+            <p>You are permanently under the effect of nondetection, though the effect can be pierced by any entity of greater power than one that granted this boon.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of the Steed" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_STEED">
+        <description>
+            <p>You gain the ability to cast find steed without any components or expending a spell slot. Once you do so, you cannot do so again until you complete a long rest.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" />
+        </rules>
+    </element>
+    <element name="Boon of the Twisted Tongue" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_THE_TWISTED_TONGUE">
+        <description>
+            <p>Insight checks and spells cannot reveal your deceptions or compel you to speak the truth, unless they are performed by an entity of greater power than the one that granted you the boon. This does not mean that creatures automatically believe you, or that your lies cannot be revealed by other means (such as context, logic, or evidence).</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Tiny Might" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_TINY_MIGHT">
+        <description>
+            <p>Being small or tiny no longer imposes disadvantage when using weapons with the Heavy property.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Twilight" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_TWILIGHT">
+        <description>
+            <p>You gain darkvision out to a range of 300 feet.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+    <element name="Boon of Youth" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_YOUTH">
+        <description>
+            <p>You cease to visually age, and can even choose to become more youthful in appearance, though your lifespan remains the natural lifespan of your race.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    <element name="Boon of Vengeance" type="Magic Item" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_BOON_VENGEANCE">
+        <description>
+            <p>You gain advantage on all attack rolls and ability checks against one specific creature (defined by the entity granting the bond).</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Supernatural Gifts</set>
+            <set name="type">Boon</set>
+            <set name="slot">gift</set>
+        </setters>
+    </element>
+    
 </elements>
 <!--
 
