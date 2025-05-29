@@ -3,7 +3,7 @@
         <name>KibblesTasty Psionic</name>
         <description></description>
         <update version="0.0.1">
-            <file name="psionic.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionic.xml" />
+            <file name="psionics.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionics.xml" />
         </update>
     </info>
     <element name="Compelled Query" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_COMPELLED_QUERY">
