@@ -2,6 +2,9 @@
 
 Thanks to Zenoverlordian who I forked from.
 
+## Index
+https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/kibblestasty.index
+
 ## Plans
 Currently planning on adding content Kibbles' Compendium of Legends and Legacies then branching out from there. Old code from Zenoverlordian will stay in the not updated folder for now.
 
