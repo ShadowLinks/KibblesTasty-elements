@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tradition of the Witch</name>
-        <update version="0.0.1">
+        <update version="0.1.1">
             <file name="occultist-witch.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-witch.xml" />
         </update>
     </info>
@@ -71,6 +71,7 @@
         <sheet>
             <description></description>
         </sheet>
+        <!--
         <spellcasting name="Occultist" extend="true">
             <extend>ID_KTH_COLAL_CURSE_ROTTING_CURSE</extend>
             <extend>ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER</extend>
@@ -82,7 +83,19 @@
             <extend>ID_KTH_COLAL_SPELL_DEVOUR_SHADOW</extend>
             <extend>ID_KTH_COLAL_CURSE_KILLING_CURSE</extend>
             <extend>ID_PHB_SPELL_CONTAGION</extend>
-        </spellcasting>
+        </spellcasting>-->
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" level="1" id="ID_KTH_COLAL_CURSE_ROTTING_CURSE" />
+            <grant type="Spell" spellcasting="Occultist" level="1" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" />
+            <grant type="Spell" spellcasting="Occultist" level="3" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" />
+            <grant type="Spell" spellcasting="Occultist" level="3" id="ID_PHB_SPELL_DARKNESS" />
+            <grant type="Spell" spellcasting="Occultist" level="5" id="ID_PHB_SPELL_BESTOW_CURSE" />
+            <grant type="Spell" spellcasting="Occultist" level="5" id="ID_KTH_COLAL_CURSE_CURSE_OF_DOOM" />
+            <grant type="Spell" spellcasting="Occultist" level="7" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" />
+            <grant type="Spell" spellcasting="Occultist" level="7" id="ID_KTH_COLAL_SPELL_DEVOUR_SHADOW" />
+            <grant type="Spell" spellcasting="Occultist" level="9" id="ID_KTH_COLAL_CURSE_KILLING_CURSE" />
+            <grant type="Spell" spellcasting="Occultist" level="9" id="ID_PHB_SPELL_CONTAGION" />
+        </rules>
     </element>
     <element name="White Coven" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_WHITE">
         <supports>witch-coven</supports>
@@ -102,6 +115,7 @@
         <sheet>
             <description></description>
         </sheet>
+        <!--
         <spellcasting name="Occultist" extend="true">
             <extend>ID_KTH_COLAL_CURSE_BINDING_CURSE</extend>
             <extend>ID_PHB_SPELL_HEALING_WORD</extend>
@@ -113,7 +127,19 @@
             <extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
             <extend>ID_KTH_COLAL_CURSE_ENFEEBLING_CURSE</extend>
             <extend>ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD</extend>
-        </spellcasting>
+        </spellcasting>-->
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" level="1" id="ID_KTH_COLAL_CURSE_BINDING_CURSE" />
+            <grant type="Spell" spellcasting="Occultist" level="1" id="ID_PHB_SPELL_HEALING_WORD" />
+            <grant type="Spell" spellcasting="Occultist" level="3" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+            <grant type="Spell" spellcasting="Occultist" level="3" id="ID_PHB_SPELL_HOLD_PERSON" />
+            <grant type="Spell" spellcasting="Occultist" level="5" id="ID_KTH_COLAL_CURSE_KARMIC_CURSE" />
+            <grant type="Spell" spellcasting="Occultist" level="5" id="ID_PHB_SPELL_MASS_HEALING_WORD" />
+            <grant type="Spell" spellcasting="Occultist" level="7" id="ID_PHB_SPELL_BANISHMENT" />
+            <grant type="Spell" spellcasting="Occultist" level="7" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" />
+            <grant type="Spell" spellcasting="Occultist" level="9" id="ID_KTH_COLAL_CURSE_ENFEEBLING_CURSE" />
+            <grant type="Spell" spellcasting="Occultist" level="9" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD"/>
+        </rules>
     </element>
     <element name="Green Coven" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_GREEN">
         <supports>witch-coven</supports>
@@ -133,6 +159,7 @@
         <sheet>
             <description></description>
         </sheet>
+        <!--
         <spellcasting name="Occultist" extend="true">
             <extend>ID_KTH_COLAL_CURSE_BEFUDDLING_CURSE</extend>
             <extend>ID_PHB_SPELL_ENTANGLE</extend>
@@ -144,7 +171,19 @@
             <extend>ID_PHB_SPELL_POLYMORPH</extend>
             <extend>ID_KTH_COLAL_CURSE_SWAPPING_CURSE</extend>
             <extend>ID_PHB_SPELL_SEEMING</extend>
-        </spellcasting>
+        </spellcasting>-->
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" level="1" id="ID_KTH_COLAL_CURSE_BEFUDDLING_CURSE" />
+            <grant type="Spell" spellcasting="Occultist" level="1" id="ID_PHB_SPELL_ENTANGLE" />
+            <grant type="Spell" spellcasting="Occultist" level="3" id="ID_PHB_SPELL_ALTER_SELF" />
+            <grant type="Spell" spellcasting="Occultist" level="3" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
+            <grant type="Spell" spellcasting="Occultist" level="5" id="ID_KTH_COLAL_CURSE_CURSE_OF_MISFORTUNE" />
+            <grant type="Spell" spellcasting="Occultist" level="5" id="ID_PHB_SPELL_MAJOR_IMAGE" />
+            <grant type="Spell" spellcasting="Occultist" level="7" id="ID_PHB_SPELL_GREATER_INVISIBILITY" />
+            <grant type="Spell" spellcasting="Occultist" level="7" id="ID_PHB_SPELL_POLYMORPH"/>
+            <grant type="Spell" spellcasting="Occultist" level="9" id="ID_KTH_COLAL_CURSE_SWAPPING_CURSE"/>
+            <grant type="Spell" spellcasting="Occultist" level="9" id="ID_PHB_SPELL_SEEMING"/>
+        </rules>
     </element>
     <element name="Red Coven" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_COVEN_RED">
         <supports>witch-coven</supports>
@@ -164,6 +203,7 @@
         <sheet>
             <description></description>
         </sheet>
+        <!--
         <spellcasting name="Occultist" extend="true">
             <extend>ID_KTH_COLAL_SPELL_SENSE_BLOOD</extend>
             <extend>ID_KTH_COLAL_CURSE_HEMORRHAGING_CURSE</extend>
@@ -175,7 +215,19 @@
             <extend>ID_KTH_COLAL_SPELL_MACABRE_MARIONETTE</extend>
             <extend>ID_KTH_COLAL_CURSE_BLOODLINE_CURSE</extend>
             <extend>ID_PHB_SPELL_HOLD_MONSTER</extend>
-        </spellcasting>
+        </spellcasting>-->
+        <rules>
+            <grant type="Spell" spellcasting="Occultist" level="1" id="ID_KTH_COLAL_SPELL_SENSE_BLOOD" />
+            <grant type="Spell" spellcasting="Occultist" level="1" id="ID_KTH_COLAL_CURSE_HEMORRHAGING_CURSE" />
+            <grant type="Spell" spellcasting="Occultist" level="3" id="ID_PHB_SPELL_HOLD_PERSON" />
+            <grant type="Spell" spellcasting="Occultist" level="3" id="ID_KTH_COLAL_SPELL_MORBID_PUPPET" />
+            <grant type="Spell" spellcasting="Occultist" level="5" id="ID_KTH_COLAL_CURSE_RUPTURING_CURSE"/>
+            <grant type="Spell" spellcasting="Occultist" level="5" id="ID_KTH_COLAL_SPELL_CORPSE_EXPLOSION"/>
+            <grant type="Spell" spellcasting="Occultist" level="7" id="ID_KTH_COLAL_SPELL_EXSANGUINATE"/>
+            <grant type="Spell" spellcasting="Occultist" level="7" id="ID_KTH_COLAL_SPELL_MACABRE_MARIONETTE"/>
+            <grant type="Spell" spellcasting="Occultist" level="9" id="ID_KTH_COLAL_CURSE_BLOODLINE_CURSE"/>
+            <grant type="Spell" spellcasting="Occultist" level="9" id="ID_PHB_SPELL_HOLD_MONSTER"/>
+        </rules>
     </element>
     <element name="Familiar Bond" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_WITCH_FAMILIAR_BOND">
         <description>
