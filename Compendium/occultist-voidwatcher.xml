@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tradition of the Voidwatcher</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="occultist-voidwatcher.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-voidwatcher.xml" />
         </update>
     </info>
@@ -21,7 +21,7 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_VOIDWATCHER" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_VOIDWATCHER" level="2" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_EYE_OF_THE_END" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_ESCHATOLOGICAL_CONCLUSION" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_VOIDWATCHER_VOID_GAZE" level="3" />

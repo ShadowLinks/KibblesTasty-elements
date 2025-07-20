@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tradition of the Spiritualist</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="occultist-spiritualist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-spiritualist.xml" />
         </update>
     </info>
@@ -24,7 +24,7 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_SPIRITUALIST" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_CLASS_FEATURE_OCCULTIST_OCCULT_RITES_SPIRITUALIST" level="2" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MYSTICAL_MEDICINE" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_MALIGNANT_POSSESSION" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_SPIRITUALIST_SPELLS" level="1" />
