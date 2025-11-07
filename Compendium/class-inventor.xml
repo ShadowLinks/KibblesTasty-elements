@@ -146,8 +146,8 @@
             <description>You can cast detect magic and identify spells as a ritual, requiring no material components.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_SPELL_DETECT_MAGIC" spellcasting="Inventor" />
-            <grant type="Spell" id="ID_SPELL_IDENTIFY" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" spellcasting="Inventor" />
         </rules>
     </element>
     <element name="Tool Expertise" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_TOOL_EXPERTISE">
@@ -174,19 +174,76 @@
     </element>
     <element name="Spellcasting" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPELLCASTING">
         <description>
-            <p></p>
+            <p>At 2nd level, as part of your study of magic you gain the ability to cast spells. The spells you learn are limited in scope, primarily concerned with modifying creatures and objects or creating items.</p>
+            <h5>SPELL SLOTS</h5>
+            <p>The Inventor table shows how many spell slots you have to cast your inventor spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <p class="indent">For example, if you know the 1st-level spell <i>longstrider</i> and have a 1st-level and a 2nd-level spell slot available, you can cast <i>longstrider</i> using either slot.</p>
+            <h5>SPELLS KNOWN OF 1ST LEVEL OR HIGHER</h5>
+            <p>You know three 1st-level spells of your choice from the inventor spell list.</p>
+            <p class="indent">The Spells Known column of the Inventor table shows when you learn more inventor spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the inventor spells you know and replace it with another spell from the inventor spell list, which also must be of a level for which you have spell slots.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+            <h5>SPELLCASTING FOCUS</h5>
+            <p>You can use an arcane focus as a spellcasting focus for your inventor spells. The DM can optionally allow other things like artisan tools to count as your focus.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your spellcasting modifier is intelligence and you can uses an arcane focus, or if the DM allows it, other tools.</description>
         </sheet>
+        <spellcasting name="Inventor" ability="Intelligence" allowReplace="True" >
+            <list>Inventor</list>
+        </spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+            <stat name="inventor:spellcasting:slots:1" value="2" level="2" />
+            <stat name="inventor:spellcasting:slots:1" value="1" level="3" />
+            <stat name="inventor:spellcasting:slots:1" value="1" level="5" />
+            <stat name="inventor:spellcasting:slots:2" value="2" level="5" />
+            <stat name="inventor:spellcasting:slots:2" value="1" level="7" />
+            <stat name="inventor:spellcasting:slots:3" value="2" level="9" />
+            <stat name="inventor:spellcasting:slots:3" value="1" level="11" />
+            <stat name="inventor:spellcasting:slots:4" value="1" level="13" />
+            <stat name="inventor:spellcasting:slots:4" value="1" level="15" />
+            <stat name="inventor:spellcasting:slots:4" value="1" level="17" />
+            <stat name="inventor:spellcasting:slots:5" value="1" level="17" />
+            <stat name="inventor:spellcasting:slots:5" value="1" level="19" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="2" spellcasting="Inventor" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Inventor" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Inventor" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Inventor" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Inventor" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Inventor" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Inventor" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Inventor" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Inventor" />
+            <select type="Spell" name="Spellcasting (Inventor)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Inventor" />
+        </rules>
     </element>
     <element name="Specialization Upgrade" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPECIALIZATION_UPGRADE">
         <description>
-            <p></p>
+            <p>At 3rd level, choose an upgrade from the list at the end of your specialization, gaining the benefits listed in its description.</p>
+            <p class="indent">You select an additional upgrade at 5th, 7th, 9th, 11th, 13th, 15th, 17th, and 19th level. You can’t select an upgrade more than once, unless the upgrade’s description says otherwise. Whenever you gain a level in this class, you can exchange one of your existing upgrades with another upgrade of the same level requirement as the replaced upgrade.</p>
+            <p class="indent">Whenever an existing upgrade is exchanged for a replacement upgrade (either by a subclass feature or when you gain a level), the new upgrade is selected as if you’re the level you were when you originally gained that upgrade. For example, if you replace your Stormforged Weapon and reselect all of your upgrades as a 5th-level inventor, you could select one 3rd-level upgrade and one 5th-level upgrade, or two 3rd-level upgrades, but you would not be able to select two 5th-level upgrades.</p>
+            <p>The following generic upgrades are available to all subclasses, and can be selected in place of any subclass upgrade</p>
+            <p><em>Shield Proficiency</em> <i>Generic Unrestricted Upgrade</i> You gain proficiency with shields.</p>
+            <p><em>Tool Proficiency</em> <i>Generic Unrestricted Upgrade</i> You gain proficiency with a tool of your choice.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Class Feature" name="Specialization Upgrade 1" supports="specialization-upgrade" level="3" />
+            <select type="Class Feature" name="Specialization Upgrade 2" supports="specialization-upgrade" level="5" />
+            <select type="Class Feature" name="Specialization Upgrade 3" supports="specialization-upgrade" level="7" />
+            <select type="Class Feature" name="Specialization Upgrade 4" supports="specialization-upgrade" level="9" />
+            <select type="Class Feature" name="Specialization Upgrade 5" supports="specialization-upgrade" level="11" />
+            <select type="Class Feature" name="Specialization Upgrade 6" supports="specialization-upgrade" level="13" />
+            <select type="Class Feature" name="Specialization Upgrade 7" supports="specialization-upgrade" level="15" />
+            <select type="Class Feature" name="Specialization Upgrade 8" supports="specialization-upgrade" level="17" />
+            <select type="Class Feature" name="Specialization Upgrade 9" supports="specialization-upgrade" level="19" />
+        </rules>
     </element>
     
     <element name="Ability Score Improvement" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_ASI">
@@ -205,73 +262,126 @@
     
     <element name="Arcane Reconstruction" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_ARCANE_RECONSTRUCTION">
         <description>
-            <p></p>
+            <p>At 6th level, you have mastered the knowledge of using magic to repair things. You learn the <i>mending cantrip</i>, and you can cast it at will. Additionally, you learn the <i>cure wounds</i> spell. If you already know <i>cure wounds</i>, you learn a different spell of your choice from the inventor spell list. Constructs targeted by your cure wounds can regain hit points as normal.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MENDING" spellcasting="Inventor" />
+            <select type="Spell" name="Arcane Reconstruction" supports="Inventor,1" spellcasting="Inventor" default="ID_PHB_SPELL_CURE_WOUNDS" default-behaviour="force" />
+        </rules>
     </element>
     
     <element name="Cross-Disciplinary Knowledge" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_CROSS_DISCIPLINARY_KNOWLEDGE">
         <description>
-            <p></p>
+            <p>At 6th level, you can expand on your knowledge across fields. You can craft one of the following: any of the Gadgetsmith’s Unrestricted Upgrades, an Infusionsmith’s Animated Weapon, Blasting Rod, or Infused Weapon, a Potionsmith’s Alchemical Reagent Pouch and Alchemical Fire or Alchemical Acid, or a Thundersmith’s Stormforged Weapon.</p>
+            <p class="indent">If you select a Stormforged Weapon, you gain proficiency with that weapon and knowledge of how to make ammunition for it (if required). You can’t apply Infused Weapon to another weapon granted by this class.</p>
+            <p class="indent">If this crafted item is lost or destroyed, you can remake it following the rules for remaking it in its respective subclass.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>If you select a Stormforged Weapon, you gain proficiency with that weapon and knowledge of how to make ammunition for it (if required). You can’t apply Infused Weapon to another weapon granted by this class.
+            If this crafted item is lost or destroyed, you can remake it following the rules for remaking it in its respective subclass.</description>
         </sheet>
+        <rules>
+            <select type="Class Feature" name="Cross-Disciplinary Knowledge" supports="gs-unrestricted-upgrade||ID_KTH_CCC_CLASS_FEATURE_INVENTOR_INFUSIONSMITH_ANIMATED_WEAPON|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_INFUSIONSMITH_BLASTING_ROD|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_WEAPON|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_REAGENT_POUCH|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_FIRE|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_ACID|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_THUNDERSMITH_STORMFORGED_WEAPON" />
+        </rules>
     </element>
     
     <element name="Wonderous Item Proficiency" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_WONDEROUS_ITEM_PROFICIENCY">
         <description>
-            <p></p>
+            <p>At 7th level, your familiarity with the workings of magical items means that you ignore all class requirements on the use of magic items. Additionally, you can now attune to up to four magic items at once.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You ignore all class requirements on the use of magic items. Additionally, you can now attune to up to four magic items at once.</description>
         </sheet>
+        <rules>
+            <stat name="attunement:max" value="4" bonus="base" />
+        </rules>
     </element>
     
     <element name="Improved Magical Crafting" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_IMPROVED_MAGICAL_CRAFTING">
         <description>
-            <p></p>
+            <p>At 10th level, your experience in creating your own wondrous inventions makes you more adept at crafting a magic item than normal spellcasters. Creating a non-consumable magic item takes you half the time it would normally take.</p>
+            <p class="indent">Additionally, you can make 1 hour of progress toward crafting a magic item, potion, or scroll during a long rest.</p>
+            <p class="indent">If you are using the Crafting System presented later in the book, this reduces the time a crafting check takes to 1 hour, allowing you to make two crafting checks during a long rest, or eight during a work day.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Creating a non-consumable magic item takes you half the time it would normally take.
+            Additionally, you can make 1 hour of progress toward crafting a magic item, potion, or scroll during a long rest.
+            If you are using the Crafting System presented later in the book, this reduces the time a crafting check takes to 1 hour, allowing you to make two crafting checks during a long rest, or eight during a work day.</description>
         </sheet>
     </element>
     
     <element name="Wonderous Item Recharge" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_WONDROUS_ITEM_RECHARGE">
         <description>
-            <p></p>
+            <p>Starting at 10th level, you can recharge a magic item that has charges or per rest uses, as long as those charges or uses can only be used to cast spells. To restore charges or uses, you perform a ritual that takes 1 minute and expend a spell slot of a level equal to or greater than the spell slot level of a spell cast by the item.</p>
+            <p class="indent">The number of charges or uses restored to the item is equal to the number of charges or uses required to cast that spell using the item once.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can recharge a magic item that has charges or per rest uses, as long as those charges or uses can only be used to cast spells. To restore charges or uses, you perform a ritual that takes 1 minute and expend a spell slot of a level equal to or greater than the spell slot level of a spell cast by the item.
+            The number of charges or uses restored to the item is equal to the number of charges or uses required to cast that spell using the item once.</description>
         </sheet>
     </element>
     
     <element name="Study of Magic" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_STUDY_OF_MAGIC">
         <description>
-            <p></p>
+            <p>At 11th level, your proficiency in the workings of magic has become so great you can cast the <i>detect magic</i> and <i>identify</i> spells at will without expending a spell slot.</p>
+            <p class="indent">Additionally, you have advantage on Intelligence (Arcana) checks made to understand the workings of magical traps, effects, or runes.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can cast the detect magic and identify spells at will without expending a spell slot.
+            Additionally, you have advantage on Intelligence (Arcana) checks made to understand the workings of magical traps, effects, or runes.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" spellcasting="Inventor" />
+        </rules>
     </element>
     
     <element name="Wonderous Item Mastery" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_WONDEROUS_ITEM_MASTERY">
         <description>
-            <p></p>
+            <p>Starting at 18th level, you can use a magic item that would normally take an action as a bonus action instead. In addition, you can now attune to up to five magic items at once.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can use a magic item that would normally take an action as a bonus action instead. </description>
         </sheet>
+        <rules>
+            <stat name="attunement:max" value="5" bonus="base" />
+        </rules>
     </element>
     
     <element name="Peerless Inventor" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_PEERLESS_INVENTOR">
         <description>
-            <p></p>
+            <p>At 20th level, your mind is always thinking of new options and clever solutions. At the end of a short or long rest, you can create a temporary version of an Upgrade from your subclass that you meet the prerequisites for but don’t already have. This upgrade must have a level requirement of 11th level or lower, and it lasts until you finish a short or long rest, at which time you can select a temporary Upgrade with this feature again.</p>
+        </description>
+        <sheet>
+            <description>At the end of a short or long rest, you can create a temporary version of an Upgrade from your subclass that you meet the prerequisites for but don’t already have. This upgrade must have a level requirement of 11th level or lower, and it lasts until you finish a short or long rest, at which time you can select a temporary Upgrade with this feature again.</description>
+        </sheet>
+    </element>
+<!-- Specialization upgrades-->
+    <element name="Shield Proficiency" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPECIALIZATION_SHIELD_PROFICIENCY">
+        <supports>specialization-upgrade,generic-unrestricted-upgrade</supports>
+        <description>
+            <p><i>Generic Unrestricted Upgrade</i> You gain proficiency with shields.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        </rules>
+    </element>
+    <element name="Tool Proficiency" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPECIALIZATION_TOOL_PROFICIENCY">
+        <supports>specialization-upgrade,generic-unrestricted-upgrade</supports>
+        <description>
+            <p><i>Generic Unrestricted Upgrade</i> You gain proficiency with a tool of your choice.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency, Inventor Specialization" supports="Tool" />
+        </rules>
     </element>
 </elements>

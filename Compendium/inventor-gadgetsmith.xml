@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Gadgetsmith Archetype Inventor</name>
+        <update version="0.0.1">
+            <file name="inventor-gadgetsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-gadgetsmith.xml" />
+        </update>
+    </info>
+    <element name="Gadgetsmith" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_INVENTOR_GADGETSMITH">
+        <supports>InventorSpecializations</supports>
+        <description>
+            <p>A gadgetsmith is an inventor whose curiosity and inventive genius have run rampant. While other inventors may spend their whole career perfecting a single-minded pursuit, a gadgetsmith believes that quantity is at least as good as quality.</p>
+            <p class="indent">Quick footed and even quicker witted, gadgetsmiths are never caught without another trick up their sleeve—their minds always jumping ahead to solve the next problem with a clever contraption.</p>
+            <p class="indent">A gadgetsmith can come from any walk of life, but they usually exemplify curiosity and a distaste for the suppression of knowledge or technology, usually favoring freedom to experiment and leaning toward more chaotic behaviors.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_PROFICIENCY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ADDITIONAL_UPGRADE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_RECYCLE_GADGETS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_EXTRA_ATTACK" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_COMBAT_GADGETS" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ADDITIONAL_UPGRADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_RECYCLE_GADGETS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_COMBAT_GADGETS" level="14" />
+        </rules>
+    </element>
+    <element name="Gadgetsmith's Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_PROFICIENCY">
+        <description>
+            <p>When you choose this specialization at 1st level, you gain proficiency with nets, rapiers, whips, and tinker’s tools.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Essential Tools" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS">
+        <description>
+            <p>At 1st level, you’ve mastered the creation of the essential reusable tools for surviving the battlefield as a gadgeteer. You have the following items:</p>
+            <ul>
+                <li><em>Gadgetsmith Weapons</em>Choose one of the following from the Upgrade section: Impact Gauntlets, Lightning Baton, Repeating Hand Crossbow, Ricocheting Weapon, or Shock Generator. You gain the chosen upgrade, and it doesn’t count against your total number of upgrades.</li>
+                <li><em>Grappling Hook </em>You can forgo any attack you make as part of the Attack action to throw your grappling hook at a target within 20 feet of you. The target can be a creature, object, or surface. If the target is Small or smaller, make a grapple check against it, pulling it to you and grappling it on a success. If the target is Medium or larger, you can instead pull yourself to it (no check required); this doesn’t grapple the target. Opportunity attacks provoked by this movement are made with disadvantage.</li>
+                <li><em>Smoke Bomb </em>As an action, you can use a smoke bomb to cast the fog cloud spell centered on yourself, without expending a spell slot and requiring no components. The spell lasts for a number of rounds equal to your Intelligence modifier and doesn’t require your concentration. When you cast fog cloud in this way, you can choose for it to have a radius of 5, 10, 15, or 20 feet.</li>
+            </ul>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="ID_KTH_COLAL_GADGETSMITH_TOOLS_IMPACT_GAUNTLETS||ID_KTH_COLAL_GADGETSMITH_TOOLS_LIGHTING_BATON||ID_KTH_COLAL_GADGETSMITH_TOOLS_REPEATING_HAND_CROSSBOW||ID_KTH_COLAL_GADGETSMITH_TOOLS_RICOCHETING_WEAPON||ID_KTH_COLAL_GADGETSMITH_TOOLS_SHOCK_GENERATOR" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS_GRAPPLING_HOOK" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS_SMOKE_BOMB" level="1" />
+        </rules>
+    </element>
+    <element name="Grappling Hook" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS_GRAPPLING_HOOK">
+        <description>
+            <p>At 1st level, you’ve mastered the creation of the essential reusable tools for surviving the battlefield as a gadgeteer. You have the following items:</p>
+                <p><em>Grappling Hook </em>You can forgo any attack you make as part of the Attack action to throw your grappling hook at a target within 20 feet of you. The target can be a creature, object, or surface. If the target is Small or smaller, make a grapple check against it, pulling it to you and grappling it on a success. If the target is Medium or larger, you can instead pull yourself to it (no check required); this doesn’t grapple the target. Opportunity attacks provoked by this movement are made with disadvantage.</p>
+        </description>
+        <sheet>
+            <description>You can forgo any attack you make as part of the Attack action to throw your grappling hook at a target within 20 feet of you. The target can be a creature, object, or surface. If the target is Small or smaller, make a grapple check against it, pulling it to you and grappling it on a success. If the target is Medium or larger, you can instead pull yourself to it (no check required); this doesn’t grapple the target. Opportunity attacks provoked by this movement are made with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Smoke Bomb" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS_SMOKE_BOMB">
+        <description>
+            <p>At 1st level, you’ve mastered the creation of the essential reusable tools for surviving the battlefield as a gadgeteer. You have the following items:</p>
+            <p><em>Smoke Bomb </em>As an action, you can use a smoke bomb to cast the fog cloud spell centered on yourself, without expending a spell slot and requiring no components. The spell lasts for a number of rounds equal to your Intelligence modifier and doesn’t require your concentration. When you cast fog cloud in this way, you can choose for it to have a radius of 5, 10, 15, or 20 feet.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can use a smoke bomb to cast the fog cloud spell centered on yourself, without expending a spell slot and requiring no components. The spell lasts for a number of rounds equal to your Intelligence modifier and doesn’t require your concentration. When you cast fog cloud in this way, you can choose for it to have a radius of 5, 10, 15, or 20 feet.</description>
+        </sheet>
+    </element>
+    <element name="Additional Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ADDITIONAL_UPGRADE">
+        <description>
+            <p>At 3rd level, you’ve mastered the essential tools and have begun to tinker with ways to expand your arsenal. The number of upgrades you can have, based on your class level, increases by one. It increases by one again at 5th level (for a total of two more than shown in the Inventor class table).</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Additional Upgrade, Gadgetsmith" supports="specialization-upgrade" level="3" />            
+            <select type="Class Feature" name="Additional Upgrade 2, Gadgetsmith" supports="specialization-upgrade" level="5" />
+        </rules>
+    </element>
+    <element name="Recycle Gadgets" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_RECYCLE_GADGETS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Combat Gadgets" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_COMBAT_GADGETS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
