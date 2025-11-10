@@ -76,11 +76,14 @@
     <element name="Smoke Bomb" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS_SMOKE_BOMB">
         <description>
             <p>At 1st level, you’ve mastered the creation of the essential reusable tools for surviving the battlefield as a gadgeteer. You have the following items:</p>
-            <p><em>Smoke Bomb </em>As an action, you can use a smoke bomb to cast the fog cloud spell centered on yourself, without expending a spell slot and requiring no components. The spell lasts for a number of rounds equal to your Intelligence modifier and doesn’t require your concentration. When you cast fog cloud in this way, you can choose for it to have a radius of 5, 10, 15, or 20 feet.</p>
+            <p><em>Smoke Bomb </em>As an action, you can use a smoke bomb to cast the <i>fog cloud</i> spell centered on yourself, without expending a spell slot and requiring no components. The spell lasts for a number of rounds equal to your Intelligence modifier and doesn’t require your concentration. When you cast fog cloud in this way, you can choose for it to have a radius of 5, 10, 15, or 20 feet.</p>
         </description>
         <sheet>
             <description>As an action, you can use a smoke bomb to cast the fog cloud spell centered on yourself, without expending a spell slot and requiring no components. The spell lasts for a number of rounds equal to your Intelligence modifier and doesn’t require your concentration. When you cast fog cloud in this way, you can choose for it to have a radius of 5, 10, 15, or 20 feet.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD"/>
+        </rules>
     </element>
     <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SPECIALIZATION_UPGRADE">
         <description>
@@ -147,11 +150,15 @@
     <element name="Airburst Mine" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_AIRBURST_MINE">
         <supports>gs-specialization-upgrade,l1</supports>
         <description>
-            <p>You create a mechanical device capable of producing a devastating blast. You can use this device to cast shatter or thunderburst mine without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</p>
+            <p>You create a mechanical device capable of producing a devastating blast. You can use this device to cast <i>shatter</i> or <i>thunderburst mine</i> without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</p>
         </description>
         <sheet>
             <description>You create a mechanical device capable of producing a devastating blast. You can use this device to cast shatter or thunderburst mine without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER"/>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_THUNDERBURST_MINE"/>
+        </rules>
     </element>
     <element name="Belt of Adjusting Size" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_BELT_OF_ADJUSTING_SIZE">
         <supports>gs-specialization-upgrade,l1</supports>
@@ -161,6 +168,9 @@
         <sheet>
             <description>You create a belt with a creature size dial on it. While you are wearing the belt, you can use an action to cast the <i>enlarge/reduce</i> spell on yourself without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE"/>
+        </rules>
     </element>
     <element name="Element Eater" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ELEMENT_EATER">
         <supports>gs-specialization-upgrade,l1</supports>
@@ -188,6 +198,9 @@
         <sheet usage="1/Short Rest">
             <description>As an action, you can use the gadget to cast burning hands as a 2nd-level spell without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS"/>
+        </rules>
     </element>
     <element name="Flashbang" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_FLASHBANG">
         <supports>gs-specialization-upgrade,l1</supports>
@@ -215,6 +228,9 @@
         <sheet usage="1/Short Rest">
             <description>You can use it to cast fall without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_FALL"/>
+        </rules>
     </element>
     <element name="Impact Gauntlet" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_IMPACT_GAUNTLET">
         <supports>gs-specialization-upgrade,l1</supports>
@@ -263,6 +279,9 @@
         <sheet>
             <description>You modify your boots with arcane boosters. While wearing these boots, you are under the effects of the <i>jump</i> spell.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_JUMP"/>
+        </rules>
     </element>
     <element name="Lightning Baton" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_LIGHTNING_BATON">
         <supports>gs-specialization-upgrade,l1</supports>
@@ -302,6 +321,9 @@
         <sheet>
             <description>You create the blueprint for a small, mechanical creature. At the end of a long rest, you can choose to create a familiar based on it, casting the <i>find familiar</i> spell without expending a spell slot. When cast in this way, the familiar is a construct. It stays active until you deactivate it or it is destroyed. In either case, you can choose to reactivate it at the end of a long rest.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR"/>
+        </rules>
     </element>
     <element name="Net Launcher" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_NET_LAUNCHER">
         <supports>gs-specialization-upgrade,l1</supports>
@@ -351,6 +373,9 @@
         <sheet>
             <description>You can use this device to cast shocking grasp. When you cast shocking grasp in this way, you can use either your Dexterity or Intelligence modifier for the attack roll.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP"/>
+        </rules>
     </element>
     <element name="Shocking Hook" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SHOCKING_HOOK">
         <supports>gs-specialization-upgrade,l1</supports>
@@ -402,6 +427,9 @@
         <sheet>
             <description>You modify your boots with amplified striding speed. While wearing these boots, you are under the effects of the longstrider spell.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER"/>
+        </rules>
     </element>
     <element name="Trick Shots" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS">
         <supports>gs-specialization-upgrade,l1</supports>
@@ -597,6 +625,9 @@
         <sheet usage="1/Short Rest">
             <description>Immediately after using a Smoke Bomb, you can use a bonus action to cast <i>mirror image</i> without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE"/>
+        </rules>
     </element>
     <element name="Vanishing Trick" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_VANISHING_TRICK">
         <supports>gs-specialization-upgrade,l5</supports>
@@ -610,6 +641,9 @@
         <sheet usage="1/Short Rest">
             <description>Immediately after using a Smoke Bomb, you can cast misty step without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP"/>
+        </rules>
     </element>
     <element name="Arcane Nullifier" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ARCANE_NULLIFIER">
         <supports>gs-specialization-upgrade,l9</supports>
@@ -618,11 +652,14 @@
             <set name="short">level 9</set>
         </setters>
         <description>
-            <p></p>
+            <p>You make a device that nullifies the arcane through means you assure everyone else you understand. As an action, you can use this device to cast <i>dispel magic</i> without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, you can use this device to cast dispel magic without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC"/>
+        </rules>
     </element>
     <element name="Phase Trinket" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_PHASE_TRINKET">
         <supports>gs-specialization-upgrade,l9</supports>
@@ -631,11 +668,15 @@
             <set name="short">level 9</set>
         </setters>
         <description>
-            <p></p>
+            <p>You create a magical gadget that manipulates ethereal magic. As an action, you can use this device to cast <i>blink</i> or <i>dimension door</i> without expending a spell slot. Once used, this gadget can’t be used again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you can use this device to cast <i>blink</i> or <i>dimension door</i> without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR"/>
+        </rules>
     </element>
     <element name="Stinking Gas" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_STINKING_GAS">
         <supports>gs-specialization-upgrade,l9</supports>
@@ -644,11 +685,14 @@
             <set name="short">level 9</set>
         </setters>
         <description>
-            <p></p>
+            <p>You make a more potent compound for your Smoke Bombs. When you use a Smoke Bomb, you can choose to cast <i>stinking cloud</i>, instead of <i>fog cloud</i>, following the same rules. Once you cast stinking cloud in this way, you can’t do so again until you finish a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>When you use a Smoke Bomb, you can choose to cast <i>stinking cloud</i>, instead of <i>fog cloud</i>, following the same rules.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD"/>
+        </rules>
     </element>
     <element name="Stopwatch Trinket" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_STOPWATCH_TRINKET">
         <supports>gs-specialization-upgrade,l9</supports>
@@ -657,11 +701,15 @@
             <set name="short">level 9</set>
         </setters>
         <description>
-            <p></p>
+            <p>You create a magical stopwatch that manipulates time magic. As an action, you can use the stopwatch to cast <i>haste</i> or <i>slow</i> without expending a spell slot. Once used, this gadget can’t be used again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you can use the stopwatch to cast <i>haste</i> or <i>slow</i> without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SLOW"/>
+        </rules>
     </element>
     <element name="Flying Gadget" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_FLYING_GADGET">
         <supports>gs-specialization-upgrade,l11</supports>
@@ -670,36 +718,39 @@
             <set name="short">level 11</set>
         </setters>
         <description>
-            <p></p>
+            <p>You build a device that allows you to fly, such as deployable artificial wings. You can activate this device as a bonus action, or as a reaction when you fall. Whatever form the device takes, when it’s activated, you gain a flying speed of 30 feet, which lasts until you choose to deactivate it (no action required).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can activate this device as a bonus action, or as a reaction when you fall. Whatever form the device takes, when it’s activated, you gain a flying speed of 30 feet, which lasts until you choose to deactivate it (no action required).</description>
         </sheet>
     </element>
     <element name="Lightning Generator" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_LIGHTNING_GENERATOR">
         <supports>gs-specialization-upgrade,l11</supports>
-        <requirements>[level:11],ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_LIGHTNING_GENERATOR</requirements>
+        <requirements>[level:11],ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SHOCK_GENERATOR</requirements>
         <setters>            
-            <set name="short">level 11</set>
+            <set name="short">requires shock generator, level 11</set>
         </setters>
         <description>
-            <p></p>
+            <p>You upgrade your Shock Generator with additional lightning capabilities. You can overload your Shock Generator to cast <i>lightning bolt</i> without expending a spell slot. Once you cast lightning bolt in this way, you can’t do so again until you finish a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>You can overload your Shock Generator to cast <i>lightning bolt</i> without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT"/>
+        </rules>
     </element>
     <element name="Truesight Lenses" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRUESIGHT_LENSES">
         <supports>gs-specialization-upgrade,l11</supports>
         <requirements>[level:11],ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SIGHT_LENSES</requirements>
         <setters>            
-            <set name="short">level 11</set>
+            <set name="short">requires sight lenses, level 11</set>
         </setters>
         <description>
-            <p></p>
+            <p>You upgrade and fine-tune your Sight Lenses, granting you truesight out to a range of 15 feet while using them.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You upgrade and fine-tune your Sight Lenses, granting you truesight out to a range of 15 feet while using them.</description>
         </sheet>
     </element>
     <element name="Useful Universal Key" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_USEFUL_UNIVERSAL_KEY">
@@ -709,79 +760,163 @@
             <set name="short">level 11</set>
         </setters>
         <description>
-            <p></p>
+            <p>You create a Universal Key to obstacles, transmuting them into not-obstacles. As an action, you can apply this key to a surface to cast <i>knock</i> or <i>passwall</i> on it without expending a spell slot. Once used, this gadget can’t be used again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you can apply this key to a surface to cast <i>knock</i> or <i>passwall</i> on it without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_KNOCK"/>
+            <grant type="Spell" id="ID_PHB_SPELL_PASSWALL"/>
+        </rules>
     </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+    <element name="Bee Swarm Rockets" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_BEE_SWARM_ROCKETS">
         <supports>gs-specialization-upgrade,l15</supports>
         <requirements>[level:15]</requirements>
         <setters>            
             <set name="short">level 15</set>
         </setters>
         <description>
-            <p></p>
+            <p>You design a type of tiny, firecracker-like device, which can release rockets in large numbers. You have a maximum number of rockets equal to your inventor level. As an action, you can release between 1 and 10 rockets. Each rocket targets a point you can see within 40 feet of you. Each creature within 10 feet of one of these points must make a Dexterity saving throw against your spell save DC.</p>
+            <p class="indent">Creatures in the area of effect of multiple rockets make a separate saving throw for each rocket. For each failed save, a creature takes 2d6 + 1 fire damage, or half as much damage on a successful one.</p>
+            <p class="indent">You can replenish your supply of rockets to your maximum over the course of a long rest</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have a maxium of {{inventor:level}} rockets. As an action, you can release between 1 and 10 rockets. Each rocket targets a point you can see within 40 feet of you. Each creature within 10 feet of one of these points must make a Dexterity saving throw against your spell save DC.
+            Creatures in the area of effect of multiple rockets make a separate saving throw for each rocket. For each failed save, a creature takes 2d6 + 1 fire damage, or half as much damage on a successful one.
+            You can replenish your supply of rockets to your maximum over the course of a long rest.</description>
         </sheet>
     </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+    <element name="Bracers of Empowerment" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_BRACERS_OF_EMPOWERMENT">
         <supports>gs-specialization-upgrade,l15</supports>
         <requirements>[level:15]</requirements>
         <setters>            
             <set name="short">level 15</set>
         </setters>
         <description>
-            <p></p>
+            <p>You create bracers that can empower you. You can use these bracers to cast <i>martial transformation</i> without expending a spell slot. Once used, this gadget can’t be used again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can use these bracers to cast martial transformation without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MARTIAL_TRANSFORMATION"/>
+            
+        </rules>
     </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+    <element name="Dimensional Toolbox" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_DIMENSIONAL_TOOLBOX">
         <supports>gs-specialization-upgrade,l15</supports>
         <requirements>[level:15]</requirements>
         <setters>            
             <set name="short">level 15</set>
         </setters>
         <description>
-            <p></p>
+            <p>You build a toolbox, filling it with the many ideas you’ve had and discarded, with the magical power of making those ideas reality when you need them most. As an action, you can reach into the toolbox and withdraw an Unrestricted Upgrade of your choice (one with no level requirement) from the Gadgetsmith list. Gadgets withdrawn from the toolbox are fleeting, and disappear after 1 minute. Once you have withdrawn an upgrade from the toolbox, you can’t withdraw another upgrade from it until you finish a long rest.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can reach into the toolbox and withdraw an Unrestricted Upgrade of your choice (one with no level requirement) from the Gadgetsmith list. Gadgets withdrawn from the toolbox are fleeting, and disappear after 1 minute.</description>
         </sheet>
     </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+    <element name="Disintegration Ray" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_DISINTEGRATION_RAY">
         <supports>gs-specialization-upgrade,l15</supports>
         <requirements>[level:15]</requirements>
         <setters>            
             <set name="short">level 15</set>
         </setters>
         <description>
-            <p></p>
+            <p>You create a Disintegration Ray. You can use this device to cast <i>disintegrate</i> without expending a spell slot. Once used, this gadget can’t be used again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can use this device to cast <i>disintegrate</i> without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISINTEGRATE"/>
+        </rules>
     </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+    <element name="Nexus Hive" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_NEXUS_HIVE">
         <supports>gs-specialization-upgrade,l15</supports>
         <requirements>[level:15]</requirements>
         <setters>            
             <set name="short">level 15</set>
         </setters>
         <description>
-            <p></p>
+            <p>You create a floating metal sphere, that when activated spews a storm of metal shards in all directions around it. As an action you can deploy a small construct (see the construct’s statistics below), throwing it up to 30 feet where it will hover in place. Once deployed you can use a bonus action to move the Nexus Hive up to 20 ft. The construct becomes inactive after 1 minute. If the construct is destroyed, you can’t activate it again until you repair it or recreate it during a long rest.</p>
+            <p class="indent">The construct can’t take any actions besides the ones you direct it to take with your bonus action.</p>
+            <h5>Nexus Hive</h5>
+            <ul>
+                <li>Small Construct, unaligned</li>
+                <li>AC 15</li>
+                <li>HP 30</li>
+                <li>Speed 0, fly 20ft.</li>
+                <li>STR 2 DEX 10 CON 12 INT 1 WIS 1 CHA 1</li>
+                <li>Damage Immunities poison, psychic</li>
+                <li>Condition Immunities charmed, exhausted, frightened, paralyzed, petrified, poisoned</li>
+                <li>Senses passive Perception 5</li>
+                <li>Proficiency Bonus equals your bonus</li>
+                <li><em>Swarm.</em> The nexus hive sprays metal shards in a 10-foot radius around itself. A creature takes 4d4 piercing damage when it enters this area for the first time on a turn or starts its turn there.</li>
+                <li><em>Explosive Vent.</em> When reduced to 0 hit points, the nexus hive will violently vent energy. Creatures within 10 feet of the nexus hive must succeed on a Dexterity saving throw against your spell save DC. A creature takes 4d6 fire damage on a failed save, or half as much damage on a successful one</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action you can deploy a small construct, throwing it up to 30 feet where it will hover in place. Once deployed you can use a bonus action to move the Nexus Hive up to 20 ft. The construct becomes inactive after 1 minute. If the construct is destroyed, you can’t activate it again until you repair it or recreate it during a long rest.
+            The construct can’t take any actions besides the ones you direct it to take with your bonus action.</description>
+        </sheet>
+        <rules>
+            <select type="Companion" supports="nexus-hive"/>
+        </rules>
+    </element>
+    <element name="Nexus Hive" type="Companion" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GADGETSMITH_NEXUS_HIVE">
+        <requirements>ID_KTH_COLAL_ARCHETYPE_INVENTOR_GADGETSMITH</requirements>
+        <supports>nexus-hive</supports>
+        <description>
+            <p>You create a floating metal sphere, that when activated spews a storm of metal shards in all directions around it. As an action you can deploy a small construct (see the construct’s statistics below), throwing it up to 30 feet where it will hover in place. Once deployed you can use a bonus action to move the Nexus Hive up to 20 ft. The construct becomes inactive after 1 minute. If the construct is destroyed, you can’t activate it again until you repair it or recreate it during a long rest.</p>
+            <p class="indent">Once you have activated the construct, you can’t activate it again until you finish a long rest, unless you expend a spell slot of 1st level or higher to activate it again. If the construct is destroyed, you can’t activate it again until you repair it or recreate it during a long rest.</p>
+            <p class="indent">The construct can’t take any actions besides the ones you direct it to take with your bonus action.</p>
+        </description>
+        <setters>
+            <set name="size">Tiny</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">15</set>
+            <set name="hp">30</set>
+            <set name="speed">0 ft., fly 20ft</set>
+            <set name="strength">2</set>
+            <set name="dexterity">10</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">1</set>
+            <set name="wisdom">1</set>
+            <set name="charisma">1</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, paralyzed, petrified, poisoned</set>            
+            <set name="senses">passive Perception 5</set>
+            <set name="languages">-</set>
+            <set name="challenge">0</set>
+            <set name="actions">ID_KTH_COLAL_COMPANION_INVENTOR_GADGETSMITH_NEXUS_HIVE_SWARM,ID_KTH_COLAL_COMPANION_INVENTOR_GADGETSMITH_NEXUS_HIVE_EXPLOSIVE_VENT</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="15" />
+            <stat name="companion:hp:max" value="30" bonus="base" />
+            <stat name="companion:speed" value="0" bonus="base" />
+            <stat name="companion:speed:fly" value="20" bonus="base" />
+        </rules>
+    </element>
+    <element name="Swarm" type="Companion Action" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GADGETSMITH_NEXUS_HIVE_SWARM">
+        <description>
+            <p>The nexus hive sprays metal shards in a 10-foot radius around itself. A creature takes 4d4 piercing damage when it enters this area for the first time on a turn or starts its turn there.</p>
+        </description>
+        <sheet>
+            <description>The nexus hive sprays metal shards in a 10-foot radius around itself. A creature takes 4d4 piercing damage when it enters this area for the first time on a turn or starts its turn there.</description>
+        </sheet>
+        </element>
+    <element name="Explosive Vent" type="Companion Action" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GADGETSMITH_NEXUS_HIVE_EXPLOSIVE_VENT">
+        <description>
+            <p>When reduced to 0 hit points, the nexus hive will violently vent energy. Creatures within 10 feet of the nexus hive must succeed on a Dexterity saving throw against your spell save DC. A creature takes 4d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+        </description>
+        <sheet>
+            <description>When reduced to 0 hit points, the nexus hive will violently vent energy. Creatures within 10 feet of the nexus hive must succeed on a Dexterity saving throw against your spell save DC. A creature takes 4d6 fire damage on a failed save, or half as much damage on a successful one.</description>
         </sheet>
     </element>
-    
-    <!-- Gadgetsmith restricted upgrades-->
+
 </elements>
 <!--
     <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
