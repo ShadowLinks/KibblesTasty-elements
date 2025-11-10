@@ -41,7 +41,7 @@
 
         </rules>
     </element>
-    <element name="Ability2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS">
+    <element name="Ability2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ABILITY2">
         <description>
             <p></p>>
         </description>
@@ -49,7 +49,7 @@
             <description></description>
         </sheet>
         <rules>
-            <
+            
         </rules>
     </element>
     <element name="Ability3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ABILITY3">
