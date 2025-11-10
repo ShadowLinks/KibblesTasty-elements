@@ -26,6 +26,7 @@
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_PROFICIENCY" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ADDITIONAL_UPGRADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SPECIALIZATION_UPGRADE" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_RECYCLE_GADGETS" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_EXTRA_ATTACK" level="5" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_COMBAT_GADGETS" level="14" />
@@ -49,7 +50,7 @@
         <description>
             <p>At 1st level, you’ve mastered the creation of the essential reusable tools for surviving the battlefield as a gadgeteer. You have the following items:</p>
             <ul>
-                <li><em>Gadgetsmith Weapons</em>Choose one of the following from the Upgrade section: Impact Gauntlets, Lightning Baton, Repeating Hand Crossbow, Ricocheting Weapon, or Shock Generator. You gain the chosen upgrade, and it doesn’t count against your total number of upgrades.</li>
+                <li><em>Gadgetsmith Weapons</em> Choose one of the following from the Upgrade section: Impact Gauntlets, Lightning Baton, Repeating Hand Crossbow, Ricocheting Weapon, or Shock Generator. You gain the chosen upgrade, and it doesn’t count against your total number of upgrades.</li>
                 <li><em>Grappling Hook </em>You can forgo any attack you make as part of the Attack action to throw your grappling hook at a target within 20 feet of you. The target can be a creature, object, or surface. If the target is Small or smaller, make a grapple check against it, pulling it to you and grappling it on a success. If the target is Medium or larger, you can instead pull yourself to it (no check required); this doesn’t grapple the target. Opportunity attacks provoked by this movement are made with disadvantage.</li>
                 <li><em>Smoke Bomb </em>As an action, you can use a smoke bomb to cast the fog cloud spell centered on yourself, without expending a spell slot and requiring no components. The spell lasts for a number of rounds equal to your Intelligence modifier and doesn’t require your concentration. When you cast fog cloud in this way, you can choose for it to have a radius of 5, 10, 15, or 20 feet.</li>
             </ul>
@@ -58,7 +59,7 @@
             <description></description>
         </sheet>
         <rules>
-            <select type="Archetype Feature" supports="ID_KTH_COLAL_GADGETSMITH_TOOLS_IMPACT_GAUNTLETS||ID_KTH_COLAL_GADGETSMITH_TOOLS_LIGHTING_BATON||ID_KTH_COLAL_GADGETSMITH_TOOLS_REPEATING_HAND_CROSSBOW||ID_KTH_COLAL_GADGETSMITH_TOOLS_RICOCHETING_WEAPON||ID_KTH_COLAL_GADGETSMITH_TOOLS_SHOCK_GENERATOR" level="1" />
+            <select type="Archetype Feature" supports="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_IMPACT_GAUNTLET|ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_LIGHTNING_BATON|ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_REPEATING_HAND_CROSSBOW|ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_RICOCHETING_WEAPON|ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SHOCK_GENERATOR" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS_GRAPPLING_HOOK" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ESSENTIAL_TOOLS_SMOKE_BOMB" level="1" />
         </rules>
@@ -81,6 +82,25 @@
             <description>As an action, you can use a smoke bomb to cast the fog cloud spell centered on yourself, without expending a spell slot and requiring no components. The spell lasts for a number of rounds equal to your Intelligence modifier and doesn’t require your concentration. When you cast fog cloud in this way, you can choose for it to have a radius of 5, 10, 15, or 20 feet.</description>
         </sheet>
     </element>
+    <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SPECIALIZATION_UPGRADE">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Specialization Upgrade 1" supports="gs-specialization-upgrade,l1" level="3" />
+            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="gs-specialization-upgrade,l1||l5" level="5" />
+            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="gs-specialization-upgrade,l1||l5" level="7" />
+            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="gs-specialization-upgrade,l1||l5||l9" level="9" />
+            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="gs-specialization-upgrade,l1||l5||l9||11" level="11" />
+            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="gs-specialization-upgrade,l1||l5||l9||11" level="13" />
+            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="gs-specialization-upgrade,l1||l5||l9||11||15" level="15" />
+            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="gs-specialization-upgrade,l1||l5||l9||11||15" level="17" />
+            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="gs-specialization-upgrade,l1||l5||l9||11||15" level="19" />
+        </rules>
+    </element>
     <element name="Additional Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ADDITIONAL_UPGRADE">
         <description>
             <p>At 3rd level, you’ve mastered the essential tools and have begun to tinker with ways to expand your arsenal. The number of upgrades you can have, based on your class level, increases by one. It increases by one again at 5th level (for a total of two more than shown in the Inventor class table).</p>
@@ -89,16 +109,18 @@
             <description></description>
         </sheet>
         <rules>
-            <select type="Class Feature" name="Additional Upgrade, Gadgetsmith" supports="specialization-upgrade" level="3" />            
-            <select type="Class Feature" name="Additional Upgrade 2, Gadgetsmith" supports="specialization-upgrade" level="5" />
+            <select type="Archetype Feature" name="Additional Upgrade, Gadgetsmith" supports="gs-specialization-upgrade" level="3" />            
+            <select type="Archetype Feature" name="Additional Upgrade 2, Gadgetsmith" supports="gs-specialization-upgrade" level="5" />
         </rules>
     </element>
     <element name="Recycle Gadgets" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_RECYCLE_GADGETS">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, you can disassemble your gadgets and create different ones during a long rest. When you finish the rest, you can replace any upgrade you have with a new one.</p>
+            <p class="indent">The chosen upgrade must still be one that is valid for the level at which you gained the replaced upgrade. For example, at 9th level, you can only have one upgrade that has a 9th-level prerequisite.</p>
+            <p class="indent">Additionally, if one of your gadgets is destroyed, you can use this feature to recreate it over the course of a long rest, whichrequires materials worth 20 gp.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you finish a long rest, you can replace any upgrade you have with a new one. The chosen upgrade must still be one that is valid for the level at which you gained the replaced upgrade. Additionally, if one of your gadgets is destroyed, you can use this feature to recreate it over the course of a long rest, whichrequires materials worth 20 gp.</description>
         </sheet>
     </element>
     <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_EXTRA_ATTACK">
@@ -114,10 +136,661 @@
     </element>
     <element name="Combat Gadgets" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_COMBAT_GADGETS">
         <description>
+            <p>Beginning at 14th level, you can forgo any attack you make as part of the Attack action to use a gadget that normally requires an action to use.</p>
+        </description>
+        <sheet>
+            <description>You can forgo any attack you make as part of the Attack action to use a gadget that normally requires an action to use.</description>
+        </sheet>
+    </element>
+
+    <!-- Gadgetsmith Unrestricted Upgrades-->
+    <element name="Airburst Mine" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_AIRBURST_MINE">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a mechanical device capable of producing a devastating blast. You can use this device to cast shatter or thunderburst mine without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You create a mechanical device capable of producing a devastating blast. You can use this device to cast shatter or thunderburst mine without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</description>
+        </sheet>
+    </element>
+    <element name="Belt of Adjusting Size" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_BELT_OF_ADJUSTING_SIZE">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a belt with a creature size dial on it. While you are wearing the belt, you can use an action to cast the <i>enlarge/reduce</i> spell on yourself without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You create a belt with a creature size dial on it. While you are wearing the belt, you can use an action to cast the <i>enlarge/reduce</i> spell on yourself without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</description>
+        </sheet>
+    </element>
+    <element name="Element Eater" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ELEMENT_EATER">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a device capable of absorbing incoming elemental damage. You can activate this device as a reaction when you take acid, cold, fire, lightning or thunder damage. The device grants you resistance to the triggering damage type until the start of your next turn. After triggering it, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 elemental damage of the triggering type. Once use, this gadget can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can activate this device as a reaction when you take acid, cold, fire, lightning or thunder damage. The device grants you resistance to the triggering damage type until the start of your next turn. After triggering it, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 elemental damage of the triggering type.</description>
+        </sheet>
+    </element>
+    <element name="Enhanced Grappling Hook" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ENHANCED_GRAPPLING_HOOK">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You enhance the grappling hook gained from the Essential Tools feature, increasing its range to 30 feet. Additionally, when pulling yourself to a Large or larger target, the enhanced power of the grappling hook allows you to drag one Medium or smaller creature with you. The creature must be willing or grappled by you, and it must be within 5 feet of you.</p>
+        </description>
+        <sheet>
+            <description>Your grapping hook now has a range of 30 ft. Additionally, when pulling yourself to a Large or larger target, the enhanced power of the grappling hook allows you to drag one Medium or smaller creature with you. The creature must be willing or grappled by you, and it must be within 5 feet of you.</description>
+        </sheet>
+    </element>
+    <element name="Fire Spitter" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_FIRE_SPITTER">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a gadget that can create a quick blast of fire. As an action, you can use the gadget to cast burning hands as a 2nd-level spell without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, you can use the gadget to cast burning hands as a 2nd-level spell without expending a spell slot.</description>
+        </sheet>
+    </element>
+    <element name="Flashbang" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_FLASHBANG">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a high-luminosity discharge device. As an action, you can use the device and target a point within 30 feet of you. Any creature within 20 feet of that point must succeed on a Dexterity saving throw against your spell save DC or be blinded until the end of its next turn. Once used, this gadget can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description> As an action, you can use the device and target a point within 30 feet of you. Any creature within 20 feet of that point must succeed on a Dexterity saving throw against your spell save DC or be blinded until the end of its next turn.</description>
+        </sheet>
+    </element>
+    <element name="Gliding Cloak" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GLIDING_CLOAK">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You make a cloak that allows you to glide while falling. When you fall more than 10 feet and aren’t incapacitated, you can spread the cloak to reduce your rate of descent to 30 feet per round, taking no falling damage when you land. While falling in this manner under normal gravity, you can move up to 2 feet horizontally for every 1 foot you descend.</p>
+        </description>
+        <sheet>
+            <description>When you fall more than 10 feet and aren’t incapacitated, you can spread the cloak to reduce your rate of descent to 30 feet per round, taking no falling damage when you land. While falling in this manner under normal gravity, you can move up to 2 feet horizontally for every 1 foot you descend.</description>
+        </sheet>
+    </element>
+    <element name="Gravity Switch" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GRAVITY_SWITCH">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You build a switch that turns off gravity. You can use it to cast <i>fall</i> without expending a spell slot. Once used, this gadget can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can use it to cast fall without expending a spell slot.</description>
+        </sheet>
+    </element>
+    <element name="Impact Gauntlet" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_IMPACT_GAUNTLET">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency with this weapon, and it has the finesse and light properties, as well as the special property (described below). It deals 1d6 bludgeoning damage on a hit. You can select this upgrade up to two times, making a separate weapon each time.</p>
+            <p class="indent"><em>Special.</em> When you make an attack with this weapon, you can choose to forgo adding your proficiency bonus to the attack roll. If your attack hits, you can add double your proficiency bonus to the damage roll.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with this weapon, and it has the finesse and light properties, as well as the special property (described below). It deals 1d6 bludgeoning damage on a hit.
+            <em>Special.</em> When you make an attack with this weapon, you can choose to forgo adding your proficiency bonus to the attack roll. If your attack hits, you can add double your proficiency bonus to the damage roll.</description>
+        </sheet>
+    </element>
+    <element name="Impact Gauntlet 2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_IMPACT_GAUNTLET_2">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_IMPACT_GAUNTLET</requirements>
+        <description>
+            <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency with this weapon, and it has the finesse and light properties, as well as the special property (described below). It deals 1d6 bludgeoning damage on a hit. You can select this upgrade up to two times, making a separate weapon each time.</p>
+            <p class="indent"><em>Special.</em> When you make an attack with this weapon, you can choose to forgo adding your proficiency bonus to the attack roll. If your attack hits, you can add double your proficiency bonus to the damage roll.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with this weapon, and it has the finesse and light properties, as well as the special property (described below). It deals 1d6 bludgeoning damage on a hit.
+            <em>Special.</em> When you make an attack with this weapon, you can choose to forgo adding your proficiency bonus to the attack roll. If your attack hits, you can add double your proficiency bonus to the damage roll.</description>
+        </sheet>
+    </element>
+    <element name="Jumper Cable" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_JUMPER_CABLE">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SHOCK_GENERATOR</requirements>
+        <description>
+            <p>Once per turn when you deal lightning damage with a cantrip from your Shock Generator, you can add your Intelligence modifier to the damage dealt.</p>
+            <p class="indent">Additionally, you can use your Shock Generator as an action to make a DC 10 Intelligence (Medicine) check, attempting to stabilize a dying creature within your reach. If you succeed on the check, the creature regains 1 hit point, becoming conscious again, and gains a number of temporary hit points equal to your inventor level. When you stabilize a creature in this way, it gains one level of exhaustion.</p>
+        </description>
+        <sheet>
+            <description>Once per turn when you deal lightning damage with a cantrip from your Shock Generator, you can add {{intelligence}} damage.
+            Additionally, you can use your Shock Generator as an action to make a DC 10 Intelligence (Medicine) check, attempting to stabilize a dying creature within your reach. If you succeed on the check, the creature regains 1 hit point, becoming conscious again, and gains {{level:inventor}} temporary hit points. When you stabilize a creature in this way, it gains one level of exhaustion.</description>
+        </sheet>
+        
+        <setters>            
+            <set name="short">requires shock generator</set>
+        </setters>
+    </element>
+    <element name="Jumping Boots" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_JUMPING_BOOTS">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You modify your boots with arcane boosters. While wearing these boots, you are under the effects of the <i>jump</i> spell.</p>
+        </description>
+        <sheet>
+            <description>You modify your boots with arcane boosters. While wearing these boots, you are under the effects of the <i>jump</i> spell.</description>
+        </sheet>
+    </element>
+    <element name="Lightning Baton" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_LIGHTNING_BATON">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a magic weapon that channels lightning. You have proficiency with this weapon, and it has the finesse and light properties. It deals 1d4 bludgeoning damage plus 1d4 lightning damage on a hit. When you roll a 20 on an attack roll made with this weapon, the target must succeed a Constitution saving throw against your spell save DC or become stunned until the start of your next turn.</p>
+            <p class="indent">You can choose this upgrade up to two times, making a separate weapon each time.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with this weapon, and it has the finesse and light properties. It deals 1d4 bludgeoning damage plus 1d4 lightning damage on a hit. When you roll a 20 on an attack roll made with this weapon, the target must succeed a Constitution saving throw against your spell save DC or become stunned until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Lightning Baton 2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_LIGHTNING_BATON_2">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_LIGHTNING_BATON</requirements>
+        <description>
+            <p>You create a magic weapon that channels lightning. You have proficiency with this weapon, and it has the finesse and light properties. It deals 1d4 bludgeoning damage plus 1d4 lightning damage on a hit. When you roll a 20 on an attack roll made with this weapon, the target must succeed a Constitution saving throw against your spell save DC or become stunned until the start of your next turn.</p>
+            <p class="indent">You can choose this upgrade up to two times, making a separate weapon each time.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with this weapon, and it has the finesse and light properties. It deals 1d4 bludgeoning damage plus 1d4 lightning damage on a hit. When you roll a 20 on an attack roll made with this weapon, the target must succeed a Constitution saving throw against your spell save DC or become stunned until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Mechanical Arm" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_MECHANICAL_ARM">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a mechanical arm, giving you an extra hand. This mechanical arm only functions while it is mounted on gear you are wearing, but can be operated mentally without the need for your hands. This mechanical arm can serve any function a normal hand could, such as holding things, making attacks, and interacting with the environment, but it doesn’t grant you any additional actions.</p>
+        </description>
+        <sheet>
+            <description>You create a mechanical arm, giving you an extra hand. This mechanical arm only functions while it is mounted on gear you are wearing, but can be operated mentally without the need for your hands. This mechanical arm can serve any function a normal hand could, such as holding things, making attacks, and interacting with the environment, but it doesn’t grant you any additional actions.</description>
+        </sheet>
+    </element>
+    <element name="Mechanical Familiar" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_MECHANICAL_FAMILIAR">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create the blueprint for a small, mechanical creature. At the end of a long rest, you can choose to create a familiar based on it, casting the <i>find familiar</i> spell without expending a spell slot. When cast in this way, the familiar is a construct. It stays active until you deactivate it or it is destroyed. In either case, you can choose to reactivate it at the end of a long rest.</p>
+        </description>
+        <sheet>
+            <description>You create the blueprint for a small, mechanical creature. At the end of a long rest, you can choose to create a familiar based on it, casting the <i>find familiar</i> spell without expending a spell slot. When cast in this way, the familiar is a construct. It stays active until you deactivate it or it is destroyed. In either case, you can choose to reactivate it at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Net Launcher" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_NET_LAUNCHER">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You build a device capable of delivering nets to their targets more effectively. While you have this upgrade, nets have a normal range of 20 feet and a long range of 60 feet for you.</p>
+        </description>
+        <sheet>
+            <description>Nets have a normal range of 20 feet and a long range of 60 feet for you.</description>
+        </sheet>
+    </element>
+    <element name="Quick Essential Gadget" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_QUICK_ESSENTIAL_GADGET">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You modify your essential gear for quickened use. You can use your Grappling Hook or Smoke Bomb as a bonus action. Once you use either of them in this way, you can’t use either of them in this way again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can use your Grappling Hook or Smoke Bomb as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Repeating Hand Crossbow" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_REPEATING_HAND_CROSSBOW">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You build an improved hand crossbow. You have proficiency with this weapon, which has a normal range of 30 feet and a long range of 120 feet, and it has the ammunition and light properties, as well as the special property (described below). It deals 1d6 piercing damage on a hit.</p>
+            <p class="indent"><em>Special.</em> This weapon doesn’t require a free hand to load, as it has a built-in loading mechanism. When you make an attack with this weapon as part of the Attack action, and you don’t have disadvantage on the attack roll, you can choose to make the attack roll with disadvantage to make one additional attack with this weapon as a bonus action. The attack roll for this additional attack is also made with disadvantage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon (30/120ft) Ammunition, Light, Special 1d6 piercing
+            <em>Special.</em> This weapon doesn’t require a free hand to load, as it has a built-in loading mechanism. When you make an attack with this weapon as part of the Attack action, and you don’t have disadvantage on the attack roll, you can choose to make the attack roll with disadvantage to make one additional attack with this weapon as a bonus action. The attack roll for this additional attack is also made with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Ricocheting Weapon" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_RICOCHETING_WEAPON">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a thrown melee weapon enchanted or engineered to ricochet off its targets and return to your hand. You have proficiency with this weapon, which has a normal range of 30 feet and a long range of 90 feet, and it has the finesse and thrown properties, as well as the special property (described below). It deals 1d8 bludgeoning, piercing, or slashing damage on a hit (your choice when you choose this upgrade). You can Arcane Retrofit this weapon.</p>
+            <p class="indent"><em>Special.</em> When this weapon is thrown, you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt by the attack is halved for each target hit after the first. In addition, the weapon flies back to your hand immediately after the attack.</p>
+        </description>
+        <sheet>
+            <description>Ranged Melee Weapon - (30/90ft) Finesse, Thrown, Special 1d8 budgeoning, piercing, or slashing (set at creation).
+            Special. When this weapon is thrown, you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt by the attack is halved for each target hit after the first. In addition, the weapon flies back to your hand immediately after the attack.</description>
+        </sheet>
+    </element>
+    <element name="Shock Generator" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SHOCK_GENERATOR">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a device capable of generating potent shocks. You can use this device to cast <i>shocking grasp</i>. When you cast shocking grasp in this way, you can use either your Dexterity or Intelligence modifier for the attack roll.</p>
+        </description>
+        <sheet>
+            <description>You can use this device to cast shocking grasp. When you cast shocking grasp in this way, you can use either your Dexterity or Intelligence modifier for the attack roll.</description>
+        </sheet>
+    </element>
+    <element name="Shocking Hook" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SHOCKING_HOOK">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SHOCK_GENERATOR</requirements>
+        <description>
+            <p>You can integrate your Shock Generator and your Grappling Hook. Immediately after using your Grappling Hook to pull a creature to you or to pull yourself to a creature, you can use your bonus action to cast <i>shocking grasp</i> from your Shock Generator targeting that creature.</p>
+        </description>
+        <sheet>
+            <description>Immediately after using your Grappling Hook to pull a creature to you or to pull yourself to a creature, you can use your bonus action to cast shocking grasp from your Shock Generator targeting that creature.</description>
+        </sheet>
+        <setters>            
+            <set name="short">requires shock generator</set>
+        </setters>
+    </element>
+    <element name="Sight Lenses" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SIGHT_LENSES">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a set of lenses that allow you to see through darkness and obscurement, which you can integrate into a pair of goggles, glasses, or other vision assistance. While using these lenses, you can see through fog, mist, smoke, clouds, and nonmagical darkness out to a range of 15 feet.</p>
+        </description>
+        <sheet>
+            <description>While using these lenses, you can see through fog, mist, smoke, clouds, and nonmagical darkness out to a range of 15 feet.</description>
+        </sheet>
+    </element>
+    <element name="Smoke Cloak" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SMOKE_CLOAK">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You create a cloak that causes you to blend in with smoke. When you are lightly or heavily obscured by smoke at the start of your turn, you are invisible until your turn ends, or until you cast a spell, make an attack, or deal damage to a creature.</p>
+        </description>
+        <sheet>
+            <description>When you are lightly or heavily obscured by smoke at the start of your turn, you are invisible until your turn ends, or until you cast a spell, make an attack, or deal damage to a creature.</description>
+        </sheet>
+    </element>
+    <element name="Steelweave Nets" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_STEELWEAVE_NETS">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You thread your nets with metal reinforcement, making them tougher and more conductive. The net has an AC of 15 and resistance to slashing damage. Whenever a creature restrained by the net takes lightning damage, it takes an extra 1d6 lightning damage.</p>
+            <p class="indent">Only you have proficiency with your Steelweave Nets. You can have a number of these nets up to your Intelligence modifier at a time (a minimum of one), and you can replenish your supply of them over the course of a long rest by forging normal nets into Steelweave Nets.</p>
+        </description>
+        <sheet>
+            <description>You thread your nets with metal reinforcement, making them tougher and more conductive. The net has an AC of 15 and resistance to slashing damage. Whenever a creature restrained by the net takes lightning damage, it takes an extra 1d6 lightning damage.
+            Only you have proficiency with your Steelweave Nets. You can have up to {{intelligence:modifier}}, and you can replenish your supply of them over the course of a long rest by forging normal nets into Steelweave Nets.</description>
+        </sheet>
+    </element>
+    <element name="Striding Boots" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_STRIDING_BOOTS">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>You modify your boots with amplified striding speed. While wearing these boots, you are under the effects of the <i>longstrider</i> spell.</p>
+        </description>
+        <sheet>
+            <description>You modify your boots with amplified striding speed. While wearing these boots, you are under the effects of the longstrider spell.</description>
+        </sheet>
+    </element>
+    <element name="Trick Shots" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <description>
+            <p>At the end of a short or long rest, you can add one of the following effects to a piece of ammunition or a thrown weapon, turning it into a trick shot; the effect is expended when you use the trick shot:</p>
+            <ul>
+                <li><em>Arcane Trick.</em> You can imbue a cantrip or 1st-level spell you know into the shot, casting it on impact where the shot lands. The target of the attack is also the spell’s target.</li>
+                <li>Bouncing. You can attack a target within range that has total cover from you if you know the target’s location, bouncing the shot off a surface. The target has the benefit of half cover for the attack, instead of total cover.</li>
+                <li>Ricochet. If you hit a target with the shot, you can make another attack roll against a different target within 10 feet of the first as part of the same attack.</li>
+                <li>Smoke Shot. You can use the shot to deploy a Smoke Bomb on impact where the shot lands</li>
+                <li>Special Tip. The shot deals one of the following damage types of your choice: bludgeoning, piercing, slashing, acid, cold, fire, or lightning.</li>
+            </ul>
+            <p class="indent">You can select this upgrade multiple times, allowing you to make multiple trick shots per rest. You can have a maximum number of trick shots equal to the number of times you have selected this upgrade.</p>
+        </description>
+        <sheet>
+            <description>At the end of a short or long rest, you can add one of the following effects to a piece of ammunition or a thrown weapon, turning it into a trick shot; the effect is expended when you use the trick shot:
+            Arcane Trick. You can imbue a cantrip or 1st-level spell you know into the shot, casting it on impact where the shot lands. The target of the attack is also the spell’s target.
+            Bouncing. You can attack a target within range that has total cover from you if you know the target’s location, bouncing the shot off a surface. The target has the benefit of half cover for the attack, instead of total cover.
+            Ricochet. If you hit a target with the shot, you can make another attack roll against a different target within 10 feet of the first as part of the same attack.
+            Smoke Shot. You can use the shot to deploy a Smoke Bomb on impact where the shot lands
+            Special Tip. The shot deals one of the following damage types of your choice: bludgeoning, piercing, slashing, acid, cold, fire, or lightning.
+            </description>
+        </sheet>
+    </element>
+    <element name="Trick Shots 2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_2">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS</requirements>
+        <descrption>You can use trick shots 2 times per rest.</descrption>
+        <sheet>
+            <description requirements="!ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_3">You can use trick shots 2 times per rest.</description>
+        </sheet>
+    </element>
+    <element name="Trick Shots 3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_3">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_2</requirements>
+        <descrption>You can use trick shots 3 times per rest.</descrption>
+        <sheet>
+            <description requirements="!ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_4">You can use trick shots 3 times per rest.</description>
+        </sheet>
+    </element>
+    <element name="Trick Shots 4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_4">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_3</requirements>
+        <descrption>You can use trick shots 4 times per rest.</descrption>
+        <sheet>
+            <description requirements="!ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_5">You can use trick shots 4 times per rest.</description>
+        </sheet>
+    </element>
+    <element name="Trick Shots 5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_5">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_4</requirements>
+        <descrption>You can use trick shots 5 times per rest.</descrption>
+        <sheet>
+            <description>You can use trick shots 5 times per rest.</description>
+        </sheet>
+    </element>
+    <element name="Trick Shots 6" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_6">
+        <supports>gs-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRICK_SHOTS_5</requirements>
+        <descrption>You can use trick shots 2 times per rest.</descrption>
+        <sheet>
+            <description>You can use trick shots 6 times per rest.</description>
+        </sheet>
+    </element>
+    <element name="Antimagic Shackle" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ANTIMAGIC_SHACKLE">
+        <supports>gs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>            
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You create a set of antimagical shackles. As an action when you are adjacent to a creature, you can attempt to shackle the creature to yourself or a nearby object using these shackles. Make a Dexterity (Sleight of Hand) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). A creature that is immune to being grappled or restrained automatically succeeds on this check. If you succeed, the target is shackled to you or the nearby object, and it can only move if it’s able to move what it’s shackled to.</p>
+            <p class="indent">Additionally, while shackled in this way, the target can’t teleport, travel to another plane of existence, alter its form (such as by the polymorph spell), or dematerialize. As anaction, the target can make a Strength saving throw against your spell save DC, breaking the shackles on a success; otherwise, the shackles last until you remove them.</p>
+        </description>
+        <sheet>
+            <description>You create a set of antimagical shackles. As an action when you are adjacent to a creature, you can attempt to shackle the creature to yourself or a nearby object using these shackles. Make a Dexterity (Sleight of Hand) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). A creature that is immune to being grappled or restrained automatically succeeds on this check. If you succeed, the target is shackled to you or the nearby object, and it can only move if it’s able to move what it’s shackled to.
+            Additionally, while shackled in this way, the target can’t teleport, travel to another plane of existence, alter its form (such as by the polymorph spell), or dematerialize. As anaction, the target can make a Strength saving throw against your spell save DC, breaking the shackles on a success; otherwise, the shackles last until you remove them.</description>
+        </sheet>
+    </element>
+    <element name="Binding Rope" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_BINDING_ROPE">
+        <supports>gs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>            
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You create a rope that is capable of animating and binding a creature. As an action, choose a creature within 30 feet of you. The target must make a Dexterity saving throw against your spell save DC or become restrained until the end of your next turn. If you are currently grappling the target, it makes the Dexterity saving throw with disadvantage. The rope can only restrain one target at a time.</p>
+        </description>
+        <sheet>
+            <description>You create a rope that is capable of animating and binding a creature. As an action, choose a creature within 30 feet of you. The target must make a Dexterity saving throw against your spell save DC or become restrained until the end of your next turn. If you are currently grappling the target, it makes the Dexterity saving throw with disadvantage. The rope can only restrain one target at a time.</description>
+        </sheet>
+    </element>
+    <element name="Crossbow Spider" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_CROSSBOW_SPIDER">
+        <supports>gs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>            
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You modify a crossbow to be able to aim and fire remotely. As an action, you can deploy a Tiny construct called a crossbow spider (see the construct’s statistics below). Once deployed, you can use a bonus action to cause the construct to move up to its speed and make a crossbow attack from its location. The construct becomes inactive after 1 minute, or after it has been used to make 10 attacks.</p>
+            <p class="indent">Once you have activated the construct, you can’t activate it again until you finish a long rest, unless you expend a spell slot of 1st level or higher to activate it again. If the construct is destroyed, you can’t activate it again until you repair it or recreate it during a long rest.</p>
+            <p class="indent">The construct can’t take any actions besides the ones you direct it to take with your bonus action.</p>
+            <h5>Crossbow Spider</h5>
+            <ul>
+                <li>tiny construct</li>
+                <li>AC: 10</li>
+                <li>HP: 5</li>
+                <li>Speed: 15ft., climb 15ft.</li>
+                <li>STR 2 DEX 10 CON 10 INT 1 WIS 1 CHA 1</li>
+                <li>Damage immunities: Poison</li>
+                <li>Condition immunities: charmed, exhaustion, frightened, paralyzed, petrified, poisoned</li>
+                <li>Proficiency bonus: equals your bonus</li>
+                <li>Actions:</li>
+                <li>Crossbow: Ranged Weapon Attack: Your spell attack modifier to hit, range 30/120ft., one target you can see. Hit: 1d6 + INT modifier piercing damage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>As an action, you can deploy a Tiny construct called a crossbow spider (see the construct’s statistics below). Once deployed, you can use a bonus action to cause the construct to move up to its speed and make a crossbow attack from its location. The construct becomes inactive after 1 minute, or after it has been used to make 10 attacks.
+            Once you have activated the construct, you can’t activate it again until you finish a long rest, unless you expend a spell slot of 1st level or higher to activate it again. If the construct is destroyed, you can’t activate it again until you repair it or recreate it during a long rest.
+            The construct can’t take any actions besides the ones you direct it to take with your bonus action.</description>
+        </sheet>
+        <rules>
+            <select type="Companion" supports="crossbow-spider"/>
+        </rules>
+    </element>
+    <element name="Crossbow Spider" type="Companion" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GADGETSMITH_CROSSBOW_SPIDER">
+        <requirements>ID_KTH_COLAL_ARCHETYPE_INVENTOR_GADGETSMITH</requirements>
+        <supports>crossbow-spider</supports>
+        <description>
+            <p>You modify a crossbow to be able to aim and fire remotely. As an action, you can deploy a Tiny construct called a crossbow spider (see the construct’s statistics below). Once deployed, you can use a bonus action to cause the construct to move up to its speed and make a crossbow attack from its location. The construct becomes inactive after 1 minute, or after it has been used to make 10 attacks.</p>
+            <p class="indent">Once you have activated the construct, you can’t activate it again until you finish a long rest, unless you expend a spell slot of 1st level or higher to activate it again. If the construct is destroyed, you can’t activate it again until you repair it or recreate it during a long rest.</p>
+            <p class="indent">The construct can’t take any actions besides the ones you direct it to take with your bonus action.</p>
+        </description>
+        <setters>
+            <set name="size">Tiny</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">10</set>
+            <set name="hp">5</set>
+            <set name="speed">15 ft., climb 15ft</set>
+            <set name="strength">2</set>
+            <set name="dexterity">10</set>
+            <set name="constitution">10</set>
+            <set name="intelligence">1</set>
+            <set name="wisdom">1</set>
+            <set name="charisma">1</set>
+            <set name="immunities">poison</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, paralyzed, petrified, poisoned</set>            
+            <set name="senses">passive Perception 5</set>
+            <set name="languages">-</set>
+            <set name="challenge">0</set>
+            <set name="actions">ID_KTH_COLAL_COMPANION_INVENTOR_GADGETSMITH_CROSSBOW_SPIDER_CROSSBOW</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="10" />
+            <stat name="companion:hp:max" value="5" bonus="base" />
+            <stat name="companion:speed" value="15" bonus="base" />
+            <stat name="companion:speed:climb" value="15" bonus="base" />
+        </rules>
+    </element>
+    <element name="Crossbow" type="Companion Action" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GADGETSMITH_CROSSBOW_SPIDER_CROSSBOW">
+        <description>
+            <p><i>Ranged Weapon Attack:</i> +Spell attack modifier to hit, range 30/120ft., one target you can see. <i>Hit:</i> 1d6 + your Intelligence modifier piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +Spell attack modifier to hit, range 30/120ft., one target you can see. Hit: 1d6 + INT piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Explosive Guantlet" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_EXPLOSIVE_GUANTLET">
+        <supports>gs-specialization-upgrade,l5</supports>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_IMPACT_GAUNTLET,[level:5]</requirements>
+        <setters>            
+            <set name="short">level 5, requires impact guantlets</set>
+        </setters>
+        <description>
+            <p>Your gauntlets can exert massive kinetic force when striking. When you make an attack with your Impact Gauntlet, you can choose to be pushed 10 feet in the opposite direction of your attack. Alternatively, you can use a bonus action to attempt to push the target after the attack. The target must succeed on a Strength saving throw or be pushed 10 feet away from you. This movement doesn’t provoke opportunity attacks.</p>
+            <p class="indent">You can use the movement effect of this gauntlet even if you’re not attacking a target, allowing you to push yourself in any direction (including upwards).</p>
+        </description>
+        <sheet>
+            <description>When you make an attack with your Impact Gauntlet, you can choose to be pushed 10 feet in the opposite direction of your attack. Alternatively, you can use a bonus action to attempt to push the target after the attack. The target must succeed on a Strength saving throw or be pushed 10 feet away from you. This movement doesn’t provoke opportunity attacks.
+            You can use the movement effect of this gauntlet even if you’re not attacking a target, allowing you to push yourself in any direction (including upwards).</description>
+        </sheet>
+    </element>
+    <element name="Smoky Images" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SMOKY_IMAGES">
+        <supports>gs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>            
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>Immediately after using a Smoke Bomb, you can use a bonus action to cast <i>mirror image</i> without expending a spell slot. Once you cast the spell in this way, you can’t do so again until you finish a short or long rest</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>Immediately after using a Smoke Bomb, you can use a bonus action to cast <i>mirror image</i> without expending a spell slot.</description>
+        </sheet>
+    </element>
+    <element name="Vanishing Trick" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_VANISHING_TRICK">
+        <supports>gs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>            
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>Immediately after using a Smoke Bomb, you can cast <i>misty step</i> without expending a spell slot. Once you cast the spell in this way, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>Immediately after using a Smoke Bomb, you can cast misty step without expending a spell slot.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Nullifier" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ARCANE_NULLIFIER">
+        <supports>gs-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>            
+            <set name="short">level 9</set>
+        </setters>
+        <description>
             <p></p>
         </description>
         <sheet>
             <description></description>
         </sheet>
     </element>
+    <element name="Phase Trinket" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_PHASE_TRINKET">
+        <supports>gs-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>            
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Stinking Gas" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_STINKING_GAS">
+        <supports>gs-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>            
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Stopwatch Trinket" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_STOPWATCH_TRINKET">
+        <supports>gs-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>            
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Flying Gadget" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_FLYING_GADGET">
+        <supports>gs-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>            
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Lightning Generator" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_LIGHTNING_GENERATOR">
+        <supports>gs-specialization-upgrade,l11</supports>
+        <requirements>[level:11],ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_LIGHTNING_GENERATOR</requirements>
+        <setters>            
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Truesight Lenses" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_TRUESIGHT_LENSES">
+        <supports>gs-specialization-upgrade,l11</supports>
+        <requirements>[level:11],ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_SIGHT_LENSES</requirements>
+        <setters>            
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Useful Universal Key" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_USEFUL_UNIVERSAL_KEY">
+        <supports>gs-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>            
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+        <supports>gs-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>            
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+        <supports>gs-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>            
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+        <supports>gs-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>            
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+        <supports>gs-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>            
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+        <supports>gs-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>            
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    
+    <!-- Gadgetsmith restricted upgrades-->
 </elements>
+<!--
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_GADGETNAME">
+        <supports>gs-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element> -->

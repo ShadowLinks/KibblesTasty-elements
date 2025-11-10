@@ -135,7 +135,7 @@
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archtype" name="Inventor Specialization" supports="InventorSpecializations" />
+            <select type="Archetype" name="Inventor Specialization" supports="InventorSpecializations" />
         </rules>
     </element>
     <element name="Magic Item Analysis" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_MAGIC_ITEM_ANALYSIS">
@@ -233,17 +233,6 @@
         <sheet>
             <description></description>
         </sheet>
-        <rules>
-            <select type="Class Feature" name="Specialization Upgrade 1" supports="specialization-upgrade" level="3" />
-            <select type="Class Feature" name="Specialization Upgrade 2" supports="specialization-upgrade" level="5" />
-            <select type="Class Feature" name="Specialization Upgrade 3" supports="specialization-upgrade" level="7" />
-            <select type="Class Feature" name="Specialization Upgrade 4" supports="specialization-upgrade" level="9" />
-            <select type="Class Feature" name="Specialization Upgrade 5" supports="specialization-upgrade" level="11" />
-            <select type="Class Feature" name="Specialization Upgrade 6" supports="specialization-upgrade" level="13" />
-            <select type="Class Feature" name="Specialization Upgrade 7" supports="specialization-upgrade" level="15" />
-            <select type="Class Feature" name="Specialization Upgrade 8" supports="specialization-upgrade" level="17" />
-            <select type="Class Feature" name="Specialization Upgrade 9" supports="specialization-upgrade" level="19" />
-        </rules>
     </element>
     
     <element name="Ability Score Improvement" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_ASI">
@@ -284,7 +273,7 @@
             If this crafted item is lost or destroyed, you can remake it following the rules for remaking it in its respective subclass.</description>
         </sheet>
         <rules>
-            <select type="Class Feature" name="Cross-Disciplinary Knowledge" supports="gs-unrestricted-upgrade||ID_KTH_CCC_CLASS_FEATURE_INVENTOR_INFUSIONSMITH_ANIMATED_WEAPON|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_INFUSIONSMITH_BLASTING_ROD|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_WEAPON|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_REAGENT_POUCH|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_FIRE|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_ACID|ID_KTH_CCC_CLASS_FEATURE_INVENTOR_THUNDERSMITH_STORMFORGED_WEAPON" />
+            <select type="Archetype Feature" name="Cross-Disciplinary Knowledge" supports="gs-specialization-upgrade,l1||ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_INFUSIONSMITH_ANIMATED_WEAPON|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_INFUSIONSMITH_BLASTING_ROD|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_INFUSIONSMITH_INFUSED_WEAPON|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_REAGENT_POUCH|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_FIRE|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_ACID|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_THUNDERSMITH_STORMFORGED_WEAPON" />
         </rules>
     </element>
     
@@ -361,7 +350,7 @@
     </element>
 <!-- Specialization upgrades-->
     <element name="Shield Proficiency" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPECIALIZATION_SHIELD_PROFICIENCY">
-        <supports>specialization-upgrade,generic-unrestricted-upgrade</supports>
+        <supports>generic-unrestricted-upgrade</supports>
         <description>
             <p><i>Generic Unrestricted Upgrade</i> You gain proficiency with shields.</p>
         </description>
@@ -373,7 +362,7 @@
         </rules>
     </element>
     <element name="Tool Proficiency" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPECIALIZATION_TOOL_PROFICIENCY">
-        <supports>specialization-upgrade,generic-unrestricted-upgrade</supports>
+        <supports>generic-unrestricted-upgrade</supports>
         <description>
             <p><i>Generic Unrestricted Upgrade</i> You gain proficiency with a tool of your choice.</p>
         </description>
