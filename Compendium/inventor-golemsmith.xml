@@ -97,7 +97,9 @@
             <h5>Winged</h5>
             <p>Your golem is modeled off a flying creature. Smaller and more lightweight than most golems, it is kept aloft by intricate wings. Its size becomes Small, it gains a flying speed of 30 feet, and it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
             <p class="indent"><em>Talon.</em> Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 1d8 + 2 slashing damage.</p>
-
+            <h5>Flesh</h5>
+            <p>Your golem is roughly humanoid, a lumbering terror of stitched flesh with an odd smell. Its Strength becomes 16 (+3), it gains proficiency with shields, simple weapons, and martial weapons, and it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Slam.</em> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1d4 + 3 bludgeoning damage.</p>
         </description>
         <sheet display="false">
             <description></description>
