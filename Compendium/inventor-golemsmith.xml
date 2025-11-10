@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Golemsmith Archetype Inventor</name>
+        <update version="0.0.1">
+            <file name="inventor-golemsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-golemsmith.xml" />
+        </update>
+    </info>
+    <element name="Golemsmith" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_INVENTOR_GOLEMSMITH">
+        <supports>InventorSpecializations</supports>
+        <description>
+            <p>Golemsmiths are inventors who have committed themselves to creating a true work of artifice, forging a golem. With this painstaking life ambition, they plan and design meticulously, even if, in practice, sometimes compromises on materials must be made.</p>
+            <p class="indent">Why a golemsmith embarks on the quest to forge this artificial construct of life can vary. For many it is the pure pursuit of forging the perfect creation; while for others, it is simply so they do not have to carry around their loot, or to have a loyal companion to count on at all times.</p>
+            <p class="indent">A golemsmith is rarely chaotic, as they are people of great care and discipline—those that are not would not have succeeded where they have. However, some have been set on their path by such events that might drive them to interact chaotically with society as a whole.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PROFICIENCY" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MECHANICAL_GOLEM" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GOLEM_CHASSIS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_INTELLIGENT_OVERSIGHT" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_NATURE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PERFECTED_DESIGN" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MECHANICAL_GOLEM" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GOLEM_CHASSIS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_INTELLIGENT_OVERSIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SPECIALIZATION_UPGRADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_NATURE" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PERFECTED_DESIGN" level="14" />
+        </rules>
+    </element>
+    <element name="Golemsmith Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PROFICIENCY">
+        <description>
+            <p>When you choose this specialization at 1st level, you gain proficiency with smith’s tools and tinker’s tools.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+            <grant type="proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Mechanical Golem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MECHANICAL_GOLEM">
+        <description>
+            <p>Starting at 1st level, you forge a mechanical golem to carry out your orders and protect you. The golem is under your control and understands the languages you speak, but it can’t speak.</p>
+            <p class="indent">The golem obeys your commands as best it can. On your turn, you can verbally command it where to move (no action required by you), and you can use your action to command it to take an action. Additionally, whenever it would be able to take a reaction, you must use your reaction to command it to take that reaction. The golem acts on your commands during your turn. If you issue no commands to your golem, it takes no actions.</p>
+            <p class="indent">Your golem’s proficiency bonus increases when yours does. If the golem is killed, it can be returned to life by normal means, such as the revivify spell, or you can repair it during a long rest if you have access to its body. At the end of the long rest, it returns to life with half its hit points (rounded down).</p>
+            <p class="indent">If the golem is beyond recovery, you can recreate it exactly as it was, with four days of work (8 hours each day) and 100 gp of raw materials.</p>
+            <p class="indent">Over the course of a short rest, you can restore hit points to your golem equal to your Intelligence modifier + your inventor level, or you can fully repair it to during a long rest, causing it to regain all its hit points. Any spells you cast that cause the target to regain hit points ignore any restrictions against constructs for your golem.</p>
+            <p class="indent">The base statistics of your golem are as follows:</p>
+            <h5>Golem</h5>
+            <ul>
+                <li>Medium Construct, unaligned</li>
+                <li>AC 14</li>
+                <li>HP 5 + [(the golem’s Constitution modifier + 5) times your inventor level]</li>
+                <li>Speed 30 ft.</li>
+                <li>STR 14 DEX 12 CON 12 INT 4 WIS 5 CHA 1</li>
+                <li>Damage Immunities poison, psychic</li>
+                <li>Condition Immunities charmed, exhaustion, frightened, poisoned</li>
+                <li>Senses passive Perception 7</li>
+                <li>Languages understands the languages of its creator but can’t speak</li>
+                <li><em>Bound.</em> The golem is magically bound to its creator. As long as the creator and it are on the same plane of existence, the creator can telepathically call the golem to travel to it, and the golem knows the distance and direction to its creator.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>The golem obeys your commands as best it can. On your turn, you can verbally command it where to move (no action required by you), and you can use your action to command it to take an action. Additionally, whenever it would be able to take a reaction, you must use your reaction to command it to take that reaction. The golem acts on your commands during your turn. If you issue no commands to your golem, it takes no actions.
+            Your golem’s proficiency bonus increases when yours does. If the golem is killed, it can be returned to life by normal means, such as the revivify spell, or you can repair it during a long rest if you have access to its body. At the end of the long rest, it returns to life with half its hit points (rounded down).
+            If the golem is beyond recovery, you can recreate it exactly as it was, with four days of work (8 hours each day) and 100 gp of raw materials.
+            Over the course of a short rest, you can restore hit points to your golem equal to your Intelligence modifier + your inventor level, or you can fully repair it to during a long rest, causing it to regain all its hit points. Any spells you cast that cause the target to regain hit points ignore any restrictions against constructs for your golem.</description>
+        </sheet>
+        <rules>
+            <Select type="Companion" supports="golem-companion" />
+        </rules>
+    </element>
+    
+    <element name="Golem Chassis" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GOLEM_CHASSIS">
+        <description>
+            <p>When you create your golem, you can choose one of the chassis below, adding the prefix to its type. For example, if you select Ironwrought, your golem becomes an Ironwrought Golem and gains the corresponding modifications to its base statistics.</p>
+            <h5>Launcher</h5>
+            <p>Your golem becomes akin to a mobile turret, taking the frame of a ballista or other launching device. Its Dexterity becomes 16 (+3), its speed becomes 25 feet, and it has the following natural weapon attack, which uses its Dexterity for the attack and damage rolls:</p>
+            <p class="indent"><em>Shoot.</em> Ranged Weapon Attack: +5 to hit, range 60/240 ft., one target. Hit: 1d10 + 3 piercing damage.</p>
+            <h5>Quadrupedal</h5>
+            <p>Your golem takes on a quadrupedal design. Larger and sturdier, it is more suitable to launch into the fray or carry its creator. Its size becomes Large, its base AC becomes 16, and its speed becomes 35 feet. In addition, its Strength and Constitution become 16 (+3), and it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Bite.</em> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1d10 + 3 piercing damage.</p>
+            <h5>Specialized</h5>
+            <p>Your golem defies all expectations, its design fueled by your own rampant creativity. A little less robust and stable, it is far more extensible to your visionary plans. Your golem starts with the basic golem statistics, but you can select two free upgrades for it that don’t count against your upgrade total. In addition, it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Slam.</em> Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1d8 + 2 bludgeoning damage.</p>
+            <h5>Ironwrought</h5>
+            <p>Your golem is roughly humanoid and comes with the robust flexibility and options that this form provides. Its Strength becomes 16 (+3), it gains proficiency with shields, simple weapons, and martial weapons, and it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Slam.</em> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1d4 + 3 bludgeoning damage.</p>
+            <h5>Winged</h5>
+            <p>Your golem is modeled off a flying creature. Smaller and more lightweight than most golems, it is kept aloft by intricate wings. Its size becomes Small, it gains a flying speed of 30 feet, and it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Talon.</em> Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 1d8 + 2 slashing damage.</p>
+
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+    </element>
+    
+    <element name="Intelligent Oversight" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_INTELLIGENT_OVERSIGHT">
+        <description>
+            <p>Starting at 3rd level, you can take the Help action as a bonus action when assisting your golem.</p>
+            <p class="indent">Additionally, when you take the Help action to aid an ally (including your golem) in attacking a creature, the target of that attack can be up to 30 feet away from you, rather than within 5 feet of you, if your ally can see or hear you.</p>
+        </description>
+        <sheet>
+            <description>You can take the Help action as a bonus action when assisting your golem.
+            Additionally, when you take the Help action to aid an ally (including your golem) in attacking a creature, the target of that attack can be up to 30 feet away from you, rather than within 5 feet of you, if your ally can see or hear you.</description>
+        </sheet>
+    </element>
+    <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SPECIALIZATION_UPGRADE">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Specialization Upgrade 1" supports="gos-specialization-upgrade" level="3" />
+            <select type="Class Feature" name="Specialization Upgrade 2" supports="gos-specialization-upgrade" level="5" />
+            <select type="Class Feature" name="Specialization Upgrade 3" supports="gos-specialization-upgrade" level="7" />
+            <select type="Class Feature" name="Specialization Upgrade 4" supports="gos-specialization-upgrade" level="9" />
+            <select type="Class Feature" name="Specialization Upgrade 5" supports="gos-specialization-upgrade" level="11" />
+            <select type="Class Feature" name="Specialization Upgrade 6" supports="gos-specialization-upgrade" level="13" />
+            <select type="Class Feature" name="Specialization Upgrade 7" supports="gos-specialization-upgrade" level="15" />
+            <select type="Class Feature" name="Specialization Upgrade 8" supports="gos-specialization-upgrade" level="17" />
+            <select type="Class Feature" name="Specialization Upgrade 9" supports="gos-specialization-upgrade" level="19" />
+        </rules>
+    </element>
+    <element name="Autonomous Action" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Magical Nature" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_NATURE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Perfected Design" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PERFECTED_DESIGN">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+    <element name="Golem" type="Companion" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM">
+        <requirements>ID_KTH_COLAL_ARCHETYPE_INVENTOR_GOLEMSMITHH</requirements>
+        <supports>golem-companion</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">14</set>
+            <set name="hp">5 + [(the golem’s CON modifier + 5) times your inventor level]</set>
+            <set name="speed">30ft</set>
+            <set name="strength">14</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">5</set>
+            <set name="charisma">1</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, poisoned</set>            
+            <set name="senses">passive Perception 7</set>
+            <set name="languages">languages of its creator but cant speak</set>
+            <set name="challenge">0</set>
+            <set name="traits">ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS,ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14" />
+            <stat name="companion:hp:max" value="11" bonus="base" />
+            <stat name="companion:speed" value="0" bonus="base" />
+            <stat name="companion:speed:fly" value="20" bonus="base" />
+        </rules>
+    </element>
+    <element name="Stats" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS">
+        <description>
+            <p>HP = 5 + [(the golem’s CON modifier + 5) times your inventor level]</p>
+        </description>
+        <sheet>
+            <description>HP = 5 + [(the golem’s CON modifier + 5) times your inventor level]</description>
+        </sheet>
+    </element>
+    <element name="Bound" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND">
+        <description>
+            <p>The golem is magically bound to its creator. As long as the creator and it are on the same plane of existence, the creator can telepathically call the golem to travel to it, and the golem knows the distance and direction to its creator.</p>
+        </description>
+        <sheet>
+            <description>The golem is magically bound to its creator. As long as the creator and it are on the same plane of existence, the creator can telepathically call the golem to travel to it, and the golem knows the distance and direction to its creator.</description>
+        </sheet>
+    </element>
+    <!--Golemsmith Upgrades-->
+</elements>
