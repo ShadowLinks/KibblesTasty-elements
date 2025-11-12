@@ -6,35 +6,35 @@
             <file name="inventor-golemsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-golemsmith.xml" />
         </update>
     </info>
-    <element name="Golemsmith" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_INVENTOR_GOLEMSMITH">
+    <element name="Golemsmith" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_INVENTOR_GOLEMSMITH">
         <supports>InventorSpecializations</supports>
         <description>
             <p>Golemsmiths are inventors who have committed themselves to creating a true work of artifice, forging a golem. With this painstaking life ambition, they plan and design meticulously, even if, in practice, sometimes compromises on materials must be made.</p>
             <p class="indent">Why a golemsmith embarks on the quest to forge this artificial construct of life can vary. For many it is the pure pursuit of forging the perfect creation; while for others, it is simply so they do not have to carry around their loot, or to have a loyal companion to count on at all times.</p>
             <p class="indent">A golemsmith is rarely chaotic, as they are people of great care and discipline—those that are not would not have succeeded where they have. However, some have been set on their path by such events that might drive them to interact chaotically with society as a whole.</p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PROFICIENCY" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MECHANICAL_GOLEM" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GOLEM_CHASSIS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_INTELLIGENT_OVERSIGHT" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_NATURE" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PERFECTED_DESIGN" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PROFICIENCY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MECHANICAL_GOLEM" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GOLEM_CHASSIS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_INTELLIGENT_OVERSIGHT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_NATURE" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PERFECTED_DESIGN" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PROFICIENCY" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MECHANICAL_GOLEM" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GOLEM_CHASSIS" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_INTELLIGENT_OVERSIGHT" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SPECIALIZATION_UPGRADE" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_NATURE" level="5" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PERFECTED_DESIGN" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MECHANICAL_GOLEM" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GOLEM_CHASSIS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_INTELLIGENT_OVERSIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SPECIALIZATION_UPGRADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_NATURE" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PERFECTED_DESIGN" level="14" />
         </rules>
     </element>
-    <element name="Golemsmith Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PROFICIENCY">
+    <element name="Golemsmith Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PROFICIENCY">
         <description>
             <p>When you choose this specialization at 1st level, you gain proficiency with smith’s tools and tinker’s tools.</p>
         </description>
@@ -42,11 +42,12 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+            <grant type="proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" requirements="!ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_FLESH"/>
+            <grant type="proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" requirements="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_FLESH"/>
             <grant type="proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
         </rules>
     </element>
-    <element name="Mechanical Golem" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MECHANICAL_GOLEM">
+    <element name="Mechanical Golem" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MECHANICAL_GOLEM">
         <description>
             <p>Starting at 1st level, you forge a mechanical golem to carry out your orders and protect you. The golem is under your control and understands the languages you speak, but it can’t speak.</p>
             <p class="indent">The golem obeys your commands as best it can. On your turn, you can verbally command it where to move (no action required by you), and you can use your action to command it to take an action. Additionally, whenever it would be able to take a reaction, you must use your reaction to command it to take that reaction. The golem acts on your commands during your turn. If you issue no commands to your golem, it takes no actions.</p>
@@ -75,11 +76,12 @@
             Over the course of a short rest, you can restore hit points to your golem equal to your Intelligence modifier + your inventor level, or you can fully repair it to during a long rest, causing it to regain all its hit points. Any spells you cast that cause the target to regain hit points ignore any restrictions against constructs for your golem.</description>
         </sheet>
         <rules>
-            <Select type="Companion" supports="golem-companion" />
+            <select type="Companion" name="Golem" supports="golem-companion" />
+            <select type="Archetype Feature" name="Specialized Golem Upgrades" supports="gos-specialization-upgrade" count="2" requirements="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_SPECIALIZED"/>
         </rules>
     </element>
     
-    <element name="Golem Chassis" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GOLEM_CHASSIS">
+    <element name="Golem Chassis" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GOLEM_CHASSIS">
         <description>
             <p>When you create your golem, you can choose one of the chassis below, adding the prefix to its type. For example, if you select Ironwrought, your golem becomes an Ironwrought Golem and gains the corresponding modifications to its base statistics.</p>
             <h5>Launcher</h5>
@@ -106,7 +108,7 @@
         </sheet>
     </element>
     
-    <element name="Intelligent Oversight" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_INTELLIGENT_OVERSIGHT">
+    <element name="Intelligent Oversight" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_INTELLIGENT_OVERSIGHT">
         <description>
             <p>Starting at 3rd level, you can take the Help action as a bonus action when assisting your golem.</p>
             <p class="indent">Additionally, when you take the Help action to aid an ally (including your golem) in attacking a creature, the target of that attack can be up to 30 feet away from you, rather than within 5 feet of you, if your ally can see or hear you.</p>
@@ -116,7 +118,7 @@
             Additionally, when you take the Help action to aid an ally (including your golem) in attacking a creature, the target of that attack can be up to 30 feet away from you, rather than within 5 feet of you, if your ally can see or hear you.</description>
         </sheet>
     </element>
-    <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SPECIALIZATION_UPGRADE">
+    <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SPECIALIZATION_UPGRADE">
         <description>
             <p></p>
         </description>
@@ -124,47 +126,49 @@
             <description></description>
         </sheet>
         <rules>
-            <select type="Class Feature" name="Specialization Upgrade 1" supports="gos-specialization-upgrade" level="3" />
-            <select type="Class Feature" name="Specialization Upgrade 2" supports="gos-specialization-upgrade" level="5" />
-            <select type="Class Feature" name="Specialization Upgrade 3" supports="gos-specialization-upgrade" level="7" />
-            <select type="Class Feature" name="Specialization Upgrade 4" supports="gos-specialization-upgrade" level="9" />
-            <select type="Class Feature" name="Specialization Upgrade 5" supports="gos-specialization-upgrade" level="11" />
-            <select type="Class Feature" name="Specialization Upgrade 6" supports="gos-specialization-upgrade" level="13" />
-            <select type="Class Feature" name="Specialization Upgrade 7" supports="gos-specialization-upgrade" level="15" />
-            <select type="Class Feature" name="Specialization Upgrade 8" supports="gos-specialization-upgrade" level="17" />
-            <select type="Class Feature" name="Specialization Upgrade 9" supports="gos-specialization-upgrade" level="19" />
+            <select type="Archetype Feature" name="Specialization Upgrade 1" supports="gos-specialization-upgrade,l1" level="3" />
+            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="gos-specialization-upgrade,l1||l5" level="5" />
+            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="gos-specialization-upgrade,l1||l5" level="7" />
+            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="gos-specialization-upgrade,l1||l5||l9" level="9" />
+            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="gos-specialization-upgrade,l1||l5||l9||11" level="11" />
+            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="gos-specialization-upgrade,l1||l5||l9||11" level="13" />
+            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="gos-specialization-upgrade,l1||l5||l9||11||15" level="15" />
+            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="gos-specialization-upgrade,l1||l5||l9||11||15" level="17" />
+            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="gos-specialization-upgrade,l1||l5||l9||11||15" level="19" />
         </rules>
     </element>
-    <element name="Autonomous Action" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION">
+    <element name="Autonomous Action" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION">
         <description>
-            <p></p>
+            <p>Starting at 5th level, you no longer need to spend your action or reaction to command your golem to use its action or reaction, and you can issue commands to it mentally while it is within 60 feet of you.</p>
+            <p class="indent">If the golem isn’t commanded to take any action, it will take the Dodge action in combat.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You no longer need to spend your action or reaction to command your golem to use its action or reaction, and you can issue commands to it mentally while it is within 60 feet of you.
+            If the golem isn’t commanded to take any action, it will take the Dodge action in combat.</description>
         </sheet>
     </element>
-    <element name="Magical Nature" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_NATURE">
+    <element name="Magical Nature" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_NATURE">
         <description>
-            <p></p>
+            <p>Additionally at 5th level, your golem’s natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your golem’s natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
         </sheet>
         <rules>
             
         </rules>
     </element>
-    <element name="Perfected Design" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PERFECTED_DESIGN">
+    <element name="Perfected Design" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_PERFECTED_DESIGN">
         <description>
-            <p></p>
+            <p>Starting at 14th level, your golem can add your Intelligence modifier to all of its attack rolls, ability checks, and saving throws.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>our golem can add +{{intelligence:modifier}} to all of its attack rolls, ability checks, and saving throws.</description>
         </sheet>
     </element>
 
-    <element name="Golem" type="Companion" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM">
-        <requirements>ID_KTH_COLAL_ARCHETYPE_INVENTOR_GOLEMSMITHH</requirements>
+    <element name="Golem" type="Companion" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM">
+        <requirements>ID_KTH_CCC_ARCHETYPE_INVENTOR_GOLEMSMITH</requirements>
         <supports>golem-companion</supports>
         <description>
             <p></p>
@@ -177,7 +181,7 @@
             <set name="alignment">unaligned</set>
             <set name="ac">14</set>
             <set name="hp">5 + [(the golem’s CON modifier + 5) times your inventor level]</set>
-            <set name="speed">30ft</set>
+            <set name="speed">30 ft</set>
             <set name="strength">14</set>
             <set name="dexterity">12</set>
             <set name="constitution">12</set>
@@ -189,16 +193,16 @@
             <set name="senses">passive Perception 7</set>
             <set name="languages">languages of its creator but cant speak</set>
             <set name="challenge">0</set>
-            <set name="traits">ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS,ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND</set>
+            <set name="traits">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS,ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND</set>
+            <set name="actions"></set>
         </setters>
         <rules>
             <stat name="companion:ac" value="14" />
             <stat name="companion:hp:max" value="11" bonus="base" />
-            <stat name="companion:speed" value="0" bonus="base" />
-            <stat name="companion:speed:fly" value="20" bonus="base" />
+            <stat name="companion:speed" value="30" bonus="base" />
         </rules>
     </element>
-    <element name="Stats" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS">
+    <element name="Stats" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS">
         <description>
             <p>HP = 5 + [(the golem’s CON modifier + 5) times your inventor level]</p>
         </description>
@@ -206,7 +210,7 @@
             <description>HP = 5 + [(the golem’s CON modifier + 5) times your inventor level]</description>
         </sheet>
     </element>
-    <element name="Bound" type="Companion Trait" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND">
+    <element name="Bound" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND">
         <description>
             <p>The golem is magically bound to its creator. As long as the creator and it are on the same plane of existence, the creator can telepathically call the golem to travel to it, and the golem knows the distance and direction to its creator.</p>
         </description>
@@ -214,5 +218,685 @@
             <description>The golem is magically bound to its creator. As long as the creator and it are on the same plane of existence, the creator can telepathically call the golem to travel to it, and the golem knows the distance and direction to its creator.</description>
         </sheet>
     </element>
+    <element name="Launcher Golem" type="Companion" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_LAUNCHER">
+        <requirements>ID_KTH_CCC_ARCHETYPE_INVENTOR_GOLEMSMITH</requirements>
+        <supports>golem-companion</supports>
+        <description>
+            <p>Your golem becomes akin to a mobile turret, taking the frame of a ballista or other launching device. Its Dexterity becomes 16 (+3), its speed becomes 25 feet, and it has the following natural weapon attack, which uses its Dexterity for the attack and damage rolls:</p>
+            <p class="indent">Shoot. Ranged Weapon Attack: +5 to hit, range 60/240 ft.,one target. Hit: 1d10 + 3 piercing damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">14</set>
+            <set name="hp">5 + [(the golem’s CON modifier + 5) times your inventor level]</set>
+            <set name="speed">30 ft</set>
+            <set name="strength">14</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">5</set>
+            <set name="charisma">1</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, poisoned</set>            
+            <set name="senses">passive Perception 7</set>
+            <set name="languages">languages of its creator but cant speak</set>
+            <set name="challenge">0</set>
+            <set name="traits">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS,ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND</set>
+            <set name="actions">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_LAUNCHER_SHOOT</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14" />
+            <stat name="companion:hp:max" value="11" bonus="base" />
+            <stat name="companion:speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Shoot" type="Companion Action" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_LAUNCHER_SHOOT">
+        <description>
+            <p><i>Ranged Weapon Attack:</i> +5 to hit, range 60/240 ft., one target. Hit: 1d10 + 3 piercing damage</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +5 to hit, range 60/240 ft., one target. Hit: 1d10 + 3 piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Quadrupedal Golem" type="Companion" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_QUADRUPEDAL">
+        <requirements>ID_KTH_CCC_ARCHETYPE_INVENTOR_GOLEMSMITH</requirements>
+        <supports>golem-companion</supports>
+        <description>
+            <p>Your golem takes on a quadrupedal design. Larger and sturdier, it is more suitable to launch into the fray or carry its creator. Its size becomes Large, its base AC becomes 16, and its speed becomes 35 feet. In addition, its Strength and Constitution become 16 (+3), and it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Bite.</em> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1d10 + 3 piercing damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="size">Large</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">16</set>
+            <set name="hp">5 + [(the golem’s CON modifier + 5) times your inventor level]</set>
+            <set name="speed">35 ft</set>
+            <set name="strength">16</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">5</set>
+            <set name="charisma">1</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, poisoned</set>            
+            <set name="senses">passive Perception 7</set>
+            <set name="languages">languages of its creator but cant speak</set>
+            <set name="challenge">0</set>
+            <set name="traits">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS,ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND</set>
+            <set name="actions">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_QUADRUPEDAL_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16" />
+            <stat name="companion:hp:max" value="11" bonus="base" />
+            <stat name="companion:speed" value="35" bonus="base" />
+        </rules>
+    </element>
+    <element name="Shoot" type="Companion Action" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_QUADRUPEDAL_BITE">
+        <description>
+            <p><i>Melee Weapon Attack:</i> +5 to hit, reach 5 ft., one target. Hit: 1d10 + 3 piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1d10 + 3 piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Specialized Golem" type="Companion" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_SPECIALIZED">
+        <requirements>ID_KTH_CCC_ARCHETYPE_INVENTOR_GOLEMSMITH</requirements>
+        <supports>golem-companion</supports>
+        <description>
+            <p>Your golem defies all expectations, its design fueled by your own rampant creativity. A little less robust and stable, it is far more extensible to your visionary plans. Your golem starts with the basic golem statistics, but you can select two free upgrades for it that don’t count against your upgrade total. In addition, it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Slam.</em> Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1d8 + 2 bludgeoning damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">14</set>
+            <set name="hp">5 + [(the golem’s CON modifier + 5) times your inventor level]</set>
+            <set name="speed">30 ft</set>
+            <set name="strength">14</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">5</set>
+            <set name="charisma">1</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, poisoned</set>            
+            <set name="senses">passive Perception 7</set>
+            <set name="languages">languages of its creator but cant speak</set>
+            <set name="challenge">0</set>
+            <set name="traits">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS,ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND</set>
+            <set name="actions">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_SPECIALIZED_SLAM</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14" />
+            <stat name="companion:hp:max" value="11" bonus="base" />
+            <stat name="companion:speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Slam" type="Companion Action" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_SPECIALIZED_SLAM">
+        <description>
+            <p><i>Melee Weapon Attack:</i>  +4 to hit, reach 5 ft., one target. Hit: 1d8 + 2 bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack:  +4 to hit, reach 5 ft., one target. Hit: 1d8 + 2 bludgeoning damage.</description>
+        </sheet>
+    </element>
+    <element name="Ironwrought Golem" type="Companion" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_IRONWROUGHT">
+        <requirements>ID_KTH_CCC_ARCHETYPE_INVENTOR_GOLEMSMITH</requirements>
+        <supports>golem-companion</supports>
+        <description>
+            <p>Your golem is roughly humanoid and comes with the robust flexibility and options that this form provides. Its Strength becomes 16 (+3), it gains proficiency with shields, simple weapons, and martial weapons, and it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Slam.</em> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1d4 + 3 bludgeoning damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">14</set>
+            <set name="hp">5 + [(the golem’s CON modifier + 5) times your inventor level]</set>
+            <set name="speed">30 ft</set>
+            <set name="strength">16</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">5</set>
+            <set name="charisma">1</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, poisoned</set>            
+            <set name="senses">passive Perception 7</set>
+            <set name="languages">languages of its creator but cant speak</set>
+            <set name="challenge">0</set>
+            <set name="traits">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_IRONWROUGHT_STATS,ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND</set>
+            <set name="actions">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_IRONWROUGHT_SLAM</set>
+            <set name="proficiencies">ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS,ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS,ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14" />
+            <stat name="companion:hp:max" value="11" bonus="base" />
+            <stat name="companion:speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    
+    <element name="Stats" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_IRONWROUGHT_STATS">
+        <description>
+            <p>HP = 5 + [(the golem’s CON modifier + 5) times your inventor level]</p>
+        </description>
+        <sheet>
+            <description>HP = 5 + [(the golem’s CON modifier + 5) times your inventor level]
+            Proficient with Shields, simple weapons, and martial weapons.</description>
+        </sheet>
+    </element>
+    <element name="Slam" type="Companion Action" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_IRONWROUGHT_SLAM">
+        <description>
+            <p><i>Melee Weapon Attack:</i>  +5 to hit, reach 5 ft., one target. Hit: 1d4 + 3 bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack:  +5 to hit, reach 5 ft., one target. Hit: 1d4 + 3 bludgeoning damage.</description>
+        </sheet>
+    </element>
+    <element name="Winged Golem" type="Companion" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_WINGED">
+        <requirements>ID_KTH_CCC_ARCHETYPE_INVENTOR_GOLEMSMITH</requirements>
+        <supports>golem-companion</supports>
+        <description>
+            <p>Your golem is modeled off a flying creature. Smaller and more lightweight than most golems, it is kept aloft by intricate wings. Its size becomes Small, it gains a flying speed of 30 feet, and it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Talon.</em> Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 1d8 + 2 slashing damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="size">Small</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">14</set>
+            <set name="hp">5 + [(the golem’s CON modifier + 5) times your inventor level]</set>
+            <set name="speed">30 ft, fly 30 ft.</set>
+            <set name="strength">14</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">5</set>
+            <set name="charisma">1</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, poisoned</set>            
+            <set name="senses">passive Perception 7</set>
+            <set name="languages">languages of its creator but cant speak</set>
+            <set name="challenge">0</set>
+            <set name="traits">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_STATS,ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND</set>
+            <set name="actions">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_WINGED_TALONS</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14" />
+            <stat name="companion:hp:max" value="11" bonus="base" />
+            <stat name="companion:speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    
+    <element name="Talons" type="Companion Action" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_WINGED_TALONS">
+        <description>
+            <p><i>Melee Weapon Attack:</i>  +4 to hit, reach 5ft., one target. Hit: 1d8 + 2 slashing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack:  +4 to hit, reach 5ft., one target. Hit: 1d8 + 2 slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Flesh Golem" type="Companion" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_FLESH">
+        <requirements>ID_KTH_CCC_ARCHETYPE_INVENTOR_GOLEMSMITH</requirements>
+        <supports>golem-companion</supports>
+        <description>
+            <p>When a golemsmith is selecting their golem, some disturbed minds think “but what if I want it be a fleshy monstrosity against sanity?” Well, as usual, the inventor is here for you:</p>
+            <p class="indent">Your golem is roughly humanoid, a lumbering terror of stitched flesh with an odd smell. Its Strength becomes 16 (+3), it gains proficiency with shields, simple weapons, and martial weapons, and it has the following natural weapon attack, which uses its Strength for the attack and damage rolls:</p>
+            <p class="indent"><em>Slam.</em> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1d4 + 3 bludgeoning damage.</p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">14</set>
+            <set name="hp">5 + [(the golem’s CON modifier + 5) times your inventor level]</set>
+            <set name="speed">30 ft</set>
+            <set name="strength">16</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">5</set>
+            <set name="charisma">1</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, poisoned</set>            
+            <set name="senses">passive Perception 7</set>
+            <set name="languages">languages of its creator but cant speak</set>
+            <set name="challenge">0</set>
+            <set name="traits">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_IRONWROUGHT_STATS,ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_BOUND</set>
+            <set name="actions">ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_FLESH_SLAM</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14" />
+            <stat name="companion:hp:max" value="11" bonus="base" />
+            <stat name="companion:speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Slam" type="Companion Action" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_FLESH_SLAM">
+        <description>
+            <p><i>Melee Weapon Attack:</i>  +5 to hit, reach 5ft., one target. Hit: 1d4 + 3 bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack:  +5 to hit, reach 5ft., one target. Hit: 1d4 + 3 bludgeoning damage.</description>
+        </sheet>
+    </element>
     <!--Golemsmith Upgrades-->
+    <element name="Arcane Barrage Armament" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ARCANE_BARRAGE_ARMAMENT">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You install a mounted armament on your golem, taking whatever form is most appropriate, which is charged with arcane power. As an action, the golem can cast magic missile through the armament, without expending a spell slot and requiring no components.</p>
+            <p class="indent">Once the golem casts the spell in this way, it can’t do so again until you finish a short or long rest.</p>
+            <p class="indent">When you reach 5th level in this class, the spell is cast as a 2nd-level spell, and it increases again when you reach 11th level (as a 3rd-level spell) and 17th level (as a 4th-level spell).</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, the golem can cast magic missile through the armament, without expending a spell slot and requiring no components.</description>
+            <description level="5">As an action, the golem can cast magic missile at 2nd level through the armament, without expending a spell slot and requiring no components.</description>
+            <description level="11">As an action, the golem can cast magic missile at 3rd level through the armament, without expending a spell slot and requiring no components.</description>
+            <description level="17">As an action, the golem can cast magic missile at 4th level through the armament, without expending a spell slot and requiring no components.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Resonance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ARCANE_RESONANCE">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You craft a magical essence connector and install it into your golem’s core, allowing you and the golem to share certain magical effects. You can make any spell you cast that targets only you also target your golem.</p>
+        </description>
+        <sheet>
+            <description>You can make any spell you cast that targets only you also target your golem.</description>
+        </sheet>
+    </element>
+    <element name="Defender Protocol" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_DEFENDER_PROTOCOL">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You build a protocol into your golem, instructing it to defend its master. The golem gains the Protection Fighting Style.</p>
+        </description>
+        <sheet>
+            <description>The golem gains the Protection Fighting Style.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id=id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION" />
+        </rules>
+    </element>
+    <element name="Ether Heart" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ETHER_HEART">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You install a magical ether heart into your golem, because that seems like a good idea. Your golem gains 2 charges. It can expend 1 charge to cast any 1st-level spell you know, and it regains all expended charges when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>Your golem gains 2 charges. It can expend 1 charge to cast any 1st-level spell you know, and it regains all expended charges when you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Flamethrower Armament" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_FLAMETHROWER_ARMAMENT">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You install an armament to your golem, taking whatever form is most appropriate, which is capable of producing powerful flames. As an action, the golem can cast burning hands through the armament, without expending a spell slot and requiring no components. The spell save DC is equal to your spell save DC. Once the golem casts the spell in this way, it can’t do so again until you finish a short or long rest.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, the golem can cast burning hands through the armament, without expending a spell slot and requiring no components. The spell save DC is equal to your spell save DC.</description>
+            <description level="5">As an action, the golem can cast burning hands at 2nd level through the armament, without expending a spell slot and requiring no components. The spell save DC is equal to your spell save DC.</description>
+            <description level="11">As an action, the golem can cast burning hands at 3rd level through the armament, without expending a spell slot and requiring no components. The spell save DC is equal to your spell save DC.</description>
+            <description level="17">As an action, the golem can cast burning hands at 4th level through the armament, without expending a spell slot and requiring no components. The spell save DC is equal to your spell save DC.</description>
+       </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+        </rules>
+    </element>
+    <element name="Fine-Tuned Dexterity" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_FINE_TUNED_DEXTERITY">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You craft improved gears and joints for your golem. Your golem’s Dexterity score increases by 2, increasing its ability to perform tasks that require fine motor skills. If this upgrade increases the golem’s Dexterity to 16 or higher, it gains proficiency with thieves’ tools; if this upgrade increases its Dexterity to 18, it gains proficiency in the Stealth skill.</p>
+            <p class="indent">When you reach 5th level in this class, the spell is cast as a 2nd-level spell, and it increases again when you reach 11th level (as a 3rd-level spell) and 17th level (as a 4th-level spell).</p>
+        </description>
+        <sheet>
+            <description>Your golem’s Dexterity score increases by 2, increasing its ability to perform tasks that require fine motor skills. At 16 DEX it gains proficiency with thieves’ tools; at 18 DEX (which this upgrade caps at), it gains proficiency in the Stealth skill.</description>
+        </sheet>
+    </element>
+    <element name="Fine-Tuned Dexterity 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_FINE_TUNED_DEXTERITY_2">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_FINE_TUNED_DEXTERITY</requirements>
+        <description>
+            <p>You craft improved gears and joints for your golem. Your golem’s Dexterity score increases by 2, increasing its ability to perform tasks that require fine motor skills. If this upgrade increases the golem’s Dexterity to 16 or higher, it gains proficiency with thieves’ tools; if this upgrade increases its Dexterity to 18, it gains proficiency in the Stealth skill.</p>
+            <p class="indent">When you reach 5th level in this class, the spell is cast as a 2nd-level spell, and it increases again when you reach 11th level (as a 3rd-level spell) and 17th level (as a 4th-level spell).</p>
+        </description>
+        <sheet>
+        </sheet>
+    </element>
+    <element name="Fine-Tuned Dexterity 3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_FINE_TUNED_DEXTERITY_3">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_FINE_TUNED_DEXTERITY_2</requirements>
+        <description>
+            <p>You craft improved gears and joints for your golem. Your golem’s Dexterity score increases by 2, increasing its ability to perform tasks that require fine motor skills. If this upgrade increases the golem’s Dexterity to 16 or higher, it gains proficiency with thieves’ tools; if this upgrade increases its Dexterity to 18, it gains proficiency in the Stealth skill.</p>
+            <p class="indent">When you reach 5th level in this class, the spell is cast as a 2nd-level spell, and it increases again when you reach 11th level (as a 3rd-level spell) and 17th level (as a 4th-level spell).</p>
+        </description>
+        <sheet>
+        </sheet>
+    </element>
+    <element name="Fine-Tuned Dexterity 3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_FINE_TUNED_DEXTERITY_4">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_FINE_TUNED_DEXTERITY_3</requirements>
+        <description>
+            <p>You craft improved gears and joints for your golem. Your golem’s Dexterity score increases by 2, increasing its ability to perform tasks that require fine motor skills. If this upgrade increases the golem’s Dexterity to 16 or higher, it gains proficiency with thieves’ tools; if this upgrade increases its Dexterity to 18, it gains proficiency in the Stealth skill.</p>
+            <p class="indent">When you reach 5th level in this class, the spell is cast as a 2nd-level spell, and it increases again when you reach 11th level (as a 3rd-level spell) and 17th level (as a 4th-level spell).</p>
+        </description>
+        <sheet>
+        </sheet>
+    </element>
+    <element name="Grappling Appendages" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GRAPPLING_APPENDAGES">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You install an additional pair of grappling appendages to your golem, which take a form of your choice. For the purpose of grappling, these appendages count as two additional free hands for your golem. Additionally, as long as your golem isn’t using these appendages to grapple, it has a climbing speed equal to its walking speed.</p>
+        </description>
+        <sheet>
+            <description>You install an additional pair of grappling appendages to your golem, which take a form of your choice. For the purpose of grappling, these appendages count as two additional free hands for your golem. Additionally, as long as your golem isn’t using these appendages to grapple, it has a climbing speed equal to its walking speed.</description>
+        </sheet>
+    </element>
+    <element name="Heavy Armor Plating" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_HEAVY_ARMOR_PLATING">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You can incorporate a suit of heavy armor into your golem, allowing it to calculate its armor class as if it was wearing that armor. Your golem is proficient with the incorporated armor, and it has disadvantage on Dexterity (Stealth) checks until the armor is removed. You can remove the incorporated armor or incorporate a new suit of armor at any time, but it takes twice as long as it would normally take to don or doff the armor.</p>
+        </description>
+        <sheet>
+            <description>You can incorporate a suit of heavy armor into your golem, allowing it to calculate its armor class as if it was wearing that armor. Your golem is proficient with the incorporated armor, and it has disadvantage on Dexterity (Stealth) checks until the armor is removed. You can remove the incorporated armor or incorporate a new suit of armor at any time, but it takes twice as long as it would normally take to don or doff the armor.</description>
+        </sheet>
+    </element>
+    <element name="Magical Essence" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MAGICAL_ESSENCE">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You infuse a fragment of magical essence into your golem, allowing it to attune to one magic item. This follows all normal attunement rules.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Structural Constitution" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_STRUCTURAL_CONSTITUTION">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You have reinforced your golem with layers of protection and redundant systems. Your golem’s Constitution score increases by 2, increasing its stability and durability. If this upgrade increases the golem’s Constitution to 16 or higher, it gains proficiency in Constitution saving throws; if this upgrade increases its Constitution to 18, it has advantage on death saving throws.</p>
+            <p class="indent">You can select this upgrade multiple times, but you can’t increase the golem’s Constitution above 18 using this upgrade.</p>
+        </description>
+        <sheet>
+            <description>Your golem’s Constitution score increases by 2, increasing its stability and durability. CON 16 or higher, it gains proficiency in Constitution saving throws; CON 18 (which this upgrade caps at), it has advantage on death saving throws.</description>
+        </sheet>
+    </element>
+    <element name="Structural Constitution 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_STRUCTURAL_CONSTITUTION_2">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_STRUCTURAL_CONSTITUTION</requirements>
+        <description>
+            <p>You have reinforced your golem with layers of protection and redundant systems. Your golem’s Constitution score increases by 2, increasing its stability and durability. If this upgrade increases the golem’s Constitution to 16 or higher, it gains proficiency in Constitution saving throws; if this upgrade increases its Constitution to 18, it has advantage on death saving throws.</p>
+            <p class="indent">You can select this upgrade multiple times, but you can’t increase the golem’s Constitution above 18 using this upgrade.</p>
+        </description>
+        <sheet>
+        </sheet>
+    </element>
+    <element name="Structural Constitution 3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_STRUCTURAL_CONSTITUTION_3">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_STRUCTURAL_CONSTITUTION_2</requirements>
+        <description>
+            <p>You have reinforced your golem with layers of protection and redundant systems. Your golem’s Constitution score increases by 2, increasing its stability and durability. If this upgrade increases the golem’s Constitution to 16 or higher, it gains proficiency in Constitution saving throws; if this upgrade increases its Constitution to 18, it has advantage on death saving throws.</p>
+            <p class="indent">You can select this upgrade multiple times, but you can’t increase the golem’s Constitution above 18 using this upgrade.</p>
+        </description>
+        <sheet>
+        </sheet>
+    </element>
+    <element name="Structural Constitution 4" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_STRUCTURAL_CONSTITUTION_4">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_STRUCTURAL_CONSTITUTION_3</requirements>
+        <description>
+            <p>You have reinforced your golem with layers of protection and redundant systems. Your golem’s Constitution score increases by 2, increasing its stability and durability. If this upgrade increases the golem’s Constitution to 16 or higher, it gains proficiency in Constitution saving throws; if this upgrade increases its Constitution to 18, it has advantage on death saving throws.</p>
+            <p class="indent">You can select this upgrade multiple times, but you can’t increase the golem’s Constitution above 18 using this upgrade.</p>
+        </description>
+        <sheet>
+        </sheet>
+    </element>
+    <element name="Systematic Strength" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SYSTEMATIC_STRENGTH">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You build an improved frame and power source for your golem. Your golem’s Strength score increases by 2, increasing its ability to perform tasks that require raw strength. If this upgrade increases the golem’s Strength to 16 or higher, it gains proficiency in Strength saving throws; if this upgrade increases its Strength to 18, it gains proficiency in the Athletics skill.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description>Your golem’s Strength score increases by 2, increasing its ability to perform tasks that require raw strength. If this upgrade increases the golem’s Strength to 16 or higher, it gains proficiency in Strength saving throws; At STR 18 (which this upgrade caps at), it gains proficiency in the Athletics skill</description>
+        </sheet>
+    </element>
+    <element name="Systematic Strength 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SYSTEMATIC_STRENGTH_2">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SYSTEMATIC_STRENGTH</requirements>
+        <description>
+            <p>You build an improved frame and power source for your golem. Your golem’s Strength score increases by 2, increasing its ability to perform tasks that require raw strength. If this upgrade increases the golem’s Strength to 16 or higher, it gains proficiency in Strength saving throws; if this upgrade increases its Strength to 18, it gains proficiency in the Athletics skill.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+        </sheet>
+    </element>
+    <element name="Systematic Strength 3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SYSTEMATIC_STRENGTH_3">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SYSTEMATIC_STRENGTH_2</requirements>
+        <description>
+            <p>You build an improved frame and power source for your golem. Your golem’s Strength score increases by 2, increasing its ability to perform tasks that require raw strength. If this upgrade increases the golem’s Strength to 16 or higher, it gains proficiency in Strength saving throws; if this upgrade increases its Strength to 18, it gains proficiency in the Athletics skill.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+        </sheet>
+    </element>
+    <element name="Systematic Strength 4" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SYSTEMATIC_STRENGTH_4">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SYSTEMATIC_STRENGTH_3</requirements>
+        <description>
+            <p>You build an improved frame and power source for your golem. Your golem’s Strength score increases by 2, increasing its ability to perform tasks that require raw strength. If this upgrade increases the golem’s Strength to 16 or higher, it gains proficiency in Strength saving throws; if this upgrade increases its Strength to 18, it gains proficiency in the Athletics skill.</p>
+            <p class="indent">You can select this upgrade multiple times, but you can’t increase the golem’s Strength above 18 using this upgrade.</p>
+        </description>
+        <sheet>
+        </sheet>
+    </element>
+    <element name="Warfare Routines" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_WARFARE_ROUTINES">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <description>
+            <p>You advance the control routines for your golem, allowing it to fight more effectively. Your golem gains one of the following Fighting Styles of your choice: Archery, Dueling, or Great Weapon Fighting.</p>
+        </description>
+        <sheet>
+            <description>Your golem gains one of the following Fighting Styles of your choice: Archery, Dueling, or Great Weapon Fighting.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Golem Fighting Style (Warfare Routines)" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY,ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING,ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING" />
+        </rules>
+    </element>
+    <!-- 5th level upgrades-->
+    <element name="Cloaking Device" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_CLOAKING_DEVICE">
+        <supports>gos-specialization-upgrade,l5</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Expanded Frame" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_EXPANDED_FRAME">
+        <supports>gos-specialization-upgrade,l5</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Reciprocity Programming" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_RECIPROCITY_PROGRAMMING">
+        <supports>gos-specialization-upgrade,l5</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Iron Fortress" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_IRON_FORTRESS">
+        <supports>gos-specialization-upgrade,l5</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Shielding Bond" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SHIELDING_BOND">
+        <supports>gos-specialization-upgrade,l5</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <!--9th level upgrades-->
+    <element name="Mark of Sapience" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MARK_OF_SAPIENCE">
+        <supports>gos-specialization-upgrade,l9</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Overdrive" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_OVERDRIVE">
+        <supports>gos-specialization-upgrade,l9</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Powered Charge" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_POWERED_CHARGE">
+        <supports>gos-specialization-upgrade,l9</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <!--11th level upgrades-->
+    <element name="Airborne Propulsion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AIRBORNE_PROPULSION">
+        <supports>gos-specialization-upgrade,l11</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Multiattack Protocol" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MULTIATTACK_PROTOCOL">
+        <supports>gos-specialization-upgrade,l11</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Thundering Stomp" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_THUNDERING_STOMP">
+        <supports>gos-specialization-upgrade,l11</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Transforming Golem" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_TRANSFORMING_GOLEM">
+        <supports>gos-specialization-upgrade,l11</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <!--15th level upgrades-->
+    <element name="Artificial Learning" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ARTIFICIAL_LEARNING">
+        <supports>gos-specialization-upgrade,l15</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Brutal Armaments" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_BRUTAL_ARMAMENTS">
+        <supports>gos-specialization-upgrade,l15</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Shared Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SHARED_POWER">
+        <supports>gos-specialization-upgrade,l15</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Titan Slayer" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_TITAN_SLAYER">
+        <supports>gos-specialization-upgrade,l15</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    
+    
 </elements>
+
+<!--
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GADGETNAME">
+        <supports>gos-specialization-upgrade,l15</supports>
+        <requirements></requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    -->
