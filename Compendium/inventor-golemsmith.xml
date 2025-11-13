@@ -127,14 +127,14 @@
         </sheet>
         <rules>
             <select type="Archetype Feature" name="Specialization Upgrade 1" supports="gos-specialization-upgrade,l1" level="3" />
-            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="gos-specialization-upgrade,l1||l5" level="5" />
-            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="gos-specialization-upgrade,l1||l5" level="7" />
-            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="gos-specialization-upgrade,l1||l5||l9" level="9" />
-            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="gos-specialization-upgrade,l1||l5||l9||11" level="11" />
-            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="gos-specialization-upgrade,l1||l5||l9||11" level="13" />
-            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="gos-specialization-upgrade,l1||l5||l9||11||15" level="15" />
-            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="gos-specialization-upgrade,l1||l5||l9||11||15" level="17" />
-            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="gos-specialization-upgrade,l1||l5||l9||11||15" level="19" />
+            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="gos-specialization-upgrade,(l1||l5)" level="5" />
+            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="gos-specialization-upgrade,(l1||l5)" level="7" />
+            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="gos-specialization-upgrade,(l1||l5||l9)" level="9" />
+            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="gos-specialization-upgrade,(l1||l5||l9||l11)" level="11" />
+            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="gos-specialization-upgrade,(l1||l5||l9||l11)" level="13" />
+            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="gos-specialization-upgrade,(l1||l5||l9||l11||l15)" level="15" />
+            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="gos-specialization-upgrade,(l1||l5||l9||l11||l15)" level="17" />
+            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="gos-specialization-upgrade,(l1||l5||l9||l11||l15)" level="19" />
         </rules>
     </element>
     <element name="Autonomous Action" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AUTONOMOUS_ACTION">
@@ -524,7 +524,7 @@
             <description>The golem gains the Protection Fighting Style.</description>
         </sheet>
         <rules>
-            <grant type="Class Feature" id=id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION" />
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION" />
         </rules>
     </element>
     <element name="Ether Heart" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ETHER_HEART">
@@ -723,166 +723,291 @@
     <!-- 5th level upgrades-->
     <element name="Cloaking Device" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_CLOAKING_DEVICE">
         <supports>gos-specialization-upgrade,l5</supports>
-        <requirements></requirements>
+        <requirements>[level:5]</requirements>
         <description>
-            <p></p>
+            <p>You install an arcane cloaking device on your golem. Your golem can use this device to cast invisibility on itself, without expending a spell slot or requiring components.</p>
+            <p class="indent">Once the golem casts the spell in this way, it can’t do so again until you finish a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>Your golem can use this device to cast invisibility on itself, without expending a spell slot or requiring components.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" />
+        </rules>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
     </element>
     <element name="Expanded Frame" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_EXPANDED_FRAME">
         <supports>gos-specialization-upgrade,l5</supports>
-        <requirements></requirements>
+        <requirements>[level:5]</requirements>
         <description>
-            <p></p>
+            <p>You enlarge your golem, increasing its size by one category, up to a maximum of Large. If your golem is Large after taking this upgrade, it gains advantage on Strength checks and Strength saving throws, and its hit point maximum increases to 5 + [(the golem’s Constitution modifier + 6) times your inventor level].</p>
+            <p class="indent">During the process, you can determine if your golem will have the appropriate anatomy to serve as a mount. You can select this upgrade multiple times, but you can’t increase the golem’s size above Large using this upgrade</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your golem's size increases by one category, up to a maximum of Large. At Large size it gains advantage on Strength checks and Strength saving throws, and its hit point maximum increases to 5 + [(the golem’s CON + 6) times {{level:inventor}}.</description>
         </sheet>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
     </element>
-    <element name="Reciprocity Programming" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_RECIPROCITY_PROGRAMMING">
+    
+    <element name="Expanded Frame 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_EXPANDED_FRAME_2">
         <supports>gos-specialization-upgrade,l5</supports>
-        <requirements></requirements>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_EXPANDED_FRAME,ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_WINGED</requirements>
         <description>
-            <p></p>
+            <p>You enlarge your golem, increasing its size by one category, up to a maximum of Large. If your golem is Large after taking this upgrade, it gains advantage on Strength checks and Strength saving throws, and its hit point maximum increases to 5 + [(the golem’s Constitution modifier + 6) times your inventor level].</p>
+            <p class="indent">During the process, you can determine if your golem will have the appropriate anatomy to serve as a mount. You can select this upgrade multiple times, but you can’t increase the golem’s size above Large using this upgrade</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your golem's size increases by one category, up to a maximum of Large. At Large size it gains advantage on Strength checks and Strength saving throws, and its hit point maximum increases to 5 + [(the golem’s CON + 6) times {{level:inventor}}.</description>
         </sheet>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
     </element>
     <element name="Iron Fortress" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_IRON_FORTRESS">
         <supports>gos-specialization-upgrade,l5</supports>
-        <requirements></requirements>
+        <requirements>[level:5]</requirements>
         <description>
-            <p></p>
+            <p>You extend your golem’s shielding and stationary stability. Your golem now counts as three-quarters cover for creatures riding it or for creatures within 5 feet of it (as long as it is between the target and the attacker). Additionally, while your golem is on the ground, it can’t be moved against its will.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your golem now counts as three-quarters cover for creatures riding it or for creatures within 5 feet of it (as long as it is between the target and the attacker). Additionally, while your golem is on the ground, it can’t be moved against its will.</description>
         </sheet>
+        <setters>
+            <set name="short">level 5, Prerequisite: medium+ golem with a Constitution of 18 or higher</set>
+        </setters>
+    </element>
+    <element name="Reciprocity Programming" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_RECIPROCITY_PROGRAMMING">
+        <supports>gos-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <description>
+            <p>If you use your bonus action to take the Help action to grant your golem advantage on an attack against a creature, your golem can take the Help action as a bonus action on its next turn to grant you advantage on an attack against a creature.</p>
+        </description>
+        <sheet>
+            <description>If you use your bonus action to take the Help action to grant your golem advantage on an attack against a creature, your golem can take the Help action as a bonus action on its next turn to grant you advantage on an attack against a creature.</description>
+        </sheet>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
     </element>
     <element name="Shielding Bond" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SHIELDING_BOND">
         <supports>gos-specialization-upgrade,l5</supports>
-        <requirements></requirements>
+        <requirements>[level:5]</requirements>
         <description>
-            <p></p>
+            <p>After studying the arcane fundamentals of Shield Golems, you have gained insight on how they shield their controllers, and can implement it in your own golem. Your golem gains the ability to cast warding bond without expending a spell slot. When cast in this method, it doesn’t require material components.</p>
+            <p class="indent">Once the golem casts warding bond in this way, it can’t use this feature to cast it again until it finishes a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>Your golem gains the ability to cast warding bond without expending a spell slot. When cast in this method, it doesn’t require material components.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" />
+        </rules>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
     </element>
     <!--9th level upgrades-->
     <element name="Mark of Sapience" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MARK_OF_SAPIENCE">
         <supports>gos-specialization-upgrade,l9</supports>
-        <requirements></requirements>
+        <requirements>ID_KTH_CCC_COMPANION_INVENTOR_GOLEMSMITHH_GOLEM_LAUNCHER,[level:9]</requirements>
         <description>
-            <p></p>
+            <p>You have attained the understanding of magic to craft a Mark of Sapience on the forehead of your Mechanical Golem, turning it into a Golem Companion. Its mental ability scores increase, granting it an Intelligence of 10, a Wisdom of 10, and a Charisma of 8. This allows it speak, remember things, and follow more complex commands without direct input. Additionallly, it gains proficiency in Intelligence and Wisdom saving throws.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have attained the understan ing of magic to craft a Mark of Sapience on the forehead of your Mechanical Golem, turning it into a Golem Companion. Its mental ability scores increase, granting it an Intelligence of 10, a Wisdom of 10, and a Charisma of 8. This allows it speak, remember things, and follow more complex commands without direct input. Additionallly, it gains proficiency in Intelligence and Wisdom saving throws.</description>
         </sheet>
+        <setters>
+            <set name="short">level 9, Prerequisite: Launcher Golem</set>
+        </setters>
     </element>
     <element name="Overdrive" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_OVERDRIVE">
         <supports>gos-specialization-upgrade,l9</supports>
-        <requirements></requirements>
+        <requirements>[level:9]</requirements>
         <description>
-            <p></p>
+            <p>You build in a special mode that allows your golem to push beyond its limitations. As an action, you can overcharge your golem with energy, granting it the effects of the <i>haste</i> spell for a number of rounds equal to your Intelligence modifier. Once you overcharge your golem in this way, you can’t do so again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">             
+            <description>As an action, you can overcharge your golem with energy, granting it the effects of the haste spell for {{intelligence:modifier}} rounds. Once you overcharge your golem in this way, you can’t do so again until you finish a long rest.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" />
+        </rules>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
     </element>
     <element name="Powered Charge" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_POWERED_CHARGE">
         <supports>gos-specialization-upgrade,l9</supports>
-        <requirements></requirements>
+        <requirements>[level:9]</requirements>
         <description>
-            <p></p>
+            <p>You improve your golem’s charging capabilities, increasing its walking speed by 5 feet. If your golem has a walking speed of 40 feet or higher after taking this upgrade, it gains the Forceful Slam trait below. You can select this upgrade up to two times.</p>
+            <p class="indent"><em>Forceful Slam.</em>  If the golem moves at least 20 feet straight toward a target and then immediately hits it with a melee attack, the target must succeed on a Strength saving throw (DC 8 + the golem’s proficiency bonus + its Strength modifier) or be knocked prone.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You improve your golem’s charging capabilities, increasing its walking speed by 5 feet. If your golem has a walking speed of 40 feet or higher after taking this upgrade, it gains the Forceful Slam trait below. You can select this upgrade up to two times.
+            <em>Forceful Slam.</em>  If the golem moves at least 20 feet straight toward a target and then immediately hits it with a melee attack, the target must succeed on a Strength saving throw (DC 8 + the golem’s proficiency bonus + its Strength modifier) or be knocked prone.</description>
         </sheet>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+    </element>
+    <element name="Powered Charge 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_POWERED_CHARGE_2">
+        <supports>gos-specialization-upgrade,l9</supports>
+        <requirements>[level:9],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_POWERED_CHARGE</requirements>
+        <description>
+            <p>You improve your golem’s charging capabilities, increasing its walking speed by 5 feet. If your golem has a walking speed of 40 feet or higher after taking this upgrade, it gains the Forceful Slam trait below. You can select this upgrade up to two times.</p>
+            <p class="indent"><em>Forceful Slam.</em>  If the golem moves at least 20 feet straight toward a target and then immediately hits it with a melee attack, the target must succeed on a Strength saving throw (DC 8 + the golem’s proficiency bonus + its Strength modifier) or be knocked prone.</p>
+        </description>
+        <sheet>
+            <description>You improve your golem’s charging capabilities, increasing its walking speed by 5 feet.</description>
+            
+        </sheet>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
     </element>
     <!--11th level upgrades-->
     <element name="Airborne Propulsion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_AIRBORNE_PROPULSION">
         <supports>gos-specialization-upgrade,l11</supports>
-        <requirements></requirements>
+        <requirements>[level:11]</requirements>
         <description>
-            <p></p>
+            <p>You add a new method of propulsion to your golem, such as intricate mechanical wings or propellers. It gains a flying speed of 30 feet.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The golem gains a flying speed of 30 feet.</description>
         </sheet>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
     </element>
     <element name="Multiattack Protocol" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MULTIATTACK_PROTOCOL">
         <supports>gos-specialization-upgrade,l11</supports>
-        <requirements></requirements>
+        <requirements>[level:11]</requirements>
         <description>
-            <p></p>
+            <p>Your golem can attack twice, instead of once, whenever it takes the Attack action on its turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your golem can attack twice, instead of once, whenever it takes the Attack action on its turn.</description>
         </sheet>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
     </element>
     <element name="Thundering Stomp" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_THUNDERING_STOMP">
         <supports>gos-specialization-upgrade,l11</supports>
-        <requirements></requirements>
+        <requirements>[level:11]</requirements>
         <description>
-            <p></p>
+            <p>Your golem can leverage its increased size and magical nature, allowing it to replace any attack it makes as part of the Attack action with a crushing stomp of magical energy as it brings down its foot. When it does so, each creature within 5 feet of the golem, other than itself, must succeed on a Constitution saving throw against your spell save DC or take 1d6 thunder damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your golem can leverage its increased size and magical nature, allowing it to replace any attack it makes as part of the Attack action with a crushing stomp of magical energy as it brings down its foot. When it does so, each creature within 5 feet of the golem, other than itself, must succeed on a Constitution saving throw against your spell save DC or take 1d6 thunder damage.</description>
         </sheet>
+        <setters>
+            <set name="short">level 11, Prerequisite: Golem of Large size</set>
+        </setters>
     </element>
     <element name="Transforming Golem" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_TRANSFORMING_GOLEM">
         <supports>gos-specialization-upgrade,l11</supports>
-        <requirements></requirements>
+        <requirements>[level:11]</requirements>
         <description>
-            <p></p>
+            <p>You install clever, multifunctional components into your golem, allowing it to reduce its size. Your golem can collapse itself down, decreasing its size by one category—from Medium to Small, for example. While collapsed in this way, its speed is reduced by 10 feet. It takes 1 minute for your golem to collapse itself or revert to its normal size.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your golem can collapse itself down, decreasing its size by one category. While collapsed in this way, its speed is reduced by 10 feet. It takes 1 minute for your golem to collapse itself or revert to its normal size.</description>
         </sheet>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
     </element>
     <!--15th level upgrades-->
     <element name="Artificial Learning" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ARTIFICIAL_LEARNING">
         <supports>gos-specialization-upgrade,l15</supports>
-        <requirements></requirements>
+        <requirements>[level:15],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MARK_OF_SAPIENCE</requirements>
         <description>
-            <p></p>
+            <p>Your Golem Companion begins to apply its abilities to learn new things, gaining one level in a class of your choice. Your Golem Companion gains all the 1st-level features of the chosen class. This doesn’t include hit points, Hit Dice, or class proficiencies. For example, choosing the Fighter class grants the golem the Fighting Style and Second Wind features, but nothing else.</p>
+            <p class="indent">You can select this upgrade multiple times, granting your golem another level of features from the same class or the 1st-level features from another class each time it is selected.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your Golem Companion begins to apply its abilities to learn new things, gaining one level in a class of your choice. Your Golem Companion gains all the 1st-level features of the chosen class. (excludeshit points, Hit Dice, or class proficiencies.)</description>
         </sheet>
+        <setters>
+            <set name="short">level 15, Prerequisite: Mark of Sapience</set>
+        </setters>
+    </element>
+    <element name="Artificial Learning 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ARTIFICIAL_LEARNING_2">
+        <supports>gos-specialization-upgrade,l15</supports>
+        <requirements>[level:15],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MARK_OF_SAPIENCE,ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ARTIFICIAL_LEARNING</requirements>
+        <description>
+            <p>Your Golem Companion begins to apply its abilities to learn new things, gaining one level in a class of your choice. Your Golem Companion gains all the 1st-level features of the chosen class. This doesn’t include hit points, Hit Dice, or class proficiencies. For example, choosing the Fighter class grants the golem the Fighting Style and Second Wind features, but nothing else.</p>
+            <p class="indent">You can select this upgrade multiple times, granting your golem another level of features from the same class or the 1st-level features from another class each time it is selected.</p>
+        </description>
+        <sheet>
+            <description>Your Golem Companion begins to apply its abilities to learn new things, gaining one level in a class of your choice. Your Golem Companion gains all the 1st-level features of the chosen class. (excludeshit points, Hit Dice, or class proficiencies.)</description>
+        </sheet>
+        <setters>
+            <set name="short">level 15, Prerequisite: Mark of Sapience</set>
+        </setters>
+    </element>
+    <element name="Artificial Learning 3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ARTIFICIAL_LEARNING_3">
+        <supports>gos-specialization-upgrade,l15</supports>
+        <requirements>[level:15],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_MARK_OF_SAPIENCE,ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_ARTIFICIAL_LEARNING_2</requirements>
+        <description>
+            <p>Your Golem Companion begins to apply its abilities to learn new things, gaining one level in a class of your choice. Your Golem Companion gains all the 1st-level features of the chosen class. This doesn’t include hit points, Hit Dice, or class proficiencies. For example, choosing the Fighter class grants the golem the Fighting Style and Second Wind features, but nothing else.</p>
+            <p class="indent">You can select this upgrade multiple times, granting your golem another level of features from the same class or the 1st-level features from another class each time it is selected.</p>
+        </description>
+        <sheet>
+            <description>Your Golem Companion begins to apply its abilities to learn new things, gaining one level in a class of your choice. Your Golem Companion gains all the 1st-level features of the chosen class. (excludeshit points, Hit Dice, or class proficiencies.)</description>
+        </sheet>
+        <setters>
+            <set name="short">level 15, Prerequisite: Mark of Sapience</set>
+        </setters>
     </element>
     <element name="Brutal Armaments" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_BRUTAL_ARMAMENTS">
         <supports>gos-specialization-upgrade,l15</supports>
-        <requirements></requirements>
+        <requirements>[level:15]</requirements>
         <description>
-            <p></p>
+            <p>You increase the effectiveness of your golem’s natural weapons, allowing it to attack with lethal strikes. When your golem makes an attack, you can choose to subtract its proficiency from the attack roll. If you do so, and the attack hits, you can add double its proficiency bonus to the damage roll of the attack.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You increase the effectiveness of your golem’s natural weapons, allowing it to attack with lethal strikes. When your golem makes an attack, you can choose to subtract its proficiency from the attack roll. If you do so, and the attack hits, you can add double its proficiency bonus to the damage roll of the attack.</description>
         </sheet>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
     </element>
     <element name="Shared Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SHARED_POWER">
         <supports>gos-specialization-upgrade,l15</supports>
-        <requirements></requirements>
+        <requirements>[level:15]</requirements>
         <description>
-            <p></p>
+            <p>You bind your golem’s power source to your own soul, allowing you to tap its power and it to tap your power. Your golem can use its action and expend one of your spell slots to cast a spell you know of the slot’s level or lower.</p>
+            <p class="indent">In addition, you can use your action to cause your golem to lose a number of hit points up to twice your inventor level, granting you a number of temporary hit points equal to that amount.</p>
+            <p class="indent">Finally, on your turn, you can forgo your action to grant your golem an additional action, or you can command your golem to forgo its action, granting yourself an additional action. That action can only be used to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your golem can use its action and expend one of your spell slots to cast a spell you know of the slot’s level or lower.
+            In addition, you can use your action to cause your golem to lose a number of hit points up to twice your inventor level, granting you a number of temporary hit points equal to that amount.
+            Finally, on your turn, you can forgo your action to grant your golem an additional action, or you can command your golem to forgo its action, granting yourself an additional action. That action can only be used to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</description>
         </sheet>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
     </element>
     <element name="Titan Slayer" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_TITAN_SLAYER">
         <supports>gos-specialization-upgrade,l15</supports>
-        <requirements></requirements>
+        <requirements>[level:15]</requirements>
         <description>
-            <p></p>
+            <p>You build into your golem one oversized weapon. This weapon can be a martial melee weapon or an improved version of any natural weapon the golem has. The weapon’s base damage dice are doubled—from 1d8 to 2d8, for example. The golem can only attack with this oversized weapon once per turn (making any additional attacks it can make using other weapons).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You build into your golem one oversized weapon. This weapon can be a martial melee weapon or an improved version of any natural weapon the golem has. The weapon’s base damage dice are doubled. The golem can only attack with this oversized weapon once per turn (making any additional attacks it can make using other weapons).</description>
         </sheet>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
     </element>
     
     
