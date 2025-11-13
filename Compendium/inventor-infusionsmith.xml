@@ -49,23 +49,93 @@
     </element>
     <element name="Infused Armament" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT">
         <description>
-            <p></p>
+            <p>Starting at 1st level, you can infuse a powerful armament to take into battle. At the end of a long rest, select one of the infusions below. The infusion lasts until the end of your next long rest.</p>
+            <h5>Animated Weapon</h5>
+            <p>You touch a melee weapon, causing it to spring to life. This Animated Weapon can be carried or stowed like a normal weapon, or you can ready it, causing it to float beside you. While an Animated Weapon is readied, you can make attacks with it as part the Attack action, sending it out to strike a target. All attacks made with your Animated Weapon during a turn must be made against the same target.</p>
+            <p class="indent">This special attack is a melee spell attack with which you are proficient. You can make this special attack against a target out to a range of 30 feet away from you. If the weapon has the heavy or special property, this range is halved to 15 feet; and if the weapon has the light property, this range is doubled to 60 feet. On a hit, the target takes damage equal to the weapon’s damage dice + your Intelligence modifier.</p>
+            <h5>Blasting Rod</h5>
+            <p>You touch a nonmagical object—a wand-blank, stick, staff, or rod—turning it into a Blasting Rod and infusing it with the ability to cast a cantrip. Select one evocation cantrip from the wizard spell list that doesn’t require concentration. Thereafter, as an action, you can use the Blasting Rod to cast that cantrip.</p>
+            <p class="indent">Once per turn, when you deal damage to a creature or object with your Blasting Rod, you can add your Intelligence modifier to the damage dealt to that target.</p>
+            <h5>Infused Weapon</h5>
+            <p>You touch a weapon, enchanting it. While this weapon is enchanted, you (and only you) have proficiency with it. This Infused Weapon can be wielded like a normal weapon, but it gains the following special property:</p>
+            <p class="indent">You can use your Intelligence modifier, instead of Strength or Dexterity, for the weapon’s attack and damage rolls. In addition, if the weapon has a single damage die, the size of that die increases by one (to a maximum of a d12). For example, if the Infused Weapon is a dagger, its damage die increases from a d4 to a d6.</p>
         </description>
-        <sheet display="false">
+        <sheet>
             <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT_ANIMATED_WEAPON" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT_BLASTING_ROD" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT_INFUSED_WEAPON" />
+        </rules>
+    </element>
+    
+    <element name="Animated Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT_ANIMATED_WEAPON">
+        <description>
+        </description>
+        <sheet>
+            <description>You can touch a melee weapon and this Animated Weapon can be carried or stowed like a normal weapon, or you can ready it, causing it to float beside you. While an Animated Weapon is readied, you can make attacks with it as part the Attack action, sending it out to strike a target. All attacks made with your Animated Weapon during a turn must be made against the same target.
+            This special attack is a melee spell attack with which you are proficient. You can make this special attack against a target out to a range of 30 feet away from you. If the weapon has the heavy or special property, this range is halved to 15 feet; and if the weapon has the light property, this range is doubled to 60 feet. On a hit, the target takes damage equal to the weapon’s damage dice + {{intelligence:modifier}}.</description>
         </sheet>
         <rules>
             
         </rules>
     </element>
-    <element name="Spell Manual" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SPELL_MANUAL">
+    
+    <element name="Blasting Rod" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT_BLASTING_ROD">
         <description>
-            <p></p>
         </description>
-        <sheet display="false">
-            <description></description>
+        <sheet>
+            <description>You touch a nonmagical object—a wand-blank, stick, staff, or rod—turning it into a Blasting Rod and infusing it with the ability to cast a cantrip. Select one evocation cantrip from the wizard spell list that doesn’t require concentration. Thereafter, as an action, you can use the Blasting Rod to cast that cantrip.
+            Once per turn, when you deal damage to a creature or object with your Blasting Rod, you can add {{intelligence:modifier}} to the damage dealt to that target.</description>
         </sheet>
         <rules>
+            <select type="Spell" name="Blasting Rod Cantrip" supports="0,Wizard,Evocation" />
+        </rules>
+    </element>
+    
+    <element name="Infused Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT_INFUSED_WEAPON">
+        <description>
+        </description>
+        <sheet>
+            <description>You touch a weapon, enchanting it. While this weapon is enchanted, you (and only you) have proficiency with it. This Infused Weapon can be wielded like a normal weapon, but it gains the following special property:
+            You can use your Intelligence modifier, instead of Strength or Dexterity, for the weapon’s attack and damage rolls. In addition, if the weapon has a single damage die, the size of that die increases by one (to a maximum of a d12).</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Spell Manual" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SPELL_MANUAL">
+        <description>
+            <p>At 3rd level, you have a Spell Manual containing two 1st-level wizard spells of your choice. Your Spell Manual is a repository of any non-inventor spell you know.</p>
+            <p class="indent">You can’t cast spells from your Spell Manual, and they don’t count against your number of spells known, but whenever you would learn a new inventor spell, you can select a spell from your Spell Manual instead of the inventor spell list. That spell then becomes an inventor spell for you, and you can cast it as normal. You can choose to scribe any inventor spell you know into your Spell Manual, as if copying it from a written spell.</p>
+            <h5>LEARNING SPELLS OF 1ST LEVEL AND HIGHER</h5>
+            <p>Each time you gain an inventor level, you can add one wizard spell of your choice to your Spell Manual for free. The chosen spell must be of a level for which you have spell slots, as shown on the Inventor table.</p>
+            <p class="indent">On your adventures, you might find other spells that you can add to your Spell Manual. For each level of the spell, the process takes 2 hours and costs 50 gp.</p>
+        </description>
+        <sheet>
+            <description>You have a Spell Manual containing two 1st-level wizard spells of your choice. Your Spell Manual is a repository of any non-inventor spell you know.
+            You can’t cast spells from your Spell Manual, but whenever you would learn a new inventor spell, you can select a spell from your Spell Manual instead of the inventor spell list. That spell then becomes an inventor spell for you, and you can cast it as normal. You can choose to scribe any inventor spell you know into your Spell Manual, as if copying it from a written spell.
+            On your adventures, you might find other spells that you can add to your Spell Manual. For each level of the spell, the process takes 2 hours and costs 50 gp.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="3" number="2" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="4" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="5" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="6" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="7" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="8" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="9" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="10" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="11" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="12" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="13" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="14" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="15" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="16" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="17" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="18" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="19" spellcasting="Inventor"/>
+            <select type="Spell" name="Spell Manual (Infusionsmith)" supports="Wizard,$(spellcasting:slots)" level="20" spellcasting="Inventor"/>
         </rules>
     </element>
     <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SPECIALIZATION_UPGRADE">
@@ -89,48 +159,569 @@
     </element>
     <element name="Infuse Magic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSE_MAGIC">
         <description>
-            <p></p>
+            <p>Also at 3rd level, you can use your Spell Manual to infuse magic items, such as wands, storing magical power for later use. Over the course of 1 minute, you can perform a special ritual to cast a spell into the item, expending a spell slot as normal. The spell being stored has no immediate effect when cast in this way.</p>
+            <p class="indent">Thereafter, a creature holding the item that is aware there is magic infused in it can trigger the stored magic, casting the spell. The creature must have an Intelligence of 6 or higher to cast the spell in this way.</p>
+            <p class="indent">The spell uses your spell save DC, spell attack bonus, and spellcasting ability, but is in all other ways treated as if the creature holding it cast the spell. The spell infused in the item fades if you finish a long rest and the stored magic hasn’t been triggered.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Over the course of 1 minute, you can perform a special ritual to cast a spell into the item, such as a wand, expending a spell slot as normal. The spell being stored has no immediate effect when cast in this way.
+            Thereafter, a creature holding the item that is aware there is magic infused in it can trigger the stored magic, casting the spell. The creature must have an INT of 6 or higher to cast the spell in this way.
+            The spell uses your spell save DC, spell attack bonus, and spellcasting ability, but is in all other ways treated as if the creature holding it cast the spell. The spell infused in the item fades if you finish a long rest and the stored magic hasn’t been triggered.</description>
         </sheet>
     </element>
     <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EXTRA_ATTACK">
         <description>
-            <p></p>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
         <rules>
-            
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
         </rules>
     </element>
     <element name="Empowered Infusions" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EMPOWERED_INFUSIONS">
         <description>
-            <p></p>
+            <p>By the time you reach 5th level, your Infused Armament grows more powerful. If you infuse or animate a weapon, you can infuse or animate one additional weapon at the same time (having two Animated Weapons, two Infused Weapons, or one of each). If you have multiple Animated Weapons, you can attack the same or different targets with them during a turn.</p>
+            <p class="indent">If you cast a spell of 1st level or higher using an item from Infuse Magic or an upgrade, or from a magic wand, you can cast the cantrip from your Blasting Rod as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>If you infuse or animate a weapon, you can infuse or animate one additional weapon at the same time. If you have multiple Animated Weapons, you can attack the same or different targets with them during a turn.
+            If you cast a spell of 1st level or higher using an item from Infuse Magic or an upgrade, or from a magic wand, you can cast the cantrip from your Blasting Rod as a bonus action.</description>
+        </sheet>
+    </element>
+
+    <element name="Infused Focus" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_FOCUS">
+        <description>
+            <p>Starting at 14th level, you can anchor a powerful spell into an item. When you cast a spell that requires concentration, you can anchor it to an object you touch (such as a staff, wand, or weapon), causing the spell to not require your concentration. When you do so, the spell lasts a number of rounds equal to your Intelligence modifier, after which the spell ends.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you cast a spell that requires concentration, you can anchor it to an object you touch (such as a staff, wand, or weapon), causing the spell to not require your concentration. When you do so, the spell lasts {{intelligence:modifier}} rounds, after which the spell ends.</description>
+        </sheet>
+    </element>
+    <!-- unrestricted infusionsmith upgrades-->
+    
+    <element name="Animated Archer" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ANIMATED_ARCHER">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You master animation enchantments, allowing you to use your Animate Weapon feature on a ranged weapon and a quiver of ammunition. An animated ranged weapon hovers near you, and you can make a ranged spell attack with it against a target within the weapon’s range.</p>
+            <p class="indent">On a hit, the target takes damage equal to the weapon’s damage dice + your Intelligence modifier. The weapon requires ammunition, and it can carry up 30 pieces of ammunition at a time. You can reload the ammunition at any time as an action.</p>
+        </description>
+        <sheet>
+            <description>You can use your Animate Weapon feature on a ranged weapon and a quiver of ammunition. An animated ranged weapon hovers near you, and you can make a ranged spell attack with it against a target within the weapon’s range.
+            On a hit, the target takes damage equal to the weapon’s damage dice + {{intelligence:modifier}}. The weapon requires ammunition, and it can carry up 30 pieces of ammunition at a time. You can reload the ammunition at any time as an action.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Armament" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ARCANE_ARMAMENT">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You master armoring yourself with magical enchantments. You learn the <i>mage armor</i> spell. While under the effect of <i>mage armor</i>, you can add your Intelligence modifier to your AC, instead of your Dexterity modifier. You can only do this if you are not adding your Intelligence modifier to your AC from another source. Additionally, you gain resistance to force damage.</p>
+        </description>
+        <sheet>
+            <description>You learn the mage armor spell. While under the effect of mage armor, you can add your Intelligence modifier to your AC, instead of your Dexterity modifier. You can only do this if you are not adding your Intelligence modifier to your AC from another source. Additionally, you gain resistance to force damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" spellcasting="Inventor" />
+        </rules>
+    </element>
+    <element name="Loyal Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_LOYAL_WEAPON">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You can cast the <i>returning weapon</i> spell without expending a spell slot, but if you cast it on a second weapon with this upgrade, the spell immediately fades from any previous use of this upgrade.</p>
+        </description>
+        <sheet>
+            <description>You can cast the returning weapon spell without expending a spell slot, but if you cast it on a second weapon with this upgrade, the spell immediately fades from any previous use of this upgrade.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_RETURNING_WEAPON" spellcasting="Inventor" />
+        </rules>
+    </element>
+    <element name="Magical Wand of..." type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_WAND_OF">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You create a new wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand doesn’t require attunement, but can only be used by you. The spell must be of a level that you can cast as an inventor (as of when you would choose this upgrade). This wand has 3 charges.</p>
+            <p class="indent">You can expend a charge to cast the chosen spell at its lowest level. The wand regains all expended charges when you finish a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, choosing a different spell and creating a new wand each time you select this upgrade.</p>
+        </description>
+        <sheet usage="3 charge/Long Rest">
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of... 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_WAND_OF_2">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_WAND_OF</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You create a new wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand doesn’t require attunement, but can only be used by you. The spell must be of a level that you can cast as an inventor (as of when you would choose this upgrade). This wand has 3 charges.</p>
+            <p class="indent">You can expend a charge to cast the chosen spell at its lowest level. The wand regains all expended charges when you finish a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, choosing a different spell and creating a new wand each time you select this upgrade.</p>
+        </description>
+        <sheet usage="3 charge/Long Rest">
+            <description>You create a new wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand doesn’t require attunement, but can only be used by you. The spell must be of a level that you can cast as an inventor (as of when you would choose this upgrade). This wand has 3 charges.
+            You can expend a charge to cast the chosen spell at its lowest level.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of... 3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_WAND_OF_3">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_WAND_OF_2</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You create a new wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand doesn’t require attunement, but can only be used by you. The spell must be of a level that you can cast as an inventor (as of when you would choose this upgrade). This wand has 3 charges.</p>
+            <p class="indent">You can expend a charge to cast the chosen spell at its lowest level. The wand regains all expended charges when you finish a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, choosing a different spell and creating a new wand each time you select this upgrade.</p>
+        </description>
+        <sheet usage="3 charge/Long Rest">
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of... 4" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_WAND_OF_4">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_WAND_OF_3</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You create a new wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand doesn’t require attunement, but can only be used by you. The spell must be of a level that you can cast as an inventor (as of when you would choose this upgrade). This wand has 3 charges.</p>
+            <p class="indent">You can expend a charge to cast the chosen spell at its lowest level. The wand regains all expended charges when you finish a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, choosing a different spell and creating a new wand each time you select this upgrade.</p>
+        </description>
+        <sheet usage="3 charge/Long Rest">
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Skilled Infusion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SKILLED_INFUSION">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You manage to make the magic of your Animated and Infused Weapons so potent that attacks made with them gain the benefits of a fighting style. Attacks made with one-handed melee weapons gain Dueling, attacks made with two-handed melee weapons gain Great Weapon Fighting, and attacks made with ranged weapons gain Archery.</p>
+        </description>
+        <sheet>
+            <description>Attacks made with Animated or Infused Weapons gain fighting style benefits. Attacks made with one-handed melee weapons gain Dueling, attacks made with two-handed melee weapons gain Great Weapon Fighting, and attacks made with ranged weapons gain Archery.</description>
+        </sheet>
+    </element>
+    <element name="Soul-Saving Bond" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SOUL_SAVING_BOND">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You set up a special magical bond between you and another creature. When either of the bonded creatures fails an Intelligence, Wisdom, Charisma, or death saving throw, the other creature can make the same saving throw, replacing the original result with its own. If this ability is used on a death saving throw, the roll is automatically a 20. Once this ability has been used to replace a roll, it can’t be used again until both bonded creatures have finished a short or long rest.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You set up a special magical bond between you and another creature. When either of the bonded creatures fails an Intelligence, Wisdom, Charisma, or death saving throw, the other creature can make the same saving throw, replacing the original result with its own. If this ability is used on a death saving throw, the roll is automatically a 20.
+            This bond can be set up with a different creature at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Warding Stone" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_WARDING_STONE">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You learn how to weave a protective enchantment on an item. That item gains a pool of temporary hit points equal to your inventor level. Any creature carrying the item gains any temporary hit points remaining in its pool, but these hit points are lost if that creature is no longer carrying the item.</p>
+            <p class="indent">The item’s pool of temporary hit points replenishes when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>That item gains a pool of temporary hit points equal to your inventor level. Any creature carrying the item gains any temporary hit points remaining in its pool, but these hit points are lost if that creature is no longer carrying the item.
+            The item’s pool of temporary hit points replenishes when you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Worn Enchantment" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_WORN_ENCHANTMENT">
+        <supports>is-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You can enchant an item you are wearing, such as a cloak or scarf, to animate and assist you with a task, be it climbing a wall, grappling an enemy, or picking a lock. You can expend a spell slot of 1st level or higher as an action to gain proficiency in one Strength- or Dexterity-based skill of your choice until you finish a long rest. Additionally, you can choose to use up all the magic in the item to gain advantage on one ability check using the chosen skill. After you do so, you lose the proficiency granted by this upgrade.</p>
+        </description>
+        <sheet>
+            <description>You can enchant an item you are wearing, such as a cloak or scarf, to animate and assist you with a task, be it climbing a wall, grappling an enemy, or picking a lock. You can expend a spell slot of 1st level or higher as an action to gain proficiency in one Strength- or Dexterity-based skill of your choice until you finish a long rest. Additionally, you can choose to use up all the magic in the item to gain advantage on one ability check using the chosen skill. After you do so, you lose the proficiency granted by this upgrade.</description>
+        </sheet>
+    </element>
+    <!-- level 5 specialization upgrades -->
+    <element name="Animated Shield" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ANIMATED_SHIELD">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You apply your animation magic to a shield. At the end of a long rest, you can touch a shield, causing it to spring to life and protect you until you finish your next long rest. While it is protecting you, you gain the benefits of the shield as if you were wielding it. As usual, you can benefit from only one shield at a time.</p>
+            <p class="indent">While you have an animated shield, you can also send it to defend your allies. When a creature you can see attacks a target other than you that is within 30 feet of you, you can use your reaction to impose disadvantage on the attack roll. When you do so, you lose the benefits of the animated shield until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>At the end of a long rest, you can touch a shield, causing it to spring to life and protect you until you finish your next long rest. While it is protecting you, you gain the benefits of the shield as if you were wielding it. As usual, you can benefit from only one shield at a time.
+            While you have an animated shield, you can also send it to defend your allies. When a creature you can see attacks a target other than you that is within 30 feet of you, you can use your reaction to impose disadvantage on the attack roll. When you do so, you lose the benefits of the animated shield until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Ammunition" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ARCANE_AMMUNITION">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You infuse a ranged weapon with special, arcane magic. The weapon no longer requires ammunition to fire, as it creates magical ammunition when you fire it, and whenever you hit a target with this magical ammunition, the attack deals force damage, instead of the weapon’s normal damage type. Additionally, if the weapon had the loading property, it no longer has that property.</p>
+        </description>
+        <sheet>
+            <description>You infuse a ranged weapon with special, arcane magic. The weapon no longer requires ammunition to fire, as it creates magical ammunition when you fire it, and whenever you hit a target with this magical ammunition, the attack deals force damage, instead of the weapon’s normal damage type. Additionally, if the weapon had the loading property, it no longer has that property.</description>
+        </sheet>
+    </element>
+    <element name="Deflecting Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_DEFLECTING_WEAPON">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>While you have an animated melee weapon, you can use your reaction when a creature makes a weapon attack against you to attempt to block it, rolling a d8 and adding the number rolled to your AC for that attack. You make this choice after the creature makes its roll, but before the GM says whether the attack hits or misses. If you attempt to block a melee weapon attack in this way and the attack misses, you can immediately make one weapon attack against the attacker as part of the same reaction.</p>
+            <p class="indent">When you use this ability, if you take the Attack action on your next turn, you can only make one weapon attack as part of that action. This attack can’t be made with the animated weapon you used to attempt to block the attack.</p>
+        </description>
+        <sheet>
+            <description>While you have an animated melee weapon, you can use your reaction when a creature makes a weapon attack against you to attempt to block it, rolling a d8 and adding the number rolled to your AC for that attack. You make this choice after the creature makes its roll, but before the GM says whether the attack hits or misses. If you attempt to block a melee weapon attack in this way and the attack misses, you can immediately make one weapon attack against the attacker as part of the same reaction.
+            When you use this ability, if you take the Attack action on your next turn, you can only make one weapon attack as part of that action. This attack can’t be made with the animated weapon you used to attempt to block the attack.</description>
+        </sheet>
+    </element>
+    <element name="Lesser Ring of Protection" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_LESSER_RING_OF_PROTECTION">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You make a prototype <i>ring of protection</i>. Any creature wearing this ring gains a +1 bonus to its AC.</p>
+        </description>
+        <sheet>
+            <description>You make a prototype ring of protection. Any creature wearing this ring gains a +1 bonus to its AC.</description>
+        </sheet>
+    </element>
+    <element name="Malicious Infusion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MALICIOUS_INFUSION">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You learn the heat metal spell. Additionally, as a reaction to being hit by a metal weapon, you can cast heat metal targeting the weapon that struck you, expending a spell slot as normal.</p>
+        </description>
+        <sheet>
+            <description>As a reaction to being hit by a metal weapon, you can cast heat metal targeting the weapon that struck you, expending a spell slot as normal.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" spellcasting="Inventor" />
+        </rules>
+    </element>
+    <element name="Ring of Reaction" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_RING_OF_REACTION">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You make a minor magic ring. Any creature wearing this ring can add your Intelligence modifier to its Dexterity saving throws and initiative rolls.</p>
+        </description>
+        <sheet>
+            <description>You make a minor magic ring. Any creature wearing this ring can add {{intelligence:modifier}} to its Dexterity saving throws and initiative rolls.</description>
+        </sheet>
+    </element>
+    <element name="Translocation Binding" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_TRANSLOCATION_BINDING">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>When you make an attack with an Animated or Infused melee weapon, you can use your bonus action and expend a spell slot of 1st level or higher to teleport to an unoccupied space within 5 feet of the weapon before it returns to you. You can use this ability even if your attack misses the target.</p>
+        </description>
+        <sheet>
+            <description>When you make an attack with an Animated or Infused melee weapon, you can use your bonus action and expend a spell slot of 1st level or higher to teleport to an unoccupied space within 5 feet of the weapon before it returns to you. You can use this ability even if your attack misses the target.</description>
+        </sheet>
+    </element>
+    <element name="Weapon Enchantment Expertise" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_WEAPON_ENCHANTMENT_EXPERTISE">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>When you cast <i>arcane weapon</i>, <i>magic weapon</i>, or <i>vorpal weapon</i>, the targeted weapon deals an extra 1d4 force damage, and when you cast <i>prismatic weapon</i>, the extra damage it deals increases by 1d4.</p>
+            <p class="indent">Additionally, you have advantage on Constitution saving throws made to maintain concentration on arcane weapon, prismatic weapon, magic weapon, and vorpal weapon.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
     </element>
-</elements>
-    <element name="Infused Focus" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_FOCUS">
+    <element name="Weapon Enchantment Resonance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_WEAPON_ENCHANTMENT_RESONANCE">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
         <description>
-            <p></p>
+            <p>When you cast <i>arcane weapon</i>, <i>prismatic weapon</i>, <i>magic weapon</i>, or <i>vorpal weapon</i> on one of your Animated or Infused weapons, all of your Animated and Infused weapons gain the benefits of that spell. Additionally, you can target any weapon with <i>arcane weapon</i>, <i>prismatic weapon</i>, or <i>magic weapon</i>, even if the weapon is already magical.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you cast arcane weapon, prismatic weapon, magic weapon, or vorpal weapon on one of your Animated or Infused weapons, all of your Animated and Infused weapons gain the benefits of that spell. Additionally, you can target any weapon with arcane weapon, prismatic weapon, or magic weapon, even if the weapon is already magical.</description>
+        </sheet>
+    </element>
+    <!-- level 9 specialization upgrades-->
+    
+    <element name="Detonate Armament" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_DETONATE_ARMAMENT">
+        <supports>is-specialization-upgrade,l9</supports>
+        <requirements>[level:9],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ARCANE_ARMAMENT</requirements>
+        <setters>
+            <set name="short">level 9, Prerequisite: Arcane Armament upgrade</set>
+        </setters>
+        <description>
+            <p>When you take damage while under the effects of <i>mage armor</i>, you can end the effects of that spell as a reaction to cast <i>turbulent warp</i> without expending a spell slot.</p>
+            <p class="indent">Once you cast the spell in this way, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you take damage while under the effects of <i>mage armor</i>, you can end the effects of that spell as a reaction to cast <i>turbulent warp</i> without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_TURBULENT_WARP" spellcasting="Inventor" />
+        </rules>
+    </element>
+    <element name="Dimensional Pockets" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_DIMENSIONAL_POCKETS">
+        <supports>is-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You enchant a pocket on your gear to contain far more than it would appear. That pocket can hold up to 50 pounds, and you can put any object in it that can fit through a 6-inch-diameter opening. The pocket otherwise behaves like a <i>bag of holding</i>.</p>
+        </description>
+        <sheet>
+            <description>You enchant a pocket on your gear to contain far more than it would appear. That pocket can hold up to 50 pounds, and you can put any object in it that can fit through a 6-inch-diameter opening. The pocket otherwise behaves like a bag of holding.</description>
+        </sheet>
+    </element>
+    <element name="Invisibility Cloak" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INVISIBILITY_CLOAK">
+        <supports>is-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You make an invisibility cloak. While wearing this cloak, a creature can cast <i>invisibility</i> on itself, without expending a spell slot or material components. When cast in this way, the spell doesn’t require the caster’s concentration. The spell ends if the caster is no longer wearing the cloak or if they choose to end the spell early (no action required). Once a creature uses the cloak to cast this spell, it can’t be used in this way again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You make an invisibility cloak. While wearing this cloak, a creature can cast invisibility on itself, without expending a spell slot or material components. When cast in this way, the spell doesn’t require the caster’s concentration. The spell ends if the caster is no longer wearing the cloak or if they choose to end the spell early (no action required).</description>
+        </sheet>
+    </element>
+    <element name="Prepared Enchantment" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_PREPARED_ENCHANTMENT">
+        <supports>is-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You can cast a limited version of <i>contingency</i>, without expending a spell slot or material components, as you bestow magical enchantments onto your gear. When you cast the spell in this way, it ends if you finish a long rest before the contingent spell is triggered, and the contingent spell must be a spell of 2nd level or lower.</p>
+            <p class="indent">Once you cast <i>contingency</i> in this way, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>ou can cast a limited version of <i>contingency</i>, without expending a spell slot or material components, as you bestow magical enchantments onto your gear. When you cast the spell in this way, it ends if you finish a long rest before the contingent spell is triggered, and the contingent spell must be a spell of 2nd level or lower.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CONTINGENCY" />
+        </rules>
+    </element>
+    <element name="Spell-Trapping Ring" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SPELL_TRAPPING_RING">
+        <supports>is-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>At the end of a long rest, you can set a powerful magic into a nonmagical ring you touch. You can use this ring to cast <i>counterspell</i> without expending a spell slot. When you cast <i>counterspell</i> in this way and it succeeds, the spell you countered is stored in the ring. You can cast the stored spell from the ring without expending a spell slot, but that spell fades if you don’t cast it before you finish a long rest.</p>
+            <p class="indent">Once you cast counterspell to store a spell in this ring, you can’t do so again until you finish a long rest</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>At the end of a long rest, you can set a powerful magic into a nonmagical ring you touch. You can use this ring to cast counterspell without expending a spell slot. When you cast counterspell in this way and it succeeds, the spell you countered is stored in the ring. You can cast the stored spell from the ring without expending a spell slot, but that spell fades if you don’t cast it before you finish a long rest.</description>
+        </sheet>
+    </element>
+    <!-- level 11 specialization upgrades-->
+    
+    <element name="Empower Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EMPOWER_WEAPON">
+        <supports>is-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>When you hit a creature with a weapon, you can use your bonus action to infuse your strike with arcane energy, dealing an extra 2d6 force damage to the target. When you use this bonus action, you can also choose to expend a spell slot of 1st level or higher to further increase this extra damage. When you do so, the target takes an extra 1d6 force damage, plus another 1d6 per level of the spell slot.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with a weapon, you can use your bonus action to infuse your strike with arcane energy, dealing an extra 2d6 force damage to the target. When you use this bonus action, you can also choose to expend a spell slot of 1st level or higher to further increase this extra damage. When you do so, the target takes an extra 1d6 force damage, plus another 1d6 per level of the spell slot.</description>
+        </sheet>
+    </element>
+    <element name="Enchanted Broom" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ENCHANTED_BROOM">
+        <supports>is-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You can enchant a broom (or broom-like object), turning it into a <i>broom of flying</i>. You set the command word for the broom, and it only obeys you.</p>
+        </description>
+        <sheet>
+            <description>You can enchant a broom (or broom-like object), turning it into a broom of flying. You set the command word for the broom, and it only obeys you.</description>
+        </sheet>
+    </element>
+    <element name="Life Infusion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_LIFE_INFUSION">
+        <supports>is-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You learn a potent magical infusion that suffuses a creature with life energy. You can cast regenerate, without expending a spell slot or material components. Once you cast the spell in this way, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can cast regenerate, without expending a spell slot or material components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_REGENERATE"  />
+        </rules>
+    </element>
+    <element name="Magical Rod of..." type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_ROD_OF">
+        <supports>is-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You create a new rod that you can infuse with a spell of 5th level or higher that you have recorded in your Spell Manual. This rod doesn’t require attunement, but can only be used by you. The spell must be of a level no higher than half your inventor level (as of when you would choose this upgrade), rounded down.</p>
+            <p class="indent">You can use the rod to cast the chosen spell at its lowest level. Once you cast the spell in this way, you can’t do so again until you finish a long rest. You can select this upgrade multiple times, choosing a different spell and creating a new rod each time you select this upgrade.</p>
+        </description>
+        <sheet>
+            <description>You create a new rod that you can infuse with a spell of 5th level or higher that you have recorded in your Spell Manual. This rod doesn’t require attunement, but can only be used by you. The spell must be of a level no higher than half your inventor level (as of when you would choose this upgrade), rounded down.
+            You can use the rod to cast the chosen spell at its lowest level. Once you cast the spell in this way, you can’t do so again until you finish a long rest.</description>
+        </sheet>        
+    </element>
+    <element name="Magical Rod of...2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_ROD_OF_2">
+        <supports>is-specialization-upgrade,l11</supports>
+        <requirements>[level:11],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_ROD_OF</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You create a new rod that you can infuse with a spell of 5th level or higher that you have recorded in your Spell Manual. This rod doesn’t require attunement, but can only be used by you. The spell must be of a level no higher than half your inventor level (as of when you would choose this upgrade), rounded down.</p>
+            <p class="indent">You can use the rod to cast the chosen spell at its lowest level. Once you cast the spell in this way, you can’t do so again until you finish a long rest. You can select this upgrade multiple times, choosing a different spell and creating a new rod each time you select this upgrade.</p>
+        </description>
+        <sheet>
+            <description>You create a new rod that you can infuse with a spell of 5th level or higher that you have recorded in your Spell Manual. This rod doesn’t require attunement, but can only be used by you. The spell must be of a level no higher than half your inventor level (as of when you would choose this upgrade), rounded down.
+            You can use the rod to cast the chosen spell at its lowest level. Once you cast the spell in this way, you can’t do so again until you finish a long rest.</description>
+        </sheet>        
+    </element>
+    <element name="Magical Rod of...3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_ROD_OF_3">
+        <supports>is-specialization-upgrade,l11</supports>
+        <requirements>[level:11],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_ROD_OF_2</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You create a new rod that you can infuse with a spell of 5th level or higher that you have recorded in your Spell Manual. This rod doesn’t require attunement, but can only be used by you. The spell must be of a level no higher than half your inventor level (as of when you would choose this upgrade), rounded down.</p>
+            <p class="indent">You can use the rod to cast the chosen spell at its lowest level. Once you cast the spell in this way, you can’t do so again until you finish a long rest. You can select this upgrade multiple times, choosing a different spell and creating a new rod each time you select this upgrade.</p>
+        </description>
+        <sheet>
+            <description>You create a new rod that you can infuse with a spell of 5th level or higher that you have recorded in your Spell Manual. This rod doesn’t require attunement, but can only be used by you. The spell must be of a level no higher than half your inventor level (as of when you would choose this upgrade), rounded down.
+            You can use the rod to cast the chosen spell at its lowest level. Once you cast the spell in this way, you can’t do so again until you finish a long rest.</description>
+        </sheet>        
+    </element>
+    <element name="Magical Rod of...4" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_ROD_OF_4">
+        <supports>is-specialization-upgrade,l11</supports>
+        <requirements>[level:11],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_ROD_OF_3</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You create a new rod that you can infuse with a spell of 5th level or higher that you have recorded in your Spell Manual. This rod doesn’t require attunement, but can only be used by you. The spell must be of a level no higher than half your inventor level (as of when you would choose this upgrade), rounded down.</p>
+            <p class="indent">You can use the rod to cast the chosen spell at its lowest level. Once you cast the spell in this way, you can’t do so again until you finish a long rest. You can select this upgrade multiple times, choosing a different spell and creating a new rod each time you select this upgrade.</p>
+        </description>
+        <sheet>
+            <description>You create a new rod that you can infuse with a spell of 5th level or higher that you have recorded in your Spell Manual. This rod doesn’t require attunement, but can only be used by you. The spell must be of a level no higher than half your inventor level (as of when you would choose this upgrade), rounded down.
+            You can use the rod to cast the chosen spell at its lowest level. Once you cast the spell in this way, you can’t do so again until you finish a long rest.</description>
+        </sheet>        
+    </element>
+    <element name="Mixed Technique" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MIXED_TECHNIQUE">
+        <supports>is-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>When you use your action to cast the cantrip from your Blasting Rod, you can make one weapon attack with an Animated or Infused Weapon as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>When you use your action to cast the cantrip from your Blasting Rod, you can make one weapon attack with an Animated or Infused Weapon as a bonus action.</description>
+        </sheet>
+    </element>
+    <!-- level 15 specialization upgrades-->
+    
+    <element name="Advanced Object Animation" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ADVANCED_OBJECT_ANIMATION">
+        <supports>is-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>When you cast the <i>animate objects</i> spell, the animated objects use your spell attack bonus for their attack rolls, and they gain a bonus to their damage rolls based on their size: +1 (Tiny or Small), +2 (Medium), +4 (Large), or +8 (Huge).</p>
+        </description>
+        <sheet>
+            <description>When you cast the animate objects spell, the animated objects use your spell attack bonus for their attack rolls, and they gain a bonus to their damage rolls based on their size: +1 (Tiny or Small), +2 (Medium), +4 (Large), or +8 (Huge).</description>
+        </sheet>
+    </element>
+    <element name="Third Animated Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_THIRD_ANIMATED_WEAPON">
+        <supports>is-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>Your mastery of weapon animation expands to a greater breadth of control. If you have two Animated Weapons, you can animate a third weapon with your Animate Weapon feature. When you take the Attack action and make an attack with your other two Animated Weapons, you can make an attack with your third Animated Weapon as part of the same action.</p>
+        </description>
+        <sheet>
+            <description>If you have two Animated Weapons, you can animate a third weapon with your Animate Weapon feature. When you take the Attack action and make an attack with your other two Animated Weapons, you can make an attack with your third Animated Weapon as part of the same action.</description>
         </sheet>
     </element>
 </elements>
 
 <!--
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GADGETNAME">
-        <supports>gos-specialization-upgrade,l15</supports>
-        <requirements></requirements>
+    
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+        <supports>is-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
         <setters>
-            <set name="short"></set>
+            <set name="short">level 15</set>
         </setters>
         <description>
             <p></p>
