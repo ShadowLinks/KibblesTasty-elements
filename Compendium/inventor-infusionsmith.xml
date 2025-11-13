@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Infusionsmith Archetype Inventor</name>
+        <update version="0.0.1">
+            <file name="inventor-infusionsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-infusionsmith.xml" />
+        </update>
+    </info>
+    <element name="Infusionsmith" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_INVENTOR_INFUSIONSMITH">
+        <supports>InventorSpecializations</supports>
+        <description>
+            <p>An infusionsmith is, in some ways, perhaps the most quintessential type of inventor. While other inventors may delve into mechanics and tinkering, an infusionsmith tinkers with magic itself.</p>
+            <p class="indent">These inventors are on the cutting edge of magical engineering, understanding the principal applications of magic. Infusionsmiths would have ground to stand on in calling a wizard an impulsive spellslinger, for they are the inventors that work their magic through careful and meticulous study, laying down magic they may not use for hours, or painstakingly crafting a long-lasting enchantment.</p>
+            <p class="indent">An infusionsmith can be a magical swordsman, a wandslinger, or a bookish supporting character with a bagful of tricks that never quite runs dry. Some will stand within a maelstrom of animated blades, while others will plink away with a crossbow that seems unerringly accurate, but their common theme is using their prowess of infusion to make themselves formidable.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_PROFICIENCY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SPELL_MANUAL" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSE_MAGIC" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EXTRA_ATTACK" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EMPOWERED_INFUSIONS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_FOCUS" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SPELL_MANUAL" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SPECIALIZATION_UPGRADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSE_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EMPOWERED_INFUSIONS" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_FOCUS" level="14" />
+        </rules>
+    </element>
+    <element name="Infusionsmith's Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_PROFICIENCY">
+        <description>
+            <p>When you choose this specialization at 1st level, you gain proficiency with calligrapher’s supplies and jeweler’s tools.</p>
+            <p class="indent">Your knowledge of infusion magic also gives you a natural affinity for scribing spell scrolls. The time you must spend to create a magic spell scroll is halved.</p>
+        </description>
+        <sheet display="false">
+            <description>The time you must spend to create a magic spell scroll is halved.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Infused Armament" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_ARMAMENT">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Spell Manual" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SPELL_MANUAL">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SPECIALIZATION_UPGRADE">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Specialization Upgrade 1" supports="is-specialization-upgrade,l1" level="3" />
+            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="is-specialization-upgrade,(l1||l5)" level="5" />
+            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="is-specialization-upgrade,(l1||l5)" level="7" />
+            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="is-specialization-upgrade,(l1||l5||l9)" level="9" />
+            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="is-specialization-upgrade,(l1||l5||l9||l11)" level="11" />
+            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="is-specialization-upgrade,(l1||l5||l9||l11)" level="13" />
+            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="is-specialization-upgrade,(l1||l5||l9||l11||l15)" level="15" />
+            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="is-specialization-upgrade,(l1||l5||l9||l11||l15)" level="17" />
+            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="is-specialization-upgrade,(l1||l5||l9||l11||l15)" level="19" />
+        </rules>
+    </element>
+    <element name="Infuse Magic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSE_MAGIC">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EXTRA_ATTACK">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Empowered Infusions" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EMPOWERED_INFUSIONS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
+    <element name="Infused Focus" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSED_FOCUS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
+
+<!--
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_GADGETNAME">
+        <supports>gos-specialization-upgrade,l15</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    -->
