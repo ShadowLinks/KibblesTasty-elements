@@ -109,3 +109,25 @@
         </sheet>
     </element>
 </elements>
+<!-- Unrestricted Specialization Upgrades-->
+<!-- Level 5 Specialization Upgrades-->
+<!-- Level 9 Specialization Upgrades-->
+<!-- Level 11 Specialization Upgrades-->
+<!-- Level 15 Specialization Upgrades-->
+
+<!--
+    
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+        <supports>is-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    -->
