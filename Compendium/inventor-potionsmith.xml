@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Potionsmith Archetype Inventor</name>
+        <update version="0.0.1">
+            <file name="inventor-potionsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-potionsmith.xml" />
+        </update>
+    </info>
+    <element name="Potionsmith" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_INVENTOR_POTIONSMITH">
+        <supports>InventorSpecializations</supports>
+        <description>
+            <p>A potionsmith is an inventor who has pursued the secrets of alchemy. While many a village has an apothecary grinding odd herbs and roots into potent (or not so potent) concoctions, the careful process of mixing and brewing is just one way to achieve results. Through the use of the intricate secrets of the craft and direct infusions using magical rituals, a potionsmith can come up with explosive results in the blink of an eye... sometimes literally.</p>
+            <p class="indent">A potionsmith can be a scholar who has delved into the knowledge the world has to offer or an explorer that has unlocked the secrets of the wilderness. Their knowledge could come from being friends of the fey or from unfettered access to the royal library. As such, potionsmith’s can be good or evil, lawful or chaotic.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_PROFICIENCY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_REAGENTS_POUCH" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_INSTANT_REACTIONS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_INFUSIONS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_PRACTICED_QUAFF" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_EMPOWERED_ALCHEMY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_INFUSION_EXPERTISE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_REAGENTS_POUCH" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_INSTANT_REACTIONS" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_INFUSIONS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_SPECIALIZATION_UPGRADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_PRACTICED_QUAFF" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_EMPOWERED_ALCHEMY" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_INFUSION_EXPERTISE" level="14" />
+        </rules>
+    </element>
+    <element name="Potionsmith Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_PROFICIENCY">
+        <description>
+            <p>When you choose this specialization at 1st level, you gain proficiency with blowguns, alchemist’s supplies, and the herbalism kit.</p>
+            <p class="indent">Your knowledge of alchemy gives you a natural affinity for brewing potions. Creating a potion through normal crafting takes you only half the time it would normally take.</p>
+        </description>
+        <sheet>
+            <description>Creating a potion through normal crafting takes you only half the time it would normally take.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+        </rules>
+    </element>
+    <element name="Alchemical Reagents Pouch" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_REAGENTS_POUCH">
+        <description>
+            <p>At 1st level, you’ve acquired a pouch of useful basic reagents, much as a wizard might carry a component pouch. You’ve tucked away things that will come in handy, and can retrieve them as part of using an ability that might require them. As long as you have this pouch on you, you can use the potionsmith’s features. This pouch is considered to be alchemist’s supplies for the purposes of crafting.</p>
+            <p class="indent">If you lose your reagent pouch, you can spend 50 gp to reacquire the various stocks you need, or spend 1 full day gathering them from a natural environment without expense.</p>
+        </description>
+        <sheet display="false">
+            <description>You’ve tucked away things that will come in handy, and can retrieve them as part of using an ability that might require them. As long as you have this pouch on you, you can use the potionsmith’s features. This pouch is considered to be alchemist’s supplies for the purposes of crafting.
+            If you lose your reagent pouch, you can spend 50 gp to reacquire the various stocks you need, or spend 1 full day gathering them from a natural environment without expense.</description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Instant Reactions" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_INSTANT_REACTIONS">
+        <description>
+            <p>At 1st level, you know how to get instant reactions to occur without the niceties of grinding, simmering, and brewing required for more refined concoctions.</p>
+            <p class="indent">Moreover, you know enough ways to do these processes that with just a few standard supplies, you can get results out of a wide range of things you can gather in almost any locale and a pinch from your reagent pouch.</p>
+            <p class="indent">Pick three instant reactions from the following: Alchemical Acid, Alchemical Fire, Fortifying Fumes, Healing Draught, and Poisonous Gas. These instant reactions don’t count against your number of upgrades known.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Instant Reaction" supports="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ALCHEMICAL_ACID|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ALCHEMICAL_FIRE|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_FORTIFYING_FUMESID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_HEALING_DRAUGHT|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_POISONOUS_GAS" number="3" />
+        </rules>
+    </element>
+    <element name="Alchemical Infusions" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_INFUSIONS">
+        <description>
+            <p>At 3rd level, you have discovered the secrets to drastically bypass the alchemical brewing process, crafting potent magical effects through the direct infusion of the potion with your own magic. When you finish a short or long rest, you can create any number of potions, choosing one of the following spells for each potion and expending a spell slot as if you were casting the spell. You must provide an empty vial for each potion you create in this way.</p>
+            <table>
+                <thead>
+                    <tr><td><em>Spell Level</em>></td><td><em>Infusion Spells</em></td></tr>
+                </thead>
+                <tr><td>1st</td><td>cure wounds, fog cloud, grease, heroism</td></tr>
+                <tr><td>2nd</td><td>barkskin, lesser restoration, shatter, web</td></tr>
+                <tr><td>3rd</td><td>blink, haste, stinking cloud, water breathing</td></tr>
+                <tr><td>4th</td><td>confusion, stoneskin</td></tr>
+                <tr><td>5th</td><td>cloudkill</td></tr>
+            </table>
+            <p class="indent">When you do so, the spell doesn’t take effect immediately, but is instead infused into the potion. If the spell grants an effect or restores hit points, a creature can consume it or administer it to another creature as an action.</p>
+            <p class="indent">If a spell targets an area of effect, you can accurately throw the vial up to 30 feet, dealing no inherent damage, but breaking the vial on impact. The area of effect takes place when the vial is broken, with the effect centered on where the vial breaks. If the spell targets a creature, you can treat the vial as a ranged weapon with which you are proficient, and it has the thrown (20/60) property. You replace the spell attack with making a weapon attack made with the vial.</p>
+            <p class="indent">If the spell has a non-instantaneous effect that normally requires concentration, it doesn’t require your concentration when it takes effect in this way, but its duration is shortened to a number of rounds equal to your Intelligence modifier (minimum 1). A spell that doesn’t require concentration lasts its normal duration. An infused potion loses its potency if it isn’t used by the end of your next long rest.</p>
+            <p class="indent">You can gain additional spells for your Alchemical Infusions through your potionsmith upgrades.</p>
+        </description>
+        <sheet>
+            <description>When you finish a short or long rest, you can create any number of potions, choosing one of the following spells for each potion and expending a spell slot as if you were casting the spell. You must provide an empty vial for each potion you create in this way.
+            1st level: cure wounds, fog cloud, grease, heroism
+            When you do so, the spell doesn’t take effect immediately, but is instead infused into the potion. If the spell grants an effect or restores hit points, a creature can consume it or administer it to another creature as an action.
+            If a spell targets an area of effect, you can accurately throw the vial up to 30 feet, dealing no inherent damage, but breaking the vial on impact. The area of effect takes place when the vial is broken, with the effect centered on where the vial breaks. If the spell targets a creature, you can treat the vial as a ranged weapon with which you are proficient, and it has the thrown (20/60) property. You replace the spell attack with making a weapon attack made with the vial.
+            If the spell has a non-instantaneous effect that normally requires concentration, it doesn’t require your concentration when it takes effect in this way, but its duration is shortened to {{intelligence:modifier}} rounds. A spell that doesn’t require concentration lasts its normal duration. An infused potion loses its potency if it isn’t used by the end of your next long rest.</description>
+            <description level="5">When you finish a short or long rest, you can create any number of potions, choosing one of the following spells for each potion and expending a spell slot as if you were casting the spell. You must provide an empty vial for each potion you create in this way.
+            1st level: cure wounds, fog cloud, grease, heroism
+            2nd level: barkskin, lesser restoration, shatter, web
+            When you do so, the spell doesn’t take effect immediately, but is instead infused into the potion. If the spell grants an effect or restores hit points, a creature can consume it or administer it to another creature as an action.
+            If a spell targets an area of effect, you can accurately throw the vial up to 30 feet, dealing no inherent damage, but breaking the vial on impact. The area of effect takes place when the vial is broken, with the effect centered on where the vial breaks. If the spell targets a creature, you can treat the vial as a ranged weapon with which you are proficient, and it has the thrown (20/60) property. You replace the spell attack with making a weapon attack made with the vial.
+            If the spell has a non-instantaneous effect that normally requires concentration, it doesn’t require your concentration when it takes effect in this way, but its duration is shortened to {{intelligence:modifier}} rounds. A spell that doesn’t require concentration lasts its normal duration. An infused potion loses its potency if it isn’t used by the end of your next long rest.</description>
+            <description level="9">When you finish a short or long rest, you can create any number of potions, choosing one of the following spells for each potion and expending a spell slot as if you were casting the spell. You must provide an empty vial for each potion you create in this way.
+            1st level: cure wounds, fog cloud, grease, heroism
+            2nd level: barkskin, lesser restoration, shatter, web
+            3rd level: blink, haste, stinking cloud, water breathing
+            When you do so, the spell doesn’t take effect immediately, but is instead infused into the potion. If the spell grants an effect or restores hit points, a creature can consume it or administer it to another creature as an action.
+            If a spell targets an area of effect, you can accurately throw the vial up to 30 feet, dealing no inherent damage, but breaking the vial on impact. The area of effect takes place when the vial is broken, with the effect centered on where the vial breaks. If the spell targets a creature, you can treat the vial as a ranged weapon with which you are proficient, and it has the thrown (20/60) property. You replace the spell attack with making a weapon attack made with the vial.
+            If the spell has a non-instantaneous effect that normally requires concentration, it doesn’t require your concentration when it takes effect in this way, but its duration is shortened to {{intelligence:modifier}} rounds. A spell that doesn’t require concentration lasts its normal duration. An infused potion loses its potency if it isn’t used by the end of your next long rest.</description>
+            <description level="13">When you finish a short or long rest, you can create any number of potions, choosing one of the following spells for each potion and expending a spell slot as if you were casting the spell. You must provide an empty vial for each potion you create in this way.
+            1st level: cure wounds, fog cloud, grease, heroism
+            2nd level: barkskin, lesser restoration, shatter, web
+            3rd level: blink, haste, stinking cloud, water breathing
+            4th level: confusion, stoneskin
+            When you do so, the spell doesn’t take effect immediately, but is instead infused into the potion. If the spell grants an effect or restores hit points, a creature can consume it or administer it to another creature as an action.
+            If a spell targets an area of effect, you can accurately throw the vial up to 30 feet, dealing no inherent damage, but breaking the vial on impact. The area of effect takes place when the vial is broken, with the effect centered on where the vial breaks. If the spell targets a creature, you can treat the vial as a ranged weapon with which you are proficient, and it has the thrown (20/60) property. You replace the spell attack with making a weapon attack made with the vial.
+            If the spell has a non-instantaneous effect that normally requires concentration, it doesn’t require your concentration when it takes effect in this way, but its duration is shortened to {{intelligence:modifier}} rounds. A spell that doesn’t require concentration lasts its normal duration. An infused potion loses its potency if it isn’t used by the end of your next long rest.</description>
+            <description level="13">When you finish a short or long rest, you can create any number of potions, choosing one of the following spells for each potion and expending a spell slot as if you were casting the spell. You must provide an empty vial for each potion you create in this way.
+            1st level: cure wounds, fog cloud, grease, heroism
+            2nd level: barkskin, lesser restoration, shatter, web
+            3rd level: blink, haste, stinking cloud, water breathing
+            4th level: confusion, stoneskin
+            5th level: cloudkill
+            When you do so, the spell doesn’t take effect immediately, but is instead infused into the potion. If the spell grants an effect or restores hit points, a creature can consume it or administer it to another creature as an action.
+            If a spell targets an area of effect, you can accurately throw the vial up to 30 feet, dealing no inherent damage, but breaking the vial on impact. The area of effect takes place when the vial is broken, with the effect centered on where the vial breaks. If the spell targets a creature, you can treat the vial as a ranged weapon with which you are proficient, and it has the thrown (20/60) property. You replace the spell attack with making a weapon attack made with the vial.
+            If the spell has a non-instantaneous effect that normally requires concentration, it doesn’t require your concentration when it takes effect in this way, but its duration is shortened to {{intelligence:modifier}} rounds. A spell that doesn’t require concentration lasts its normal duration. An infused potion loses its potency if it isn’t used by the end of your next long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREASE" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_WEB" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="17" />
+        </rules>
+    </element>
+    <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_SPECIALIZATION_UPGRADE">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Specialization Upgrade 1" supports="ps-specialization-upgrade,l1" level="3" />
+            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="ps-specialization-upgrade,(l1||l5)" level="5" />
+            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="ps-specialization-upgrade,(l1||l5)" level="7" />
+            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="ps-specialization-upgrade,(l1||l5||l9)" level="9" />
+            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="ps-specialization-upgrade,(l1||l5||l9||l11)" level="11" />
+            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="ps-specialization-upgrade,(l1||l5||l9||l11)" level="13" />
+            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="ps-specialization-upgrade,(l1||l5||l9||l11||l15)" level="15" />
+            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="ps-specialization-upgrade,(l1||l5||l9||l11||l15)" level="17" />
+            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="ps-specialization-upgrade,(l1||l5||l9||l11||l15)" level="19" />
+        </rules>
+    </element>
+    <element name="Practiced Quaff" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_PRACTICED_QUAFF">
+        <description>
+            <p>Additionally at 3rd level, you gain the ability to consume potions and infused potions as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>You can consume potions and infused potions as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Empowered Alchemy" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_EMPOWERED_ALCHEMY">
+        <description>
+            <p>Starting at 5th level, whenever you deal damage, grant temporary hit points, or restore hit points to a creature with an instant reaction or infused potion on your turn, you can add your Intelligence modifier to the amount of damage dealt or the number of hit points granted or restored.</p>
+        </description>
+        <sheet>
+            <description>Whenever you deal damage, grant temporary hit points, or restore hit points to a creature with an instant reaction or infused potion on your turn, you can add {{intelligence:modifier}} to the amount of damage dealt or the number of hit points granted or restored.</description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Infusion Expertise" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_INFUSION_EXPERTISE">
+        <description>
+            <p>Starting at 14th level, when you create an infused potion at end of a short or long rest, the first infused potion you create doesn’t require a spell slot to infuse, and you can choose a spell for which you would not otherwise have a high enough level spell slot when making this infusion.</p>
+        </description>
+        <sheet>
+            <description>When you create an infused potion at end of a short or long rest, the first infused potion you create doesn’t require a spell slot to infuse, and you can choose a spell for which you would not otherwise have a high enough level spell slot when making this infusion.</description>
+        </sheet>
+    </element>
+<!-- Unrestricted Specialization Upgrades-->
+
+    <element name="Alchemical Acid" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ALCHEMICAL_ACID">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As an action, you can produce an instant reaction, throwing this combination of reagents at a point within 20 feet of you, which causes a caustic acid to splatter the area within a 5-foot radius sphere centered on that point. Each creature in that area must succeed on a Dexterity saving throw against your spell save DC or take 2d4 acid damage. Damage from this acid deals double damage to objects and structures.</p>
+            <p class="indent">The damage increases by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4).</p>
+            <p class="indent">Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can produce an instant reaction, throwing this combination of reagents at a point within 20 feet of you, which causes a caustic acid to splatter the area within a 5-foot-radius sphere centered on that point. Each creature in that area must succeed on a Dexterity saving throw against your spell save DC or take 2d4 acid damage. Damage from this acid deals double damage to objects and structures.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.
+            </description>
+            <description level="5">As an action, you can produce an instant reaction, throwing this combination of reagents at a point within 20 feet of you, which causes a caustic acid to splatter the area within a 5-foot-radius sphere centered on that point. Each creature in that area must succeed on a Dexterity saving throw against your spell save DC or take 4d4 acid damage. Damage from this acid deals double damage to objects and structures.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.
+            </description>
+            <description level="11">As an action, you can produce an instant reaction, throwing this combination of reagents at a point within 20 feet of you, which causes a caustic acid to splatter the area within a 5-foot-radius sphere centered on that point. Each creature in that area must succeed on a Dexterity saving throw against your spell save DC or take 6d4 acid damage. Damage from this acid deals double damage to objects and structures.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.
+            </description>            
+            <description level="17">As an action, you can produce an instant reaction, throwing this combination of reagents at a point within 20 feet of you, which causes a caustic acid to splatter the area within a 5-foot-radius sphere centered on that point. Each creature in that area must succeed on a Dexterity saving throw against your spell save DC or take 8d4 acid damage. Damage from this acid deals double damage to objects and structures.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.
+            </description>
+        </sheet>
+    </element>
+    <element name="Alchemical Fire" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ALCHEMICAL_FIRE">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes searing fire to flare up in a 5-foot-radius sphere centered on that point. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 1d8 fire damage.</p>
+            <p class="indent">This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+            <p class="indent">Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes searing fire to flare up in a 5-foot-radius sphere centered on that point. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 1d8 fire damage.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</description>
+            <description level="5">As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes searing fire to flare up in a 5-foot-radius sphere centered on that point. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 2d8 fire damage.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</description>
+            <description level="11">As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes searing fire to flare up in a 5-foot-radius sphere centered on that point. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 3d8 fire damage.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</description>
+            <description level="17">As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes searing fire to flare up in a 5-foot-radius sphere centered on that point. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 4d8 fire damage.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</description>
+        </sheet>
+    </element>
+    <element name="Delivery Mechanism" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_DELIVERY_MECHANISM">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You modify the stability of your reagents and develop a better delivery mechanism. You can target a point within 40 feet of you for your instant reactions (including ones gained from upgrades, such as Explosive Reaction) and infused potions that target a point. This additional precision enables you to better target the effects, allowing each creature of your choice in the area to automatically succeed on its Dexterity saving throw against the effects of your instant reactions and infused potions.</p>
+            <p class="indent">Additionally, when making an attack roll with an instant reaction or infused potion, you can use your Intelligence modifier, instead of your Dexterity modifier, for the attack roll.</p>
+        </description>
+        <sheet>
+            <description>You can target a point within 40 feet of you for your instant reactions and infused potions that target a point. This allows each creature of your choice in the area to automatically succeed on its Dexterity saving throw against the effects of your instant reactions and infused potions.
+            Additionally, when making an attack roll with an instant reaction or infused potion, you can use your Intelligence modifier, instead of your Dexterity modifier, for the attack roll.</description>
+        </sheet>
+    </element>
+    <element name="Dragon Draught" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_DRAGON_DRAUGHT">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As an action, you can quaff a vial of highly reactive liquid, allowing you to immediately belch a blast of devastating elemental energy. Choose one of the following damage types: acid, cold, fire, or lightning.</p>
+            <p class="indent">If you choose cold or fire damage, the area of effect is a 10-foot cone; if you choose acid or lightning damage, the area of effect is a 15-foot line. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 1d8 damage of the chosen type.</p>
+            <p class="indent">he damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <sheet>
+            <description>As an action, you can quaff a vial of highly reactive liquid, allowing you to immediately belch a blast of devastating elemental energy. Choose one of the following damage types: acid, cold, fire, or lightning.
+            If you choose cold or fire damage, the area of effect is a 10-foot cone; if you choose acid or lightning damage, the area of effect is a 15-foot line. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 1d8 damage of the chosen type.</description>
+            <description level="5">As an action, you can quaff a vial of highly reactive liquid, allowing you to immediately belch a blast of devastating elemental energy. Choose one of the following damage types: acid, cold, fire, or lightning.
+            If you choose cold or fire damage, the area of effect is a 10-foot cone; if you choose acid or lightning damage, the area of effect is a 15-foot line. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 2d8 damage of the chosen type.</description>
+            <description level="11">As an action, you can quaff a vial of highly reactive liquid, allowing you to immediately belch a blast of devastating elemental energy. Choose one of the following damage types: acid, cold, fire, or lightning.
+            If you choose cold or fire damage, the area of effect is a 10-foot cone; if you choose acid or lightning damage, the area of effect is a 15-foot line. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 2d8 damage of the chosen type.</description>
+            <description level="17">As an action, you can quaff a vial of highly reactive liquid, allowing you to immediately belch a blast of devastating elemental energy. Choose one of the following damage types: acid, cold, fire, or lightning.
+            If you choose cold or fire damage, the area of effect is a 10-foot cone; if you choose acid or lightning damage, the area of effect is a 15-foot line. Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or take 2d8 damage of the chosen type.</description>
+        </sheet>
+    </element>
+    <element name="Explosive Reaction" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EXPLOSIVE_REACTION">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As an action, you can produce an instant reaction, throwing a devastating combination of reagents at a point within 20 feet of you, which causes a minor explosion. Each creature within 10 feet of that point must succeed on a Constitution saving throw against your spell save DC or take 1d10 thunder damage from the shockwave of the explosion.</p>
+            <p class="indent">The damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+            <p class="indent">Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can produce an instant reaction, throwing a devastating combination of reagents at a point within 20 feet of you, which causes a minor explosion. Each creature within 10 feet of that point must succeed on a Constitution saving throw against your spell save DC or take 1d10 thunder damage from the shockwave of the explosion.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</description>
+            <description level="5">As an action, you can produce an instant reaction, throwing a devastating combination of reagents at a point within 20 feet of you, which causes a minor explosion. Each creature within 10 feet of that point must succeed on a Constitution saving throw against your spell save DC or take 2d10 thunder damage from the shockwave of the explosion.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</description>
+            <description level="11">As an action, you can produce an instant reaction, throwing a devastating combination of reagents at a point within 20 feet of you, which causes a minor explosion. Each creature within 10 feet of that point must succeed on a Constitution saving throw against your spell save DC or take 3d10 thunder damage from the shockwave of the explosion.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</description>
+            <description level="17">As an action, you can produce an instant reaction, throwing a devastating combination of reagents at a point within 20 feet of you, which causes a minor explosion. Each creature within 10 feet of that point must succeed on a Constitution saving throw against your spell save DC or take 4d10 thunder damage from the shockwave of the explosion.
+            Alternatively, you can use a bonus action to prepare this instant reaction as a ranged weapon with which you are proficient. It lasts until the end of your turn, and it has the finesse and thrown (20/60) properties. On a hit, it deals damage equal to failing the saving throw against this effect. The damage dealt by this attack doesn’t include your Strength or Dexterity modifier.</description>
+        </sheet>
+    </element>
+    <element name="Flaming Grease" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_FLAMING_GREASE">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You tweak your grease formula to be flammable, as grease should be. When you cast grease or use it to make an infused potion, the effect becomes flammable. If the grease takes fire damage, all creatures in the spell’s area take 2d4 fire damage. The grease burns for a number of rounds equal to your Intelligence modifier (minimum 1.)</p>
+            <p class="indent">Additionally, when you cast the grease spell or use it as an infused potion, you can instead use it to coat a weapon. This coating lasts for 1 hour or until it takes fire damage, igniting the grease. Once ignited, that weapon deals an extra 1d4 fire damage on a hit for the next minute.</p>
+        </description>
+        <sheet>
+            <description>When you cast grease or use it to make an infused potion, the effect becomes flammable. If the grease takes fire damage, all creatures in the spell’s area take 2d4 fire damage. The grease burns for {{intelligence:modifier}} rounds.
+            Additionally, when you cast the grease spell or use it as an infused potion, you can instead use it to coat a weapon. This coating lasts for 1 hour or until it takes fire damage, igniting the grease. Once ignited, that weapon deals an extra 1d4 fire damage on a hit for the next minute.</description>
+        </sheet>
+    </element>
+    <element name="Fortifiying Fumes Reaction" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_FORTIFIYING_FUMES">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As an action, you can produce an instant reaction, throwing a fortifying stimulus of reagents at a point within 20 feet of you, which causes fumes to erupt. Each creature within 10 feet of that point can choose to hold its breath and not inhale the fumes, but creatures that do inhale them gain 1d4 temporary hit points, deal an extra 1d4 damage on their next melee weapon attack, and have advantage on their next Constitution saving throw. Any remaining benefits from this effect fade at the end of your next turn.</p>
+            <p class="indent">Both the temporary hit points and the extra damage increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+        </description>
+        <sheet>
+            <description>As an action, you can produce an instant reaction, throwing a fortifying stimulus of reagents at a point within 20 feet of you, which causes fumes to erupt. Each creature within 10 feet of that point can choose to hold its breath and not inhale the fumes, but creatures that do inhale them gain 1d4 temporary hit points, deal an extra 1d4 damage on their next melee weapon attack, and have advantage on their next Constitution saving throw. Any remaining benefits from this effect fade at the end of your next turn.</description>
+            <description level="5">As an action, you can produce an instant reaction, throwing a fortifying stimulus of reagents at a point within 20 feet of you, which causes fumes to erupt. Each creature within 10 feet of that point can choose to hold its breath and not inhale the fumes, but creatures that do inhale them gain 2d4 temporary hit points, deal an extra 2d4 damage on their next melee weapon attack, and have advantage on their next Constitution saving throw. Any remaining benefits from this effect fade at the end of your next turn.</description>
+            <description level="11">As an action, you can produce an instant reaction, throwing a fortifying stimulus of reagents at a point within 20 feet of you, which causes fumes to erupt. Each creature within 10 feet of that point can choose to hold its breath and not inhale the fumes, but creatures that do inhale them gain 3d4 temporary hit points, deal an extra 3d4 damage on their next melee weapon attack, and have advantage on their next Constitution saving throw. Any remaining benefits from this effect fade at the end of your next turn.</description>
+            <description level="17">As an action, you can produce an instant reaction, throwing a fortifying stimulus of reagents at a point within 20 feet of you, which causes fumes to erupt. Each creature within 10 feet of that point can choose to hold its breath and not inhale the fumes, but creatures that do inhale them gain 4d4 temporary hit points, deal an extra 4d4 damage on their next melee weapon attack, and have advantage on their next Constitution saving throw. Any remaining benefits from this effect fade at the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Frostbloom Reaction" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_FROSTBLOOM_REACTION">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As an action, you can produce an instant reaction, throwing a combination of devastating, endothermically reactive reagents at a point within 20 feet of you, which causes a bloom of ice to erupt. The area within 5 feet of that point becomes difficult terrain until the end of your next turn.</p>
+            <p class="indent">Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or be caught by the ice, taking 1d6 cold damage. If a creature that fails its saving throw is entirely in the area of effect, it becomes restrained until the end of its next turn. A restrained creature can use its action to make a Strength saving throw against your spell save DC, ending the effect on itself on a success.</p>
+            <p class="indent">The damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+        </description>
+        <sheet>
+            <description>As an action, you can produce an instant reaction, throwing a combination of devastating, endothermically reactive reagents at a point within 20 feet of you, which causes a bloom of ice to erupt. The area within 5 feet of that point becomes difficult terrain until the end of your next turn.
+            Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or be caught by the ice, taking 1d6 cold damage. If a creature that fails its saving throw is entirely in the area of effect, it becomes restrained until the end of its next turn. A restrained creature can use its action to make a Strength saving throw against your spell save DC, ending the effect on itself on a success.</description>
+            <description level="5">As an action, you can produce an instant reaction, throwing a combination of devastating, endothermically reactive reagents at a point within 20 feet of you, which causes a bloom of ice to erupt. The area within 5 feet of that point becomes difficult terrain until the end of your next turn.
+            Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or be caught by the ice, taking 2d6 cold damage. If a creature that fails its saving throw is entirely in the area of effect, it becomes restrained until the end of its next turn. A restrained creature can use its action to make a Strength saving throw against your spell save DC, ending the effect on itself on a success.</description>
+            <description level="11">As an action, you can produce an instant reaction, throwing a combination of devastating, endothermically reactive reagents at a point within 20 feet of you, which causes a bloom of ice to erupt. The area within 5 feet of that point becomes difficult terrain until the end of your next turn.
+            Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or be caught by the ice, taking 3d6 cold damage. If a creature that fails its saving throw is entirely in the area of effect, it becomes restrained until the end of its next turn. A restrained creature can use its action to make a Strength saving throw against your spell save DC, ending the effect on itself on a success.</description>
+            <description level="17">As an action, you can produce an instant reaction, throwing a combination of devastating, endothermically reactive reagents at a point within 20 feet of you, which causes a bloom of ice to erupt. The area within 5 feet of that point becomes difficult terrain until the end of your next turn.
+            Each creature in the area must succeed on a Dexterity saving throw against your spell save DC or be caught by the ice, taking 4d6 cold damage. If a creature that fails its saving throw is entirely in the area of effect, it becomes restrained until the end of its next turn. A restrained creature can use its action to make a Strength saving throw against your spell save DC, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Healing Draught" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_HEALING_DRAUGHT">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As a bonus action, you can produce an instant reaction that provides potent magical healing. A creature can use its action to consume this draught or administer it to another creature within 5 feet of it before the start of your next turn, causing the target to regain 1d8 hit points. If you have the Practiced Quaff feature, you can consume a Healing Draught as part of the bonus action used to make it.</p>
+            <p class="indent">A creature can benefit from a number of these draughts up to its Constitution modifier (minimum of 1), after which they provide no benefit to that creature until it finishes a long rest. A Healing Draught that isn’t consumed before the start of your next turn loses its potency.</p>
+            <p class="indent">The number of hit points the draught restores increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can produce an instant reaction that provides potent magical healing. A creature can use its action to consume this draught or administer it to another creature within 5 feet of it before the start of your next turn, causing the target to regain 1d8 hit points. If you have the Practiced Quaff feature, you can consume a Healing Draught as part of the bonus action used to make it.
+            A creature can benefit from a number of these draughts up to its Constitution modifier (minimum of 1), after which they provide no benefit to that creature until it finishes a long rest. A Healing Draught that isn’t consumed before the start of your next turn loses its potency.</description>
+            <description level="5">As a bonus action, you can produce an instant reaction that provides potent magical healing. A creature can use its action to consume this draught or administer it to another creature within 5 feet of it before the start of your next turn, causing the target to regain 2d8 hit points. If you have the Practiced Quaff feature, you can consume a Healing Draught as part of the bonus action used to make it.
+            A creature can benefit from a number of these draughts up to its Constitution modifier (minimum of 1), after which they provide no benefit to that creature until it finishes a long rest. A Healing Draught that isn’t consumed before the start of your next turn loses its potency.</description>
+            <description level="11">As a bonus action, you can produce an instant reaction that provides potent magical healing. A creature can use its action to consume this draught or administer it to another creature within 5 feet of it before the start of your next turn, causing the target to regain 3d8 hit points. If you have the Practiced Quaff feature, you can consume a Healing Draught as part of the bonus action used to make it.
+            A creature can benefit from a number of these draughts up to its Constitution modifier (minimum of 1), after which they provide no benefit to that creature until it finishes a long rest. A Healing Draught that isn’t consumed before the start of your next turn loses its potency.</description>
+            <description level="17">As a bonus action, you can produce an instant reaction that provides potent magical healing. A creature can use its action to consume this draught or administer it to another creature within 5 feet of it before the start of your next turn, causing the target to regain 4d8 hit points. If you have the Practiced Quaff feature, you can consume a Healing Draught as part of the bonus action used to make it.
+            A creature can benefit from a number of these draughts up to its Constitution modifier (minimum of 1), after which they provide no benefit to that creature until it finishes a long rest. A Healing Draught that isn’t consumed before the start of your next turn loses its potency.</description>
+        </sheet>
+    </element>
+    <element name="Homunculus Familiar" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_HOMUNCULUS_FAMILIAR">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You learn the alchemical process for creating a homunculus minion. You can cast <i>find familiar</i> without expending a spell slot or material components other than your alchemical reagents and blood. This familiar can appear in any Tiny shape you want, though it uses the statistics of a creature that can normally be chosen by the spell, and it is a construct or monstrosity, rather than one of the types listed in the spell.</p>
+        </description>
+        <sheet>
+            <description>You can cast <i>find familiar</i> without expending a spell slot or material components other than your alchemical reagents and blood. This familiar can appear in any Tiny shape you want, though it uses the statistics of a creature that can normally be chosen by the spell, and it is a construct or monstrosity, rather than one of the types listed in the spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR"/>
+        </rules>
+    </element>
+    <element name="Inoculations" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INOCULATIONS">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You gain resistance to poison damage. Additionally, at the end of a long rest, you can choose up to five creatures (including yourself) to become inoculated against poisonous effects you can produce that require a Constitution saving throw (such as the Poisonous Gas instant reaction or the cloudkill alchemical infusion). You and each of the chosen creatures automatically succeed on saving throws against these effects until the end of your next long rest.</p>
+        </description>
+        <sheet>
+            <description>At the end of a long rest, you can choose up to five creatures (including yourself) to become inoculated against poisonous effects you can produce that require a Constitution saving throw. You and each of the chosen creatures automatically succeed on saving throws against these effects until the end of your next long rest.</description>
+        </sheet>
+        <rules>
+			<stat name="resistance:poison" />
+        </rules>
+    </element>
+    <element name="Long Acting" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_LONG_ACTING">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>If the spell you infuse into an infused potion would normally require concentration, its duration is now a number of rounds equal to your Intelligence modifier + your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>If the spell you infuse into an infused potion would normally require concentration, its duration is now {{longacting}} rounds.</description>
+        </sheet>
+        <rules>
+            <stat name="longacting" value="proficiency" bonus="base"/>
+            <stat name="longacting" value="{{intelligence:modifier}}" />
+
+        </rules>
+    </element>
+    <element name="Persistent Reactions" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_PERSISTENT_REACTIONS">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>Your instant reactions that have an area of effect persist in that area until the start of your next turn. While they persist, each creature that enters the area for the first time on a turn or ends its turn there must repeat the saving throw against the effect. You can choose to make the effect not persist in this way when you take the action to produce the instant reaction.</p>
+        </description>
+        <sheet>
+            <description>Your instant reactions that have an area of effect persist in that area until the start of your next turn. While they persist, each creature that enters the area for the first time on a turn or ends its turn there must repeat the saving throw against the effect. You can choose to make the effect not persist in this way when you take the action to produce the instant reaction.</description>
+        </sheet>
+    </element>
+    <element name="Poisoner's Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_POISONERS_PROFICIENCY">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You delve into the darkest, most mysterious depths of herbal lore, learning the potent secrets of poison. You gain proficiency with poisoner’s kits; if you already have this proficiency, your proficiency bonus is doubled for any ability check you make using a poisoner’s kit. Additionally, during a long rest, you can create one of the following poisons of your choice:</p>
+            <ul>
+                <li><em>Contact Poison.</em> You can apply this poison to a melee weapon or up to ten pieces of ammunition. That weapon or ammunition deals an extra 1d4 poison damage on a hit; the weapon can deal this poison damage 10 times before the poison wears off.</li>
+                <li><em>Injested Poison.</em> This poison is a simple, flavorless powder. If a creature consumes a full dose of the poison, it must make a Constitution saving throw with disadvantage against your spell save DC. After 1 minute, if the creature failed its saving throw, it takes 1d10 poison damage per level you have in this class, and it becomes poisoned until it finishes a long rest.</li>
+                <li><em>Inhaled Poison.</em> You can use this dose of poison to increase the size and potency of your Poisonous Gas instant reaction. When you do so, the fumes erupt in a 20-foot-radius sphere and the effect’s damage dice are doubled.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain proficiency with poisoner’s kits; if you already have this proficiency, your proficiency bonus is doubled for any ability check you make using a poisoner’s kit. Additionally, during a long rest, you can create one of the following poisons of your choice. 
+            Any unused poison loses its potency and no longer has any effect after you finish your next long rest.
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_CONTACT_POISON" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INJESTED_POISON" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INHALED_POISON" />
+        </rules>
+    </element>
+    <element name="Contact Poison" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_CONTACT_POISON">
+        <supports></supports>
+        <requirements></requirements>
+        <setters>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You can apply this poison to a melee weapon or up to ten pieces of ammunition. That weapon or ammunition deals an extra 1d4 poison damage on a hit; the weapon can deal this poison damage 10 times before the poison wears off.</description>
+        </sheet>
+    </element>
+    <element name="Ingested Poison" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INJESTED_POISON">
+        <supports></supports>
+        <requirements></requirements>
+        <setters>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>This poison is a simple, flavorless powder. If a creature consumes a full dose of the poison, it must make a Constitution saving throw with disadvantage against your spell save DC. After 1 minute, if the creature failed its saving throw, it takes 1d10 poison damage per level you have in this class, and it becomes poisoned until it finishes a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Inhaled Poison" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INHALED_POISON">
+        <supports></supports>
+        <requirements></requirements>
+        <setters>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You can use this dose of poison to increase the size and potency of your Poisonous Gas instant reaction. When you do so, the fumes erupt in a 20-foot- radius sphere and the effect’s damage dice are doubled.</description>
+        </sheet>
+    </element>
+    <element name="Poisonous Gas" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_POISONOUS_GAS">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes noxious fumes to erupt in a 10-foot-radius sphere centered on that point. Each creature in that area must succeed on a Constitution saving throw against your spell save DC or take 1d4 poison damage and become poisoned until the end of its next turn.</p>
+            <p class="indent">The damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+        </description>
+        <sheet>
+            <description>As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes noxious fumes to erupt in a 10-foot-radius sphere centered on that point. Each creature in that area must succeed on a Constitution saving throw against your spell save DC or take 1d4 poison damage and become poisoned until the end of its next turn.</description>
+            <description level="5">As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes noxious fumes to erupt in a 10-foot-radius sphere centered on that point. Each creature in that area must succeed on a Constitution saving throw against your spell save DC or take 2d4 poison damage and become poisoned until the end of its next turn.</description>
+            <description level="11">As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes noxious fumes to erupt in a 10-foot-radius sphere centered on that point. Each creature in that area must succeed on a Constitution saving throw against your spell save DC or take 3d4 poison damage and become poisoned until the end of its next turn.</description>
+            <description level="17">As an action, you can produce an instant reaction, tossing a quick combination of reagents at a point within 20 feet of you, which causes noxious fumes to erupt in a 10-foot-radius sphere centered on that point. Each creature in that area must succeed on a Constitution saving throw against your spell save DC or take 4d4 poison damage and become poisoned until the end of its next turn.</description>
+
+        </sheet>
+    </element>
+    <element name="Secrets of Acid" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SECRETS_OF_ACID">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Secrets of Fire" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SECRETS_OF_FIRE">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Secrets of Flight" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SECRETS_OF_FLIGHT">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Secrets of Frost" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SECRETS_OF_FROST">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
+
+<!-- Level 5 Specialization Upgrades-->
+<!-- Level 9 Specialization Upgrades-->
+<!-- Level 11 Specialization Upgrades-->
+<!-- Level 15 Specialization Upgrades-->
+
+<!--
+    
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+        <supports>ps-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    -->
