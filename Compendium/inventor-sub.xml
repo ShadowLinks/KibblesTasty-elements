@@ -43,7 +43,7 @@
     </element>
     <element name="Ability2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_ABILITY2">
         <description>
-            <p></p>>
+            <p></p>
         </description>
         <sheet display="false">
             <description></description>
@@ -118,10 +118,10 @@
 <!--
     
     <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>is-specialization-upgrade,l15</supports>
+        <supports>gs-specialization-upgrade,l1</supports>
         <requirements>[level:15]</requirements>
         <setters>
-            <set name="short">level 15</set>
+            <set name="short"></set>
         </setters>
         <description>
             <p></p>
