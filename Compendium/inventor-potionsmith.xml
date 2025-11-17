@@ -70,7 +70,7 @@
             <description></description>
         </sheet>
         <rules>
-            <select type="Archetype Feature" name="Instant Reaction" supports="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ALCHEMICAL_ACID|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ALCHEMICAL_FIRE|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_FORTIFYING_FUMESID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_HEALING_DRAUGHT|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_POISONOUS_GAS" number="3" />
+            <select type="Archetype Feature" name="Instant Reaction" supports="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ALCHEMICAL_ACID|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ALCHEMICAL_FIRE|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_FORTIFIYING_FUMES|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_HEALING_DRAUGHT|ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_POISONOUS_GAS" number="3" />
         </rules>
     </element>
     <element name="Alchemical Infusions" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_INFUSIONS">
@@ -527,11 +527,30 @@
             <set name="short"></set>
         </setters>
         <description>
-            <p></p>
+            <p>You learn the secrets of infusing acid into your infused potions. You add the following options to your list of available spells for your Alchemical Infusions:</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td> Infusion Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>summon ooze</td></tr>
+                <tr><td>2nd</td><td>acid arrow</td></tr>
+                <tr><td>3rd</td><td>erode</td></tr>
+            </table>
+            <p class="indent">Additionally, you can create one infused potion of <i>summon ooze</i> at the end of a long rest without expending a spell slot.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You add the following options to your list of available spells for your Alchemical Infusions: summon ooze.
+            Additionally, you can create one infused potion of summon oozeK at the end of a long rest without expending a spell slot.</description>
+            <description level="5">You add the following options to your list of available spells for your Alchemical Infusions: summon ooze, acid arrow
+            Additionally, you can create one infused potion of summon oozeK at the end of a long rest without expending a spell slot.</description>
+            <description level="9">You add the following options to your list of available spells for your Alchemical Infusions: summon ooze, acid arrow, erode
+            Additionally, you can create one infused potion of summon oozeK at the end of a long rest without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_SUMMON_OOZE"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="5"/>
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_ERODE" level="9"/>
+        </rules>
     </element>
     <element name="Secrets of Fire" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SECRETS_OF_FIRE">
         <supports>ps-specialization-upgrade,l1</supports>
@@ -540,11 +559,30 @@
             <set name="short"></set>
         </setters>
         <description>
-            <p></p>
+            <p>You learn the secrets of infusing fire into your infused potions. You add the following options to your list of available spells for your Alchemical Infusions:</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td> Infusion Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>faerie fire</td></tr>
+                <tr><td>2nd</td><td>unstable explosion</td></tr>
+                <tr><td>3rd</td><td>fireball</td></tr>
+            </table>
+            <p class="indent">Additionally, you can create one infused potion of <i>faerie fire</i> at the end of a long rest without expending a spell slot.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You add the following options to your list of available spells for your Alchemical Infusions: faerie fire
+            Additionally, you can create one infused potion of faerie fire at the end of a long rest without expending a spell slot.</description>            
+            <description level="5">You add the following options to your list of available spells for your Alchemical Infusions: faerie fire, unstable explosion
+            Additionally, you can create one infused potion of faerie fire at the end of a long rest without expending a spell slot.</description>
+            <description level="9">You add the following options to your list of available spells for your Alchemical Infusions: faerie fire, unstable explosion, fireball  
+            Additionally, you can create one infused potion of faerie fire at the end of a long rest without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE"/>
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_UNSTABLE_EXPLOSION" level="5"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9"/>
+        </rules>
     </element>
     <element name="Secrets of Flight" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SECRETS_OF_FLIGHT">
         <supports>ps-specialization-upgrade,l1</supports>
@@ -553,11 +591,30 @@
             <set name="short"></set>
         </setters>
         <description>
-            <p></p>
+            <p>You learn the secrets of infusing the ability to escape the shackles of gravity into your infused potions. You add the following options to your list of available spells for your Alchemical Infusions:</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td> Infusion Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>feather fall</td></tr>
+                <tr><td>2nd</td><td>levitate</td></tr>
+                <tr><td>3rd</td><td>fly</td></tr>
+            </table>
+            <p class="indent">Additionally, you can create one infused potion of <i>feather fall</i> at the end of a long rest without expending a spell slot.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You add the following options to your list of available spells for your Alchemical Infusions: feather fall
+            Additionally, you can create one infused potion of feather fall at the end of a long rest without expending a spell slot.</description>
+            <description level="5">You add the following options to your list of available spells for your Alchemical Infusions: feather fall, levitate
+            Additionally, you can create one infused potion of feather fall at the end of a long rest without expending a spell slot.</description>
+            <description level="9">You add the following options to your list of available spells for your Alchemical Infusions: feather fall, levitate, fly
+            Additionally, you can create one infused potion of feather fall at the end of a long rest without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL"/>
+            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" level="5"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" level="9"/>
+        </rules>
     </element>
     <element name="Secrets of Frost" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SECRETS_OF_FROST">
         <supports>ps-specialization-upgrade,l1</supports>
@@ -566,26 +623,276 @@
             <set name="short"></set>
         </setters>
         <description>
-            <p></p>
+            <p>You learn the secrets of infusing frost into your infused potions. You add the following options to your list of available spells for your Alchemical Infusions:</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td> Infusion Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>freezing shell</td></tr>
+                <tr><td>2nd</td><td>cold snap</td></tr>
+                <tr><td>3rd</td><td>flash freeze</td></tr>
+            </table>
+            <p class="indent">Additionally, you can create one infused potion of <i>freezing shell</i> at the end of a long rest without expending a spell slot.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You add the following options to your list of available spells for your Alchemical Infusions: freezing shell
+            Additionally, you can create one infused potion of freezing shell at the end of a long rest without expending a spell slot.</description>            
+            <description level="5">You add the following options to your list of available spells for your Alchemical Infusions: freezing shell, cold snap
+            Additionally, you can create one infused potion of freezing shell at the end of a long rest without expending a spell slot.</description>
+            <description level="9">You add the following options to your list of available spells for your Alchemical Infusions: freezing shell, cold snap, flash freeze
+            Additionally, you can create one infused potion of freezing shell at the end of a long rest without expending a spell slot.</description>
         </sheet>
     </element>
-</elements>
+    
+    <element name="Weapon Coating" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_WEAPON_COATING">
+        <supports>ps-specialization-upgrade,l1</supports>
+        <requirements></requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As a bonus action, you can apply one of your instant reactions to a melee weapon or piece of ammunition. The next time you hit a target with that weapon or ammunition before the end of your next turn, the target is subjected to the effects of the applied instant reaction. The creature automatically takes the damage or healing associated with the instant reaction, but makes a saving throw as normal against any additional effects.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can apply one of your instant reactions to a melee weapon or piece of ammunition. The next time you hit a target with that weapon or ammunition before the end of your next turn, the target is subjected to the effects of the applied instant reaction. The creature automatically takes the damage or healing associated with the instant reaction, but makes a saving throw as normal against any additional effects.</description>
+        </sheet>
+    </element>
 
 <!-- Level 5 Specialization Upgrades-->
-<!-- Level 9 Specialization Upgrades-->
-<!-- Level 11 Specialization Upgrades-->
-<!-- Level 15 Specialization Upgrades-->
 
-<!--
-    
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+    <element name="Adrenaline Serum" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ADRENALINE_SERUM">
         <supports>ps-specialization-upgrade,l5</supports>
         <requirements>[level:5]</requirements>
         <setters>
             <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You learn to create a potent serum. As a bonus action, you can consume a dose of this serum, increasing your Strength and Dexterity modifiers by an amount equal to your Intelligence modifier (up to a maximum of +5) for a number of rounds equal to your Constitution modifier (minimum of 1), after which all effects of the serum fade at the start of your next turn. While you are under the effect of this serum, you also gain the benefits of the heroism spell. When these effects end, your speed is halved and you can’t benefit from your Adrenaline Serum again until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can consume a dose of this serum, increasing your Strength and Dexterity modifiers by {{intelligence:modifier}} (up to +5) for {{constitution:modifier}} rounds (minimum of 1), after which all effects of the serum fade at the start of your next turn. While you are under the effect of this serum, you also gain the benefits of the heroism spell. When these effects end, your speed is halved and you can’t benefit from your Adrenaline Serum again until the start of your next turn.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM"/>
+        </rules>
+    </element>
+    <element name="Explosive Powder" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EXPLOSIVE_POWDER">
+        <supports>ps-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EXPLOSIVE_REACTION</requirements>
+        <setters>
+            <set name="short">Explosive Reaction upgradge, level 5</set>
+        </setters>
+        <description>
+            <p>You’ve managed to stabilize and refine your Explosive Reaction. You can prepare a number of Explosive Reactions up to your Intelligence modifier (a minimum of 1). These Explosive Reactions don’t detonate instantly, but rather last for 1 minute and will only detonate when exposed to fire. A creature can be affected by the damage from no more than two Explosive Reactions simultaneously, but structures take the full damage of all Explosive Reactions in their area.</p>
+        </description>
+        <sheet>
+            <description>You can prepare a number of Explosive Reactions up to {{intelligence:modifier}}. These Explosive Reactions don’t detonate instantly, but rather last for 1 minute and will only detonate when exposed to fire. A creature can be affected by the damage from no more than two Explosive Reactions simultaneously, but structures take the full damage of all Explosive Reactions in their area.</description>
+        </sheet>
+    </element>
+    <element name="Resistance Potion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_RESISTANCE_POTION">
+        <supports>ps-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You create a formula for making a simplified temporary resistance potion. During a long rest, you can create a potion that grants the drinker resistance to acid, cold, fire, lighting, poison, or thunder damage (selected during the long rest) for 10 minutes when consumed. If not consumed, it loses potency when you finish your next long rest.</p>
+        </description>
+        <sheet>
+            <description>During a long rest, you can create a potion that grants the drinker resistance to acid, cold, fire, lighting, poison, or thunder damage (selected during the long rest) for 10 minutes when consumed. If not consumed, it loses potency when you finish your next long rest.</description>
+        </sheet>
+    </element>
+<!-- Level 9 Specialization Upgrades-->
+
+    <element name="Aroma Therapies" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_AROMA_THERAPIES">
+        <supports>ps-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You expand your alchemical knowledge to be able to produce incense and simmering reagents that grant benefits to those that inhale their fumes. A creature that spends a long rest surrounded by these fumes regains an additional 2d4 Hit Dice, its exhaustion level is reduced by 1d4 (instead of 1), and it is cured of any nonmagical diseases it’s suffering from.</p>
+        </description>
+        <sheet>
+            <description>You expand your alchemical knowledge to be able to produce incense and simmering reagents that grant benefits to those that inhale their fumes. A creature that spends a long rest surrounded by these fumes regains an additional 2d4 Hit Dice, its exhaustion level is reduced by 1d4 (instead of 1), and it is cured of any nonmagical diseases it’s suffering from.</description>
+        </sheet>
+    </element>
+    <element name="Infusion Stone" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INFUSION_STONE">
+        <supports>ps-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You use the secrets of alchemy to create an Infusion Stone. You can use this stone in the process of infusing potions in place of expending a spell slot level. The spell you infuse in this way must be of a level for which you have spell slots.</p>
+            <p class="indent">Once you use the Infusion Stone, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can use this stone in the process of infusing potions in place of expending a spell slot level. The spell you infuse in this way must be of a level for which you have spell slots.</description>
+        </sheet>
+    </element>
+    <element name="Mana Potion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MANA_POTION">
+        <supports>ps-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>During a short rest, you can create a mana potion. A mana potion loses its potency if it isn’t consumed within 1 hour. As an action, a creature can consume a mana potion to regain one expended spell slot of its choice that is 3rd level or lower.</p>
+        </description>
+        <sheet>
+            <description>During a short rest, you can create a mana potion. A mana potion loses its potency if it isn’t consumed within 1 hour. As an action, a creature can consume a mana potion to regain one expended spell slot of its choice that is 3rd level or lower.</description>
+        </sheet>
+    </element>
+    <element name="Potent Reactions" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_POTENT_REACTIONS">
+        <supports>ps-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You refine your instant reactions, increasing their potency. The die you roll to determine the damage or healing effect of your instant reactions is increased by one size: a d4 becomes a d6, a d6 becomes a d8, a d8 becomes a d10, and a d10 becomes a d12.</p>
+        </description>
+        <sheet>
+            <description>You refine your instant reactions, increasing their potency. The die you roll to determine the damage or healing effect of your instant reactions is increased by one size up to a d12.</description>
+        </sheet>
+    </element>
+    <element name="Rocketry" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ROCKETRY">
+        <supports>ps-specialization-upgrade,l9</supports>
+        <requirements>[level:9],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_EXPLOSIVE_REACTION,ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_DELIVERY_MECHANISM</requirements>
+        <setters>
+            <set name="short">Explosive Reaction and Delivery Mechanism upgrades, level 9</set>
+        </setters>
+        <description>
+            <p>Combining your understanding of explosives with advances in delivery and stabilization, you produce the logical extreme: powering a rocket-based payload with your devastating knowledge.</p>
+            <p class="indent">You can choose any instant reaction you know as the payload for your rocket. Rockets must be prepared ahead of time, and you can prepare a number of them up to your Intelligence modifier (minimum of 1) at the end of a short or long rest. When you finish a rest, any unused rockets lose their potency and must be remade due to their volatile components.</p>
+            <p class="indent">A rocket targets a point you can see within 500 feet of you, but the DC of the instant reaction’s saving throw is reduced by 2 for every 100 feet it travels. When the rocket reaches its destination, the instant reaction takes effect, centered on that point.</p>
+            <p class="indent">Alternatively, you can load an alternate payload into your rockets, which can be an object that weighs no more than 1 pound, replacing the effect of the instant reaction. This alternate payload can be salvaged during a rest.</p>
+        </description>
+        <sheet>
+            <description>You can choose any instant reaction you know as the payload for your rocket. Rockets must be prepared ahead of time, and you can prepare a number of them up to {{intelligence:modifier}} at the end of a short or long rest. When you finish a rest, any unused rockets lose their potency and must be remade due to their volatile components.
+            A rocket targets a point you can see within 500 feet of you, but the DC of the instant reaction’s saving throw is reduced by 2 for every 100 feet it travels. When the rocket reaches its destination, the instant reaction takes effect, centered on that point.
+            Alternatively, you can load an alternate payload into your rockets, which can be an object that weighs no more than 1 pound, replacing the effect of the instant reaction. This alternate payload can be salvaged during a rest.</description>
+        </sheet>
+    </element>
+<!-- Level 11 Specialization Upgrades-->
+
+    <element name="Field Infusion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_FIELD_INFUSION">
+        <supports>ps-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You can create an infused potion as an action. Once you create an infused potion in this way, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You can create an infused potion as an action. Once you create an infused potion in this way, you can’t do so again until you finish a short or long rest.</description>
+        </sheet>
+    </element>
+    <element name="Mutation Mixture" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MUTATION_MIXTURE">
+        <supports>ps-specialization-upgrade,l11</supports>
+        <requirements>[level:inventor:13]</requirements>
+        <setters>
+            <set name="short">level 13 inventor</set>
+        </setters>
+        <description>
+            <p>You concoct an infused potion that can rapidly warp a creature’s body, temporarily mutating it in extreme ways. You add the <i>polymorph</i> spell to your list of available spells for your Alchemical Infusions. When a creature consumes this infused potion, the spell has a duration of 1 hour, but the creature that consumed it can end the effect early as an action.</p>
+            <p class="indent">Once a creature consumes this infused potion, it can’t be affected by the polymorph spell in this way again until it finishes a long rest.</p>
+        </description>
+        <sheet>
+            <description>You add the <i>polymorph</i> spell to your list of available spells for your Alchemical Infusions. When a creature consumes this infused potion, the spell has a duration of 1 hour, but the creature that consumed it can end the effect early as an action.
+            Once a creature consumes this infused potion, it can’t be affected by the polymorph spell in this way again until it finishes a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_POLYMORPH"/>
+        </rules>
+    </element>
+    <element name="Panacea" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_PANACEA">
+        <supports>ps-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>When you create a Healing Draught, you can add a more potent concoction to it. A creature that consumes this potent draught can treat any dice rolled to determine the hit points it regains as having rolled their maximum value, and the creature gains the benefit of a <i>greater restoration</i> spell. Once you make create a Healing Draught in this way, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>When you create a Healing Draught, you can add a more potent concoction to it. A creature that consumes this potent draught can treat any dice rolled to determine the hit points it regains as having rolled their maximum value, and the creature gains the benefit of a <i>greater restoration</i> spell. Once you make create a Healing Draught in this way, you can’t do so again until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION"/>
+        </rules>
+    </element>
+    <element name="Perfect Reaction" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_PERFECT_REACTION">
+        <supports>ps-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>In a moment of perfect focus, you can create a flawless instant reaction. When you deal damage, grant temporary hit points, or restore hit points to a creature with this instant reaction, you can use the maximum possible result instead of rolling. Once you create a Perfect Reaction, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you deal damage, grant temporary hit points, or restore hit points to a creature with this instant reaction, you can use the maximum possible result instead of rolling.</description>
+        </sheet>
+    </element>
+<!-- Level 15 Specialization Upgrades-->
+
+    <element name="Adrenaline Rush" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ADRENALINE_RUSH">
+        <supports>ps-specialization-upgrade,l15</supports>
+        <requirements>[level:15],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ADRENALINE_SERUM</requirements>
+        <setters>
+            <set name="short">Adrenaline Serum upgrade, level 15</set>
+        </setters>
+        <description>
+            <p>While under the effects of your Adrenaline Serum, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>While under the effects of your Adrenaline Serum, you can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+        </sheet>
+    </element>
+    <element name="Mad Alchemy" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAD_ALCHEMY">
+        <supports>ps-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>Whenever you create an infused potion, you can infuse two spells into it, instead of one, which activate simultaneously.</p>
+        </description>
+        <sheet>
+            <description>Whenever you create an infused potion, you can infuse two spells into it, instead of one, which activate simultaneously.</description>
+        </sheet>
+    </element>
+    <element name="Philosopher's Stone" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_PHILOSOPHERS_STONE">
+        <supports>ps-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>You create a Philosopher’s Stone, allowing you to recreate wonders of alchemy. As long as you have a supply of non-gold metal, you can create up to 1 pound of gold each day (50 gp worth). Additionally, the Philosopher’s Stone can be used in place of a diamond worth up to 500 gp for a spell’s material component; it isn’t consumed when used in this way, but it becomes inert for 24 hours, providing no benefits.</p>
+            <p class="indent">You can brew a special potion using your Philosopher’s Stone called an Elixir of Life. Brewing this potion takes 8 hours and requires crushing a diamond worth at least 2,000 gp into it. An Elixir of Life causes a creature that drinks it to cease aging for 4d4 years. A creature that drinks this elixir also gains the effect of a death ward spell, which lasts until it is triggered, instead of 8 hours.</p>
+            <p class="indent">A more potent Elixir of Life can be created, increasing the number of years that the creature ceases aging by 1d4 for each additional diamond spent.</p>
+        </description>
+        <sheet>
+            <description>You create a Philosopher’s Stone, allowing you to recreate wonders of alchemy. As long as you have a supply of non-gold metal, you can create up to 1 pound of gold each day (50 gp worth). Additionally, the Philosopher’s Stone can be used in place of a diamond worth up to 500 gp for a spell’s material component; it isn’t consumed when used in this way, but it becomes inert for 24 hours, providing no benefits.
+            You can brew a special potion using your Philosopher’s Stone called an Elixir of Life. Brewing this potion takes 8 hours and requires crushing a diamond worth at least 2,000 gp into it. An Elixir of Life causes a creature that drinks it to cease aging for 4d4 years. A creature that drinks this elixir also gains the effect of a death ward spell, which lasts until it is triggered, instead of 8 hours.
+            A more potent Elixir of Life can be created, increasing the number of years that the creature ceases aging by 1d4 for each additional diamond spent.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD"/>
+        </rules>
+    </element>
+</elements>
+<!--
+    
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+        <supports>ps-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
         </setters>
         <description>
             <p></p>
