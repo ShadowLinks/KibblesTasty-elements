@@ -52,7 +52,7 @@
             <p>At 1st level, you’ve acquired a pouch of useful basic reagents, much as a wizard might carry a component pouch. You’ve tucked away things that will come in handy, and can retrieve them as part of using an ability that might require them. As long as you have this pouch on you, you can use the potionsmith’s features. This pouch is considered to be alchemist’s supplies for the purposes of crafting.</p>
             <p class="indent">If you lose your reagent pouch, you can spend 50 gp to reacquire the various stocks you need, or spend 1 full day gathering them from a natural environment without expense.</p>
         </description>
-        <sheet display="false">
+        <sheet>
             <description>You’ve tucked away things that will come in handy, and can retrieve them as part of using an ability that might require them. As long as you have this pouch on you, you can use the potionsmith’s features. This pouch is considered to be alchemist’s supplies for the purposes of crafting.
             If you lose your reagent pouch, you can spend 50 gp to reacquire the various stocks you need, or spend 1 full day gathering them from a natural environment without expense.</description>
         </sheet>
