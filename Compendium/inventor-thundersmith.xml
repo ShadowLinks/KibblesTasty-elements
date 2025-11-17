@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Thundersmith Archetype Inventor</name>
+        <update version="0.0.1">
+            <file name="inventor-thundersmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-thundersmith.xml" />
+        </update>
+    </info>
+    <element name="Thundersmith" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_INVENTOR_THUNDERSMITH">
+        <supports>InventorSpecializations</supports>
+        <description>
+            <p>A Thundersmith is an inventor who harnesses the primal force of elemental power, channeling that power into their great creation: a weapon of unmatched devastation. Spectacular and terrible, these weapons bring fear to their foes and awe to their allies.</p>
+            <p class="indent">Why a Thundersmith bends their mind to the task of making such a weapon are as varied as the creations themselves. Some are coldly analytical about the destruction it causes seeking to continually improve it, tweaking it for ever more optimized destruction, while others view it merely as a tool, a means to an end; others still revel in the crash of thunder that heralds the terrifying force of their weapon.</p>
+            <p class="indent">Many look at these weapons as the dawn of a new age, in truth wielding them is a tricky and arcane art; as complex as its creation it is only truly understood and mastered by the one who forged the device—each weapon a unique piece of devastating art.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_PROFICIENCY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_STEAMFORGED_WEAPON" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_THUNDERMONGER" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_DEVISTATING_BLASTS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_UNLEASHED_POWER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_STEAMFORGED_WEAPON" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_THUNDERMONGER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_SPECIALIZATION_UPGRADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_DEVISTATING_BLASTS" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_UNLEASHED_POWER" level="14" />
+        </rules>
+    </element>
+    <element name="Thundersmith Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_PROFICIENCY">
+        <description>
+            <p>When you choose this specialization at 1st level, you gain proficiency with tinker’s tools and smith’s tools.</p>
+            <p class="indent">If your weapon requires ammunition, you gain the knowledge of how to forge and create it with smith’s tools during a long rest. You can create up to 50 rounds of ammunition during a long rest, with materials costing 1 gp per 10 rounds.</p>
+        </description>
+        <sheet display="false">
+            <description>If your weapon requires ammunition, you gain the knowledge of how to forge and create it with smith’s tools during a long rest. You can create up to 50 rounds of ammunition during a long rest, with materials costing 1 gp per 10 rounds.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Steamforged Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_STEAMFORGED_WEAPON">
+        <description>
+            <p>Starting at 1st level, you harness the elemental power of thundering storms to create a powerful weapon. This weapon requires attunement, only you can attune to it, you are proficient with it while attuned, and you can only be attuned to one Stormforged Weapon at a time. If you have multiple Stormforged Weapons, you can change which one you are attuned to during a long rest.</p>
+            <p class="indent">If you lose your Stormforged Weapon or wish to create additional ones, you can do so over the course of three days (8 hours each day) by expending 200 gp worth of metal and other raw materials. When you make a new Stormforged Weapon, you can make the same or a different type, and select the same or different upgrades.</p>
+            <p class="indent">Select one of the following and consult the Stormforged Weapon table for its statistics.</p>
+            <table>
+                <thead>
+                    <tr><td>Weapon Name</td><td>Damage</td><td>Weight</td><td>Type</td><td>Properties</td></tr>
+                </thead>
+                <tr><td>Thunder Cannon</td><td>1d12 piercing</td><td>15 lbs</td><td>Ranged</td><td>Ammunition (range 60/180), Two-Handed, Loud†, Stormcharged*</td></tr>
+                <tr><td>Hand Cannon</td><td>1d10 piercing</td><td>5 lbs</td><td>Ranged</td><td>Ammunition (range 30/90), Light, Loud†, Stormcharged*</td></tr>
+                <tr><td>Kinetic Hammer</td><td>1d10 bludgeoning + 1d4 thunder</td><td>10 lbs</td><td>Melee</td><td>Two-Handed, Heavy, Loud†</td></tr>
+                <tr><td>Charged Blade</td><td>1d6 slashing + 1d4 lightning</td><td>3 lbs</td><td>Melee</td><td>Finesse, Loud†</td></tr>
+                <tr><td>Lightning Pike</td><td>1d8 piercing + 1d4 lightning</td><td>10 lbs</td><td>Melee</td><td>Reach, Two-Handed, Loud†</td></tr>
+                <p class="indent">(*) Stormcharged. When you use an action, bonus action, or reaction to attack with a Stormcharged Weapon, you can make only one Attack regardless of the number of attacks you can normally make. If you could otherwise make additional attacks with that action, the weapon deals an extra 3d6 lightning or thunder damage per attack that was foregone.</p>
+                <p class="indent">(†) Loud: Your weapon rings with thunder that is audible within 300 feet of you whenever it makes an attack.</p>
+                <p class="indent">(Select from equipment - magic Item)</p>
+            </table>
+        </description>
+        <sheet>
+            <description>This weapon requires attunement, only you can attune to it, you are proficient with it while attuned, and you can only be attuned to one Stormforged Weapon at a time. If you have multiple Stormforged Weapons, you can change which one you are attuned to during a long rest.
+            If you lose your Stormforged Weapon or wish to create additional ones, you can do so over the course of three days (8 hours each day) by expending 200 gp worth of metal and other raw materials. When you make a new Stormforged Weapon, you can make the same or a different type, and select the same or different upgrades.
+            (Select from equipment)</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_STEAMFORGED" />
+        </rules>
+    </element>
+    <element name="Weapon Proficiency (Steamforged)" type="Proficiency" source="Kibbles' Compendium of Craft and Creation" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_STEAMFORGED">
+        <supports>Weapon, steamforged-weapons</supports>
+    </element>
+    <element name="Thunder Cannon" type="Magic Item" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_THUNDER_CANNON">
+        <supports>Ranged,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, steamforged-weapons</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">15 lb.</set>
+            <set name="type" addition="Steamforged">Weapon</set>
+            <set name="weapon">Thunder Cannon</set>
+            <set name="attunement">true</set>            
+            <set name="slot">twohand</set>
+            <set name="damage" type="Piercing">1d12</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_STEAMFORGED</set>
+        </setters>
+    </element>
+<!--
+    <element name="Lollyaxe" type="Magic Item" source="Silverplate" id="ID_DRS_SILVERPLATE_MAGIC_ITEM_LOLLYAXE">
+        <description>
+            <p>Crafted from the salvaged sugary rocks of Sugarwater Run and enchanted by the hammers of skillful weaponsmiths, the lollyaxe is a deadly delight.</p>
+            <p class="indent">As a bonus action, you can lick the axe to activate it. The next time you hit a creature with this weapon, you mark the target for 3 rounds. The critical range of attacks made against the marked creature increases by1. To elaborate, if your attacks score a critical hit on a roll of 19 or 20, your attacks against a marked creature score a critical hit on a roll of 18, 19, or 20. Only one creature can be marked in this way at a time.</p>
+        </description>
+        <setters>
+            <set name="keywords">greataxe</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="greataxe">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="weapon">Greataxe</set>
+        </setters>
+    </element>-->
+
+    <element name="Thundermonger" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_THUNDERMONGER">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_SPECIALIZATION_UPGRADE">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Specialization Upgrade 1" supports="ts-specialization-upgrade,l1" level="3" />
+            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="ts-specialization-upgrade,(l1||l5)" level="5" />
+            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="ts-specialization-upgrade,(l1||l5)" level="7" />
+            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="ts-specialization-upgrade,(l1||l5||l9)" level="9" />
+            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="ts-specialization-upgrade,(l1||l5||l9||l11)" level="11" />
+            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="ts-specialization-upgrade,(l1||l5||l9||l11)" level="13" />
+            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="ts-specialization-upgrade,(l1||l5||l9||l11||l15)" level="15" />
+            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="ts-specialization-upgrade,(l1||l5||l9||l11||l15)" level="17" />
+            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="ts-specialization-upgrade,(l1||l5||l9||l11||l15)" level="19" />
+        </rules>
+    </element>
+    <element name="Devistating Blasts" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_DEVISTATING_BLASTS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Unleashed Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_UNLEASHED_POWER">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+</elements>
+<!-- Unrestricted Specialization Upgrades-->
+<!-- Level 5 Specialization Upgrades-->
+<!-- Level 9 Specialization Upgrades-->
+<!-- Level 11 Specialization Upgrades-->
+<!-- Level 15 Specialization Upgrades-->
+
+<!--
+    
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_GADGETNAME">
+        <supports>ts-specialization-upgrade,l1</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    -->
