@@ -108,13 +108,13 @@
             <description></description>
         </sheet>
     </element>
-</elements>
+
 <!-- Unrestricted Specialization Upgrades-->
 <!-- Level 5 Specialization Upgrades-->
 <!-- Level 9 Specialization Upgrades-->
 <!-- Level 11 Specialization Upgrades-->
 <!-- Level 15 Specialization Upgrades-->
-
+</elements>
 <!--
     
     <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
