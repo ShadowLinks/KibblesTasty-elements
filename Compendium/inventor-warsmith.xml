@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Warsmith Archetype Inventor</name>
+        <update version="0.0.1">
+            <file name="inventor-warsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-warsmith.xml" />
+        </update>
+    </info>
+    <element name="Warsmith" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_INVENTOR_WARSMITH">
+        <supports>InventorSpecializations</supports>
+        <description>
+            <p>A Warsmith is an Inventor that has turned their wondrous talent of invention to a singular goal: making themselves a juggernaut of war. The reasons behind this could be benevolent or nefarious. Some Warsmiths seek to turn their invention into a machine of death and terror; others become the arbiter of justice and order, and others still perhaps merely seek to refine their craft in pursuit of pure innovation.</p>
+            <p class="indent">Because few individuals would pursue such a wondrous invention without a driven purpose to their endeavor, warsmiths tend to be lawful. Usually driven to their actions by a greater purpose, they seek the power to accomplish their aims, be it righting the wrongs of the world or bringing it to heel beneath their ironshod boot.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PROFICIENCY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_WARPLATE_GAUNTLET" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_WARSMITHS_ARMOR" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_EXTRA_ATTACK" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FULLY_CUSTOMIZED_GEAR" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_WARPLATE_GAUNTLET" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_WARSMITHS_ARMOR" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SPECIALIZATION_UPGRADE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FULLY_CUSTOMIZED_GEAR" level="14" />
+        </rules>
+    </element>
+    <element name="Warsmith's Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PROFICIENCY">
+        <description>
+            <p>At 1st level, you gain proficiency with heavy armor, tinker’s tools and smith’s tools.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Warplate Gauntlet" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_WARPLATE_GAUNTLET">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Warsmith's Armor" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_WARSMITHS_ARMOR">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SPECIALIZATION_UPGRADE">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Specialization Upgrade 1" supports="ws-specialization-upgrade,l1" level="3" />
+            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="ws-specialization-upgrade,(l1||l5)" level="5" />
+            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="ws-specialization-upgrade,(l1||l5)" level="7" />
+            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="ws-specialization-upgrade,(l1||l5||l9)" level="9" />
+            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="ws-specialization-upgrade,(l1||l5||l9||l11)" level="11" />
+            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="ws-specialization-upgrade,(l1||l5||l9||l11)" level="13" />
+            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="ws-specialization-upgrade,(l1||l5||l9||l11||l15)" level="15" />
+            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="ws-specialization-upgrade,(l1||l5||l9||l11||l15)" level="17" />
+            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="ws-specialization-upgrade,(l1||l5||l9||l11||l15)" level="19" />
+        </rules>
+    </element>
+    <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_EXTRA_ATTACK">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Fully Customized Gear" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FULLY_CUSTOMIZED_GEAR">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+<!-- Unrestricted Specialization Upgrades-->
+<!-- Level 5 Specialization Upgrades-->
+<!-- Level 9 Specialization Upgrades-->
+<!-- Level 11 Specialization Upgrades-->
+<!-- Level 15 Specialization Upgrades-->
+</elements>
+<!--
+    
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    -->
