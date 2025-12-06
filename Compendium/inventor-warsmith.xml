@@ -56,6 +56,7 @@
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_WARSMITHS_ARMOR_ARTIFICIAL_STRENGTH" />
+            <select type="Archetype Feature" supports="ws-gauntlet-upgrade" name="Warplate Gauntlet" />
         </rules>
     </element>
     <element name="Artificial Strength" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_WARSMITHS_ARMOR_ARTIFICIAL_STRENGTH">
@@ -505,248 +506,1250 @@
 
 <!-- Unrestricted Specialization Upgrades-->
 
-    <element name="Accelerated Movement" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ACCELERATED_MOVEMENT">
+    <element name="Accelerated Movement" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ACCELERATED_MOVEMENT">
         <supports>ws-specialization-upgrade,l1</supports>
         <requirements>[level:1]</requirements>
         <setters>
             <set name="short"></set>
         </setters>
         <description>
-            <p></p>
+            <p>You reduce the weight of your armor by 15 pounds (to a minimum of 0 pounds). While wearing your armor your speed increases by 10 feet. This applies to all movement speeds you have while wearing your armor.</p>
+        </description>
+        <sheet>
+            <description>You reduce the weight of your armor by 15 pounds (to a minimum of 0 pounds). While wearing your armor your speed increases by 10 feet. This applies to all movement speeds you have while wearing your armor.</description>
+        </sheet>
+        <rules>
+            <stat name="inventor:accelerated movement" value="10" bonus="base"/>
+            <stat name="innate speed:misc" value="inventor:accelerated movement" bonus="accelerated movement" equipped="![armor:none]" requirements="[innate speed:1]"/>
+            <stat name="innate speed:climb:misc" value="inventor:accelerated movement" bonus="accelerated movement" equipped="![armor:none]" requirements="[speed:climb:1]"/>
+            <stat name="innate speed:fly:misc" value="inventor:accelerated movement" bonus="accelerated movement" equipped="![armor:none]" requirements="[speed:fly:1]"/>
+            <stat name="innate speed:swim:misc" value="inventor:accelerated movement" bonus="accelerated movement" equipped="![armor:none]" requirements="[speed:swim:1]"/>
+            <stat name="innate speed:burrow:misc" value="inventor:accelerated movement" bonus="accelerated movement" equipped="![armor:none]" requirements="[speed:burrow:1]"/>
+        </rules>
+    </element>
+    <element name="Accelerated Movement 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ACCELERATED_MOVEMENT_2">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ACCELERATED_MOVEMENT</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You reduce the weight of your armor by 15 pounds (to a minimum of 0 pounds). While wearing your armor your speed increases by 10 feet. This applies to all movement speeds you have while wearing your armor.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="inventor:accelerated movement" value="10" />
+        </rules>
+    </element>
+    <element name="Adaptable Armor" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ADAPTABLE_ARMOR">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You integrate deployable hooks and fins into your armor, augmenting its mobility. While wearing your armor you gain a climbing speed equal to your walking speed, and you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+            <p class="indent">Additionally, you gain a swimming speed equal to your walking speed.</p>
+        </description>
+        <sheet>
+            <description>While wearing your armor you gain a climbing speed equal to your walking speed, and you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.
+            </description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:climb:misc" value="innate speed" bonus="base" equipped="![armor:none]"/>
+            <stat name="innate speed:swim" value="innate speed" bonus="base" equipped="![armor:none]"/>
+        </rules>
+    </element>
+    <element name="Arcane Visor" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_VISOR">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You magically enchant your visor. You gain one of the following effects while wearing your armor; you pick the effect when selecting the upgrade.</p>
+            <ul>
+                <li>You gain darkvision to a range of 60 feet. If you already have darkvision, the range of that darkvision is increased by 60 feet.</li>
+                <li>You can ignore Sunlight Sensitivity.</li>
+                <li>Divination spells no longer require your concentration to maintain. You can only use this effect on one spell at a time.</li>
+            </ul>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Arcane Visor Effect" supports="arcane-visor-effect" />
+        </rules>
+    </element>
+    <element name="Arcane Visor 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_VISOR_2">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_VISOR</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You magically enchant your visor. You gain one of the following effects while wearing your armor; you pick the effect when selecting the upgrade.</p>
+            <ul>
+                <li>You gain darkvision to a range of 60 feet. If you already have darkvision, the range of that darkvision is increased by 60 feet.</li>
+                <li>You can ignore Sunlight Sensitivity.</li>
+                <li>Divination spells no longer require your concentration to maintain. You can only use this effect on one spell at a time.</li>
+            </ul>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Arcane Visor Effect" supports="arcane-visor-effect" />
+        </rules>
+    </element>
+    <element name="Arcane Visor 3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_VISOR_3">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_VISOR_2</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You magically enchant your visor. You gain one of the following effects while wearing your armor; you pick the effect when selecting the upgrade.</p>
+            <ul>
+                <li>You gain darkvision to a range of 60 feet. If you already have darkvision, the range of that darkvision is increased by 60 feet.</li>
+                <li>You can ignore Sunlight Sensitivity.</li>
+                <li>Divination spells no longer require your concentration to maintain. You can only use this effect on one spell at a time.</li>
+            </ul>
+            <p class="indent">Regardless of the selection, you have advantage on saving throws against being blinded while wearing your armor.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Arcane Visor Effect" supports="arcane-visor-effect" />
+        </rules>
+    </element>
+    <element name="Arcane Visor: Darkvision" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_VISOR_DARKVISION">
+        <supports>arcane-visor-effect</supports>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You gain darkvision to a range of 60 feet. If you already have darkvision, the range of that darkvision is increased by 60 feet.</p>
+        </description>
+        <sheet>
+            <description>you have advantage on saving throws against being blinded while wearing your armor.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60"  />
+        </rules>
+    </element>
+    <element name="Arcane Visor: Tinted" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_VISOR_IGNORE_SUNLIGHT_SENSITIVITY">
+        <supports>arcane-visor-effect</supports>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You can ignore Sunlight Sensitivity.</p>
+        </description>
+        <sheet>
+            <description>You can ignore Sunlight Sensitivity. you have advantage on saving throws against being blinded while wearing your armor.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Visor: Stable Divinations" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_VISOR_STABLE_DIVINATIONS">
+        <supports>arcane-visor-effect</supports>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>Divination spells no longer require your concentration to maintain. You can only use this effect on one spell at a time.</p>
+        </description>
+        <sheet>
+            <description>Divination spells no longer require your concentration to maintain. You can only use this effect on one spell at a time. you have advantage on saving throws against being blinded while wearing your armor.</description>
+        </sheet>
+    </element>
+    <element name="Collapsible" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_COLLAPSIBLE">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short">Incompatible with Integrated Armor</set>
+        </setters>
+        <description>
+            <p>Your Warsmith’s armor can collapse into a case for easy storage. When transformed this way the armor is indistinguishable from a normal case and weighs 1/3 its normal weight. As an action you can don or doff the armor, allowing it to transform as needed.</p>
+        </description>
+        <sheet>
+            <description>Your Warsmith’s armor (except for integrated armor) can collapse into a case for easy storage. When transformed this way the armor is indistinguishable from a normal case and weighs 1/3 its normal weight. As an action you can don or doff the armor, allowing it to transform as needed.</description>
+        </sheet>
+    </element>
+    <element name="Construct Constitution" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_CONSTRUCT_CONSTITUTION">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short">Prerequisite: Integrated Armor</set>
+        </setters>
+        <description>
+            <p>When using Integrated Armor, you gain resistance to poison damage and immunity to the poisoned condition. You have advantage on saving throws against diseases as well as spell effects that require a “humanoid” target.</p>
+        </description>
+    </element>
+    <element name="Flame Projector" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FLAME_PROJECTOR">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You gain the ability to unleash fire energy. While wearing your Warplate Gauntlet, you can cast fire bolt, and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
+            <ul>
+                <li>3rd Level: burning hands</li>
+                <li>5th Level: scorching ray</li>
+                <li>9th Level: fireball</li>
+                <li>13th Level: wall of fire</li>
+                <li>17th Level: flame strike</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain access to certain fire spells while wearing your warplate Gauntlet.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT"  />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3"  />
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5"  />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9"  />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13"  />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="17"  />
+        </rules>
+    </element>
+    <element name="Force Blast" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FORCE_BLAST">
+        <supports>ws-specialization-upgrade,l1,ws-gauntlet-upgrade</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You upgrade your Warplate Gauntlet to deliver a special ranged attack. This attack is a ranged spell attack that deals 1d8 + your Intelligence modifier force damage, and has a range of 60 feet.</p>
+            <p class="indent">You are proficient in this weapon. When you take the attack action, you can use this ranged spell attack in place of any attack made.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: 60 ft. On hit 1d8 + [intelligence:modifier] force damage. You are proficient with this weapon and can replace any attack you make when you take the attack action.</description>
+        </sheet>
+    </element>
+    <element name="Fortified Brace" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FORTIFIED_BRACE">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short">Prerequisite: Warplate</set>
+        </setters>
+        <description>
+            <p>You build in systems to maximize defensive potential. As a reaction to taking damage, you can brace your armor, locking it in a defensive position. Until the start of your next turn, you gain resistance to all damage (Including the triggering damage) and any subsequent attacks made against you are made with disadvantage. On your next turn after taking this action, your speed is halved and you can’t take an action (you can still take a bonus action).</p>
+        </description>
+        <sheet>
+            <description>Requires Warplate. As a reaction to taking damage, you can brace your armor, locking it in a defensive position. Until the start of your next turn, you gain resistance to all damage (Including the triggering damage) and any subsequent attacks made against you are made with disadvantage. On your next turn after taking this action, your speed is halved and you can’t take an action (you can still take a bonus action).</description>
+        </sheet>
+    </element>
+    <element name="Grappling Hook" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_GRAPPLING_HOOK">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short">Prerequisite: Warskin or Warsuit</set>
+        </setters>
+        <description>
+            <p>Your Warsuit gains an integrated grappling hook set into your gauntlet. As an attack or as an action, you may target a surface, object or creature within 20 feet. If the target is Small or smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it. Alternatively, if the target is Medium or larger, you can choose to be pulled to it (this doesn’t grapple it). Opportunity attacks provoked by this movement are made with disadvantage.</p>
+        </description>
+        <sheet>
+            <description>Your Warsuit or Warskin gains an integrated grappling hook set into your gauntlet. As an attack or as an action, you may target a surface, object or creature within 20 feet. If the target is Small or smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it. Alternatively, if the target is Medium or larger, you can choose to be pulled to it (this doesn’t grapple it). Opportunity attacks provoked by this movement are made with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Grappling Reel" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_GRAPPLING_REEL">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short">Prerequisite: Integrated Armor or Warplate</set>
+        </setters>
+        <description>
+            <p>Your Warsmith’s armor gains an integrated grappling reel set into your gauntlet. As an attack or as an action, you may target a surface, object or creature within 30 feet. If the target is Large or smaller, you can make a Strength (Athletics) check as if grappling normally to pull it to you and grapple it on success. Alternatively, if the target is Large or larger, you can choose to be pulled to it (this doesn’t grapple it). This movement provokes opportunity attacks as normal movement would.</p>
+        </description>
+        <sheet>
+            <description>Your Inegrated Armor or Warplate gains an integrated grappling reel set into your gauntlet. As an attack or as an action, you may target a surface, object or creature within 30 feet. If the target is Large or smaller, you can make a Strength (Athletics) check as if grappling normally to pull it to you and grapple it on success. Alternatively, if the target is Large or larger, you can choose to be pulled to it (this doesn’t grapple it). This movement provokes opportunity attacks as normal movement would.</description>
+        </sheet>
+    </element>
+    <element name="Iron Fortitude" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_IRON_FORTITUDE">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short">Prerequisite: Integrated Armor</set>
+        </setters>
+        <description>
+            <p>You gain an unnatural durability. When damage reduces you to 0 hit points, you make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is from a critical hit. On a success, you drop to 1 hit point instead.</p>
+        </description>
+        <sheet>
+            <description>Requires Integrated Armor. When damage reduces you to 0 hit points, you make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is from a critical hit. On a success, you drop to 1 hit point instead.</description>
+        </sheet>  
+    </element>
+    <element name="Lightning Channel" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_LIGHTNING_CHANNEL">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>      
+        <description>
+            <p>You are able to funnel your suit’s power into your attacks. You can use this upgrade to cast <i>lightning charged</i> as a bonus action without expending a spell slot. Once used, this upgrade can’t be used again until you finish a short or long rest.</p>
+            <p class="indent">Additionally, you can apply the damage from lightning charged on your Force Blast ranged spell attacks.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can use this upgrade to cast <i>lightning charged</i> as a bonus action without expending a spell slot.
+            Additionally, you can apply the damage from lightning charged on your Force Blast ranged spell attacks.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_LIGHTNING_CHARGED"  />
+        </rules>
+    </element>
+    <element name="Lightning Projector" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_LIGHTNING_PROJECTOR">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You gain the ability to unleash lightning energy. While wearing your Warplate Gauntlet, you can cast shocking grasp, and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
+            <ul>
+                <li>3rd Level: lightning tendril</li>
+                <li>5th Level: lightning charged</li>
+                <li>9th Level: lighning bolt</li>
+                <li>13th Level: jumping jolt</li>
+                <li>17th Level: skyburst</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain access to certain fire spells while wearing your warplate Gauntlet.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP"  />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_LIGHTNING_TENDRIL" level="3"  />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_LIGHTNING_CHARGED" level="5"  />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9"  />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_JUMPING_JOLT" level="13"  />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_SKYBURST" level="17"  />
+        </rules>
+    </element>
+    <element name="Martial Grip" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_MARTIAL_GRIP">
+        <supports>ws-specialization-upgrade,l1,ws-gauntlet-upgrade</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>Your Warplate Gauntlet grants you the ability to wield a wide variety of powerful weapons. You gain proficiency with martial weapons while wearing your Warplate Gauntlet.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency with martial weapons while wearing your Warplate Gauntlet.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />    
+        </rules>
+    </element>
+    <element name="Power Fist" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_POWER_FIST">
+        <supports>ws-specialization-upgrade,l1,ws-power-fist, ws-gauntlet-upgrade</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>Your Warplate Gauntlet becomes a melee weapon while you aren’t holding anything in it. You have proficiency in this weapon, and it has the Light and Special properties. It deals 1d8 bludgeoning damage.</p>
+            <p class="indent"><em>Special</em>:  When you make an attack roll, you can choose to forgo adding your proficiency bonus to the attack roll. If the attack hits, you can add double your proficiency bonus to the damage roll.</p>
+            <p class="indent">You can apply this upgrade up to 2 times, making a separate weapon with the same properties the second time.</p>
+        </description>
+        <sheet>
+            <description>Your Warplate Gauntlet becomes a melee weapon while you aren’t holding anything in it. You have proficiency in this weapon, and it has the Light and Special properties. It deals 1d8 bludgeoning damage.
+            <em>Special</em>:  When you make an attack roll, you can choose to forgo adding your proficiency bonus to the attack roll. If the attack hits, you can add {{doubleprof}}.</description>
+        </sheet>
+        <rules>
+            <stat name="doubleprof" value="proficiency" bonus="base"/>
+            <stat name="doubleprof" value="proficiency"/>
+        </rules>
+    </element>
+    <element name="Power Fist 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_POWER_FIST_2">
+        <supports>ws-specialization-upgrade,l1,ws-power-fist, ws-gauntlet-upgrade</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_POWER_FIST</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>Your Warplate Gauntlet becomes a melee weapon while you aren’t holding anything in it. You have proficiency in this weapon, and it has the Light and Special properties. It deals 1d8 bludgeoning damage.</p>
+            <p class="indent"><em>Special</em>:  When you make an attack roll, you can choose to forgo adding your proficiency bonus to the attack roll. If the attack hits, you can add double your proficiency bonus to the damage roll.</p>
+            <p class="indent">You can apply this upgrade up to 2 times, making a separate weapon with the same properties the second time.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
     </element>
-    <element name="Adaptable Armor" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_ADAPTABLE_ARMOR">
+
+    <element name="Reinforced Armor" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_REINFORCED_ARMOR">
         <supports>ws-specialization-upgrade,l1</supports>
         <requirements>[level:1]</requirements>
         <setters>
             <set name="short"></set>
         </setters>
         <description>
-            <p></p>
+            <p>You reinforce the structure and materials that make up your Warsmith’s armor. Your Warsmith’s Armor’s Armor Class (AC) increases by 1.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <stat name="ac:armored:misc" value="1" />
+        </rules>
     </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+    
+    <element name="Reinforced Armor 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_REINFORCED_ARMOR_2">
         <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_REINFORCED_ARMOR</requirements>
         <setters>
             <set name="short"></set>
         </setters>
         <description>
-            <p></p>
+            <p>You reinforce the structure and materials that make up your Warsmith’s armor. Your Warsmith’s Armor’s Armor Class (AC) increases by 1.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <stat name="ac:armored:misc" value="1" />
+        </rules>
     </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+    <element name="Reinforced Armor 3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_REINFORCED_ARMOR_3">
         <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_REINFORCED_ARMOR_2</requirements>
         <setters>
             <set name="short"></set>
         </setters>
         <description>
-            <p></p>
+            <p>You reinforce the structure and materials that make up your Warsmith’s armor. Your Warsmith’s Armor’s Armor Class (AC) increases by 1.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <stat name="ac:armored:misc" value="1" />
+        </rules>
     </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+    <element name="Sentient Armor" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SENTIENT_ARMOR">
         <supports>ws-specialization-upgrade,l1</supports>
         <requirements>[level:1]</requirements>
         <setters>
             <set name="short"></set>
         </setters>
         <description>
-            <p></p>
+            <p>You create an artificial personality integrated into your armor, giving it limited sentience. This sentience assists you in many ways. While wearing your armor, your Intelligence ability score and maximum Intelligence ability score are increased by 2. Your armor can understand and speak any language you can speak. You can communicate telepathically with it while wearing it.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You create an artificial personality integrated into your armor, giving it limited sentience. This sentience assists you in many ways. While wearing your armor, your Intelligence ability score and maximum Intelligence ability score are increased by 2. Your armor can understand and speak any language you can speak. You can communicate telepathically with it while wearing it.</description>
         </sheet>
+        <rules>
+            <stat name="intelligence:max" value="2"  equipped="![armor:none]"/>
+            <stat name="intelligence" value="2"  equipped="![armor:none]" />
+        </rules>
     </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+    <element name="Wire Acrobatics" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_WIRE_ACROBATICS">
         <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_GRAPPLING_HOOK</requirements>
         <setters>
-            <set name="short"></set>
+            <set name="short">Prerequisite: Grappling Hook</set>
         </setters>
         <description>
-            <p></p>
+            <p>You can take your movement using your grappling hook instead of using it as an attack or action; you can’t move other creatures when using the Grappling Hook in this way.</p>
+            <p class="indent">The first time you use your Grappling Hook to move on a turn, the movement doesn’t provoke opportunity attacks.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
-        <supports>ws-specialization-upgrade,l1</supports>
-        <requirements>[level:1]</requirements>
-        <setters>
-            <set name="short"></set>
-        </setters>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>You can take your movement using your grappling hook instead of using it as an attack or action; you can’t move other creatures when using the Grappling Hook in this way.
+            The first time you use your Grappling Hook to move on a turn, the movement doesn’t provoke opportunity attacks.</description>
         </sheet>
     </element>
 <!-- Level 5 Specialization Upgrades-->
+    <element name="Active Camouflage" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ACTIVE_CAMOUFLAGE">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>As an action, you can activate active camouflage, causing your Warsmith’s Armor to automatically blend into its surroundings. This lasts until deactivated. While this is active, you are considered lightly obscured, and can hide from a creature even when they have a clear line of sight to you. Wisdom (Perception) checks to find you that rely on vision are made with disadvantage.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can activate active camouflage, causing your Warsmith’s Armor to automatically blend into its surroundings. This lasts until deactivated. While this is active, you are considered lightly obscured, and can hide from a creature even when they have a clear line of sight to you. Wisdom (Perception) checks to find you that rely on vision are made with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Barrage" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_BARRAGE">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>Your armor collects arcane energy whenever you expend a spell slot, storing a number of charges equal to the level of the spell cast. These charges fade after 1 minute if you do not expend additional spell slots. You can store a maximum number of charges equal to half your Inventor level. You can use this upgrade to cast magic missile without expending a spell slot. This expends all charges, increasing the level of the magic missile spell by one for each charge spent. If you have an Ether Reactor, you can expend charges from it to add additional charges, up to the maximum number of charges you can have stored.</p>
+            <p class="indent">Once activated, it can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>Your armor collects arcane energy whenever you expend a spell slot, storing a number of charges equal to the level of the spell cast. These charges fade after 1 minute if you do not expend additional spell slots. You can store a maximum number of {{level:inventor:half}} charges. You can use this upgrade to cast magic missile without expending a spell slot. This expends all charges, increasing the level of the magic missile spell by one for each charge spent. </description>
+            <description requirements="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ETHER_REACTOR">Your armor collects arcane energy whenever you expend a spell slot, storing a number of charges equal to the level of the spell cast. These charges fade after 1 minute if you do not expend additional spell slots. You can store a maximum number of {{level:inventor:half}} charges. You can use this upgrade to cast magic missile without expending a  the magic missile spell by one for each charge spent. If you have an Ether Reactor, you can expend charges from it to add additional charges, up to the maximum number of charges you can have stored.</description>
+        </sheet>
+    </element>
+    <element name="Artificial Guidance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARTIFICIAL_GUIDANCE">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SENTIENT_ARMOR</requirements>
+        <setters>
+            <set name="short">level 5, Prerequisite: Sentient Armor</set>
+        </setters>
+        <description>
+            <p>You upgrade the artificial personality integrated into your armor to assist with a new skill. While able to communicate with your armor, you can gain the effect of guidance when making any Intelligence or Wisdom check.</p>
+        </description>
+        <sheet>
+            <description>While able to communicate with your armor, you can gain the effect of guidance when making any Intelligence or Wisdom check.</description>
+        </sheet>
+    </element>
+    <element name="Emergency Protocol" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_EMERGENCY_PROTOCOL">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SENTIENT_ARMOR</requirements>
+        <setters>
+            <set name="short">level 5, Prerequisite: Sentient Armor</set>
+        </setters>
+        <description>
+            <p>The intelligence in your armor will attempt to preserve your life. If you are incapacitated or unconscious and can’t take your action, it will cast a spell or take the dodge action. It can only cast spells granted by your armor’s upgrades, and can use your spell slots to do so. It can act in this way up a number of turns equal to your Intelligence modifier, but this control strains its abilities, and it can’t take control again until you finish a short or long rest. You automatically resume control if you are no longer incapacitated or unconscious.</p>
+        </description>
+        <sheet>
+            <description>If you are incapacitated or unconscious and can’t take your action, it will cast a spell or take the dodge action. It can only cast spells granted by your armor’s upgrades, and can use your spell slots to do so. It can act in this way up {{intelligence:modifier}} times, but this control strains its abilities, and it can’t take control again until you finish a short or long rest. You automatically resume control if you are no longer incapacitated or unconscious.</description>
+        </sheet>
+    </element>
+    <element name="Force Accumulator" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FORCE_ACCUMULATOR">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FORCE_BLAST</requirements>
+        <setters>
+            <set name="short">level 5, Prerequisite: Force Blast</set>
+        </setters>
+        <description>
+            <p>Every time you expend a spell slot of 1st level or higher, you accumulate charges to your Force Blast equal to the level of spell slot spent, up to a maximum number of charges equal to half of your Intelligence modifier (rounded down). When you deal damage with Force Blast, you can expend the accumulated charges to deal an extra 1d6 damage or to move the target 5 feet directly away from you, or any combination thereof per charge spent.</p>
+            <p class="indent">Charges not expended within 1 minute of being accumulated are lost.</p>
+        </description>
+        <sheet>
+            <description>Every time you expend a spell slot of 1st level or higher, you accumulate charges to your Force Blast equal to the level of spell slot spent, up to a maximum of {{intelligence:modifer:half}} charges. When you deal damage with Force Blast, you can expend the accumulated charges to deal an extra 1d6 damage or to move the target 5 feet directly away from you, or any combination thereof per charge spent.
+            Charges not expended within 1 minute of being accumulated are lost.</description>
+        </sheet>
+    </element>
+    <element name="Mechanical Enhancement" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_MECHANICAL_ENHANCEMENT">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5, Prerequisite: Integrated Armor</set>
+        </setters>
+        <description>
+            <p>Requires Integrated Armor. You improve every aspect of yourself ever so slightly. You gain +5 feet of movement, one additional hit point per Inventor level, and +1 to Strength, Dexterity, and Constitution saving throws.</p>
+        </description>
+        <sheet>
+            <description>Requires Integrated Armor. +5 speed, +{{level:inventor}} hp, +1 STR/DEX/CON Save.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:misc" value="5" bonus="Mechanical Enhancement" equipped="![armor:none]" />
+            <stat name="hp" value="level:inventor" bonus="Mechanical Enhancement" equipped="![armor:none]" />
+            <stat name="strength:save:misc" value="1" bonus="Mechanical Enhancement" equipped="![armor:none]" />
+            <stat name="dexterity:save:misc" value="1" bonus="Mechanical Enhancement" equipped="![armor:none]" />
+            <stat name="constitution:save:misc" value="1" bonus="Mechanical Enhancement" equipped="![armor:none]" />
+        </rules>
+    </element>
+    <element name="Reactive Plating" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_REACTIVE_PLATING">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5, Prerequisite: Warplate</set>
+        </setters>
+        <description>
+            <p>Your armor partially deflects incoming blows. You can use your reaction when hit by an attack that deals bludgeoning, piercing, or slashing damage to reduce the damage of that attack by an amount equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>Prerequisite: Warplate. You can use your reaction when hit by an attack that deals bludgeoning, piercing, or slashing damage to reduce the damage of that attack by {{proficiency}}.</description>
+        </sheet>
+    </element>
+    <element name="Resistance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your armor you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="ws-resistance" name="Resistance" />
+        </rules>
+    </element>
+    
+    <element name="Resistance 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_2">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your armor you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="ws-resistance" name="Resistance" />
+        </rules>
+    </element>
+    <element name="Resistance 3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_3">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_2</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your armor you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="ws-resistance" name="Resistance" />
+        </rules>
+    </element>
+    <element name="Resistance 4" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_4">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_3</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your armor you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="ws-resistance" name="Resistance" />
+        </rules>
+    </element>
+    
+    <element name="Resistance 5" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_5">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_4</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your armor you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="ws-resistance" name="Resistance" />
+        </rules>
+    </element>
+    <element name="Resistance 6" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_6">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_5</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your armor you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="ws-resistance" name="Resistance" />
+        </rules>
+    </element>
+    <element name="Resistance 7" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_7">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_6</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your armor you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="ws-resistance" name="Resistance" />
+        </rules>
+    </element>
+    <element name="Resistance 8" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_8">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_7</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your armor you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="ws-resistance" name="Resistance" />
+        </rules>
+    </element>
+
+    <element name="Resistance: Acid" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_ACID">
+        <supports>ws-resistance</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Resistance: Cold" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_COLD">
+        <supports>ws-resistance</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Resistance: Fire" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_FIRE">
+        <supports>ws-resistance</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Resistance: Force" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_FORCE">
+        <supports>ws-resistance</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+        </rules>
+    </element>
+    <element name="Resistance: Lightning" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_LIGHTNING">
+        <supports>ws-resistance</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Resistance: Necrotic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_NECROTIC">
+        <supports>ws-resistance</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+    <element name="Resistance: Radiant" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_RADIANT">
+        <supports>ws-resistance</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+        </rules>
+    </element>
+    <element name="Resistance: Thunder" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RESISTANCE_THUNDER">
+        <supports>ws-resistance</supports>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+        </rules>
+    </element>
+    <element name="Sealed Suit" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SEALED_SUIT">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5, Prerequisite: Warplate</set>
+        </setters>
+        <description>
+            <p>As a bonus action on your turn you can environmentally seal your Warplate, giving you an air supply for up to 1 hour and making you immune to poison (but not curing you of existing poisoned conditions).</p>
+            <p class="indent">In addition to the above, you are also considered acclimated to cold and hot climates while wearing your armor, and you’re also acclimated to high altitude while wearing your armor.</p>
+        </description>
+        <sheet>
+            <description>Requires Warplate. As a bonus action on your turn you can environmentally seal your Warplate, giving you an air supply for up to 1 hour and making you immune to poison (but not curing you of existing poisoned conditions).
+            In addition to the above, you are also considered acclimated to cold and hot climates while wearing your armor, and you’re also acclimated to high altitude while wearing your armor.</description>
+        </sheet>
+    </element>
 <!-- Level 9 Specialization Upgrades-->
+    <element name="Assume Control" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ASSUME_CONTROL">
+        <supports>ws-specialization-upgrade,l9</supports>
+        <requirements>[level:9], ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_EMERGENCY_PROTOCOL</requirements>
+        <setters>
+            <set name="short">level 9, Prerequisite: Emergency Protocol</set>
+        </setters>
+        <description>
+            <p>You expand the control available to your armor’s sentience. You can set additional conditions when your armor will take control of your movement and actions, and it can maintain this control for up to 1 minute.</p>
+            <p class="indent">While acting in this mode, it can take any action you could take (including attacking), but can only cast spells granted by Upgrades. It uses your ability scores.</p>
+            <p class="indent">The triggering event can be a preset condition, a verbal command, or a specified time. Your armor is immune to the charmed, blinded, frightened, paralyzed, and poisoned conditions, and doesn’t suffer from exhaustion, ignoring these effects if you are under them.</p>
+            <p class="indent">If you have Warplate, it can act in this way even when you are not wearing it (or are dead). When doing so, it uses the game statistics of animated armor with the following modifications: It has an intelligence of 12 and it can cast any spells that come from Upgrades with a DC equal to your spell save DC.</p>
+            <p class="indent">This counts as a use of your Emergency Protocol, and it can’t control the armor again (in either way) until you finish a short or long rest.</p>
+            <p class="indent">In non-combat situations in which you are not wearing your armor, your armor’s sentience can exert a lesser control of the armor to move it about and perform simple tasks. During this time it has the statistics of an unseen servant, though it looks like your suit of armor. Its ability to do this is not limited, but it takes 1 minute to assume this kind of control of your armor, and it can only do so while you are not wearing it. If reduced to zero hit points, the armor is incapacitated until you repair it during a long rest, but it can still serve as armor.</p>
+        </description>
+        <sheet>
+            <description>You expand the control available to your armor’s sentience. You can set additional conditions when your armor will take control of your movement and actions, and it can maintain this control for up to 1 minute.
+            While acting in this mode, it can take any action you could take (including attacking), but can only cast spells granted by Upgrades. It uses your ability scores.
+            The triggering event can be a preset condition, a verbal command, or a specified time. Your armor is immune to the charmed, blinded, frightened, paralyzed, and poisoned conditions, and doesn’t suffer from exhaustion, ignoring these effects if you are under them.
+            If you have Warplate, it can act in this way even when you are not wearing it (or are dead). When doing so, it uses the game statistics of animated armor with the following modifications: It has an intelligence of 12 and it can cast any spells that come from Upgrades with a DC equal to your spell save DC.
+            This counts as a use of your Emergency Protocol, and it can’t control the armor again (in either way) until you finish a short or long rest.
+            In non-combat situations in which you are not wearing your armor, your armor’s sentience can exert a lesser control of the armor to move it about and perform simple tasks. During this time it has the statistics of an unseen servant, though it looks like your suit of armor. Its ability to do this is not limited, but it takes 1 minute to assume this kind of control of your armor, and it can only do so while you are not wearing it. If reduced to zero hit points, the armor is incapacitated until you repair it during a long rest, but it can still serve as armor.</description>
+        </sheet>
+    </element>
+    <element name="Brute Force Style" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_BRUTE_FORCE_STYLE">
+        <supports>ws-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>The strength imparted by your armor gives the force of blows the devastating power of a more skilled combatant. You can select a Fighting Style from Dueling, Great Weapon Fighting, or Two-Weapon Fighting and gain the effect of that Fighting Style while wearing your armor.</p>
+        </description>
+        <sheet>
+            <description>You gain the benefits of a Fighting Style while wearing your armor.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" name="Brute Force Style" />
+        </rules>
+    </element>
+    <element name="Ether Reactor" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ETHER_REACTOR">
+        <supports>ws-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You construct an ether reactor that feeds your armor, powering its upgrades with arcane energy. The Ether Reactor has 6 charges, and can be used to power upgrades that cast spells, even upgrades that would normally only recharge after a rest can instead be cast by using charges, spending 1 charge per level of the spell you are casting. You can cast spells at a higher level by expending more charges. It regains all charges at the end of a long rest.</p>
+            <p class="indent">If your Ether Reactor has no charges left, you can overdraw your Ether Reactor for one last burst of power, but your armor is temporarily immobilized and your speed while wearing your armor becomes zero for a number of rounds equal to the level of the spell cast. Once you overdraw it, you can’t do this again until you finish a long rest</p>
+        </description>
+        <sheet usage="6/Long Rest">
+            <description>The Ether Reactor has 6 charges, and can be used to power upgrades that cast spells, even upgrades that would normally only recharge after a rest can instead be cast by using charges, spending 1 charge per level of the spell you are casting. You can cast spells at a higher level by expending more charges.
+            If your Ether Reactor has no charges left, you can overdraw your Ether Reactor for one last burst of power, but your armor is temporarily immobilized and your speed while wearing your armor becomes zero for a number of rounds equal to the level of the spell cast. Once you overdraw it, you can’t do this again until you finish a long rest</description>
+        </sheet>
+    </element>
+    <element name="Heads-Up Display" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_HEADS_UP_DISPLAY">
+        <supports>ws-specialization-upgrade,l9</supports>
+        <requirements>[level:9],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARCANE_VISOR,ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SENTIENT_ARMOR</requirements>
+        <setters>
+            <set name="short">level 9,Prerequisite: Arcane Visor, Sentient Armor</set>
+        </setters>
+        <description>
+            <p>You can delegate displaying and tracking things in your sight to your Sentient armor, granting you the following benefits:</p>
+            <ul>
+                <li>When a creature attempts to take the Hide action against you, you can make an active Wisdom (Perception) check to contest its Dexterity (Stealth) check as a reaction.</li>
+                <li>When making a Dexterity saving throw against an attack you can see, you can make an Intelligence saving throw instead.</li>
+                <li>When a creature hits you with a ranged attack roll, you can cast true strike as a reaction targeting that creature.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When a creature attempts to take the Hide action against you, you can make an active Wisdom (Perception) check to contest its Dexterity (Stealth) check as a reaction.
+            When making a Dexterity saving throw against an attack you can see, you can make an Intelligence saving throw instead.
+            When a creature hits you with a ranged attack roll, you can cast true strike as a reaction targeting that creature.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TRUE_STRIKE" />
+        </rules>
+    </element>
+    <element name="Phase Suit" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PHASE_SUIT">
+        <supports>ws-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9, Prerequisite: Warskin or Warsuit</set>
+        </setters>
+        <description>
+            <p>You gain the ability to cast <i>misty step</i> and <i>blink</i> while wearing your Warsuit. Additionally, as an action, you can become intangible, and move through creatures or objects until the end of your turn. If you end your turn inside a creature or object, you are forced to the nearest unoccupied location, taking 2 force damage for each foot you are forced to move. Once you become intangible using this upgrade, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest (intangible)">
+            <description>Prerequisite: Warsuit or Warskin.You gain the ability to cast misty step and blink while wearing your Warsuit. Additionally, as an action, you can become intangible, and move through creatures or objects until the end of your turn. If you end your turn inside a creature or object, you are forced to the nearest unoccupied location, taking 2 force damage for each foot you are forced to move.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK" />
+        </rules>
+    </element>
+    <element name="Recall" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RECALL">
+        <supports>ws-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>When not being worn you can hide your Warsmith’s Armor in a pocket dimension. As an action you can magically summon the armor and don it. You can use a bonus action to return the armor to the pocket dimension.</p>
+            <p class="indent">While in the pocket dimension the armor can’t be affected by other abilities and can’t be interacted with in any way.</p>
+        </description>
+        <sheet>
+            <description>When not being worn you can hide your Warsmith’s Armor in a pocket dimension. As an action you can magically summon the armor and don it. You can use a bonus action to return the armor to the pocket dimension.
+            While in the pocket dimension the armor can’t be affected by other abilities and can’t be interacted with in any way.</description>
+        </sheet>
+    </element>
 <!-- Level 11 Specialization Upgrades-->
+    <element name="Cloaking Device" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_CLOAKING_DEVICE">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11], ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ACTIVE_CAMOUFLAGE</requirements>
+        <setters>
+            <set name="short">level 11, Prerequisite: Active Camouflage</set>
+        </setters>
+        <description>
+            <p>If you do not move during your turn with Active Camouflage engaged, you can use your reaction to take the Hide action using an Intelligence (Stealth) check. You make this check with disadvantage if you are within 5 feet of another creature or you attacked during your turn.</p>
+            <p class="indent">You can overload your camouflage to cast greater invisibility without expending a spell slot. Once you do this, you can’t do this again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>If you do not move during your turn with Active Camouflage engaged, you can use your reaction to take the Hide action using an Intelligence (Stealth) check. You make this check with disadvantage if you are within 5 feet of another creature or you attacked during your turn.
+            You can overload your camouflage to cast greater invisibility without expending a spell slot. Once you do this, you can’t do this again until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" />
+        </rules>
+    </element>
+    <element name="Flash Freeze Capacitator" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FLASH_FREEZE_CAPACITATOR">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11],!ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_POWER_SLAM_CAPACITATOR</requirements>
+        <setters>
+            <set name="short">level 11, Incompatible with other Capacitors</set>
+        </setters>
+        <description>
+            <p>You can store arcane energy, releasing it in a torrent of freezing energy. As an action, you can cast cone of cold without expending a spell slot or charges. The affected area becomes difficult terrain until the end of your next turn.</p>
+            <p class="indent">Once you use this upgrade, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you can cast cone of cold without expending a spell slot or charges. The affected area becomes difficult terrain until the end of your next turn.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" />
+        </rules>
+    </element>
+    <element name="Flight" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FLIGHT">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You integrate a magical propulsion system into your Warsmith’s armor. While wearing your Warsmith’s armor you have a magical flying speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description> While wearing your Warsmith’s armor you have a magical flying speed of 30 feet.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:fly" value="30" equipped="![armor:none]" bonus="base" />
+        </rules>
+    </element>
+    <element name="Integrated Attack" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_INTEGRATED_ATTACK">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11],!ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_IRON_GRIP</requirements>
+        <setters>
+            <set name="short">level 11, Prerequisite: Integrated Armor or Warplate; incompatible with Iron Grip</set>
+        </setters>
+        <description>
+            <p>You integrate a melee weapon into your Warsmith’s Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon can’t have the heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
+            <p class="indent">You must treat it as though you are wielding it with one hand, but you can’t be disarmed of it. Once activated, you can use this weapon when you take the attack action, and it doesn’t require the use of a hand or your Warplate Gauntlet. You can apply this upgrade multiple times, selecting a new weapon and new location on your armor to install it.</p>
+            <p class="indent">When you activate your integrated weapon, you can immediately make one attack with it. While it is active, if you take the attack action on your turn, you can make an one additional weapon attack with your integrated weapon using your bonus action.</p>
+        </description>
+        <sheet>
+            <description>Prerequisite: Integrated Armor or Warplate; You integrate a melee weapon into your Warsmith’s Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon can’t have the heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.
+            You must treat it as though you are wielding it with one hand, but you can’t be disarmed of it. Once activated, you can use this weapon when you take the attack action, and it doesn’t require the use of a hand or your Warplate Gauntlet.
+            When you activate your integrated weapon, you can immediately make one attack with it. While it is active, if you take the attack action on your turn, you can make an one additional weapon attack with your integrated weapon using your bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Integrated Attack 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_INTEGRATED_ATTACK_2">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11],!ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_IRON_GRIP,ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_INTEGRATED_ATTACK</requirements>
+        <setters>
+            <set name="short">level 11, Prerequisite: Integrated Armor or Warplate; incompatible with Iron Grip</set>
+        </setters>
+        <description>
+            <p>You integrate a melee weapon into your Warsmith’s Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon can’t have the heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
+            <p class="indent">You must treat it as though you are wielding it with one hand, but you can’t be disarmed of it. Once activated, you can use this weapon when you take the attack action, and it doesn’t require the use of a hand or your Warplate Gauntlet. You can apply this upgrade multiple times, selecting a new weapon and new location on your armor to install it.</p>
+            <p class="indent">When you activate your integrated weapon, you can immediately make one attack with it. While it is active, if you take the attack action on your turn, you can make an one additional weapon attack with your integrated weapon using your bonus action.</p>
+        </description>
+        <sheet>
+            <description>Prerequisite: Integrated Armor or Warplate; You integrate a melee weapon into your Warsmith’s Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon can’t have the heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.
+            You must treat it as though you are wielding it with one hand, but you can’t be disarmed of it. Once activated, you can use this weapon when you take the attack action, and it doesn’t require the use of a hand or your Warplate Gauntlet.
+            When you activate your integrated weapon, you can immediately make one attack with it. While it is active, if you take the attack action on your turn, you can make an one additional weapon attack with your integrated weapon using your bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Integrated Attack 2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_INTEGRATED_ATTACK_3">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11],!ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_IRON_GRIP,ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_INTEGRATED_ATTACK_2</requirements>
+        <setters>
+            <set name="short">level 11, Prerequisite: Integrated Armor or Warplate; incompatible with Iron Grip</set>
+        </setters>
+        <description>
+            <p>You integrate a melee weapon into your Warsmith’s Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon can’t have the heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
+            <p class="indent">You must treat it as though you are wielding it with one hand, but you can’t be disarmed of it. Once activated, you can use this weapon when you take the attack action, and it doesn’t require the use of a hand or your Warplate Gauntlet. You can apply this upgrade multiple times, selecting a new weapon and new location on your armor to install it.</p>
+            <p class="indent">When you activate your integrated weapon, you can immediately make one attack with it. While it is active, if you take the attack action on your turn, you can make an one additional weapon attack with your integrated weapon using your bonus action.</p>
+        </description>
+        <sheet>
+            <description>Prerequisite: Integrated Armor or Warplate; You integrate a melee weapon into your Warsmith’s Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon can’t have the heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.
+            You must treat it as though you are wielding it with one hand, but you can’t be disarmed of it. Once activated, you can use this weapon when you take the attack action, and it doesn’t require the use of a hand or your Warplate Gauntlet.
+            When you activate your integrated weapon, you can immediately make one attack with it. While it is active, if you take the attack action on your turn, you can make an one additional weapon attack with your integrated weapon using your bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Iron Muscle" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_IRON_MUSCLE">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11, Prerequisite: Integrated Armor or Warplate</set>
+        </setters>
+        <description>
+            <p>You reinforce the structure of your armor, giving it the strength of giants. While wearing your armor, your current Strength ability score is increased by 2, and your maximum Strength ability score becomes 24.</p>
+        </description>
+        <sheet>
+            <description>Prerequisite: Integrated Armor or Warplate; While wearing your armor, your current Strength ability score is increased by 2, and your maximum Strength ability score becomes 24.
+            </description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="2" equipped="![armor:none]" />
+            <stat name="strength:max" value="4" bonus="base" equipped="![armor:none]"/>
+        </rules>
+    </element>
+    <element name="Lightning Rod" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_LIGHTNING_ROD">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11], ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_LIGHTNING_CHANNEL</requirements>
+        <setters>
+            <set name="short">level 11, Prerequisite: Lightning Channel</set>
+        </setters>
+        <description>
+            <p>Whenever you cast <i>lightning charged</i>, you can treat the spell as if it was cast by a spell slot one level higher.</p>
+        </description>
+        <sheet>
+            <description>Whenever you cast lightning charged, you can treat the spell as if it was cast by a spell slot one level higher.</description>
+        </sheet>
+    </element>
+    <element name="Powered Charge" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_POWERED_CHARGE">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>As an action, you activate a booster allowing you move up to 40 feet in a straight line. During this movement, you can make a Strength (Athletics) check to grapple any creature you would collide with (you still require a free hand to grapple a creature as normal; if you do not have a free hand, the check automatically fails and you collide with the target). On success, you do not stop and it is carried with you for the remaining distance or until your movement is stopped by a creature or wall.</p>
+            <p class="indent">At the end of the movement, any creature you collided with or are grappling takes 1d6 bludgeoning damage for each 5 feet you traveled. If your movement is stopped by a wall, and creature you are grappling must make Constitution saving throw. On failure, they are stunned until the end of their next turn.</p>
+            <p class="indent">Once activated, it can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, you activate a booster allowing you move up to 40 feet in a straight line. During this movement, you can make a Strength (Athletics) check to grapple any creature you would collide with (you still require a free hand to grapple a creature as normal; if you do not have a free hand, the check automatically fails and you collide with the target). On success, you do not stop and it is carried with you for the remaining distance or until your movement is stopped by a creature or wall.
+            At the end of the movement, any creature you collided with or are grappling takes 1d6 bludgeoning damage for each 5 feet you traveled. If your movement is stopped by a wall, and creature you are grappling must make Constitution saving throw. On failure, they are stunned until the end of their next turn.
+            </description>
+        </sheet>
+    </element>
+    <element name="Power Slam Capacitator" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_POWER_SLAM_CAPACITATOR">
+        <supports>ws-specialization-upgrade,l11</supports>
+        <requirements>[level:11],!ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FLASH_FREEZE_CAPACITATOR</requirements>
+        <setters>
+            <set name="short">level 11, Incompatible with other Capacitors</set>
+        </setters>
+        <description>
+            <p>You store up kinetic energy, and unleash it in a mighty bound. As an action, you can jump up to your entire walking speed and cast <i>shockwave</i> without expending a spell slot or charges upon landing.</p>
+            <p class="indent">Once you use this upgrade, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you can jump up to your entire walking speed and cast <i>shockwave</i> without expending a spell slot or charges upon landing.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_SHOCKWAVE" />
+        </rules>
+    </element>
 <!-- Level 15 Specialization Upgrades-->
+    <element name="Heavy Plating" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_HEAVY_PLATING">
+        <supports>ws-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15, Prerequisite: Warplate</set>
+        </setters>
+        <description>
+            <p>You install special heavy plating, giving you resistance to bludgeoning, piercing, and slashing damage from non-magical sources while wearing your Warplate.</p>
+        </description>
+        <sheet>
+            <description>Prerequisite: Warplate; You install special heavy plating, giving you resistance to bludgeoning, piercing, and slashing damage from non-magical sources while wearing your Warplate.</description>
+        </sheet>
+    </element>
+    <element name="Iron Grip" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_IRON_GRIP">
+        <supports>ws-specialization-upgrade,l15</supports>
+        <requirements>[level:15],!ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_INTEGRATED_ATTACK,ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_IRON_MUSCLE</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>You improve your grip strength and control of one of your gauntlets beyond the limits of flesh. While wearing your suit, you gain the following benefits:</p>
+            <ul>
+                <li>You can wield Large-sized weapons without a penalty as a Medium-sized creature.</li>
+                <li>You can wield two-handed or versatile weapons in one hand and still treat them as if wielded with two.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>While wearing your suit: 
+            You can wield Large-sized weapons without a penalty as a Medium-sized creature
+            You can wield two-handed or versatile weapons in one hand and still treat them as if wielded with two.</description>
+        </sheet>
+    </element>
+    <element name="Phase Engine" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PHASE_ENGINE">
+        <supports>ws-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15, Prerequisite: Warskin or Warsuit</set>
+        </setters>
+        <description>
+            <p>When you are attacked, you can use your reaction to become intangible, causing that attack to miss if it is a nonmagical attack, or to have disadvantage if it is a magical attack. Once you do so, you can’t do so again until you finish a short or long rest, or until you teleport or enter the ethereal plane.</p>
+        </description>
+        <sheet>
+            <description>Prerequisite: Warskin or Warsuit; When you are attacked, you can use your reaction to become intangible, causing that attack to miss if it is a nonmagical attack, or to have disadvantage if it is a magical attack. Once you do so, you can’t do so again until you finish a short or long rest, or until you teleport or enter the ethereal plane.</description>
+        </sheet>
+    </element>
+    <element name="Sun Cannon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SUN_CANNON">
+        <supports>ws-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>You install a sun cannon into your Warsmith’s armor, allowing you to unleash devastating solar laser blasts. As an action, you can cast sunbeam without expending a spell slot.</p>
+            <p class="indent">Once you use this ability, you can not use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You install a sun cannon into your Warsmith’s armor, allowing you to unleash devastating solar laser blasts. As an action, you can cast sunbeam without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SUNBEAM" />
+        </rules>
+    </element>
+    <element name="Virtual Interface" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_VIRTUAL_INTERFACE">
+        <supports>ws-specialization-upgrade,l15</supports>
+        <requirements>[level:15],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SENTIENT_ARMOR</requirements>
+        <setters>
+            <set name="short">level 15, Prerequisite: Sentient Armor</set>
+        </setters>
+        <description>
+            <p>When you use Artificial Strength to raise your Strength ability score, you no longer lower your Intelligence ability score below your natural maximum (not counting Sentient Armor).</p>
+        </description>
+        <sheet>
+            <description>When you use Artificial Strength to raise your Strength ability score, you no longer lower your Intelligence ability score below your natural maximum (not counting Sentient Armor).</description>
+        </sheet>
+    </element>
+
+    <!-- Optional Feature Piloted Golem-->
+
+    
+    <element name="Iron Aura" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_IRON_AURA">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PILOTED_GOLEM</requirements>
+        <setters>
+            <set name="short">Prerequisite: Piloted Golem</set>
+        </setters>
+        <description>
+            <p>Building defensive systems into your armor, you project a deflecting aura. Creatures of your choice within 20 feet of you gain half cover against ranged attacks that originate from outside the range of this aura.</p>
+        </description>
+        <sheet>
+            <description>Creatures of your choice within 20 feet of you gain half cover against ranged attacks that originate from outside the range of this aura.</description>
+        </sheet>
+    </element>
+    <element name="Iron Fortress" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_IRON_FORTRESS">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PILOTED_GOLEM</requirements>
+        <setters>
+            <set name="short">Prerequisite: Piloted Golem</set>
+        </setters>
+        <description>
+            <p>You count as three quarters cover for creatures within 5 feet (so long as you are between them and the attacker). Additionally, you can’t be moved against your will while in contact with the ground.</p>
+        </description>
+        <sheet>
+            <description>You count as three quarters cover for creatures within 5 feet (so long as you are between them and the attacker). Additionally, you can’t be moved against your will while in contact with the ground.</description>
+        </sheet>
+    </element>
+    <element name="Piloted Golem" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PILOTED_GOLEM">
+        <supports>ws-specialization-upgrade,l9</supports>
+        <requirements>[level:9],!ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_COLLAPSIBLE,!ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_FLIGHT</requirements>
+        <setters>
+            <set name="short">Prerequisite: Warplate, 9th-level inventor; incompatible with Collapsible and Flight</set>
+        </setters>
+        <description>
+            <p>You enlarge your Warplate, turning it into a piloted mechanical golem. Your size category when wearing the armor increases by one.</p>
+            <p class="indent">You have advantage on Strength saving throws and Strength checks against creatures the same size as you or smaller than you, but you have disadvantage on Dexterity saving throws and Dexterity checks (including initiative rolls). At the end of a short or long rest, your Warplate gains temporary hit points equal to your Inventor level.</p>
+            <p class="indent">You are no longer a valid target for spells that require a humanoid target, but can be targeted by spells that require a construct target while wearing this armor.</p>
+        </description>
+        <sheet>
+            <description>You enlarge your Warplate, turning it into a piloted mechanical golem. Your size category when wearing the armor increases by one.
+            You have advantage on Strength saving throws and Strength checks against creatures the same size as you or smaller than you, but you have disadvantage on Dexterity saving throws and Dexterity checks (including initiative rolls). At the end of a short or long rest, your Warplate gains {{level:inventor}} temporary hit points.
+            You are no longer a valid target for spells that require a humanoid target, but can be targeted by spells that require a construct target while wearing this armor.</description>
+        </sheet>
+    </element>
+    <element name="Self-Repair Matix" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SELF_REPAIR_MATIX">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PILOTED_GOLEM</requirements>
+        <setters>
+            <set name="short">Prerequisite: Piloted Golem</set>
+        </setters>
+        <description>
+            <p>At the start of each of your turn you gain temporary hit points equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>At the start of each of your turn you gain {{proficiency}} temporary hit points.</description>
+        </sheet>
+    </element>
+    <element name="Sentry Mode" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SENTRY_MODE">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PILOTED_GOLEM</requirements>
+        <setters>
+            <set name="short">Prerequisite: Piloted Golem</set>
+        </setters>
+        <description>
+            <p>As a bonus action deploy stabilizers, reducing your speed to zero but granting your better stability and focus. Until you end the effect as an action, your reach and range are both doubled with all weapons and you can make an opportunity attack against a creature that moves more than 5 feet within range of one of your equipped weapons (melee or ranged)</p>
+        </description>
+        <sheet>
+            <description>As a bonus action deploy stabilizers, reducing your speed to zero but granting your better stability and focus. Until you end the effect as an action, your reach and range are both doubled with all weapons and you can make an opportunity attack against a creature that moves more than 5 feet within range of one of your equipped weapons (melee or ranged)</description>
+        </sheet>
+    </element>
+    <element name="Shield Arm" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_SHIELD_ARM">
+        <supports>ws-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_PILOTED_GOLEM</requirements>
+        <setters>
+            <set name="short">Prerequisite: Piloted Golem</set>
+        </setters>
+        <description>
+            <p>You integrate a shield into one of your armor’s arms. You have proficiency with that shield, and can deploy it as a bonus action. It requires the use of that arm while deployed.</p>
+            <p class="indent">Additionally, when you shove a Medium or smaller creature while you have the shield deployed, you can shove it by slamming it with the attached shield causing it to take damage equal to your Strength modifier.</p>
+        </description>
+        <sheet>
+            <description>You integrate a shield into one of your armor’s arms. You have proficiency with that shield, and can deploy it as a bonus action. It requires the use of that arm while deployed.
+            Additionally, when you shove a Medium or smaller creature while you have the shield deployed, you can shove it by slamming it with the attached shield causing it to take {{strength:modifier}} damage.</description>
+        </sheet>
+    </element>
 </elements>
 <!--
     
-    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_GADGETNAME">
+    <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_GADGETNAME">
         <supports>ws-specialization-upgrade,l1</supports>
         <requirements>[level:1]</requirements>
         <setters>
