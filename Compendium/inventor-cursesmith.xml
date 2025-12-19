@@ -9,52 +9,61 @@
     <element name="Cursesmith" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_INVENTOR_CURSESMITH">
         <supports>InventorSpecializations</supports>
         <description>
-            <p></p>
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY0" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY1" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY2" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY3" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY4" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY5" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY6" />
+            <p>A Cursesmith’s power is invariably marked by the dark decisions they’ve made; some ignore this lingering darkness, pursuing the heights of power their reckless creation allows. Others leverage the twisted side effects themselves, believing there are no mistakes, only opportunities. Darker still are those that truly embrace the darkness of their twisted creations, becoming twisted creations themselves.</p>
+            <p class="indent">A Cursesmith is not always evil, but they walk a path that dangles precariously over evil, making it an easy thing to fall into. They may be lawful, but the laws they respect are rarely those of normal mortal society that might get in the way of their dark delving.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_PROFICIENCY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_FORBIDDEN_ARTIFACT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_SOUL_INVESTITURE" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_CURSED_PATH" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_DAMNED_AFFINITY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_EXTRA_ATTACK" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_UNLIMITED_POWER" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY0" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY3" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_FORBIDDEN_ARTIFACT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_SOUL_INVESTITURE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_CURSED_PATH" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_SPECIALIZATION_UPGRADE" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY4" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY5" level="5" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY6" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_DAMNED_AFFINITY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_UNLIMITED_POWER" level="14" />
         </rules>
     </element>
-    <element name="Ability0" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY0">
+    <element name="Cursesmith's Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_PROFICIENCY">
         <description>
-            <p></p>
-        </description>
-        <sheet display="false">
-            <description></description>
-        </sheet>
-        <rules>
-
-        </rules>
-    </element>
-    <element name="Ability1" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY1">
-        <description>
-            <p></p>
+            <p>When you choose this specialization at 1st level, you gain proficiency with one artisan’s tool of your choice, and learn one language of your choice from Infernal, Abyssal, Deepspeech, or Primordial.</p>
+            <p class="indent">Additionally, you have advantage on any check to determine the nature of a curse.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on any check to determine the nature of a curse.</description>
         </sheet>
         <rules>
-
+            <select type="Proficiency" name="Tool Proficiency, Cursesmith" supports="artisan" />
+            <select type="Language" name="Language (Cursesmith)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL|ID_LANGUAGE_DEEP_SPEECH|ID_LANGUAGE_PRIMODIAL" />
         </rules>
     </element>
-    <element name="Ability2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY2">
+    <element name="Forbidden Artifact" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_FORBIDDEN_ARTIFACT">
+        <description>
+            <p>At 1st level, you set yourself apart from other Inventors by seizing power that others dare not wield. You partake in a dark ritual investing enormous power and a part of your soul into a weapon. The weapon becomes permanently bound to you. You have proficiency with the weapon. If the weapon is lost or destroyed, you can reform it by drawing on its connection to your soul. This is a special ritual that takes 1 day, and summons the weapon to you if it was lost, or recreates it if it was destroyed.</p>
+            <p class="indent">When you perform the rite, select two of the following upgrades: Empowered Artifact, Abhorrent Life, Grasping Form, Twisting Reach, Necrotic Wounding, or Eldritch Eruption. You can select additional properties as Upgrades, but your Forbidden Artifact can have a maximum number of these Upgrades equal to your proficiency bonus (meaning the first time you can select an additional property is 5th level).</p>
+        </description>
+        <sheet>
+            <description>A weapon becomes permanently bound to you. You have proficiency with the weapon. If the weapon is lost or destroyed, you can reform it by drawing on its connection to your soul. This is a special ritual that takes 1 day, and summons the weapon to you if it was lost, or recreates it if it was destroyed.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Forbidden Artifact Upgrades" supports="cursesmith-artifacts" number="2" level="1" />
+            <select type="Archetype Feature" name="Forbidden Artifact Upgrade 2" supports="cursesmith-artifacts" level="5" />
+            <select type="Archetype Feature" name="Forbidden Artifact Upgrade 3" supports="cursesmith-artifacts" level="9" />
+            <select type="Archetype Feature" name="Forbidden Artifact Upgrade 4" supports="cursesmith-artifacts" level="13" />
+            <select type="Archetype Feature" name="Forbidden Artifact Upgrade 5" supports="cursesmith-artifacts" level="17" />
+        </rules>
+    </element>
+    <element name="Artifact1" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ARTIFACT_ARTIFACT1">
+        <supports>cursesmith-artifacts</supports>
         <description>
             <p></p>
         </description>
@@ -65,7 +74,18 @@
             
         </rules>
     </element>
-    <element name="Ability3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY3">
+    <element name="Soul Investiture" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_SOUL_INVESTITURE">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Cursed Path" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_CURSED_PATH">
         <description>
             <p></p>
         </description>
@@ -94,7 +114,7 @@
             <select type="Archetype Feature" name="Specialization Upgrade 9" supports="cs-specialization-upgrade,(l1||l5||l9||l11||l15)" level="19" />
         </rules>
     </element>
-    <element name="Ability4" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY4">
+    <element name="Damned Affinity" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_DAMNED_AFFINITY">
         <description>
             <p></p>
         </description>
@@ -102,7 +122,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Ability5" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY5">
+    <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_EXTRA_ATTACK">
         <description>
             <p></p>
         </description>
@@ -113,7 +133,7 @@
             
         </rules>
     </element>
-    <element name="Ability6" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_ABILITY6">
+    <element name="Unlimited Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_UNLIMITED_POWER">
         <description>
             <p></p>
         </description>
