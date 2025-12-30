@@ -157,7 +157,7 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_SHATTER"/>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_THUNDERBURST_MINE"/>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_THUNDERBURST_MINE"/>
         </rules>
     </element>
     <element name="Belt of Adjusting Size" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_BELT_OF_ADJUSTING_SIZE">
@@ -229,7 +229,7 @@
             <description>You can use it to cast fall without expending a spell slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_FALL"/>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_FALL"/>
         </rules>
     </element>
     <element name="Impact Gauntlet" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_IMPACT_GAUNTLET">
@@ -800,7 +800,7 @@
             <description>You can use these bracers to cast martial transformation without expending a spell slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_MARTIAL_TRANSFORMATION"/>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MARTIAL_TRANSFORMATION"/>
             
         </rules>
     </element>
