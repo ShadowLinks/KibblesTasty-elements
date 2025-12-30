@@ -300,11 +300,11 @@
             <description level="5">You can cast lightning tendril or crackle without expending a spell slot, after which you must finish a long rest before you can cast it without expending a spell slot again.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_INVENTOR_LIGHTNING_TENDRIL" level="3" />
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_INVENTOR_CRACKLE" level="5" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_INVENTOR_LIGHTNING_TENDRIL" level="3" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_INVENTOR_CRACKLE" level="5" />
             <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" />
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_INVENTOR_JUMPING_JOLT" level="13" />
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_INVENTOR_SKY_BURST" level="17" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_INVENTOR_JUMPING_JOLT" level="13" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_INVENTOR_SKY_BURST" level="17" />
         </rules>
     </element>
     <element name="Point Blank" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_POINT_BLANK">

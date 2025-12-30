@@ -547,9 +547,9 @@
             Additionally, you can create one infused potion of summon oozeK at the end of a long rest without expending a spell slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_SUMMON_OOZE"/>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_SUMMON_OOZE"/>
             <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="5"/>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_ERODE" level="9"/>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ERODE" level="9"/>
         </rules>
     </element>
     <element name="Secrets of Fire" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SECRETS_OF_FIRE">
@@ -580,7 +580,7 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE"/>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_UNSTABLE_EXPLOSION" level="5"/>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_UNSTABLE_EXPLOSION" level="5"/>
             <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9"/>
         </rules>
     </element>

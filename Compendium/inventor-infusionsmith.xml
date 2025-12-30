@@ -246,7 +246,7 @@
             <description>You can cast the returning weapon spell without expending a spell slot, but if you cast it on a second weapon with this upgrade, the spell immediately fades from any previous use of this upgrade.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_RETURNING_WEAPON" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_RETURNING_WEAPON" spellcasting="Inventor" />
         </rules>
     </element>
     <element name="Magical Wand of..." type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_MAGICAL_WAND_OF">
@@ -508,7 +508,7 @@
             <description>When you take damage while under the effects of <i>mage armor</i>, you can end the effects of that spell as a reaction to cast <i>turbulent warp</i> without expending a spell slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_TURBULENT_WARP" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_TURBULENT_WARP" spellcasting="Inventor" />
         </rules>
     </element>
     <element name="Dimensional Pockets" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_DIMENSIONAL_POCKETS">
