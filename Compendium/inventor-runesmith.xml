@@ -9,55 +9,149 @@
     <element name="Runesmith" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_INVENTOR_RUNESMITH">
         <supports>InventorSpecializations</supports>
         <description>
-            <p></p>
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY1" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY2" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY3" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY4" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY5" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY6" />
+            <p>A Runesmith is an Inventor that has narrowed their focus to working a specific language of magic - powerful runes that can channel long lasting power. These runes come in many shapes and forms, the lore behind them from many sources.</p>
+            <p class="indent">A Runesmith can be a knight, their runes splashed with gleaming power across their armor, or a scholar lending their power to their companions, marking potent runes on their weapons before standing back, or even a strange tattooed mystic, their runes tattooed across their very body.</p>
+            <p class="indent">Runesmiths are not inherently good or evil, though their rigorous attention to detail and patience tend to make them more inclined to a lawful perspective.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_PROFICIENCY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC FLARE" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_PATH" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_EXTRA_ATTACK" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_TWIN_FLARES" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY3" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC FLARE" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_SPECIALIZATION_UPGRADE" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY4" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY5" level="5" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY6" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_PATH" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_TWIN_FLARES" level="14" />
         </rules>
     </element>
-    <element name="Ability1" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY1">
+    <element name="Runesmith Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_PROFICIENCY">
         <description>
-            <p></p>
+            <p>When you choose this specialization at 1st level, you gain proficiency with martial weapons as well as smith's tools or calligrapher's supplies (based on your preferred method of marking runes). You learn one additional exotic language of your choice.</p>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <select type="Proficiency" name="Tool Proficiency (Runesmith)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS||ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+            <select type="Language" name="Language (Runesmith)" supports="Exotic"/>
         </rules>
     </element>
-    <element name="Ability2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY2">
+    <element name="Runic Marks" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS">
         <description>
-            <p></p>
+            <p>Starting at 1st level, you can mark magical runes, imbuing the things they are marked onto with magic. A rune can be marked on a weapon, on a suit of armor, a shield, or directly onto yourself, as a type of runic tattoo.</p>
+            <p class="indent">The affected creature of a rune is the creature wielding the weapon or armor it is marked on, or you if the rune is directly marked on you. A weapon or set of armor can only bear one rune, but there is no limit to the number of runes that can be marked on a creature.</p>
+            <p class="indent">If a rune is marked on a creature, select either the weapon effect (affecting its natural weapons or unarmed strikes) or armor effect (affecting its natural armor).</p>
+            <p class="indent">You know the following runes, and can learn more from upgrades. You can mark your runes during a long rest, and can have two runes marked at a time, gaining the ability to have an additional rune marked at 3rd level (to three runes), 5th level (to four runes), and 14th level (to five runes). These last until you mark a new rune, with the oldest rune fading when you mark a new one after reaching your maximum number of runes. Upgrades that grant new runes do not increase this number, but only expand the range of runes you can mark.</p>
+            <h5>Runic Effects</h5>
+            <p>Each rune grants a passive ability based on what it is marked on that enhances the ability of what it is marked on, and has an active ability that can be activated by you as an action or in place of an attack as part of the Attack action while it is marked. A rune can only be activated in this way once per turn.</p>
+            <h5>Rune of Power</h5>
+            <p>An imposing rune that speaks to raw power. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>The base damage of the weapon becomes 1d6 (if it was lower), and the weapon adds +1 to damage rolls.</td></tr>
+                <tr><td>Armor</td><td>The base AC of the armor becomes 12 (if it was lower), and the armor’s AC bonus is increased by +1</td></tr>
+                <tr><td>Active (Empower)</td><td>The next attack of the affected creature before the start of your next turn deals an extra 1d8 + your Intelligence modifier force damage.</td></tr>
+            </table>
+            <h5>Rune of Fire</h5>
+            <p>A swirling rune that represents fire and burning. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>The first time the weapon deals damage on a turn, it deals an extra 1d4 fire damage.</td></tr>
+                <tr><td>Armor</td><td>When the affected creature is hit by a melee weapon attack, they can use their reaction to deal 1d4 fire damage to the attacker.</td></tr>
+                <tr><td>Active (Explode)</td><td>Creatures within a 5-foot radius of the affected creature must pass a Dexterity saving throw, or take 1d8 fire damage.</td></tr>
+            </table>
+            <h5>Rune of Lightning</h5>
+            <p>A jagged rune that manipulates energy and controls lightning. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>The first time the weapon deals damage on a turn, it deals an extra 1d4 lightning damage.</td></tr>
+                <tr><td>Armor</td><td>The affected creature’s speed increases by 5 feet.</td></tr>
+                <tr><td>Active (Hasten)</td><td>During the affected creature’s turn, it gains an additional action that can be used to attack (one weapon attack with a light weapon or unarmed strike only), Dash, Disengage, Hide, or Use an Object. The creature can’t gain multiple actions from this. Actions not used by the end of the creature’s turn are lost.</td></tr>
+            </table>
+            <h5>Rune of Warding</h5>
+            <p>A stalwart rune that wards off harm. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>The first time the affected creature deals damage with this weapon on their turn, they gain 1d4 temporary hit points.</td></tr>
+                <tr><td>Armor</td><td>Damage taken by the affected creature is reduced by 1.</td></tr>
+                <tr><td>Active (Protect)</td><td>The next time the affected creature takes damage before the start of your next turn, the damage is reduced by 1d4 + your Intelligence modifier.</td></tr>
+            </table>
         </description>
-        <sheet display="false">
-            <description></description>
+        <sheet>
+            <description>A rune can be marked on a weapon, on a suit of armor, a shield, or directly onto yourself, as a type of runic tattoo.  A weapon or set of armor can only bear one rune, but there is no limit to the number of runes that can be marked on a creature.
+            If a rune is marked on a creature, select either the weapon effect (affecting its natural weapons or unarmed strikes) or armor effect (affecting its natural armor).
+            An active ability can be activated by you as an action or in place of an attack as part of the Attack action while it is marked. A rune can only be activated in this way once per turn.</description>
         </sheet>
         <rules>
-            
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS_RUNE_OF_POWER" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS_RUNE_OF_FIRE" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS_RUNE_OF_LIGHTNING" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS_RUNE_OF_WARDING" />
         </rules>
     </element>
-    <element name="Ability3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY3">
+    <element name="Rune of Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS_RUNE_OF_POWER">
         <description>
             <p></p>
         </description>
-        <sheet display="false">
-            <description></description>
+        <sheet>
+            <description>Weapon Effect - The base damage of the weapon becomes 1d6 (if it was lower), and the weapon adds +1 to damage rolls.
+            Armor Effect - The base AC of the armor becomes 12 (if it was lower), and the armor’s AC bonus is increased by +1
+            Active (Empower) - The next attack of the affected creature before the start of your next turn deals an extra 1d8 + {{intelligence:modifer}} force damage.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Fire" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS_RUNE_OF_FIRE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Weapon Effect - The first time the weapon deals damage on a turn, it deals an extra 1d4 fire damage.
+            Armor Effect - When the affected creature is hit by a melee weapon attack, they can use their reaction to deal 1d4 fire damage to the attacker.
+            Active (Explode) - Creatures within a 5-foot radius of the affected creature must pass a Dexterity saving throw, or take 1d8 fire damage.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Lightning" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS_RUNE_OF_LIGHTNING">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Weapon Effect - The first time the weapon deals damage on a turn, it deals an extra 1d4 lightning damage.
+            Armor Effect - The affected creature’s speed increases by 5 feet.
+            Active (Hasten) - During the affected creature’s turn, it gains an additional action that can be used to attack (one weapon attack with a light weapon or unarmed strike only), Dash, Disengage, Hide, or Use an Object. The creature can’t gain multiple actions from this. Actions not used by the end of the creature’s turn are lost.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Warding" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_MARKS_RUNE_OF_WARDING">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Weapon Effect - The first time the affected creature deals damage with this weapon on their turn, they gain 1d4 temporary hit points.
+            Armor Effect - Damage taken by the affected creature is reduced by 1.
+            Active (Protect) - The next time the affected creature takes damage before the start of your next turn, the damage is reduced by 1d4 + {{intelligence:modifer}}.</description>
+        </sheet>
+    </element>
+    <element name="Runic Flare" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC FLARE">
+        <description>
+            <p>Starting at 3rd level, you can activate a rune as a bonus action. You can do this a number of times equal to your proficiency bonus, and regain all uses after a short or long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Short Rest">
+            <description>You can activate a rune as a bonus action.</description>
         </sheet>
         <rules>
         </rules>
@@ -81,26 +175,524 @@
             <select type="Archetype Feature" name="Specialization Upgrade 9" supports="rs-specialization-upgrade,(l1||l5||l9||l11||l15)" level="19" />
         </rules>
     </element>
-    <element name="Ability4" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY4">
+    <element name="Runic Path" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_PATH">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, you can specialize in a certain application of runes, selecting from the following Runic Paths:</p>
+            <h5>Rune Knight</h5>
+            <p>You have proficiency with weapons or armor that are marked with your runes. Your speed is not reduced by wearing heavy armor, as long as that heavy armor bears one or more of your runes.</p>
+            <h5>Rune Mystic</h5>
+            <p>When you mark a rune on yourself, you gain both the weapon and armor effects of it. You add your Intelligence modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with unarmed strikes, and your Intelligence modifier, instead of your Dexterity modifier, to AC calculations for armor.</p>
+            <h5>Rune Sage</h5>
+            <p>You gain the ability to invoke spells with the magical power of the runes. You can use the runes you’ve marked to channel magic. You gain the following spells based on which runes you currently have marked</p>
+            <table>
+                <thead>
+                    <tr><td>Rune</td><td>Cantrip</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>Rune of Fire</td><td>burn</td><td>burning hands</td></tr>
+                <tr><td>Rune of Lightning</td><td>shocking grasp</td><td>lightning tendril</td></tr>
+                <tr><td>Rune of Power</td><td>light</td><td>magic missle</td></tr>
+                <tr><td>Rune of Warding</td><td>N/A</td><td>freezing shell</td></tr>
+                <tr><td>Rune of Gravity</td><td>N/A</td><td>fall</td></tr>
+                <tr><td>Rune of Blood</td><td>N/A</td><td>cure wounds</td></tr>
+            </table>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Runic Path" supports="runic-path" />
+        </rules>
     </element>
-    <element name="Ability5" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY5">
+    <element name="Runic Path: Rune Knight" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_PATH_RUNE_KNIGHT">
+        <supports>runic-path</supports>
         <description>
-            <p></p>
+            <p>You have proficiency with weapons or armor that are marked with your runes. Your speed is not reduced by wearing heavy armor, as long as that heavy armor bears one or more of your runes.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with weapons or armor that are marked with your runes. Your speed is not reduced by wearing heavy armor, as long as that heavy armor bears one or more of your runes.</description>
+        </sheet>
+    </element>
+    <element name="Runic Path: Rune Mystic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_PATH_RUNE_MYSITIC">
+        <supports>runic-path</supports>
+        <description>
+            <p>When you mark a rune on yourself, you gain both the weapon and armor effects of it. You add your Intelligence modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with unarmed strikes, and your Intelligence modifier, instead of your Dexterity modifier, to AC calculations for armor.</p>
+        </description>
+        <sheet>
+            <description>When you mark a rune on yourself, you gain both the weapon and armor effects of it. You add your Intelligence modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with unarmed strikes, and your Intelligence modifier, instead of your Dexterity modifier, to AC calculations for armor.</description>
+        </sheet>
+    </element>
+    <element name="Runic Path: Rune Sage" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_PATH_RUNE_SAGE">
+        <supports>runic-path</supports>
+        <description>
+            <p>You gain the ability to invoke spells with the magical power of the runes. You can use the runes you’ve marked to channel magic. You gain the following spells based on which runes you currently have marked</p>
+            <table>
+                <thead>
+                    <tr><td>Rune</td><td>Cantrip</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>Rune of Fire</td><td>burn</td><td>burning hands</td></tr>
+                <tr><td>Rune of Lightning</td><td>shocking grasp</td><td>lightning tendril</td></tr>
+                <tr><td>Rune of Power</td><td>light</td><td>magic missle</td></tr>
+                <tr><td>Rune of Warding</td><td>N/A</td><td>Armor of Agathys</td></tr>
+                <tr><td>Rune of Gravity</td><td>N/A</td><td>fall</td></tr>
+                <tr><td>Rune of Blood</td><td>N/A</td><td>cure wounds</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You gain the ability to invoke spells with the magical power of the runes. You can use the runes you’ve marked to channel magic.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_BURN" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_LIGHTNING_TENDRIL" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" />
+            <grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_FALL" requirements="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNE_OF_GRAVITY"/>
+            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" requirements="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNE_OF_BLOOD"/>
+        </rules>
+    </element>
+    <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_EXTRA_ATTACK">
+        <description><p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. You can activate a rune using its active property in place of one or both attacks.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice when you take the attack action on your turn. You can activate a rune using its active property in place of one or both attacks.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Twin Flares" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_TWIN_FLARES">
+        <description>
+            <p>Starting at 14th level, once per turn, when you use the active property of a rune or glyph, you can cause the active effect of any two runes or glyphs.</p>
+        </description>
+        <sheet>
+            <description>Once per turn, when you use the active property of a rune or glyph, you can cause the active effect of any two runes or glyphs.</description>
+        </sheet>
+    </element>
+
+<!-- Unrestricted Specialization Upgrades-->
+
+    <element name="Animate Inscription" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ANIMATE_INSCRIPTION">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You mark a special rune on yourself or an item in your possession to represent a familiar. You can spend a Hit Die to give it life and cast find familiar using this rune. When you cast find familiar in this way it doesn’t require a spell slot or require material components, and the casting time is one action.</p>
+        </description>
+        <sheet>
+            <description>You can spend a Hit Die to give it life and cast find familiar using this rune. When you cast find familiar in this way it doesn’t require a spell slot or require material components, and the casting time is one action.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+        </rules>
+    </element>
+    <element name="Arcane Glyph" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ARCANE_GLYPH">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You learn how to translate a spell you know with a range of self into a glyph that can be marked on a creature or piece of armor. As a special 1 minute ritual, you can cast a spell you know with a casting time of 1 action, casting the spell as normal. The spell doesn’t take immediate effect, but instead becomes imbued as a special glyph on a creature or armor you are touching. This glyph has no passive effect, but when activated with an action, it casts the stored spell as if the creature the glyph was marked on cast the spell.</p>
+            <p class="indent">Alternatively, the creature marked with this glyph or wearing armor marked with this glyph that is aware of its presence can use this glyph to cast the spell marked within as if they cast the spell stored using a magical item. The casting uses your spellcasting ability, spell attack, and spell save DC.</p>
+            <p class="indent">The glyph immediately fades after the spell has been cast (the spell lasts as normal). The glyph fades when the Runesmith that marked it finishes a long rest.</p>
+        </description>
+        <sheet>
+            <description>As a special 1 minute ritual, you can cast a spell you know with a casting time of 1 action, casting the spell as normal. The spell doesn’t take immediate effect, but instead becomes imbued as a special glyph on a creature or armor you are touching. This glyph has no passive effect, but when activated with an action, it casts the stored spell as if the creature the glyph was marked on cast the spell.
+            Alternatively, the creature marked with this glyph or wearing armor marked with this glyph that is aware of its presence can use this glyph to cast the spell marked within as if they cast the spell stored using a magical item. The casting uses your spellcasting ability, spell attack, and spell save DC.
+            The glyph immediately fades after the spell has been cast (the spell lasts as normal). The glyph fades when the Runesmith that marked it finishes a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Channel Magic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_CHANNEL_MAGIC">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You can cast a spell with a range of touch on a creature marked by one of your runes, wearing armor marked by one of your runes, or wielding a weapon marked by one of your runes, regardless of the distance between you.</p>
+            <p class="indent">Additionally, when you cast a spell the rune grants, you can use the marked creature as the point of origin for that spell.</p>
+        </description>
+        <sheet>
+            <description>You can cast a spell with a range of touch on a creature marked by one of your runes, wearing armor marked by one of your runes, or wielding a weapon marked by one of your runes, regardless of the distance between you.
+            Additionally, when you cast a spell the rune grants, you can use the marked creature as the point of origin for that spell.</description>
+        </sheet>
+    </element>
+    <element name="Glyph Magic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You gain the ability to cast glyphs. You learn the following spells at the following levels. These spells are Inventor spells for you, but do not count against your spells known.</p>
+            <table>
+                <thead>
+                    <tr><td>Type</td><td>Effect</td><td>Level Req.</td></tr>
+                </thead>
+                <tr><td>Absorbtion</td><td>You learn the glyph of absorption spell.</td><td>--</td></tr>
+                <tr><td>Fire</td><td>You learn the glyph of fire spell.</td><td>--</td></tr>
+                <tr><td>Frost</td><td>You learn the glyph of frost spell.</td><td>--</td></tr>
+                <tr><td>Translocation</td><td>You learn the glyph of translocation spell.</td><td>5</td></tr>
+                <tr><td>Nullification</td><td>You learn the glyph of nullificaiton spell.</td><td>9</td></tr>
+                <tr><td>Gravity</td><td>You learn the glyph of gravity spell.</td><td>13</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
         <rules>
-            
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_ABSORPTION" />
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_FIRE" />
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_FROST" />
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_TRANSLOCATION" level="5" />
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_NULLIFICATION" level="9" />
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_GRAVITY" level="13" />
         </rules>
     </element>
-    <element name="Ability6" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_ABILITY6">
+    <element name="Glyph of Absorbtion" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_ABSORBTION">
+        <supports>glyphs, Saving Throw</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. Creatures within 10 feet of this glyph have resistance to all damage, but when any creature in the rune’s radius takes damage, the rune takes an equal amount. The glyph has 10 hit points. If the glyph is destroyed, it fades without detonating and the spell ends.</p>
+            <p class="indent">As an action, you can detonate the glyph. Any creature within 15 feet of this glyph must make a Dexterity saving throw, or take force damage equal to half the amount of damage the glyph has absorbed. After using this action, the spell ends.</p>
+            <p class="indent">You can end the spell early by deactivating it with a bonus action.</p>
+            <p class="indent"><em>At Higher Levels. </em>When you cast this spell using a spell slot of 2nd level or higher, the glyph's hit points increas by 5 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">1</set>
+            <set name="school">Abjuration</set>
+            <set name="time">bonus action</set>
+            <set name="range">5 ft.</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Glyph of Fire" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_FIRE">
+        <supports>glyphs, Saving Throw</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. Any creature that starts their turn within 5 feet of this glyph takes 1 fire damage.</p>
+            <p class="indent">As an action, you can force all creatures within 15 feet of this glyph to make a Dexterity saving throw, taking 3d6 fire damage on failure, or half as much on success. After using this action, the spell ends.</p>
+            <p class="indent">You can end the spell early by deactivating it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">bonus action</set>
+            <set name="range">5 ft.</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Glyph of Frost" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_FROST">
+        <supports>glyphs, Saving Throw</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. The area within 5 feet of this glyph becomes difficult terrain.</p>
+            <p class="indent">As an action, you can force all creatures within 15 feet of this glyph to pass a Constitution saving throw, or take 1d8 cold damage and become restrained until the end of your next turn, or half as much damage on success are not restrained. After using this action, the spell ends.</p>
+            <p class="indent">You can end the spell early by deactivating it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold, restrained</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">bonus action</set>
+            <set name="range">5 ft.</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Glyph of Gravity" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_GRAVITY">
+        <supports>glyphs, Saving Throw</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. Within 30 feet of this Glyph, moving away from it requires twice as much movement, and any creature that ends its turn within 30 feet of it is pulled 10 feet closer to it if there is space available.</p>
+            <p class="indent">As an action, you can force all creatures within 30 feet of this glyph to make a Strength saving throw or be flung 40 feet away from this glyph, taking 4d6 bludgeoning damage and falling prone. After using this action, the spell ends.</p>
+            <p class="indent">You can end the spell early by deactivating it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning, prone</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">bonus action</set>
+            <set name="range">5 ft.</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Glyph of Nullification" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_NULLIFICATION">
+        <supports>glyphs</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. Creatures within 5 feet of this glyph have resistance to force damage.</p>
+            <p class="indent">As an action for the duration of the spell, you can cause the glyph to form a globe of invulnerability centered on the glyph, which lasts until the start of your next turn, at which point the spell ends.</p>
+            <p class="indent">You can end the spell early by deactivating it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Abjuration</set>
+            <set name="time">bonus action</set>
+            <set name="range">5 ft.</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Glyph of Translocation" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_TRANSLOCATION">
+        <supports>glyphs</supports>
+        <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range.</p>
+            <p class="indent">As an action for the duration of the spell, you instantly teleport a willing creature of your choice within 120 feet of you to the closest free space next to this glyph (your choice if multiple free spaces are available). If you expend a higher-level spell slot, the number of creatures you can teleport increases by 1 for each level above 2nd, at which point the spell ends.</p>
+            <p class="indent">You can end the spell early by deactivating it with a bonus action.</p>
+            <p class="indent"><em>At Higher Levels. </em>At Higher Levels. If you expend a higher level spell slot, the number of creatures you can teleport increases by 1 for each level above 2nd, at which point the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">bonus action</set>
+            <set name="range">5 ft.</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mark of Messaging" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_MARK_OF_MESSAGING">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You can place a special runic mark on a creature or item. This mark lasts until you mark it again or take a long rest. Subsequently you can cast the message spell targeting the marked creature, or a creature carrying the marked item, regardless of distance between you and the target.</p>
+        </description>
+        <sheet>
+            <description>You can place a special runic mark on a creature or item. This mark lasts until you mark it again or take a long rest. Subsequently you can cast the message spell targeting the marked creature, or a creature carrying the marked item, regardless of distance between you and the target.</description>
+        </sheet>
+    </element>
+    <element name="Mark of Shielding" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_MARK_OF_SHIELDING">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>As an action, you can place a special mark on a creature or armor. This mark lasts until you mark it again or take a long rest. While the mark is on that creature, you can cast the shield spell, affecting the creature marked, if the affected creature is hit by an attack.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can place a special mark on a creature or armor. This mark lasts until you mark it again or take a long rest. While the mark is on that creature, you can cast the shield spell, affecting the creature marked, if the affected creature is hit by an attack.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHIELD" />
+        </rules>
+    </element>
+    <element name="Rune of Blood" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNE_OF_BLOOD">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>An esoteric rune that binds the essence of life. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>Each time the weapon deals damage to a creature, it stores one charge, up to a maximum number of charges equal to your Intelligence modifier.</td></tr>
+                <tr><td>Armor</td><td>If the affected creature is hit by a critical hit or reduced to zero hit points, the rune stores one charge, up to a maximum number of charges equal to your Intelligence modifier.</td></tr>
+                <tr><td>Active (Revitalize)</td><td>The affected creature can immediately expend 1 Hit Die, rolling it and regaining hit points as normal. All charges of the rune are consumed, restoring an extra 1d4 per charge consumed.</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>Weapon Effect - Each time the weapon deals damage to a creature, it stores one charge, up to a max of {{intelligence:modifier}} charges.
+            Armor Effect - If the affected creature is hit by a critical hit or reduced to zero hit points, the rune stores one charge, up to a maximum number of {{intelligence:modifier}} charges.
+            Active (Explode) - The affected creature can immediately expend 1 Hit Die, rolling it and regaining hit points as normal. All charges of the rune are consumed, restoring an extra 1d4 per charge consumed.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Gravity" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNE_OF_GRAVITY">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>Each time the weapon deals damage to a creature, it stores one charge, up to a maximum number of charges equal to your Intelligence modifier.</td></tr>
+                <tr><td>Armor</td><td>If the affected creature is hit by a critical hit or reduced to zero hit points, the rune stores one charge, up to a maximum number of charges equal to your Intelligence modifier.</td></tr>
+                <tr><td>Active (Revitalize)</td><td>The affected creature can immediately expend 1 Hit Die, rolling it and regaining hit points as normal. All charges of the rune are consumed, restoring an extra 1d4 per charge consumed.</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>Weapon Effect - Each time the weapon deals damage to a creature, it stores one charge, up to a max of {{intelligence:modifier}} charges.
+            Armor Effect - If the affected creature is hit by a critical hit or reduced to zero hit points, the rune stores one charge, up to a maximum number of {{intelligence:modifier}} charges.
+            Active (Explode) - The affected creature can immediately expend 1 Hit Die, rolling it and regaining hit points as normal. All charges of the rune are consumed, restoring an extra 1d4 per charge consumed.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Returning" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNE_OF_RETURNING">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Surging Flare" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_SURGING_FLARE">
+        <supports>rs-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+<!-- Level 5 Specialization Upgrades-->
+
+    <element name="Duplicate Rune" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_DUPLICATE_RUNE">
+        <supports>rs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Gravity Brand" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GRAVITY_BRAND">
+        <supports>rs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Mark of Size" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_MARK_OF_SIZE">
+        <supports>rs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Mystic Flare" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_MYSTIC_FLARE">
+        <supports>rs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Paired Effects" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_PAIRED_EFFECTS">
+        <supports>rs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Runic Aegis" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_AEGIS">
+        <supports>rs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Rune Magic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNE_MAGIC">
+        <supports>rs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Thunder Mine" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_THUNDER_MINE">
+        <supports>rs-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
         <description>
             <p></p>
         </description>
@@ -109,19 +701,191 @@
         </sheet>
     </element>
 
-<!-- Unrestricted Specialization Upgrades-->
-<!-- Level 5 Specialization Upgrades-->
 <!-- Level 9 Specialization Upgrades-->
+
+    <element name="Efficient Language" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_EFFICIENT_LANGUAGE">
+        <supports>rs-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Fire Mine" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_FIRE_MINE">
+        <supports>rs-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Greater Rune Magic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GREATER_RUNE_MAGIC">
+        <supports>rs-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Mark of Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_MARK_OF_PROFICIENCY">
+        <supports>rs-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Painted Bulwark" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_PAINTED_BULWARK">
+        <supports>rs-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
 <!-- Level 11 Specialization Upgrades-->
+
+    <element name="Linguistic Structure" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_LINGUISTIC_STRUCTURE">
+        <supports>rs-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Mark of the Hidden" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_MARK_OF_THE_HIDDEN">
+        <supports>rs-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Perfected Form" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_PERFECTED_FORM">
+        <supports>rs-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Primal Emphasis" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_PRIMAL_EMPHASIS">
+        <supports>rs-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Runic Formation" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RUNIC_FORMATION">
+        <supports>rs-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
 <!-- Level 15 Specialization Upgrades-->
+
+    <element name="Glyph of Force" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_OF_FORCE">
+        <supports>rs-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Mark of Stone" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_MARK_OF_STONE">
+        <supports>rs-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Reckless Flare" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RECKLESS_FLARE">
+        <supports>rs-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
 </elements>
 <!--
     
     <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GADGETNAME">
-        <supports>rs-specialization-upgrade,l1</supports>
+        <supports>rs-specialization-upgrade,l15</supports>
         <requirements>[level:15]</requirements>
         <setters>
-            <set name="short"></set>
+            <set name="short">level 15</set>
         </setters>
         <description>
             <p></p>
