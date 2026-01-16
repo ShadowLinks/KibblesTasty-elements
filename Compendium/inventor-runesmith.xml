@@ -345,7 +345,7 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_ABSORPTION" />
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_ABSORBTION" />
             <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_FIRE" />
             <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_FROST" />
             <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_TRANSLOCATION" level="5" />
@@ -353,7 +353,7 @@
             <grant type="Spell" id="ID_KTH_CCC_SPELL_GLYPH_OF_GRAVITY" level="13" />
         </rules>
     </element>
-    <element name="Glyph of Absorbtion" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_ABSORBTION">
+    <element name="Glyph of Absorbtion" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SPELL_GLYPH_OF_ABSORBTION">
         <supports>glyphs, Saving Throw</supports>
         <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
         <description>
@@ -377,7 +377,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Glyph of Fire" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_FIRE">
+    <element name="Glyph of Fire" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SPELL_GLYPH_OF_FIRE">
         <supports>glyphs, Saving Throw</supports>
         <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
         <description>
@@ -400,7 +400,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Glyph of Frost" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_FROST">
+    <element name="Glyph of Frost" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SPELL_GLYPH_OF_FROST">
         <supports>glyphs, Saving Throw</supports>
         <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
         <description>
@@ -423,7 +423,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Glyph of Gravity" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_GRAVITY">
+    <element name="Glyph of Gravity" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SPELL_GLYPH_OF_GRAVITY">
         <supports>glyphs, Saving Throw</supports>
         <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
         <description>
@@ -446,7 +446,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Glyph of Nullification" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_NULLIFICATION">
+    <element name="Glyph of Nullification" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SPELL_GLYPH_OF_NULLIFICATION">
         <supports>glyphs</supports>
         <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
         <description>
@@ -469,7 +469,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Glyph of Translocation" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_ID_KTH_CCC_SPELL_GLYPH_OF_TRANSLOCATION">
+    <element name="Glyph of Translocation" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SPELL_GLYPH_OF_TRANSLOCATION">
         <supports>glyphs</supports>
         <requirements>ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_GLYPH_MAGIC</requirements>
         <description>
@@ -905,11 +905,14 @@
             <set name="short">level 15</set>
         </setters>
         <description>
-            <p></p>
+            <p>You learn the spell <i>wall of force</i>. It is an Inventor spell for you and doesn’t count against your spells known.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Inventor" />
+        </rules>
     </element>
     <element name="Mark of Stone" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_MARK_OF_STONE">
         <supports>rs-specialization-upgrade,l15</supports>
@@ -918,11 +921,16 @@
             <set name="short">level 15</set>
         </setters>
         <description>
-            <p></p>
+            <p>As an action, you can place a special runic mark on a creature or armor. This mark lasts until you mark it again or take a long rest. While the rune is on that creature, you can cast <i>stoneskin</i> targeting that creature as a bonus action without requiring any material components.</p>
+            <p class="indent">You can cast it this way without expending a slot once, after which you can’t cast it without a spell slot again until you finish a short or long rest.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can place a special runic mark on a creature or armor. This mark lasts until you mark it again or take a long rest. While the rune is on that creature, you can cast stoneskin targeting that creature as a bonus action without requiring any material components.
+            You can cast it this way without expending a slot once, after which you can’t cast it without a spell slot again until you finish a short or long rest.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN"/>
+        </rules>
     </element>
     <element name="Reckless Flare" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_RECKLESS_FLARE">
         <supports>rs-specialization-upgrade,l15</supports>
@@ -931,10 +939,11 @@
             <set name="short">level 15</set>
         </setters>
         <description>
-            <p></p>
+            <p>As an action, you flare all of your marked runes and glyphs of your choice, causing their active effects to take place. Once you use this ability, you can’t use the active effect of a rune flared in this way again for 1 minute.</p>
+            <p class="indent">You can’t use this ability again once used until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you flare all of your marked runes and glyphs of your choice, causing their active effects to take place. Once you use this ability, you can’t use the active effect of a rune flared in this way again for 1 minute.</description>
         </sheet>
     </element>
 </elements>
