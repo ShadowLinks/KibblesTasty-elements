@@ -9,58 +9,104 @@
     <element name="Relicsmith" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_INVENTOR_RELICSMITH">
         <supports>InventorSpecializations</supports>
         <description>
-            <p></p>
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY1" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY2" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY3" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY4" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY5" />
-            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY6" />
+            <p>A Relicsmith is a strange brand of Inventor, often viewed with skepticism by their peers, but bolstered by one simple fact: the inventions work. They harness holy power in ways that defy arcane logic, bringing a unique blend of methodology and faith. How their inventions work is a source of consternation to others, but their faith in their scriptures and inscriptions is rewarded... perhaps by the faith they have in them.</p>
+            <p class="indent">Relicsmiths are inheritors of ancient traditions, sometimes passed down to them, sometimes ones they have uncovered in their research... sometimes, perhaps, ones that they believe they have uncovered in their research. Patterns, connections, scriptures, and rituals, their tools are many and varied.</p>
+            <p class="indent">Of course, those that walk this path tend to have strong conviction which extends beyond just their invention. A Relicsmith is as prone as any Paladin to have a driven and righteous (in their eyes) cause. Divine power in those restrained only by their own conviction can be a dangerous thing indeed.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_PROFICIENCY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DEVINE_RELIC" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_EXTRA_ATTACK" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_JUSTICAR_SAVANT" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY3" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DEVINE_RELIC" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_SPECIALIZATION_UPGRADE" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY4" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY5" level="5" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY6" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_JUSTICAR_SAVANT" level="14" />
         </rules>
     </element>
-    <element name="Ability1" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY1">
+    <element name="Relicsmith's Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_PROFICIENCY">
         <description>
-            <p></p>
+            <p>When you choose this specialization at 1st level, you gain proficiency with martial weapons, the Religion skill and calligrapher’s supplies.</p>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
         </rules>
     </element>
-    <element name="Ability2" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY2">
+    <element name="Devine Relic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DEVINE_RELIC">
         <description>
-            <p></p>
+            <p>At 1st level, you unlock the secrets of the sacred, creating a relic that channels divine power. This relic counts as spellcasting focus for you. It takes the shape of a small item, such as a pendant, amulet, or device. While you possess your relic, you can use it to focus your powers, gaining the following abilities:</p>
+            <ul>
+                <li>You can cast the light cantrip.</li>
+                <li>You can cast the sacred flame cantrip</li>
+                <li>You can set a weapon ablaze. As a bonus action, you can touch a weapon causing it to burst into holy fire. Attacks with the weapon deal an extra 1d4 fire damage on hit for 1 minute or until you use this ability again.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>This relic counts as spellcasting focus for you. It takes the shape of a small item, such as a pendant, amulet, or device. While you possess your relic, you can use it to focus your powers, gaining the following abilities:
+            Cast the light and sacred flame cantrips.
+            As a bonus action, you can touch a weapon causing it to burst into holy fire. Attacks with the weapon deal an extra 1d4 fire damage on hit for 1 minute or until you use this ability again.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+            <grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" />
+        </rules>
+    </element>
+    <element name="Ingenious Reliquary" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY">
+        <description>
+            <p>Starting at 3rd level, you integrate your Relic into another item, selecting one of the following for your Relic. Your Relic retains all the properties it normally has, and gains new properties based on the selected item. Once selected, you can’t select a different option, but can replace the weapon your relic is incorporated into during a long rest.</p>
+            <h5>Melee Weapon</h5>
+            <p class="indent">You integrate your divine relic into a melee weapon. The weapon taps directly into the relic’s power. If you use your Divine Relic to ignite it, it adds an extra 1d6 fire damage (instead of 1d4). Setting a weapon integrated with your relic ablaze can be done as part of the Attack action.</p>
+            <h5>Ranged Weapon</h5>
+            <p class="indent">You integrate your divine relic into a ranged weapon, giving it an unlimited supply of sacred power to use as ammunition. It no longer consumes ammunition and instead fires radiant bolts of power, dealing radiant damage. If the weapon has the loading property, it is removed.</p>
+            <h5>Relic Lantern</h5>
+            <p class="indent">You power a sacred lantern with the divine relic, causing it to shed a brilliant pure light for 20-foot radius and an additional 20 feet of dim light. As a bonus action, you can grant one creature within the light of the lantern 1d4 temporary hit points.</p>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            
+            <select type="Archetype Feature" name="Ingenious Reliquary Option" supports="ingenious-reliquary" />
         </rules>
     </element>
-    <element name="Ability3" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY3">
+    <element name="Ingenious Reliquary: Melee Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_MELEE_WEAPON">
+        <supports>ingenious-reliquary</supports>
         <description>
-            <p></p>
+            <p>You integrate your divine relic into a melee weapon. The weapon taps directly into the relic’s power. If you use your Divine Relic to ignite it, it adds an extra 1d6 fire damage (instead of 1d4). Setting a weapon integrated with your relic ablaze can be done as part of the Attack action.</p>
         </description>
-        <sheet display="false">
-            <description></description>
+        <sheet>
+            <description>If you use your Divine Relic to ignite it, it adds an extra 1d6 fire damage (instead of 1d4). Setting a weapon integrated with your relic ablaze can be done as part of the Attack action.</description>
         </sheet>
-        <rules>
-        </rules>
+    </element>
+    <element name="Ingenious Reliquary: Ranged Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_RANGED_WEAPON">
+        <supports>ingenious-reliquary</supports>
+        <description>
+            <p>You integrate your divine relic into a ranged weapon, giving it an unlimited supply of sacred power to use as ammunition. It no longer consumes ammunition and instead fires radiant bolts of power, dealing radiant damage. If the weapon has the loading property, it is removed.</p>
+        </description>
+        <sheet>
+            <description>It no longer consumes ammunition and instead fires radiant bolts of power, dealing radiant damage. If the weapon has the loading property, it is removed.</description>
+        </sheet>
+    </element>
+    <element name="Ingenious Reliquary: Relic Lantern" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_RELIC_LANTERN">
+        <supports>ingenious-reliquary</supports>
+        <description>
+            <p>You power a sacred lantern with the divine relic, causing it to shed a brilliant pure light for 20-foot radius and an additional 20 feet of dim light. As a bonus action, you can grant one creature within the light of the lantern 1d4 temporary hit points.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can grant one creature within the light of the lantern 1d4 temporary hit points.</description>
+        </sheet>
     </element>
     <element name="Specialization Upgrade" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_SPECIALIZATION_UPGRADE">
         <description>
@@ -81,47 +127,810 @@
             <select type="Archetype Feature" name="Specialization Upgrade 9" supports="rel-specialization-upgrade,(l1||l5||l9||l11||l15)" level="19" />
         </rules>
     </element>
-    <element name="Ability4" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY4">
+    <element name="Ordained Path" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, the gifts of your Divine Relic lead you to a revelation of faith. Select a path to follow.</p>
+            <h5>Path of Justice</h5>
+            <p class="indent">Select one Fighting Style from the following list.</p>
+            <em>Dueling</em><p class="indent"> When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+            <em>Two-Weapon Fighting</em><p class="indent"> When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack</p>
+            <em>Great Weapon Fighting</em><p class="indent"> When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+            <em>Mixed Weapons</em><p class="indent"> When you take the attack action with a one handed melee weapon with the light property, you can immediately make a single weapon attack with a one-handed ranged weapon as a bonus action. You do not need a free hand to reload a one handed ranged weapon.</p>
+            <p class="indent">Additionally, when you select this path, you learn the following spells at the following levels. These spells do not count against your spells known, and are Inventor spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Inventor Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>divine favor</td></tr>
+                <tr><td>5th</td><td>branding smite</td></tr>
+                <tr><td>9th</td><td>prismatic weapon</td></tr>
+                <tr><td>13th</td><td>guardian of faith</td></tr>
+                <tr><td>17th</td><td>shockwave</td></tr>
+            </table>
+            
+            <h5></h5>
+            <p class="indent"></p>
+            <p class="indent"></p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>column2</td></tr>
+                </thead>
+                <tr><td>1</td><td>data1</td></tr>
+                <tr><td>2</td><td>data2</td></tr>
+                <tr><td>3</td><td>data3</td></tr>
+                <tr><td>4</td><td>data4</td></tr>
+                <tr><td>5</td><td>data5</td></tr>
+                <tr><td>6</td><td>data6</td></tr>
+            </table>
+            <h5></h5>
+            <p class="indent"></p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>column2</td></tr>
+                </thead>
+                <tr><td>1</td><td>data1</td></tr>
+                <tr><td>2</td><td>data2</td></tr>
+                <tr><td>3</td><td>data3</td></tr>
+                <tr><td>4</td><td>data4</td></tr>
+                <tr><td>5</td><td>data5</td></tr>
+                <tr><td>6</td><td>data6</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
     </element>
-    <element name="Ability5" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY5">
+    <element name="Ordainted Path: Path of Justice" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH_PATH_OF_JUSTICE">
+        <supports>ordained-path</supports>
         <description>
-            <p></p>
+            <p>At 3rd level, you select the Path of Justice, gaining the ability to choose a Fighting Style from the following list.</p>
+            <em>Dueling</em><p class="indent"> When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+            <em>Two-Weapon Fighting</em><p class="indent"> When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack</p>
+            <em>Great Weapon Fighting</em><p class="indent"> When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+            <em>Mixed Weapons</em><p class="indent"> When you take the attack action with a one handed melee weapon with the light property, you can immediately make a single weapon attack with a one-handed ranged weapon as a bonus action. You do not need a free hand to reload a one handed ranged weapon.</p>
+            <p class="indent">Additionally, when you select this path, you learn the following spells at the following levels. These spells do not count against your spells known, and are Inventor spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Inventor Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>divine favor</td></tr>
+                <tr><td>5th</td><td>branding smite</td></tr>
+                <tr><td>9th</td><td>prismatic weapon</td></tr>
+                <tr><td>13th</td><td>guardian of faith</td></tr>
+                <tr><td>17th</td><td>shockwave</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
         <rules>
-            
+            <select type="Class Feature" name="Fighting Style" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING|ID_KTH_CCC_CLASS_FEATURE_FIGHTINGSTYLE_MIXED_WEAPONS" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIVINE_FAVOR" level="3" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" level="5" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_PRISMATIC_WEAPON" level="9" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="13" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_SHOCKWAVE" level="17" spellcasting="Inventor" />
         </rules>
     </element>
-    <element name="Ability6" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ABILITY6">
+    <element name="Ordainted Path: Path of Salvation" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH_PATH_OF_SALVATION">
+        <supports>ordained-path</supports>
         <description>
-            <p></p>
+            <p>When you restore hit points or grant temporary hit points to a creature with an Inventor spell or Inventor class feature, you can add your Intelligence modifier to number of hit points.</p>
+            <p class="indent">Additionally, when you select this path, you learn the following spells at the following levels. These spells do not count against your spells known, and are Inventor spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Inventor Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>bless</td></tr>
+                <tr><td>5th</td><td>gentle repose</td></tr>
+                <tr><td>9th</td><td>beacon of hope</td></tr>
+                <tr><td>13th</td><td>death ward</td></tr>
+                <tr><td>17th</td><td>mass cure wounds</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you restore hit points or grant temporary hit points to a creature with an Inventor spell or Inventor class feature, you can add your Intelligence modifier to number of hit points.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" level="3" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="5" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="9" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="13" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Inventor" />
+        </rules>
+    </element>    
+    <element name="Ordainted Path: Path of Penance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH_PATH_OF_PENANCE">
+        <supports>ordained-path</supports>
+        <description>
+            <p>Whips gain the light property for you, and can serve as your spell casting focus.</p>
+            <p class="indent">When you hit a creature with a whip, you can cast bane, targeting only that creature, without an action or expending a spell slot. Once you use this ability, you can’t use it again in this way until you finish a short or long rest. You can use this ability again before finishing a long rest by expending a spell slot of 1st level or higher.</p>
+            <p class="indent">Additionally, when you select this path, you learn the following spells at the following levels. These spells do not count against your spells known, and are Inventor spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Inventor Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>bane</td></tr>
+                <tr><td>5th</td><td>silence</td></tr>
+                <tr><td>9th</td><td>invest life</td></tr>
+                <tr><td>13th</td><td>banishment</td></tr>
+                <tr><td>17th</td><td>insect plague</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>Whips gain the light property for you, and can serve as your spell casting focus.             
+            When you hit a creature with a whip, you can cast bane, targeting only that creature, without an action or expending a spell slot. Once you use this ability, you can’t use it again in this way until you finish a short or long rest. You can use this ability again before finishing a long rest by expending a spell slot of 1st level or higher.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BANE" level="3" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_SILENCE" level="5" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_INVEST_LIFE" level="9" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="17" spellcasting="Inventor" />
+        </rules>
+    </element>
+    <element name="Mixed Weapons" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_FIGHTINGSTYLE_MIXED_WEAPONS">
+        <description>
+            <p>When you take the attack action with a one handed melee weapon with the light property, you can immediately make a single weapon attack with a one-handed ranged weapon as a bonus action. You do not need a free hand to reload a one handed ranged weapon.</p>
+        </description>
+        <sheet>
+            <description>When you take the attack action with a one handed melee weapon with the light property, you can immediately make a single weapon attack with a one-handed ranged weapon as a bonus action. You do not need a free hand to reload a one handed ranged weapon.</description>
+        </sheet>
+    </element>
+    <element name="Extra Attack" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_EXTRA_ATTACK">
+        <description><p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. You can activate a rune using its active property in place of one or both attacks.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice when you take the attack action on your turn. You can activate a rune using its active property in place of one or both attacks.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Justicar Savant" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_JUSTICAR_SAVANT">
+        <description>
+            <p>Starting at 14th level, your understanding of the paths of faith broadens and matures into a more holistic and nuanced understanding. You can select an additional Ordained Path.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Additional Ordained Path (Justicar Savant)" supports="ordained-path" />
+        </rules>
     </element>
 
 <!-- Unrestricted Specialization Upgrades-->
+
+    <element name="Burning Justice" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_BURNING_JUSTICE">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH_PATH_OF_JUSTICE</requirements>
+        <setters>
+            <set name="short">Prerequisite: Path of Justice</set>
+        </setters>
+        <description>
+            <p>When you deal fire or radiant damage, you may gain temporary hit points equal to your proficiency bonus. When you cast a spell that deals fire or radiant damage, the amount of tem-porary hit points gained is increased by the level of the spell.</p>
+        </description>
+        <sheet>
+            <description>When you deal fire or radiant damage, you may gain {{proficiency}} temporary hit points. When you cast a spell that deals fire or radiant damage, the amount of tem-porary hit points gained is increased by the level of the spell.</description>
+        </sheet>
+    </element>
+    <element name="Burning Penance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_BURNING_PENANCE">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH_PATH_OF_PENANCE</requirements>
+        <setters>
+            <set name="short">Prerequisite: Path of Penance</set>
+        </setters>
+        <description>
+            <p>Whenever a creature rolls the d4 from the effect of a bane spell you have afflicted on them, they take fire damage equal to the value rolled on the die.</p>
+            <p class="indent">Additionally, when you deal fire damage, you gain temporary hit points equal to the fire damage dealt, to a maximum of your proficiency bonus. Once you gain temporary hit points this way, you can’t gain them again until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>Whenever a creature rolls the d4 from the effect of a bane spell you have afflicted on them, they take fire damage equal to the value rolled on the die.
+            Additionally, when you deal fire damage, you gain temporary hit points equal to the fire damage dealt, to a maximum of {{proficiency}}. Once you gain temporary hit points this way, you can’t gain them again until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Ceremonial Procedures" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_CEREMONIAL_PROCEDURES">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You develop a rapid way to produce Holy Water. Whenever you finish a short or long rest, you can produce one flask of holy water so long as you have a flask available. Flasks created this way become normal water at dawn the next day. You learn the spell protection from evil and good.</p>
+        </description>
+        <sheet>
+            <description>Whenever you finish a short or long rest, you can produce one flask of holy water so long as you have a flask available. Flasks created this way become normal water at dawn the next day.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+        </rules>
+    </element>
+    <element name="Cleansing Fire" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_CLEANSING_FIRE">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You engrave your arcane focus with the tenets of purging flame. You learn the following spells at the following levels. These spells are inventor spells for you, and do not count against your spells known.</p>
+            <table>
+                <thead>
+                    <tr><td>Inventor Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>Cantrip</td><td>produce flames</td></tr>
+                <tr><td>3rd</td><td>burning hands</td></tr>
+                <tr><td>5th</td><td>scorching ray</td></tr>
+                <tr><td>9th</td><td>fireball</td></tr>
+                <tr><td>13th</td><td>wall of fire</td></tr>
+                <tr><td>17th</td><td>flame strike</td></tr>
+            </table>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description>You can cast burning hands without expending a spell slot, after which you must finish a long rest before you can cast it without expending a spell slot again. </description>
+            <description level="5">You can cast burning hands without expending a spell slot, after which you must finish a long rest before you can cast it without expending a spell slot again. You can choose to cast scorching ray without expending a spell slot instead.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_PRODUCE_FLAMES" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="17" spellcasting="Inventor" />
+        </rules>
+    </element>
+    <element name="Divine Light" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DIVINE_LIGHT">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH_PATH_OF_SALVATION</requirements>
+        <setters>
+            <set name="short">Prerequisite: Path of Salvation</set>
+        </setters>
+        <description>
+            <p>You learn the spell <i>healing word</i>. You can cast it without expending a spell slot once, after which it requires a spell slot as normal until you finish a long rest. </p>
+        </description>
+        <sheet>
+            <description>You learn the spell <i>healing word</i>. You can cast it without expending a spell slot once, after which it requires a spell slot as normal until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" />
+        </rules>
+    </element>
+    <element name="Engraved Scriptures" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ENGRAVED_SCRIPTURES">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>During a long rest you can prepare a number of weapons equal to your Intelligence modifier with holy scriptures marked upon them. Until the end of your next long rest, these weapons are considered silvered and magical for the purposes of overcoming damage resistance of fiends, shapechangers, and undead.</p>
+        </description>
+        <sheet>
+            <description>During a long rest you can prepare {{intelligence:modifier}} weapons with holy scriptures marked upon them. Until the end of your next long rest, these weapons are considered silvered and magical for the purposes of overcoming damage resistance of fiends, shapechangers, and undead.</description>
+        </sheet>
+    </element>
+    <element name="Inquisitor's Medallion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INQUISITORS_MEDALLION">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You build a specialized version of your relic that focuses your zeal for the truth. While carrying it, you can add your Intelligence modifier to Wisdom (Insight) checks, and gain the ability to cast <i>zone of truth</i>. You can use this to cast <i>zone of truth</i> without expending a spell slot. Once you cast it in this way, it requires a spell slot as normal until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You build a specialized version of your relic that focuses your zeal for the truth. While carrying it, you can add {{intelligence:modifier}} to Wisdom (Insight) checks, and gain the ability to cast <i>zone of truth</i>. You can use this to cast <i>zone of truth</i> without expending a spell slot. Once you cast it in this way, it requires a spell slot as normal until you finish a short or long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" />
+        </rules>
+    </element>
+    <element name="Martyr's Light" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_MARTYRS_LIGHT">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_RELIC_LANTERN</requirements>
+        <setters>
+            <set name="short">Prerequisite: Relic Lantern</set>
+        </setters>
+        <description>
+            <p>When a creature in the light of your lantern takes damage, you can use your reaction to give them resistance to that damage. You take damage equal to the damage they take. This damage can’t be reduced or resisted.</p>
+        </description>
+        <sheet>
+            <description>When a creature in the light of your lantern takes damage, you can use your reaction to give them resistance to that damage. You take damage equal to the damage they take. This damage can’t be reduced or resisted.</description>
+        </sheet>
+    </element>
+    <element name="Radiant Bolt" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_RADIANT_BOLT">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You learn the spell guiding bolt. You can cast it without expending a spell slot once, after which it requires a spell slot as normal until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You learn the spell guiding bolt. You can cast it without expending a spell slot once, after which it requires a spell slot as normal until you complete a short or long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Inventor" />
+        </rules>
+    </element>
+    <element name="Reach of Penance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_REACH_OF_PENANCE">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH_PATH_OF_PENANCE</requirements>
+        <setters>
+            <set name="short">Prerequisite: Path of Penance</set>
+        </setters>
+        <description>
+            <p>You can modify any whip to be longer, though only you have proficiency with these extended whips. The reach of a whip is increased by 5 feet for you.</p>
+            <p class="indent">Additionally, you can make an opportunity attack with a whip when a creature moves 5 or more feet within your reach.</p>
+        </description>
+        <sheet>
+            <description>You can modify any whip to be longer, though only you have proficiency with these extended whips. The reach of a whip is increased by 5 feet for you.
+            Additionally, you can make an opportunity attack with a whip when a creature moves 5 or more feet within your reach.</description>
+        </sheet>
+    </element>
+    <element name="Sacred Garments" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_SACRED_GARMENTS">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You craft holy scripture that channels divine energy through an article of clothing you wear. While wearing this item, you can add your Intelligence modifier to any Wisdom or Charisma saving throw you make against magical effects or abilities of any undead or fiend.</p>
+        </description>
+        <sheet>
+            <description>You craft holy scripture that channels divine energy through an article of clothing you wear. While wearing this item, you can add {{intelligence:modifier}} to any Wisdom or Charisma saving throw you make against magical effects or abilities of any undead or fiend.</description>
+        </sheet>
+    </element>
+    <element name="Salvation's Shield" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_SALVATIONS_SHIELD">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_RELIC_LANTERN</requirements>
+        <setters>
+            <set name="short">Prerequisite: Relic Lantern</set>
+        </setters>
+        <description>
+            <p>While carrying the relic lantern in your hand, you are under the effect of the <i>shield of faith spell</i>.</p>
+        </description>
+        <sheet>
+            <description>While carrying the relic lantern in your hand, you are under the effect of the shield of faith spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
+        </rules>
+    </element>
+    <element name="Torch of Conviction" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_TORCH_OF_CONVICTION">
+        <supports>rel-specialization-upgrade,l1</supports>
+        <requirements>[level:1]</requirements>
+        <setters>
+            <set name="short"></set>
+        </setters>
+        <description>
+            <p>You empower a torch to burn with undying flame. This torch has an unlimited duration, and deals 1d6 fire damage on hit. You have proficiency with this weapon and it has the light property for you. While carrying this torch, in place of making an attack with it as part of the attack action, you can cast <i>ignite fire</i></p>
+        </description>
+        <sheet>
+            <description>You empower a torch to burn with undying flame. This torch has an unlimited duration, and deals 1d6 fire damage on hit. You have proficiency with this weapon and it has the light property for you. While carrying this torch, in place of making an attack with it as part of the attack action, you can cast ignite fire</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_CCC_SPELL_IGNITE_FIRE" />
+        </rules>
+    </element>
 <!-- Level 5 Specialization Upgrades-->
+
+    <element name="Burning Seal" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_BURNING_SEAL">
+        <supports>rel-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_MELEE_WEAPON</requirements>
+        <setters>
+            <set name="short">level 5, Prerequisite: Melee weapon Devine Relic</set>
+        </setters>
+        <description>
+            <p>When you strike a creature with a melee weapon Divine Relic, you can leave a divine brand on them, lasting until the start of your next turn. The first time that creature attacks a target other than you, it takes 1d8 fire damage.</p>
+        </description>
+        <sheet>
+            <description>When you strike a creature with a melee weapon Divine Relic, you can leave a divine brand on them, lasting until the start of your next turn. The first time that creature attacks a target other than you, it takes 1d8 fire damage.</description>
+        </sheet>
+    </element>
+    <element name="Divine Book" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DIVINE_BOOK">
+        <supports>rel-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You can read from this book to cast <i>prayer of healing</i>. You can cast it this way without expending a spell slot once, after which it requires a spell slot as normal until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can read from this book to cast prayer of healing. You can cast it this way without expending a spell slot once, after which it requires a spell slot as normal until you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PRAYER_OF_HEALING" />
+        </rules>
+    </element>
+    <element name="Duplicate Relic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DUPLICATE_RELIC">
+        <supports>rel-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You create a copy of your divine relic, though the copy only serves as a power source, allowing you to select a second Ingenious Reliquary.</p>
+        </description>
+        <sheet>
+            <description>You create a copy of your divine relic, though the copy only serves as a power source, allowing you to select a second Ingenious Reliquary.</description>
+        </sheet>
+        <rules>            
+            <select type="Archetype Feature" name="Ingenious Reliquary Option" supports="ingenious-reliquary" />
+        </rules>
+    </element>
+    <element name="Ordained Focus" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_FOCUS">
+        <supports>rel-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>You inscribe your arcane focus with the tenets of your path. You have advantage on Constitution saving throws to maintain concentration on spells granted by your Ordained Path.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Constitution saving throws to maintain concentration on spells granted by your Ordained Path.</description>
+        </sheet>
+    </element>
+    <element name="Reflected Radiance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_REFLECTED_RADIANCE">
+        <supports>rel-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_RELIC_LANTERN</requirements>
+        <setters>
+            <set name="short">level 5, Prerequisite: Relic Lantern</set>
+        </setters>
+        <description>
+            <p>While a creature has temporary hit points gained from your Relic Lantern, whenever they are hit by a melee attack, the attacking creature takes radiant damage equal to your Intelligence modifier.</p>
+        </description>
+        <sheet>
+            <description>While a creature has temporary hit points gained from your Relic Lantern, whenever they are hit by a melee attack, the attacking creature takes {{intelligence:modifier}} radiant damage.</description>
+        </sheet>
+    </element>
+    <element name="Silver Bullet" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_SILVER_BULLET">
+        <supports>rel-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5</set>
+        </setters>
+        <description>
+            <p>During a long rest you can create a single piece of ammunition specialized in the destruction of one creature type. Select from aberration, celestial, fiend, shapechanger, or undead. The piece of ammunition is considered silvered and magical for the purposes of bypassing resistance. If this piece of ammunition hits the specified creature type, the hit becomes a critical hit, and the piece of ammunition becomes a normal piece of ammunition. You can only have one special piece of ammunition from this feature at a time.</p>
+        </description>
+        <sheet>
+            <description>During a long rest you can create a single piece of ammunition specialized in the destruction of one creature type. Select from aberration, celestial, fiend, shapechanger, or undead. The piece of ammunition is considered silvered and magical for the purposes of bypassing resistance. If this piece of ammunition hits the specified creature type, the hit becomes a critical hit, and the piece of ammunition becomes a normal piece of ammunition. You can only have one special piece of ammunition from this feature at a time.</description>
+        </sheet>
+    </element>
 <!-- Level 9 Specialization Upgrades-->
+
+    <element name="Angelic Eyes" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ANGELIC_EYES">
+        <supports>rel-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You forge a set of spectacles granting you vision that pierces the darkness. You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet, and have advantage on ability checks to piece the illusions of fiends.</p>
+        </description>
+        <sheet>
+            <description>You forge a set of spectacles granting you vision that pierces the darkness. You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet, and have advantage on ability checks to piece the illusions of fiends.</description>
+        </sheet>
+    </element>
+    <element name="Condemnation of Fire" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_CONDEMNATION_OF_FIRE">
+        <supports>rel-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9, Prerequisite: An Ingenious Reliquary that is a weapon</set>
+        </setters>
+        <description>
+            <p>You invoke the power of your Relic weapon to attempt to purge a creature. When you hit a creature with your Relic weapon you may have the creature make a Strength saving throw. On a failure it becomes restrained by chains of fire and set ablaze. While restrained, it takes 2d6 fire damage at the start of each of its turns. It may repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+            <p class="indent">Once you invoke this ability, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You invoke the power of your Relic weapon to attempt to purge a creature. When you hit a creature with your Relic weapon you may have the creature make a Strength saving throw. On a failure it becomes restrained by chains of fire and set ablaze. While restrained, it takes 2d6 fire damage at the start of each of its turns. It may repeat the saving throw at the end of each of its turns, ending the effect on a success.
+            </description>
+        </sheet>
+    </element>
+    <element name="Holy Hand Grenade" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_HOLY_HAND_GRENADE">
+        <supports>rel-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You build a sacred device for dispensing justice. You can use it to cast flame strike without expending a spell slot. Once used, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You build a sacred device for dispensing justice. You can use it to cast flame strike without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" />
+        </rules>
+    </element>
+    <element name="Inscribed Prayer" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INSCRIBED_PRAYER">
+        <supports>rel-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>During a long rest, you can inscribe a special divine scripture. This serves as a scroll of mass healing word. You can use this scroll without an ability check. This scroll lasts until used or until you create another divine scripture.</p>
+        </description>
+        <sheet>
+            <description>During a long rest, you can inscribe a special divine scripture. This serves as a scroll of mass healing word. You can use this scroll without an ability check. This scroll lasts until used or until you create another divine scripture.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" />
+        </rules>
+    </element>
+    <element name="Purifier Rounds" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_PURIFIER_ROUNDS">
+        <supports>rel-specialization-upgrade,l9</supports>
+        <requirements>[level:9]</requirements>
+        <setters>
+            <set name="short">level 9</set>
+        </setters>
+        <description>
+            <p>You can make a number of pieces of ammunition equal to your Intelligence modifier imbued with special divine power. On hit, these rounds do deal an extra 1d6 radiant damage. If the creature is undead or a fiend and the damage from this round reduces its hit points to a number less than your Inventor level, it has to make a Charisma saving throw. On failure, it dies and explodes to ash.</p>
+            <p class="indent">You can replenish any spent rounds after a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can make {{intelligence:modifier}} of pieces of ammunition imbued with special divine power. On hit, these rounds do deal an extra 1d6 radiant damage. If the creature is undead or a fiend and the damage from this round reduces its hit points to a number less than {{level:inventor}}, it has to make a Charisma saving throw. On failure, it dies and explodes to ash.
+            You can replenish any spent rounds after a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Quench the Light" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_QUENCH_THE_LIGHT">
+        <supports>rel-specialization-upgrade,l9</supports>
+        <requirements>[level:9],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_RELIC_LANTERN</requirements>
+        <setters>
+            <set name="short">level 9, Prerequisite: Relic Lantern</set>
+        </setters>
+        <description>
+            <p>You snuff the light of your lantern, plunging the area around you into darkness. Creatures of your choice within the area that was illuminated by your lanter must make a Wisdom saving throw. On failure, they take 8d6 necrotic damage, and half as much on a success. If extinguishing your lantern would leave the creature blinded by darkness, they make the saving throw with disadvantage. Your lantern does not emit light until the start of your next turn.</p>
+            <p class="indent">Once you use this feature, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You snuff the light of your lantern, plunging the area around you into darkness. Creatures of your choice within the area that was illuminated by your lanter must make a Wisdom saving throw. On failure, they take 8d6 necrotic damage, and half as much on a success. If extinguishing your lantern would leave the creature blinded by darkness, they make the saving throw with disadvantage. Your lantern does not emit light until the start of your next turn.
+            </description>
+        </sheet>
+    </element>
 <!-- Level 11 Specialization Upgrades-->
+
+    <element name="Boundless Radiance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_BOUNDLESS_RADIANCE">
+        <supports>rel-specialization-upgrade,l11</supports>
+        <requirements>[level:11],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_RADIANT_BOLT</requirements>
+        <setters>
+            <set name="short">level 11, Prerequisite: Radiant Bolt</set>
+        </setters>
+        <description>
+            <p>You can cast <i>guiding bolt</i> without expending a spell slot an unlimited number of times.</p>
+        </description>
+        <sheet>
+            <description>You can cast guiding bolt without expending a spell slot an unlimited number of times.</description>
+        </sheet>
+    </element>
+    <element name="Consuming Flames" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_CONSUMING_FLAMES">
+        <supports>rel-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>The bonus fire damage of your Divine Relic increases to 1d6 fire damage. When using it on a weapon that incorporates your relic, the damage increases to 1d8 fire damage.</p>
+        </description>
+        <sheet>
+            <description>The bonus fire damage of your Divine Relic increases to 1d6 fire damage. When using it on a weapon that incorporates your relic, the damage increases to 1d8 fire damage.</description>
+        </sheet>
+    </element>
+    <element name="Divinely Inured" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DIVINELY_INURED">
+        <supports>rel-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You gain resistance to fire and radiant damage. If you would take fire or radiant damage from a magical source that would reduce you to zero hit points, you are instead reduced to 1 hit point.</p>
+        </description>
+        <sheet>
+            <description>You gain resistance to fire and radiant damage. If you would take fire or radiant damage from a magical source that would reduce you to zero hit points, you are instead reduced to 1 hit point.</description>
+        </sheet>
+    </element>
+    <element name="Emblem of Faith" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_EMBLEM_OF_FAITH">
+        <supports>rel-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You forge a special emblem that serves as the bane of extraplanar creatures. You can cast <i>dispel evil and good</i> once without expending a spell slot. Once you use this to cast the spell, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can cast <i>dispel evil and good</i> once without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" />
+        </rules>
+    </element>
+    <element name="Empowered Salvation" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_EMPOWERED_SALVATION">
+        <supports>rel-specialization-upgrade,l11</supports>
+        <requirements>[level:11],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_RELIC_LANTERN</requirements>
+        <setters>
+            <set name="short">level 11, Prerequisite: Relic Lantern</set>
+        </setters>
+        <description>
+            <p>The temporary hit points granted by your Lantern are increased to 1d8.</p>
+        </description>
+        <sheet>
+            <description>The temporary hit points granted by your Lantern are increased to 1d8.</description>
+        </sheet>
+    </element>
+    <element name="Flagellant's Brand" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_FLAGELLANTS_BRAND">
+        <supports>rel-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>You carve a holy mark onto yourself. Before you make a saving throw, you can add a number of d6s up to your Constitution modifier to the roll. You take fire damage equal to twice the value rolled on the d6s. This damage bypasses resistances and immunity.</p>
+        </description>
+        <sheet>
+            <description>Before you make a saving throw, you can add a number of d6s up to {{constitution:modifier}} to the roll. You take fire damage equal to twice the value rolled on the d6s. This damage bypasses resistances and immunity.</description>
+        </sheet>
+    </element>
+    <element name="Piercing Light" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_PIERCING_LIGHT">
+        <supports>rel-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>Any bright light you generate with class features or spells is considered sunlight.</p>
+        </description>
+        <sheet>
+            <description>Any bright light you generate with class features or spells is considered sunlight.</description>
+        </sheet>
+    </element>
+
 <!-- Level 15 Specialization Upgrades-->
+
+    <element name="Blessed Relic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_BLESSED_RELIC">
+        <supports>rel-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>While carrying your divine relic, you are under the effect of the <i>bless</i> spell.</p>
+        </description>
+        <sheet>
+            <description>While carrying your divine relic, you are under the effect of the bless spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" />
+        </rules>
+    </element>
+    <element name="Burning Brand" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_BURNING_BRAND">
+        <supports>rel-specialization-upgrade,l15</supports>
+        <requirements>[level:15],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_MELEE_WEAPON</requirements>
+        <setters>
+            <set name="short">level 15, Prerequisite: Relic Melee Weapon</set>
+        </setters>
+        <description>
+            <p>When you hit a creature with your ignited relic melee weapon, it lights the creature on fire. At the start of each of its turns, it takes 1d6 fire damage, until someone takes an action to douse the fire.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with your ignited relic melee weapon, it lights the creature on fire. At the start of each of its turns, it takes 1d6 fire damage, until someone takes an action to douse the fire.</description>
+        </sheet>
+    </element>
+    <element name="Divine Aid" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DIVINE_AID">
+        <supports>rel-specialization-upgrade,l11</supports>
+        <requirements>[level:11]</requirements>
+        <setters>
+            <set name="short">level 11</set>
+        </setters>
+        <description>
+            <p>At level 11, you can cast summon celestial.</p>
+            <p class="indent">At level 15 you gain the ability to use your relic to cast <i>summon celestial</i>. You can cast it this way once without expending a spell slot once, after which you require a spell slot as normal until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to use your relic to cast summon celestial. You can cast it this way once without expending a spell slot once, after which you require a spell slot as normal until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_CELESTIAL" spellcasting="inventor" />
+        </rules>
+    </element>
+    <element name="Divine Illumination" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DIVINE_ILLUMINATION">
+        <supports>rel-specialization-upgrade,l15</supports>
+        <requirements>[level:15],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_INGENIOUS_RELIQUARY_RANGED_WEAPON</requirements>
+        <setters>
+            <set name="short">level 15, Prerequisite: Relic Ranged Weapon</set>
+        </setters>
+        <description>
+            <p>Once per turn on your turn, when you hit a creature with your relic ranged weapon, you can cause the next attack against the creature to have advantage.</p>
+        </description>
+        <sheet>
+            <description>Once per turn on your turn, when you hit a creature with your relic ranged weapon, you can cause the next attack against the creature to have advantage.</description>
+        </sheet>
+    </element>
+    <element name="Domain Device" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DOMAIN_DEVICE">
+        <supports>rel-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>With careful inscription and rituals you create a divine device that focuses the holy power of a particular domain. At the time of selecting this upgrade, select a cleric domain. This device can be used to activate that domain’s Channel Divinity feature once, after which it can’t be used again until you finish a long rest. Your Inventor level is your Cleric level for the purpose of calculating any bonuses to it.</p>
+        </description>
+        <sheet>
+            <description>Select a cleric domain and you can activate its Channel Divinity Feature once per long rest.</description>
+        </sheet>
+    </element>
+    <element name="Favored Relic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_FAVORED_RELIC">
+        <supports>rel-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>While carrying your divine relic, you are under the effect of the <i>divine favor</i> spell.</p>
+        </description>
+        <sheet>
+            <description>While carrying your divine relic, you are under the effect of the divine favor spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DIVINE_FAVOR" />
+        </rules>
+    </element>
+    <element name="Hallowed Armor" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_HALLOWED_ARMOR">
+        <supports>rel-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>You mark your armor with hallowed inscriptions. When you gain temporary hit points from one of your spells or class features, you glow with radiance. The next time you deal radiant or fire damage with an attack, you deal additional damage equal to the temporary hit points gained.</p>
+        </description>
+        <sheet>
+            <description>When you gain temporary hit points from one of your spells or class features, you glow with radiance. The next time you deal radiant or fire damage with an attack, you deal additional damage equal to the temporary hit points gained.</description>
+        </sheet>
+    </element>
+    <element name="Transcendent Equation" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_TRANSCENDENT_EQUATION">
+        <supports>rel-specialization-upgrade,l15</supports>
+        <requirements>[level:15]</requirements>
+        <setters>
+            <set name="short">level 15</set>
+        </setters>
+        <description>
+            <p>You unlock the secrets at the heart of divine magic. When you cast a spell granted by this subclass, you can leverage this knowledge to add your Wisdom modifier (minimum 1) and Charisma modifier (minimum 1) to your spell save DC or spell attack roll. Once you do this, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You unlock the secrets at the heart of divine magic. When you cast a spell granted by this subclass, you can leverage this knowledge to add {{wisdom:modifier}} (minimum 1) and {{charisma:modifier}} (minimum 1) to your spell save DC or spell attack roll.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Trifecta of Ingenuity" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_TRIFECTA_OF_INGENUITY">
+        <supports>rel-specialization-upgrade,l15</supports>
+        <requirements>[level:15],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_DUPLICATE_RELIC</requirements>
+        <setters>
+            <set name="short">level 15, Prerequisite: Duplicate Relic</set>
+        </setters>
+        <description>
+            <p>You can create a third relic as a power source, selecting a third option from the Ingenious Reliquary feature.</p>
+        </description>
+        <sheet>
+            <description>You can create a third relic as a power source, selecting a third option from the Ingenious Reliquary feature.</description>
+        </sheet>
+        <rules>            
+            <select type="Archetype Feature" name="Ingenious Reliquary Option" supports="ingenious-reliquary" />
+        </rules>
+    </element>
 </elements>
 <!--
     
     <element name="GadgetName" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_GADGETNAME">
-        <supports>rel-specialization-upgrade,l1</supports>
-        <requirements>[level:15]</requirements>
+        <supports>rel-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
         <setters>
-            <set name="short"></set>
+            <set name="short">level 5</set>
         </setters>
         <description>
             <p></p>

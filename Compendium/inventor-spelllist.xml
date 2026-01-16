@@ -1,0 +1,220 @@
+<elements>
+    <info>
+        <name>Inventor Spell List</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="inventor-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-spelllist.xml" />
+        </update>
+    </info>
+
+
+
+<!-- 1st Level Spells -->
+    <append id="ID_PHB_SPELL_ALARM">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COMPREHEND_LANGUAGES">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CURE_WOUNDS">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_MAGIC">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISGUSE_SELF">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEATHER_FALL">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FALSE_LIFE">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TENSERS_FLOATING_DISK">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GREASE">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_IDENTIFY">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ILLUSORY_SCRIPT">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_JUMP">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CATAPULT">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_LONGSTRIDER">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SANCTUARY">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_UNSEEN_SERVANT">
+        <supports>Inventor</supports>
+    </append>
+<!-- 2nd Level Spells -->
+    <append id="ID_PHB_SPELL_AID">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ALTER_SELF">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_NYSTULS_MAGIC_AURA">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ARCANE_LOCK">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLUR">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DARKVISION">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENHANCE_ABILITY">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+        <supports>Inventor</supports>
+    </append>    
+    <append id="ID_PHB_SPELL_FIND_TRAPS">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HEAT_METAL">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HOLD_PERSON">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_INVISIBILITY">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_KNOCK">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LOCATE_OBJECT">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_WEAPON">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_MOUTH">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SEE_INVISIBILITY">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPIDER_CLIMB">
+        <supports>Inventor</supports>
+    </append>
+<!-- 3rd Level Spells -->
+    <append id="ID_PHB_SPELL_DISPEL_MAGIC">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GASEOUS_FORM">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GASEOUS_FORM">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GLYPH_OF_WARDING">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_NONDETECTION">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SENDING">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WATER_BREATHING">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WATER_WALK">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WIND_WALL">
+        <supports>Inventor</supports>
+    </append>
+<!-- 4th Level Spells -->
+    <append id="ID_PHB_SPELL_ARCANE_EYE">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DEATH_WARD">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FABRICATE">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIRE_SHIELD">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STONE_SHAPE">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STONESKIN">
+        <supports>Inventor</supports>
+    </append>
+<!-- 5th Level Spells -->
+    <append id="ID_PHB_SPELL_ANIMATE_OBJECTS">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CREATION">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HOLD_MONSTER">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LEGEND_LORE">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MISLEAD">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PASSWALL">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TELEKINESIS">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TELEPORTATION_CIRCLE">
+        <supports>Inventor</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WALL_OF_STONE">
+        <supports>Inventor</supports>
+    </append>
+</elements>
+<!--
+    <append id="ID_PHB_SPELL_">
+        <supports>Inventor</supports>
+    </append>
+    -->
