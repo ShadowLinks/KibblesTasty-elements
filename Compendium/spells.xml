@@ -1507,7 +1507,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Dispel Contruct" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_DISPEL_CONTRUCT">
+    <element name="Dispel Construct" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_SPELL_DISPEL_CONSTRUCT">
         <supports>Inventor, Spell Saving Throw</supports>
         <description>
             <p>You attempt to purge the magic animating a construct within range, rendering it inert. The target takes 4d10 force damage and must make a Constitution saving throw. On a failure, it becomes stunned for the duration, and if it has less than 50 hit points remaining, it is reduced to 0 hit points.</p>
@@ -6656,9 +6656,49 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Prismatic Weapon" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SPELL_PRISMATIC_WEAPON">
+        <supports>Inventor, Sorcerer, Wizard</supports>
+        <description>
+            <p>
+                A weapon you touch is infused with elemental power, becoming a magical weapon. Choose of the following damage types: acid, cold, fire, lightning, poison, or thunder. The weapon deals 1d6 damage of the chosen weapon type, and if it doesn’t already have a bonus to attack and damage, it gains a +1 bonus to attack and damage rolls.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>At Higher Levels.</i>
+                </b>
+                When you cast this spell with a 4th or 5th-level spell slot, the damage increases by 1d6 (to 2d6). When you use a spell slot of 6th level or higher, the damage increases by 2d6 (to 3d6).
+            </p>
+        </description>
+        <setters>
+            <set name="keywords">acid,cold,fire,lightning,thunder,poison</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"/>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!--             
+To Add or eval
+Arcane Infusion
+Freezing Shell
+Ignite Fire
+invested copetency (psionic)
+invest life psionic (dup)
+poison puff
+summon horror
+terrifying visions
+translocating shot
+trary's terrific transposition
+turbulent warp
 
 <element name="Spell Name" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_SPELL NAME">
         <supports></supports>
