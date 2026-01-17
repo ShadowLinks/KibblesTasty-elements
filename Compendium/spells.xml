@@ -6684,23 +6684,206 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Arcane Infusion" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_ARCANE_INFUSION">
+        <supports>Inventor</supports>
+        <description>
+            <p>You use arcane power to briefly bring to power or modify your inventions. For the duration, you gain the effects of one unrestricted upgrade. All normal prerequisite apply (including subclass and level requirements). The creation is magical, held together and formed of magic and spare parts, taking the form of the upgrade or empowering an existing upgrade with temporary new features. Casting this spell again ends the effects of any previous castings of this spell.</p>
+            <p class="indent"><em>At Higher Levels.</em> When you cast this spell with a 3rd-level spell slot or higher, you can infuse the effects of an upgrade that requires 5th level. When you cast this spell using a spell slot of 4th level or higher, you can infuse the effects of an upgrade that requires 9th level. When you cast this spell with a 5th-level spell slot or higher, you can infuse the effects of an upgrade that requires 11th level.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 minute</set>
+            <set name="range">Self</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">(spare parts that could form the upgrade selected worth at least 1 sp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Freezing Shell" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_FREEZING_SHELL">
+        <supports>Warlock</supports>
+        <description>
+            <p>A freezing shell shrouds you, forming an icy barrier. You gain 5 temporary hit points for the duration of the spell. If a creature hits you with a melee attack while you have these temporary hit points, the attacker takes 5 cold damage.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">material</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Ignite Fire" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_IGNITE_FIRE">
+        <supports>Druid, Occultist, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You ignite a magical fire that fills a 5-foot cube in a space you can see on the ground. A creature in the fire’s space when you cast the spell must suceeed a Dexterity saving throw or take 1d8 fire damage. A creature that enters the fire’s space for the first time or ends their turn there must repeat the saving throw against the effect. Flamable objects in the area that aren’t being worn or carried catch fire.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">material</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Poison Puff" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_POISON_PUFF">
+        <supports></supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">material</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Summon Horror" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_SUMMON_HORROR">
+        <supports></supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> </p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">material</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Terrifying Visions" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_TERRIFYING_VISIONS">
+        <supports></supports>
+        <description>
+            <p></p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> </p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">material</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Translocating Shot" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_TRANSLOCATING_SHOT">
+        <supports></supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> </p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">material</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Trary's Terrific Transposition" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_TRARYS_TERRIFIC_TRANSPOSITION">
+        <supports></supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">material</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Turbulent Warp" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_TURBULENT_WARP">
+        <supports></supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> </p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">material</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
 </elements>
 
 <!--             
 To Add or eval
-Arcane Infusion
-Freezing Shell
-Ignite Fire
 invested copetency (psionic)
 invest life psionic (dup)
-poison puff
-summon horror
-terrifying visions
-translocating shot
-trary's terrific transposition
-turbulent warp
 
-<element name="Spell Name" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_SPELL NAME">
+    <element name="Spell Name" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_SPELL NAME">
         <supports></supports>
         <description>
             <p></p>
