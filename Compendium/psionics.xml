@@ -2,7 +2,7 @@
     <info>
         <name>KibblesTasty Psionic</name>
         <description></description>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="psionics.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionics.xml" />
         </update>
     </info>
@@ -265,6 +265,69 @@
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<element name="Invested Competency" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCCC_PSIONIC_INVESTED_COMPETENCY">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You touch a willing creature imbuing psionic competency into them. Until the spell ends, they gain expertise in on skill of your choice, adding double their proficiency bonus to that skill.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">touch</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<element name="Invest Life" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_PSIONIC_INVEST_LIFE">
+        <supports>Psionic</supports>
+        <description>
+            <p>You draw on your life force to invest some of your vital essence into another creature you can see within range. You take 4d8 necrotic damage, which can’t be reduced in any way, and one creature of your choice that you can see within range regains a number of hit points equal to twice the necrotic damage you take.</p>
+            <p class="indent"><em>At Higher Levels.</em> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<element name="Turbulent Warp" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_PSIONIC_TURBULENT_WARP">
+        <supports>Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You teleport yourself to an unoccupied space you can see within range, leaving behind a spatial distortion. Each creature within 10 feet of the space you left must make a Charisma saving throw. On a failure, they take 5d4 force damage and are teleported to an empty space of your choice within 5 feet of where they were. On success they take half as much damage and are not teleported.</p>
+            <p class="indent">You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind.</p>
+            <p class="indent"><em>At Higher Levels.</em> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 2d4 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>

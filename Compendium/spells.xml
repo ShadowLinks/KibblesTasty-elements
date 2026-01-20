@@ -2,7 +2,7 @@
     <info>
         <name>KibblesTasty SPells</name>
         <description></description>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spells.xml" />
         </update>
     </info>
@@ -6730,149 +6730,147 @@
         <supports>Druid, Occultist, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
             <p>You ignite a magical fire that fills a 5-foot cube in a space you can see on the ground. A creature in the fire’s space when you cast the spell must suceeed a Dexterity saving throw or take 1d8 fire damage. A creature that enters the fire’s space for the first time or ends their turn there must repeat the saving throw against the effect. Flamable objects in the area that aren’t being worn or carried catch fire.</p>
-            <p class="indent"></p>
+            <p class="indent">The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)</p>
         </description>
         <setters>
-            <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Necromancy</set>
+            <set name="keywords">fire</set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
-            <set name="hasVerbalComponent">false</set>
+            <set name="range">60 ft.</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">material</set>
-            <set name="isConcentration">false</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Poison Puff" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_POISON_PUFF">
-        <supports></supports>
+        <supports>Druid, Occultist, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>You exhale a cloud of poison that magically expands to fill a 30-foot cone. Creatures in that area must make a Constitution saving throw. On a failure, they take 4d12 poison damage and become poisoned until the start of their next turn. On a success, the target takes half as much damage and is not poisoned.</p>
+            <p class="indent">The area is lightly obscured until the start of your turn, and any creature that ends their turn within the area takes 2d4 poison damage.</p>
         </description>
         <setters>
-            <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Necromancy</set>
+            <set name="keywords">poison</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
-            <set name="hasVerbalComponent">false</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">material</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Summon Horror" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_SUMMON_HORROR">
-        <supports></supports>
+        <supports>Occultist, Warlock, Wizard</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <p class="indent"><strong><i>At Higher Levels.</i></strong> </p>
+            <p>You call forth a twisted horror. It manifests in an unoccuptied space that you can see within Range. This manifested form uses the Horror Spirit stat block. When you cast the spell, choose Star, Sea, or Void. The creature takes on elements of the selected type, which determine certain traits in its stat block. The creature disappears when it drops to 0 hit points or the spell ends.</p>
+            <p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you cast this spell using a spell of 5th level or higher, use the higher level whenever the spell’s level appears in the stat block.</p>
+            <p><em>Horror Spirit</em></p>
+            <ul>
+                <li>Medium aberration, unaligned</li>
+                <li>Armor Class 11 + the level of the spell (natural armor)</li>
+                <li>Hit Points 25 + 5 for each spell level above 4th</li>
+                <li>Speed 30 ft., swim 30 ft., fly 30 ft. (Star and Void Only; hover).</li>
+                <li>STR 16 (+3), DEX 12 (+1), CON 15 (+2), INT 16 (+3), WIS 8 (-1), CHA 6 (-2)</li>
+                <li>Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks</li>
+                <li>Damage Immunities poison, psychic</li>
+                <li>Condition Immunities blinded, charmed,, frightened</li>
+                <li>Senses darkvision 60 ft., passive Perception 9</li>
+                <li>Languages understands the languages you speak</li>
+                <li>Proficiency Bonus equals your bonus</li>
+                <li>Grasping Tentacles (Sea Only). If the aberration hits the same creature two or more times on its turn, the target is grappled (escape DC your spell save DC). Creatures that start their turn grappled by the aberration take 7 (2d6) acid damage. It can grapple a number of creatures this way equal to your proficiency bonus.</li>
+                <li>Fatal Destiny (Star Only). Creatures of your choice that start their turn within 5 feet of the abherration must succeed on a Wisdom saving throw against your spell save DC or become transfixed by the abherration, unable to move away, and with disadvantage on attacks against creatures other than the aberration.</li>
+                <li>Multiattack. The aberration makes a number of attacks equal to half this spell’s level (rounded down). The aberration can use Fold Space in place of one attack (Void Only).</li>
+                <li>Tentacle. Melee Weapon Attack: your spell attack modifier to hit, reach 10 ft., one target. Hit: 1d8 + 3 + the spell’s level bludgeoning damage.</li>
+                <li>Fold Space (Void Only). The abherration teleports up to 30 feet. Creatures within 5 feet of its destination take 7 (2d6) force damage. It can bring one willing creature within 5 feet of it with it when teleporting this way, but that creature takes 1d6 psychic damage when it does so</li>
+            </ul>
         </description>
         <setters>
-            <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Necromancy</set>
+            <set name="keywords">summon</set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
-            <set name="hasVerbalComponent">false</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">material</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">(a book with an ornate cover filled with the records of madmen worth at least 400 gp)</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Terrifying Visions" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_TERRIFYING_VISIONS">
-        <supports></supports>
+        <supports>Bard, Spell Saving Throw</supports>
         <description>
-            <p></p>
-            <p class="indent"><strong><i>At Higher Levels.</i></strong> </p>
+            <p>You instil a vision of terrifying hallucinations into the mind of a target you can see. The target must make a Wisdom saving throw. On failure, it takes 3d6 psychic damage and must immediately use its reaction to move directly its movement speed directly away from you. This movement does not force the creature to move into hazardous terrain or to take movements that cause it to take damage (such as jumping off a cliff or moving into a spell effect). On a successful save, the target takes half as much damage and isn't forced to move.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
         </description>
         <setters>
-            <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Necromancy</set>
+            <set name="keywords">psychic</set>
+            <set name="level">1</set>
+            <set name="school">Illusion</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
+            <set name="range">60 feet</set>
             <set name="duration">Instantaneous</set>
-            <set name="hasVerbalComponent">false</set>
+            <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">material</set>
-            <set name="isConcentration">false</set>
+            <set name="isConcentration">false</set>Invest_L
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Translocating Shot" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_TRANSLOCATING_SHOT">
-        <supports></supports>
+        <supports>Inventor, Ranger, Wizard</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <p class="indent"><strong><i>At Higher Levels.</i></strong> </p>
+            <p>You magically bind a willing creature within range into a piece of ammunition. When the piece of ammunition is fired, the creature bound to the piece of ammunition is teleported to the target destination. You can fire the ammunition at a creature, object, or point within the normal range of the weapon. When attacking a creature or object, the target is teleported to within 5 feet of the target hit or miss.</p>
+            <p class="indent">When you cast this spell, if you cast it a Large or larger piece of ammunition, you can bind up to 4 creatures to the piece of ammunition.</p>
+            <p class="indent"><strong><i>At Higher Levels.</i></strong> When you using 6th-level slot or higher, you can cast it on a Huge piece of ammunition, binding up to nine creatures to the piece of ammunition.</p>
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Necromancy</set>
-            <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
-            <set name="hasVerbalComponent">false</set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">5 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">material</set>
-            <set name="isConcentration">false</set>
+            <set name="materialComponent">a piece of ammunition worth at least 1 cp</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Trary's Terrific Transposition" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_TRARYS_TERRIFIC_TRANSPOSITION">
-        <supports></supports>
+        <supports>Inventor, Occultist, Wizard</supports>
         <description>
-            <p></p>
+            <p>You weave an enchantment that conjures compresses all objects of your choice within range into a the satchel or bag used in casting the spell. The contents become harmlessly compressed and stored in an magical state of miniaturized suspension within the container. The weight of miniaturized stored items is the weight of the item divided by one hundred. The bag can store all items that fit in the radius when the spell is cast, but can’t store any individual item larger than Medium. Items can’t be individually removed from the bag, but the process can be reversed by casting the spell again, at which point all items are deposited from the bag in the arrangement they were before being stored.</p>
+            <p class="indent">If the bag is destroyed or placed into an interdimensional space, the contents of the bag are instantly emptied onto the ground in a chaotic manner, each item taking 4d4 force damage, but dealing no damage to anything else. If the bag is broken, the key used as a material in casting the spell breaks.</p>
         </description>
         <setters>
-            <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Necromancy</set>
-            <set name="time">1 action</set>
-            <set name="range">range</set>
+            <set name="keywords">force</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">10 minutes</set>
+            <set name="range">Self</set>
             <set name="duration">Instantaneous</set>
-            <set name="hasVerbalComponent">false</set>
+            <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">material</set>
+            <set name="materialComponent">an ornate brass key worth at least 100 gp, and a satchel or bag worth at least 1 sp</set>
             <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
-    <element name="Turbulent Warp" type="Spell" source="Kibbles' Tasty Homebrew" id="ID_KTH_SPELL_TURBULENT_WARP">
-        <supports></supports>
-        <description>
-            <p></p>
-            <p class="indent"></p>
-            <p class="indent"><strong><i>At Higher Levels.</i></strong> </p>
-        </description>
-        <setters>
-            <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Necromancy</set>
-            <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
-            <set name="hasVerbalComponent">false</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">material</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
+            <set name="isRitual">true</set>
         </setters>
     </element>
 
