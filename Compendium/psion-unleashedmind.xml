@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Knowing Mind Psion</name>
+        <update version="0.0.1">
+            <file name="psion-knowingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-knowingmind.xml" />
+        </update>
+    </info>
+    <element name="Knowing Mind" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND">
+        <supports>Psionic-Archetype</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6" level="14" />
+        </rules>
+    </element>
+    <element name="Abiliy1" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1">
+        <description>
+            <p></p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            
+        </rules>
+    </element>
+    <element name="Abiliy2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Abiliy3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Abiliy4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Abiliy5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Abiliy6" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ability7" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY7">
+        <supports>psionic-talent</supports>
+        <prerequisite>6th level Knowing Mind Psion</prerequisite>
+        <requirements>[level:psion:6],ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ability8" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY8">
+        <supports>psionic-talent</supports>
+        <prerequisite>Knowing Mind Psion</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
