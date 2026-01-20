@@ -2,7 +2,7 @@
     <info>
         <name>KibblesTasty SPells</name>
         <description></description>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/spells.xml" />
         </update>
     </info>
@@ -6826,7 +6826,7 @@
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">material</set>
-            <set name="isConcentration">false</set>Invest_L
+            <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>

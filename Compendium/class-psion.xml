@@ -294,7 +294,7 @@
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Psion" />
-            <!--<grant type="Spell" id="ID_KTH_CCC_PSION_SPELL_UNLOCKED_POTENTIAL" spellcasting="Psion" /> -->
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_UNLOCKED_POTENTIAL" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Psion" />
@@ -303,7 +303,7 @@
             <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Psion" />
-            <!--<grant type="Spell" id="ID_KTH_CCC_PSION_SPELL_INVESTED_COMPETENCY" spellcasting="Psion" />-->
+            <grant type="Spell" id="ID_KTH_CCCC_PSIONIC_INVESTED_COMPETENCY" spellcasting="Psion" />
         </rules>
     </element>
 

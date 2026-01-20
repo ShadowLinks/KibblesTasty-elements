@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Knowing Mind Psion</name>
+        <name>Awakened Mind Psion</name>
         <update version="0.0.1">
-            <file name="psion-knowingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-knowingmind.xml" />
+            <file name="psion-awakenedmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-awakenedmind.xml" />
         </update>
     </info>
-    <element name="Knowing Mind" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND">
+    <element name="Awakened Mind" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PSION_AWAKENEDMIND">
         <supports>Psionic-Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6" />
+            <p>An Awakened Mind is a psion who had their psionic power awakened within them by an encounter, event, or circumstance. Perhaps their powers were latent or perhaps their destiny had been that of a normal creature until powers were suddenly thrust on them. Perhaps they brushed the realms beyond in a vivid dream, perhaps they wandered the Feywild and came back warped, perhaps they merely glimpsed the eyes of a creature that did not belong walking down the street.</p>
+            <p class="indent">An awakening is often somewhat traumatic. Psions are not well understood and the first power they manifest—telepathy—is one of the most feared and shunned abilities.</p>
+            <p class="indent">An Awakened can be either empathetic or cruel, good or evil. Knowing what is on the minds of others affects people in different ways, driving some away from society as they see its true face, while others feel drawn to help the problems only they can see.</p>
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_OPENED_MIND" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MENTAL_AWARENESS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MIND_READER" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_EMPOWERED_PSIONICS" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_ALL_SEEING_EYE" />
+            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_FULL_AWAKENING" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_OPENED_MIND" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MENTAL_AWARENESS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MIND_READER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_EMPOWERED_PSIONICS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_ALL_SEEING_EYE" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_FULL_AWAKENING" level="14" />
         </rules>
     </element>
-    <element name="Abiliy1" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1">
+    <element name="Opened Mind" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_OPENED_MIND">
         <description>
             <p></p>
         </description>
@@ -39,7 +40,7 @@
             
         </rules>
     </element>
-    <element name="Abiliy2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2">
+    <element name="Mental Awareness" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MENTAL_AWARENESS">
         <description>
             <p></p>
         </description>
@@ -47,7 +48,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Abiliy3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3">
+    <element name="Mind Reader" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MIND_READER">
         <description>
             <p></p>
         </description>
@@ -55,7 +56,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Abiliy4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4">
+    <element name="Empowered Psionics" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_EMPOWERED_PSIONICS">
         <description>
             <p></p>
         </description>
@@ -63,7 +64,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Abiliy5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5">
+    <element name="All Seeing Eye" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_ALL_SEEING_EYE">
         <description>
             <p></p>
         </description>
@@ -71,7 +72,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="Abiliy6" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6">
+    <element name="Full Awakening" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_FULL_AWAKENING">
         <description>
             <p></p>
         </description>
@@ -81,8 +82,8 @@
     </element>
     <element name="Ability7" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY7">
         <supports>psionic-talent</supports>
-        <prerequisite>6th level Knowing Mind Psion</prerequisite>
-        <requirements>[level:psion:6],ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
+        <prerequisite>6th level Awakened Mind Psion</prerequisite>
+        <requirements>[level:psion:6],ID_KTH_COLAL_ARCHETYPE_PSION_AWAKENEDMIND</requirements>
         <description>
             <p></p>
         </description>
@@ -92,8 +93,8 @@
     </element>
     <element name="Ability8" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY8">
         <supports>psionic-talent</supports>
-        <prerequisite>Knowing Mind Psion</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
+        <prerequisite>Awakened Mind Psion</prerequisite>
+        <requirements>ID_KTH_COLAL_ARCHETYPE_PSION_AWAKENEDMIND</requirements>
         <description>
             <p></p>
         </description>
