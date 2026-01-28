@@ -310,7 +310,7 @@
     <element name="Body Control" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_BODY_CONTROL">
         <supports>psionic-talent</supports>
         <prerequisite>level 5 psion</prerequisite>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,[level:psion:5]<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,[level:psion:5]</requirements>
         <description>
             <p>You can cast alter self at will, without expending a spell slot or psi points. Additionally, when you cast enlarge/reduce on yourself, you may expend 1 psi point instead of 2.</p>
         </description>
@@ -320,7 +320,7 @@
     </element>
     <element name="Enhanced Regrowth" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ENHANCED_REGROWTH">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT</requirements>
         <description>
             <p>You gain the cure wounds spell, and can cast it as a 1st-level spell by expending 1 psi point. You can cast it at a higher level by spending an additional psi point for each level above first. When you cast cure wounds on a creature, you can use Enhancing Surge on that creature as a bonus action.</p>
         </description>
@@ -334,7 +334,7 @@
     <element name="Metamorphosis" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_METAMORPHOSIS">
         <supports>psionic-talent</supports>
         <prerequisite>Prerequisite: Body Control</prerequisite>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,ID_KTH_CCC_CLASS_FEATURE_PSION_PT_BODY_CONTROL<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,ID_KTH_CCC_CLASS_FEATURE_PSION_PT_BODY_CONTROL</requirements>
         <description>
             <p>The mutate and polymorph spells are added to your Enhancement Alternate Effects list.</p>
             <p class="indent">You can only target yourself when casting polymorph this way.</p>
@@ -349,7 +349,7 @@
     </element>
     <element name="Physical Surge" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PHYSICAL_SURGE">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT</requirements>
         <description>
             <p>When you use Enhancing Surge targeting yourself, you can choose to make your Strength or Dexterity ability score equal to your Intelligence ability score until the start of your next turn.</p>
         </description>
@@ -359,7 +359,7 @@
     </element>
     <element name="Surging Power" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_SURGING_POWER">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT</requirements>
         <description>
             <p>When you target only yourself with Enhancing Surge, you can use the power as a bonus action instead of an action, but the damage and temporary hit points the base power grants are reduced to 1d4 when using the power this way.</p>
         </description>
@@ -370,7 +370,7 @@
     <element name="Transcendent Life" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TRANSCENDENT_LIFE">
         <supports>psionic-talent</supports>
         <prerequisite>level 9 psion</prerequisite>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,[level:psion:9]<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,[level:psion:9]</requirements>
         <description>
             <p>The mass cure wounds and reincarnate spells are added to your Enhancement Alternate Effects list. Reincarnate requires its normal material components when cast this way.</p>
         </description>
@@ -470,7 +470,7 @@
     <element name="Animated Projection" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ANIMATED_PROJECTION">
         <supports>psionic-talent</supports>
         <prerequisite>level 10 psion</prerequisite>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,[level:psion:10]<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,[level:psion:10]</requirements>
         <description>
             <p>You learn to project a swarm of ethereal objects. As an action, you can expend 5 psi points to cast animate objects. When cast in this way, the spell creates new ethereal objects rather than animating existing ones.</p>
         </description>
@@ -483,7 +483,7 @@
     </element>
     <element name="Astral Swap" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ASTRAL_SWAP">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION</requirements>
         <description>
             <p>As a bonus action, you can expend 1 psi point to swap places with your Astral Construct.</p>
         </description>
@@ -493,7 +493,7 @@
     </element>
     <element name="Life Link" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_LIFE_LINK">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION</requirements>
         <description>
             <p>When a solidified construct takes damage, you can choose to take that damage instead of the construct (no action required). You have resistance to the damage taken.</p>
         </description>
@@ -504,7 +504,7 @@
     <element name="Matter Made Real" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MATTER_MADE_REAL">
         <supports>psionic-talent</supports>
         <prerequisite>level 9 psion</prerequisite>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,[level:psion:9]<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,[level:psion:9]</requirements>
         <description>
             <p>You gain the ability to solidify some of your projections into real objects. You can cast fabricate and wall of stone by expending psi points equal to the spell level.</p>
         </description>
@@ -518,7 +518,7 @@
     </element>
     <element name="Projected Weaponry" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PROJECTED_WEAPONRY">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION</requirements>
         <description>
             <p>When you project a weapon with your Project Item feature, it gains the following benefits:</p>
             <ul>
@@ -543,7 +543,7 @@
     <element name="Unlimited Imagination" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_UNLIMITED_IMAGINATION">
         <supports>psionic-talent</supports>
         <prerequisite>Shaper's Mind</prerequisite>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,ID_KTH_CCC_ARCHETYPE_PSION_SHAPERS_MIND<requirements>
+<!--        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,ID_KTH_CCC_ARCHETYPE_PSION_SHAPERS_MIND</requirements>-->
         <description>
             <p>When you manifest a construct, you can select two options from Boundless Imagination.</p>
         </description>
@@ -732,7 +732,7 @@
     </element>    
     <element name="Attuned Argument" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ATTUNED_ARGUMENT">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>Your telepathic insight allows to adapt and tailor your influence on others. When you make a Charisma check, after you roll but before you know the outcome, you can choose to roll an additional d20 and take the higher result. You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
         </description>
@@ -742,7 +742,7 @@
     </element>
     <element name="Empathy" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_EMPATHY">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>You can psionically link yourself to other creatures. As a reaction to a creature you can see within 120 feet of you taking damage, you can grant them resistance to the damage taken, but you take psychic damage equal to the damage they take (after resistance). The damage you take can’t be reduced or prevented in any way.</p>
             <p class="indent">If the damage would inflict any further negative status effect on the target, you can choose for that effect to affect you instead.</p>
@@ -756,7 +756,7 @@
     </element>
     <element name="Mental Image" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MENTAL_IMAGE">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>You gain the ability to use your Telepathy to project images into the minds of creatures with perfect clarity, interposing it over their reality. The spells silent image, major image, hallucinatory terrain and seeming are added to your Telepathic Discipline Alternate Effects list costing psi points equal to their spell level.</p>
         </description>
@@ -772,7 +772,7 @@
     </element>
     <element name="Mental Influence" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MENTAL_INFLUENCE">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>You specialize in the subtle touch, picking stray thoughts and soothing concerns without overtly intruding upon a mind. You gain expertise in the Persuasion skill, though you are reduced to normal proficiency against creatures that are immune to mental influence or charm (such a creature under the effect of mind blank).</p>
         </description>
@@ -782,7 +782,7 @@
     </element>
     <element name="Reflected Agony" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_REFLECTED_AGONY">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>When a creature within 120 feet that you can see deals damage to you, you can use your reaction to spend 1 or more psi points (up to your psi limit) to share the pain you experienced back at them, dealing 1d10 psychic damage per point spent. The damage this deals can’t exceed the damage taken from the attack.</p>
         </description>
@@ -793,7 +793,7 @@
     <element name="Tactical Opening" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TACTICAL_OPENING">
         <supports>psionic-talent</supports>'
         <prerequisite>level 5 psion</prerequisite>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY,[level:psion:5]<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY,[level:psion:5]</requirements>
         <description>
             <p>You can communicate the openings in a creature’s defenses to your allies. When a creature fails a saving throw against your Telepathic Intrusion, you can take the Help action targeting that creature as a bonus action, helping another creature that you can telepathically communicate with. When you take the Help action in this way, the range of it becomes 30 feet.</p>
         </description>
@@ -803,7 +803,7 @@
     </element>
     <element name="Telepathic Link" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TELEPATHIC_LINK">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>Your Telepathic Communication gains an unlimited range as long as you have communicated with the creature within the last day, and the target willingly maintains the link. However, it takes an action to focus to communicate over distance if you can’t see the target (or for the target to communicate with you if they can’t see you). You can maintain a link with a number of people equal to your Intelligence modifier in this way. You can convey as much in a turn as you could by speaking normally.</p>
         </description>
@@ -815,7 +815,7 @@
 <!--
     <element name="Name1" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_NAME1">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT<requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT</requirements>
         <description>
             <p></p>
         </description>
