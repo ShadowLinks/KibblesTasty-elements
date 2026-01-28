@@ -6,100 +6,93 @@
             <file name="psion-awakenedmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-awakenedmind.xml" />
         </update>
     </info>
-    <element name="Awakened Mind" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PSION_AWAKENEDMIND">
+    <element name="Awakened Mind" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_PSION_AWAKENEDMIND">
         <supports>Psionic-Archetype</supports>
         <description>
             <p>An Awakened Mind is a psion who had their psionic power awakened within them by an encounter, event, or circumstance. Perhaps their powers were latent or perhaps their destiny had been that of a normal creature until powers were suddenly thrust on them. Perhaps they brushed the realms beyond in a vivid dream, perhaps they wandered the Feywild and came back warped, perhaps they merely glimpsed the eyes of a creature that did not belong walking down the street.</p>
             <p class="indent">An awakening is often somewhat traumatic. Psions are not well understood and the first power they manifest—telepathy—is one of the most feared and shunned abilities.</p>
             <p class="indent">An Awakened can be either empathetic or cruel, good or evil. Knowing what is on the minds of others affects people in different ways, driving some away from society as they see its true face, while others feel drawn to help the problems only they can see.</p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_OPENED_MIND" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MENTAL_AWARENESS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MIND_READER" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_EMPOWERED_PSIONICS" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_ALL_SEEING_EYE" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_FULL_AWAKENING" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_OPENED_MIND" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MENTAL_AWARENESS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MIND_READER" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_EMPOWERED_PSIONICS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_ALL_SEEING_EYE" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_FULL_AWAKENING" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_OPENED_MIND" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MENTAL_AWARENESS" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MIND_READER" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_EMPOWERED_PSIONICS" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_ALL_SEEING_EYE" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_FULL_AWAKENING" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_OPENED_MIND" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MENTAL_AWARENESS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MIND_READER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_EMPOWERED_PSIONICS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_ALL_SEEING_EYE" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_FULL_AWAKENING" level="14" />
         </rules>
     </element>
-    <element name="Opened Mind" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_OPENED_MIND">
+    <element name="Opened Mind" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_OPENED_MIND">
         <description>
-            <p></p>
+            <p>At 1st level when you select this archetype, your mind awakens the ability to directly connect to the minds of other creatures, granting the psionic discipline of Telepathy</p>
         </description>
         <sheet display="false" />
         <rules>
-            
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY" level="1" />
         </rules>
     </element>
-    <element name="Mental Awareness" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MENTAL_AWARENESS">
+    <element name="Mental Awareness" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MENTAL_AWARENESS">
         <description>
-            <p></p>
+            <p>Additionally, starting at 1st level, you can use Intelligence instead of Wisdom when making an Insight check against a creature with an Intelligence ability score of 6 or higher.</p>
+            <p class="indent">Further, if you have telepathically communicated with a willing creature, you know their general location (direction and rough estimate of distance) for the next hour as long as you are on the same plane as them.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can use Intelligence instead of Wisdom when making an Insight check against a creature with an Intelligence ability score of 6 or higher.
+            Further, if you have telepathically communicated with a willing creature, you know their general location (direction and rough estimate of distance) for the next hour as long as you are on the same plane as them.</description>
         </sheet>
     </element>
-    <element name="Mind Reader" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MIND_READER">
+    <element name="Mind Reader" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_MIND_READER">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, when you use Telepathic Intrusion, you can force the target to make an Intelligence saving throw instead of a Wisdom saving throw against the power (deciding when you use the ability).</p>
+            <p class="indent">When a creature fails a saving throw against your Telepathic Intrusion, you gain a d4. Until the end of your next turn, if you make an attack roll against the creature or the creature makes a saving throw against one of your psionic powers other than Telepathic Intrusion, you can add or subtract the d4 from the roll (deciding to roll before you roll the attack or use the power).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use Telepathic Intrusion, you can force the target to make an Intelligence saving throw instead of a Wisdom saving throw against the power (deciding when you use the ability).
+            When a creature fails a saving throw against your Telepathic Intrusion, you gain a d4. Until the end of your next turn, if you make an attack roll against the creature or the creature makes a saving throw against one of your psionic powers other than Telepathic Intrusion, you can add or subtract the d4 from the roll (deciding to roll before you roll the attack or use the power).</description>
         </sheet>
     </element>
-    <element name="Empowered Psionics" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_EMPOWERED_PSIONICS">
+    <element name="Empowered Psionics" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_EMPOWERED_PSIONICS">
         <description>
-            <p></p>
+            <p>Starting at 6th level, when you deal damage with a psionic discipline power you can add your Intelligence modifier to the damage dealt.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you deal damage with a psionic discipline power you can add {{intelligence:modifier}} to the damage dealt.</description>
         </sheet>
     </element>
-    <element name="All Seeing Eye" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_ALL_SEEING_EYE">
+    <element name="All Seeing Eye" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_ALL_SEEING_EYE">
         <description>
-            <p></p>
+            <p>Starting at 10th level, you can see a creature by its mind. You gain a mindsight of 60 feet, allowing you to see creatures with an Intelligence of 6 or higher within range as if by blindsight. A creature you are unaware of can still be hidden from you, but you can use your Intelligence modifier instead of your Wisdom modifier when making Perception checks to detect creatures.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can see a creature by its mind. You gain a mindsight of 60 feet, allowing you to see creatures with an Intelligence of 6 or higher within range as if by blindsight. A creature you are unaware of can still be hidden from you, but you can use your Intelligence modifier instead of your Wisdom modifier when making Perception checks to detect creatures.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_KTH_CCC_VISION_MINDSIGHT" />
+        </rules>
+    </element>
+    <element name="Mindsight" type="Vision" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_VISION_MINDSIGHT">
+        <description>
+            <p>you can see a creature by its mind. You gain a mindsight of 60 feet, allowing you to see creatures with an Intelligence of 6 or higher within range as if by blindsight. A creature you are unaware of can still be hidden from you, but you can use your Intelligence modifier instead of your Wisdom modifier when making Perception checks to detect creatures.</p>
+        </description>
+        <sheet>
+            <description>You see creatures with an Intelligence of 6 or higher within range as if by blindsight. A creature you are unaware of can still be hidden from you, but can be detect via check.</description>
         </sheet>
     </element>
-    <element name="Full Awakening" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_FULL_AWAKENING">
+    <element name="Full Awakening" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_AWAKENEDMIND_FULL_AWAKENING">
         <description>
-            <p></p>
+            <p>Starting at 14th level, you can briefly fully awaken your expanded mind to true comprehension. At the start of your turn, you can expend 2 psi points to gain advantage on all saving throws and attack rolls until the start of your next turn.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Ability7" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY7">
-        <supports>psionic-talent</supports>
-        <prerequisite>6th level Awakened Mind Psion</prerequisite>
-        <requirements>[level:psion:6],ID_KTH_COLAL_ARCHETYPE_PSION_AWAKENEDMIND</requirements>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Ability8" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY8">
-        <supports>psionic-talent</supports>
-        <prerequisite>Awakened Mind Psion</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_PSION_AWAKENEDMIND</requirements>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description> At the start of your turn, you can expend 2 psi points to gain advantage on all saving throws and attack rolls until the start of your next turn.</description>
         </sheet>
     </element>
 </elements>

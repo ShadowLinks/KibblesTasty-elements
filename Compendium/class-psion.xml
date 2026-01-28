@@ -306,6 +306,251 @@
             <grant type="Spell" id="ID_KTH_CCCC_PSIONIC_INVESTED_COMPETENCY" spellcasting="Psion" />
         </rules>
     </element>
+    
+    <element name="Body Control" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_BODY_CONTROL">
+        <supports>psionic-talent</supports>
+        <prerequisite>level 5 psion</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,[level:psion:5]<requirements>
+        <description>
+            <p>You can cast alter self at will, without expending a spell slot or psi points. Additionally, when you cast enlarge/reduce on yourself, you may expend 1 psi point instead of 2.</p>
+        </description>
+        <sheet>
+            <description>You can cast alter self at will, without expending a spell slot or psi points. Additionally, when you cast enlarge/reduce on yourself, you may expend 1 psi point instead of 2.</description>
+        </sheet>
+    </element>
+    <element name="Enhanced Regrowth" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ENHANCED_REGROWTH">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT<requirements>
+        <description>
+            <p>You gain the cure wounds spell, and can cast it as a 1st-level spell by expending 1 psi point. You can cast it at a higher level by spending an additional psi point for each level above first. When you cast cure wounds on a creature, you can use Enhancing Surge on that creature as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>You can cast cure wounds 1 psi point per level. When you cast cure wounds on a creature, you can use Enhancing Surge on that creature as a bonus action.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="Psion" />
+        </rules>
+    </element>
+    <element name="Metamorphosis" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_METAMORPHOSIS">
+        <supports>psionic-talent</supports>
+        <prerequisite>Prerequisite: Body Control</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,ID_KTH_CCC_CLASS_FEATURE_PSION_PT_BODY_CONTROL<requirements>
+        <description>
+            <p>The mutate and polymorph spells are added to your Enhancement Alternate Effects list.</p>
+            <p class="indent">You can only target yourself when casting polymorph this way.</p>
+        </description>
+        <sheet>
+            <description>The mutate and polymorph spells are added to your Enhancement Alternate Effects list. You can only target yourself when casting polymorph this way.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_MUTATE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Psion" />
+        </rules>
+    </element>
+    <element name="Physical Surge" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PHYSICAL_SURGE">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT<requirements>
+        <description>
+            <p>When you use Enhancing Surge targeting yourself, you can choose to make your Strength or Dexterity ability score equal to your Intelligence ability score until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When you use Enhancing Surge targeting yourself, you can choose to make your Strength or Dexterity ability score equal to your Intelligence ability score until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Surging Power" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_SURGING_POWER">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT<requirements>
+        <description>
+            <p>When you target only yourself with Enhancing Surge, you can use the power as a bonus action instead of an action, but the damage and temporary hit points the base power grants are reduced to 1d4 when using the power this way.</p>
+        </description>
+        <sheet>
+            <description>When you target only yourself with Enhancing Surge, you can use the power as a bonus action instead of an action, but the damage and temporary hit points the base power grants are reduced to 1d4 when using the power this way.</description>
+        </sheet>
+    </element>
+    <element name="Transcendent Life" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TRANSCENDENT_LIFE">
+        <supports>psionic-talent</supports>
+        <prerequisite>level 9 psion</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,[level:psion:9]<requirements>
+        <description>
+            <p>The mass cure wounds and reincarnate spells are added to your Enhancement Alternate Effects list. Reincarnate requires its normal material components when cast this way.</p>
+        </description>
+        <sheet>
+            <description>The mass cure wounds and reincarnate spells are added to your Enhancement Alternate Effects list. Reincarnate requires its normal material components when cast this way.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_REINCARNATE" spellcasting="Psion" />
+        </rules>
+    </element>
+
+    <element name="Projection Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION">
+        <supports>psionic-discipline</supports>
+        <description>
+            <p>Projection is the ability to project what is in your mind to the outside world with your psionic power.</p>
+            <div element="ID_KTH_CCC_PSION_DISCIPLINE_PROJECT_ITEM" />
+            <div element="ID_KTH_CCC_PSIONIC_ASTRAL_CONSTRUCT" />
+            <div element="ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION_ALTERNATE_EFFECTS" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_PROJECT_ITEM" />
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_ASTRAL_CONSTRUCT" spellcasting="Psion" />
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION_ALTERNATE_EFFECTS" />
+        </rules>
+    </element>
+    <element name="Project Item" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION_PROJECT_ITEM">
+        <description>
+            <p>As an action, you can use your powers to project an inanimate object you imagine into your hands. It can’t be larger than 3 feet on any side or weigh more than 10 pounds, and is clearly ethereal in nature. The item behaves as a solid object. Weapons created with this feature deal force damage.</p>
+            <p class="indent">Projected items fade after 1 minute, and you can have no more than 3 projected items at a time.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can use your powers to project an inanimate object you imagine into your hands. It can’t be larger than 3 feet on any side or weigh more than 10 pounds, and is clearly ethereal in nature. The item behaves as a solid object. Weapons created with this feature deal force damage.
+            Projected items fade after 1 minute, and you can have no more than 3 projected items at a time.</description>
+        </sheet>
+    </element>
+    <element name="Astral Construct" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_ASTRAL_CONSTRUCT">
+        <supports>Psionic</supports>
+        <description>
+            <p>You project an ethereal creation from your mind at a space you can see within range, taking the shape of a Medium or smaller creature, weapon, or other object. This creation is clearly ethereal in nature. When you create it, and on subsequent turns using your action to mentally control it, you can move it up to 30 feet in any direction and attack, so long as it doesn’t move beyond the range of the power. To attack with it, make a melee spell attack. On a hit, the target takes 1d8 force damage. If the Astral Construct moves out of range of the spell, it fades away into nothing, ending the spell.</p>
+            <p class="indent">While the Astral Construct is active, you can spend psi points up to your per use limit to issue commands that affect and empower your construct. Commands require no action, but you can’t exceed your psi point limit in total commands issued, and each command can only be issued once per turn.</p>
+            <p><strong>Grab</strong>(1 psi point): Can only be used while your construct is Solidified. A target creature within 5 feet of your construct that is no more than one size larger than the construct must make a Strength saving throw or become restrained by the construct. At the end of each of the restrained creature’s turns it can repeat the saving throw. The condition ends if the construct becomes ethereal again, or becomes more than one size smaller than the target.</p>
+            <p><strong>Grow</strong>(1 psi point): Your construct increases by one size, and its number of damage dice increases by one. It returns to its normal size at the start of your next turn. It can only gain one additional die (for example, up to 2d8).</p>
+            <p><strong>Relocate</strong> (1 psi point): The construct disappears and reappears anywhere within 60 feet of you.</p>            
+            <p><strong>Replicate</strong>(3 psi points): You use Relocate, but the original doesn’t disappear. Until the end of your turn, you have another construct and control both with the same action (commands only affect one of your choice). Pick one construct to fade at the start of your next turn or use Sustain.</p>
+            <p><strong>Solidify</strong>(1 psi point1): Your construct becomes solid, blocking its space until the start of your next turn. You can only use this command if it is in an unoccupied space. It has an armor class of 16 and hit points equal to your Intelligence modifier + your psion level. The construct becomes ethereal again if it drops to zero hit points.</p>
+            <p><strong>Strike</strong>(2 psi points): The construct makes an attack (even if it has already attacked).</p>
+            <p><strong>Sustain</strong>(1+ psi points): At the start of your turn, you can sustain the effect of a Solidify, Grow or Replicate command for an additional round. An effect that has been replicated can be sustained across all replicated constructs with a single use, but each effect can only be sustained once per turn (for example, you can never sustain more than one replicated construct). This costs 1 psi point for each effect sustained. Sustaining Solidify refreshes the construct’s hit points to its maximum.</p>
+            
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Alternate Effects (Projection)" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION_ALTERNATE_EFFECTS">
+        <description>
+            <p>Additionally, when you learn the Projection psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td>floating disk, unseen servant</td></tr>
+                <tr><td>2</td><td>mirror image</td></tr>
+                <tr><td>3</td><td>phantom steed</td></tr>
+                <tr><td>4</td><td>arcane eye</td></tr>
+                <tr><td>4</td><td>creation</td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend additional psi points to cast it at a level equal to the psi points spent.</p>
+        </description>
+        <sheet>
+            <description>You can cast additional spells using Psi Points</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TENSERS_FLOATING_DISK" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_PHANTOM_STEED" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_CREATION" spellcasting="Psion" />
+        </rules>
+    </element>
+    
+    <element name="Animated Projection" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ANIMATED_PROJECTION">
+        <supports>psionic-talent</supports>
+        <prerequisite>level 10 psion</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,[level:psion:10]<requirements>
+        <description>
+            <p>You learn to project a swarm of ethereal objects. As an action, you can expend 5 psi points to cast animate objects. When cast in this way, the spell creates new ethereal objects rather than animating existing ones.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can expend 5 psi points to cast animate objects. When cast in this way, the spell creates new ethereal objects rather than animating existing ones.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" spellcasting="Psion" />
+        </rules>
+    </element>
+    <element name="Astral Swap" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ASTRAL_SWAP">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION<requirements>
+        <description>
+            <p>As a bonus action, you can expend 1 psi point to swap places with your Astral Construct.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can expend 1 psi point to swap places with your Astral Construct.</description>
+        </sheet>
+    </element>
+    <element name="Life Link" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_LIFE_LINK">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION<requirements>
+        <description>
+            <p>When a solidified construct takes damage, you can choose to take that damage instead of the construct (no action required). You have resistance to the damage taken.</p>
+        </description>
+        <sheet>
+            <description>When a solidified construct takes damage, you can choose to take that damage instead of the construct (no action required). You have resistance to the damage taken.</description>
+        </sheet>
+    </element>
+    <element name="Matter Made Real" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MATTER_MADE_REAL">
+        <supports>psionic-talent</supports>
+        <prerequisite>level 9 psion</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,[level:psion:9]<requirements>
+        <description>
+            <p>You gain the ability to solidify some of your projections into real objects. You can cast fabricate and wall of stone by expending psi points equal to the spell level.</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to solidify some of your projections into real objects. You can cast fabricate and wall of stone by expending psi points equal to the spell level.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" spellcasting="Psion" />
+        </rules>
+    </element>
+    <element name="Projected Weaponry" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PROJECTED_WEAPONRY">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION<requirements>
+        <description>
+            <p>When you project a weapon with your Project Item feature, it gains the following benefits:</p>
+            <ul>
+                <li>You can project it as a bonus action and you can project up 3 weapons or pieces of ammunition at the same time.</li>
+                <li>You are proficient with any projected weapon.</li>
+                <li>It is no longer restricted to a maximum of 3 feet when it takes the form of a weapon (for a Medium-sized creature).</li>
+                <li>You can use your Intelligence modifier in place of your Strength or Dexterity modifier for attack and damage rolls with it.</li>
+                <li> If it has the thrown property, its throwing range is doubled. If it doesn’t have the thrown property, it gains the thrown (10/30) property.</li>
+                <li>You can apply the Astral Construct modifiers Grow and Sustain to Projected Weaponry. Grow adds 1d8 to the weapon’s damage dice. You can expend Psionic Mastery on these modifiers.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you project a weapon with your Project Item feature, it gains the following benefits:
+            You can project it as a bonus action and you can project up 3 weapons or pieces of ammunition at the same time. 
+            You are proficient with any projected weapon. 
+            It is no longer restricted to a maximum of 3 feet when it takes the form of a weapon (for a Medium-sized creature). 
+            You can use your Intelligence modifier in place of your Strength or Dexterity modifier for attack and damage rolls with it. 
+            If it has the thrown property, its throwing range is doubled. If it doesn’t have the thrown property, it gains the thrown (10/30) property. 
+            You can apply the Astral Construct modifiers Grow and Sustain to Projected Weaponry. Grow adds 1d8 to the weapon’s damage dice. You can expend Psionic Mastery on these modifiers. </description>
+        </sheet>
+    </element>
+    <element name="Unlimited Imagination" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_UNLIMITED_IMAGINATION">
+        <supports>psionic-talent</supports>
+        <prerequisite>Shaper's Mind</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,ID_KTH_CCC_ARCHETYPE_PSION_SHAPERS_MIND<requirements>
+        <description>
+            <p>When you manifest a construct, you can select two options from Boundless Imagination.</p>
+        </description>
+        <sheet>
+            <description>When you manifest a construct, you can select two options from Boundless Imagination.</description>
+        </sheet>
+    </element>
 
     <element name="Precognition Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION">
         <supports>psionic-discipline</supports>
@@ -392,13 +637,260 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" spellcasting="Psion" />
-            <!--<grant type="Spell" id="ID_KTH_CCC_PSION_SPELL_FUTURE_INSIGHT" spellcasting="Psion" /> -->
+            <grant type="Spell" id="ID_KTH_CCC_PSION_SPELL_FUTURE_INSIGHT" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_AUGURY" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_DIVINATION" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_SCRYING" spellcasting="Psion" />
-            <!--<grant type="Spell" id="ID_KTH_CCC_PSION_SPELL_GLIMPSE_THE_FUTURE spellcasting="Psion" />-->
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_GLIMPSE_THE_FUTURE" spellcasting="Psion" />
         </rules>
     </element>
+
+    <element name="Telepathy Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY">
+        <supports>psionic-discipline</supports>
+        <description>
+            <p>Telepathy is the ability to interact with the minds of other creatures using your psionic abilities.</p>
+            <div element="ID_KTH_CCC_PSIONIC_DISCIPLINE_TELEPATHY_TELEPATHIC_COMMUNICATION" />
+            <div element="ID_KTH_CCC_PSIONIC_POWER_TELEPATHIC_INTRUSION" />
+            <div element="ID_KTH_CCC_PSIONIC_DISCIPLINE_TELEPATHY_ALTERNATE_EFFECTS" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_TELEPATHY_TELEPATHIC_COMMUNICATION" />
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_TELEPATHIC_INTRUSION" spellcasting="Psion" />
+            <grant type="Class Feature" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_TELEPATHY_ALTERNATE_EFFECTS" />
+        </rules>
+    </element>
+    <element name="Telepathic Communication" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_TELEPATHY_TELEPATHIC_COMMUNICATION">
+        <description>
+            <p>When you gain this feature, you can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language. Creatures you communicate with can reply in kind.</p>
+        </description>
+        <sheet>
+            <description>You can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language. Creatures you communicate with can reply in kind.</description>
+        </sheet>
+    </element>
+    <element name="Telepathic Intrusion" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_TELEPATHIC_INTRUSION">
+        <description>
+            <p>You assault the mind of a creature you can see directly. The target must succeed on a Wisdom saving throw, or take 1d8 psychic damage. If the target fails the saving throw, it has disadvantage on attacks made against you until the start of your next turn. You can choose to deal no damage to the creature when it fails its saving throw.</p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Telepathic Intrusion (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p><strong>Meddling (2 psi points):</strong> You make one creature invisible to the target creature or cause the creature to see something that is not there with the effect of minor illusion until the start of your next turn if it fails its saving throw.</p>
+            <p><strong>Overwhelmping (3 psi points):</strong> The target is stunned until the end of its next turn if it fails its saving throw.</p>
+            <p><strong>Rending (1+ psi points):</strong> The target takes 1d8 psychic damage for each additional point spent on a failed save.</p>
+            <p><strong>Terrifying (1 psi point):</strong> The target is frightened of you until the end of your next turn if it fails its saving throw.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Alternate Effects (Telepathy)" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_TELEPATHY_ALTERNATE_EFFECTS">
+        <description>
+            <p>Additionally, when you learn the Telepathy psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td>compelled query, command, frighten</td></tr>
+                <tr><td>2</td><td>detect thoughts, suggestion</td></tr>
+                <tr><td>3</td><td>delve mind, fear</td></tr>
+                <tr><td>4</td><td>dominate beast, compulsion, confusion</td></tr>
+                <tr><td>4</td><td>dominate person, modify memory, telepathic bond</td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend additional psi points to cast it at a level equal to the psi points spent.</p>
+        </description>
+        <sheet>
+            <description>If a spell can be cast at a higher level, you can spend additional psi points to cast it at a level equal to the psi points spent.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_COMPELLED_QUERY" spellcasting="Psion" /> 
+            <grant type="Spell" id="ID_PHB_SPELL_COMMAND" spellcasting="Psion" /> 
+            <grant type="Spell" id="ID_KTH_SPELL_FRIGHTEN" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Psion" /> 
+            <grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" spellcasting="Psion" /> 
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_DELVE_MIND" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMPULSION" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" spellcasting="Psion" />
+        </rules>
+    </element>    
+    <element name="Attuned Argument" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ATTUNED_ARGUMENT">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <description>
+            <p>Your telepathic insight allows to adapt and tailor your influence on others. When you make a Charisma check, after you roll but before you know the outcome, you can choose to roll an additional d20 and take the higher result. You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you make a Charisma check, after you roll but before you know the outcome, you can choose to roll an additional d20 and take the higher result.</description>
+        </sheet>
+    </element>
+    <element name="Empathy" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_EMPATHY">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <description>
+            <p>You can psionically link yourself to other creatures. As a reaction to a creature you can see within 120 feet of you taking damage, you can grant them resistance to the damage taken, but you take psychic damage equal to the damage they take (after resistance). The damage you take can’t be reduced or prevented in any way.</p>
+            <p class="indent">If the damage would inflict any further negative status effect on the target, you can choose for that effect to affect you instead.</p>
+            <p class="indent">If you have any form of telepathic bond that allows long distance telepathic communication affecting the creature taking this damage, the range is unlimited and you do not need to be able to see them.</p>
+        </description>
+        <sheet>
+            <description>As a reaction to a creature you can see within 120 feet of you taking damage, you can grant them resistance to the damage taken, but you take psychic damage equal to the damage they take (after resistance). The damage you take can’t be reduced or prevented in any way.
+            If the damage would inflict any further negative status effect on the target, you can choose for that effect to affect you instead.
+            If you have any form of telepathic bond that allows long distance telepathic communication affecting the creature taking this damage, the range is unlimited and you do not need to be able to see them.</description>
+        </sheet>
+    </element>
+    <element name="Mental Image" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MENTAL_IMAGE">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <description>
+            <p>You gain the ability to use your Telepathy to project images into the minds of creatures with perfect clarity, interposing it over their reality. The spells silent image, major image, hallucinatory terrain and seeming are added to your Telepathic Discipline Alternate Effects list costing psi points equal to their spell level.</p>
+        </description>
+        <sheet>
+            <description>The spells silent image, major image, hallucinatory terrain and seeming are added to your Telepathic Discipline Alternate Effects list costing psi points equal to their spell level.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_SEEMING" spellcasting="Psion" />
+        </rules>
+    </element>
+    <element name="Mental Influence" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MENTAL_INFLUENCE">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <description>
+            <p>You specialize in the subtle touch, picking stray thoughts and soothing concerns without overtly intruding upon a mind. You gain expertise in the Persuasion skill, though you are reduced to normal proficiency against creatures that are immune to mental influence or charm (such a creature under the effect of mind blank).</p>
+        </description>
+        <sheet>
+            <description>You gain expertise in the Persuasion skill, though you are reduced to normal proficiency against creatures that are immune to mental influence or charm (such a creature under the effect of mind blank).</description>
+        </sheet>
+    </element>
+    <element name="Reflected Agony" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_REFLECTED_AGONY">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <description>
+            <p>When a creature within 120 feet that you can see deals damage to you, you can use your reaction to spend 1 or more psi points (up to your psi limit) to share the pain you experienced back at them, dealing 1d10 psychic damage per point spent. The damage this deals can’t exceed the damage taken from the attack.</p>
+        </description>
+        <sheet>
+            <description>When a creature within 120 feet that you can see deals damage to you, you can use your reaction to spend 1 or more psi points (up to your psi limit) to share the pain you experienced back at them, dealing 1d10 psychic damage per point spent. The damage this deals can’t exceed the damage taken from the attack.</description>
+        </sheet>
+    </element>
+    <element name="Tactical Opening" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TACTICAL_OPENING">
+        <supports>psionic-talent</supports>'
+        <prerequisite>level 5 psion</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY,[level:psion:5]<requirements>
+        <description>
+            <p>You can communicate the openings in a creature’s defenses to your allies. When a creature fails a saving throw against your Telepathic Intrusion, you can take the Help action targeting that creature as a bonus action, helping another creature that you can telepathically communicate with. When you take the Help action in this way, the range of it becomes 30 feet.</p>
+        </description>
+        <sheet>
+            <description>When a creature fails a saving throw against your Telepathic Intrusion, you can take the Help action targeting that creature as a bonus action, helping another creature that you can telepathically communicate with. When you take the Help action in this way, the range of it becomes 30 feet.</description>
+        </sheet>
+    </element>
+    <element name="Telepathic Link" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TELEPATHIC_LINK">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY<requirements>
+        <description>
+            <p>Your Telepathic Communication gains an unlimited range as long as you have communicated with the creature within the last day, and the target willingly maintains the link. However, it takes an action to focus to communicate over distance if you can’t see the target (or for the target to communicate with you if they can’t see you). You can maintain a link with a number of people equal to your Intelligence modifier in this way. You can convey as much in a turn as you could by speaking normally.</p>
+        </description>
+        <sheet>
+            <description>Your Telepathic Communication gains an unlimited range as long as you have communicated with the creature within the last day, and the target willingly maintains the link. However, it takes an action to focus to communicate over distance if you can’t see the target (or for the target to communicate with you if they can’t see you). You can maintain a link with {{intelligence:modifier}} people in this way. You can convey as much in a turn as you could by speaking normally.</description>
+        </sheet>
+    </element>
 </elements>
+<!--
+    <element name="Name1" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_NAME1">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT<requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+
+
+    <element name="Ability1" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE__ABILITY1">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ability2" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_ABILITY2">
+        <supports>Psionic</supports>
+        <description>
+            <p></p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Enhancing Surge (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p><strong>Fortifying</strong>(1+ psi point): The target gains an additional +1d6 temporary hit points for each point spent.</p>
+            <p><strong>Resilient</strong>(3 psi points): the target gains resistance to all damage until the start of your next turn.</p>
+            <p><strong>Savage</strong> (1+ psi point): The target's next weapon attack deals an +1d6 additional damage for each point spent.</p>            
+            <p><strong>Swift</strong>(2 psi points): The target gains an additional action. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
+            
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Alternate Effects ()" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE__ALTERNATE_EFFECTS">
+        <description>
+            <p>Additionally, when you learn the () psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td>heroism, longstrider, unlocked potential</td></tr>
+                <tr><td>2</td><td>alter self, enlarge/reduce, lesser restoration</td></tr>
+                <tr><td>3</td><td>haste, protection from energy</td></tr>
+                <tr><td>4</td><td>freedom of movement, stoneskin</td></tr>
+                <tr><td>4</td><td>greater restoration, invested competency</td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend additional psi points to cast it at a level equal to the psi points spent.</p>
+        </description>
+        <sheet>
+            <description>You can cast additional spells using Psi Points</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Psion" />
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_UNLOCKED_POTENTIAL" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Psion" />
+            <grant type="Spell" id="ID_KTH_CCCC_PSIONIC_INVESTED_COMPETENCY" spellcasting="Psion" />
+        </rules>
+    </element>
+    -->
