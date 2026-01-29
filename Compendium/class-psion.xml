@@ -543,7 +543,8 @@
     <element name="Unlimited Imagination" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_UNLIMITED_IMAGINATION">
         <supports>psionic-talent</supports>
         <prerequisite>Shaper's Mind</prerequisite>
-<!--        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,ID_KTH_CCC_ARCHETYPE_PSION_SHAPERS_MIND</requirements>-->
+<!-- Check this later, for shapers mind requiremen-->        
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION</requirements>
         <description>
             <p>When you manifest a construct, you can select two options from Boundless Imagination.</p>
         </description>
@@ -552,6 +553,185 @@
         </sheet>
     </element>
 
+    <element name="Telekinesis Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS">
+        <supports>psionic-discipline</supports>
+        <description>
+            <p>Telekinesis is the ability to interact with physical objects and energy with your psionic powers.</p>
+            <div element="ID_KTH_CCC_PSION_DISCIPLINE_TELEKINETIC_HANDS" />
+            <div element="ID_KTH_CCC_PSIONIC_TELEKINETIC_FORCE" />
+            <div element="ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS_ALTERNATE_EFFECTS" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_TELEKINETIC_HANDS" />
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_TELEKINETIC_FORCE" spellcasting="Psion" />
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS_ALTERNATE_EFFECTS" />
+        </rules>
+    </element>
+    
+    <element name="Telekinetic Hands" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_TELEKINETIC_HANDS">
+        <description>
+            <p>When you gain this feature, you can manipulate small objects within 30 feet with your mind as if using your hand to interact with it. You can use this power to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can’t Attack, activate magical items, or carry more than 10 pounds in this manner. You can move an item you are controlling in this way up to 30 feet during your turn.</p>
+            <p class="indent">You can spend 1 or more psi points to increase how much you can move this way by 100 pounds per psi point spent for 1 turn.</p>
+        </description>
+        <sheet>
+            <description>You can manipulate small objects within 30 feet with your mind as if using your hand to interact with it. You can use this power to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can’t Attack, activate magical items, or carry more than 10 pounds in this manner. You can move an item you are controlling in this way up to 30 feet during your turn.
+            You can spend 1 or more psi points to increase how much you can move this way by 100 pounds per psi point spent for 1 turn.</description>
+        </sheet>
+    </element>
+    <element name="Telekinetic Force" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_TELEKINETIC_FORCE">
+        <supports>Psionic</supports>
+        <description>
+            <p>You smash a target creature or object you can see with your mental power. The target must succeed on a Strength saving throw or take 1d10 bludgeoning damage, and either be shoved 5 feet in a direction of your choosing or be knocked prone.</p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Telekinetic Force (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p><strong>Crushing</strong>(2 psi points): The target is restrained until the end of its next turn if it fails its saving throw.</p>
+            <p><strong>Hammering</strong>(1+ psi points): The target takes 1d10 bludgeoning damage for each point spent if it fails its saving throw.</p>
+            <p><strong>Hurling</strong> (1-3 psi points): The target is shoved 10 feet in a direction of your choosing for each point spent if it fails its saving throw.</p>            
+            <p><strong>Zone</strong>(1-3 psi points): You can target all creatures in a 5-foot radius of a point within range. The radius doubles for each point spent (5 feet, 10 feet, 20 feet).</p>
+            
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Alternate Effects (Telekinesis)" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS_ALTERNATE_EFFECTS">
+        <description>
+            <p>Additionally, when you learn the Telekinesis psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td>jump, launch object, thunderwave</td></tr>
+                <tr><td>2</td><td>fling, levitate, shatter</td></tr>
+                <tr><td>3</td><td>fly, vortex blast</td></tr>
+                <tr><td>4</td><td>orbital stones, resilient sphere</td></tr>
+                <tr><td>4</td><td>telekinesis, wall of force, shockwav</td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend additional psi points to cast it at a level equal to the psi points spent.</p>
+        </description>
+        <sheet>
+            <description>You can cast additional spells using Psi Points</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_JUMP" spellcasting="Psion" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CATAPULT" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_FLING" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Psion" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_VORTEX_BLAST" spellcasting="Psion" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ORBITAL_STONES" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" spellcasting="Psion" />
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_SHOCKWAVE" spellcasting="Psion" />
+        </rules>
+    </element>
+    
+    <element name="Kinetic Slam" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_KINETIC_SLAM">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
+        <description>
+            <p>When you use the Telekinetic Force power, you can unleash it as a blast of kinetic power. You can use your power as a ranged spell attack (applying damage and effects on hit) instead of requiring a Strength saving throw. You can only select the Hammering modifier when you use it in this way.</p>
+        </description>
+        <sheet>
+            <description>When you use the Telekinetic Force power, you can unleash it as a blast of kinetic power. You can use your power as a ranged spell attack (applying damage and effects on hit) instead of requiring a Strength saving throw. You can only select the Hammering modifier when you use it in this way.</description>
+        </sheet>
+    </element>
+    
+    <element name="Mental Might" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MENTAL_MIGHT">
+        <supports>psionic-talent</supports>
+        <prerequisite>level 5 psion</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS,[level:psion:5]</requirements>
+        <description>
+            <p>You learn to focus your mental grip. You can use your Intelligence modifier instead of other ability modifiers when you make an Athletics check.</p>
+            <p class="indent">Additionally, you may attempt to grapple or shove a creature within 30 feet, using your mind. When grappling a creature in this way, you can’t move them. Maintaining a grapple at a range greater than your natural reach requires concentration, as if concentrating on a spell, and the grapple ends if concentration is lost</p>
+        </description>
+        <sheet>
+            <description>You can use your Intelligence modifier instead of other ability modifiers when you make an Athletics check.
+            Additionally, you may attempt to grapple or shove a creature within 30 feet, using your mind. When grappling a creature in this way, you can’t move them. Maintaining a grapple at a range greater than your natural reach requires concentration, as if concentrating on a spell, and the grapple ends if concentration is lost</description>
+        </sheet>
+    </element>
+    <element name="Precise Power" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PRECISE_POWER">
+        <supports>psionic-talent</supports>
+        <prerequisite>level 9 psion, incompatible with Unchecked Power</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS,[level:psion:9],!ID_KTH_CCC_CLASS_FEATURE_PSION_PT_UNCHECKED_POWER</requirements>
+        <description>
+            <p>The animate objects spell is added to your Telekinesis Alternate Effects list, which you can cast expending 5 psi points. Additionally, as a reaction to a ranged weapon attack you can see being made against a target within 60 feet of you, you can expend 1 psi point to add or subtract 2d4 to or from that attack roll. You can do this after the attack is rolled, but before you know the outcome of the roll.</p>
+        </description>
+        <sheet>
+            <description>as a reaction to a ranged weapon attack you can see being made against a target within 60 feet of you, you can expend 1 psi point to add or subtract 2d4 to or from that attack roll. You can do this after the attack is rolled, but before you know the outcome of the roll.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" spellcasting="Psion" />
+        </rules>
+    </element>
+    <element name="Telekinetic Movement" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TELEKINETIC_MOVEMENT">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
+        <description>
+            <p>You can expend 1 psi point to gain 10 additional feet of movement and the effect of spider climb, feather fall, or levitate until the start of your next turn (no action required). At the start of your next turn, you can expend 1 psi point to maintain the effect before it would end.</p>
+        </description>
+        <sheet>
+            <description>You can expend 1 psi point to gain 10 additional feet of movement and the effect of spider climb, feather fall, or levitate until the start of your next turn (no action required). At the start of your next turn, you can expend 1 psi point to maintain the effect before it would end.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPIDER_CLIMB" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" spellcasting="Psion" />
+        </rules>
+    </element>
+    <element name="Telekinetic Weapon" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TELEKINETIC_WEAPON">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
+        <description>
+            <p>You gain the Telekinetic Weapons psionic power as part of your Telekinetic Discipline (in addition to your other psionic powers), giving you the ability to fling weapons as per the power.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_TELEKINETIC_WEAPONS" spellcasting="Psion" />
+        </rules>
+    </element>
+    <element name="Telekinetic Barrier" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TELEKINETIC_BARRIER">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
+        <description>
+            <p>You focus your telekinetic power, spreading it thin to create a large barrier. As an action you can expend 2 psi points to create a wall of weak telekinetic force 15 feet high and up to 40 feet long, or as a 15 radius around you. This barrier is visible as small objects hover and float within it. If you create it around yourself, it moves with you when you move. Ranged attacks that pass through this barrier are made with disadvantage as their trajectory is deflected. You can maintain this barrier by concentrating, as if concentrating on a spell, for up to 1 minute after creating it.</p>
+        </description>
+        <sheet>
+            <description>As an action you can expend 2 psi points to create a wall of weak telekinetic force 15 feet high and up to 40 feet long, or as a 15 radius around you. This barrier is visible as small objects hover and float within it. If you create it around yourself, it moves with you when you move. Ranged attacks that pass through this barrier are made with disadvantage as their trajectory is deflected. You can maintain this barrier by concentrating, as if concentrating on a spell, for up to 1 minute after creating it.</description>
+        </sheet>
+    </element>
+    <element name="Unchecked Power" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_UNCHECKED_POWER">
+        <supports>psionic-talent</supports>
+        <prerequisite>level 9 psion, incompatible with Precise Power</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS,[level:psion:9],!ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PRECISE_POWER</requirements>
+        <description>
+            <p>The fissure spell is added to your Telekinesis Alternate Effects list. Additionally, as a reaction to a melee attack being made against you, you can expend 1 psi point to shove the creature away. The creature must make a Strength saving throw, or be knocked 10 feet backwards. If this puts the attack out of reach, the attack automatically misses.</p>
+        </description>
+        <sheet>
+            <description>As a reaction to a melee attack being made against you, you can expend 1 psi point to shove the creature away. The creature must make a Strength saving throw, or be knocked 10 feet backwards. If this puts the attack out of reach, the attack automatically misses.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_FISSURE" spellcasting="Psion" />
+        </rules>
+    </element>
+<!--
     <element name="Precognition Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION">
         <supports>psionic-discipline</supports>
         <description>
@@ -646,6 +826,7 @@
             <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_GLIMPSE_THE_FUTURE" spellcasting="Psion" />
         </rules>
     </element>
+    -->
 
     <element name="Telepathy Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY">
         <supports>psionic-discipline</supports>
@@ -811,11 +992,106 @@
             <description>Your Telepathic Communication gains an unlimited range as long as you have communicated with the creature within the last day, and the target willingly maintains the link. However, it takes an action to focus to communicate over distance if you can’t see the target (or for the target to communicate with you if they can’t see you). You can maintain a link with {{intelligence:modifier}} people in this way. You can convey as much in a turn as you could by speaking normally.</description>
         </sheet>
     </element>
+ <element name="Transposition Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_TRANSPOSITION">
+        <supports>psionic-discipline</supports>
+        <description>
+            <p>Transposition is the ability to modify the properties of space and manipulate dimensional boundaries with your psionic powers.</p>
+            <div element="ID_KTH_CCC_PSIONIC_DISCIPLINE_TRANSPOSITION_FLICKER_STEP" />
+            <div element="ID_KTH_CCC_PSIONIC_POWER_PHASE_RIFT" />
+            <div element="ID_KTH_CCC_PSIONIC_DISCIPLINE_TRANSPOSITION_ALTERNATE_EFFECTS" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_TRANSPOSITION_FLICKER_STEP" />
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_PHASE_RIFT" spellcasting="Psion" />
+            <grant type="Class Feature" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_TRANSPOSITION_ALTERNATE_EFFECTS" />
+        </rules>
+    </element>
+    <element name="Flicker Step" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_TRANSPOSITION_FLICKER_STEP">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Phase Rift" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_PHASE_RIFT">
+        <supports>Psionic</supports>
+        <description>
+            <p></p>
+            <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Enhancing Surge (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p><strong>Fortifying</strong>(1+ psi point): The target gains an additional +1d6 temporary hit points for each point spent.</p>
+            <p><strong>Resilient</strong>(3 psi points): the target gains resistance to all damage until the start of your next turn.</p>
+            <p><strong>Savage</strong> (1+ psi point): The target's next weapon attack deals an +1d6 additional damage for each point spent.</p>            
+            <p><strong>Swift</strong>(2 psi points): The target gains an additional action. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
+            
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Alternate Effects (Transposition)" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_TRANSPOSITION_ALTERNATE_EFFECTS">
+        <description>
+            <p>Additionally, when you learn the Transposition psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <table>
+                <thead>
+                    <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td>heroism, longstrider, unlocked potential</td></tr>
+                <tr><td>2</td><td>alter self, enlarge/reduce, lesser restoration</td></tr>
+                <tr><td>3</td><td>haste, protection from energy</td></tr>
+                <tr><td>4</td><td>freedom of movement, stoneskin</td></tr>
+                <tr><td>4</td><td>greater restoration, invested competency</td></tr>
+            </table>
+            <p class="indent">If a spell can be cast at a higher level, you can spend additional psi points to cast it at a level equal to the psi points spent.</p>
+        </description>
+        <sheet>
+            <description>You can cast additional spells using Psi Points</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Psion" />
+            <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_UNLOCKED_POTENTIAL" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Psion" />
+            <grant type="Spell" id="ID_KTH_CCCC_PSIONIC_INVESTED_COMPETENCY" spellcasting="Psion" />
+        </rules>
+    </element>
+    <element name="Name1" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_NAME1">
+        <supports>psionic-talent</supports>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TRANSPOSITION</requirements>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    
 </elements>
 <!--
     <element name="Name1" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_NAME1">
         <supports>psionic-talent</supports>
-        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT</requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE__</requirements>
         <description>
             <p></p>
         </description>
@@ -825,7 +1101,23 @@
     </element>
 
 
-
+    <element name="Somedisc Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_SOMEDISC">
+        <supports>psionic-discipline</supports>
+        <description>
+            <p></p>
+            <div element="ID_KTH_CCC_PSIONIC_DISCIPLINE_SOMEDISC_" />
+            <div element="ID_KTH_CCC_PSIONIC_POWER_" />
+            <div element="ID_KTH_CCC_PSIONIC_DISCIPLINE_SOMEDISC_ALTERNATE_EFFECTS" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_TELEPATHY_TEID_KTH_CCC_PSIONIC_DISCIPLINE_SOMEDISC_LEPATHIC_COMMUNICATION" />
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_" spellcasting="Psion" />
+            <grant type="Class Feature" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_SOMEDISC_ALTERNATE_EFFECTS" />
+        </rules>
+    </element>
     <element name="Ability1" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE__ABILITY1">
         <description>
             <p></p>
@@ -860,9 +1152,9 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Alternate Effects ()" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE__ALTERNATE_EFFECTS">
+    <element name="Alternate Effects (Somedisc)" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE__ALTERNATE_EFFECTS">
         <description>
-            <p>Additionally, when you learn the () psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
+            <p>Additionally, when you learn the Somedisc psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>
             <table>
                 <thead>
                     <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
