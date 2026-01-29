@@ -331,6 +331,30 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+
+    <element name="Telekinetic Weapons" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_TELEKINETIC_WEAPONS">
+        <supports>Special Psionic, Spell Saving Throw</supports>
+        <description>
+            <p>You telekinetically fling a weapon at a creature or object. Choose a weapon within 15 feet that isn’t being worn or carried, or choose a weapon under your control. Make a ranged spell attack. On hit the target takes damage equal to the weapon’s damage dice. The range of the attack decreases to 15 feet if the weapon has the heavy or special property, and increases to 60 feet if the weapon has the light property.</p>
+            <p class="indent">You can use Psionic Mastery points on this power, and this power counts as a Discipline Power of the Telekinetics Discipline (for example, for the purpose of Empowered Psionics).</p>
+            <p class="indent">You can spend psi points up to your per use limit to add the following modifiers to Telekinetic Weapons (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
+            <p class="indent"><strong>Multiple</strong> For each additional psi point spent, you can fling an additional weapon, making a separate attack and damage roll for each weapon flung.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
     
 </elements>
 
