@@ -90,8 +90,8 @@
     </element>
     <element name="Knife of Fate" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_KNIFE_OF_FATE">
         <supports>psionic-talent</supports>
-        <prerequisite>6th level Knowing Mind Psion</prerequisite>
-        <requirements>[level:psion:6],ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
+        <prerequisite>6th lower-level Psion</prerequisite>
+        <requirements>[level:psion:6],ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION</requirements>
         <description>
             <p>While you have temporary hit points from Thread of Fate, when you hit a creature with an attack roll you can expend them to deal damage equal to half the temporary hit points expended (rounded down).</p>
         </description>
@@ -101,8 +101,7 @@
     </element>
     <element name="Plans Within Plans" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_PLANS_WITHIN_PLANS">
         <supports>psionic-talent</supports>
-        <prerequisite>Knowing Mind Psion</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION</requirements>
         <description>
             <p>When you empower a psionic power that has an attack roll or saving throw, you regain half of the Influence Points powers spent (rounded up) if the attack misses or the target succeeds their saving throw.</p>
         </description>
