@@ -1,104 +1,85 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Knowing Mind Psion</name>
+        <name>Transcended Mind Psion</name>
         <update version="0.0.1">
-            <file name="psion-knowingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-knowingmind.xml" />
+            <file name="psion-transcendedmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-transcendedmind.xml" />
         </update>
     </info>
-    <element name="Knowing Mind" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND">
+    <element name="Transcended Mind" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_PSION_TRANSCENDEDMIND">
         <supports>Psionic-Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6" />
+            <p>A Transcended psion is most often one that has found their path to psionic powers through a mental epiphany, realizing the place of their mind within the multiverse and how it ties to everything else, seeing the keys and levers to the world laid out before them in their mind’s eye.</p>
+            <p class="indent">Most often achieved either intentionally or accidentally through meditation and ritual, this can sometimes even be a passed on technique to reliably transcend the strictly material concerns, and explore the more cognitive realm and powers within.</p>
+            <p class="indent">Transcended Psions tend to have the best grasp on their powers in control and principle, having come to understand the greater cosmos, but lack the reckless abandon some other Psions may have. Unfortunately less transcendent minds frequently cannot understand the greater truths they have learned and may view a Transcended Psion as a bit... peculiar.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_ENLIGHTEND" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_STATE_OF_MIND" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_BALANCE_OF_POWER" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_PERFECTED_ENHANCEMENT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_MENTAL_CONTROL" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_MIND_OVER_MATTER" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_ENLIGHTEND" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_STATE_OF_MIND" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_BALANCE_OF_POWER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_PERFECTED_ENHANCEMENT" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_MENTAL_CONTROL" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_MIND_OVER_MATTER" level="14" />
         </rules>
     </element>
-    <element name="Abiliy1" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1">
+    <element name="Enlightend" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_ENLIGHTEND">
         <description>
-            <p></p>
+            <p>At 1st level when you select this archetype, you gain the ability to empower your body with the power of your mind, granting you the psionic discipline of Enhancement.</p>
         </description>
         <sheet display="false" />
         <rules>
-            
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT" level="1" />
         </rules>
     </element>
-    <element name="Abiliy2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2">
+    <element name="State of Mind" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_STATE_OF_MIND">
         <description>
-            <p></p>
+            <p>Additionally at 1st level, you can ignore the effects of extreme heat or cold, hold your breath twice as long as normal, and can go twice as long without eating or sleeping before suffering exhaustion.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can ignore the effects of extreme heat or cold, hold your breath twice as long as normal, and can go twice as long without eating or sleeping before suffering exhaustion.</description>
         </sheet>
     </element>
-    <element name="Abiliy3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3">
+    <element name="Balance of Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_BALANCE_OF_POWER">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, when you use a psionic ability (power or spell) to restore hit points or grant temporary hit points, you can add equivalent hit points granted to a stored pool. The maximum value of the pool is your psion level, and any points beyond the maximum are lost. The next time you make a damage roll, you can expend the pool to add damage equal to the stored value to one target affected by the damage roll. This stored damage is lost if not spent within 1 minute.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use a psionic ability (power or spell) to restore hit points or grant temporary hit points, you can add equivalent hit points granted to a stored pool. The maximum value of the pool is {{level:psion}}, and any points beyond the maximum are lost. The next time you make a damage roll, you can expend the pool to add damage equal to the stored value to one target affected by the damage roll. This stored damage is lost if not spent within 1 minute.</description>
         </sheet>
     </element>
-    <element name="Abiliy4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4">
+    <element name="Perfected Enhancement" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_PERFECTED_ENHANCEMENT">
         <description>
-            <p></p>
+            <p>Starting at 6th level, when you grant temporary hit points with a psionic power you can add your proficiency bonus to the temporary hit points gained by one creature.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you grant temporary hit points with a psionic power you can add {{proficiency}} to the temporary hit points gained by one creature.</description>
         </sheet>
     </element>
-    <element name="Abiliy5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5">
+    <element name="Mental Control" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_MENTAL_CONTROL">
         <description>
-            <p></p>
+            <p>Starting at 10th level, when you have to make a Constitution saving throw to avoid losing concentration on an effect from a psionic discipline, you can add your Intelligence modifier to the saving throw.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you have to make a Constitution saving throw to avoid losing concentration on an effect from a psionic discipline, you can add {{intelligence:modifier}} to the saving throw.</description>
         </sheet>
     </element>
-    <element name="Abiliy6" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6">
+    <element name="Mind Over Matter" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_TRANSCENDEDMIND_MIND_OVER_MATTER">
         <description>
-            <p></p>
+            <p>Starting at 14th level, when you would roll a Strength, Dexterity, or Constitution saving throw, you can expend 2 psi points to roll an Intelligence saving throw instead.</p>
+            <p class="indent">Additionally, when you roll a Death saving throw, you can expend 4 psi points before rolling to treat the roll as 20.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Ability7" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY7">
-        <supports>psionic-talent</supports>
-        <prerequisite>6th level Knowing Mind Psion</prerequisite>
-        <requirements>[level:psion:6],ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="Ability8" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY8">
-        <supports>psionic-talent</supports>
-        <prerequisite>Knowing Mind Psion</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>When you would roll a Strength, Dexterity, or Constitution saving throw, you can expend 2 psi points to roll an Intelligence saving throw instead.
+            Additionally, when you roll a Death saving throw, you can expend 4 psi points before rolling to treat the roll as 20.</description>
         </sheet>
     </element>
 </elements>

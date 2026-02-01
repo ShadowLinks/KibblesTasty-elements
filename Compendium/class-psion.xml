@@ -1132,7 +1132,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Alternate Effects (Psychokinesis)" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_PSYCHOKINESIS_ALTERNATE_EFFECTS">
+    <element name="Unspecialized" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_PSYCHOKINESIS_ALTERNATE_EFFECTS">
         <supports>psychokinesis-specialization</supports>
         <description>
             <p>Additionally, when you learn the Psychokinesis psionic discipline you can use your Psionics feature to cast the following spells as per the rules defined in the feature:</p>

@@ -1,104 +1,137 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Knowing Mind Psion</name>
+        <name>Elemental Mind Psion</name>
         <update version="0.0.1">
-            <file name="psion-knowingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-knowingmind.xml" />
+            <file name="psion-elementalmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-elementalmind.xml" />
         </update>
     </info>
-    <element name="Knowing Mind" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND">
+    <element name="Elemental Mind" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_PSION_ELEMENTALMIND">
         <supports>Psionic-Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5" />
-            <div element="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6" />
+            <p>An Elemental Mind is a Psion that can manifest and control elements as an extension of their will.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_ELEMENTAL_POWER" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_PRIMORDIAL_ASPECT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_LIVING_POWER" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_EMPOWERED_PSIONICS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_FULL_MANIFESTATION" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_ELEMENTAL_FORM" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_ELEMENTAL_POWER" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_PRIMORDIAL_ASPECT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_LIVING_POWER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_EMPOWERED_PSIONICS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_FULL_MANIFESTATION" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_ELEMENTAL_FORM" level="14" />
         </rules>
     </element>
-    <element name="Abiliy1" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY1">
+    <element name="Elemental Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_ELEMENTAL_POWER">
         <description>
-            <p></p>
+            <p>At 1st level when you select this archetype, you gain a deep intrinsic tie to elemental power, granting you the ability to manipulate it. You gain the psionic discipline of Psychokinesis.</p>
         </description>
         <sheet display="false" />
         <rules>
-            
+            <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_PSYCHOKINESIS" level="1" />
         </rules>
     </element>
-    <element name="Abiliy2" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY2">
+    <element name="Primordial Aspect" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_PRIMORDIAL_ASPECT">
         <description>
-            <p></p>
+            <p>Additionally at 1st level, as an action or when you deal fire, cold, or lightning damage (no action required), you take on an aspect of that element until the end of your next turn or until you take a new primordial aspect.</p>
+            <ul>
+                <li><strong>Cold:</strong> You gain an icy shell, reducing any nonmagical bludgeoning, piercing or slashing damage taken by your proficiency bonus.</li>
+                <li><strong>Fire:</strong> You gain a fiery aura. Once per turn, a creature within 5 feet that hits you with a melee attack takes fire damage equal to your proficiency bonus.</li>
+                <li><strong>Lightning:</strong> You flicker with lightning. Your walking speed is increased by 5 feet for the duration.</li>
+            </ul>
+            <p class="indent">You can additionally spend 1 psi point to gain resistance to the element to the start of your next turn. If you are specialized in an element, you you can do this without spending a psi point for the element you are specialized in.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>s an action or when you deal fire, cold, or lightning damage (no action required), you take on an aspect of that element until the end of your next turn or until you take a new primordial aspect.
+            -Cold: You gain an icy shell, reducing any nonmagical bludgeoning, piercing or slashing damage taken by {{proficiency}}.
+            -Fire: You gain a fiery aura. Once per turn, a creature within 5 feet that hits you with a melee attack takes {{proficiency}} fire damage.
+            -Lightning: You flicker with lightning. Your walking speed is increased by 5 feet for the duration.
+            You can additionally spend 1 psi point to gain resistance to the element to the start of your next turn. If you are specialized in an element, you you can do this without spending a psi point for the element you are specialized in.</description>
         </sheet>
     </element>
-    <element name="Abiliy3" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY3">
+    <element name="Living Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_LIVING_POWER">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, your powers become a living extension of your mind, weaving an extension of your will into reality. Overcharging an Elemental Blast deals 1 force damage to you (instead of 1d4 force damage) and you can manipulate your powers in more advanced ways. When you use a power or alternate effect of Psychokinetics, you can apply one of the following modifiers:</p>
+            <h5>Shaped Power</h5>
+            <p class="indent">When you use a power or spell that makes a ranged spell attack, you can convert it to a melee spell attack (such as forming it into a weapon shape), and when you would make an attack that would make a melee spell attack, you can instead form it into a shape and hurl it at a target within 15 feet making a ranged spell attack.</p>
+            <h5>Controlled Power</h5>
+            <p class="indent">When you use a spell or power that targets an area, you can select a number of creatures equal to the psi points spent in the area of effect for the spell or power to be ignored. The power passes harmlessly around these creatures, they automatically succeed on their saving throw against the effect, and they take no damage if they would normally take half damage on a successful save against the effect.</p>
+            <h5>Raging Power</h5>
+            <p class="indent">When you use a spell or power, you can let it rage out of control. When you roll damage for the power or spell, you can reroll a number of dice up to 1 + the number of psi points spent. You must use the new roll.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Overcharging an Elemental Blast deals 1 force damage to you (instead of 1d4 force damage) and you can manipulate your powers in more advanced ways. When you use a power or alternate effect of Psychokinetics, you can apply one of the following modifiers:            </description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_LIVING_POWER_SHAPED_POWER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_LIVING_POWER_CONTROLLED_POWER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_LIVING_POWER_RAGING_POWER" level="3" />
+        </rules>
+    </element>
+    <element name="Shaped Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_LIVING_POWER_SHAPED_POWER">
+        <description>
+            <p>When you use a power or spell that makes a ranged spell attack, you can convert it to a melee spell attack (such as forming it into a weapon shape), and when you would make an attack that would make a melee spell attack, you can instead form it into a shape and hurl it at a target within 15 feet making a ranged spell attack.</p>
+        </description>
+        <sheet>
+            <description>When you use a power or spell that makes a ranged spell attack, you can convert it to a melee spell attack (such as forming it into a weapon shape), and when you would make an attack that would make a melee spell attack, you can instead form it into a shape and hurl it at a target within 15 feet making a ranged spell attack.</description>
         </sheet>
     </element>
-    <element name="Abiliy4" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY4">
+    <element name="Controlled Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_LIVING_POWER_CONTROLLED_POWER">
         <description>
-            <p></p>
+            <p>When you use a spell or power that targets an area, you can select a number of creatures equal to the psi points spent in the area of effect for the spell or power to be ignored. The power passes harmlessly around these creatures, they automatically succeed on their saving throw against the effect, and they take no damage if they would normally take half damage on a successful save against the effect.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use a spell or power that targets an area, you can select a number of creatures equal to the psi points spent in the area of effect for the spell or power to be ignored. The power passes harmlessly around these creatures, they automatically succeed on their saving throw against the effect, and they take no damage if they would normally take half damage on a successful save against the effect.</description>
         </sheet>
     </element>
-    <element name="Abiliy5" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY5">
+    <element name="Raging Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_LIVING_POWER_RAGING_POWER">
         <description>
-            <p></p>
+            <p>When you use a spell or power, you can let it rage out of control. When you roll damage for the power or spell, you can reroll a number of dice up to 1 + the number of psi points spent. You must use the new roll.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use a spell or power, you can let it rage out of control. When you roll damage for the power or spell, you can reroll a number of dice up to 1 + the number of psi points spent. You must use the new roll.</description>
         </sheet>
     </element>
-    <element name="Abiliy6" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_PSION_KNOWINGMIND_ABILITY6">
+    <element name="Empowered Psionics" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_EMPOWERED_PSIONICS">
         <description>
-            <p></p>
+            <p>Starting at 6th level, when you deal damage with a psionic discipline power you can add your Intelligence modifier to the damage dealt.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you deal damage with a psionic discipline power you can add {{intelligence:modifier}} to the damage dealt.</description>
         </sheet>
     </element>
-    <element name="Ability7" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY7">
-        <supports>psionic-talent</supports>
-        <prerequisite>6th level Knowing Mind Psion</prerequisite>
-        <requirements>[level:psion:6],ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
+    <element name="Full Manifestation" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_FULL_MANIFESTATION">
         <description>
-            <p></p>
+            <p>Starting at 10th level, when you enter a primordial aspect, you can expend 1 psi point to fully manifest that element, replacing the primordial aspect with the following effect. If you are specialized in that element, it doesn’t require a psi point to fully manifest the power.</p>
+            <ul>
+                <li><strong>Cold:</strong> Your speed becomes 0 until the end of your next turn, but you have resistance to all damage types except fire and force.</li>
+                <li><strong>Fire:</strong> Fire fills a 10-foot radius around you. When a creature enters the area for the first time on a turn or starts its turn there, it takes fire damage equal to 1d4 + your proficiency bonus.</li>
+                <li><strong>Lightning:</strong> You can use your movement to teleport a distance up to your speed for the duration.</li>
+            </ul>
+            <p class="indent">If you are not in a primordial aspect, you can fully manifest a power as a bonus action for 2 psi points (or 1 psi point if you are specialized in that power).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you enter a primordial aspect, you can expend 1 psi point to fully manifest that element, replacing the primordial aspect with the following effect. If you are specialized in that element, it doesn’t require a psi point to fully manifest the power.
+            -Cold: Your speed becomes 0 until the end of your next turn, but you have resistance to all damage types except fire and force.
+            -Fire: Fire fills a 10-foot radius around you. When a creature enters the area for the first time on a turn or starts its turn there, it takes fire damage equal to 1d4 + {{proficiency}}.
+            -Lightning: You can use your movement to teleport a distance up to your speed for the duration.
+            If you are not in a primordial aspect, you can fully manifest a power as a bonus action for 2 psi points (or 1 psi point if you are specialized in that power).</description>
         </sheet>
     </element>
-    <element name="Ability8" type="Class Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_CLASS_FEATURE_PSION_PT_ABILITY8">
-        <supports>psionic-talent</supports>
-        <prerequisite>Knowing Mind Psion</prerequisite>
-        <requirements>ID_KTH_COLAL_ARCHETYPE_PSION_KNOWINGMIND</requirements>
+    <element name="Elemental Form" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PSION_ELEMENTALMIND_ELEMENTAL_FORM">
         <description>
-            <p></p>
+            <p>Starting at 14th level, you can expend 5 psi points to cast <i>shapechange</i> to assume elemental forms. When you cast shapechange in this way it has no verbal or material components, but you can only assume the form of a Water Elemental, Fire Elemental, or Air Elemental. If you are specialized in an element, the cost is reduced to 3 psi points, but you can only assume the form associated with your specialization (Water Elemental for cold, Fire Elemental for fire, or Air Elemental for lightning). A Water Elemental assumed with this form doesn’t have the Freeze property.</p>
+            <p class="indent">Once you cast <i>shapechange</i> this way, you can’t do so until you finish a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>You can expend 5 psi points to cast <i>shapechange</i> to assume elemental forms. When you cast shapechange in this way it has no verbal or material components, but you can only assume the form of a Water Elemental, Fire Elemental, or Air Elemental. If you are specialized in an element, the cost is reduced to 3 psi points, but you can only assume the form associated with your specialization (Water Elemental for cold, Fire Elemental for fire, or Air Elemental for lightning). A Water Elemental assumed with this form doesn’t have the Freeze property.</description>
         </sheet>
     </element>
 </elements>
