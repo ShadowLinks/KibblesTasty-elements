@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Relicsmith Archetype Inventor</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="inventor-relicsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-relicsmith.xml" />
         </update>
     </info>
@@ -116,15 +116,15 @@
             <description></description>
         </sheet>
         <rules>
-            <select type="Archetype Feature" name="Specialization Upgrade 1" supports="rel-specialization-upgrade,l1" level="3" />
-            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="rel-specialization-upgrade,(l1||l5)" level="5" />
-            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="rel-specialization-upgrade,(l1||l5)" level="7" />
-            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="rel-specialization-upgrade,(l1||l5||l9)" level="9" />
-            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="rel-specialization-upgrade,(l1||l5||l9||l11)" level="11" />
-            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="rel-specialization-upgrade,(l1||l5||l9||l11)" level="13" />
-            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="rel-specialization-upgrade,(l1||l5||l9||l11||l15)" level="15" />
-            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="rel-specialization-upgrade,(l1||l5||l9||l11||l15)" level="17" />
-            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="rel-specialization-upgrade,(l1||l5||l9||l11||l15)" level="19" />
+            <select type="Archetype Feature" name="Specialization Upgrade 1" supports="(generic-unrestricted-upgrade,l1)||(rel-specialization-upgrade,l1)" level="3" />
+            <select type="Archetype Feature" name="Specialization Upgrade 2" supports="(generic-unrestricted-upgrade,l1||l5)||(rel-specialization-upgrade,(l1||l5))" level="5" />
+            <select type="Archetype Feature" name="Specialization Upgrade 3" supports="(generic-unrestricted-upgrade,l1||l5)||(rel-specialization-upgrade,(l1||l5))" level="7" />
+            <select type="Archetype Feature" name="Specialization Upgrade 4" supports="(generic-unrestricted-upgrade,l1||l5||l9)||(rel-specialization-upgrade,(l1||l5||l9))" level="9" />
+            <select type="Archetype Feature" name="Specialization Upgrade 5" supports="(generic-unrestricted-upgrade,l1||l5||l9||l11)||(rel-specialization-upgrade,(l1||l5||l9||l11))" level="11" />
+            <select type="Archetype Feature" name="Specialization Upgrade 6" supports="(generic-unrestricted-upgrade,l1||l5||l9||l11)||(rel-specialization-upgrade,(l1||l5||l9||l11))" level="13" />
+            <select type="Archetype Feature" name="Specialization Upgrade 7" supports="(generic-unrestricted-upgrade,l1||l5||l9||l11||l15)||(rel-specialization-upgrade,(l1||l5||l9||l11||l15))" level="15" />
+            <select type="Archetype Feature" name="Specialization Upgrade 8" supports="(generic-unrestricted-upgrade,l1||l5||l9||l11||l15)||(rel-specialization-upgrade,(l1||l5||l9||l11||l15))" level="17" />
+            <select type="Archetype Feature" name="Specialization Upgrade 9" supports="(generic-unrestricted-upgrade,l1||l5||l9||l11||l15)||(rel-specialization-upgrade,(l1||l5||l9||l11||l15))" level="19" />
         </rules>
     </element>
     <element name="Ordained Path" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_ORDAINED_PATH">

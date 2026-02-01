@@ -364,8 +364,8 @@
         </sheet>
     </element>
 <!-- Specialization upgrades-->
-    <element name="Shield Proficiency" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPECIALIZATION_SHIELD_PROFICIENCY">
-        <supports>generic-unrestricted-upgrade</supports>
+    <element name="Shield Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPECIALIZATION_SHIELD_PROFICIENCY">
+        <supports>generic-unrestricted-upgrade,l1</supports>
         <description>
             <p><i>Generic Unrestricted Upgrade</i> You gain proficiency with shields.</p>
         </description>
@@ -376,8 +376,8 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
         </rules>
     </element>
-    <element name="Tool Proficiency" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPECIALIZATION_TOOL_PROFICIENCY">
-        <supports>generic-unrestricted-upgrade</supports>
+    <element name="Tool Proficiency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_INVENTOR_SPECIALIZATION_TOOL_PROFICIENCY">
+        <supports>generic-unrestricted-upgrade,l1</supports>
         <description>
             <p><i>Generic Unrestricted Upgrade</i> You gain proficiency with a tool of your choice.</p>
         </description>
