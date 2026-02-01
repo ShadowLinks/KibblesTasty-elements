@@ -1,0 +1,106 @@
+<elements>
+    <info>
+        <name>Psion Spell List</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="psion-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-spelllist.xml" />
+        </update>
+    </info>
+
+
+
+<!-- 6th Level Spells -->
+    <append id="ID_PHB_SPELL_BLADE_BARRIER">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CHAIN_LIGHTNING">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISINTEGRATE">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIND_THE_PATH">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EYEBITE">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HARM">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MASS_SUGGESTION">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_KTH_COLAL_PSIONIC_MIND_BLAST">
+        <supports>Psion</supports>
+    </append>
+    
+<!-- 7th Level Spells -->
+    
+    <append id="ID_PHB_SPELL_ETHEREALNESS">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GEAS">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PLANE_SHIFT">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_REGENERATE">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_REVERSE_GRAVITY">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TELEPORT">
+        <supports>Psion</supports>
+    </append>
+    
+<!-- 8th Level Spells -->
+    <append id="ID_PHB_SPELL_ANTIMAGIC_FIELD">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DEMIPLANE">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DOMINATE_MONSTER">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EARTHQUAKE">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEEBLEMIND">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_KTH_COLAL_PSIONIC_INNER_WORLD">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MIND_BLANK">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POWER_WORD_STUN">
+        <supports>Psion</supports>
+    </append>
+   
+<!-- 9th Level Spells -->
+    <append id="ID_PHB_SPELL_ASTRAL_PROJECTION">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FORESIGHT">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GATE">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POWER_WORD_KILL">
+        <supports>Psion</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TIME_STOP">
+        <supports>Psion</supports>
+    </append>
+</elements>
+<!--
+    <append id="ID_PHB_SPELL_">
+        <supports>Psion</supports>
+    </append>
+    -->

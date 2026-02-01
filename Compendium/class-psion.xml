@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Psion</name>
-        <update version="0.0.1">
+        <update version="0.1.1">
             <file name="class-psion.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-psion.xml" />
         </update>
     </info>
@@ -106,6 +106,16 @@
         <spellcasting name="Psion" ability="Intelligence" prepare="false">
             <list>Psionic</list>
         </spellcasting>
+        <multiclass id="ID_KTH_CCC_OCCULTIST_MULTICLASS_PSION">
+            <prerequisite>Intelligence 13</prerequisite>
+            <requirements>[int:13]</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Psionics</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+            </rules>
+        </multiclass>
     </element>
     <element name="Psionic Archetype" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PSIONIC_ARCHETYPE">
         <description>
@@ -199,6 +209,12 @@
             <description level="17">Choose one 6th-level, one 7th-level, one 8th-level, and one 9th-level spell from the psion spell list as an innate ability. You can use this innate ability to cast that spell once.
             Innate Psionics are well beyond the normal scope of your powers and are not restricted by what disciplines you have. Unlike psionic disciplines, they require any component the spell requires.</description>
         </sheet>
+        <rules>
+            <select type="Spell" name="Innate Psionic Ability (6th level)" supports="Psion,6" level="11" />
+            <select type="Spell" name="Innate Psionic Ability (7th level)" supports="Psion,7" level="13" />
+            <select type="Spell" name="Innate Psionic Ability (8th level)" supports="Psion,8" level="15" />
+            <select type="Spell" name="Innate Psionic Ability (9th level)" supports="Psion,9" level="17" />
+        </rules>
     </element>
     <element name="Third Discipline" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_THIRD_DISCIPLINE">
         <description>
@@ -388,7 +404,7 @@
         <description>
             <p>Projection is the ability to project what is in your mind to the outside world with your psionic power.</p>
             <div element="ID_KTH_CCC_PSION_DISCIPLINE_PROJECT_ITEM" />
-            <div element="ID_KTH_CCC_PSIONIC_ASTRAL_CONSTRUCT" />
+            <div element="ID_KTH_CCC_PSIONIC_POWER_ASTRAL_CONSTRUCT" />
             <div element="ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION_ALTERNATE_EFFECTS" />
         </description>
         <sheet>
@@ -396,11 +412,11 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_PROJECT_ITEM" />
-            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_ASTRAL_CONSTRUCT" spellcasting="Psion" />
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_ASTRAL_CONSTRUCT" spellcasting="Psion" />
             <grant type="Class Feature" id="ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION_ALTERNATE_EFFECTS" />
         </rules>
     </element>
-    <element name="Project Item" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION_PROJECT_ITEM">
+    <element name="Project Item" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSION_DISCIPLINE_PROJECT_ITEM">
         <description>
             <p>As an action, you can use your powers to project an inanimate object you imagine into your hands. It can’t be larger than 3 feet on any side or weigh more than 10 pounds, and is clearly ethereal in nature. The item behaves as a solid object. Weapons created with this feature deal force damage.</p>
             <p class="indent">Projected items fade after 1 minute, and you can have no more than 3 projected items at a time.</p>
@@ -958,7 +974,7 @@
                     <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
                 </thead>
                 <tr><td>1</td><td>expeditious retreat, flicker</td></tr>
-                <tr><td>2</td><td>misty step, blur, pass without a trace</td></tr>
+                <tr><td>2</td><td>misty step, blur, pass without trace</td></tr>
                 <tr><td>3</td><td>blink, nondetection, turbulent warp</td></tr>
                 <tr><td>4</td><td>banishment, dimension cutter, dimension door</td></tr>
                 <tr><td>4</td><td>flickering strikes, spatial manipulation</td></tr>
@@ -973,7 +989,7 @@
             <grant type="Spell" id="ID_KTH_COLAL_PSIONIC_FLICKER" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_BLUR" spellcasting="Psion" />
-            <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_A_TRACE" spellcasting="Psion" />
+            <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_BLINK" spellcasting="Psion" />
             <grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Psion" />
             <grant type="Spell" id="ID_KTH_CCC_PSIONIC_TURBULENT_WARP" spellcasting="Psion" />
@@ -1076,8 +1092,8 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Class Feature" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_TELEPATHY_TEID_KTH_CCC_PSIONIC_DISCIPLINE_PSYCHOKINESIS_LEPATHIC_COMMUNICATION" />
-            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_" spellcasting="Psion" />
+            <grant type="Class Feature" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_PSYCHOKINESIS_ENERGY_MANIPULATION" />
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_ELEMENTAL_BLAST" spellcasting="Psion" />
             <grant type="Class Feature" id="ID_KTH_CCC_PSIONIC_DISCIPLINE_PSYCHOKINESIS_SPECIALIZATIONS" />
         </rules>
     </element>
@@ -1987,22 +2003,25 @@
             <p>You gain a way to defend yourself using your psionic powers. While you are not wearing any armor or carrying a shield, your AC equals 13 + your Intelligence modifier.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While you are not wearing any armor or carrying a shield, your AC equals 13 + your Intelligence modifier.</description>
         </sheet>
         <rules>
-            <stat name="psionic-defences:ac" value="13" bonus="base"/>  
-            <stat name="psionic-defences:ac" value="intelligence:modifier" />"                      
+            <stat name="psionic-defences:ac" value="13" bonus="base" />  
+            <stat name="psionic-defences:ac" value="intelligence:modifier" />                   
             <stat name="ac:calculation" value="psionic-defences:ac" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Psionic Defenses (Psion)"/>
         </rules>
     </element>
     <element name="Psionic Weapon" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PSIONIC_WEAPON">
-        <supports>psionic-talent</supports>
-        
+        <supports>psionic-talent</supports>        
         <description>
-            <p></p>
+            <p>As a bonus action, you can expend 1 psi point to imbue a weapon you are holding with psionic energy. For 1 minute, once per turn when you deal damage with that weapon, you can deal an extra 1d6 psychic damage.</p>
+            <p class="indent">an deal an extra 1d6 psychic damage. At higher levels you can expend additional psi points to further enhance the Psionic Weapon; 2 points to enhance it to 2d6 at 5th level, 3 points to enhance it to 3d6 at 11th level, and 4 points to enhance it to 4d6 at 17th level.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As a bonus action, you can expend 1 psi point to imbue a weapon you are holding with psionic energy. For 1 minute, once per turn when you deal damage with that weapon, you can deal an extra 1d6 psychic damage.</description>
+            <description level="5">As a bonus action, you can expend up to 2 psi points to imbue a weapon you are holding with psionic energy. For 1 minute, once per turn when you deal damage with that weapon, you can deal an extra 1d6 psychic damage per point spent.</description>
+            <description level="11">As a bonus action, you can expend up to 3 psi points to imbue a weapon you are holding with psionic energy. For 1 minute, once per turn when you deal damage with that weapon, you can deal an extra 1d6 psychic damage per point spent..</description>
+            <description level="17">As a bonus action, you can expend up to 4 psi points to imbue a weapon you are holding with psionic energy. For 1 minute, once per turn when you deal damage with that weapon, you can deal an extra 1d6 psychic damage per point spent..</description>
         </sheet>
     </element>
     <element name="Projected Nightmares" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PROJECTED_NIGHTMARES">
@@ -2010,10 +2029,12 @@
         <prerequisite>Shaper's Mind</prerequisite>
         <requirements>ID_KTH_CCC_ARCHETYPE_PSION_SHAPERSMIND</requirements>
         <description>
-            <p></p>
+            <p>You gain an additional option for Boundless Imagination to apply to your Astral Construct:</p>
+            <p class="indent"><strong>Horrifying Nightmare:</strong> Creatures of your choice that start their turn within 5 feet of your Astral Construct must make a Wisdom saving throw against your Psionics DC or become frightened of your Astral Construct until the start of their next turn. On a successful save, they are immune to the effect for the next 24 hours or until you summon a new Astral Construct.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain an additional option for Boundless Imagination to apply to your Astral Construct:
+            Horrifying Nightmare: Creatures of your choice that start their turn within 5 feet of your Astral Construct must make a Wisdom saving throw against your Psionics DC or become frightened of your Astral Construct until the start of their next turn. On a successful save, they are immune to the effect for the next 24 hours or until you summon a new Astral Construct.</description>
         </sheet>
     </element>
     <element name="Propelled Bound" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PROPELLED_BOUND">
@@ -2021,10 +2042,10 @@
         <prerequisite>Psychokiensis or Telekinesis discipline</prerequisite>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PSYCHOKINESIS|ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
         <description>
-            <p></p>
+            <p>When you move on your turn, you can expend movement, up to your speed, in single bounding leap, propelled by telekinetic power or psychokinetic force.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you move on your turn, you can expend movement, up to your speed, in single bounding leap, propelled by telekinetic power or psychokinetic force.</description>
         </sheet>
     </element>
     <element name="Schism" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_SCHISM">
@@ -2032,10 +2053,10 @@
         <prerequisite>level 5 psion</prerequisite>
         <requirements>[level:psion:5]</requirements>
         <description>
-            <p></p>
+            <p>You can spend 1 psi point to temporarily divide your mind to do two things at once until the end of your turn. While dividing your mind, if you use your action on a psionic power or spell granted by a Psionic Discipline, you can use your bonus action to use a psionic power that would normally take an action. The two powers share your per use psi point limit between them.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can spend 1 psi point to temporarily divide your mind to do two things at once until the end of your turn. While dividing your mind, if you use your action on a psionic power or spell granted by a Psionic Discipline, you can use your bonus action to use a psionic power that would normally take an action. The two powers share your per use psi point limit between them.</description>
         </sheet>
     </element>
     <element name="Tantrum" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TANTRUM">
@@ -2043,10 +2064,10 @@
         <prerequisite>Unleashed Mind</prerequisite>
         <requirements>ID_KTH_CCC_ARCHETYPE_PSION_UNLEASHEDMIND</requirements>
         <description>
-            <p></p>
+            <p>Your anger boils just beneath the surface. When you roll initiative, you can instantly increase your rampage die by one step (from a d4 to a d6, for example). Additionally, if you take damage while your rampage die is a d6 or lower, your rampage die increases by one step.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you roll initiative, you can instantly increase your rampage die by one step. Additionally, if you take damage while your rampage die is a d6 or lower, your rampage die increases by one step.</description>
         </sheet>
     </element>
 </elements>
