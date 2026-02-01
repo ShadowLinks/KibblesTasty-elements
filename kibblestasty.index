@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
     <info>
-        <update version="0.1.2">
+        <update version="0.1.3">
             <file name="kibblestasty.index" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/kibblestasty.index" />
         </update>
     </info>
@@ -13,6 +13,8 @@
         
         <file name="class-psion.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-psion.xml" />
         <file name="psionics.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionics.xml" />
+        <file name="psion-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-spelllist.xml" />
+
 
         <file name="race-awakenedundead.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-awakenedundead.xml" />
 
