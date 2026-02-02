@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Path of the Raging Mind Barbarian</name>
+        <update version="0.0.1">
+            <file name="barbarian-ragingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-ragingmind.xml" />
+        </update>
+    </info>
+    <element name="Path of the Raging Mind" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_BARBARIAN_RAGINGMIND">
+        <supports>Primal Path</supports>
+        <description>
+            <p></p>>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_TELEKINTIC_FURY" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_DISTANT_GRASP" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FORCEFUL_MIND" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_INTERFERENCE_FIELD" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_COLLATERAL_DAMAGE" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FLING_FOES" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_TELEKINTIC_FURY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_DISTANT_GRASP" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FORCEFUL_MIND" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_INTERFERENCE_FIELD" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_COLLATERAL_DAMAGE" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FLINGFOES" level="14" />
+        </rules>
+    </element>
+    <element name="Telekinetic Fury" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_TELEKINTIC_FURY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Distant Grasp" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_DISTANT_GRASP">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Forceful Mind" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FORCEFUL_MIND">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Interference Field" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_INTERFERENCE_FIELD">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Collateral Damage" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_COLLATERAL_DAMAGE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Fling Foes" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FLING_FOES">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+</elements>
