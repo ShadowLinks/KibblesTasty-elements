@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Class Toolkit</name>
+        <update version="0.0.1">
+            <file name="classtoolkit.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/classtoolkit.xml" />
+        </update>
+    </info>
+    <!-- Inventor Content -->
+    
+    <element name="Cross-Disciplinary Expertise" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_CROSS_DISCIPLINARY_EXPERTISE">
+        <supports>generic-unrestricted-upgrade,l9</supports>
+        <prerequisite>level 9</prerequisite>
+        <requirements>[level:inventor:9]</requirements>
+        <description>
+            <p>You can select an upgrade that applies to your Cross-Disciplinary Knowledge selection. This can be an upgrade that directly improves it, or that requires it, of 5th level or lower. An upgrade selected in this way that does not normally have a limit (such as selecting Healing Draught or Frostbloom Reaction) can be used a maximum number of times equal to your proficiency bonus.</p>
+            <p class="indent">Alternatively, you can directly upgrade the benefit gained from your Cross-Disciplinary Upgrade, giving it a +1 to its attack rolls or save DC (up to a maximum total bonus of +3).</p>
+        </description>
+        <sheet display="false">
+            <description>
+            </description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Cross-Disciplinary Expertise Upgrade" supports="cde-selection" />
+        </rules>
+    </element>
+    <!-- Would take a lot of work to filter down by using requirements, but wouldnt be perfect even then since i dont have a way to distingues the original selection vs primary specialization selections. -->
+    <element name="Cross-Disciplinary Expertise (Improvement)" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_CROSS_DISCIPLINARY_EXPERTISE_IMPROVEMENT">
+        <supports>cde-selection</supports>
+        <description>
+            <p>You can select an upgrade that applies to your CrossDisciplinary Knowledge selection. This can be an upgrade that directly improves it, or that requires it, of 5th level or lower. An upgrade selected in this way that does not normally have a limit (such as selecting Healing Draught or Frostbloom Reaction) can be used a maximum number of times equal to your proficiency bonus</p>
+        </description>
+        <sheet>
+            <description>An upgrade selected in this way that does not normally have a limit can be used a maximum number of {{proficiency}} times.
+            </description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Cross-Disciplinary Expertise Upgrade" supports="l1|l5" />
+        </rules>
+    </element>
+    <element name="Cross-Disciplinary Expertise (Bonus)" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_CROSS_DISCIPLINARY_EXPERTISE_IMPROVEMENT_1">
+        <supports>cde-selection</supports>
+        <description>
+            <p>Your Cross-Disciplinary Upgrade, gets a +1 to its attack rolls or save DC.</p>
+        </description>
+        <sheet>
+            <description>Your Cross-Disciplinary Upgrade, gets a +1 to its attack rolls or save DC.</description>
+            <description requirements="ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_CROSS_DISCIPLINARY_EXPERTISE_IMPROVEMENT_2">Your Cross-Disciplinary Upgrade, gets a +2 to its attack rolls or save DC.</description>
+            <description requirements="ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_CROSS_DISCIPLINARY_EXPERTISE_IMPROVEMENT_3">Your Cross-Disciplinary Upgrade, gets a +3 to its attack rolls or save DC.</description>
+        </sheet>
+    </element>
+    <element name="Cross-Disciplinary Expertise (+2)" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_CROSS_DISCIPLINARY_EXPERTISE_IMPROVEMENT_2">
+        <supports>cde-selection</supports>
+        <requirements>ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_CROSS_DISCIPLINARY_EXPERTISE_IMPROVEMENT</requirements>
+        <description>
+            <p>Your Cross-Disciplinary Upgrade, gets a +2 to its attack rolls or save DC.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Cross-Disciplinary Expertise (+3)" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_CROSS_DISCIPLINARY_EXPERTISE_IMPROVEMENT_3">
+        <supports>cde-selection</supports>
+        <requirements>ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_CROSS_DISCIPLINARY_EXPERTISE_IMPROVEMENT</requirements>
+        <description>
+            <p>Your Cross-Disciplinary Upgrade, gets a +3 to its attack rolls or save DC.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Lateral Studies" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_CLASS_FEATURE_INVENTOR_SPECIALIZATION_LATERAL_STUDIES">
+        <supports>generic-unrestricted-upgrade,l9</supports>
+        <prerequisite>level 9</prerequisite>
+        <requirements>[level:inventor:9]</requirements>
+        <description>
+            <p>You can select an additional selection from Cross-Disciplinary Knowledge.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Lateral Studies" supports="gs-specialization-upgrade,l1||ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_INFUSIONSMITH_ANIMATED_WEAPON|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_INFUSIONSMITH_BLASTING_ROD|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_INFUSIONSMITH_INFUSED_WEAPON|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_REAGENT_POUCH|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_FIRE|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_POTIONSMITH_ALCHEMICAL_ACID|ID_KTH_CCC_ARCHETYPEFEATURE_INVENTOR_THUNDERSMITH_STORMFORGED_WEAPON" />
+        </rules>
+    </element>
+
+    <element name="Armor Entombed" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_ARMOR_ENTOMBED">
+        <supports>ws-specialization-upgrade,l5</supports>
+        <requirements>[level:5]</requirements>
+        <setters>
+            <set name="short">level 5, Prerequisite: Warplate or Integrated Armor</set>
+        </setters>
+        <description>
+            <p>If your armor is perfect, why would you ever need to remove it? Your armor is considered both Integrated Armor and Warplate, and you can select the base AC and properties of either armor set, and select armor with either prerequisite as a prerequisite (though you can’t select upgrades that are incompatible with either type)</p>
+            <p class="indent">Your creature type becomes construct. You are immune to disease, and you gain immunity to poison damage and the poisoned condition. You no longer need to eat, drink, or sleep, though you must remain inactive for a minimum of 4 hours during a long rest to allow your systems to recharge. You can absorb certain types of healing magic, allowing you to recover hit points from magical effects that do not otherwise affect constructs (such as the cure wounds spell).</p>
+        </description>
+        <sheet>
+            <description>Your armor is considered both Integrated Armor and Warplate, and you can select the base AC and properties of either armor set, and select armor with either prerequisite as a prerequisite (though you can’t select upgrades that are incompatible with either type)
+            Your creature type becomes construct. You are immune to disease, and you gain immunity to poison damage and the poisoned condition. You no longer need to eat, drink, or sleep, though you must remain inactive for a minimum of 4 hours during a long rest to allow your systems to recharge. You can absorb certain types of healing magic, allowing you to recover hit points from magical effects that do not otherwise affect constructs (such as the cure wounds spell).</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+        </rules>
+    </element>
+    <element name="Hyperspace Arsenal" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_HYPERSPACE_ARSENAL">
+        <supports>ws-specialization-upgrade,l15</supports>
+        <prerequisite>level 19 and Recall</prerequisite>
+        <requirements>[level:19],ID_KTH_CCC_ARCHETYPE_FEATURE_INVENTOR_WARSMITH_RECALL</requirements>
+        <setters>
+            <set name="short">level 19, Prerequisite: recall</set>
+        </setters>
+        <description>
+            <p>You expand the pocket dimension to store multiple sets of Wargear, as well as up to 100 pounds of weapons or items. As a bonus action, you can conjure and equip any weapon or item stored in the pocket dimension. Additionally, you can swap out your attuned Wargear for another set of Wargear with this upgrade in the pocket dimension during this bonus action, as long as it also has this upgrade, instantly ending your attunement to the set you were wearing and attuning to the new set. Once you swap your Wargear using this feature, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You expand the pocket dimension to store multiple sets of Wargear, as well as up to 100 pounds of weapons or items. As a bonus action, you can conjure and equip any weapon or item stored in the pocket dimension. Additionally, you can swap out your attuned Wargear for another set of Wargear with this upgrade in the pocket dimension during this bonus action, as long as it also has this upgrade, instantly ending your attunement to the set you were wearing and attuning to the new set. Once you swap your Wargear using this feature, you can’t do so again until you finish a short or long rest.</description>
+        </sheet>
+    </element>
+    
+    <element name="Flash of Brilliance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_GADGETSMITH_FLASH_OF_BRILLIANCE">
+        <supports>gs-specialization-upgrade,l15</supports>
+        <prerequisite>level 19</prerequisite>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19</set>
+        </setters>
+        <description>
+            <p>As an action, you can sacrifice any three of your or gadgets (upgrades from this subclass) or essential tools to create create a new gadget on the spot. This gadget can recreate any other gadget provided by upgrades of this class, or can cast any spell of 5th level or lower once without expending a spell slot. This gadget lasts 1 minute or until used (if it casts a spell). Your original gadgets can be rebuilt as part of a short rest. You can’t use this ability again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, you can sacrifice any three of your or gadgets (upgrades from this subclass) or essential tools to create create a new gadget on the spot. This gadget can recreate any other gadget provided by upgrades of this class, or can cast any spell of 5th level or lower once without expending a spell slot. This gadget lasts 1 minute or until used (if it casts a spell). Your original gadgets can be rebuilt as part of a short rest. You can’t use this ability again until you finish a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Soul Puppet" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_GOLEMSMITH_SOUL_PUPPET">
+        <supports>gos-specialization-upgrade,l1</supports>
+        <description>
+            <p>You bind your soul to your golem. Your consciousness is transferred to the golem, and you gain complete control of the golem, retaining both its action and your own, but you are only able to take any action the golem could take with its action.</p>
+            <p class="indent">Your golem’s mental stats are replaced by your mental stats, and your golem gains all of your spell slots, attunement slots, and class features. Your former body dies and can’t be resurrected, unless a wish or similar magic returns your soul to your body.</p>
+        </description>
+        <sheet>
+            <description>You bind your soul to your golem. Your consciousness is transferred to the golem, and you gain complete control of the golem, retaining both its action and your own, but you are only able to take any action the golem could take with its action.
+            Your golem’s mental stats are replaced by your mental stats, and your golem gains all of your spell slots, attunement slots, and class features. Your former body dies and can’t be resurrected, unless a wish or similar magic returns your soul to your body.</description>
+        </sheet>
+    </element>
+    <element name="Replicated Legend" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_POTIONSMITH_REPLICATED_LEGEND">
+        <supports>ps-specialization-upgrade,l15</supports>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19</set>
+        </setters>
+        <description>
+            <p>Combining your mastery of reactions and alchemical infusions, you create an unstable replica of a very rare or legendary potion. You can create this potion as an action, which lasts 1 minute or until consumed, having the effect of the potion it replicates. Once you do this, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You create an unstable replica of a very rare or legendary potion. You can create this potion as an action, which lasts 1 minute or until consumed, having the effect of the potion it replicates.</description>
+        </sheet>
+    </element>    
+    <element name="Wonderous Infusion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_WONDEROUS_INFUSION">
+        <supports>is-specialization-upgrade,l5</supports>
+        <requirements>[level:5],ID_KTH_CCC_ARCHETYPE_INVENTOR_INFUSIONSMITH</requirements>
+        <setters>
+            <set name="short">level 5 infusionsmith</set>
+        </setters>
+        <description>
+            <p>You infuse a magical item with your magic, creating a wondrous item. This item is an imperfect creation powered by your own magical power rather than a magical essence, and loses its magical power if you lose this upgrade. You can reclaim your power from the item by switching out this upgrade, or in a process taking 8 hours (after which you can infuse a new item). You can create a non-consumable wondrous item of Common or Uncommon rarity that is worth 500 gp or less.</p>
+        </description>
+        <sheet>
+            <description>You infuse a magical item with your magic, creating a wondrous item. This item is an imperfect creation powered by your own magical power rather than a magical essence, and loses its magical power if you lose this upgrade. You can reclaim your power from the item by switching out this upgrade, or in a process taking 8 hours (after which you can infuse a new item). You can create a non-consumable wondrous item of Common or Uncommon rarity that is worth 500 gp or less.</description>
+        </sheet>
+    </element>
+    <element name="Investure of Soul" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INVESTURE_OF_SOUL">
+        <supports>is-specialization-upgrade,l15</supports>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19</set>
+        </setters>
+        <description>
+            <p>You learn the spell animate objects. It does not count against your spells known, and if you already know animate objects, you can learn a new spell of 5th level or lower that does not count against your spells known.</p>
+            <p class="indent">When you cast animate objects, you can expend a Hit Die in addition to the spell slot. When you do so, the spell is invest with your soul, and no longer requires concentration. When cast in this way, it lasts until you cast animate objects again, or until all the animated objects are destroyed.</p>
+        </description>
+        <sheet>
+            <description>When you cast animate objects, you can expend a Hit Die in addition to the spell slot. When you do so, the spell is invest with your soul, and no longer requires concentration. When cast in this way, it lasts until you cast animate objects again, or until all the animated objects are destroyed.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INVESTURE_OF_SOUL_GRANTS" requirements="!ID_PHB_SPELL_ANIMATE_OBJECTS" />
+            <select type="Spell" name="Investure of Soul Alternative Spell" supports="1|2|3|4|5" requirements="!ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INVESTURE_OF_SOUL_GRANTS" />
+        </rules>
+    </element>
+    <element type="Grants" name="Grant Animate Objects" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_INVESTURE_OF_SOUL_GRANTS">
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" />
+        </rules>
+    </element>    
+    <element name="Size Matters Not" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_INFUSIONSMITH_SIZE_MATTERS_NOT">
+        <supports>is-specialization-upgrade,l15</supports>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19</set>
+        </setters>
+        <description>
+            <p>When you animate a weapon, you can animate the weapon of a Large-sized creature. You can only animate one Large-sized weapon at a time. This weapon deals twice the damage dice of a weapon for a Medium-sized creature. The weapon is always considered to have the heavy property, regardless of weapon type.</p>
+        </description>
+        <sheet>
+            <description>When you animate a weapon, you can animate the weapon of a Large-sized creature. You can only animate one Large-sized weapon at a time. This weapon deals twice the damage dice of a weapon for a Medium-sized creature. The weapon is always considered to have the heavy property, regardless of weapon type.</description>
+        </sheet>
+    </element>
+
+    <element name="Lightning Saber" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_LIGHTNING_SABER">
+        <supports>ts-specialization-upgrade,l15</supports>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19, Prerequisite: Charged Blade</set>
+        </setters>
+        <description>
+            <p>You generate enough energy with your charged blade to form the blade from pure scintillating lighting. Your weapon casts bright light in a color of your choice for 30 feet, and dim light for additional 30 feet.</p>
+            <p class="indent">If your target is wearing nonmagical armor or natural armor, your attacks treat their armor class as 10 + their Dexterity modifier; only magical effects can add additional AC to the target’s defenses.</p>
+        </description>
+        <sheet>
+            <description>Your weapon casts bright light in a color of your choice for 30 feet, and dim light for additional 30 feet.
+            If your target is wearing nonmagical armor or natural armor, your attacks treat their armor class as 10 + their Dexterity modifier; only magical effects can add additional AC to the target’s defenses.</description>
+        </sheet>
+    </element>
+    <element name="Railgun" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_THUNDERSMITH_RAILGUN">
+        <supports>ts-specialization-upgrade,l15</supports>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19, Prerequisite: Thunder Cannon</set>
+        </setters>
+        <description>
+            <p>The range of your Thunder Cannon is doubled, and creatures can no longer gain cover from objects that are less than 2 feet thick. You Thunder Cannon attacks now pierce the target, and can attack a second target within range behind the first target, though Thundermonger damage can still only be applied once.</p>
+        </description>
+        <sheet>
+            <description>The range of your Thunder Cannon is doubled, and creatures can no longer gain cover from objects that are less than 2 feet thick. You Thunder Cannon attacks now pierce the target, and can attack a second target within range behind the first target, though Thundermonger damage can still only be applied once.</description>
+        </sheet>
+    </element>
+    
+    <element name="Coursing Vitality" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_FLESHSMITH_COURSING_VITALITY">
+        <supports>fs-specialization-upgrade,l15</supports>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19</set>
+        </setters>
+        <description>
+            <p>You mend with extraordinary speed. When you expend a Hit Die with Uncanny Vitality, you can expend more than one Hit Die (up to the number you have available).</p>
+            <p class="indent">If you have less than half your maximum Hit Dice, at the end of your turn, you regain a Hit Die.</p>
+        </description>
+        <sheet>
+            <description>When you expend a Hit Die with Uncanny Vitality, you can expend more than one Hit Die (up to the number you have available).
+            If you have less than half your maximum Hit Dice, at the end of your turn, you regain a Hit Die.</description>
+        </sheet>
+    </element>
+
+    <element name="Soul Anchor" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_CURSESMITH_SOUL_ANCHOR">
+        <supports>cs-specialization-upgrade,l15</supports>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19</set>
+        </setters>
+        <description>
+            <p>You bend all of your knowledge of soul devouring artifacts to create the pinnacle of dark magic. You bind your soul to an item. When you die, your body and equipment crumble to ash, reforming after 1 hour within 5 feet of the item to which you bound your soul. Once you revive in this way, you can’t revive in this way again for 1d10 days. After the first time you have revived, your creature type becomes undead (if it was not already). The item ceases to work if you have not slain a creature in the last 10 days. The item has 25 hit points and an AC of 10. When you bind your soul to it, the item gains immunity to all damage types beside one, to which it gains vulnerability. You select this damage type when you create it.</p>
+        </description>
+        <sheet>
+            <description>You bind your soul to an item. When you die, your body and equipment crumble to ash, reforming after 1 hour within 5 feet of the item to which you bound your soul. Once you revive in this way, you can’t revive in this way again for 1d10 days. After the first time you have revived, your creature type becomes undead (if it was not already). The item ceases to work if you have not slain a creature in the last 10 days. The item has 25 hit points and an AC of 10. When you bind your soul to it, the item gains immunity to all damage types beside one, to which it gains vulnerability. You select this damage type when you create it.</description>
+        </sheet>
+    </element>
+    
+    <element name="Living Rune" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_RUNESMITH_LIVING_RUNE">
+        <supports>rs-specialization-upgrade,l15</supports>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19</set>
+        </setters>
+        <description>
+            <p>When you cast a concentration spell, you can mark a rune that maintains concentration on the spell. The rune be can marked on a willing creature, or into the air (in which case it can’t move). The rune can be targeted and has an AC of 10 and 10 hit points, with resistance to nonmagical damage. It lasts for the duration of the spell unless destroyed. You can only have one Living Rune marked at a time.</p>
+        </description>
+        <sheet>
+            <description>When you cast a concentration spell, you can mark a rune that maintains concentration on the spell. The rune be can marked on a willing creature, or into the air (in which case it can’t move). The rune can be targeted and has an AC of 10 and 10 hit points, with resistance to nonmagical damage. It  only have one Living Rune marked at a time.</description>
+        </sheet>
+    </element>
+    
+    <element name="Consecrated Weapon" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_ARCHETYPE_FEATURE_INVENTOR_RELICSMITH_CONSECRATED_WEAPON">
+        <supports>rel-specialization-upgrade,l15</supports>
+        <requirements>[level:19]</requirements>
+        <setters>
+            <set name="short">level 19</set>
+        </setters>
+        <description>
+            <p>You gain the ability to focus divine energy into a weapon. As a bonus action, you can touch a weapon, consecrating it. For 10 minutes, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet. It deals an extra 1d8 radiant damage on hit while under this effect. If the weapon houses your Divine Relic, the damage is instead increased by 2d8 radiant damage. While consecrated, the wielder of the weapon is under the effect of the spell protection from evil and good.</p>
+            <p class="indent">Once you use this ability, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to, allowing you to use it again.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can touch a weapon, consecrating it. For 10 minutes, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet. It deals an extra 1d8 radiant damage on hit while under this effect. If the weapon houses your Divine Relic, the damage is instead increased by 2d8 radiant damage. While consecrated, the wielder of the weapon is under the effect of the spell protection from evil and good.
+            Once you use this ability, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to, allowing you to use it again.</description>
+        </sheet>
+    </element>
+
+    <!-- Special Inventor Weapons -->
+
+    <element name="Adra'vark" type="Magic Item" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_MAGIC_ITEM_ADRAVARK">
+        <description>
+            <p>A single piece of worked stone, it has twisting alien runes worked across the length. When fired, this Hand Cannon fires bolts of pure force energy and doesn’t consume ammunition, and lacks the loud property.</p>
+            <p class="indent">Any Thundermonger damage applied by this weapon becomes force damage. When applying Thundermonger damage to undead, the dice become d8s.</p>
+        </description>
+        <setters>
+            <set name="keywords">Hand Cannon,Thundersmith,Inventor</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="hand cannon">Weapon</set>
+            <set name="weapon">Hand Cannon</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Arm Cannon" type="Magic Item" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_MAGIC_ITEM_ARM_CANNON">
+        <description>
+            <prerequisite>Can only be used by a character missing an arm</prerequisite>
+            <p>One might hope to see this mostly on Warforged characters, but the world is a broad place. This weapon serves as a Thunder Cannon, but loses the two-handed property. The arm that this takes the place of can’t be used for anything besides holding and firing the thunder cannon or activating its upgrades.</p>
+        </description>
+        <setters>
+            <set name="keywords">Thunder cannon,Thundersmith,Inventor</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="thunder cannon">Weapon</set>
+            <set name="weapon">Thunder Cannon</set>
+            <set name="rarity">Common</set>
+        </setters>
+    </element>
+    <element name="Evolving Multiweapon" type="Magic Item" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_MAGIC_ITEM_EVOLVING_MULTIWEAPON">
+        <description>
+            <p><i>Weapon, uncommon/rare/very rare/legendary (requires attunement by an inventor)</i></p>
+            <p class="indent">This is a special weapon that leverages an Inventor’s mastery of creation to craft an evolving weapon that represents their developing skill. This weapon can only be created by an Inventor, and only the Inventor that creates it has proficiency in this weapon.</p>
+            <p class="indent">When you create this item, you select any two simple weapons. As a bonus action, you can convert the weapon between the two simple weapons. As your mastery of invention grows, you can evolve the weapon further.</p>
+            <p class="indent">As you progress in the Inventor class, you can evolve this weapon further, selecting from the following properties at the following levels:</p>
+            <table>
+                <thead>
+                    <tr><td>Level</td><td>Property</td></tr>
+                </thead>
+                <tr><td>5th</td><td>The weapon gains a +1 to attack and damage rolls.</td></tr>
+                <tr><td>7th</td><td>The weapon gains an additional simple weapon type to which it can transform.</td></tr>
+                <tr><td>9th</td><td>The weapon gains an additional simple ormartial weapon it can transform to.</td></tr>
+                <tr><td>11th</td><td>The weapon adds +1d6 elemental damage to attack rolls. Select from acid, cold, fire, lightning, or thunder when you select this upgrade.</td></tr>
+                <tr><td>13th</td><td>The weapon adds a +2 to attack and damage rolls</td></tr>
+                <tr><td>15th</td><td>The weapon gains an additional simple or martial weapon to which it can transform.</td></tr>
+                <tr><td>17th</td><td>The weapon adds +3 to attack and damage rolls.</td></tr>
+                <tr><td>20th</td><td>The weapon gains an additional simple or martial weapon to which it can transform., and adds a +4 to attack and damage rolls. As an action, you can change the elemental damage type of the weapon to another option of the 11th-level feature</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords">Inventor</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="any simple">Weapon</set>
+            <set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    
+    <element name="Rolling Thunder" type="Magic Item" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_MAGIC_ITEM_ROLLING_THUNDER">
+        <description>
+            <p>A lesser mind might look at this weapon and be led to believe that it is just five Thunder Cannons strapped together in a terrifying swirl of lunacy, but a true connoisseur can see that it is just awesomely five Thunder Cannons strapped together in a awesome swirl of brilliance</p>
+            <p class="indent">This Thunder Cannon weighs 75 pounds, and has the Heavy property, but not the Stormcharged property.</p>
+            <p class="indent">When you fire this weapon with the Attack action, you can choose to fire up to five times, rolling a d20 for each attack roll at the same time. For each attack roll made, subtract 2 from the value rolled for all attack rolls. For example, when firing once this weapon takes a −2 penalty to its attack roll, when firing five times, it takes a −10 penalty to its attack rolls.</p>
+        </description>
+        <setters>
+            <set name="keywords">Thunder cannon,Thundersmith,Inventor</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="thunder cannon">Weapon</set>
+            <set name="weapon">Thunder Cannon</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Storm Herald" type="Magic Item" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_MAGIC_ITEM_STORM_HERALD">
+        <description>
+            <p>A massive, elegantly wrought cannon, it has many fine gears and sliding plates. In its compact mode, it functions as a Thunder Cannon. This weapon can add +1 to its attack and damage rolls.</p>
+            <p class="indent">As an action, you can deploy it into its "Herald" configuration, greatly extending the length of the weapon. While it is extended, the weapons range becomes 300/900 and your speed is halved, and any attack roll you make after moving on your turn is made with disadvantage.</p>
+            <p class="indent">You can collapse it back to its compact mode as a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords">Thunder cannon,Thundersmith,Inventor</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="thunder cannon">Weapon</set>
+            <set name="weapon">Thunder Cannon</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="enhancement">1</set>
+        </setters>
+    </element>    
+    <element name="Thunder Shotgun" type="Magic Item" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_MAGIC_ITEM_THUNDER_SHOTGUN">
+        <description>
+            <p>A special cannon made to devastate at close range. This weapon has a range of 30/90, but doesn’t suffer disadvantage when there is a creature within melee range of you. It deals 4d4 damage to targets within 10 feet, 3d4 damage to targets within 20 feet, 2d4 damage to targets within 30 feet, and 1d4 damage to targets beyond 30 feet. This weapon has advantage on targets within 10 feet of you so long as there is nothing between you and the target.</p>
+            <p class="indent">This weapon must be reloaded with your bonus action once fired, and has disadvantage on all attacks if you have a Strength of 12 or less.</p>
+        </description>
+        <setters>
+            <set name="keywords">Thunder cannon,Thundersmith,Inventor</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="thunder cannon">Weapon</set>
+            <set name="weapon">Thunder Cannon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+
+    <!-- Psion Content -->
+
+    <element name="Psionic Synthesis" type="Feat" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_FEAT_PSIONIC_SYNTHESIS">
+        <requirements>[level:psion:4]</requirements>
+        <prerequisite>Prerequisite: 4th Level Psion with 2 Disciplines</prerequisite>
+        <description>
+            <p>You gain the ability to meld your Psionic abilities together to produce potent new effects. When you select this feat, you can select one fusion talent for free. You can only select fusion talents when you have all the Disciplines in their prerequisite.</p>
+            <div class="reference">
+                <div element="ID_KTH_CCCCT_FEATURE_ASTRAL_RIFT" />
+            </div>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Fusion Talent" supports="ps-fusion-talents" />
+        </rules>
+    </element>
+
+    <element name="Astral Rift" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_FEATURE_ASTRAL_RIFT">
+        <supports>ps-fusion-talents</supports>
+        <prerequisite>Prerequisite: Psionic Synthesis, Transposition Discipline, Projection Discipline, Astral Swap Talent</prerequisite>
+        <requirements>ID_KTH_CCCCT_FEAT_PSIONIC_SYNTHESIS,ID_KTH_CCC_PSION_DISCIPLINE_TRANSPOSITION,ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION,ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ASTRAL_SWAP</requirements>
+        <description>
+            <p>As a bonus action, you can Phase Rift to where your Astral Construct is; this movement counts as a Phase Rift, and you can apply modifiers to it as normal. Your Astral Construct is moved to where you started this movement along the Phase Rift; during the movement you can command your Astral Construct to attack a creature it passes with your action.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can Phase Rift to where your Astral Construct is; this movement counts as a Phase Rift, and you can apply modifiers to it as normal. Your Astral Construct is moved to where you started this movement along the Phase Rift; during the movement you can command your Astral Construct to attack a creature it passes with your action.</description>
+        </sheet>
+    </element>
+    <element name="Elemental Phasing" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_FEATURE_ELEMENTAL_PHASING">
+        <supports>ps-fusion-talents</supports>
+        <prerequisite>Prerequisite: Psionic Synthesis, Psychokinetics Discipline, Transposition Discipline</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PSYCHOKINESIS,ID_KTH_CCC_PSION_DISCIPLINE_TRANSPOSITION</requirements>
+        <description>
+            <p>As you step between planes, you can tap into the Elemental Planes, bringing their power into the material with you. You can use Psychokinetic modifiers on Phase Rift (excluding Massive).</p>
+            <p class="indent">Additionally, whenever you deal damage to an area with a Psychokinetics ability that would include yourself, you can phase yourself out of reality to take no damage from the effect.</p>
+        </description>
+        <sheet>
+            <description>You can use Psychokinetic modifiers on Phase Rift (excluding Massive).
+            Additionally, whenever you deal damage to an area with a Psychokinetics ability that would include yourself, you can phase yourself out of reality to take no damage from the effect.</description>
+        </sheet>
+    </element>
+    <element name="Kinetic Mastery" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_FEATURE_KINETIC_MASTERY">
+        <supports>ps-fusion-talents</supports>
+        <prerequisite>Prerequisite: Psionic Synthesis, Psychokinetics Discipline, Telekinesis Discipline</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PSYCHOKINESIS,ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
+        <description>
+            <p>Your ability to manipulate energy becomes a single blended prowess, freely swapping between manipulating force and energy. You can apply Telekinetic Force modifiers to Kinetic Blast and Elemental Blast modifiers to Telekinetic Force (though to do not gain any benefits from from a Specialization while doing so).</p>
+        </description>
+        <sheet>
+            <description>You can apply Telekinetic Force modifiers to Kinetic Blast and Elemental Blast modifiers to Telekinetic Force (though to do not gain any benefits from from a Specialization while doing so).</description>
+        </sheet>
+    </element>
+    <element name="Parasitic Nightmare" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_FEATURE_PARASITIC_NIGHTMARE">
+        <supports>ps-fusion-talents</supports>
+        <prerequisite>Prerequisite: Psionic Synthesis, Consumption Discipline, Telepathy Discipline</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_CONSUMPTION,ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
+        <description>
+            <p>You gain the ability to add Telepathic Intrusion modifiers to Mind Leech.</p>
+            <p class="indent">Additionally, when you deal psychic damage to a creature that is frightened of you, you can render yourself invisible to that creature until the start of your next turn; you can immediately (no action required) roll an Intelligence (Stealth) check affecting only creatures you are invisible from as a result of this talent.</p>
+            <p class="indent">If you are hidden from a creature that is frightened of you, when it moves, you can use your reaction to teleport to an unoccupied space within 5 feet of that creature (at the completion of their movement).</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to add Telepathic Intrusion modifiers to Mind Leech.
+            Additionally, when you deal psychic damage to a creature that is frightened of you, you can render yourself invisible to that creature until the start of your next turn; you can immediately (no action required) roll an Intelligence (Stealth) check affecting only creatures you are invisible from as a result of this talent.
+            If you are hidden from a creature that is frightened of you, when it moves, you can use your reaction to teleport to an unoccupied space within 5 feet of that creature (at the completion of their movement).</description>
+        </sheet>
+    </element>
+    <element name="Phantom Blade Barrage" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_FEATURE_PHANTOM_BLADE_BARRAGE">
+        <supports>ps-fusion-talents</supports>
+        <prerequisite>Prerequisite: Psionic Synthesis, Projected Weaponry, Telekinetic Weapons</prerequisite>
+        <requirements>ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PROJECTED_WEAPONRY,ID_KTH_COLAL_PSIONIC_TELEKINETIC_WEAPONS</requirements>
+        <description>
+            <p>You can create a weapon with Projected Weapon as part of making an attack with it using Telekinetic Weapons, allowing you to project as many weapons in this manner as you make attacks (no additional action required). When you use weapons created by Projected Weaponry as the projectiles for your Telekinetic Weapons, the range you can fling the weapons is doubled.</p>
+            <p class="indent">Additionally, if you can expend 6 psi points to cast blade barrier generating a much larger number of ethereal blades as part of the casting.</p>
+        </description>
+        <sheet>
+            <description>You can create a weapon with Projected Weapon as part of making an attack with it using Telekinetic Weapons, allowing you to project as many weapons in this manner as you make attacks (no additional action required). When you use weapons created by Projected Weaponry as the projectiles for your Telekinetic Weapons, the range you can fling the weapons is doubled.
+            Additionally, if you can expend 6 psi points to cast blade barrier generating a much larger number of ethereal blades as part of the casting.</description>
+        </sheet>
+    </element>
+    <element name="Physical Telekinesis" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_FEATURE_PHYSICAL_TELEKINESIS">
+        <supports>ps-fusion-talents</supports>
+        <prerequisite>Prerequisite: Psionic Synthesis, Enhancement Discipline, Telekinesis Discipline</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
+        <description>
+            <p>When you use an Enhancing Surge to empower a creature, you can expend a psi point to augment it with your Telekinesis to further assist them, optionally granting one of the following benefits:</p>
+            <ul>
+                <li>You can move the creature 10 feet (this movement doesn’t provoke opportunity attacks).</li>
+                <li>You can telekinetically deflect the first weapon attack against them before the start of your next turn, giving that attack disadvantage.</li>
+                <li></li>
+            </ul>
+            <p class="indent">Addititionally, while under the effect of Enhancing Surge, the amount you can lift, drag, or carry is doubled with assistance of your telekinesis, and you can apply Telekinetic Force modifiers to your weapon attacks.</p>
+        </description>
+        <sheet>
+            <description>When you use an Enhancing Surge to empower a creature, you can expend a psi point to augment it with your Telekinesis to further assist them, optionally granting one of the following benefits:
+            -You can move the creature 10 feet (this movement doesn’t provoke opportunity attacks).
+            -You can telekinetically deflect the first weapon attack against them before the start of your next turn, giving that attack disadvantage.
+            -You can telekinetically deflect the first weapon attack against them before the start of your next turn, giving that attack disadvantage.
+            Addititionally, while under the effect of Enhancing Surge, the amount you can lift, drag, or carry is doubled with assistance of your telekinesis, and you can apply Telekinetic Force modifiers to your weapon attacks.</description>
+        </sheet>
+    </element>
+    <element name="Reality Warper" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_FEATURE_REALITY_WARPER">
+        <supports>ps-fusion-talents</supports>
+        <prerequisite>Prerequisite: Psionic Synthesis, Matter Made Real, Mental Image</prerequisite>
+        <requirements>ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MATTER_MADE_REAL,ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MENTAL_IMAGE</requirements>
+        <description>
+            <p>You can bring the illusions you make people see to life. When you are concentrating on an illusion spell, as a bonus action you can expend psi points during your turn to bring aspects of the illusion into reality. For each psi point spent you can bring a 5-foot-cube section of the illusion into reality until the start of your next turn, and it can have the following effects:</p>
+            <ul>
+                <li>If the effect would do damage, each 5-foot cube can damage one target. That target must pass a Dexterity saving throw, or take damage equal to a number of d8 dice equal to the level of the spell.</li>
+                <li>If the effect would stop a creature, they can’t move through it. If the effect would restrain a creature, that creature must pass a Dexterity saving throw or become restrained until the start of your next turn.</li>
+                <li>Each 5-foot cube can affect only one creature that is either within it or adjacent to it. The GM may allow other effects at their discretion.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you are concentrating on an illusion spell, as a bonus action you can expend psi points during your turn to bring aspects of the illusion into reality. For each psi point spent you can bring a 5-foot-cube section of the illusion into reality until the start of your next turn, and it can have the following effects:
+            -If the effect would do damage, each 5-foot cube can damage one target. That target must pass a Dexterity saving throw, or take damage equal to a number of d8 dice equal to the level of the spell.
+            -If the effect would stop a creature, they can’t move through it. If the effect would restrain a creature, that creature must pass a Dexterity saving throw or become restrained until the start of your next turn.
+            -Each 5-foot cube can affect only one creature that is either within it or adjacent to it. The GM may allow other effects at their discretion.</description>
+        </sheet>
+    </element>
+    <element name="The Void" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation: Class Toolbox" id="ID_KTH_CCCCT_FEATURE_THE_VOID">
+        <supports>ps-fusion-talents</supports>
+        <prerequisite>Prerequisite: Consumption Discipline, Nullification Discipline</prerequisite>
+        <requirements>ID_KTH_CCC_PSION_DISCIPLINE_CONSUMPTION,ID_KTH_CCC_PSION_DISCIPLINE_NULLIFICATION</requirements>
+        <description>
+            <p>You devour all supernatural effects near you. Whenever a creature (including yourself) within 5 feet of you takes damage from a magical source, you can expend 1 or more psi points to use your reaction to reduce the damage taken by 1d8 per psi point spent. You can divide this amount between multiple creatures within range if they take damage at the same time.</p>
+            <p class="indent">Additionally, whenever you successfully cast counterspell, dispel magic, or remove curse, you regain hit points equal to the level of spell stopped or ended.</p>
+        </description>
+        <sheet>
+            <description>Whenever a creature (including yourself) within 5 feet of you takes damage from a magical source, you can expend 1 or more psi points to use your reaction to reduce the damage taken by 1d8 per psi point spent. You can divide this amount between multiple creatures within range if they take damage at the same time.
+            Additionally, whenever you successfully cast counterspell, dispel magic, or remove curse, you regain hit points equal to the level of spell stopped or ended.</description>
+        </sheet>
+    </element>
+    
+</elements>
