@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Path of the Exosuit Barbarian</name>
+        <update version="0.0.1">
+            <file name="barbarian-exosuit.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-exosuit.xml" />
+        </update>
+    </info>
+    <element name="Path of the Exosuit" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_BARBARIAN_EXOSUIT">
+        <supports>Primal Path</supports>
+        <description>
+            <p></p>>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_EXOSUIT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_EMPOWERED_MOVEMENT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_POWER_FIST" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_HEAVY_LIFTING" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_SLAM" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_INFINITE_LEAP" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_EXOSUIT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_EMPOWERED_MOVEMENT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_POWER_FIST" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_HEAVY_LIFTING" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_SLAM" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_INFINITE_LEAP" level="14" />
+        </rules>
+    </element>
+    <element name="Exosuit" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_EXOSUIT">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Empowered Movement" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_EMPOWERED_MOVEMENT">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Power Fist" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_POWER_FIST">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Heavy Lifting" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_HEAVY_LIFTING">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Slam" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_SLAM">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+    <element name="Infinite Leap" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_INFINITE_LEAP">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+</elements>
