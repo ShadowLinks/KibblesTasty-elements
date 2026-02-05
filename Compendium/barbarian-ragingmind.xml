@@ -9,7 +9,8 @@
     <element name="Path of the Raging Mind" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_BARBARIAN_RAGINGMIND">
         <supports>Primal Path</supports>
         <description>
-            <p></p>>
+            <p>The Path of the Raging Mind is a Barbarian that expresses their fury as a telekinetic manifestation. Their mind is so powerful that in their rage they warp the world around them. This is a psionic manifestation of a barbarian’s ability to focus their fury, and in battle this fury is weaponized as a deadly force that can fling about weapons and enemies alike.</p>
+            <p class="indent">They have to struggle with control... until they unleash themselves upon the battlefield, wreaking havoc on all that stands in their way.</p>
             <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_TELEKINTIC_FURY" />
             <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_DISTANT_GRASP" />
             <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FORCEFUL_MIND" />
@@ -26,55 +27,114 @@
             <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FORCEFUL_MIND" level="6" />
             <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_INTERFERENCE_FIELD" level="6" />
             <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_COLLATERAL_DAMAGE" level="10" />
-            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FLINGFOES" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FLING_FOES" level="14" />
         </rules>
     </element>
     <element name="Telekinetic Fury" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_TELEKINTIC_FURY">
         <description>
-            <p></p>
+            <p>Starting when you choose this path at 3rd level, when you enter a rage, you can telekinetically project your rage onto the world around you. All melee weapons gain a thrown 30/60 property for you. This range is reduced to 15/45 if the weapon has the heavy property and increased to 60/120 if the weapon has the light property.</p>
+            <p class="indent">You can apply your Rage bonus damage to damage rolls made by thrown weapons, and can gain advantage from Reckless Attack on attacks made with thrown weapons.</p>
+            <p class="indent">At the start of your turn while you are raging, you can call a number of weapons or Tiny objects equal to your proficiency bonus within 60 feet to you, as long as they are not being worn or carried. You call these to your hands or to telekinetically orbit around you until the end of your turn (after which they fall to the ground). Weapons telekinetically orbiting you can only be used when throwing that weapon. At the end of your turn (or if your rage ends) all orbiting weapons drop to the ground around you.</p>
         </description>
         <sheet>
-            <description>description</description>
+            <description>All melee weapons gain a thrown 30/60 property for you. This range is reduced to 15/45 if the weapon has the heavy property and increased to 60/120 if the weapon has the light property.
+            You can apply your Rage bonus damage to damage rolls made by thrown weapons, and can gain advantage from Reckless Attack on attacks made with thrown weapons.
+            At the start of your turn while you are raging, you can call {{proficiency}} weapons or Tiny objects within 60 feet to you, as long as they are not being worn or carried. You call these to your hands or to telekinetically orbit around you until the end of your turn (after which they fall to the ground). Weapons telekinetically orbiting you can only be used when throwing that weapon. At the end of your turn (or if your rage ends) all orbiting weapons drop to the ground around you.</description>
         </sheet>
     </element>
     <element name="Distant Grasp" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_DISTANT_GRASP">
         <description>
-            <p></p>
+            <p>Additionally at 3rd level, you can manipulate small objects within 30 feet with your mind as if using your hand to interact with them, though you have disadvantage on any checks relating to Dexterity when doing so. You can use this power to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can’t Attack, activate magical items, or carry more than 10 pounds in this manner. You can move an item you are controlling in this way up to 30 feet during your turn.</p>
+            <p class="indent">While raging, the amount of pounds you can lift with this ability increases to 20 times your Barbarian level.</p>
         </description>
         <sheet>
-            <description>description</description>
+            <description>You can manipulate small objects within 30 feet with your mind as if using your hand to interact with them, though you have disadvantage on any checks relating to Dexterity when doing so. You can use this power to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can’t Attack, activate magical items, or carry more than 10 pounds in this manner. You can move an item you are controlling in this way up to 30 feet during your turn.
+            While raging, the amount of pounds you can lift with this ability increases to {{20xbarb}}.</description>
         </sheet>
+        <rules>
+            <stat name="20xbarb" value="level:barbarian" bonus="base"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+            <stat name="20xbarb" value="level:barbarian"/>
+        </rules>
     </element>
     <element name="Forceful Mind" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FORCEFUL_MIND">
         <description>
-            <p></p>
+            <p>Starting at 6th level, you gain the ability to use the psionic power Telekinetic Force. The DC for your Telekinetic Force is 8 + your Strength modifier + your proficiency bonus. When you take the attack action, you can use Telekinetic Force in place of one attack. While you are raging, you can add your Strength modifier and Rage bonus damage to damage done with Telekinetic Force.</p>
         </description>
         <sheet>
-            <description>description</description>
+            <description>When you take the attack action, you can use Telekinetic Force in place of one attack. While you are raging, you can add {{forcefullminddmg}} to damage done with Telekinetic Force.</description>
         </sheet>
+        <rules>
+            <stat name="forcefullminddmg" value="strength:modifier" bonus="base"/>
+            <stat name="forcefullminddmg" value="barbarian rage:damage"/>
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_TELEKINETIC_FORCE_BARBARIAN" spellcasting="Raging Mind" />
+        </rules>
+        <spellcasting name="Raging Mind" ability="Strength" prepare="false">
+        </spellcasting>
+    </element>
+    <element name="Telekinetic Force" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_TELEKINETIC_FORCE_BARBARIAN">
+        <requirements>ID_KTH_CCC_ARCHETYPE_BARBARIAN_RAGINGMIND</requirements>
+        <description>
+            <p>You smash a target creature or object you can see with your mental power. The target must succeed on a Strength saving throw or take 1d10 bludgeoning damage, and either be shoved 5 feet in a direction of your choosing or be knocked prone.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
     </element>
     <element name="Interference Field" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_INTERFERENCE_FIELD">
         <description>
-            <p></p>
+            <p>Additionally at 6th level, while you are raging, you and all allied creatures within 10 feet of you are considered to have half cover against ranged weapon attacks, as your telekinetic powers distort the area around you.</p>
         </description>
         <sheet>
-            <description>description</description>
+            <description>While you are raging, you and all allied creatures within 10 feet of you are considered to have half cover against ranged weapon attacks, as your telekinetic powers distort the area around you.</description>
         </sheet>
     </element>
     <element name="Collateral Damage" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_COLLATERAL_DAMAGE">
         <description>
-            <p></p>
+            <p>Starting at 10th level, when you use Reckless Attack with a thrown weapon, you can ricochet to try and hit a second target within 5 feet of the first. Use the lower of the two dice you rolled for the Reckless Attack as the attack roll against the second creature. If disadvantage would cancel out the advantage from Reckless Attack, you may not use this feature.</p>
         </description>
         <sheet>
-            <description>description</description>
+            <description>When you use Reckless Attack with a thrown weapon, you can ricochet to try and hit a second target within 5 feet of the first. Use the lower of the two dice you rolled for the Reckless Attack as the attack roll against the second creature. If disadvantage would cancel out the advantage from Reckless Attack, you may not use this feature.</description>
         </sheet>
     </element>
     <element name="Fling Foes" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_RAGINGMIND_FLING_FOES">
         <description>
-            <p></p>
+            <p>Starting at 14th level, you become the epicenter of the battlefield, flinging targets about. When you hit a target with a weapon while raging, you may choose to knock them 5 feet directly away from you on hit. When you use Telekinetic Force while raging, you can always choose to apply the Hurling modifier (as if using 2 psi points), shoving the target an additional 20 feet in a direction of your choice.</p>
+            <p class="indent">Additionally, all Medium and smaller objects and creatures that you are holding become improvised weapons for you, dealing 1d6 bludgeoning damage, with the thrown 20/60 property. To throw an unwilling creature, you must have it grappled, and you can’t throw it beyond its normal range.</p>
+            <p class="indent">Whenever you shove or throw a creature into another creature, both creatures take 1d6 bludgeoning damage.</p>
         </description>
         <sheet>
-            <description>description</description>
+            <description>When you hit a target with a weapon while raging, you may choose to knock them 5 feet directly away from you on hit. When you use Telekinetic Force while raging, you can always choose to apply the Hurling modifier (as if using 2 psi points), shoving the target an additional 20 feet in a direction of your choice.
+            Additionally, all Medium and smaller objects and creatures that you are holding become improvised weapons for you, dealing 1d6 bludgeoning damage, with the thrown 20/60 property. To throw an unwilling creature, you must have it grappled, and you can’t throw it beyond its normal range.
+            Whenever you shove or throw a creature into another creature, both creatures take 1d6 bludgeoning damage.</description>
         </sheet>
     </element>
 </elements>

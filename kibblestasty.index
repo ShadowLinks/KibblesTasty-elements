@@ -77,7 +77,9 @@
         <file name="barbarian-dragon.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-dragon.xml" />
         <file name="barbarian-instinct.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-instinct.xml" />
         <file name="barbarian-mutation.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-mutation.xml" />
-        
+        <file name="barbarian-ragingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-ragingmind.xml" />
+        <file name="barbarian-exosuit.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/barbarian-exosuit.xml" />
+
         <file name="bard-fools.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/bard-fools.xml" />
 
         <file name="cleric-dream.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/cleric-dream.xml" />
