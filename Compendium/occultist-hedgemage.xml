@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tradition of the Hedge Mage</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="occultist-hedgemage.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-hedgemage.xml" />
         </update>
     </info>
@@ -144,7 +144,7 @@
         </sheet>
         <rules>
             <select type="Spell" name="Spell (Hedge Mage)"  supports="$(spellcasting:list), $(spellcasting:slots)" spellcasting="Occultist" prepared="true"  number="1" level="3" />
-            <select type="Class Feature" name="Occult Rites (Hedge Mage)" supports="Generic-Occult-Rite,Hedge-Occult-Rite" number="1"/>
+            <select type="Class Feature" name="Occult Rites (Hedge Mage)" supports="Generic-Occult-Rite||Hedge-Occult-Rite" number="1"/>
         </rules>
     </element>
     <element name="Improvised Ritual" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_ARCHETYPE_FEATURE_OCCULTIST_HEDGEMAGE_IMPROVISED_RITUAL">
