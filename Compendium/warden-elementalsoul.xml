@@ -68,7 +68,7 @@
         <description>
             <p>At 1st level, you learn the cantrips manipulate fire and manipulate water.</p>
         </description>
-        <sheet display="false">>
+        <sheet display="false">
             <description></description>
         </sheet>
         <rules>

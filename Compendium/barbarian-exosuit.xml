@@ -9,7 +9,7 @@
     <element name="Path of the Exosuit" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_BARBARIAN_EXOSUIT">
         <supports>Primal Path</supports>
         <description>
-            <p></p>>
+            <p></p>
             <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_EXOSUIT" />
             <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_EMPOWERED_MOVEMENT" />
             <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARBARIAN_EXOSUIT_POWER_FIST" />

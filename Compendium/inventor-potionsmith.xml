@@ -78,7 +78,7 @@
             <p>At 3rd level, you have discovered the secrets to drastically bypass the alchemical brewing process, crafting potent magical effects through the direct infusion of the potion with your own magic. When you finish a short or long rest, you can create any number of potions, choosing one of the following spells for each potion and expending a spell slot as if you were casting the spell. You must provide an empty vial for each potion you create in this way.</p>
             <table>
                 <thead>
-                    <tr><td><em>Spell Level</em>></td><td><em>Infusion Spells</em></td></tr>
+                    <tr><td><em>Spell Level</em></td><td><em>Infusion Spells</em></td></tr>
                 </thead>
                 <tr><td>1st</td><td>cure wounds, fog cloud, grease, heroism</td></tr>
                 <tr><td>2nd</td><td>barkskin, lesser restoration, shatter, web</td></tr>
