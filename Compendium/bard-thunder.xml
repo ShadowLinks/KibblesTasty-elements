@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>College of Thunder Bard</name>
+        <update version="0.0.1">
+            <file name="bard-thunder.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/bard-thunder.xml" />
+        </update>
+    </info>
+    <element name="College of Thunder" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_BARD_THUNDER">
+        <supports>Bard College</supports>
+        <description>
+            <p>Some bards grow in talent, weaving beautiful ballads that move their listeners to tears. Some bards just turn up the volume. The College of Thunder is a path for those who want to be heard—to convey their message with great emphasis to as many people as possible. They often are keenly interested in innovating their instruments, finding new improvements that allow them to make new, louder, sounds... even if the musicality of those sounds is sometimes debated by more classical artist</p>
+            <p class="indent">Lacking in subtlety, these bards are viewed as innovators and pioneers by themselves... and generally a large pain in the ears by most others, especially their preceding generation.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_DRAMATIC_CANTRIPS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_HARSH_CHORD" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_THUNDERING_MAGIC" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_LOUDER" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_AMPLIFIED_ANTICS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_REVERBERATING_ECHO" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_DRAMATIC_CANTRIPS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_HARSH_CHORD" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_THUNDERING_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_LOUDER" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_AMPLIFIED_ANTICS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_REVERBERATING_ECHO" level="14" />
+        </rules>
+    </element>
+    <element name="Dramatic Cantrips" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_DRAMATIC_CANTRIPS">
+        <description>
+            <p>At 3rd level, you become quite adept at getting loud. You learn the thaumaturgy and thunder note cantrips, which don’t count against the number of bard cantrips you know.</p>
+        </description>
+        <sheet display="false">
+            <description>Description</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Bard" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_THUNDER_NOTE" spellcasting="Bard" />
+        </rules>
+    </element>
+    <element name="Harsh Chord" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_HARSH_CHORD">
+        <description>
+            <p>Starting at 3rd level, as an action you can expend one use of your Bardic Inspiration to play a powerful chord that sweeps outward. Each creature of your choice within 20 feet of you must make a Constitution saving throw. A creature takes thunder damage equal to your bardic inspiration die + your bard level on a failed saving throw, and half as much damage on a successful one. Constitution saving throws to maintain concentration on spells triggered by this damage are made with disadvantage.</p>
+        </description>
+        <sheet>
+            <description>As an action you can expend one use of your Bardic Inspiration to play a powerful chord that sweeps outward. Each creature of your choice within 20 feet of you must make a Constitution saving throw. A creature takes thunder damage equal to your bardic inspiration die + {{level:bard}} on a failed saving throw, and half as much damage on a successful one. Constitution saving throws to maintain concentration on spells triggered by this damage are made with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Thundering Magic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_THUNDERING_MAGIC">
+        <description>
+            <p>Additionally at 3rd level, you gain access to an expanded spell list. You learn the following spells at the following levels, and they do not count against the number of bard spells known. The following spells are considered bard spells for you even if they don’t normally appear on the bard list.</p>
+            <table>
+                <thead>
+                    <tr><td>Bard Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>thunder punch, shatter</td></tr>
+                <tr><td>5th</td><td>thunder pulse</td></tr>
+                <tr><td>7th</td><td>echoing lance</td></tr>
+                <tr><td>9th</td><td>sonic shriek</td></tr>
+            </table>
+        </description>
+        <rules>
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_THUNDER_PUNCH" spellcasting="Bard" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" spellcasting="Bard" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_THUNDER_PULSE" spellcasting="Bard" level="5" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ECHOING_LANCE" spellcasting="Bard" level="7" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_SONIC_SHRIEK" spellcasting="Bard" level="9" />
+        </rules>
+    </element>
+    <element name="Louder" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_LOUDER">
+        <description>
+            <p>Starting at 6th level, when you cast a spell that deals thunder damage, you can add your Charisma modifier to the damage dealt.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that deals thunder damage, you can add your Charisma modifier ({{charisma:modifier}}) to the damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Amplified Antics" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_AMPLIFIED_ANTICS">
+        <description>
+            <p>Additionally at 6th level, when you cast a bard spell with a range greater than 5 feet, the range increases by 30 feet (this doesn’t affect the area of spells, including spells with their area listed in their range such as thunderwave).</p>
+        </description>
+        <sheet>
+            <description>When you cast a bard spell with a range greater than 5 feet, the range increases by 30 feet (excludes aoe area)</description>
+        </sheet>
+    </element>
+    <element name="Reverberating Echo" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_BARD_THUNDER_REVERBERATING_ECHO">
+        <description>
+            <p>At 14th level, when you expend a spell slot to cast a spell that deals thunder damage, you can cast that spell again on your next turn without expending a spell slot, but the damage it deals is halved.</p>
+        </description>
+        <sheet>
+            <description>When you expend a spell slot to cast a spell that deals thunder damage, you can cast that spell again on your next turn without expending a spell slot, but the damage it deals is halved.</description>
+        </sheet>
+    </element>
+</elements>
