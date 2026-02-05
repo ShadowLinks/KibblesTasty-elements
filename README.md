@@ -13,8 +13,8 @@ Currently planning on adding content Kibbles' Compendium of Legends and Legacies
 - Spellblade
 - Warden
 - Warlord
-- Psion - Additional Subclasses in Progress
-- Inventor - In Progress
+- Psion
+- Inventor
 
 
 ### Archetypes (40+)
@@ -23,18 +23,18 @@ Barbarian
 - Path of the Dragon
 - Path of Instinct
 - Path of Mutation
-- Path of the Raging Mind - In Progress
-- Path of the Exosuit - In Progress
+- Path of the Raging Mind
+- Path of the Exosuit
 
 Bard
 - College of Fools
-- College of Thunder - In Progress
+- College of Thunder
 
 Cleric
 - Dream Domain
 - Judgement Domain
 - Martyr Domain
-- Mystery Cult - In Progress
+- Mystery Cult
 
 Druid
 - Circle of the Aspects
