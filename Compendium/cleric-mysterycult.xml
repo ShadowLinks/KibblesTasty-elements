@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Mystery Cult Cleric</name>
+        <update version="0.0.1">
+            <file name="cleric-mysterycult.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/cleric-mysterycult.xml" />
+        </update>
+    </info>
+    <element name="Mystery Cult" type="Archetype" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_CLERIC_MYSTERYCULT">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>While most clerics follow defined gods who seek to convert others to the cause, those of the Mystery Cults often intentionally obscure their faith with esoteric references and cloaked intentions. No less devoted than their more classically divine peers, they are not merely warlocks, but people of true faith in their dark and unknown deities.</p>
+            <p class="indent">Standing at the blasphemous confluence of divine and psionic power, they are almost universally condemned and feared, often shrouding their nature and abilities with mystery and working toward esoteric goals.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_SPELLS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_SILENT_LANGUAGE" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_UNCANNY_INSIGHT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_CD_INVOKE_BETRAYAL" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_ESOTERIC_RITES" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_POTENT_SPELLCASTING" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_DARK_TRUTH" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_SILENT_LANGUAGE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_UNCANNY_INSIGHT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_CD_INVOKE_BETRAYAL" level="2" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_ESOTERIC_RITES" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_POTENT_SPELLCASTING" level="8" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_DARK_TRUTH" level="17" />
+        </rules>
+    </element>
+    <element name="Mystery Cult Domain Spells" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_SPELLS">
+        <description>
+            <p>You gain domain spells at the cleric levels listed in the Mystery Cult Domain Spells table.</p>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>frighten, terrifying visions</td></tr>
+                <tr><td>3rd</td><td>augury, detect thoughts</td></tr>
+                <tr><td>5th</td><td>fear, nondetection</td></tr>
+                <tr><td>7th</td><td>compulsion, summon horror</td></tr>
+                <tr><td>9th</td><td>dominate person, modify memory</td></tr>
+            </table>
+        </description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+        <rules>
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_KTH_SPELL_FRIGHTEN" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_KTH_SPELL_TERRIFYING_VISIONS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_AUGURY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_FEAR" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_COMPULSION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_KTH_SPELL_SUMMON_HORROR" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_DOMINATE_PERSON" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_MODIFY_MEMORY" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    <element name="Silent Language" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_SILENT_LANGUAGE">
+        <description>
+            <p>Starting when you choose this domain at 1st level, you can communicate telepathically with any creature you can see within 30 feet of you, and they can reply in kind. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</p>
+        </description>
+        <sheet>
+            <description>You can communicate telepathically with any creature you can see within 30 feet of you, and they can reply in kind. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</description>
+        </sheet>
+    </element>
+    <element name="Uncanny Insight" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_UNCANNY_INSIGHT">
+        <description>
+            <p>Additionally at 1st level, as a reaction to being hit by an attack, you can add your Wisdom modifier to your AC until the start of your next turn, including against the triggering attack.</p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>As a reaction to being hit by an attack, you can add your Wisdom modifier to your AC until the start of your next turn, including against the triggering attack.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Invoke Betrayal" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_CD_INVOKE_BETRAYAL">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to influence the mind of a target within range. When a creature within 30 feet makes an attack roll, as a reaction you can force that creature to make a Wisdom saving throw. On failure, you can direct the attack at another creature within range.</p>
+        </description>
+        <sheet usage="Channel Divinity" alt="Invoke Betrayal">
+            <description>When a creature within 30 feet makes an attack roll, as a reaction you can force that creature to make a Wisdom saving throw. On failure, you can direct the attack at another creature within range.</description>
+        </sheet>
+    </element>
+    <element name="Esoteric Rites" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_ESOTERIC_RITES">
+        <description>
+            <p>Starting at 6th level, you can develop your faith in one of the following ways, unlocking special powers as a reward for your conviction. You select one of the following features. You can select additional Esoteric Rites at 10th and 14th levels.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select name="Esoteric Rite 1" type="Archetype Feature" supports="esoteric-rites" level="6" />
+            <select name="Esoteric Rite 2" type="Archetype Feature" supports="esoteric-rites" level="10" />
+            <select name="Esoteric Rite 3" type="Archetype Feature" supports="esoteric-rites" level="14" />
+        </rules>
+    </element>
+    <element name="Gift of Tongues" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_ESOTERIC_RITES_GIFT_OF_TONGUES">
+        <supports>esoteric-rites</supports>
+        <description>
+            <p>You learn Deep Speech. If you already know Deep Speech, you gain one additional language of your choice. You can use this esoteric language as your verbal components, and creatures can no longer successfully identify a spell you are casting.</p>
+            <p class="indent">Spell casting checks to interfere with your magic are made with disadvantage (such as counterspell), and must make a check even if they would normally automatically succeed.</p>
+        </description>
+        <sheet>
+            <description>You can use this esoteric language (Deep Speech) as your verbal components, and creatures can no longer successfully identify a spell you are casting.
+            Spell casting checks to interfere with your magic are made with disadvantage (such as counterspell), and must make a check even if they would normally automatically succeed.</description>
+        </sheet>
+        <rules>
+            <grant type="Grant" id="ID_INTERNAL_GRANTS_LANGUAGE_DEEP_SPEECH_ALT_2" requirements="!ID_LANGUAGE_DEEP_SPEECH" />
+            <grant type="Grant" id="ID_INTERNAL_GRANTS_LANGUAGE_DEEP_SPEECH_ALT" requirements="!ID_INTERNAL_GRANTS_LANGUAGE_DEEP_SPEECH_ALT_2" />
+        </rules>
+    </element>
+    <element type="Grant" name="Gift of Tongues - Additional Language" source="Kibbles' Compendium of Legends and Legacies" id="ID_INTERNAL_GRANTS_LANGUAGE_DEEP_SPEECH_ALT">
+        <description>
+            <p>Grants alternative language to Deep Speech language.</p>
+        </description>
+        <rules>
+            <select type="Language" name="Language, Gift of Tongues" supports="Standard||Exotic" />
+        </rules>
+    </element>
+    <element type="Grant" name="Gift of Tongues - Deep Speech" source="Kibbles' Compendium of Legends and Legacies" id="ID_INTERNAL_GRANTS_LANGUAGE_DEEP_SPEECH_ALT_2">
+        <description>
+            <p>Grants the Deep Speech language.</p>
+        </description>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+        </rules>
+    </element>
+    <element name="Gift of Prophecy" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_ESOTERIC_RITES_GIFT_OF_PROPHECY">
+        <supports>esoteric-rites</supports>
+        <description>
+            <p>When you close your eyes, you can see flickers of the future. You regain one expended use of Uncanny Insight when you finish a short rest.</p>
+        </description>
+        <sheet>
+            <description>You regain one expended use of Uncanny Insight when you finish a short rest.</description>
+        </sheet>
+    </element>    
+    <element name="Gift of Mystery" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_ESOTERIC_RITES_GIFT_OF_MYSTERY">
+        <supports>esoteric-rites</supports>
+        <description>
+            <p>You learn the associated psionic power of one Psionic Discipline of your choice. The psionic power of the Discipline becomes a 1st-level spell for you. When you cast it using a spell slot, you cast it as if expend psi points equal to the spell slot level spent (for example, when casting as a 1st-level spell, you cast it as if empowering it with 1 psi point).</p>
+        </description>
+        <sheet>
+            <description>You learn the associated psionic power of one Psionic Discipline of your choice. The psionic power of the Discipline becomes a 1st-level spell for you. When you cast it using a spell slot, you cast it as if expend psi points equal to the spell slot level spent.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Psionic Power, Gift of Mystery" supports="base-psionic-power" />
+        </rules>
+    </element>
+    <element name="Potent Spellcasting" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_POTENT_SPELLCASTING">
+        <description>
+            <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+        </description>
+        <sheet>
+            <description>You add your Wisdom modifier ({{wisdom:modifier}}) to the damage you deal with any cleric cantrip.</description>
+        </sheet>
+    </element>
+    <element name="Dark Truth" type="Archetype Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_ARCHETYPE_FEATURE_CLERIC_MYSTERYCULT_DARK_TRUTH">
+        <description>
+            <p>Starting at 17th level, your mind is inured to the horrors in which you deal, the veil cast aside from your eyes.</p>
+            <ul>
+                <li>You are immune to Psychic damage.</li>
+                <li>You gain truesight out to 60 feet.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are immune to Psychic damage and gain truesight out to 60 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_TRUESIGHT" />
+            <stat name="truesight:range" value="60" bonus="base" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" />
+        </rules>
+    </element>
+</elements>

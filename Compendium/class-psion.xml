@@ -264,7 +264,7 @@
         </sheet>
     </element>
     <element name="Enhancing Surge" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_ENHANCING_SURGE">
-        <supports>Psionic</supports>
+        <supports>Psionic,base-psionic-power</supports>
         <description>
             <p>You empower the body of a target creature you can see with your Psionics. The target gains 1d6 temporary hit points and the next time the target deals damage, it deals 1d6 additional damage to one application of that damage roll. Any remaining temporary hit points from this power fade when you use it again.</p>
             <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Enhancing Surge (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
@@ -427,7 +427,7 @@
         </sheet>
     </element>
     <element name="Astral Construct" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_ASTRAL_CONSTRUCT">
-        <supports>Psionic</supports>
+        <supports>Psionic,base-psionic-power</supports>
         <description>
             <p>You project an ethereal creation from your mind at a space you can see within range, taking the shape of a Medium or smaller creature, weapon, or other object. This creation is clearly ethereal in nature. When you create it, and on subsequent turns using your action to mentally control it, you can move it up to 30 feet in any direction and attack, so long as it doesn’t move beyond the range of the power. To attack with it, make a melee spell attack. On a hit, the target takes 1d8 force damage. If the Astral Construct moves out of range of the spell, it fades away into nothing, ending the spell.</p>
             <p class="indent">While the Astral Construct is active, you can spend psi points up to your per use limit to issue commands that affect and empower your construct. Commands require no action, but you can’t exceed your psi point limit in total commands issued, and each command can only be issued once per turn.</p>
@@ -597,7 +597,7 @@
         </sheet>
     </element>
     <element name="Telekinetic Force" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_TELEKINETIC_FORCE">
-        <supports>Psionic</supports>
+        <supports>Psionic,base-psionic-power</supports>
         <description>
             <p>You smash a target creature or object you can see with your mental power. The target must succeed on a Strength saving throw or take 1d10 bludgeoning damage, and either be shoved 5 feet in a direction of your choosing or be knocked prone.</p>
             <p class="indent">You can spend Psi Points up to your per use limit to add the following modifiers to Telekinetic Force (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
@@ -940,7 +940,7 @@
         </sheet>
     </element>
     <element name="Phase Rift" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_PHASE_RIFT">
-        <supports>Psionic</supports>
+        <supports>Psionic,base-psionic-power</supports>
         <description>
             <p>You step through space, traveling up to 10 feet in a straight line leaving a spatial tear behind. You can pass through creatures but can’t pass through objects, buildings or terrain more than 4 inches thick. Any creature in the path of this tear must make a Dexterity saving throw or take 1d8 force damage.</p>
             <p class="indent">You can spend psi points up to your per use limit to add the following modifiers to Phase Rift (you can add multiple modifiers). The points must be spent when choosing the target of the power.</p>
@@ -1106,7 +1106,7 @@
         </sheet>
     </element>
     <element name="Elemental Blast" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_ELEMENTAL_BLAST">
-        <supports>Psionic</supports>
+        <supports>Psionic,base-psionic-power</supports>
         <description>
             <p>You can use your mind to create a burst of elemental power, blasting a target you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 cold, fire, force or lightning damage.</p>
             <p class="indent">For each die of cold damage dealt, the creature’s speed is reduced by 5 feet until the end of their next turn. For each die of fire damage dealt by the original attack, the creature takes 1d4 fire damage at the start of its next turn. For each die of lightning damage dealt, an arc of lightning strikes another creature of your choice within 30 feet of the target, dealing 1d4 lightning damage (multiple arcs may strike the same creature). Damage from these secondary effects doesn’t add any bonuses (such as Empowered Psionics).</p>
@@ -1374,7 +1374,7 @@
         </rules>
     </element>
     <element name="Seeing" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_SEEING">
-        <supports>Psionic</supports>
+        <supports>Psionic,base-psionic-power</supports>
         <description>
             <p>You concentrate and peer into the stream of future possibilities, gaining insight into what will happen next; you can select one of the following:</p>
             <ul>
@@ -1498,7 +1498,7 @@
         </sheet>
     </element>
     <element name="Denial" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_DENIAL">
-        <supports>Psionic</supports>
+        <supports>Psionic,base-psionic-power</supports>
         <description>
             <p>You release a burst of raw psionic nullification at a creature you can see within range. The creature must make a Charisma saving throw. On failure, it takes 1d4 force damage as its existence is disrupted.</p>
             <p class="indent">If the target is an aberration, celestial, construct, elemental, fey, fiend, undead, or a creature with the ability to cast spells or use psionic powers, it takes an extra 1d4 force damage, and becomes disoriented; until the end of its next turn, it rolls a d4 and subtracts the number rolled from all its attack rolls and ability checks, as well as its Constitution saving throws to maintain concentration. A creature can choose to fail the saving throw.</p>
@@ -1657,7 +1657,7 @@
         </sheet>
     </element>
     <element name="Mind Leech" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_MIND_LEECH">
-        <supports>Psionic</supports>
+        <supports>Psionic,base-psionic-power</supports>
         <description>
             <p>You assault the mind of a target you can see within range, rending and devouring its psionic energy. The target must succeed on a Charisma saving throw or take 1d6 psychic damage. If the target is frightened, charmed, stunned, restrained, grappled, or paralyzed, the psychic damage becomes 1d12 instead. On a failed save, you gain a psionic charge of consumed power until the end of your next turn. You can expend this charge when you deal damage to deal additional damage equal to your Intelligence modifier, or consume this charge at the end of your turn to gain temporary hit points equal to your Intelligence modifier. You can spend only one charge at a time.</p>
             <p class="indent">You can target the corpse of a recently perished creature with this power, as long as the target has died within the last minute and not been previously leeched by this power.</p>
