@@ -108,9 +108,10 @@
         <file name="monk-outcast.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/monk-outcast.xml" />
         <file name="monk-swordsaint.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/monk-swordsaint.xml" />
         <file name="monk-soulblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/monk-soulblade.xml" />
-        
+
         <file name="paladin-goodestboi.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-goodestboi.xml" />
         <file name="paladin-silence.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-silence.xml" />
+        <file name="paladin-sanity.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-sanity.xml" />
 
         <file name="ranger-bountyhunter.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/ranger-bountyhunter.xml" />
 

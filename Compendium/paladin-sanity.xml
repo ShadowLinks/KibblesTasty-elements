@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Oath of Sanity Paladin</name>
+        <update version="0.0.1">
+            <file name="paladin-sanity.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-sanity.xml" />
+        </update>
+    </info>
+    <element name="Oath of Sanity" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_PALADIN_SANITY">
+         <supports>Sacred Oath</supports>
+        <description>
+            <p>The Oath of Sanity is the oath of someone that has survived exposure to the horrors that lay beyond the veil, or perhaps someone that has prepared for them through a mystical order, a forgotten tradition... or particularly vivid and over active imagination.</p>
+            <p class="indent">While most who have glimpsed into the realms beyond suffer instant and irrevocable madness, these Paladins have glimpsed beyond and sworn to remain sane, no matter what the cost. They reject shielding their fragile mind from what they’ve seen in a comforting shroud of madness.</p>
+            <p class="indent">An Oath of Sanity Paladin will usually seem to others as true neutral or lawful neutral following obscure codes incomprehensible to those who haven’t experienced a brush with the beyond, their morality coming in blue and orange rather than black and white. Almost universally they are dedicated to preventing the threats from beyond from consuming the material world and shattering the fragile minds within.</p>
+            <h5 class="caption">TENANTS OF SANITY</h5>
+            <p>Though the exact words and strictures of the Oath of Sanity vary, paladins of this oath share these tenets.</p>
+            <p class="indent">
+                <b><i>Order</i></b>
+                Never act on random or chaotic impulses. These are the cracks of madness.
+            </p>
+            <p class="indent">
+                <b><i>Vigilance</i></b>
+                Never let your attention wander, lest you miss the signs of madness.
+            </p>
+            <p class="indent">
+                <b><i>Discipline</i></b>
+                 Never indulge in a lapse of behavior, your habits keep you safe from madness.
+            </p>
+            <p class="indent">
+                <b><i>Solemnity</i></b>
+                Your work is terrible. Never take pleasure in it. That leads to the comfort of madness
+            </p>
+            <p class="indent">
+                <b><i>Sanity</i></b>
+                 No matter what, never give into madness.
+            </p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CD" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_SPELLS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_ACTIVE_MIND" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CONSTANT_VIGILANCE" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CLARITY_OF_PURPOSE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CD" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_ACTIVE_MIND" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CONSTANT_VIGILANCE" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CLARITY_OF_PURPOSE" level="20" />
+        </rules>
+    </element>
+    <element name="Channel Divinity" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CD">
+        <description>
+            <p><strong>Turn the Abberant.</strong> As an action, you can make any aberration or undead, provided that it’s within 30 feet and that can see or hear you, make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
+            <p class="indent">If the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.</p>
+            <p><strong>Deny the Supernatural.</strong> Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action to attempt to strip the target of its powers. The target must make a Charisma saving throw or be unable to cast spells or use psionic abilities until the end of its next turn.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CD_TURN_THE_ABERRANT" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CD_DENY_THE_SUPERNATURAL" />
+        </rules>
+    </element>
+    <element name="Turn the Abberant" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CD_TURN_THE_ABERRANT">
+        <description>
+            <p>As an action, you can make any aberration or undead, provided that it’s within 30 feet and that can see or hear you, make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
+            <p class="indent">If the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.</p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>As an action, you can make any aberration or undead, provided that it’s within 30 feet and that can see or hear you, make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.
+            If the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.</description>
+        </sheet>
+    </element>
+    <element name="Deny the Supernatural" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CD_DENY_THE_SUPERNATURAL">
+        <description>
+            <p>Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action to attempt to strip the target of its powers. The target must make a Charisma saving throw or be unable to cast spells or use psionic abilities until the end of its next turn.</p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action to attempt to strip the target of its powers. The target must make a Charisma saving throw or be unable to cast spells or use psionic abilities until the end of its next turn.</description>
+        </sheet>
+    </element>
+    <element name="Oath Spells" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_SPELLS">
+        <description>
+            <p>You gain oath Spells at the paladin levels listed:</p>
+            <table>
+                <thead>
+                    <tr><td>Paladin Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>detect magic, protection from evil and good</td></tr>
+                <tr><td>5th</td><td>nullify effect, see invisibility</td></tr>
+                <tr><td>9th</td><td>dispel magic, remove curse</td></tr>
+                <tr><td>13th</td><td>banishment, dimension door</td></tr>
+                <tr><td>17th</td><td>dispel evil and good, hold monster</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_DETECT_MAGIC" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_KTH_COLAL_PSIONIC_NULLIFY_EFFECT" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_SEE_INVISIBILITY" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_DISPEL_MAGIC" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_REMOVE_CURSE" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_BANISHMENT" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_DIMENSION_DOOR" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_HOLD_MONSTER" />
+        </rules>
+    </element>
+    <element name="Active_Mind" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_ACTIVE_MIND">
+        <description>
+            <p>Beginning at 7th level, you can save against effects that allow you to save at the end of your turn at the start of your turn instead.</p>
+            <p class="indent">Starting at 18th level, you can use your reaction to extend this benefit to another creature you can see within 30 feet that starts their turn under an effect they can save against at the end of their turn.</p>
+        </description>
+        <sheet>
+            <description>You can save against effects that allow you to save at the end of your turn at the start of your turn instead.</description>
+            <description level="18">You can save against effects that allow you to save at the end of your turn at the start of your turn instead and you can use your reaction to extend this benefit to another creature you can see within 30 feet that starts their turn under an effect they can save against at the end of their turn.</description>
+        </sheet>
+    </element>
+    <element name="Constant Vigilance" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CONSTANT_VIGILANCE">
+        <description>
+            <p>Starting at 15th level, you can no longer be surprised, and your passive perception remains the same even while unconscious so long as you have at least 1 hit point.</p>
+            <p class="indent">Additionally, when you roll for initiative, if the total result of your roll is less than your passive perception, you can replace the result with your passive perception value.</p>
+        </description>
+        <sheet>
+            <description>You can no longer be surprised, and your passive perception remains the same even while unconscious so long as you have at least 1 hit point.
+            Additionally, when you roll for initiative, if the total result of your roll is less than {{perception:passive}}, you can replace it with that.</description>
+        </sheet>
+    </element>
+    <element name="Clarity of Purpose" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_PALADIN_SANITY_CLARITY_OF_PURPOSE">
+        <description>
+            <p>At 20th level, as an action, you can fully perceive the world around you for what it is, shattering the foul magics that bind and piercing the veils that hide, unrelenting and focused, gaining the following benefits for 1 minute:</p>
+            <ul>
+                <li>You can gain truesight with a range of 120 feet.</li>
+                <li>You are immune to psychic damage.</li>
+                <li>You have advantage on saving throws against magical or psionic effects.</li>
+                <li>When you strike an enemy with a Divine Smite you can choose to cast dispel magic on the target as a bonus action without expending a spell slot. If the level of the spell slot spent on Divine Smite was higher than 3rd level, you cast dispel magic at the level of spell slot spent.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you gain these benefits for 1 minute:
+            -You can gain truesight with a range of 120 feet.
+            -You are immune to psychic damage.
+            -You have advantage on saving throws against magical or psionic effects.
+            -When you strike an enemy with a Divine Smite you can choose to cast dispel magic on the target as a bonus action without expending a spell slot. If the level of the spell slot spent on Divine Smite was higher than 3rd level, you cast dispel magic at the level of spell slot spent.</description>
+        </sheet>
+    </element>
+</elements>
