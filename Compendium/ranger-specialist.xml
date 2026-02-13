@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Specialist Ranger </name>
+        <update version="0.0.1">
+            <file name="ranger-specialist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/ranger-specialist.xml" />
+        </update>
+    </info>
+    <element name="Specialist" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_RANGER_SPECIALIST">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p>Specialists are rangers that innovate their technique and equipment in equal measure. Deadly and clever, they keep their opponents guessing what is coming next.</p>
+            <p class="indent"></p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_KNACK" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_SPELL_SHOTS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_EMPOWERED_SHOTS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_GRAPPLE_SHOT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_ENDLESS_INNOVATION" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_KNACK" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_SPELL_SHOTS" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_EMPOWERED_SHOTS" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_GRAPPLE_SHOT" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_ENDLESS_INNOVATION" level="15" />
+        </rules>
+    </element>
+    <element name="Knack" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_KNACK">
+        <description>
+            <p>At 3rd level when you select this archetype, you gain proficiency with Tinker’s Tools. If you already have proficiency with Tinker’s Tools, you can gain proficiency with another artisan tool of your choice.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Knack" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Trick Shots" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS">
+        <description>
+            <p>At 3rd level, you gain the ability to create special pieces of ammunition. You can have a number of these special shots equal to your proficiency bonus, recreating expended ones during a short or long rest.</p>
+            <p class="indent">The DC for your Trick Shots is equal to your spell save DC. You can select from the following options for your special shots. You can make multiple copies of one shot, or select multiple different shots, as long as the total equals your proficiency bonus. You can swap out any unspent ones for other options during a short or long rest.</p>
+            <ul>
+                <li>Binding Shot - Instead of doing damage, this shot turns into a net when striking the target. The net gains additional hit points equal to your Ranger level.</li>
+                <li>Flash Shot - When this shot hits a target, it emits a brilliant flash of light. The target and creatures within 15 feet of the target must make a Dexterity saving throw or become blinded until the start of your next turn.</li>
+                <li>Explosive Shot - When this shot hits a target, it emits an explosion. The target and creatures within 10 feet of the target must make a Dexterity saving throw or take 1d6 fire damage and 1d6 thunder damage.</li>
+                <li>Guided Shot - When fired, this shot tracks its target. This attack is made with advantage, and ignores cover, including complete cover, as long as there is a path to the target you are aware of that requires the shot to travel less than the maximum range of the weapon used.</li>
+                <li>Rocket Shot - The attack’s range is doubled, and on a hit the target takes an extra 1d12 damage from the attack.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain the ability to create special pieces of ammunition. You can have {{proficiency}} of these special shots, recreating expended ones during a short or long rest.
+            The DC for your Trick Shots is {{spellcasting:dc}}. You can select from the following options for your special shots. You can make multiple copies of one shot, or select multiple different shots, as long as the total equals {{proficiency}}. You can swap out any unspent ones for other options during a short or long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_BINDING_SHOT" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_FLASH_SHOT" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_EXPLOSIVE_SHOT" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_GUIDED_SHOT" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_ROCKET_SHOT" />
+        </rules>
+    </element>
+    <element name="Binding Shot" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_BINDING_SHOT">
+        <description>
+            <p>Instead of doing damage, this shot turns into a net when striking the target. The net gains additional hit points equal to your Ranger level.</p>
+        </description>
+        <sheet>
+            <description>Instead of doing damage, this shot turns into a net when striking the target. The net gains {{level:ranger}} additional hit points.</description>
+        </sheet>
+    </element>
+    <element name="Flash Shot" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_FLASH_SHOT">
+        <description>
+            <p>When this shot hits a target, it emits a brilliant flash of light. The target and creatures within 15 feet of the target must make a Dexterity saving throw or become blinded until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When this shot hits a target, it emits a brilliant flash of light. The target and creatures within 15 feet of the target must make a Dexterity saving throw or become blinded until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Explosive Shot" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_EXPLOSIVE_SHOT">
+        <description>
+            <p>When this shot hits a target, it emits an explosion. The target and creatures within 10 feet of the target must make a Dexterity saving throw or take 1d6 fire damage and 1d6 thunder damage.</p>
+        </description>
+        <sheet>
+            <description>When this shot hits a target, it emits an explosion. The target and creatures within 10 feet of the target must make a Dexterity saving throw or take 1d6 fire damage and 1d6 thunder damage.</description>
+        </sheet>
+    </element>    
+    <element name="Guided Shot" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_GUIDED_SHOT">
+        <description>
+            <p>When fired, this shot tracks its target. This attack is made with advantage, and ignores cover, including complete cover, as long as there is a path to the target you are aware of that requires the shot to travel less than the maximum range of the weapon used.</p>
+        </description>
+        <sheet>
+            <description>When fired, this shot tracks its target. This attack is made with advantage, and ignores cover, including complete cover, as long as there is a path to the target you are aware of that requires the shot to travel less than the maximum range of the weapon used.</description>
+        </sheet>
+    </element>
+    <element name="Rocket Shot" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_TRICK_SHOTS_ROCKET_SHOT">
+        <description>
+            <p>The attack’s range is doubled, and on a hit the target takes an extra 1d12 damage from the attack.</p>
+        </description>
+        <sheet>
+            <description>The attack’s range is doubled, and on a hit the target takes an extra 1d12 damage from the attack.</description>
+        </sheet>
+    </element>
+    <element name="Spell Shots" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_SPELL_SHOTS">
+        <description>
+            <p>Starting at 7th level, you gain the ability to infuse special shots with magical abilities. You have a pool of these shots equal to your Wisdom modifier, recreating any expended shots during a long rest. As a bonus action, you can expend a spell slot infusing one of the spells from the following table into one of these shots.</p>
+            <p class="indent">The spell doesn’t trigger immediately, but triggers on impact. You can shoot the shot at a point within range or a creature. Regardless of whether the attack hits or misses the creature, the effect imbued in the shot is triggered at a point of your choice adjacent to the creature.</p>
+            <p class="indent">If the spell affects a line or cone, you can select the projection of the area from the point. If a spell requires concentration, it uses your concentration as normal.</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Slot Level</td><td>Infused Spell Options</td></tr>
+                </thead>
+                <tr><td>1st</td><td>burning hands, fog cloud</td></tr>
+                <tr><td>2nd</td><td>darkness, shatter</td></tr>
+                <tr><td>3rd</td><td>fireball, sleet storm</td></tr>
+                <tr><td>4th</td><td>black tentacles, ice storm</td></tr>
+                <tr><td>5th</td><td>cloudkill, acid rain</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You gain the ability to infuse special shots with magical abilities. You have a pool of {{wisdom:modifier}} shots, recreating any expended shots during a long rest. As a bonus action, you can expend a spell slot infusing one of the spells from the following list into one of these shots.
+            - Burning Hands, Fog Cloud, Darkness, Shatter, Fireball, Sleet Storm, Black Tentacles, Ice Storm, Cloudkill, Acid Rain.
+            The spell doesn’t trigger immediately, but triggers on impact. You can shoot the shot at a point within range or a creature. Regardless of whether the attack hits or misses the creature, the effect imbued in the shot is triggered at a point of your choice adjacent to the creature.
+            If the spell affects a line or cone, you can select the projection of the area from the point. If a spell requires concentration, it uses your concentration as normal.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" />
+            <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" />
+            <grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" />
+            <grant type="Spell" id="ID_KTH_COLAL_SPELL_ACID_RAIN" />
+        </rules>
+    </element>
+    <element name="Empowered Shots" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_EMPOWERED_SHOTS">
+        <description>
+            <p>Starting at 11th level, whenever you make either a Trick Shot or Spell Shot to deal damage to a creature, that creature takes an extra 1d8 damage.</p>
+        </description>
+        <sheet>
+            <description>Whenever you make either a Trick Shot or Spell Shot to deal damage to a creature, that creature takes an extra 1d8 damage.</description>
+        </sheet>
+    </element>
+    <element name="Grapple Shot" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_GRAPPLE_SHOT">
+        <description>
+            <p>Additionally at 11th level, you gain the ability to fire special shots with a range of 30 feet that carry a cord that immediately pulls to that location. As an action or attack as part of the Attack action, you can make this shot against a creature, surface, or object. This shot does no damage, but on a hit, if the creature or object is Small or smaller, it is immediately pulled up to 30 feet toward you. If the creature is Medium or larger you are pulled 30 feet toward it.</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to fire special shots with a range of 30 feet that carry a cord that immediately pulls to that location. As an action or attack as part of the Attack action, you can make this shot against a creature, surface, or object. This shot does no damage, but on a hit, if the creature or object is Small or smaller, it is immediately pulled up to 30 feet toward you. If the creature is Medium or larger you are pulled 30 feet toward it.</description>
+        </sheet>
+    </element>
+    <element name="Endless Innovation" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_SPECIALIST_ENDLESS_INNOVATION">
+        <description>
+            <p>Starting at 15th level, if you start your turn without a Trick Shot, you can create a Trick Shot as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>If you start your turn without a Trick Shot, you can create a Trick Shot as a bonus action.</description>
+        </sheet>
+    </element>
+</elements>

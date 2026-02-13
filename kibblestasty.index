@@ -114,6 +114,8 @@
         <file name="paladin-sanity.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/paladin-sanity.xml" />
 
         <file name="ranger-bountyhunter.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/ranger-bountyhunter.xml" />
+        <file name="ranger-mindreaper.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/ranger-mindreaper.xml" />
+        <file name="ranger-specialist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/ranger-specialist.xml" />
 
         <file name="rogue-assassin.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/rogue-assassin.xml" />
         <file name="rogue-divinehand.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/rogue-divinehand.xml" />

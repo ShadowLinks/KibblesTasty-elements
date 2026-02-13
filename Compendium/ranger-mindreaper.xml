@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Mind Reaper Ranger </name>
+        <update version="0.0.1">
+            <file name="ranger-mindreaper.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/ranger-mindreaper.xml" />
+        </update>
+    </info>
+    <element name="Mind Reaper" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_RANGER_MINDREAPER">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p>Mind Reapers are an incarnation of fear. Terrible creatures seen more often in stories told to frighten children or ancient legends than the material plane, these are predatory creatures most mortals would be right to fear, no matter what their intentions.</p>
+            <p class="indent">Some use these powers to spread fear, savoring the terror of their victims. Others use their powers to dispense what they view as justifice, stalking down and reaping only those they believe have earned such a grim fate.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_SPELLS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_PSYCHIC_REAPER" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_TELEPATHIC_COMMUNICATION" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_REAPERS_INTRUSION" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_AMPLIFIED_ANGUISH" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_MIND_HUNTER" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_TASTE_OF_FEAR" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_PSIONIC_ADAPTATION" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_PSYCHIC_REAPER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_TELEPATHIC_COMMUNICATION" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_REAPERS_INTRUSION" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_AMPLIFIED_ANGUISH" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_MIND_HUNTER" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_TASTE_OF_FEAR" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_PSIONIC_ADAPTATION" level="15" />
+        </rules>
+    </element>
+    <element name="Mind Reaper Spells" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_SPELLS">
+        <description>
+            <p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Mind Reaper Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>frighten</td></tr>
+                <tr><td>5th</td><td>detect thoughts</td></tr>
+                <tr><td>9th</td><td>fear</td></tr>
+                <tr><td>13th</td><td>confusion</td></tr>
+                <tr><td>17th</td><td>dominate person</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_SPELL_FRIGHTEN" spellcasting="Ranger" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Ranger" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" spellcasting="Ranger" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" spellcasting="Ranger" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" spellcasting="Ranger" level="17" />
+        </rules>
+    </element>
+    <element name="Psychic Reaper" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_PSYCHIC_REAPER">
+        <description>
+            <p>At 3rd level, when you attack a creature that is frightened, you gain advantage on the attack roll.</p>
+            <p class="indent">Additionally, you learn to imbue your attacks with lingering psionic energy. When you make an attack as part of the attack action, your attack deals an extra 1d4 psychic damage.</p>
+        </description>
+        <sheet>
+            <description>When you attack a creature that is frightened, you gain advantage on the attack roll.
+            Additionally, you learn to imbue your attacks with lingering psionic energy. When you make an attack as part of the attack action, your attack deals an extra 1d4 psychic damage.</description>
+        </sheet>
+    </element>
+    <element name="Telepathic Communication" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_TELEPATHIC_COMMUNICATION">
+        <description>
+            <p>Additionally at 3rd level, you can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</p>
+        </description>
+        <sheet>
+            <description>You can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</description>
+        </sheet>
+    </element><element name="Telepathic Intrusion" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_TELEPATHIC_INTRUSION">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You assault the mind of a creature you can see directly. The target must succeed on a Wisdom saving throw against your spell save DC, or take 1d8 psychic damage. If the target fails the saving throw, it has disadvantage on attacks made against you until the start of your next turn. You can choose to deal no damage to the creature when it fails its saving throw.</p>
+            <p class="indent">The points must be spent when choosing the target of the power.</p>
+            <p><strong>Rending </strong>(1+ psi points): The target takes 1d8 psychic damage for each additional point spent on a failed save.</p>
+            <p><strong>Terrifying </strong>(1 psi point): The target is frightened of you until the end of your next turn if it fails its saving throw.</p>
+            <p><strong>Meddling </strong> (2 psi points): You make one creature invisible to the target creature or cause the creature to see something that is not there with the effect of minor illusion until the start of your next turn if it fails its saving throw.</p>            
+            <p><strong>Overwhelming</strong>(3 psi points): The target is stunned until the end of its next turn if it fails its saving throw.</p>            
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Reaper's Intrusion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_REAPERS_INTRUSION">
+        <description>
+            <p>Starting at 7th level, you gain the Telepathic Intrusion psionic power. You gain a number of psi points equal to your proficiency bonus, regaining them on a short or long rest. You can use these points to empower your Telepathic Intrusion or cast spells granted by the subclass, spending 1 psi point per level of the spell in place of a spell slot.</p>
+            <p class="indent">When you spend 1 or more psi points to empower it, you can use Telepathic Intrusion as a bonus action.</p>
+            <div element="ID_KTH_CCC_PSIONIC_POWER_TELEPATHIC_INTRUSION" />
+        </description>
+        <sheet>
+            <description>You gain the Telepathic Intrusion psionic power. You gain {{proficiency}} psi points, regaining them on a short or long rest. You can use these points to empower your Telepathic Intrusion or cast spells granted by the subclass, spending 1 psi point per level of the spell in place of a spell slot.
+            When you spend 1 or more psi points to empower it, you can use Telepathic Intrusion as a bonus action.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_TELEPATHIC_INTRUSION" />
+        </rules>
+    </element>
+    <element name="Amplified Anguish" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_AMPLIFIED_ANGUISH">
+        <description>
+            <p>Starting at 11th level, whenever you deal psychic damage to a creature that is frightened of you, you deal an extra 1d8 psychic damage.</p>
+        </description>
+        <sheet>
+            <description>Whenever you deal psychic damage to a creature that is frightened of you, you deal an extra 1d8 psychic damage.</description>
+        </sheet>
+    </element>
+    <element name="Mind Hunter" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_MIND_HUNTER">
+        <description>
+            <p>Additionally at 11th level, when you’ve dealt psychic damage to a creature, you gain the ability to see that target as if by blindsight as long as it is within 120 feet of you until the end of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When you’ve dealt psychic damage to a creature, you gain the ability to see that target as if by blindsight as long as it is within 120 feet of you until the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Taste of Fear" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_TASTE_OF_FEAR">
+        <description>
+            <p>Starting at 15th level, when you deal psychic damage to a frightened creature, you gain temporary hit points equal to your Wisdom modifier + your proficiency bonus. If a creature dies while frightened of you, you regain 1 expend psi point.</p>
+        </description>
+        <sheet>
+            <description>When you deal psychic damage to a frightened creature, you gain {{tasteoffear:temphp}} temporary hit points. If a creature dies while frightened of you, you regain 1 expend psi point.</description>
+        </sheet>
+        <rules>
+            <stat name="tasteoffear:temphp" value="wisdom:modifier" />
+            <stat name="tasteoffear:temphp" value="proficiency" />
+        </rules>
+    </element>
+    <element name="Psionic Adaptation" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_RANGER_MINDREAPER_PSIONIC_ADAPTATION">
+        <description>
+            <p>Additionally at 15th level, you can expend your spell slots in place of psi points when using a psionic power, with a spell slot counting as an equal number of psi points.</p>
+        </description>
+        <sheet>
+            <description>You can expend your spell slots in place of psi points when using a psionic power, with a spell slot counting as an equal number of psi points.</description>
+        </sheet>
+    </element>
+</elements>
