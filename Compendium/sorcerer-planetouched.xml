@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Planetouched Origin Sorcerer</name>
+        <update version="0.0.1">
+            <file name="sorcerer-planetouched.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-planetouched.xml" />
+        </update>
+    </info>
+    <element name="Planetouched" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_SORCERER_PLANETOUCHED">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_SPELLS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_RIFTBORN" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_PHASE_OUT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_SORCEROUS_RIFTS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_ETHEREAL_CONTROL" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_PLANAR_COLLISION" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_RIFTBORN" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_PHASE_OUT" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_SORCEROUS_RIFTS" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_ETHEREAL_CONTROL" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_PLANAR_COLLISION" level="18" />
+        </rules>
+    </element>
+    <element name="Origin Spells" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_SPELLS">
+        <description>
+            <p>If you allow Sorcerers to take additional spells based on their subclass, the following are the recommended Origin Spells for the Aether Heart Origin.</p>
+            <table>
+                <thead>
+                    <tr><td>Sorerer Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>magic missle</td></tr>
+                <tr><td>3rd</td><td>star dust</td></tr>
+                <tr><td>5th</td><td>aether lance</td></tr>
+                <tr><td>7th</td><td>dimension door</td></tr>
+                <tr><td>9th</td><td>wall of force</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Origin Spell 1" level="1"  supports="ID_PHB_SPELL_MAGIC_MISSLE" spellcasting="Sorcerer" prepared="true"/>
+            <select type="Spell" name="Origin Spell 2" level="3"  supports="ID_KTH_COLAL_SPELL_STAR_DUST" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Origin Spell 3" level="5"  supports="ID_KTH_COLAL_SPELL_AETHER_LANCE" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Origin Spell 4" level="7"  supports="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Origin Spell 5" level="9"  supports="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" prepared="true" />
+        </rules>
+    </element>
+    <element name="Riftborn" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_RIFTBORN">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Phase Out" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_PHASE_OUT">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Sorcerous Rifts" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_SORCEROUS_RIFTS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ethereal Control" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_ETHEREAL_CONTROL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Planar Collision" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_PLANAR_COLLISION">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>

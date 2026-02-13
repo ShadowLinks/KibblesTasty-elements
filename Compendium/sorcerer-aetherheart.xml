@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Aether Heart Origin Sorcerer</name>
+        <update version="0.0.1">
+            <file name="sorcerer-aetherheart.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-aetherheart.xml" />
+        </update>
+    </info>
+    <element name="Aether Heart" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_SORCERER_AETHERHEART">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>Sorcerers of this origin are fueled by a deep connection to raw arcane energy, their soul touched by the raw stuff of the weave itself. Most of them don’t understand their connection to this power, but they can wield it with innate ease, manipulating magic by force of will alone.</p>
+            <p class="indent">Sometimes this is artificial in nature—an ironwrought drawing power from their arcane heart, for example—while other times this marks an individual that was exposed to the raw essence of aether, becoming infused and intrinsically linked to it. They are characterized by an easy affinity of warping magic and ease of manipulating it in its raw and purest forms.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_SPELLS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_AETHERBORN" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_OVERCHARGED_METAMAGIC" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_ARCANE_FUEL" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_TAP_POWER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_AETHERBORN" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_OVERCHARGED_METAMAGIC" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_ARCANE_FUEL" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_TAP_POWER" level="18" />
+        </rules>
+    </element>
+    <element name="Origin Spells" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_SPELLS">
+        <description>
+            <p>If you allow Sorcerers to take additional spells based on their subclass, the following are the recommended Origin Spells for the Aether Heart Origin.</p>
+            <table>
+                <thead>
+                    <tr><td>Sorerer Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>magic missle</td></tr>
+                <tr><td>3rd</td><td>star dust</td></tr>
+                <tr><td>5th</td><td>aether lance</td></tr>
+                <tr><td>7th</td><td>dimension door</td></tr>
+                <tr><td>9th</td><td>wall of force</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+<!-- Currently broken for some reason-->
+            <select type="Spell" name="Origin Spell 1" level="1"  supports="ID_PHB_SPELL_MAGIC_MISSILE" spellcasting="Sorcerer" prepared="true"/>
+            <select type="Spell" name="Origin Spell 2" level="3"  supports="ID_KTH_COLAL_SPELL_STAR_DUST" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Origin Spell 3" level="5"  supports="ID_KTH_COLAL_SPELL_AETHER_LANCE" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Origin Spell 4" level="7"  supports="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Sorcerer" prepared="true" />
+            <select type="Spell" name="Origin Spell 5" level="9"  supports="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" prepared="true" />
+        </rules>
+    </element>
+    <element name="Aetherborn" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_AETHERBORN">
+        <description>
+            <p>When you choose this origin at 1st level, your aether heart gives you several advantages. You have resistance to force damage, and can serve as your own arcane focus.</p>
+            <p class="indent">When you reach 3rd level, you automatically gain the Empowered Spell metamagic option, and can use it without spending sorcery points a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can serve as your own arcane focus.</description>
+            <description level="3">You can serve as your own arcane focus. You automatically gain the Empowered Spell metamagic option, and can use it without spending sorcery points {{proficiency}} times Long Rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+            <grant type="Class Features" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL" level="3" />
+        </rules>
+    </element>
+    <element name="Overcharged Metamagic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_OVERCHARGED_METAMAGIC">
+        <description>
+            <p>Starting at 6th level, you can unleash the power that rages within your heart. When you modify a spell that deals damage with your Metamagic options, you can add your Charisma modifier to one damage roll of that spell.</p>
+        </description>
+        <sheet>
+            <description>You can unleash the power that rages within your heart. When you modify a spell that deals damage with your Metamagic options, you can add {{charisma:modifier}} to one damage roll of that spell.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Fuel" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_ARCANE_FUEL">
+        <description>
+            <p>At 14th level, you gain immunity to force damage. When you would take force damage, you regain health equal to half the damage you would have taken. You can gain a maximum amount of hit points this way equal to your sorcerer level, after which you no longer gain additional hit points until you finish a short or long rest.</p>
+            <p class="indent">Additionally, you learn the spell dispel magic, or another sorcerer spell of your choice if you already know it. Dispel magic doesn’t count against your spells known. When you successfully cast dispel magic or counterspell, you regain an expanded sorcery point (if you are not currently at your maximum) as you draw in the remnants of the broken magic.</p>
+        </description>
+        <sheet>
+            <description>When you would take force damage, you regain health equal to half the damage you would have taken. You can gain a maximum amount of {{level:sorcerer}} hit points this way, after which you no longer gain additional hit points until you finish a short or long rest.
+            When you successfully cast dispel magic or counterspell, you regain an expanded sorcery point (if you are not currently at your maximum) as you draw in the remnants of the broken magic.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FORCE" />            
+            <select type="Spell" name="Arcane Fuel" supports="Sorcerer" spellcasting="Inventor" default="ID_PHB_SPELL_DISPEL_MAGIC" default-behaviour="force" />
+        </rules>
+    </element>
+    <element name="Tap Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_TAP_POWER">
+        <description>
+            <p>At 18th level, you can tap the power that surges through to replenish your magic. As a bonus action, you can expend one Hit Die and regain sorcery points equal to the number rolled + your Charisma modifier. Once you do this, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As a bonus action, you can expend one Hit Die and regain sorcery points equal to the number rolled + {{charisma:modifier}}. Once you do this, you can’t do so again until you finish a short or long rest.</description>
+        </sheet>
+    </element>
+</elements>
