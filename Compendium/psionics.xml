@@ -48,7 +48,7 @@
         </setters>
     </element>
     <element name="Flicker" type="Spell" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_COLAL_PSIONIC_FLICKER">
-        <supports>Psionic</supports>
+        <supports>Psioni,plane-touched-origin-spell</supports>
         <description>
             <p>You flicker between the material and ethereal planes. Until the start of your next turn, each time you would take damage, including the triggering attack, roll a d4. On a 2, you gain resistance to that instance of damage. On a 4, you don’t take any damage.</p>
         </description>

@@ -46,12 +46,12 @@
             <description></description>
         </sheet>
         <rules>
-<!-- Currently broken for some reason-->
-            <select type="Spell" name="Origin Spell 1" level="1"  supports="ID_PHB_SPELL_MAGIC_MISSILE" spellcasting="Sorcerer" prepared="true"/>
-            <select type="Spell" name="Origin Spell 2" level="3"  supports="ID_KTH_COLAL_SPELL_STAR_DUST" spellcasting="Sorcerer" prepared="true" />
-            <select type="Spell" name="Origin Spell 3" level="5"  supports="ID_KTH_COLAL_SPELL_AETHER_LANCE" spellcasting="Sorcerer" prepared="true" />
-            <select type="Spell" name="Origin Spell 4" level="7"  supports="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Sorcerer" prepared="true" />
-            <select type="Spell" name="Origin Spell 5" level="9"  supports="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" prepared="true" />
+<!-- Not certain if this the intended implementation-->
+            <select type="Spell" name="Origin Spell 1" level="1" supports="ID_PHB_SPELL_MAGIC_MISSILE|ID_KTH_COLAL_SPELL_STAR_DUST"  default="ID_PHB_SPELL_MAGIC_MISSILE" spellcasting="Sorcerer" prepared="true" optional="true"/>
+            <select type="Spell" name="Origin Spell 2" level="3" supports="ID_KTH_COLAL_SPELL_STAR_DUST|ID_KTH_COLAL_SPELL_AETHER_LANCE"  default="ID_KTH_COLAL_SPELL_STAR_DUST" spellcasting="Sorcerer" prepared="true" optional="true"/>
+            <select type="Spell" name="Origin Spell 3" level="5" supports="ID_KTH_COLAL_SPELL_AETHER_LANCE|ID_PHB_SPELL_DIMENSION_DOOR"  default="ID_KTH_COLAL_SPELL_AETHER_LANCE" spellcasting="Sorcerer" prepared="true" optional="true" />
+            <select type="Spell" name="Origin Spell 4" level="7" supports="ID_PHB_SPELL_DIMENSION_DOOR|ID_PHB_SPELL_WALL_OF_FORCE"  default="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Sorcerer" prepared="true" optional="true"/>
+            <select type="Spell" name="Origin Spell 5" level="9" supports="ID_PHB_SPELL_WALL_OF_FORCE|ID_PHB_SPELL_MAGIC_MISSILE"  default="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" prepared="true" optional="true"/>
         </rules>
     </element>
     <element name="Aetherborn" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_AETHERHEART_AETHERBORN">

@@ -9,8 +9,8 @@
     <element name="Planetouched" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_SORCERER_PLANETOUCHED">
         <supports>Sorcerous Origin</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Connected to planes beyond their own, these sorcerers find the walls between the planes thinner, they pull power from beyond them or step through them with greater ease.</p>
+            <p class="indent">Perhaps they were born in the ethereal plane or became connected to an outer plane, they now find themselves with one foot in the material and one foot beyond.</p>
             <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_SPELLS" />
             <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_RIFTBORN" />
             <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_PHASE_OUT" />
@@ -32,67 +32,114 @@
     </element>
     <element name="Origin Spells" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_SPELLS">
         <description>
-            <p>If you allow Sorcerers to take additional spells based on their subclass, the following are the recommended Origin Spells for the Aether Heart Origin.</p>
+            <p>If you allow Sorcerers to take additional spells based on their subclass, the following are the recommended Origin Spells for the Planetouched Origin.</p>
             <table>
                 <thead>
                     <tr><td>Sorerer Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>magic missle</td></tr>
-                <tr><td>3rd</td><td>star dust</td></tr>
-                <tr><td>5th</td><td>aether lance</td></tr>
+                <tr><td>1st</td><td>Flicker</td></tr>
+                <tr><td>3rd</td><td>misty step</td></tr>
+                <tr><td>5th</td><td>blink</td></tr>
                 <tr><td>7th</td><td>dimension door</td></tr>
-                <tr><td>9th</td><td>wall of force</td></tr>
+                <tr><td>9th</td><td>teleportation circle</td></tr>
             </table>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <select type="Spell" name="Origin Spell 1" level="1"  supports="ID_PHB_SPELL_MAGIC_MISSLE" spellcasting="Sorcerer" prepared="true"/>
-            <select type="Spell" name="Origin Spell 2" level="3"  supports="ID_KTH_COLAL_SPELL_STAR_DUST" spellcasting="Sorcerer" prepared="true" />
-            <select type="Spell" name="Origin Spell 3" level="5"  supports="ID_KTH_COLAL_SPELL_AETHER_LANCE" spellcasting="Sorcerer" prepared="true" />
-            <select type="Spell" name="Origin Spell 4" level="7"  supports="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Sorcerer" prepared="true" />
-            <select type="Spell" name="Origin Spell 5" level="9"  supports="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" prepared="true" />
+<!-- Not certain if this the intended implementation, kinda janky workaround-->
+            <select type="Spell" name="Origin Spell 1" level="1" supports="plane-touched-origin-spell"  default="ID_KTH_COLAL_PSIONIC_FLICKER" spellcasting="Sorcerer" prepared="true" optional="true"/>
+            <select type="Spell" name="Origin Spell 2" level="3" supports="ID_PHB_SPELL_MISTY_STEP|ID_PHB_SPELL_BLINK"  default="ID_PHB_SPELL_MISTY_STEP" spellcasting="Sorcerer" prepared="true" optional="true"/>
+            <select type="Spell" name="Origin Spell 3" level="5" supports="ID_PHB_SPELL_BLINK|ID_PHB_SPELL_DIMENSION_DOOR"  default="ID_PHB_SPELL_BLINK" spellcasting="Sorcerer" prepared="true" optional="true" />
+            <select type="Spell" name="Origin Spell 4" level="7" supports="ID_PHB_SPELL_DIMENSION_DOOR|ID_PHB_SPELL_TELEPORTATION_CIRCLE"  default="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Sorcerer" prepared="true" optional="true"/>
+            <select type="Spell" name="Origin Spell 5" level="9" supports="ID_PHB_SPELL_TELEPORTATION_CIRCLE|ID_KTH_COLAL_PSIONIC_FLICKER"  default="ID_PHB_SPELL_TELEPORTATION_CIRCLE" spellcasting="Sorcerer" prepared="true" optional="true"/>
         </rules>
     </element>
     <element name="Riftborn" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_RIFTBORN">
         <description>
-            <p></p>
+            <p>Starting at 1st level, when you draw on your magic, the planar walls begin to weaken for you. After casting a spell of 1st level or higher, you can use Phase Rift as a bonus action.</p>
+            <p class="indent">You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>After casting a spell of 1st level or higher, you can use Phase Rift as a bonus action.
+            </description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_PHASE_RIFT" spellcasting="Sorcerer" />
+        </rules>
+    </element>
+    
+    <element name="Phase Rift" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_PHASE_RIFT">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You step through space traveling up to 10 feet in a straight line leaving a spatial tear behind. You can pass through creatures but can’t pass through objects, buildings or terrain more than 4 inches thick. Any creature in the path of this tear must make a Dexterity saving throw or take 1d8 force damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">1</set>
+            <set name="school">psionic</set>
+            <set name="time">1 action</set>
+            <set name="range">10 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
     </element>
     <element name="Phase Out" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_PHASE_OUT">
         <description>
-            <p></p>
+            <p>Starting at 6th level, whenever you teleport or cross a planar boundary, you can choose to become invisible until the start of your next turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you teleport or cross a planar boundary, you can choose to become invisible until the start of your next turn.</description>
         </sheet>
     </element>
     <element name="Sorcerous Rifts" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_SORCEROUS_RIFTS">
         <description>
-            <p></p>
+            <p>Starting at 14th level, you can cast Phase Rift as an action at will. In addition, when you use Phase Rift, you can expend a sorcery point to make it both Long and Disruptive, causing you to move an additional 10 feet and deal an extra 1d8 damage to creatures that fail their save against it.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can cast Phase Rift as an action at will. In addition, when you use Phase Rift, you can expend a sorcery point to make it both Long and Disruptive, causing you to move an additional 10 feet and deal an extra 1d8 damage to creatures that fail their save against it.</description>
         </sheet>
     </element>
     <element name="Ethereal Control" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_ETHEREAL_CONTROL">
         <description>
-            <p></p>
+            <p>Additionally at 14th level, you can expend 1 sorcery point to reroll the value of a die rolled for blink or flicker. Once you do this, you can’t do so again until you finish a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>You can expend 1 sorcery point to reroll the value of a die rolled for blink or flicker.</description>
         </sheet>
     </element>
     <element name="Planar Collision" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_SORCERER_PLANETOUCHED_PLANAR_COLLISION">
         <description>
-            <p></p>
+            <p>At 18th level you can draw planes together causing them to smash together with devastating results. Select a plane to intersect the one you are on, you can’t select the plane you are currently on. As an action, you can spend 5 sorcery points to cause the planar intersection to occur at a point you can see within 120 feet, causing effects to occur based on the table below in a 30-foot-radius sphere around the chosen point. The effect lasts for a number of rounds equal to your Charisma modifier.</p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>column2</td></tr>
+                </thead>
+                <tr><td>Shadow</td><td>The area is plunged into darkness and can’t be illuminated by natural or magical means.</td></tr>
+                <tr><td>Fey</td><td>Magic in the area goes haywire. A creature that casts a spell in the area or that targets a point within the area must succeed a Charisma saving throw when casting a spell, or a random spell from their spell list of that level or lower is cast (at the level of the spell they were trying to cast). Damage and healing dice are maximized for spells cast in the area.</td></tr>
+                <tr><td>Fire</td><td>The area is incinerated by fire. Creatures that end their turn within the area take 10d10 fire damage. This damage ignores resistance.</td></tr>
+                <tr><td>Ice</td><td>The area freezes over. Creatures that end their turn within the area must make a Constitution saving throw or take 3d12 cold damage and become stunned frozen in ice until the end of their next turn.</td></tr>
+                <tr><td>Earth</td><td>The area becomes filled with stone and earth, shoving all creatures out of it outward from the center. If this would trap them into a wall they take 3d12 bludgeoning damage and are shoved to the closest free space.</td></tr>
+                <tr><td>Radiant</td><td>All creatures that end their turn in the area take 6d6 radiant damage. All living creatures that end their turn in the area are healed for 3d6 hit points.</td></tr>
+                <tr><td>Beyond</td><td>All creatures that end their turn within the area must make a Wisdom saving throw or take 3d12 psychic damage and be affected by the effects of the confusion spell.</td></tr>
+            </table>
+            <p class="indent">Once you use this ability, you can’t use it again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>Select a plane to intersect the one you are on, you can’t select the plane you are currently on. As an action, you can spend 5 sorcery points to cause the planar intersection to occur at a point you can see within 120 feet, causing effects to occur based on the table below in a 30-foot-radius sphere around the chosen point. The effect lasts for {{charisma:modifier}} rounds.
+            -Shadow: The area is plunged into darkness and can’t be illuminated by natural or magical means.
+            -Fey: Magic in the area goes haywire. A creature that casts a spell in the area or that targets a point within the area must succeed a Charisma saving throw when casting a spell, or a random spell from their spell list of that level or lower is cast (at the level of the spell they were trying to cast). Damage and healing dice are maximized for spells cast in the area.
+            -Fire: The area is incinerated by fire. Creatures that end their turn within the area take 10d10 fire damage. This damage ignores resistance.
+            -Ice: The area freezes over. Creatures that end their turn within the area must make a Constitution saving throw or take 3d12 cold damage and become stunned frozen in ice until the end of their next turn.
+            -Earth: The area becomes filled with stone and earth, shoving all creatures out of it outward from the center. If this would trap them into a wall they take 3d12 bludgeoning damage and are shoved to the closest free space.
+            -Radiant: All creatures that end their turn in the area take 6d6 radiant damage. All living creatures that end their turn in the area are healed for 3d6 hit points.
+            -Beyond: All creatures that end their turn within the area must make a Wisdom saving throw or take 3d12 psychic damage and be affected by the effects of the confusion spell.</description>
         </sheet>
     </element>
 </elements>
