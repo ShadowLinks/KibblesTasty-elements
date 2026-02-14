@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>The Fey Warlock</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="warlock-fey.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-fey.xml" />
         </update>
     </info>
@@ -48,6 +48,7 @@
         <spellcasting name="Warlock" extend="true">
             <extend>ID_PHB_SPELL_FAERIE_FIRE</extend>
             <extend>ID_PHB_SPELL_SLEEP</extend>
+            <extend>ID_PHB_SPELL_BLUR</extend>
             <extend>ID_PHB_SPELL_PHANTASMAL_FORCE</extend>
             <extend>ID_PHB_SPELL_BLINK</extend>
             <extend>ID_PHB_SPELL_PLANT_GROWTH</extend>
