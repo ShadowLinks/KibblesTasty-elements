@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>That Which Is Beyond Warlock</name>
+        <update version="0.0.1">
+            <file name="warlock-beyond.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-beyond.xml" />
+        </update>
+    </info>
+    <element name="That Which Is Beyond" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_WARLOCK_BEYOND">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>Your patron is defined by its sheer incomprehensibility to the mortal mind, an existence that is the very anathema of sanity itself, where any attempt to truly describe its nature is the gibbering of a mad man.</p>
+            <p class="indent">The most tame examples of these may have names or euphemisms that mortals know them as, while others may be concepts that most mortal minds remain blissfully incapable of knowing the existence of.</p>
+            <p class="indent">The patron need not be aware of your existence or invested in it for their power to have affected you, fundamentally warping your mind and granting you powers. Most that would have this opportunity have their mind shattered, left tattered and insane by the experience, but you’ve managed to hang onto some semblance of sanity and wield the power grafted into your mind.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_SPELLS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_OPEN_MIND" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_PSYCHIC_ONSLAUGHT" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_GIBBERING_TERROR" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_ALIEN_MIND" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_REBOUND_INTRUSION" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_UNLEASHED_PSYCHE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_OPEN_MIND" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_PSYCHIC_ONSLAUGHT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_GIBBERING_TERROR" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_ALIEN_MIND" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_REBOUND_INTRUSION" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_UNLEASHED_PSYCHE" level="14" />
+        </rules>
+    </element>
+    <element name="Beyond Expanded Spells" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_SPELLS">
+        <description>
+            <p>Selecting this Otherworldly Patron lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>terrifying visions, hideous laughter</td></tr>
+                <tr><td>2nd</td><td>detect thoughts, psychic drain</td></tr>
+                <tr><td>3rd</td><td>delve mind, sending</td></tr>
+                <tr><td>4th</td><td>black tentacles, summon horror</td></tr>
+                <tr><td>5th</td><td>dominate person, dream</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_KTH_SPELL_TERRIFYING_VISIONS</extend>
+            <extend>ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER</extend>
+            <extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+            <extend>ID_KTH_COLAL_PSIONIC_PSYCHIC_DRAIN</extend>
+            <extend>ID_KTH_COLAL_PSIONIC_DELVE_MIND</extend>
+            <extend>ID_PHB_SPELL_SENDING</extend>
+            <extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+            <extend>ID_KTH_SPELL_SUMMON_HORROR</extend>
+            <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+            <extend>ID_PHB_SPELL_DREAM</extend>
+        </spellcasting>
+    </element>
+    <element name="Open Mind" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_OPEN_MIND">
+        <description>
+            <p>Starting at 1st level, your mind has interacted with something that is incompatible to a mortal understanding, forcing it to be opened and adapted to new ideas and powers. You gain the ability to communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language. That creature can reply in kind.</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language. That creature can reply in kind.</description>
+        </sheet>
+    </element>
+    <element name="Psychic Onslaught" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_PSYCHIC_ONSLAUGHT">
+        <description>
+            <p>Additionally at 1st level, when targeting a creature with a Warlock spell or attack roll, you can use your Telepathic Intrusion on them as a bonus action, assaulting them on both a physical and psychic level.</p>
+            <p class="indent">You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest. You can only use Telepathic Intrusion through this feature under the conditions it sets, unless you obtain it from another source.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When targeting a creature with a Warlock spell or attack roll, you can use your Telepathic Intrusion on them as a bonus action, assaulting them on both a physical and psychic level.
+            You can only use Telepathic Intrusion through this feature under the conditions it sets, unless you obtain it from another source.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_CCC_PSIONIC_POWER_TELEPATHIC_INTRUSION_BEYOND" />
+        </rules>
+    </element>
+    
+    <element name="Telepathic Intrusion (Variant)" type="Spell" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_PSIONIC_POWER_TELEPATHIC_INTRUSION_BEYOND">
+        <description>
+            <p>You assault the mind of a creature you can see directly. The target must succeed on a Wisdom saving throw, or take 1d8 psychic damage. If the target fails the saving throw, it has disadvantage on attacks made against you until the start of your next turn. You can choose to deal no damage to the creature when it fails its saving throw.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Psionic Power</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Gibbering Terror" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_GIBBERING_TERROR">
+        <description>
+            <p>Starting at 6th level, when you use the Telepathic Intrusion power, you always add the Terrifying modifier, causing the target to be frightened of you until the end of your next turn if it fails its saving throw.</p>
+            <p class="indent">When they fail the saving throw by 5 or more, they additionally lose the ability to speak while frightened in this way, gibbering in fear and confusion.</p>
+        </description>
+        <sheet>
+            <description>When you use the Telepathic Intrusion power, you always add the Terrifying modifier, causing the target to be frightened of you until the end of your next turn if it fails its saving throw.
+            When they fail the saving throw by 5 or more, they additionally lose the ability to speak while frightened in this way, gibbering in fear and confusion.</description>
+        </sheet>
+    </element>
+    <element name="Alien Mind" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_ALIEN_MIND">
+        <description>
+            <p>Additionally at 6th level, you have advantage on saving throws against being magically charmed or frightened.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being magically charmed or frightened.</description>
+        </sheet>
+    </element>
+    <element name="Rebound Intrusion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_REBOUND_INTRUSION">
+        <description>
+            <p>Starting at 10th level, if a creature attempts to read your mind, you can make a Wisdom saving throw against the effect even if it would normally not allow a save. If it would normally allow a save, you have advantage on the save. If you succeed the save, you can instead read their mind, as if by the detect thoughts spell (this effect doesn’t require concentration, but lasts only until the end of your next turn, and targets only the creature that attempted to read your mind).</p>
+            <p class="indent">Additionally, you gain resistance to psychic damage, and when a creature deals psychic damage to you, it takes an equal amount of psychic damage.</p>
+        </description>
+        <sheet>
+            <description>If a creature attempts to read your mind, you can make a Wisdom saving throw against the effect even if it would normally not allow a save. If it would normally allow a save, you have advantage on the save. If you succeed the save, you can instead read their mind, as if by the detect thoughts spell (this effect doesn’t require concentration, but lasts only until the end of your next turn, and targets only the creature that attempted to read your mind).
+            Additionally, you gain resistance to psychic damage, and when a creature deals psychic damage to you, it takes an equal amount of psychic damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        </rules>
+    </element>
+    <element name="Unleashed Psyche" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_BEYOND_UNLEASHED_PSYCHE">
+        <description>
+            <p>Starting at 14th level, you gain enough mental control to form the twisted nightmares that dwell within your mind into the world. As an action, targeting a point within 60 feet you spawn a malignant otherworldly nightmare, taking the form of a twisted aberration of terror.</p>
+            <p class="indent">The first time a creature other than you is within 20 feet of it during their turn (including starting their turn there), they must make a Wisdom saving throw. On failure they take 4d8 psychic damage and become frightened of it.</p>
+            <p class="indent">The spawned nightmare lasts until the start of your turn, when it fades away unless at least one creature has failed their saving throw against its effect, in which case it persists for another round (indefinitely until no creatures fail their saving throw against it, after which it fades away at the start of your next turn).</p>
+            <p class="indent">Once you use this ability, you can’t do so until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, targeting a point within 60 feet you spawn a malignant otherworldly nightmare, taking the form of a twisted aberration of terror.
+            The first time a creature other than you is within 20 feet of it during their turn (including starting their turn there), they must make a Wisdom saving throw. On failure they take 4d8 psychic damage and become frightened of it.
+            The spawned nightmare lasts until the start of your turn, when it fades away unless at least one creature has failed their saving throw against its effect, in which case it persists for another round (indefinitely until no creatures fail their saving throw against it, after which it fades away at the start of your next turn).
+            </description>
+        </sheet>
+    </element>
+    <element name="Psionic Intrusion" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_ELDRITCH_INVOCATION_PSIONIC_INTRUSION">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>7th level</prerequisite>
+        <requirements>[level:7],ID_KTH_CCC_ARCHETYPE_WARLOCK_BEYOND</requirements>
+        <description>
+            <p>You gain 2 psi points you can use to apply Telepathy Discipline modifiers to your Telepathic Intrusion. You regain these psi points on a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You gain 2 psi points you can use to apply Telepathy Discipline modifiers to your Telepathic Intrusion. You regain these psi points on a short or long rest.</description>
+        </sheet>
+    </element>
+    
+    <element name="Flickering Madness" type="Companion" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_FLICKERING_MADNESS">
+        <supports>Familiar, Variant Familiar</supports>
+        <requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN,ID_KTH_CCC_ARCHETYPE_WARLOCK_BEYOND</requirements>
+        <description>
+        </description>
+        <setters>
+            <set name="size">Tiny</set>
+            <set name="type">Aberration</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">16</set>
+            <set name="hp">1</set>
+            <set name="speed">0 ft., fly 30 ft. (hover)</set>
+            <set name="strength">1</set>
+            <set name="dexterity">1</set>
+            <set name="constitution">1</set>
+            <set name="intelligence">15</set>
+            <set name="wisdom">15</set>
+            <set name="charisma">15</set>
+            <set name="immunities">cold, necrotic, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</set>
+            <set name="conditionImmunities">charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</set>            
+            <set name="senses">Darkvision 60 ft., passive Perception 12</set>
+            <set name="languages">telepathy 60 ft.</set>
+            <set name="challenge">1</set>
+            <set name="saves">Int +4</set>
+            <set name="skills">Deception +4, Insight +4, INT +4</set>
+            <set name="traits">ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_ABSTRACT_EXISTANCE,ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_ARCANE_VULNERABILITY,ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_FOLDING_SPACE,ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_INNATE_PSIONICS,ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_SPIDER_CLIMB</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16" />
+            <stat name="companion:hp:max" value="1" bonus="base" />
+            <stat name="companion:speed:fly" value="30" bonus="base" />
+            <stat name="companion:wisdom:save" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:deception:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:insight:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>    
+    <element name="Abstract Existance" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_ABSTRACT_EXISTANCE">
+        <description>
+            <p>If a creature attempts to make an attack roll against the flickering madness, that creature must make a DC 12 Wisdom saving throw. On a failure, the attack fails and the creature becomes frightened of the flickering madness until the end of its turn. Additionally, the flickering madness can attempt to hide using a Charisma (Deception) check in place of a Dexterity (Stealth) check.</p>
+        </description>
+        <sheet>
+            <description>If a creature attempts to make an attack roll against the flickering madness, that creature must make a DC 12 Wisdom saving throw. On a failure, the attack fails and the creature becomes frightened of the flickering madness until the end of its turn. Additionally, the flickering madness can attempt to hide using a Charisma (Deception) check in place of a Dexterity (Stealth) check.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Vulnerability" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_ARCANE_VULNERABILITY">
+        <description>
+            <p>If the flickering madness casts a spell, it loses its damage immunities until the start of its next turn.</p>
+        </description>
+        <sheet>
+            <description>If the flickering madness casts a spell, it loses its damage immunities until the start of its next turn.</description>
+        </sheet>
+    </element>
+    <element name="Folding Space" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_FOLDING_SPACE">
+        <description>
+            <p> The flickering madness can pass through a narrow gap in a surface, as if becoming two-dimensional along the surface.</p>
+        </description>
+        <sheet>
+            <description> The flickering madness can pass through a narrow gap in a surface, as if becoming two-dimensional along the surface.</description>
+        </sheet>
+    </element>
+    <element name="Innate Psionics" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_INNATE_PSIONICS">
+        <description>
+            <p>The flickering madness’s spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It can innately cast the following spells, requiring no components:</p>
+            <p>At will: message, vicious mockery</p>
+        </description>
+        <sheet>
+            <description>The flickering madness’s spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It can innately cast the following spells, requiring no components: 
+            At will: message, vicious mockery</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_TRAIT_FLICKERINGMADNESS_SPIDER_CLIMB">
+        <description>
+            <p>The flickering madness can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The flickering madness can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+</elements>

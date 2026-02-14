@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>The Ancient Intelligence Warlock</name>
+        <update version="0.0.1">
+            <file name="warlock-ancientintelligence.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-ancientintelligence.xml" />
+        </update>
+    </info>
+    <element name="The Ancient Intelligence" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_WARLOCK_ANCIENTINTELLIGENCE">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>You have made a pact of sorts with an intelligence that defies normal understanding; its aims are mysterious and often incomprehensible. This being could be an artificial intelligence of some lost race of ancients with fabulous technology, perhaps a high ranking mechanical overmind. They could even be an ancient lost rogue one, perhaps an Inventor of another era whose last act was to upload themselves in an incorporeal form, or perhaps it something more alien, the ancient navigation system of an otherworldly ship that has gained sentience.</p>
+            <p class="indent">The possibilities are endless, but whatever its nature, it can grant you sufficiently advanced knowledge that for all intents and purposes is fabulous magical power.</p>
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_SPELLS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_THE_CONTRAPTION" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_SAVE_STATE" />
+            <div element="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_SYNCHRONIZATION" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_THE_CONTRAPTION" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_SAVE_STATE" level="10" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_SYNCHRONIZATION" level="14" />
+        </rules>
+    </element>
+    <element name="Ancient Intelligence Expanded Spells" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_SPELLS">
+        <description>
+            <p>At 1st level, the Ancient Intelligence lets you choose from an expanded list of spells when you learn a warlock spell. The Ancient Intelligence Spells table shows the spells that are added to the warlock spell list for you:</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>identify, seeking projectile</td></tr>
+                <tr><td>2nd</td><td>dancing object, locate object</td></tr>
+                <tr><td>3rd</td><td>clairvoyance, crushing singularity</td></tr>
+                <tr><td>4th</td><td>arcane eye, locate creature</td></tr>
+                <tr><td>5th</td><td>arcane hand, commune</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_IDENTIFY</extend>
+            <extend>ID_KTH_COLAL_SPELL_SEEKING_PROJECTILE</extend>
+            <extend>ID_KTH_COLAL_SPELL_DANCING_OBJECT</extend>
+            <extend>ID_PHB_SPELL_LOCATE_OBJECT</extend>
+            <extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+            <extend>ID_KTH_COLAL_SPELL_CRUSHING_SINGULARITY</extend>
+            <extend>ID_PHB_SPELL_ARCANE_EYE</extend>
+            <extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+            <extend>ID_PHB_SPELL_ARCANE_HAND</extend>
+            <extend>ID_PHB_SPELL_COMMUNE</extend>
+        </spellcasting>
+    </element>
+    <element name="The Contraption" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_THE_CONTRAPTION">
+        <description>
+            <p>At 1st level, you gain access to a device granted to by your patron that grants some access to their vast knowledge, systems, and power. Your contraption is a Tiny object, and you can use it as a spellcasting focus for your warlock spells.</p>
+            <p class="indent">If the contraption is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron.</p>
+            <p class="indent">This ceremony can be performed during a short or long rest, and the previous contraption is destroyed if it still exists. The contraption may vanish in a flash of light when you die.</p>
+            <p class="indent">While you are possession of the contraption, you gain the following benefits:</p>
+            <h5>Autocaster</h5>
+            <p class="indent">Your contraption serves as a repository for additional spells. At the end of a long rest, you can store spells from your Expanded Spell List, or any spell of the divination school of magic that is of a level you could cast. You can have a combined prepared level of spells equal to your proficiency bonus (for example, at 5th level when your proficiency bonus is +3, you can have it store three 1st-level spells, or one 3rd-level spell).</p>
+            <p class="indent">Each spell stored in the Autocaster can be cast without expending a warlock spell slot to cast the spell once, after which you can’t cast it without expending a spell slot again until you finish a long rest. You can cast the spell stored again before finishing a long rest by expending a warlock spell slot of equal or greater level to the stored spell.</p>
+            <h5>Firing Solution</h5>
+            <p class="indent">Your contraption begins to develop the best way to hit a target. While you possess your contraption, you can use it to cast true strike. You can accelerate the calculations and cast true strike as a bonus action a number of times equal to your Spellcasting modifier. When you cast true strike using your contraption, it doesn’t require concentration.</p>
+            <p class="indent">You can do this a number of times equal to your spellcasting ability modifier before you must finish a long rest to do so again.</p>
+        </description>
+        <sheet>
+            <description>Your contraption is a Tiny object, and you can use it as a spellcasting focus for your warlock spells.
+            If the contraption is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron.
+            This ceremony can be performed during a short or long rest, and the previous contraption is destroyed if it still exists. The contraption may vanish in a flash of light when you die.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_THE_CONTRAPTION_AUTOCASTER" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_THE_CONTRAPTION_FIRING_SOLUTION" level="1" />
+        </rules>
+    </element>
+    <element name="Autocaster" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_THE_CONTRAPTION_AUTOCASTER">
+        <description>
+            <p>Your contraption serves as a repository for additional spells. At the end of a long rest, you can store spells from your Expanded Spell List, or any spell of the divination school of magic that is of a level you could cast. You can have a combined prepared level of spells equal to your proficiency bonus (for example, at 5th level when your proficiency bonus is +3, you can have it store three 1st-level spells, or one 3rd-level spell).</p>
+            <p class="indent">Each spell stored in the Autocaster can be cast without expending a warlock spell slot to cast the spell once, after which you can’t cast it without expending a spell slot again until you finish a long rest. You can cast the spell stored again before finishing a long rest by expending a warlock spell slot of equal or greater level to the stored spell.</p>
+        </description>
+        <sheet>
+            <description>Your contraption serves as a repository for additional spells. At the end of a long rest, you can store spells from your Expanded Spell List, or any spell of the divination school of magic that is of a level you could cast. You can have a combined prepared level of spells equal to {{proficiency}}.
+            Each spell stored in the Autocaster can be cast without expending a warlock spell slot to cast the spell once, after which you can’t cast it without expending a spell slot again until you finish a long rest. You can cast the spell stored again before finishing a long rest by expending a warlock spell slot of equal or greater level to the stored spell.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Autocaster Spells" number="2" supports="Divination||ID_PHB_SPELL_IDENTIFY||ID_KTH_COLAL_SPELL_SEEKING_PROJECTILE||ID_KTH_COLAL_SPELL_DANCING_OBJECT||ID_PHB_SPELL_LOCATE_OBJECT||ID_PHB_SPELL_CLAIRVOYANCE||ID_KTH_COLAL_SPELL_CRUSHING_SINGULARITY||ID_PHB_SPELL_ARCANE_EYE||ID_PHB_SPELL_LOCATE_CREATURE||ID_PHB_SPELL_ARCANE_HAND||ID_PHB_SPELL_COMMUNE" />
+            <select type="Spell" name="Autocaster Spells" number="1" level="5" supports="Divination||ID_PHB_SPELL_IDENTIFY||ID_KTH_COLAL_SPELL_SEEKING_PROJECTILE||ID_KTH_COLAL_SPELL_DANCING_OBJECT||ID_PHB_SPELL_LOCATE_OBJECT||ID_PHB_SPELL_CLAIRVOYANCE||ID_KTH_COLAL_SPELL_CRUSHING_SINGULARITY||ID_PHB_SPELL_ARCANE_EYE||ID_PHB_SPELL_LOCATE_CREATURE||ID_PHB_SPELL_ARCANE_HAND||ID_PHB_SPELL_COMMUNE" />
+            <select type="Spell" name="Autocaster Spells" number="1" level="9" supports="Divination||ID_PHB_SPELL_IDENTIFY||ID_KTH_COLAL_SPELL_SEEKING_PROJECTILE||ID_KTH_COLAL_SPELL_DANCING_OBJECT||ID_PHB_SPELL_LOCATE_OBJECT||ID_PHB_SPELL_CLAIRVOYANCE||ID_KTH_COLAL_SPELL_CRUSHING_SINGULARITY||ID_PHB_SPELL_ARCANE_EYE||ID_PHB_SPELL_LOCATE_CREATURE||ID_PHB_SPELL_ARCANE_HAND||ID_PHB_SPELL_COMMUNE" />
+            <select type="Spell" name="Autocaster Spells" number="1" level="13" supports="Divination||ID_PHB_SPELL_IDENTIFY||ID_KTH_COLAL_SPELL_SEEKING_PROJECTILE||ID_KTH_COLAL_SPELL_DANCING_OBJECT||ID_PHB_SPELL_LOCATE_OBJECT||ID_PHB_SPELL_CLAIRVOYANCE||ID_KTH_COLAL_SPELL_CRUSHING_SINGULARITY||ID_PHB_SPELL_ARCANE_EYE||ID_PHB_SPELL_LOCATE_CREATURE||ID_PHB_SPELL_ARCANE_HAND||ID_PHB_SPELL_COMMUNE" />
+            <select type="Spell" name="Autocaster Spells" number="1" level="17" supports="Divination||ID_PHB_SPELL_IDENTIFY||ID_KTH_COLAL_SPELL_SEEKING_PROJECTILE||ID_KTH_COLAL_SPELL_DANCING_OBJECT||ID_PHB_SPELL_LOCATE_OBJECT||ID_PHB_SPELL_CLAIRVOYANCE||ID_KTH_COLAL_SPELL_CRUSHING_SINGULARITY||ID_PHB_SPELL_ARCANE_EYE||ID_PHB_SPELL_LOCATE_CREATURE||ID_PHB_SPELL_ARCANE_HAND||ID_PHB_SPELL_COMMUNE" />
+        </rules>
+    </element>
+    <element name="Firing Solution" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_THE_CONTRAPTION_FIRING_SOLUTION">
+        <description>
+            <p>Your contraption begins to develop the best way to hit a target. While you possess your contraption, you can use it to cast true strike. You can accelerate the calculations and cast true strike as a bonus action a number of times equal to your Spellcasting modifier. When you cast true strike using your contraption, it doesn’t require concentration.</p>
+            <p class="indent">You can do this a number of times equal to your spellcasting ability modifier before you must finish a long rest to do so again.</p>
+        </description>
+        <sheet usage="{{warlock:spellcasting:attack}}/Long Rest">
+            <description>Your contraption begins to develop the best way to hit a target. While you possess your contraption, you can use it to cast true strike. You can accelerate the calculations and cast true strike as a bonus action. When you cast true strike using your contraption, it doesn’t require concentration.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TRUE_STRIKE" />
+        </rules>
+    </element>
+    <element name="Ancient Invocations" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS">
+        <description>
+            <p>Starting at 6th level, your patron grants you another fragment of their vast power in the form of a gadget or tool. Your Invocations Known increases by 1, but one of your invocations must be from the options described in this feature.</p>
+            <ul>
+                <li>Battle Drones (Prerequisite: Pact of the Chain feature, drone swarm familiar) - Drone attacks now without attack action</li>
+                <li>Data Bank - Additional proficiencies</li>
+                <li>Dispatch Relay - Autocaster sending spell</li>
+                <li>Gliding Cloak</li>
+                <li>Mechanical Arm</li>
+                <li>Personal Shield - Armor of Shadows invocation</li>
+                <li>Neural Link - True Strike can be used on same turn</li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Features" name="Ancient Invocations" supports="ancient-invocations" />
+        </rules>
+    </element>
+    
+    <element name="Battle Drones" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS_BATTLE_DRONES">
+       <supports>ancient-invocations</supports>
+       <prerequisite>Prerequisite: Pact of the Chain feature, drone swarm familiar</prerequisite>
+       <requirements>ID_KTH_CCC_COMPANION_DRONE_SWARM</requirements>
+       <description>
+            <p>Your Drone swarm can attack without you using your action to direct it attack. Its attack modifier becomes equal to your spell attack modifier</p>
+        </description>
+        <sheet>
+            <description>Your Drone swarm can attack without you using your action to direct it attack. Its attack modifier becomes {{warlock:spellcasting:attack}}.</description>
+        </sheet>
+    </element>
+    <element name="Data Bank" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS_DATA_BANK">
+       <supports>ancient-invocations</supports>
+       <description>
+            <p>While in possession of your contraption, you gain proficiency in two of Arcana, History, Medicine, or Nature which are selected when you gain this Invocation.</p>
+        </description>
+        <sheet>
+            <description>While in possession of your contraption, you gain proficiency in two of Arcana, History, Medicine, or Nature which are selected when you gain this Invocation.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Data Bank Proficiencies" number="2" supports="ID_PROFICIENCY_SKILL_ARCANA||ID_PROFICIENCY_SKILL_HISTORY||ID_PROFICIENCY_SKILL_MEDICINE||ID_PROFICIENCY_SKILL_NATURE" />
+        </rules>
+    </element>
+    <element name="Dispatch Relay" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS_DISPATCH_RELAY">
+       <supports>ancient-invocations</supports>
+       <description>
+            <p>You can use your Autocaster to cast sending once without expending a spell slot. Once you cast it this way, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can use your Autocaster to cast sending once without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SENDING" />
+        </rules>
+    </element>
+    <element name="Gliding Cloak" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS_GLIDING_CLOAK">
+       <supports>ancient-invocations</supports>
+       <description>
+            <p>You make a cloak that allows you to glide when falling. When you fall more than 10 feet and aren’t incapacitated, you can spread this cloak to reduce your falling speed to 30 feet a round take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</p>
+        </description>
+        <sheet>
+            <description>You make a cloak that allows you to glide when falling. When you fall more than 10 feet and aren’t incapacitated, you can spread this cloak to reduce your falling speed to 30 feet a round take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</description>
+        </sheet>
+    </element>
+    <element name="Mechanical Arm" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS_MECHANICAL_ARM">
+       <supports>ancient-invocations</supports>
+       <description>
+            <p>You create a mechanical arm, giving you an extra hand. This mechanical arm only functions while it is mounted on gear you are wearing, but can be operated mentally without the need for your hands. This mechanical arm can serve any function a normal hand could, such as holding things, making attacks, interacting with the environment, etc, but doesn’t give you any additional actions.</p>
+        </description>
+        <sheet>
+            <description>You create a mechanical arm, giving you an extra hand. This mechanical arm only functions while it is mounted on gear you are wearing, but can be operated mentally without the need for your hands. This mechanical arm can serve any function a normal hand could, such as holding things, making attacks, interacting with the environment, etc, but doesn’t give you any additional actions.</description>
+        </sheet>
+    </element>
+    <element name="Personal Shield" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS_PERSONAL_SHIELD">
+       <supports>ancient-invocations</supports>
+       <description>
+            <p>You gain the Armor of Shadows invocation. It doesn’t count against your Invocations known.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ARMOR_OF_SHADOWS" />
+        </rules>
+    </element>
+    <element name="Neural Link" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_ANCIENT_INVOCATIONS_NEURAL_LINK">
+       <supports>ancient-invocations</supports>
+       <description>
+            <p>When you calculate a firing solution, it now applies to your current turn. Additionally, when you benefit from true strike, you negate the disadvantage of being unable to see a target (such as invisible or obscured target).</p>
+        </description>
+        <sheet>
+            <description>When you calculate a firing solution, it now applies to your current turn. Additionally, when you benefit from true strike, you negate the disadvantage of being unable to see a target (such as invisible or obscured target).</description>
+        </sheet>
+    </element>
+    <element name="Save State" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_SAVE_STATE">
+        <description>
+            <p>Starting at 10th level, as a bonus action you can cause your Contraption to record your existence. Record your hit points, location, and any conditions you are affected by. At the start of your next turn, your current hit points, location, and conditions are returned to the saved state in a flash of light. If you die while having your save state, you can make a DC 15 Charisma saving throw (making the check as if you were alive) when the start of your next turn would have been. On success, you return as normal. On failure, you remain dead.</p>
+            <p class="indent">Once you use this, you can’t use this again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action you can cause your Contraption to record your existence. Record your hit points, location, and any conditions you are affected by. At the start of your next turn, your current hit points, location, and conditions are returned to the saved state in a flash of light. If you die while having your save state, you can make a DC 15 Charisma saving throw (making the check as if you were alive) when the start of your next turn would have been. On success, you return as normal. On failure, you remain dead.</description>
+        </sheet>
+    </element>
+    <element name="Synchronization" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WARLOCK_ANCIENTINTELLIGENCE_SYNCHRONIZATION">
+        <description>
+            <p>Starting at 14th level, at the start of your turn (no action required) you can synchronize yourself with your Contraption, entering a cold and logical mental state of absolute focus until the start of your next turn. While in this state of synchronization, you gain the following benefits:</p>
+            <ul>
+                <li>You are immune to the charmed and frightened conditions</li>
+                <li>You can cast spells with the casting time of 1 action as 1 bonus action.</li>
+                <li>You gain advantage on all Intelligence and Wisdom checks and saving throws, as well as Constitution saving throws to maintain concentration on a spell.</li>
+            </ul>
+            <p class="indent">You can be synchronized for a number of turns equal to your spellcasting ability modifier (minimum 1), after which you can’t use this feature again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>At the start of your turn (no action required) you can synchronize yourself with your Contraption, entering a cold and logical mental state of absolute focus until the start of your next turn. While in this state of synchronization, you gain the following benefits:
+            - You are immune to the charmed and frightened conditions
+            - You can cast spells with the casting time of 1 action as 1 bonus action.
+            - You gain advantage on all Intelligence and Wisdom checks and saving throws, as well as Constitution saving throws to maintain concentration on a spell.
+            You can be synchronized for {{warlock:spellcasting:attack}} turns.</description>
+        </sheet>
+    </element>
+    <element name="Drone Swarm" type="Companion" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_DRONE_SWARM">
+        <supports>Familiar, Variant Familiar</supports>
+        <requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN,ID_KTH_CCC_ARCHETYPE_WARLOCK_ANCIENTINTELLIGENCE</requirements>
+        <description>
+        </description>
+        <setters>
+            <set name="size">Tiny</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">14</set>
+            <set name="hp">13 (3d6 + 6)</set>
+            <set name="speed">0 ft., fly 30 ft. (hover)</set>
+            <set name="strength">2</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">14</set>
+            <set name="wisdom">16</set>
+            <set name="charisma">1</set>
+            <set name="resistances">bludgeoning, cold, fire, piercing, slashing</set>
+            <set name="immunities">poison, psychic</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</set>            
+            <set name="senses">Darkvision 60 ft., passive Perception 15</set>
+            <set name="languages">Common</set>
+            <set name="challenge">1</set>
+            <set name="skills">History +4, Medicine +5, Perception +5</set>
+            <set name="traits">ID_KTH_CCC_COMPANION_TRAIT_DRONESWARM_INNATE_SPELLCASTING,ID_KTH_CCC_COMPANION_TRAIT_DRONESWARM_SWARM</set>
+            <set name="actions">ID_KTH_CCC_COMPANION_ACTION_DRONESWARM_ZAP</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14" />
+            <stat name="companion:hp:max" value="13" bonus="base" />
+            <stat name="companion:speed:fly" value="30" bonus="base" />
+            <stat name="companion:history:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:medicine:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>    
+    <element name="Innate Spellcasting" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_TRAIT_DRONESWARM_INNATE_SPELLCASTING">
+        <description>
+            <p>The drone swarm’s spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It can innately cast the following spells, requiring no material components:</p>
+            <p>At Will: mending, minor illusion</p>
+        </description>
+        <sheet>
+            <description>The drone swarm’s spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It can innately cast the following spells, requiring no material components:
+            mending, minor illusion</description>
+        </sheet>
+    </element>
+    <element name="Swarm" type="Companion Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_TRAIT_DRONESWARM_SWARM">
+        <description>
+            <p>The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny drone.</p>
+        </description>
+        <sheet>
+            <description>The swarm can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny drone.</description>
+        </sheet>
+    </element>
+    <element name="Zap" type="Companion Action" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_COMPANION_ACTION_DRONESWARM_ZAP">
+        <description>
+            <p><i>Melee Spell Attack:</i> +4 to hit, reach 10 ft., one target. <i>Hit:</i> 7 (2d4 + 3) lightning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Spell Attack: +4 to hit, reach 10 ft., one target. Hit: 7 (dD4 + 3) lighting damage.</description>
+        </sheet>
+    </element>
+</elements>

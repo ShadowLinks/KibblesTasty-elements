@@ -128,7 +128,7 @@
         <file name="sorcerer-seasoul.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-seasoul.xml" />
         <file name="sorcerer-stoneheart.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-stoneheart.xml" />
         <file name="sorcerer-aetherheart.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-aetherheart.xml" />
-        <file name="sorcerer-aetherheart.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-planetouched.xml" />
+        <file name="sorcerer-planetouched.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/sorcerer-planetouched.xml" />
 
         <file name="warlock-bloodbound.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-bloodbound.xml" />
         <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-dragon.xml" />
@@ -137,6 +137,8 @@
         <file name="warlock-ooze.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-ooze.xml" />
         <file name="warlock-overseer.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-overseer.xml" />
         <file name="warlock-tempest.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-tempest.xml" />
+        <file name="warlock-ancientintelligence.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-ancientintelligence.xml" />
+        <file name="warlock-beyond.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/warlock-beyond.xml" />
 
         <file name="wizard-astronomicalorder.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-astronomicalorder.xml" />
         <file name="wizard-theurge.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-theurge.xml" />
