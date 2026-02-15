@@ -142,6 +142,10 @@
 
         <file name="wizard-astronomicalorder.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-astronomicalorder.xml" />
         <file name="wizard-theurge.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-theurge.xml" />
+        <file name="wizard-creation.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-creation.xml" />
+        <file name="wizard-unknown.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-unknown.xml" />
+
+
         <!--
         <file name="class-inventor.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-inventor.xml" />
         <file name="inventor-gadgetsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-gadgetsmith.xml" />
