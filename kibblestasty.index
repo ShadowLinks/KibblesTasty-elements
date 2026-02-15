@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
     <info>
-        <update version="0.1.4">
+        <update version="0.1.5">
             <file name="kibblestasty.index" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/kibblestasty.index" />
         </update>
     </info>
@@ -22,6 +22,8 @@
         <file name="psion-wanderingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-wanderingmind.xml" />
         <file name="psion-elementalmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-elementalmind.xml" />
         <file name="psion-consumingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-consumingmind.xml" />
+
+         <file name="backgrounds.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/backgrounds.xml" />
 
 
         <file name="race-awakenedundead.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-awakenedundead.xml" />
