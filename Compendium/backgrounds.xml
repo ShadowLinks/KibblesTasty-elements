@@ -2,8 +2,8 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.0.0">
-            <file name="backgrounds.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/backgrounds.xml" />
+        <update version="1.0.1">
+            <file name="backgrounds.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/backgrounds.xml" />
         </update>
     </info>
     <element name="Apothecary" type="Background" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_BACKGROUND_APOTHECARY">

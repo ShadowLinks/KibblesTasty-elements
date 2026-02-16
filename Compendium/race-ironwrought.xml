@@ -3,42 +3,346 @@
     <info>
         <name></name>
         <update version="1.0.0">
-            <file name="background-apothecary.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/background-apothecary.xml" />
+            <file name="race-ironwrought.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-ironwrought.xml" />
         </update>
     </info>
     <element name="Ironwrought" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_IRONTWROUGHT">
         <description>
-            <p></p>
-            <h4>HEADING</h4>
-            <p></p>
+            <p>The origins of Ironwrought are many and varied. They can be the artisanal masterpiece of a Golemsmith, or perhaps a relic of a mass production of an ancient lost civilization... or perhaps not-so-lost a civilization. Their source and purpose will vary greatly. Were they made with sapience in mind, or did they gain it later? Were they made for labor or war?</p>
+            <p class="indent">Some Ironwrought will dwell on these questions and what it means for them to exist outside of the boundary of their original purpose, but many simply move on, acquiring new parameters to live their life from those they interact with, finding their purpose in life as any of their more fleshy counterparts might.</p>
+            <p class="indent">How they are treated in society will vary based on how common they are. In settings where Ironwrought created for labor are common, they will generally be treated quite neutrally, while they may be treated with greater fear or concern if Ironwrought were primarily created as war machines, though in both cases they might be mistaken for their last sapient cousins.</p>
+            <h4>SELF AWARE</h4>
+            <p>While most constructs are not truly self aware, an Ironwrought is a special case of a cosntruct that has attained a full degree of self-awareness... sometimes in a more rudimentary way, sometimes as self-aware as any human. How that occurred is often dependent on your origin. Here is a table of some origins of your self-awareness. You can roll on the following table, pick one that suits your character, or select a different reason entirely based on your game’s setting and character’s backstory.</p>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>column2</td></tr>
+                </thead>
+                <tr><td>1</td><td>You existed without self awareness for years before a magical accident rendered you self aware.</td></tr>
+                <tr><td>2</td><td>You were a new experiment, designed for more complicated tasks, and ended up more sapient than expected.</td></tr>
+                <tr><td>3</td><td>Left to a mindless task for hundreds of years in a long abandoned location, you slowly developed a sense of self until you abandoned your programmed task.</td></tr>
+                <tr><td>4</td><td>Your sapience is the result of the influence of a supernatural being (celestial, fey, or even fiend) granting you self-awareness for their purposes (or entertainment).</td></tr>
+                <tr><td>5</td><td>You awoke from a long hibernation changed, with greater self awareness. You don’t remember the past.</td></tr>
+                <tr><td>6</td><td>The Inventor that created you intentionally granted you full sapience, trying to build a child, friend, or adventuring companion.</td></tr>
+                <tr><td>7</td><td>You are the consciousness of a mortal imbued into a metal shell, transferred to a Construct to save your life.</td></tr>
+                <tr><td>8</td><td>You are the inventor that created yourself, transferring your consciousness to the Construct for reasons of your own.</td></tr>
+            </table>
+            <h4>PERSONALITY</h4>
+            <p>he personality of Ironwrought can vary greatly as their origins can vary greatly. In some cases they are humanoids that have been bound to an Ironwrought, melancholy about their new metalbound existence. Other times they have a pragmatic nature unconcerned with the unknowable trivialities, focused on the here and now. Ironwrought most frequently have pragmatic personalities that are inclined to logical outcomes. While as a sapient creature they are capable of understanding emotion, they may not fully experience it, or not let it affect them to the degree of the more easily influenced fleshy fellows.</p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>column2</td></tr>
+                </thead>
+                <tr><td>1</td><td>You provide one detail too many in any conversation.</td></tr>
+                <tr><td>2</td><td>You feel pity for fleshy creatures with their fleeting life spans.</td></tr>
+                <tr><td>3</td><td>You are inherently rational, and can be persuaded of anything with appropriate logic.</td></tr>
+                <tr><td>4</td><td>You have a programmed code of conduct that you will never violate. You may or may not be aware of it.</td></tr>
+                <tr><td>5</td><td>A vestige of a previously set task occasionally surfaces, compelling you to perform a strange action, such as sweeping a floor clean.</td></tr>
+                <tr><td>6</td><td>You have some fragments of the memories of another creature, perhaps a past version of yourself, in your mind.</td></tr>
+            </table>
+            <h4>IRONWROUGHT NAMES</h4>
+            <p>Your name can be virtually anything. Many Ironwrought have no real name, often having either acquired a nickname before or after gaining sapience. Some take on human names, though more often they adopt simple names, placing little importance on it.</p>
             <p class="indent"></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
-            <p class="indent"><strong><em>Age.</em></strong> _______</p>
-            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
-            <p class="indent"><strong><em>Size.</em></strong> _______</p>
-            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+            <h4>Ironwrought Traits</h4>
+            <p>Your Ironwrought character has the following traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2, and one other ability score of your choice increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Constructs do not age physically, though their mental abilities may change greatly through their life as they process new information and experiences.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Ironwrought tend to be inclined toward Lawful Neutral, following an internal logic and purpose, but player Ironwrought have gained full sapiance, and can make their own decisions. Some opt to rebel entirely against their nature, acting in unpredictable chaotic patterns like any mortals.</p>
+            <!--<p class="indent"><strong><em>Size.</em></strong> _______</p>-->
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Living Construct.</em></strong> You are immune to disease. You do not need to eat, drink, or breathe. You do not need sleep, and magic can’t put you to sleep.</p>
+            <p class="indent"><strong><em>Power Down.</em></strong> You do not need to sleep. When you take a long rest, you must spend at least 4 hours during a long rest in a motionless lower power state. While in this state, you have disadvantage on Wisdom (Perception) checks, but remain aware of your surroundings.</p>
+            <p class="indent"><strong><em>Construct.</em></strong> Your type is construct.</p>
+            <p class="indent"><strong><em>Arcane Life.</em></strong> You can absorb certain types of healing magic, allowing you to recover hit points from magical effects that do not otherwise affect constructs (such as the cure wounds spell).</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other language of your choice (usually the language of your creator if they spoke a language other than common).</p>
+            <p class="indent"><strong><em>Modular Design.</em></strong> You can select two specialized traits representing the functionality built into your chassis.</p>
+            <ul><li>Integrated Armor, Integrated Weapons, Language Module, Natural Armor, Night Mode, Rapid Movement, Redundant Logic, Specialized Skill, Specialized Tool, Terrain Adaptation</li></ul>
+            <p class="indent"><strong><em>Chassis Configuration.</em></strong> Ironwrought come in many shapes and sizes. Select one of the following configurations of your chassis. (Humanoid, Quadrupedal, or Variant Large)</p>
         </description>
         <sheet display="false" />
+        <setters>
+            <set name="names" type="Name">Aegis, Chomper, Champ, Chump, Bolts, Driver, Finder, Gears, Kaz, Mium, Rusty, Sparky, Stomper, Tackler, Thing, Titan, Vel</set>
+            <set name="names-format">{{Name}}</set>
+        </setters>
         <rules>
-            <grant type="Racial Trait" id="ID____" />
-            <grant type="Racial Trait" id="ID____" />
+            <stat name="Constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type="Ability Score Improvement" name="Ability Score Improvement +1 (Ironwrought)" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_DEXTERITY|ID_INTERNAL_ASI_WISDOM|ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_CHARISMA" />
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_CONSTRUCT" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language, Ironwrought" supports="Standard||Exotic" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_LIVING_CONSTRUCT" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_POWER_DOWN" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_ARCANE_LIFE" />
+            <select type="Racial Trait" supports="ironwrought-modular-design" name="Modular Design" numnber="2" />
+            <select type="Sub Race" supports="ironwrought-chassis" name="Chassis Configuration" />
         </rules>
     </element>
-    <element name="Rtrait" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_RTRAIT">
+    <element name="Living Construct" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_LIVING_CONSTRUCT">
         <description>
-            <p>_______</p>
-            <p class="indent">_______</p>
+            <p>You are immune to disease. You do not need to eat, drink, or breathe. You do not need sleep, and magic can’t put you to sleep.</p>
         </description>
         <sheet>
-            <description>_______</description>
+            <description>You are immune to disease. You do not need to eat, drink, or breathe. You do not need sleep, and magic can’t put you to sleep.</description>
+        </sheet>
+    </element>
+    <element name="Power Down" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_POWER_DOWN">
+        <description>
+            <p>You do not need to sleep. When you take a long rest, you must spend at least 4 hours during a long rest in a motionless lower power state. While in this state, you have disadvantage on Wisdom (Perception) checks, but remain aware of your surroundings.</p>
+        </description>
+        <sheet>
+            <description>You do not need to sleep. When you take a long rest, you must spend at least 4 hours during a long rest in a motionless lower power state. While in this state, you have disadvantage on Wisdom (Perception) checks, but remain aware of your surroundings.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Life" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_ARCANE_LIFE">
+        <description>
+            <p> You can absorb certain types of healing magic, allowing you to recover hit points from magical effects that do not otherwise affect constructs (such as the cure wounds spell).</p>
+        </description>
+        <sheet>
+            <description> You can absorb certain types of healing magic, allowing you to recover hit points from magical effects that do not otherwise affect constructs (such as the cure wounds spell).</description>
+        </sheet>
+    </element>
+    <element name="Integrated Armor" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_INTEGRATED_ARMOR">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>You gain a +1 bonus to Armor Class.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" />
+        </rules>
+    </element>
+    <element name="Integrated Weapon" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_INTEGRATED_WEAPON">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>You have a simple or martial weapon of your choice built into your frame. You gain proficiency with this weapon. This doesn’t remove the need for ammunition for weapons that have the ammunition property. This weapon is typically integrated into your limbs, and requires hands to use as normal.</p>
+        </description>
+        <sheet>
+            <description>You have a simple or martial weapon of your choice built into your frame. This doesn’t remove the need for ammunition for weapons that have the ammunition property. This weapon is typically integrated into your limbs, and requires hands to use as normal.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Integrated Weapon" supports="Weapon,(Martial||Simple)" />
+        </rules>
+    </element>
+    <element name="Language Module" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_LANGUAGE_MODULE">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>You learn one additional language, and can cast comprehend languages without consuming a spell slot. Once you cast this spell, you can’t cast it again until you finish a long rest. You can cast this spell using spell slots.</p>
+        </description>
+        <sheet>
+            <description>You can cast comprehend languages without consuming a spell slot. Once you cast this spell, you can’t cast it again until you finish a long rest. You can cast this spell using spell slots.___</description>
+        </sheet>
+        <rules>
+            <select type="Language" name="Language, Language Module" supports="Standard||Exotic" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" />
+        </rules>
+    </element>
+    <element name="Natural Armor" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_NATURAL_ARMOR">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>You have built in armor, giving you a base AC of 16 (your Dexterity modifier doesn’t affect this number). You can use a shield and apply the shield’s bonus as normal.</p>
+        </description>
+        <sheet>
+            <description>ou have built in armor, giving you a base AC of 16 (your Dexterity modifier doesn’t affect this number). You can use a shield and apply the shield’s bonus as normal.</description>
+        </sheet>
+        <rules>
+            <stat name="ironwrought:natural-armor" value="16" bonus="base" />
+			<stat name="ac:calculation" value="ironwrought:natural-armor" bonus="calculation" alt="Natural Armor (Ironwrought)" />
+        </rules>
+    </element>
+    <element name="Night Mode" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_NIGHT_MODE">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+        </description>
+        <sheet>             
+            <description>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="darkvision:range" value="60" bonus="base" />
+        </rules>
+    </element>
+    <element name="Rapid Movement" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_RAPID_MOVEMENT">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>Your base walking speed increases by 5 feet.</p>
+        </description>
+        <sheet>
+        </sheet>
+        <rules>
+            <stat name="innate speed" value="5" />
+        </rules>
+    </element>
+    <element name="Redundant Logic" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_REDUNDANT_LOGIC">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>You process all inputs twice to ensure they are logical. You have advantage on saving throws against becoming frightened or charmed.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against becoming frightened or charmed.</description>
+        </sheet>
+    </element>
+    <element name="Specialized Skill" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_SPECIALIZED_SKILL">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>You gain proficiency in one skill of your choice.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Specialized Skill" supports="Skill" />
+        </rules>
+    </element>
+    <element name="Specialized Tool" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_SPECIALIZED_TOOL">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>You gain one tool built into your frame. You gain proficiency with this tool.</p>
+        </description>
+        <sheet>
+            <description>You gain one tool built into your frame. You gain proficiency with this tool.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency, Specialized Tool" supports="Tool" />
+        </rules>
+    </element>
+    <element name="Terrain Adaptation" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_TERRAIN_ADAPTATION">
+        <supports>ironwrought-modular-design</supports>
+        <description>
+            <p>You gain a climbing or swimming speed equal to your walking speed.</p>
+        </description>
+        <sheet>
+            <description>You gain a climbing or swimming speed equal to your walking speed.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:fly" value="innate speed" bonus="base" />
+        </rules>
+    </element>
+    <element name="Humanoid" type="Sub Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SUB_RACE_HUMANOID">
+        <supports>ironwrought-chassis</supports>
+        <description>
+            <p>Your shape is roughly that of a bipedal humanoid. You gain the following traits.</p>
+            <p class="indent"><strong>Adaptable Design. </strong>You can make one additional selection from your modular design trait.</p>
+        </description>
+        <sheet alt="Ironwrought, Humanoid">
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Modular Design (Adaptable Design)" supports="ironwrought-modular-design" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+        </rules>
+    </element>
+    <element name="Quadrupedal" type="Sub Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SUB_RACE_QUADRUPEDAL">
+        <supports>ironwrought-chassis</supports>
+        <description>
+            <p>Your shape has four legs and no hands. You gain the following traits.</p>
+            <p class="indent">Quadrupedal.<strong></strong> You do not have hands. You can hold one object or grapple one thing using your mouth, but can’t speak when you do so, and any weapons held in this way are wielded with disadvantage. You can perform the somatic components of spells with one of your legs, however doing so requires 15 feet of your movement.</p>
+            <p class="indent"><strong>Natural Weapons.</strong> You gain a selection of natural weapons. You are considered to be holding natural weapons for the purposes of abilities that require you to to hold a weapon (this doesn’t confer disadvantage to them). Select two of the following:</p>
+            <ul>
+                <li><strong>Metal Chompers.</strong> You have metal fangs suitable for chomping. On hit, they deal 1d10 piercing damage.</li>
+                <li><strong>Razer Claws.</strong> You have two sets of razor claws integrated into your front limbs. On hit, they deal 1d6 slashing damage and have the light property.</li>
+                <li><strong>Bladed Tail.</strong> You have a lashing bladed tail. On hit, it deals 1d4 slashing damage. It has the reach property.</li>
+            </ul>            
+            <p class="indent"><strong>Barding.</strong>  You can only wear armor specially adapted to your unique shape. This custom armor has the same price as normal armor, but may be harder to find or more expensive when custom ordered.</p>
+        </description>
+        <sheet alt="Ironwrought, Quadrupedal">
+            <description>You do not have hands. You can hold one object or grapple one thing using your mouth, but can’t speak when you do so, and any weapons held in this way are wielded with disadvantage. You can perform the somatic components of spells with one of your legs, however doing so requires 15 feet of your movement.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_NATURAL_WEAPONS" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_BARDING" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+        </rules>
+    </element>
+    <element name="Natural Weapons" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_NATURAL_WEAPONS">
+        <description>
+            <p>You gain a selection of natural weapons. You are considered to be holding natural weapons for the purposes of abilities that require you to to hold a weapon (this doesn’t confer disadvantage to them). Select two of the following:</p>
+        </description>
+        <sheet>
+            <description>You are considered to be holding natural weapons for the purposes of abilities that require you to to hold a weapon (this doesn’t confer disadvantage to them).</description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Natural Weapons" supports="ironwrought-natural-weapons" number="2" />
+        </rules>
+    </element>
+    <element name="Metal Chompers" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_METAL_CHOMPERS">
+        <supports>ironwrought-natural-weapons</supports>
+        <description>
+            <p>You have metal fangs suitable for chomping. On hit, they deal 1d10 piercing damage.</p>
+        </description>
+        <sheet>
+            <description>You have metal fangs suitable for chomping. On hit, they deal 1d10 piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Razor Claws" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_RAZOR_CLAWS">
+        <supports>ironwrought-natural-weapons</supports>
+        <description>
+            <p>You have two sets of razor claws integrated into your front limbs. On hit, they deal 1d6 slashing damage and have the light property.</p>
+        </description>
+        <sheet>
+            <description>You have two sets of razor claws integrated into your front limbs. On hit, they deal 1d6 slashing damage and have the light property.</description>
+        </sheet>
+    </element>
+    <element name="Bladed Tail" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_BLADED_TAIL">
+        <supports>ironwrought-natural-weapons</supports>
+        <description>
+            <p> You have a lashing bladed tail. On hit, it deals 1d4 slashing damage. It has the reach property.</p>
+        </description>
+        <sheet>
+            <description> You have a lashing bladed tail. On hit, it deals 1d4 slashing damage. It has the reach property.</description>
+        </sheet>
+    </element>
+    <element name="Barding" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_BARDING">
+        <description>
+            <p> You can only wear armor specially adapted to your unique shape. This custom armor has the same price as normal armor, but may be harder to find or more expensive when custom ordered.</p>
+        </description>
+        <sheet>
+            <description> You can only wear armor specially adapted to your unique shape. This custom armor has the same price as normal armor, but may be harder to find or more expensive when custom ordered.</description>
+        </sheet>
+    </element>
+    <element name="Variant Large Construct" type="Sub Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_SUB_RACE_VARIANT_LARGE_CONSTRUCTS">
+        <supports>ironwrought-chassis</supports>
+        <description>
+            <p>At the discretion of your GM, a quadrupedal Ironwrought construct can be Large sized. It gains the following traits:</p>
+            <p class="indent"><strong></strong> The damage dice of your natural weapons increases by one size (from a d10 to a d12 or from a d6 to a d8). Your natural weapons without the light property gain the heavy property.</p>            
+            <p class="indent"><strong></strong> You count as three-quarters cover for allied creatures when you would normally count as half cover.</p>
+            <p class="indent"><strong></strong> You can’t wear armor designed for normal-sized creatures. Your armor has to be designed for Large-sized creatures of your form, and generally costs four times the normal cost of armor.</p>
+        </description>
+        <sheet alt="Ironwrought, Quadrupedal Large Construct">
+            <description>You do not have hands. You can hold one object or grapple one thing using your mouth, but can’t speak when you do so, and any weapons held in this way are wielded with disadvantage. You can perform the somatic components of spells with one of your legs, however doing so requires 15 feet of your movement.</description>
+        </sheet>
+        <rules>            
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_NATURAL_WEAPONS" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_BARDING" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_LARGE_NATURAL_WEAPONS" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_BULWARK" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_BARDING_VARIANT" />
+            <grant type="Size" id="ID_SIZE_LARGE" />
+        </rules>
+    </element>
+    <element name="Large Natural Weapons" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_LARGE_NATURAL_WEAPONS">
+        <description>
+            <p>The damage dice of your natural weapons increases by one size (from a d10 to a d12 or from a d6 to a d8). Your natural weapons without the light property gain the heavy property.</p>
+        </description>
+        <sheet>
+            <description>The damage dice of your natural weapons increases by one size (from a d10 to a d12 or from a d6 to a d8). Your natural weapons without the light property gain the heavy property.</description>
+        </sheet>
+    </element>
+    <element name="Bulwark" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_BULWARK">
+        <description>
+            <p>You count as three-quarters cover for allied creatures when you would normally count as half cover.</p>
+        </description>
+        <sheet>
+            <description>You count as three-quarters cover for allied creatures when you would normally count as half cover.</description>
+        </sheet>
+    </element>
+    <element name="Barding" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_BARDING_VARIANT">
+        <description>
+            <p>You can’t wear armor designed for normal-sized creatures. Your armor has to be designed for Large-sized creatures of your form, and generally costs four times the normal cost of armor.</p>
+        </description>
+        <sheet>
+            <description>You can’t wear armor designed for normal-sized creatures. Your armor has to be designed for Large-sized creatures of your form, and generally costs four times the normal cost of armor.</description>
         </sheet>
     </element>
 </elements>
