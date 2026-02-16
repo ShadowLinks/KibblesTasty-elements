@@ -14,7 +14,8 @@
         
         <file name="class-psion.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-psion.xml" />
         <file name="psionics.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psionics.xml" />
-        <file name="psion-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-spelllist.xml" />        <file name="psion-knowingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-knowingmind.xml" />
+        <file name="psion-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-spelllist.xml" />        
+        <file name="psion-knowingmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-knowingmind.xml" />
         <file name="psion-awakenedmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-awakenedmind.xml" />
         <file name="psion-unleashedmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-unleashedmind.xml" />
         <file name="psion-transcendedmind.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/psion-transcendedmind.xml" />
