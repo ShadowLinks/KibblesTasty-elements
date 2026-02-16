@@ -6,7 +6,7 @@
             <file name="race-ironwrought.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-ironwrought.xml" />
         </update>
     </info>
-    <element name="Ironwrought" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_IRONTWROUGHT">
+    <element name="Ironwrought" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_IRONWROUGHT">
         <description>
             <p>The origins of Ironwrought are many and varied. They can be the artisanal masterpiece of a Golemsmith, or perhaps a relic of a mass production of an ancient lost civilization... or perhaps not-so-lost a civilization. Their source and purpose will vary greatly. Were they made with sapience in mind, or did they gain it later? Were they made for labor or war?</p>
             <p class="indent">Some Ironwrought will dwell on these questions and what it means for them to exist outside of the boundary of their original purpose, but many simply move on, acquiring new parameters to live their life from those they interact with, finding their purpose in life as any of their more fleshy counterparts might.</p>
