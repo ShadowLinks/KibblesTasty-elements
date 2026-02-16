@@ -3,10 +3,10 @@
     <info>
         <name></name>
         <update version="1.0.0">
-            <file name="background-apothecary.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/background-apothecary.xml" />
+            <file name="race-farling.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-farling.xml" />
         </update>
     </info>
-    <element name="Ironwrought" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_IRONTWROUGHT">
+    <element name="Farling" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_FARLING">
         <description>
             <p></p>
             <h4>HEADING</h4>
