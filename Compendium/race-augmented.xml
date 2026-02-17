@@ -3,27 +3,24 @@
     <info>
         <name></name>
         <update version="1.0.0">
-            <file name="background-apothecary.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/background-apothecary.xml" />
+            <file name="race-augmented.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/race-augmented.xml" />
         </update>
     </info>
-    <element name="Ironwrought" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_IRONTWROUGHT">
+    <element name="Augmented" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_AUGMENTED">
         <description>
-            <p></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
-            <p class="indent"><strong><em>Age.</em></strong> _______</p>
-            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
-            <p class="indent"><strong><em>Size.</em></strong> _______</p>
-            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
+            <p>The augmented are creatures that have replaced parts of the body with mechanical and magical parts—some sort of an arcane cyborg. The origin of these parts is many and varied, as is their nature: anything from living magic to mechanical means is possible, based on the setting and character. These provide bonuses that replace or augment the default features of your race selection.</p>
+            <h4>INTENTIONALLY CRAFTED</h4>
+            <p>Almost all augmented are intentionally created—not always by the intentions of the individual, but almost always by the intention of someone. This often leaves open the question of why, and for what purpose.</p>
+            <p class="indent">Many of them are created for war, some as bizare experiments, some to restore missing pieces, sometimes they had a choice in the process, and some will insist that they never asked for it.</p>
+            <h4>Augmented Traits</h4>
+            <p>As an augmented, the following traits replace any traits that your race would normally grant you:</p>
+            <p class="indent"><strong><em>Modified Origin.</em></strong> Select an existing race option. You gain the creature type, size, and languages of that race.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1, and one ability score of your choice increases by 1.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> An augmented creature can be any alignment, but have a inclination toward lawful alignments.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Inherited Abilites.</em></strong> You can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. Alternatively, you can forgo this to select one additional option from Augmented Abilities </p>
+            <p class="indent"><strong><em>Augmented Abilities.</em></strong> On top of your inherited abilties, you have been augmented with one of the following, granting you special new abilities:</p>
+            <ul><li>Arcane Arm, Arcane Eye, Arcane Heart, Arcane Mind</li></ul>
             <p class="indent"><strong><em>Languages.</em></strong> _______</p>
         </description>
         <sheet display="false" />
@@ -32,7 +29,7 @@
             <grant type="Racial Trait" id="ID____" />
         </rules>
     </element>
-    <element name="Rtrait" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_RTRAIT">
+    <element name="Inherited Abilities" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_INHERITED_ABILITIES">
         <description>
             <p>_______</p>
             <p class="indent">_______</p>
@@ -40,5 +37,82 @@
         <sheet>
             <description>_______</description>
         </sheet>
+        <rules>
+            <select type="Racial trait" name="Inherited Abilities" supports="inherited-abilites" />
+        </rules>
+    </element>    
+    <element name="Rtrait" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_RTRAIT">
+        <supports>inherited-abilities</supports>
+        <description>
+            <p>_______</p>
+            <p class="indent">_______</p>
+        </description>
+        <sheet>
+            <description>_______</description>
+        </sheet>
+    </element>
+    <element name="Augmented Abilities" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_AUGMENTED_ABILITIES">
+        <description>
+            <p>On top of your inherited abilties, you have been augmented with one of the following, granting you special new abilities:</p>
+            <p class="indent"></p>
+        </description>        
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Racial trait" name="Augmented Abilities" supports="augmented-abilites" />
+        </rules>
+    </element>
+    <element name="Arcane Arm" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_ARCANE_ARM">
+        <supports>augmented-abilities</supports>
+        <description>
+            <p>Your arm is replaced by a mechanical or magical replacement. Your Strength score increases by 1, and it can serve as a natural weapon. It deals 1d6 bludgeoning damage on hit, and counts as a simple weapon with the light property.</p>
+        </description>
+        <sheet>
+            <description>Your arm is replaced by a mechanical or magical replacement. It can serve as a natural weapon. It deals 1d6 bludgeoning damage on hit, and counts as a simple weapon with the light property.</description>
+        </sheet>
+        <rules>            
+            <stat name="Strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+        </rules>
+    </element>
+    <element name="Arcane Eye" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_ARCANE_EYE">
+        <supports>augmented-abilities</supports>
+        <description>
+            <p>Your eye (one or both) are replaced by mechanical or magical replacements. You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray, and gain proficiency in the Perception skill. You can cast the detect magic spell, and once you reach 5th level, the see invisible spell with this eye. Casting them in this way requires no material components. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.</p>
+        </description>
+        <sheet>
+            <description>Your eye (one or both) are replaced by mechanical or magical replacements. You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray. You can cast the detect magic spell, and once you reach 5th level, the see invisible spell with this eye. Casting them in this way requires no material components. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+            <grant type="Spell" id="ID_PHB_SPELL_INVISIBLE" level="5" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="darkvision:range" value="60" bonus="base" />
+        </rules>
+    </element>
+    <element name="Arcane Heart" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_ARCANE_HEART">
+        <supports>augmented-abilities</supports>
+        <description>
+            <p>Your heart (or equivalient organ) is replaced by a mechanical or magical replacement. Your Constitution score increases by 1, and whenever you roll Hit Dice, you gain temporary hit points equal to the number of Hit Dice expended.</p>
+        </description>
+        <sheet>
+            <description>Your heart (or equivalient organ) is replaced by a mechanical or magical replacement. Whenever you roll Hit Dice, you gain temporary hit points equal to the number of Hit Dice expended.</description>
+        </sheet>
+        <rules>            
+            <stat name="Constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+        </rules>
+    </element>
+    <element name="Arcane Mind" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_ARCANE_MIND">
+        <supports>augmented-abilities</supports>
+        <description>
+            <p>Your mind is enhanced by mechanical or magical minds. Your Intelligence score increases by 1, and you gain advantage on any Intelligence check to recall information you’ve seen before, solve mathematical equations, detect patterns, or break ciphers and codes.</p>
+        </description>
+        <sheet>
+            <description>Your mind is enhanced by mechanical or magical minds. You gain advantage on any Intelligence check to recall information you’ve seen before, solve mathematical equations, detect patterns, or break ciphers and codes.</description>
+        </sheet>
+        <rules>
+            <stat name="Intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+        </rules>
     </element>
 </elements>

@@ -8,37 +8,73 @@
     </info>
     <element name="Farling" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_FARLING">
         <description>
-            <p></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
-            <p class="indent"><strong><em>Age.</em></strong> _______</p>
-            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
-            <p class="indent"><strong><em>Size.</em></strong> _______</p>
-            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+            <p>Farlings are a race that comes from beyond the material plane, though few are certain where. While humanoid in shape, they are immediately distinguished from mortal races. They have a slender build, large eyes, and tendrils in place of hair. Their strange nature and inherent psionic abilities make them easily feared, but they tend to be far more friendly to mortal races than most of that which comes from the beyond.</p>
+            <p class="indent">Farlings tend to be blue to purple, but can be more exotic colors, or even have strange and exotic colorations and patterns in some cases. The nature and location of their creation results in little consistency of exact appearance, though they will often have some traits of their progenitor (such as sharing an eye or skin coloration).</p>
+            <h4>ADAPTABLE MIND</h4>
+            <p>Farlings are exceedingly adept at picking up social cues and cultural norms, and despite their strange appearance can easily fit into a tolerant society, but often maintain exceedingly strange senses of humor and behavior, fully aware of its oddity, sometimes even playing up their alien nature. They enjoy seeing the reactions of other creatures to strange circumstances, even if they have to cause those situations.</p>
+            <h4>MEMORY AND AGING</h4>
+            <p>Farlings age by gaining memories. They do not biologically age, but have the ability to make permanent crystalized memories, and age roughly one day each time they do. Young Farlings make these memories a dozen times a day, aging rapidly while absorbing new information at an incredible rate, while aging Farlings become more selective in what they choose to remember. If they do not commit some memory in this way, their memory tends to be still somewhat better than a human, but they view these memories as transient things that will be eventually forgotten.</p>
+            <h4>NATURE AND BIOLOGY</h4>
+            <p>Farlings do not have a gender, though those that travel among other races may associate with one. They have a generally androgynous and alien apparence. They are capable of forming strong emotional bonds, though some (particularly younger ones) will find the idea of gender and the associated customs hilarious (potentially inappropriately so based on the culture). Farlings that exist for hundreds of years and absorb thousands of memories can create a new Farling by traveling to realms of mind and thought where reality is more flexible, and psionically willing a new one into existence.</p>
+            <p class="indent">Farlings do not have a gender, though those that travel among other races may associate with one. They have a generally androgynous and alien apparence. They are capable of forming strong emotional bonds, though some (particularly younger ones) will find the idea of gender and the associated customs hilarious (potentially inappropriately so based on the culture). Farlings that exist for hundreds of years and absorb thousands of memories can create a new Farling by traveling to realms of mind and thought where reality is more flexible, and psionically willing a new one into existence.</p>
+            <p class="indent">Taking care of a young Farling can be exhausting due to the rampant curiosity and inquisitive nature rapidly consuming new experiences and memories, but their inquisitive nature causes them to age exceedingly quickly. A young Farling can fully absorb many memories a day, aging exceedingly fast. It is usually not long before they seek to wander broader environments, and set out into the world.</p>
+            <p class="indent">Farlings are not aquatic, but are unusually suited to it, often finding water quite comfortable and are natural swimmers.</p>
+            <h4>NAMES</h4>
+            <p>Farling don’t have traditional names, identifying each other through psionic projections of certain thought patterns. Those that interact with members of other races will adopt an assumed name, running the gambit from common and boring to outlandish and absurd. Their name often reflects the culture they most interacted with when finding they needed a name that could be made with sounds.</p>
+            <p class="indent">They rarely place great importance in their name, occasionally changing it or accepting a new nickname without much thought, as they don’t particularly associate the name with themselves; to them, that’s merely what people call them.</p>
+            <p class="indent">Farling Names: Blue, Dustin, Jonny, Lulu, Newbie, Pattern, Purple, Rey, Sala, Stripes, Squid, Thomas, Uanqor, Quentin, Yara, Yldel, Wis.</p>
+            <h4>Farling Traits</h4>
+            <p>As a farling, your character has the following traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score, Wisdom score, and Charisma score all increase by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> A Farling ages by absorbing memories. Each time they permanently absorb a memory, they age roughly one day. A young Farling can absorb dozens of memories a day, aging rapidly. Once reaching adulthood (a process that often only takes a decade), the rate at which they can absorb memories begins to slow, they become more selective, aging far slower.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Farlings show little consistency in alignment, and are shaped by their circumstances and background. Their curious and impulsive nature often leads younger members of the race to exhibit chaotic tendencies.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Most Farlings stand between 5 and 6 feet tall, with a slighter build than humans. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. You have a swimming speed of 20 feet.</p>
+            <p class="indent"><strong><em>Aberration.</em></strong> Your creature type is Aberration, rather than humanoid.</p>
+            <p class="indent"><strong><em>Adaptive Intuition.</em></strong> You gain proficiency in Insight, and have advantage on Wisdom (Insight) checks to determine social cues or cultural customs.</p>
+            <p class="indent"><strong><em>Psionic Mind.</em></strong> You gain the Telepathy Discipline of the psion, though you can’t use the Alternate Effects unless you gain this Discipline from another source. If you gain this Discipline from another source, you gain 1 additional psi point instead.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Deep Speech, and one extra language of your choice.</p>
         </description>
         <sheet display="false" />
-        <rules>
-            <grant type="Racial Trait" id="ID____" />
-            <grant type="Racial Trait" id="ID____" />
+        <setters>
+            <set name="names" type="Name">Blue, Dustin, Jonny, Lulu, Newbie, Pattern, Purple, Rey, Sala, Stripes, Squid, Thomas, Uanqor, Quentin, Yara, Yldel, Wis.</set>
+            <set name="names-format">{{Name}}</set>
+        </setters>
+        <rules>            
+            <stat name="Intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="Wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="Charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ABERRATION" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <stat name="innate speed:swim" value="20" bonus="base" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_ADAPTIVE_INTUITION" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_PSIONIC_MIND" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+            <select type="Language" name="Language, Farling" supports="Standard||Exotic" />
         </rules>
     </element>
-    <element name="Rtrait" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_RTRAIT">
+    <element name="Adaptive Intuition" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_ADAPTIVE_INTUITION">
         <description>
-            <p>_______</p>
-            <p class="indent">_______</p>
+            <p>You gain proficiency in Insight, and have advantage on Wisdom (Insight) checks to determine social cues or cultural customs.</p>
         </description>
         <sheet>
-            <description>_______</description>
+            <description>You have advantage on Wisdom (Insight) checks to determine social cues or cultural customs.</description>
         </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />]
+        </rules>
+    </element>
+    <element name="Psionic Mind" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_PSIONIC_MIND">
+        <description>
+            <p>You gain the Telepathy Discipline of the psion, though you can’t use the Alternate Effects unless you gain this Discipline from another source. If you gain this Discipline from another source, you gain 1 additional psi point instead.</p>
+        </description>
+        <sheet>
+            <description>You gain the Telepathy Discipline of the psion, though you can’t use the Alternate Effects unless you gain this Discipline from another source. If you gain this Discipline from another source, you gain 1 additional psi point instead.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Second Discipline" supports="psionic-discipline" />
+        </rules>
     </element>
 </elements>
