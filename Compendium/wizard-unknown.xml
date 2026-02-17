@@ -6,7 +6,7 @@
             <file name="wizard-unknown.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-unknown.xml" />
         </update>
     </info>
-    <element name="Order of the Unknown" type="Archetype" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_WIZARD_UNKNOWN">
+    <element name="Order of the Unknown" type="Archetype" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_WIZARD_UNKNOWN">
         <supports>Arcane Tradition</supports>
         <description>
             <p>To the order of the unknown, a cautionary tale where everyone went mad is called "a lead". These strange folk delve what is best left forgotten, seeking answers to questions best left unspoken.</p>
@@ -37,7 +37,7 @@
             <grant type="Archetype Feature" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_COGNITIVE_SHADOWS" level="14" />
         </rules>
     </element>
-    <element name="Study of the Unknown" type="Archetype Feature" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_STUDY_OF_THE_UNKNOWN">
+    <element name="Study of the Unknown" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_STUDY_OF_THE_UNKNOWN">
         <description>
             <p>Beginning when you select this school at 2nd level, you delve into the systematic study of psionics, select one Psionic Discipline from the Psion class to begin your studies with.</p>
             <p class="indent">The psionic power of the Discipline becomes a 1st-level spell for you. When you cast it using a spell slot, you cast it as if expending psi points equal to the spell slot level spent (for example, when casting as a 1st-level spell, you cast it as if empowering it with 1 psi point).</p>
@@ -52,7 +52,7 @@
             <select type="Spell" name="Study of the Unknown" supports="base-psionic-power" level="2" />           
         </rules>
     </element>
-    <element name="Secondary Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_SECONDARY_POWER">
+    <element name="Secondary Power" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_SECONDARY_POWER">
         <description>
             <p>Starting at 2nd level, the power of the psionics you study begins to seep into your mind, bleeding in from your studies of its mysteries.</p>
             <p class="indent">This starts to poison your mind with a minor psionic madness from the table below, and you can tap this power to use one of your psionic power spells gained from the Study of the Unknown to cast it without expending a spell slot, but as if you had spent a spell slot equal to half your Wizard level (rounded up).</p>
@@ -79,7 +79,7 @@
             6 You have the dreams of a different person.</description>
         </sheet>
     </element>
-    <element name="Psionic Magic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_PSIONIC_MAGIC">
+    <element name="Psionic Magic" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_PSIONIC_MAGIC">
         <description>
             <p>Additionally at at 2nd level, Spells that belong to the psionics school are considered wizard spells for you and on the wizard spell list for the purpose of adding or copying them to your spell book, and the gold and time you must spend to copy them into your spellbook if you find a version you can copy is halved.</p>
         </description>
@@ -87,7 +87,7 @@
             <description>Spells that belong to the psionics school are considered wizard spells for you and on the wizard spell list for the purpose of adding or copying them to your spell book, and the gold and time you must spend to copy them into your spellbook if you find a version you can copy is halved.</description>
         </sheet>
     </element>
-    <element name="Branching Studies" type="Archetype Feature" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_BRANCHING_STUDIES">
+    <element name="Branching Studies" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_BRANCHING_STUDIES">
        <description>
             <p>Starting at 6th level, you can study a second Psionic Discipline. You gain its power as a 1st-level spell. Roll again on the Psionic Madness table.</p>
         </description>
@@ -98,7 +98,7 @@
             <select type="Spell" name="Branching Studies" supports="base-psionic-power" level="6" />
         </rules>
     </element>
-    <element name="Psionic Transparency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_PSIONIC_TRANSPARENCY">
+    <element name="Psionic Transparency" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_PSIONIC_TRANSPARENCY">
        <description>
             <p>Additionally at 6th level, your understandings of the nature of psionics means you do not have disadvantage when attempting to use counterspell or dispel magic against psionic effects, and you gain proficiency with the Psionics skill (which functions similar to the Arcana skill, but applies to Psionic effects).</p>
         </description>
@@ -106,7 +106,7 @@
             <description>You do not have disadvantage when attempting to use counterspell or dispel magic against psionic effects, and you gain proficiency with the Psionics skill (which functions similar to the Arcana skill, but applies to Psionic effects).</description>
         </sheet>
     </element>
-    <element name="Psionic Adept" type="Archetype Feature" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_PSIONIC_ADEPT">
+    <element name="Psionic Adept" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_PSIONIC_ADEPT">
         <description>
             <p>Starting at 10th level, you can study a third psionic discipline. You gain its power as a 1st-level spell roll again on the Psionic Madness table.</p>
         </description>
@@ -117,7 +117,7 @@
             <select type="Spell" name="Psionic Adept" supports="base-psionic-power" level="10" />
         </rules>
     </element>
-    <element name="Detached Mind" type="Archetype Feature" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_DETATCHED_MIND">
+    <element name="Detached Mind" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_DETATCHED_MIND">
         <description>
             <p>Additionally at 10th level, the power of your mind strengthens transcending and its connection to your physical state. When you must make a Constitution or Death saving throw, you can replace it with an Intelligence saving throw. Once you do this you can’t do so until you finish a short or long rest.</p>
         </description>
@@ -125,7 +125,7 @@
             <description>When you must make a Constitution or Death saving throw, you can replace it with an Intelligence saving throw.</description>
         </sheet>
     </element>
-    <element name="Four Fold Master" type="Archetype Feature" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_FOUR_FOLD_MASTER">
+    <element name="Four Fold Master" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_FOUR_FOLD_MASTER">
         <description>
             <p>Starting at 14th level, you begin your studies of a fourth Discipline, unlocking deeper secrets. You gain its power as a 1st-level spell and roll again on the Psionic Madness table.</p>
         </description>
@@ -136,7 +136,7 @@
             <select type="Spell" name="Four Fold Master" supports="base-psionic-power" level="14" />
         </rules>
     </element>
-    <element name="Cognitive Shadows" type="Archetype Feature" source="Kibbles' Compendium of Craft and Unknown" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_COGNITIVE_SHADOWS">
+    <element name="Cognitive Shadows" type="Archetype Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_ARCHETYPE_FEATURE_WIZARD_UNKNOWN_COGNITIVE_SHADOWS">
         <description>
             <p>Additionally at 14th level, you gain a mindsight of 30 feet, allowing you to see creatures with an intelligence of 6 or higher within range as if by blindsight. This sight can see creatures in the ethereal realm within range.</p>
         </description>
