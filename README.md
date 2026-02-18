@@ -1,12 +1,15 @@
 # Kibbles Tasty for Aurora
 
 Thanks to Zenoverlordian who I forked from.
+Contains Content from Legends and Legacies, Craft and Creation, and some free content.
+Class toolbox from Craft and Creation is set as a separate source.
 
 ## Index
 https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/kibblestasty.index
 
 ## Plans
-Currently planning on adding content Kibbles' Compendium of Legends and Legacies then branching out from there. Currently working on coding content from Kibbles' Compendium of Craft and Creations. Old code from Zenoverlordian will stay in the not updated folder for now.
+I plan on adding Airships and Artifacts when it fully releases.
+Old code from Zenoverlordian will stay in the not updated folder for now.
 
 ### Classes (4)
 - Occultist
@@ -42,7 +45,7 @@ Druid
 - Circle of Elements
 - Circle of Growth
 - Circle of Roots
-- Circle of Nightmares - In Progress
+- Circle of Nightmares
 
 Fighter
 - Adventurer
@@ -51,29 +54,29 @@ Fighter
 - Crusader
 - Green Knight
 - Spiritsworn
-- Tech Knight - In Progress
+- Tech Knight
 
 Monk
 - Way of the Elements
 - Way of the Outcast
 - Way of the Sword Saint
-- Way of the Soul Blade - In Progress
+- Way of the Soul Blade
 
 Paladin
 - Oath of Silence
 - Oath of the Goodest Boi
-- Oath of Sanity - In Progress
+- Oath of Sanity
 
 Ranger
 - Bounty Hunter
-- Specialist - In Progress
-- Mind Reaper - In Progress
+- Specialist
+- Mind Reaper
 
 Rogue
 - Assassin
 - Divine Hand
 - Surgeon
-- Gadgeteer - In Progress
+- Gadgeteer
 
 Sorcerer
 - Fey Warped
@@ -81,8 +84,8 @@ Sorcerer
 - Phoenix Spark
 - Sea Soul
 - Stoneheart
-- Aetherheart - In Progress
-- Planetouched - In Progress
+- Aetherheart
+- Planetouched
 
 Warlock
 - The Dragon
@@ -91,20 +94,20 @@ Warlock
 - The Overseer
 - The Ooze
 - The Tempest
-- The Ancient Intelligence - In Progress
-- That Which is Beyond - In Progress
+- The Ancient Intelligence
+- That Which is Beyond
 
 Wizard
 - Astronomical Order
 - Theurge
-- Order of Creation - In Progress
-- Order of the Unknown - In Progress
+- Order of Creation
+- Order of the Unknown
 
-### Backgrounds - In Progress
+### Backgrounds
 - Apothecary
 - Engineer
 - Tinker
 ### Spells (250+)
-### Feats (30+)(27 more in progress)
+### Feats (50+)
 ### Boons
-### Magic Items  - In Progress
+### Magic Items

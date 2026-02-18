@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Feats</name>
-        <update version="0.0.1">
+        <update version="0.2.0">
             <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/feats.xml" />
         </update>
     </info>
@@ -2488,40 +2488,128 @@
         <p><em>Prerequisite:  Farling</em></p>
         <requirements>ID_KTH_CCC_RACE_FARLING</requirements>
         <description>
-            <p></p>
+            <p>You gain the ability to use a weapon, and the ability to use it in unique ways. You gain proficiency with one weapon of your choice, and when you gain proficiency with it you gain the ability to use it an unorthodox manner other creatures may find strange. You can add one of the following properties to that weapon that it doesn’t already have when you use it: heavy (if it doesn’t have the light property), light (if it does have heavy property), finesse, versatile (if it doesn’t have the two-handed property, increasing the size of the damage die by one step), or thrown (10/30). The weapon and property added are selected when you take the feat, and can’t be changed.</p>
         </description>
         <sheet>
             <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency, Alien Weapon Training" supports="Weapon" />
+            <select type="Feat Feature" name="Additional Weapon Property" supports="alien-weapon-training-property" />
+        </rules>
+    </element>
+    
+    <element name="Heavy" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_FEATURE_ALIEN_WEAPON_TRAINING_HEAVY">
+        <supports>alien-weapon-training-property</supports>
+        <description>
+            <p>The weapon now has the Heavy Property if it does not have the Light property.</p>
+        </description>
+        <sheet>
+            <description>The weapon now has the Heavy Property if it does not have the Light property.</description>
+        </sheet>
+    </element>
+    <element name="Light" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_FEATURE_ALIEN_WEAPON_TRAINING_LIGHT">
+        <supports>alien-weapon-training-property</supports>
+        <description>
+            <p>The weapon now has the Light Property if it does not have the Heavy property.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Finesse" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_FEATURE_ALIEN_WEAPON_TRAINING_FINESSE">
+        <supports>alien-weapon-training-property</supports>
+        <description>
+            <p>The weapon now has the Finesse Property.</p>
+        </description>
+        <sheet>
+            <description>The weapon now has the Finesse Property.</description>
+        </sheet>
+    </element>
+    <element name="Versatile" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_FEATURE_ALIEN_WEAPON_TRAINING_VERSATILE">
+        <supports>alien-weapon-training-property</supports>
+        <description>
+            <p>The weapon now has the Versatile Property which increases the damage dice by one size when weilded 2 handed if it does not have the 2-Handed property.</p>
+        </description>
+        <sheet>
+            <description>The weapon now has the Versatile Property which increases the damage dice by one size when weilded 2 handed if it does not have the 2-Handed property.</description>
+        </sheet>
+    </element>
+    <element name="Thrown" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_FEATURE_ALIEN_WEAPON_TRAINING_THROWN">
+        <supports>alien-weapon-training-property</supports>
+        <description>
+            <p>The weapon now has the Thrown (10/30) Property.</p>
+        </description>
+        <sheet>
+            <description>The weapon now has the Thrown (10/30) Property.</description>
         </sheet>
     </element>
     <element name="Aquatic Adaptation" type="Feat" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_AQUATIC_ADAPTATION">
         <p><em>Prerequisite:  Farling</em></p>
         <requirements>ID_KTH_CCC_RACE_FARLING</requirements>
         <description>
+            <p>Your aquatic adaptions are more extensive. You gain the following traits:</p>
+            <ul>
+                <li>Your Constitution score increases by 1.</li>
+                <li>You can breath under water.</li>
+                <li>You gain a swimming speed of 40 feet.</li>
+                <li>You gain resistance to your choice of acid or cold damage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can breath under water.</description>
+        </sheet>
+        <rules>
+            <grant type="Ability Score Improvement" id="ID_PHB_FEAT_ASI_CONSTITUTION"/>
+            <stat name="innate speed:swim" value="40" />
+            <select type="Feat Feature" supports="ID_KTH_CCC_FEAT_FEATURE_ADAPTATION_ACID|ID_KTH_CCC_FEAT_FEATURE_ADAPTATION_COLD" />
+        </rules>
+    </element>
+    <element name="Acid Resistance" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_FEATURE_ADAPTATION_ACID">
+        <description>
             <p></p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Cold Resistance" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_FEATURE_ADAPTATION_COLD">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
     </element>
     <element name="Flexible Form" type="Feat" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_FLEXIBLE_FORM">
         <p><em>Prerequisite:  Farling</em></p>
         <requirements>ID_KTH_CCC_RACE_FARLING</requirements>
         <description>
-            <p></p>
+            <p>You find the your material body isn’t quite as set in stone as other mortals, being more of a whim of expression. You can minorly change your appearance (coloration, hair length, superficial features) or adapt yourself to new environments, gaining resistance to one type of damage of your choice from acid, cold, fire, lightning, or poison during a long rest. You lose any previous resistance from this feature when you adapt yourself to a new environment.</p>
+            <p class="indent">Additionally, you can adapt your self to a greater extent, gaining the ability to cast alter self without expending a spell slot. Once you do so, you must expend a spell slot to cast it again until you finish a short or long rest</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can minorly change your appearance (coloration, hair length, superficial features) or adapt yourself to new environments, gaining resistance to one type of damage of your choice from acid, cold, fire, lightning, or poison during a long rest. You lose any previous resistance from this feature when you adapt yourself to a new environment.
+            Additionally, you gain the ability to cast alter self without expending a spell slot. Once you do so, you must expend a spell slot to cast it again until you finish a short or long rest</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" />
+        </rules>
     </element>
     <element name="Spell Library" type="Feat" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_SPELL_LIBRARY">
         <p><em>Prerequisite:  Farling, any class with a spellcasting or Pact Magic Feature</em></p>
         <requirements>ID_KTH_CCC_RACE_FARLING</requirements>
         <description>
-            <p></p>
+            <p>Your ability to perfectly memorize that which you experience enhances your ability to grasp and memorize spells. The number of spells you know or can prepare for one class you have levels in (your choice if you have multiple) increases by your proficiency bonus.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The number of spells you know or can prepare for one class you have levels in (your choice if you have multiple) increases by your proficiency bonus.(Add manually)</description>
         </sheet>
     </element>
 </elements>
@@ -2558,7 +2646,7 @@
         </rules>
     </element>
     
-    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Legends and Legacies" id="ID_KTH_CCC_FEAT_FEATURE_name">
+    <element name="name" type="Feat Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_FEAT_FEATURE_name">
         <description>
             <p></p>
         </description>
