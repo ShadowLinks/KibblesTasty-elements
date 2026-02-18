@@ -3,42 +3,120 @@
     <info>
         <name></name>
         <update version="1.0.0">
-            <file name="race-warped.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/race-warped.xml" />
+            <file name="race-warped.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-warped.xml" />
         </update>
     </info>
     <element name="Warped" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_WARPED">
         <description>
-            <p></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
-            <p class="indent"><strong><em>Age.</em></strong> _______</p>
-            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
-            <p class="indent"><strong><em>Size.</em></strong> _______</p>
-            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+            <p>The warped are members of races that have been deeply influenced by the powers from beyond, twisting their mind and body with mysterious power that has left them fundamentally changed.</p>
+            <h4>TWISTED ORIGIN</h4>
+            <p>Most often this comes from long exposure, sometimes only manifesting in creatures born under its influence, but there are those that have been warped later in life, generally by more direct interactions with the creatures that lurk beyond the veil of sanity.</p>
+            <p class="indent">Many of the warped fall to madness, unable to escape the whispering voices and strange visions, but ones that become adventurers have managed to learn to live with their condition, and consequently have minds of steel.</p>
+            <h4>Warped Traits</h4>
+            <p class="indent"><strong><em>Warped Origin.</em></strong>  Select an existing race option. You gain the creature type, size, and languages of that race.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1, and your Intelligence score increases by 2.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> An warped creature can be any alignment, but have a inclination toward chaotic alignments.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Inured of Madness.</em></strong> Things that cause madness in others seem relatively benign to you. You have resistance to psychic damage. You automatically pass any saves against madness</p>
+            <p class="indent"><strong><em>Inner Voice.</em></strong> You have an inner voice that doesn’t belong to you, frequently muttering nonsense, but occasionally offering useful advice, letting you add 1d6 to any ability check you make. You can do this a number of times equal to your proficiency bonus, regaining all uses at the end of a long rest.</p>
+            <p class="indent"><strong><em>Warped Gift.</em></strong> Your condition grants you one special trait. Some may view it as a curse or burden, but you’ve adapted to using it to your advantage. Select one of the following options:</p>
+            <ul><li>Warped Eyes, Warped Limb, Warped Mind, Warped Skin, Warped Form</li></ul>
+            <p class="indent"><strong><em>Languages.</em></strong> You have learned to understanding the whispering voices you hear. You learn Deep Speech.</p>
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Racial Trait" id="ID____" />
-            <grant type="Racial Trait" id="ID____" />
+            <stat name="Constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="Intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="innate speed" value="30" bonus="base" />
+            <select type="Racial Trait" name="Size (Warped Origin)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+            <select type="Racial Trait" name="Creature Type (Warped Origin)" supports="Creature Type" />
+            <select type="Language" name="Language, Warped Origin" supports="Standard||Exotic" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_INURED_OF_MADNESS" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_INNER_VOICE" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_WARPED_GIFT" />
         </rules>
     </element>
-    <element name="Rtrait" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_RTRAIT">
+    <element name="Inured of Madness" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_INURED_OF_MADNESS">
         <description>
-            <p>_______</p>
-            <p class="indent">_______</p>
+            <p>Things that cause madness in others seem relatively benign to you. You have resistance to psychic damage. You automatically pass any saves against madness.</p>
         </description>
         <sheet>
-            <description>_______</description>
+            <description>You automatically pass any saves against madness.</description>
         </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        </rules>
+    </element>
+    <element name="Inner Voice" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_INNER_VOICE">
+        <description>
+            <p>You have an inner voice that doesn’t belong to you, frequently muttering nonsense, but occasionally offering useful advice, letting you add 1d6 to any ability check you make. You can do this a number of times equal to your proficiency bonus, regaining all uses at the end of a long rest.</p>
+\        </description>
+        <sheet>
+            <description>You have an inner voice that doesn’t belong to you, frequently muttering nonsense, but occasionally offering useful advice, letting you add 1d6 to any ability check you make. You can do this a number of times equal to your proficiency bonus, regaining all uses at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Warped Gift" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_WARPED_GIFT">
+        <description>
+            <p>Your condition grants you one special trait. Some may view it as a curse or burden, but you’ve adapted to using it to your advantage. Select one of the following options:</p>
+        </description>
+        <sheet display="False">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Warped Gift" supports="warped-gift" />
+        </rules>
+    </element>
+    <element name="Warped Eyes" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_WARPED_EYES">
+        <supports>warped-gift</supports>
+        <description>
+            <p>You see the world in a different way. You have advantage on Wisdom (Perception) checks against living creatures, and disadvantage on Wisdom (Perception) checks against non-living things (such as traps or details in your environment).</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Perception) checks against living creatures, and disadvantage on Wisdom (Perception) checks against non-living things (such as traps or details in your environment).</description>
+        </sheet>
+    </element>
+    <element name="Warped Limb" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_WARPED_LIMB">
+        <supports>warped-gift</supports>
+        <description>
+            <p>One of your limbs is abnormally long and flexible. Any weapon wielded in that hand gains the reach property.</p>
+        </description>
+        <sheet>
+            <description>One of your limbs is abnormally long and flexible. Any weapon wielded in that hand gains the reach property.</description>
+        </sheet>
+    </element>
+    <element name="Warped Mind" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_WARPED_MIND">
+        <supports>warped-gift</supports>
+        <description>
+            <p>Your mind is a foreign and alien place compared to other humanoids. You are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.</p>
+        </description>
+        <sheet>
+            <description>You are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.</description>
+        </sheet>
+    </element>
+    <element name="Warped Skin" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_WARPED_SKIN">
+        <supports>warped-gift</supports>
+        <description>
+            <p>Your skin is a rough mottled hide. You have resistance to acid damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Warped Form" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_WARPED_FORM">
+        <supports>warped-gift</supports>
+        <description>
+            <p>Your body is more malleable and flexible than a normal humanoid. You can move through spaces for a smaller creatures without squeezing and when you aren’t wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</p>
+        </description>
+        <sheet>
+            <description>You can move through spaces for a smaller creatures without squeezing and when you aren’t wearing armor, your AC is 12 + {{constitution:modifier}}. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</description>
+        </sheet>
+        <rules>
+            <stat name="warped:natural armor" value="12" bonus="base" />
+            <stat name="warped:natural armor" value="constitution:modifier"/>
+			<stat name="ac:calculation" value="warped:natural armor" bonus="calculation" alt="Natural Armor (Warped Form)" />
+        </rules>
     </element>
 </elements>

@@ -3,7 +3,7 @@
     <info>
         <name></name>
         <update version="1.0.0">
-            <file name="race-augmented.xml" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/race-augmented.xml" />
+            <file name="race-augmented.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-augmented.xml" />
         </update>
     </info>
     <element name="Augmented" type="Race" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACE_AUGMENTED">
@@ -21,36 +21,54 @@
             <p class="indent"><strong><em>Inherited Abilites.</em></strong> You can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. Alternatively, you can forgo this to select one additional option from Augmented Abilities </p>
             <p class="indent"><strong><em>Augmented Abilities.</em></strong> On top of your inherited abilties, you have been augmented with one of the following, granting you special new abilities:</p>
             <ul><li>Arcane Arm, Arcane Eye, Arcane Heart, Arcane Mind</li></ul>
-            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
         </description>
         <sheet display="false" />
-        <rules>
-            <grant type="Racial Trait" id="ID____" />
-            <grant type="Racial Trait" id="ID____" />
+        <rules>            
+            <stat name="Constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type="Ability Score Improvement" name="Augmented" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_INHERITED_ABILITIES" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_AUGMENTED_ABILITIES" />            
+            <stat name="innate speed" value="30" bonus="base" />
+            <select type="Racial Trait" name="Size (Modified Origin)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+            <select type="Racial Trait" name="Creature Type (Modified Origin)" supports="Creature Type" />
+            <select type="Language" name="Language, Modified Origin" supports="Standard||Exotic" />
         </rules>
     </element>
     <element name="Inherited Abilities" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_INHERITED_ABILITIES">
         <description>
-            <p>_______</p>
-            <p class="indent">_______</p>
+            <p>You can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. Alternatively, you can forgo this to select one additional option from Augmented Abilities</p>
         </description>
         <sheet>
-            <description>_______</description>
+            <description>You can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. Alternatively, you can forgo this to select one additional option from Augmented Abilities</description>
         </sheet>
         <rules>
-            <select type="Racial trait" name="Inherited Abilities" supports="inherited-abilites" />
+            <select type="Racial Trait" name="Inherited Abilities" supports="ID_KTH_CCC_RACIAL_TRAIT_INHERITED_ABILITIES_ABILITY|ID_KTH_CCC_RACIAL_TRAIT_INHERITED_ABILITIES_SKILL"/>
         </rules>
     </element>    
-    <element name="Rtrait" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_RTRAIT">
-        <supports>inherited-abilities</supports>
+    <element name="Inherited Abilities (Skill)" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_INHERITED_ABILITIES_ABILITY">
         <description>
-            <p>_______</p>
-            <p class="indent">_______</p>
+            <p>You can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. Alternatively, you can forgo this to select one additional option from Augmented Abilities</p>
         </description>
         <sheet>
-            <description>_______</description>
+            <description>You can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. Alternatively, you can forgo this to select one additional option from Augmented Abilities</description>
         </sheet>
+        <rules>
+            <select type="Proficiency" name="Inherited Abilities (Skill)" supports="Skill"/>
+        </rules>
     </element>
+    
+    <element name="Inherited Abilities (Ability)" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_INHERITED_ABILITIES_SKILL">
+        <description>
+            <p>You can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. Alternatively, you can forgo this to select one additional option from Augmented Abilities</p>
+        </description>
+        <sheet>
+            <description>You can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. Alternatively, you can forgo this to select one additional option from Augmented Abilities</description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Inherited Abilities (Augmented)" supports="augmented-abilities" />
+        </rules>
+    </element>
+    
     <element name="Augmented Abilities" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_AUGMENTED_ABILITIES">
         <description>
             <p>On top of your inherited abilties, you have been augmented with one of the following, granting you special new abilities:</p>
@@ -60,7 +78,7 @@
             <description></description>
         </sheet>
         <rules>
-            <select type="Racial trait" name="Augmented Abilities" supports="augmented-abilites" />
+            <select type="Racial Trait" name="Augmented Abilities" supports="augmented-abilities" />
         </rules>
     </element>
     <element name="Arcane Arm" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_ARCANE_ARM">

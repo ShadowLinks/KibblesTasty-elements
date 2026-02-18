@@ -29,6 +29,9 @@
 
         <file name="race-awakenedundead.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-awakenedundead.xml" />
         <file name="race-ironwrought.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-ironwrought.xml" />
+        <file name="race-farling.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-farling.xml" />
+        <file name="race-augmented.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-augmented.xml" />
+        <file name="race-warped.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/race-warped.xml" />
 
         <file name="class-occultist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-occultist.xml" />
         <file name="occultist-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/occultist-spelllist.xml" />

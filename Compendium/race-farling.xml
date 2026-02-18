@@ -43,16 +43,20 @@
         <rules>            
             <stat name="Intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <stat name="Wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-            <stat name="Charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="Charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ABERRATION" />
             <grant type="Size" id="ID_SIZE_MEDIUM" />
             <stat name="innate speed" value="30" bonus="base" />
             <stat name="innate speed:swim" value="20" bonus="base" />
             <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_ADAPTIVE_INTUITION" />
             <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_PSIONIC_MIND" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_CRYSTALIZED_MEMORY" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_BROAD_HORIZONS" />
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_SKILL_ABSORPTION" requirements="!ID_KTH_CCC_RACE_VARIANT_FARLING" /> 
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
             <grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
             <select type="Language" name="Language, Farling" supports="Standard||Exotic" />
+            <select type="Race Variant" name="Farling Variant" supports="Farling" optional="true"/>
         </rules>
     </element>
     <element name="Adaptive Intuition" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_ADAPTIVE_INTUITION">
@@ -63,7 +67,7 @@
             <description>You have advantage on Wisdom (Insight) checks to determine social cues or cultural customs.</description>
         </sheet>
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />]
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
         </rules>
     </element>
     <element name="Psionic Mind" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_PSIONIC_MIND">
@@ -76,5 +80,60 @@
         <rules>
             <select type="Class Feature" name="Second Discipline" supports="psionic-discipline" />
         </rules>
+    </element>
+    <element name="Crystalized Memory" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_CRYSTALIZED_MEMORY">
+        <description>
+            <p>When you learn or experience something, you can fix that memory, making it a permanent memory you can always remember with crystal clarity. This memory can be anything that occurs within a 1 hour span (it can be as short as a fleeting sensation, or as long as 1 hour of events).</p>
+            <p class="indent">Once you do this, you can’t do so again until you finish a long rest. Absorbing these memories is how a Farling ages, and you age one day for each memory you absorb in this way. You can absorb a memory from a willing creature via your telepathy in this way.</p>
+        </description>
+        <sheet>
+            <description>When you learn or experience something, you can fix that memory, making it a permanent memory you can always remember with crystal clarity. This memory can be anything that occurs within a 1 hour span (it can be as short as a fleeting sensation, or as long as 1 hour of events).
+            Once you do this, you can’t do so again until you finish a long rest. Absorbing these memories is how a Farling ages, and you age one day for each memory you absorb in this way. You can absorb a memory from a willing creature via your telepathy in this way.</description>
+        </sheet>
+    </element>
+    <element name="Broad Horizons" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_BROAD_HORIZONS">
+        <description>
+            <p> You have resistance to psychic damage. Once per day, if you take psychic damage from a critical hit, you can choose to absorb that damage as a memory, taking no damage.</p>
+        </description>
+        <sheet>
+            <description> If you take psychic damage from a critical hit, you can choose to absorb that damage as a memory, taking no damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        </rules>
+    </element>
+    <element name="Skill Absorption" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_SKILL_ABSORPTION">
+        <requirements>!ID_KTH_CCC_RACE_VARIANT_FARLING</requirements>
+        <description>
+            <p>Your rapid ability to learn new skills grants you proficiency in one artisan tool and one skill of your choice. At your GM’s discretion, if your game allows for the training in tools and skills, you may gain proficiency in them twice as fast using your Crystalized Memory feature daily.</p>
+        </description>
+        <sheet>
+            <description> At your GM’s discretion, if your game allows for the training in tools and skills, you may gain proficiency in them twice as fast using your Crystalized Memory feature daily.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency (Skill Absorption)" supports="Tool" />
+            <select type="Proficiency" name="Skill Proficiency (Skill Absorption)" supports="Skill" />
+        </rules>
+    </element>
+    <element name="Variant Farling" type="Race Variant"  source="Kibbles' Compendium of Craft and Creation"  id="ID_KTH_CCC_RACE_VARIANT_FARLING">
+        <supports>Farling</supports>
+        <description>
+            <p>At the discrection of your GM, the following is an intended feature of Farlings that can be added in place of Skill Absorption. This is a recommended feature to allow additional options, but may not be suited for all games due to interacterations with other custom rules at some tables:</p>
+            <p class="indent"><strong>Alien Mind.</strong> When you gain the Spellcasting or Psionics ability from any class or feature, you can change the associated ability score to your choice of Intelligence, Wisdom, or Charisma. Any time that class references the previous spell casting ability, you can replace it with your selected score (for example, if you are playing a Psion and change its associated ability score to Charisma, Empowered Psiosnics would add Charisma instead of Intelligence)</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_KTH_CCC_RACIAL_TRAIT_ALIEN_MIND" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_REQTEMPFIX" />
+        </rules>
+    </element>
+    
+    <element name="Alien Mind" type="Racial Trait" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_RACIAL_TRAIT_ALIEN_MIND">
+        <description>
+            <p>When you gain the Spellcasting or Psionics ability from any class or feature, you can change the associated ability score to your choice of Intelligence, Wisdom, or Charisma. Any time that class references the previous spell casting ability, you can replace it with your selected score (for example, if you are playing a Psion and change its associated ability score to Charisma, Empowered Psiosnics would add Charisma instead of Intelligence).</p>
+        </description>
+        <sheet>
+            <description>When you gain the Spellcasting or Psionics ability from any class or feature, you can change the associated ability score to your choice of Intelligence, Wisdom, or Charisma. Any time that class references the previous spell casting ability, you can replace it with your selected score</description>
+        </sheet>
     </element>
 </elements>
