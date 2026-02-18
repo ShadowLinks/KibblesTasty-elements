@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
     <info>
-        <update version="0.2.0">
+        <update version="0.2.1">
             <file name="kibblestasty.index" url="https://raw.githubusercontent.com/Shadowlinks/KibblesTasty-elements/main/kibblestasty.index" />
         </update>
     </info>
@@ -153,7 +153,7 @@
         <file name="wizard-unknown.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/wizard-unknown.xml" />
 
 
-        <!--
+        
         <file name="class-inventor.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/class-inventor.xml" />
         <file name="inventor-gadgetsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-gadgetsmith.xml" />
         <file name="inventor-golemsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-golemsmith.xml" />
@@ -167,7 +167,7 @@
         <file name="inventor-relicsmith.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-relicsmith.xml" />
         <file name="inventor-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/KibblesTasty-elements/refs/heads/main/Compendium/inventor-spelllist.xml" />
 
--->
+
 
     </files>
 </index>
