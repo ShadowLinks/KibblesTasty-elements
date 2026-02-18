@@ -348,7 +348,7 @@
         </rules>
     </element>
     <element name="Metamorphosis" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_METAMORPHOSIS">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <prerequisite>Prerequisite: Body Control</prerequisite>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT,ID_KTH_CCC_CLASS_FEATURE_PSION_PT_BODY_CONTROL</requirements>
         <description>
@@ -364,7 +364,7 @@
         </rules>
     </element>
     <element name="Physical Surge" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PHYSICAL_SURGE">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT</requirements>
         <description>
             <p>When you use Enhancing Surge targeting yourself, you can choose to make your Strength or Dexterity ability score equal to your Intelligence ability score until the start of your next turn.</p>
@@ -374,7 +374,7 @@
         </sheet>
     </element>
     <element name="Surging Power" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_SURGING_POWER">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT</requirements>
         <description>
             <p>When you target only yourself with Enhancing Surge, you can use the power as a bonus action instead of an action, but the damage and temporary hit points the base power grants are reduced to 1d4 when using the power this way.</p>
@@ -498,7 +498,7 @@
         </rules>
     </element>
     <element name="Astral Swap" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ASTRAL_SWAP">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION</requirements>
         <description>
             <p>As a bonus action, you can expend 1 psi point to swap places with your Astral Construct.</p>
@@ -508,7 +508,7 @@
         </sheet>
     </element>
     <element name="Life Link" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_LIFE_LINK">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION</requirements>
         <description>
             <p>When a solidified construct takes damage, you can choose to take that damage instead of the construct (no action required). You have resistance to the damage taken.</p>
@@ -533,7 +533,7 @@
         </rules>
     </element>
     <element name="Projected Weaponry" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PROJECTED_WEAPONRY">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PROJECTION</requirements>
         <description>
             <p>When you project a weapon with your Project Item feature, it gains the following benefits:</p>
@@ -557,7 +557,7 @@
         </sheet>
     </element>
     <element name="Unlimited Imagination" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_UNLIMITED_IMAGINATION">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <prerequisite>Shaper's Mind</prerequisite>  
         <requirements>ID_KTH_CCC_ARCHETYPE_PSION_SHAPERSMIND</requirements>
         <description>
@@ -657,7 +657,7 @@
     </element>
     
     <element name="Kinetic Slam" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_KINETIC_SLAM">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
         <description>
             <p>When you use the Telekinetic Force power, you can unleash it as a blast of kinetic power. You can use your power as a ranged spell attack (applying damage and effects on hit) instead of requiring a Strength saving throw. You can only select the Hammering modifier when you use it in this way.</p>
@@ -695,7 +695,7 @@
         </rules>
     </element>
     <element name="Telekinetic Movement" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TELEKINETIC_MOVEMENT">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
         <description>
             <p>You can expend 1 psi point to gain 10 additional feet of movement and the effect of spider climb, feather fall, or levitate until the start of your next turn (no action required). At the start of your next turn, you can expend 1 psi point to maintain the effect before it would end.</p>
@@ -710,7 +710,7 @@
         </rules>
     </element>
     <element name="Telekinetic Weapon" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TELEKINETIC_WEAPON">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
         <description>
             <p>You gain the Telekinetic Weapons psionic power as part of your Telekinetic Discipline (in addition to your other psionic powers), giving you the ability to fling weapons as per the power.</p>
@@ -723,7 +723,7 @@
         </rules>
     </element>
     <element name="Telekinetic Barrier" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TELEKINETIC_BARRIER">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
         <description>
             <p>You focus your telekinetic power, spreading it thin to create a large barrier. As an action you can expend 2 psi points to create a wall of weak telekinetic force 15 feet high and up to 40 feet long, or as a 15 radius around you. This barrier is visible as small objects hover and float within it. If you create it around yourself, it moves with you when you move. Ranged attacks that pass through this barrier are made with disadvantage as their trajectory is deflected. You can maintain this barrier by concentrating, as if concentrating on a spell, for up to 1 minute after creating it.</p>
@@ -831,7 +831,7 @@
         </rules>
     </element>    
     <element name="Attuned Argument" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ATTUNED_ARGUMENT">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>Your telepathic insight allows to adapt and tailor your influence on others. When you make a Charisma check, after you roll but before you know the outcome, you can choose to roll an additional d20 and take the higher result. You can do this a number of times equal to your proficiency bonus, regaining all uses on a long rest.</p>
@@ -841,7 +841,7 @@
         </sheet>
     </element>
     <element name="Empathy" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_EMPATHY">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>You can psionically link yourself to other creatures. As a reaction to a creature you can see within 120 feet of you taking damage, you can grant them resistance to the damage taken, but you take psychic damage equal to the damage they take (after resistance). The damage you take can’t be reduced or prevented in any way.</p>
@@ -855,7 +855,7 @@
         </sheet>
     </element>
     <element name="Mental Image" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MENTAL_IMAGE">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>You gain the ability to use your Telepathy to project images into the minds of creatures with perfect clarity, interposing it over their reality. The spells silent image, major image, hallucinatory terrain and seeming are added to your Telepathic Discipline Alternate Effects list costing psi points equal to their spell level.</p>
@@ -871,7 +871,7 @@
         </rules>
     </element>
     <element name="Mental Influence" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MENTAL_INFLUENCE">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>You specialize in the subtle touch, picking stray thoughts and soothing concerns without overtly intruding upon a mind. You gain expertise in the Persuasion skill, though you are reduced to normal proficiency against creatures that are immune to mental influence or charm (such a creature under the effect of mind blank).</p>
@@ -881,7 +881,7 @@
         </sheet>
     </element>
     <element name="Reflected Agony" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_REFLECTED_AGONY">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>When a creature within 120 feet that you can see deals damage to you, you can use your reaction to spend 1 or more psi points (up to your psi limit) to share the pain you experienced back at them, dealing 1d10 psychic damage per point spent. The damage this deals can’t exceed the damage taken from the attack.</p>
@@ -902,7 +902,7 @@
         </sheet>
     </element>
     <element name="Telepathic Link" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TELEPATHIC_LINK">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TELEPATHY</requirements>
         <description>
             <p>Your Telepathic Communication gains an unlimited range as long as you have communicated with the creature within the last day, and the target willingly maintains the link. However, it takes an action to focus to communicate over distance if you can’t see the target (or for the target to communicate with you if they can’t see you). You can maintain a link with a number of people equal to your Intelligence modifier in this way. You can convey as much in a turn as you could by speaking normally.</p>
@@ -1001,7 +1001,7 @@
         </rules>
     </element>
     <element name="Rift Strike" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_RIFT_STRIKE">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TRANSPOSITION</requirements>
         <description>
             <p>When you use your Phase Rift power as an action, you can make a single weapon attack as a bonus action.</p>
@@ -1022,7 +1022,7 @@
         </sheet>
     </element>
     <element name="Lingering Rifts" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_LINGERING_RIFTS">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TRANSPOSITION</requirements>
         <description>
             <p>When you use Phase Rift you can choose to leave a 5 foot wide tear in reality behind, forming a line between your starting location and ending location until the start of your next turn. Any creature that enters this area for the first time or ends their turn in it must make a saving throw against the effect of Phase Rift as if it passed through them. If a creature is in the area of multiple lingering rifts, they are affected only once.</p>
@@ -1032,7 +1032,7 @@
         </sheet>
     </element>
     <element name="Phase Shot" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PHASE_SHOT">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <prerequisite>Rift Strike</prerequisite>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TRANSPOSITION,ID_KTH_CCC_CLASS_FEATURE_PSION_PT_RIFT_STRIKE</requirements>
         <description>
@@ -1069,7 +1069,7 @@
         </sheet>
     </element>
     <element name="Phase Shroud" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PHASE_SHROUD">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_TRANSPOSITION</requirements>
         <description>
             <p>After using Phase Rift, you gain temporary hit points equal to your proficiency bonus + the psi points spent on the power.</p>
@@ -1277,7 +1277,7 @@
     </element>
 
     <element name="Elemental Aegis" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ELEMENTAL_AEGIS">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PSYCHOKINESIS</requirements>
         <description>
             <p>As an action, you surround yourself with a swirling shield of fire, ice, or lightning. You gain temporary hit points equal to your psion level + your Intelligence modifier. Creatures that strike you while you have these temporary hit points take 1d4 damage of the shield type chosen.</p>
@@ -1292,7 +1292,7 @@
         </rules>
     </element>
     <element name="Elemental Emotions" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ELEMENTAL_EMOTIONS">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PSYCHOKINESIS</requirements>
         <description>
             <p>The powers you wield affect your state of mind, empowering you based on how you wield them. When you deal elemental damage, you gain the related mental property until the start of your next turn.</p>
@@ -1328,7 +1328,7 @@
     </element>
     <element name="Manifested Emotions" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MANIFESTED_EMOTIONS">
         <prerequisite>Elemental Emotions</prerequisite>
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PSYCHOKINESIS,ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ELEMENTAL_EMOTIONS</requirements>
         <description>
             <p>You can manifest your emotions into elemental powers that take physical shape. While you are in an elemental emotion, you can expend 2 psi points to manifest that emotion into the world as a bonus action; this takes the form of a mephit (ice mephit for cold, magma mephit for fire, and dust mephit for lightning).</p>
@@ -1438,7 +1438,7 @@
     </element>
     
     <element name="Glimpsed Future" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_GLIMPSED_FUTURE">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION</requirements>
         <description>
             <p>When you use Seeing with yourself as the beneficiary, you can use it as a bonus action. When you use Seeing as a bonus action in this way, it doesn’t grant additional damage to the attack, or reduce damage taken when hit.</p>
@@ -1448,7 +1448,7 @@
         </sheet>
     </element>
     <element name="One Step Ahead" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ONE_STEP_AHEAD">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PRECOGNITION</requirements>
         <description>
             <p>When you are subjected to a saving throw, you can expend 1 psi point and glimpse into the future. You know what the effect you are saving against is if it is a spell or psionic effect as if you passed an Intelligence (Arcana) or Intelligence (Psionics) check to identify it. Additionally you can add your Intelligence modifier to your saving throw against it regardless of its nature.</p>
@@ -1569,7 +1569,7 @@
         </rules>
     </element>
     <element name="Iron Templar" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_IRON_TEMPLAR">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_NULLIFICATION</requirements>
         <description>
             <p>You gain proficiency with medium armor and shields. If you already have proficiency with medium armor, you gain proficiency with heavy armor. You can perform somatic components for psionic powers with a hand carrying a weapon.</p>
@@ -1610,7 +1610,7 @@
         </rules>
     </element>
     <element name="Magical Anathema" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MAGICAL_ANATHEMA">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_NULLIFICATION</requirements>
         <description>
             <p>You gain resistance to damage dealt by spells or magical effects. The effect of all magical healing effects (including healing potions) on you is halved.</p>
@@ -1711,7 +1711,7 @@
         </rules>
     </element>
     <element name="Consumed Strength" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_CONSUMED_STRENGTH">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_CONSUMPTION</requirements>
         <description>
             <p>You can use your Intelligence modifier in place of Strength for Athletics checks while you have a psionic charge from Mind Leech. Additionally, targets you are grappling have disadvantage on the saving throw against your Mind Leech power.</p>
@@ -1721,7 +1721,7 @@
         </sheet>
     </element>
     <element name="Consuming Link" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_CONSUMING_LINK">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_CONSUMPTION</requirements>
         <description>
             <p>You can target a creature that is charmed by or frightened of you with Mind Leech as long as they are within 120 feet. You do not need to be able to see the target when targeting them in this way and the target has disadvantage on the saving throw against Mind Leech.</p>
@@ -1731,7 +1731,7 @@
         </sheet>
     </element>
     <element name="Skill Thief" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_SKILL_THIEF">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_CONSUMPTION</requirements>
         <description>
             <p>You can gain an additional number of skill, tool, or language proficiencies from Adaptive Hunter equal to half your proficiency bonus (rounded down) before losing the previously gained proficiency. If you would gain an additional proficiency from it beyond that, the first one you gained is lost.</p>
@@ -1741,7 +1741,7 @@
         </sheet>
     </element>
     <element name="Unlife Wielder" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_UNLIFE_WIELDER">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_CONSUMPTION</requirements>
         <description>
             <p>While you have a psionic charge, as an action you can invest it into a corpse, bringing it to a state of unlife, becoming a zombie or skeleton under your control. It acts on its own initiative immediately after your turn. Its unlife fades at the end of your next turn unless you expend a psionic charge or psi point on your next turn (no action required) to continue its animation for an additional round. You can spend Psionic Mastery points on this.</p>
@@ -1754,7 +1754,7 @@
 <!-- PSIONIC TALENTS GENERAL-->
     
     <element name="Astral Arms" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ASTRAL_ARMS">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         
         <description>
             <p>As a bonus action, you can expend 1 psi point to create psionic constructions serving as additional appendages. These arms last for 10 minutes. You determine the arms’ appearance, and they vanish early if you are incapacitated or die. You can use the astral arms to make unarmed strikes. The unarmed strikes you make with the arms use your Intelligence modifier in place of your Strength modifier for the attack and damage rolls. If you hit with one of them, you deal force damage equal to 1d6 + your Intelligence modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
@@ -1766,7 +1766,7 @@
         </sheet>
     </element>
     <element name="Aura Sight" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_AURA_SIGHT">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         
         <description>
             <p>As an action, you can spend 1 psi point to psionically see the aura of a creature of your choice within 30 feet. When you see the creature’s aura in this way, you can determine if there are any spells or magical effects affecting the creature, and you learn their schools of magic, if any. You can also determine if the creature is under the influence of psionics. A shapeshifter or creature that is transformed or disguised by magical or nonmagical means must make a Charisma (Deception) check against your Psionics save DC. On a failure, you can perceive their original form in their aura.</p>
@@ -1804,7 +1804,7 @@
         </rules>
     </element>
     <element name="Controlled Power" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_CONTROLLED_POWER">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         
         <description>
             <p>You gain the ability to suppress the glow and somatic component of your psionic powers. You can expend 2 psi points to use a power without a visual sign or somatic component. Each time you use this talent, the cost of doing so doubles until you finish a short or long rest.</p>
@@ -1844,7 +1844,7 @@
         </rules>
     </element>
     <element name="Elemental Penetration" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_ELEMENTAL_PENETRATION">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <prerequisite>Elemental Mind</prerequisite>
         <requirements>ID_KTH_CCC_ARCHETYPE_PSION_ELEMENTALMIND</requirements>
         <description>
@@ -1859,7 +1859,7 @@
         </sheet>
     </element>
     <element name="Empowered Strike" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_EMPOWERED_STRIKE">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <prerequisite>Psychokiensis or Telekinesis discipline</prerequisite>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PSYCHOKINESIS|ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
         <description>
@@ -1872,7 +1872,7 @@
         </sheet>
     </element>
     <element name="Life Wielder" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_LIFE_WIELDER">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <prerequisite>Enhancement or Consumption discipline</prerequisite>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_ENHANCEMENT|ID_KTH_CCC_PSION_DISCIPLINE_CONSUMPTION</requirements>
         <description>
@@ -1900,7 +1900,7 @@
         </rules>
     </element>
     <element name="Mind Rider" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_MIND_RIDER">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         
         <description>
             <p>As an action, you can touch a willing creature to see through its eyes and hear what it hears for the next hour, gaining the benefits of any special senses that the creature has.</p>
@@ -1923,7 +1923,7 @@
         </sheet>
     </element>
     <element name="Personal Truth" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PERSONAL_TRUTH">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         
         <description>
             <p>Your power of conviction allows you to believe what you choose to. If you spend at least one minute convincing yourself of something—no matter how absurd—spells and effects to determine if you are telling the truth will register that you believe what you have convinced yourself of.</p>
@@ -1943,7 +1943,7 @@
         </sheet>
     </element>
     <element name="Potent Psionics" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_POTENT_PSIONICS">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         
         <description>
             <p>When a target passes the saving throw against a damaging Psionic Power (granted by a psionic discipline), they still take half the damage, but suffer no other effects.</p>
@@ -1953,7 +1953,7 @@
         </sheet>
     </element>
     <element name="Psi Crystal" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PSI_CRYSTAL">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         
         <description>
             <p>You gain the ability to impart part of your mind into crystal. You can expend 2 psi points to cast the find familiar spell, but your familiar takes on the statics of a psi crystal (below) and the material component required is a crystal worth 10 gp instead of the normal material components. The Psi Crystal gains your Intelligence, Wisdom, and Charisma scores. You can use Psionic Disciplines with a range greater than self through your Psi Crystal as if you were standing in its location. If the psi crystal is destroyed, you gain its memories as your own. While you have a Psi Crystal active, as a bonus action, you can deactivate it to regain 2 expended psi points.</p>
@@ -1998,7 +1998,7 @@
         </sheet>
     </element>
     <element name="Psionic Defenses" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PSIONIC_DEFENSES">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <description>
             <p>You gain a way to defend yourself using your psionic powers. While you are not wearing any armor or carrying a shield, your AC equals 13 + your Intelligence modifier.</p>
         </description>
@@ -2012,7 +2012,7 @@
         </rules>
     </element>
     <element name="Psionic Weapon" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PSIONIC_WEAPON">
-        <supports>psionic-talent</supports>        
+        <supports>psionic-talent,pt1</supports>        
         <description>
             <p>As a bonus action, you can expend 1 psi point to imbue a weapon you are holding with psionic energy. For 1 minute, once per turn when you deal damage with that weapon, you can deal an extra 1d6 psychic damage.</p>
             <p class="indent">an deal an extra 1d6 psychic damage. At higher levels you can expend additional psi points to further enhance the Psionic Weapon; 2 points to enhance it to 2d6 at 5th level, 3 points to enhance it to 3d6 at 11th level, and 4 points to enhance it to 4d6 at 17th level.</p>
@@ -2025,7 +2025,7 @@
         </sheet>
     </element>
     <element name="Projected Nightmares" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PROJECTED_NIGHTMARES">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <prerequisite>Shaper's Mind</prerequisite>
         <requirements>ID_KTH_CCC_ARCHETYPE_PSION_SHAPERSMIND</requirements>
         <description>
@@ -2038,7 +2038,7 @@
         </sheet>
     </element>
     <element name="Propelled Bound" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_PROPELLED_BOUND">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <prerequisite>Psychokiensis or Telekinesis discipline</prerequisite>
         <requirements>ID_KTH_CCC_PSION_DISCIPLINE_PSYCHOKINESIS|ID_KTH_CCC_PSION_DISCIPLINE_TELEKINESIS</requirements>
         <description>
@@ -2060,7 +2060,7 @@
         </sheet>
     </element>
     <element name="Tantrum" type="Class Feature" source="Kibbles' Compendium of Craft and Creation" id="ID_KTH_CCC_CLASS_FEATURE_PSION_PT_TANTRUM">
-        <supports>psionic-talent</supports>
+        <supports>psionic-talent,pt1</supports>
         <prerequisite>Unleashed Mind</prerequisite>
         <requirements>ID_KTH_CCC_ARCHETYPE_PSION_UNLEASHEDMIND</requirements>
         <description>
